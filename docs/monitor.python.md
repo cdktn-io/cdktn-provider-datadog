@@ -1,15 +1,15 @@
-# `monitor` Submodule <a name="`monitor` Submodule" id="@cdktf/provider-datadog.monitor"></a>
+# `monitor` Submodule <a name="`monitor` Submodule" id="@cdktn/provider-datadog.monitor"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### Monitor <a name="Monitor" id="@cdktf/provider-datadog.monitor.Monitor"></a>
+### Monitor <a name="Monitor" id="@cdktn/provider-datadog.monitor.Monitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor datadog_monitor}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.Monitor.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.Monitor.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.Monitor(
   scope: Construct,
@@ -25,6 +25,7 @@ monitor.Monitor(
   name: str,
   query: str,
   type: str,
+  assets: IResolvable | typing.List[MonitorAssets] = None,
   draft_status: str = None,
   enable_logs_sample: bool | IResolvable = None,
   enable_samples: bool | IResolvable = None,
@@ -62,55 +63,56 @@ monitor.Monitor(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.message">message</a></code> | <code>str</code> | A message to include with notifications for this monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of Datadog monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.query">query</a></code> | <code>str</code> | The monitor query to notify on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.draftStatus">draft_status</a></code> | <code>str</code> | Indicates whether the monitor is in a draft or published state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples">enable_samples</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.escalationMessage">escalation_message</a></code> | <code>str</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | The time span after which groups with missing data are dropped from the monitor state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#id Monitor#id}. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags">include_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | The time (in seconds) to skip evaluations for new groups. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | **Deprecated**. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before a monitor will notify when data stops reporting. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit">notify_audit</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | Controls what granularity a monitor alerts on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.onMissingData">on_missing_data</a></code> | <code>str</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.priority">priority</a></code> | <code>str</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | The number of re-notification messages that should be sent on the current status. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate">validate</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.message">message</a></code> | <code>str</code> | A message to include with notifications for this monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of Datadog monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.query">query</a></code> | <code>str</code> | The monitor query to notify on. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of the monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.assets">assets</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]</code> | assets block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.draftStatus">draft_status</a></code> | <code>str</code> | Indicates whether the monitor is in a draft or published state. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples">enable_samples</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.escalationMessage">escalation_message</a></code> | <code>str</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | The time span after which groups with missing data are dropped from the monitor state. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#id Monitor#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags">include_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | The time (in seconds) to skip evaluations for new groups. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | **Deprecated**. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before a monitor will notify when data stops reporting. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | Toggles the display of additional content sent in the monitor notification. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit">notify_audit</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | Controls what granularity a monitor alerts on. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.onMissingData">on_missing_data</a></code> | <code>str</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.priority">priority</a></code> | <code>str</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | The number of re-notification messages that should be sent on the current status. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.validate">validate</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.variables">variables</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -118,7 +120,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -128,49 +130,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.message"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.message"></a>
 
 - *Type:* str
 
@@ -178,21 +180,21 @@ A message to include with notifications for this monitor.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#message Monitor#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#message Monitor#message}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 Name of Datadog monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.query"></a>
 
 - *Type:* str
 
@@ -202,23 +204,33 @@ Note this is not the same query you see in the UI and the syntax is different de
 
 **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.type"></a>
 
 - *Type:* str
 
 The type of the monitor.
 
-The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`.
+The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#type Monitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#type Monitor#type}
 
 ---
 
-##### `draft_status`<sup>Optional</sup> <a name="draft_status" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.draftStatus"></a>
+##### `assets`<sup>Optional</sup> <a name="assets" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.assets"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]
+
+assets block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#assets Monitor#assets}
+
+---
+
+##### `draft_status`<sup>Optional</sup> <a name="draft_status" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.draftStatus"></a>
 
 - *Type:* str
 
@@ -226,45 +238,45 @@ Indicates whether the monitor is in a draft or published state.
 
 When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#draft_status Monitor#draft_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#draft_status Monitor#draft_status}
 
 ---
 
-##### `enable_logs_sample`<sup>Optional</sup> <a name="enable_logs_sample" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample"></a>
+##### `enable_logs_sample`<sup>Optional</sup> <a name="enable_logs_sample" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.enableLogsSample"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether or not to include a list of log values which triggered the alert.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
 
 ---
 
-##### `enable_samples`<sup>Optional</sup> <a name="enable_samples" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples"></a>
+##### `enable_samples`<sup>Optional</sup> <a name="enable_samples" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.enableSamples"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not a list of samples which triggered the alert is included.
 
 This is only used by CI Test and Pipeline monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
 
 ---
 
-##### `escalation_message`<sup>Optional</sup> <a name="escalation_message" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.escalationMessage"></a>
+##### `escalation_message`<sup>Optional</sup> <a name="escalation_message" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.escalationMessage"></a>
 
 - *Type:* str
 
 A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
 
 ---
 
-##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.evaluationDelay"></a>
+##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.evaluationDelay"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -272,33 +284,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
 
 ---
 
-##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete"></a>
+##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.forceDelete"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#force_delete Monitor#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#force_delete Monitor#force_delete}
 
 ---
 
-##### `groupby_simple_monitor`<sup>Optional</sup> <a name="groupby_simple_monitor" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor"></a>
+##### `groupby_simple_monitor`<sup>Optional</sup> <a name="groupby_simple_monitor" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.groupbySimpleMonitor"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not to trigger one alert if any source breaches a threshold.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 
 ---
 
-##### `group_retention_duration`<sup>Optional</sup> <a name="group_retention_duration" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.groupRetentionDuration"></a>
+##### `group_retention_duration`<sup>Optional</sup> <a name="group_retention_duration" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.groupRetentionDuration"></a>
 
 - *Type:* str
 
@@ -306,64 +318,64 @@ The time span after which groups with missing data are dropped from the monitor 
 
 The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#id Monitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#id Monitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `include_tags`<sup>Optional</sup> <a name="include_tags" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags"></a>
+##### `include_tags`<sup>Optional</sup> <a name="include_tags" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.includeTags"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#include_tags Monitor#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#include_tags Monitor#include_tags}
 
 ---
 
-##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.locked"></a>
+##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.locked"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether changes to this monitor should be restricted to the creator or admins.
 
 Defaults to `false`. **Deprecated.** Use `restricted_roles`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#locked Monitor#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#locked Monitor#locked}
 
 ---
 
-##### `monitor_thresholds`<sup>Optional</sup> <a name="monitor_thresholds" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholds"></a>
+##### `monitor_thresholds`<sup>Optional</sup> <a name="monitor_thresholds" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholds"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
 
 monitor_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
 
 ---
 
-##### `monitor_threshold_windows`<sup>Optional</sup> <a name="monitor_threshold_windows" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholdWindows"></a>
+##### `monitor_threshold_windows`<sup>Optional</sup> <a name="monitor_threshold_windows" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.monitorThresholdWindows"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
 
 monitor_threshold_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
 
 ---
 
-##### `new_group_delay`<sup>Optional</sup> <a name="new_group_delay" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newGroupDelay"></a>
+##### `new_group_delay`<sup>Optional</sup> <a name="new_group_delay" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.newGroupDelay"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -371,11 +383,11 @@ The time (in seconds) to skip evaluations for new groups.
 
 `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
 
 ---
 
-##### `new_host_delay`<sup>Optional</sup> <a name="new_host_delay" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.newHostDelay"></a>
+##### `new_host_delay`<sup>Optional</sup> <a name="new_host_delay" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.newHostDelay"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -383,11 +395,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
 
 ---
 
-##### `no_data_timeframe`<sup>Optional</sup> <a name="no_data_timeframe" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.noDataTimeframe"></a>
+##### `no_data_timeframe`<sup>Optional</sup> <a name="no_data_timeframe" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.noDataTimeframe"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -395,31 +407,33 @@ The number of minutes before a monitor will notify when data stops reporting.
 
 We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
 
 ---
 
-##### `notification_preset_name`<sup>Optional</sup> <a name="notification_preset_name" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notificationPresetName"></a>
+##### `notification_preset_name`<sup>Optional</sup> <a name="notification_preset_name" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notificationPresetName"></a>
 
 - *Type:* str
 
-Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`.
+Toggles the display of additional content sent in the monitor notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
 
 ---
 
-##### `notify_audit`<sup>Optional</sup> <a name="notify_audit" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit"></a>
+##### `notify_audit`<sup>Optional</sup> <a name="notify_audit" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notifyAudit"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
 
 ---
 
-##### `notify_by`<sup>Optional</sup> <a name="notify_by" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyBy"></a>
+##### `notify_by`<sup>Optional</sup> <a name="notify_by" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notifyBy"></a>
 
 - *Type:* typing.List[str]
 
@@ -427,21 +441,21 @@ Controls what granularity a monitor alerts on.
 
 Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_by Monitor#notify_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_by Monitor#notify_by}
 
 ---
 
-##### `notify_no_data`<sup>Optional</sup> <a name="notify_no_data" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData"></a>
+##### `notify_no_data`<sup>Optional</sup> <a name="notify_no_data" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.notifyNoData"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
 
 ---
 
-##### `on_missing_data`<sup>Optional</sup> <a name="on_missing_data" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.onMissingData"></a>
+##### `on_missing_data`<sup>Optional</sup> <a name="on_missing_data" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.onMissingData"></a>
 
 - *Type:* str
 
@@ -449,21 +463,21 @@ Controls how groups or monitors are treated if an evaluation does not return any
 
 The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
 
 ---
 
-##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.priority"></a>
+##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.priority"></a>
 
 - *Type:* str
 
 Integer from 1 (high) to 5 (low) indicating alert severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#priority Monitor#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#priority Monitor#priority}
 
 ---
 
-##### `renotify_interval`<sup>Optional</sup> <a name="renotify_interval" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyInterval"></a>
+##### `renotify_interval`<sup>Optional</sup> <a name="renotify_interval" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyInterval"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -471,43 +485,43 @@ The number of minutes after the last notification before a monitor will re-notif
 
 It will only re-notify if it's not resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
 
 ---
 
-##### `renotify_occurrences`<sup>Optional</sup> <a name="renotify_occurrences" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyOccurrences"></a>
+##### `renotify_occurrences`<sup>Optional</sup> <a name="renotify_occurrences" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyOccurrences"></a>
 
 - *Type:* typing.Union[int, float]
 
 The number of re-notification messages that should be sent on the current status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
 
 ---
 
-##### `renotify_statuses`<sup>Optional</sup> <a name="renotify_statuses" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyStatuses"></a>
+##### `renotify_statuses`<sup>Optional</sup> <a name="renotify_statuses" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.renotifyStatuses"></a>
 
 - *Type:* typing.List[str]
 
 The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
 
 ---
 
-##### `require_full_window`<sup>Optional</sup> <a name="require_full_window" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow"></a>
+##### `require_full_window`<sup>Optional</sup> <a name="require_full_window" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.requireFullWindow"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
 Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
 
 ---
 
-##### `restricted_roles`<sup>Optional</sup> <a name="restricted_roles" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.restrictedRoles"></a>
+##### `restricted_roles`<sup>Optional</sup> <a name="restricted_roles" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.restrictedRoles"></a>
 
 - *Type:* typing.List[str]
 
@@ -517,21 +531,21 @@ Editing a monitor includes any updates to the monitor configuration, monitor del
 
 > **Note:** When the `TERRAFORM_MONITOR_EXPLICIT_RESTRICTED_ROLES` environment variable is set to `true`, this argument is treated as `Computed`. Terraform will automatically read the current restricted roles list from the Datadog API whenever the attribute is omitted. If `restricted_roles` is explicitly set in the configuration, that value always takes precedence over whatever is discovered during the read. This opt-in behaviour lets you migrate responsibility for monitor permissions to the `datadog_restriction_policy` resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
 
 ---
 
-##### `scheduling_options`<sup>Optional</sup> <a name="scheduling_options" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.schedulingOptions"></a>
+##### `scheduling_options`<sup>Optional</sup> <a name="scheduling_options" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.schedulingOptions"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
 
 scheduling_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.tags"></a>
 
 - *Type:* typing.List[str]
 
@@ -539,11 +553,11 @@ A list of tags to associate with your monitor.
 
 This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#tags Monitor#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#tags Monitor#tags}
 
 ---
 
-##### `timeout_h`<sup>Optional</sup> <a name="timeout_h" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.timeoutH"></a>
+##### `timeout_h`<sup>Optional</sup> <a name="timeout_h" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.timeoutH"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -551,27 +565,27 @@ The number of hours of the monitor not reporting data before it automatically re
 
 The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
 
 ---
 
-##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.validate"></a>
+##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.validate"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#validate Monitor#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#validate Monitor#validate}
 
 ---
 
-##### `variables`<sup>Optional</sup> <a name="variables" id="@cdktf/provider-datadog.monitor.Monitor.Initializer.parameter.variables"></a>
+##### `variables`<sup>Optional</sup> <a name="variables" id="@cdktn/provider-datadog.monitor.Monitor.Initializer.parameter.variables"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#variables Monitor#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#variables Monitor#variables}
 
 ---
 
@@ -579,69 +593,71 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds">put_monitor_thresholds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholdWindows">put_monitor_threshold_windows</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.putSchedulingOptions">put_scheduling_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.putVariables">put_variables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetDraftStatus">reset_draft_status</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetEnableLogsSample">reset_enable_logs_sample</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetEnableSamples">reset_enable_samples</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetEscalationMessage">reset_escalation_message</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetEvaluationDelay">reset_evaluation_delay</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetForceDelete">reset_force_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetGroupbySimpleMonitor">reset_groupby_simple_monitor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetGroupRetentionDuration">reset_group_retention_duration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetIncludeTags">reset_include_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetLocked">reset_locked</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetMonitorThresholds">reset_monitor_thresholds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetMonitorThresholdWindows">reset_monitor_threshold_windows</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetNewGroupDelay">reset_new_group_delay</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetNewHostDelay">reset_new_host_delay</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetNoDataTimeframe">reset_no_data_timeframe</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetNotificationPresetName">reset_notification_preset_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetNotifyAudit">reset_notify_audit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetNotifyBy">reset_notify_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetNotifyNoData">reset_notify_no_data</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetOnMissingData">reset_on_missing_data</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetPriority">reset_priority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetRenotifyInterval">reset_renotify_interval</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetRenotifyOccurrences">reset_renotify_occurrences</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetRenotifyStatuses">reset_renotify_statuses</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetRequireFullWindow">reset_require_full_window</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetRestrictedRoles">reset_restricted_roles</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetSchedulingOptions">reset_scheduling_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetTags">reset_tags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetTimeoutH">reset_timeout_h</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetValidate">reset_validate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.resetVariables">reset_variables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.putAssets">put_assets</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds">put_monitor_thresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholdWindows">put_monitor_threshold_windows</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.putSchedulingOptions">put_scheduling_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.putVariables">put_variables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetAssets">reset_assets</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetDraftStatus">reset_draft_status</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetEnableLogsSample">reset_enable_logs_sample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetEnableSamples">reset_enable_samples</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetEscalationMessage">reset_escalation_message</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetEvaluationDelay">reset_evaluation_delay</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetForceDelete">reset_force_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetGroupbySimpleMonitor">reset_groupby_simple_monitor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetGroupRetentionDuration">reset_group_retention_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetIncludeTags">reset_include_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetLocked">reset_locked</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetMonitorThresholds">reset_monitor_thresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetMonitorThresholdWindows">reset_monitor_threshold_windows</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetNewGroupDelay">reset_new_group_delay</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetNewHostDelay">reset_new_host_delay</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetNoDataTimeframe">reset_no_data_timeframe</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetNotificationPresetName">reset_notification_preset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetNotifyAudit">reset_notify_audit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetNotifyBy">reset_notify_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetNotifyNoData">reset_notify_no_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetOnMissingData">reset_on_missing_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetPriority">reset_priority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetRenotifyInterval">reset_renotify_interval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetRenotifyOccurrences">reset_renotify_occurrences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetRenotifyStatuses">reset_renotify_statuses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetRequireFullWindow">reset_require_full_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetRestrictedRoles">reset_restricted_roles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetSchedulingOptions">reset_scheduling_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetTimeoutH">reset_timeout_h</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetValidate">reset_validate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.resetVariables">reset_variables</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.Monitor.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.Monitor.toString"></a>
 
 ```python
 def to_string() -> str
@@ -649,7 +665,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-datadog.monitor.Monitor.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-datadog.monitor.Monitor.addOverride"></a>
 
 ```python
 def add_override(
@@ -658,19 +674,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-datadog.monitor.Monitor.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-datadog.monitor.Monitor.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.Monitor.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.Monitor.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-datadog.monitor.Monitor.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-datadog.monitor.Monitor.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -680,7 +696,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-datadog.monitor.Monitor.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-datadog.monitor.Monitor.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -688,7 +704,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-datadog.monitor.Monitor.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-datadog.monitor.Monitor.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -696,19 +712,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-datadog.monitor.Monitor.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-datadog.monitor.Monitor.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-datadog.monitor.Monitor.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-datadog.monitor.Monitor.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-datadog.monitor.Monitor.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-datadog.monitor.Monitor.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -716,7 +732,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-datadog.monitor.Monitor.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-datadog.monitor.Monitor.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -726,7 +742,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-datadog.monitor.Monitor.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-datadog.monitor.Monitor.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -734,7 +750,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -742,13 +758,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -756,13 +772,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -770,13 +786,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -784,13 +800,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -798,13 +814,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -812,13 +828,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -826,13 +842,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -840,13 +856,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -854,19 +870,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-datadog.monitor.Monitor.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-datadog.monitor.Monitor.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-datadog.monitor.Monitor.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-datadog.monitor.Monitor.importFrom"></a>
 
 ```python
 def import_from(
@@ -875,19 +891,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.monitor.Monitor.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.monitor.Monitor.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.monitor.Monitor.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.monitor.Monitor.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.Monitor.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.Monitor.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -895,13 +911,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.Monitor.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.Monitor.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-datadog.monitor.Monitor.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-datadog.monitor.Monitor.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -913,7 +929,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.monitor.Monitor.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.monitor.Monitor.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -921,7 +937,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-datadog.monitor.Monitor.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-datadog.monitor.Monitor.moveTo"></a>
 
 ```python
 def move_to(
@@ -932,7 +948,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-datadog.monitor.Monitor.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-datadog.monitor.Monitor.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -940,7 +956,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.monitor.Monitor.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-datadog.monitor.Monitor.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -948,7 +964,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-datadog.monitor.Monitor.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-datadog.monitor.Monitor.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -958,7 +974,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.monitor.Monitor.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.monitor.Monitor.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -966,7 +982,21 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_monitor_thresholds` <a name="put_monitor_thresholds" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds"></a>
+##### `put_assets` <a name="put_assets" id="@cdktn/provider-datadog.monitor.Monitor.putAssets"></a>
+
+```python
+def put_assets(
+  value: IResolvable | typing.List[MonitorAssets]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.Monitor.putAssets.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]
+
+---
+
+##### `put_monitor_thresholds` <a name="put_monitor_thresholds" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds"></a>
 
 ```python
 def put_monitor_thresholds(
@@ -979,67 +1009,67 @@ def put_monitor_thresholds(
 ) -> None
 ```
 
-###### `critical`<sup>Optional</sup> <a name="critical" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.critical"></a>
+###### `critical`<sup>Optional</sup> <a name="critical" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.critical"></a>
 
 - *Type:* str
 
 The monitor `CRITICAL` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#critical Monitor#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical Monitor#critical}
 
 ---
 
-###### `critical_recovery`<sup>Optional</sup> <a name="critical_recovery" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.criticalRecovery"></a>
+###### `critical_recovery`<sup>Optional</sup> <a name="critical_recovery" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.criticalRecovery"></a>
 
 - *Type:* str
 
 The monitor `CRITICAL` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
 
 ---
 
-###### `ok`<sup>Optional</sup> <a name="ok" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.ok"></a>
+###### `ok`<sup>Optional</sup> <a name="ok" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.ok"></a>
 
 - *Type:* str
 
 The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#ok Monitor#ok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#ok Monitor#ok}
 
 ---
 
-###### `unknown`<sup>Optional</sup> <a name="unknown" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.unknown"></a>
+###### `unknown`<sup>Optional</sup> <a name="unknown" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.unknown"></a>
 
 - *Type:* str
 
 The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#unknown Monitor#unknown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#unknown Monitor#unknown}
 
 ---
 
-###### `warning`<sup>Optional</sup> <a name="warning" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.warning"></a>
+###### `warning`<sup>Optional</sup> <a name="warning" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.warning"></a>
 
 - *Type:* str
 
 The monitor `WARNING` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#warning Monitor#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning Monitor#warning}
 
 ---
 
-###### `warning_recovery`<sup>Optional</sup> <a name="warning_recovery" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.warningRecovery"></a>
+###### `warning_recovery`<sup>Optional</sup> <a name="warning_recovery" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholds.parameter.warningRecovery"></a>
 
 - *Type:* str
 
 The monitor `WARNING` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
 
 ---
 
-##### `put_monitor_threshold_windows` <a name="put_monitor_threshold_windows" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholdWindows"></a>
+##### `put_monitor_threshold_windows` <a name="put_monitor_threshold_windows" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholdWindows"></a>
 
 ```python
 def put_monitor_threshold_windows(
@@ -1048,27 +1078,27 @@ def put_monitor_threshold_windows(
 ) -> None
 ```
 
-###### `recovery_window`<sup>Optional</sup> <a name="recovery_window" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholdWindows.parameter.recoveryWindow"></a>
+###### `recovery_window`<sup>Optional</sup> <a name="recovery_window" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholdWindows.parameter.recoveryWindow"></a>
 
 - *Type:* str
 
 Describes how long an anomalous metric must be normal before the alert recovers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
 
 ---
 
-###### `trigger_window`<sup>Optional</sup> <a name="trigger_window" id="@cdktf/provider-datadog.monitor.Monitor.putMonitorThresholdWindows.parameter.triggerWindow"></a>
+###### `trigger_window`<sup>Optional</sup> <a name="trigger_window" id="@cdktn/provider-datadog.monitor.Monitor.putMonitorThresholdWindows.parameter.triggerWindow"></a>
 
 - *Type:* str
 
 Describes how long a metric must be anomalous before an alert triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
 
 ---
 
-##### `put_scheduling_options` <a name="put_scheduling_options" id="@cdktf/provider-datadog.monitor.Monitor.putSchedulingOptions"></a>
+##### `put_scheduling_options` <a name="put_scheduling_options" id="@cdktn/provider-datadog.monitor.Monitor.putSchedulingOptions"></a>
 
 ```python
 def put_scheduling_options(
@@ -1077,242 +1107,259 @@ def put_scheduling_options(
 ) -> None
 ```
 
-###### `custom_schedule`<sup>Optional</sup> <a name="custom_schedule" id="@cdktf/provider-datadog.monitor.Monitor.putSchedulingOptions.parameter.customSchedule"></a>
+###### `custom_schedule`<sup>Optional</sup> <a name="custom_schedule" id="@cdktn/provider-datadog.monitor.Monitor.putSchedulingOptions.parameter.customSchedule"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
 
 custom_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
 
 ---
 
-###### `evaluation_window`<sup>Optional</sup> <a name="evaluation_window" id="@cdktf/provider-datadog.monitor.Monitor.putSchedulingOptions.parameter.evaluationWindow"></a>
+###### `evaluation_window`<sup>Optional</sup> <a name="evaluation_window" id="@cdktn/provider-datadog.monitor.Monitor.putSchedulingOptions.parameter.evaluationWindow"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
 
 evaluation_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
 
 ---
 
-##### `put_variables` <a name="put_variables" id="@cdktf/provider-datadog.monitor.Monitor.putVariables"></a>
+##### `put_variables` <a name="put_variables" id="@cdktn/provider-datadog.monitor.Monitor.putVariables"></a>
 
 ```python
 def put_variables(
   cloud_cost_query: IResolvable | typing.List[MonitorVariablesCloudCostQuery] = None,
+  data_quality_query: IResolvable | typing.List[MonitorVariablesDataQualityQuery] = None,
   event_query: IResolvable | typing.List[MonitorVariablesEventQuery] = None
 ) -> None
 ```
 
-###### `cloud_cost_query`<sup>Optional</sup> <a name="cloud_cost_query" id="@cdktf/provider-datadog.monitor.Monitor.putVariables.parameter.cloudCostQuery"></a>
+###### `cloud_cost_query`<sup>Optional</sup> <a name="cloud_cost_query" id="@cdktn/provider-datadog.monitor.Monitor.putVariables.parameter.cloudCostQuery"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 cloud_cost_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
 
 ---
 
-###### `event_query`<sup>Optional</sup> <a name="event_query" id="@cdktf/provider-datadog.monitor.Monitor.putVariables.parameter.eventQuery"></a>
+###### `data_quality_query`<sup>Optional</sup> <a name="data_quality_query" id="@cdktn/provider-datadog.monitor.Monitor.putVariables.parameter.dataQualityQuery"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]
+
+data_quality_query block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+
+---
+
+###### `event_query`<sup>Optional</sup> <a name="event_query" id="@cdktn/provider-datadog.monitor.Monitor.putVariables.parameter.eventQuery"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#event_query Monitor#event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#event_query Monitor#event_query}
 
 ---
 
-##### `reset_draft_status` <a name="reset_draft_status" id="@cdktf/provider-datadog.monitor.Monitor.resetDraftStatus"></a>
+##### `reset_assets` <a name="reset_assets" id="@cdktn/provider-datadog.monitor.Monitor.resetAssets"></a>
+
+```python
+def reset_assets() -> None
+```
+
+##### `reset_draft_status` <a name="reset_draft_status" id="@cdktn/provider-datadog.monitor.Monitor.resetDraftStatus"></a>
 
 ```python
 def reset_draft_status() -> None
 ```
 
-##### `reset_enable_logs_sample` <a name="reset_enable_logs_sample" id="@cdktf/provider-datadog.monitor.Monitor.resetEnableLogsSample"></a>
+##### `reset_enable_logs_sample` <a name="reset_enable_logs_sample" id="@cdktn/provider-datadog.monitor.Monitor.resetEnableLogsSample"></a>
 
 ```python
 def reset_enable_logs_sample() -> None
 ```
 
-##### `reset_enable_samples` <a name="reset_enable_samples" id="@cdktf/provider-datadog.monitor.Monitor.resetEnableSamples"></a>
+##### `reset_enable_samples` <a name="reset_enable_samples" id="@cdktn/provider-datadog.monitor.Monitor.resetEnableSamples"></a>
 
 ```python
 def reset_enable_samples() -> None
 ```
 
-##### `reset_escalation_message` <a name="reset_escalation_message" id="@cdktf/provider-datadog.monitor.Monitor.resetEscalationMessage"></a>
+##### `reset_escalation_message` <a name="reset_escalation_message" id="@cdktn/provider-datadog.monitor.Monitor.resetEscalationMessage"></a>
 
 ```python
 def reset_escalation_message() -> None
 ```
 
-##### `reset_evaluation_delay` <a name="reset_evaluation_delay" id="@cdktf/provider-datadog.monitor.Monitor.resetEvaluationDelay"></a>
+##### `reset_evaluation_delay` <a name="reset_evaluation_delay" id="@cdktn/provider-datadog.monitor.Monitor.resetEvaluationDelay"></a>
 
 ```python
 def reset_evaluation_delay() -> None
 ```
 
-##### `reset_force_delete` <a name="reset_force_delete" id="@cdktf/provider-datadog.monitor.Monitor.resetForceDelete"></a>
+##### `reset_force_delete` <a name="reset_force_delete" id="@cdktn/provider-datadog.monitor.Monitor.resetForceDelete"></a>
 
 ```python
 def reset_force_delete() -> None
 ```
 
-##### `reset_groupby_simple_monitor` <a name="reset_groupby_simple_monitor" id="@cdktf/provider-datadog.monitor.Monitor.resetGroupbySimpleMonitor"></a>
+##### `reset_groupby_simple_monitor` <a name="reset_groupby_simple_monitor" id="@cdktn/provider-datadog.monitor.Monitor.resetGroupbySimpleMonitor"></a>
 
 ```python
 def reset_groupby_simple_monitor() -> None
 ```
 
-##### `reset_group_retention_duration` <a name="reset_group_retention_duration" id="@cdktf/provider-datadog.monitor.Monitor.resetGroupRetentionDuration"></a>
+##### `reset_group_retention_duration` <a name="reset_group_retention_duration" id="@cdktn/provider-datadog.monitor.Monitor.resetGroupRetentionDuration"></a>
 
 ```python
 def reset_group_retention_duration() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-datadog.monitor.Monitor.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-datadog.monitor.Monitor.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_include_tags` <a name="reset_include_tags" id="@cdktf/provider-datadog.monitor.Monitor.resetIncludeTags"></a>
+##### `reset_include_tags` <a name="reset_include_tags" id="@cdktn/provider-datadog.monitor.Monitor.resetIncludeTags"></a>
 
 ```python
 def reset_include_tags() -> None
 ```
 
-##### `reset_locked` <a name="reset_locked" id="@cdktf/provider-datadog.monitor.Monitor.resetLocked"></a>
+##### `reset_locked` <a name="reset_locked" id="@cdktn/provider-datadog.monitor.Monitor.resetLocked"></a>
 
 ```python
 def reset_locked() -> None
 ```
 
-##### `reset_monitor_thresholds` <a name="reset_monitor_thresholds" id="@cdktf/provider-datadog.monitor.Monitor.resetMonitorThresholds"></a>
+##### `reset_monitor_thresholds` <a name="reset_monitor_thresholds" id="@cdktn/provider-datadog.monitor.Monitor.resetMonitorThresholds"></a>
 
 ```python
 def reset_monitor_thresholds() -> None
 ```
 
-##### `reset_monitor_threshold_windows` <a name="reset_monitor_threshold_windows" id="@cdktf/provider-datadog.monitor.Monitor.resetMonitorThresholdWindows"></a>
+##### `reset_monitor_threshold_windows` <a name="reset_monitor_threshold_windows" id="@cdktn/provider-datadog.monitor.Monitor.resetMonitorThresholdWindows"></a>
 
 ```python
 def reset_monitor_threshold_windows() -> None
 ```
 
-##### `reset_new_group_delay` <a name="reset_new_group_delay" id="@cdktf/provider-datadog.monitor.Monitor.resetNewGroupDelay"></a>
+##### `reset_new_group_delay` <a name="reset_new_group_delay" id="@cdktn/provider-datadog.monitor.Monitor.resetNewGroupDelay"></a>
 
 ```python
 def reset_new_group_delay() -> None
 ```
 
-##### `reset_new_host_delay` <a name="reset_new_host_delay" id="@cdktf/provider-datadog.monitor.Monitor.resetNewHostDelay"></a>
+##### `reset_new_host_delay` <a name="reset_new_host_delay" id="@cdktn/provider-datadog.monitor.Monitor.resetNewHostDelay"></a>
 
 ```python
 def reset_new_host_delay() -> None
 ```
 
-##### `reset_no_data_timeframe` <a name="reset_no_data_timeframe" id="@cdktf/provider-datadog.monitor.Monitor.resetNoDataTimeframe"></a>
+##### `reset_no_data_timeframe` <a name="reset_no_data_timeframe" id="@cdktn/provider-datadog.monitor.Monitor.resetNoDataTimeframe"></a>
 
 ```python
 def reset_no_data_timeframe() -> None
 ```
 
-##### `reset_notification_preset_name` <a name="reset_notification_preset_name" id="@cdktf/provider-datadog.monitor.Monitor.resetNotificationPresetName"></a>
+##### `reset_notification_preset_name` <a name="reset_notification_preset_name" id="@cdktn/provider-datadog.monitor.Monitor.resetNotificationPresetName"></a>
 
 ```python
 def reset_notification_preset_name() -> None
 ```
 
-##### `reset_notify_audit` <a name="reset_notify_audit" id="@cdktf/provider-datadog.monitor.Monitor.resetNotifyAudit"></a>
+##### `reset_notify_audit` <a name="reset_notify_audit" id="@cdktn/provider-datadog.monitor.Monitor.resetNotifyAudit"></a>
 
 ```python
 def reset_notify_audit() -> None
 ```
 
-##### `reset_notify_by` <a name="reset_notify_by" id="@cdktf/provider-datadog.monitor.Monitor.resetNotifyBy"></a>
+##### `reset_notify_by` <a name="reset_notify_by" id="@cdktn/provider-datadog.monitor.Monitor.resetNotifyBy"></a>
 
 ```python
 def reset_notify_by() -> None
 ```
 
-##### `reset_notify_no_data` <a name="reset_notify_no_data" id="@cdktf/provider-datadog.monitor.Monitor.resetNotifyNoData"></a>
+##### `reset_notify_no_data` <a name="reset_notify_no_data" id="@cdktn/provider-datadog.monitor.Monitor.resetNotifyNoData"></a>
 
 ```python
 def reset_notify_no_data() -> None
 ```
 
-##### `reset_on_missing_data` <a name="reset_on_missing_data" id="@cdktf/provider-datadog.monitor.Monitor.resetOnMissingData"></a>
+##### `reset_on_missing_data` <a name="reset_on_missing_data" id="@cdktn/provider-datadog.monitor.Monitor.resetOnMissingData"></a>
 
 ```python
 def reset_on_missing_data() -> None
 ```
 
-##### `reset_priority` <a name="reset_priority" id="@cdktf/provider-datadog.monitor.Monitor.resetPriority"></a>
+##### `reset_priority` <a name="reset_priority" id="@cdktn/provider-datadog.monitor.Monitor.resetPriority"></a>
 
 ```python
 def reset_priority() -> None
 ```
 
-##### `reset_renotify_interval` <a name="reset_renotify_interval" id="@cdktf/provider-datadog.monitor.Monitor.resetRenotifyInterval"></a>
+##### `reset_renotify_interval` <a name="reset_renotify_interval" id="@cdktn/provider-datadog.monitor.Monitor.resetRenotifyInterval"></a>
 
 ```python
 def reset_renotify_interval() -> None
 ```
 
-##### `reset_renotify_occurrences` <a name="reset_renotify_occurrences" id="@cdktf/provider-datadog.monitor.Monitor.resetRenotifyOccurrences"></a>
+##### `reset_renotify_occurrences` <a name="reset_renotify_occurrences" id="@cdktn/provider-datadog.monitor.Monitor.resetRenotifyOccurrences"></a>
 
 ```python
 def reset_renotify_occurrences() -> None
 ```
 
-##### `reset_renotify_statuses` <a name="reset_renotify_statuses" id="@cdktf/provider-datadog.monitor.Monitor.resetRenotifyStatuses"></a>
+##### `reset_renotify_statuses` <a name="reset_renotify_statuses" id="@cdktn/provider-datadog.monitor.Monitor.resetRenotifyStatuses"></a>
 
 ```python
 def reset_renotify_statuses() -> None
 ```
 
-##### `reset_require_full_window` <a name="reset_require_full_window" id="@cdktf/provider-datadog.monitor.Monitor.resetRequireFullWindow"></a>
+##### `reset_require_full_window` <a name="reset_require_full_window" id="@cdktn/provider-datadog.monitor.Monitor.resetRequireFullWindow"></a>
 
 ```python
 def reset_require_full_window() -> None
 ```
 
-##### `reset_restricted_roles` <a name="reset_restricted_roles" id="@cdktf/provider-datadog.monitor.Monitor.resetRestrictedRoles"></a>
+##### `reset_restricted_roles` <a name="reset_restricted_roles" id="@cdktn/provider-datadog.monitor.Monitor.resetRestrictedRoles"></a>
 
 ```python
 def reset_restricted_roles() -> None
 ```
 
-##### `reset_scheduling_options` <a name="reset_scheduling_options" id="@cdktf/provider-datadog.monitor.Monitor.resetSchedulingOptions"></a>
+##### `reset_scheduling_options` <a name="reset_scheduling_options" id="@cdktn/provider-datadog.monitor.Monitor.resetSchedulingOptions"></a>
 
 ```python
 def reset_scheduling_options() -> None
 ```
 
-##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-datadog.monitor.Monitor.resetTags"></a>
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-datadog.monitor.Monitor.resetTags"></a>
 
 ```python
 def reset_tags() -> None
 ```
 
-##### `reset_timeout_h` <a name="reset_timeout_h" id="@cdktf/provider-datadog.monitor.Monitor.resetTimeoutH"></a>
+##### `reset_timeout_h` <a name="reset_timeout_h" id="@cdktn/provider-datadog.monitor.Monitor.resetTimeoutH"></a>
 
 ```python
 def reset_timeout_h() -> None
 ```
 
-##### `reset_validate` <a name="reset_validate" id="@cdktf/provider-datadog.monitor.Monitor.resetValidate"></a>
+##### `reset_validate` <a name="reset_validate" id="@cdktn/provider-datadog.monitor.Monitor.resetValidate"></a>
 
 ```python
 def reset_validate() -> None
 ```
 
-##### `reset_variables` <a name="reset_variables" id="@cdktf/provider-datadog.monitor.Monitor.resetVariables"></a>
+##### `reset_variables` <a name="reset_variables" id="@cdktn/provider-datadog.monitor.Monitor.resetVariables"></a>
 
 ```python
 def reset_variables() -> None
@@ -1322,17 +1369,17 @@ def reset_variables() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a Monitor resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a Monitor resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-datadog.monitor.Monitor.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-datadog.monitor.Monitor.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.Monitor.is_construct(
   x: typing.Any
@@ -1355,7 +1402,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.monitor.Monitor.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.monitor.Monitor.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1363,42 +1410,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-datadog.monitor.Monitor.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.Monitor.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.monitor.Monitor.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-datadog.monitor.Monitor.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.Monitor.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.monitor.Monitor.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.monitor.Monitor.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-datadog.monitor.Monitor.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.Monitor.generate_config_for_import(
   scope: Construct,
@@ -1408,9 +1455,9 @@ monitor.Monitor.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a Monitor resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a Monitor resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1418,7 +1465,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1426,19 +1473,19 @@ The construct id used in the generated config for the Monitor to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing Monitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.monitor.Monitor.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the Monitor to import is found.
 
@@ -1448,96 +1495,98 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference">MonitorMonitorThresholdsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference">MonitorMonitorThresholdWindowsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference">MonitorSchedulingOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference">MonitorVariablesOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.draftStatusInput">draft_status_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">enable_logs_sample_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput">enable_samples_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessageInput">escalation_message_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelayInput">evaluation_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput">force_delete_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">groupby_simple_monitor_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDurationInput">group_retention_duration_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput">include_tags_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.lockedInput">locked_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdsInput">monitor_thresholds_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindowsInput">monitor_threshold_windows_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newGroupDelayInput">new_group_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelayInput">new_host_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframeInput">no_data_timeframe_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetNameInput">notification_preset_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput">notify_audit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyByInput">notify_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput">notify_no_data_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingDataInput">on_missing_data_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priorityInput">priority_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyIntervalInput">renotify_interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrencesInput">renotify_occurrences_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatusesInput">renotify_statuses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput">require_full_window_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRolesInput">restricted_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptionsInput">scheduling_options_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutHInput">timeout_h_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validateInput">validate_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.variablesInput">variables_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.draftStatus">draft_status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.enableSamples">enable_samples</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.escalationMessage">escalation_message</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.includeTags">include_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.message">message</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit">notify_audit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.onMissingData">on_missing_data</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.priority">priority</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.validate">validate</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.assets">assets</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList">MonitorAssetsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference">MonitorMonitorThresholdsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference">MonitorMonitorThresholdWindowsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference">MonitorSchedulingOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.variables">variables</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference">MonitorVariablesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.assetsInput">assets_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.draftStatusInput">draft_status_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.enableLogsSampleInput">enable_logs_sample_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.enableSamplesInput">enable_samples_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.escalationMessageInput">escalation_message_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.evaluationDelayInput">evaluation_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.forceDeleteInput">force_delete_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput">groupby_simple_monitor_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.groupRetentionDurationInput">group_retention_duration_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.includeTagsInput">include_tags_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.lockedInput">locked_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.messageInput">message_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholdsInput">monitor_thresholds_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholdWindowsInput">monitor_threshold_windows_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.newGroupDelayInput">new_group_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.newHostDelayInput">new_host_delay_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.noDataTimeframeInput">no_data_timeframe_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notificationPresetNameInput">notification_preset_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notifyAuditInput">notify_audit_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notifyByInput">notify_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notifyNoDataInput">notify_no_data_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.onMissingDataInput">on_missing_data_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.priorityInput">priority_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.renotifyIntervalInput">renotify_interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.renotifyOccurrencesInput">renotify_occurrences_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.renotifyStatusesInput">renotify_statuses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.requireFullWindowInput">require_full_window_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.restrictedRolesInput">restricted_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.schedulingOptionsInput">scheduling_options_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.timeoutHInput">timeout_h_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.validateInput">validate_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.variablesInput">variables_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.draftStatus">draft_status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.enableSamples">enable_samples</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.escalationMessage">escalation_message</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.includeTags">include_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.message">message</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notifyAudit">notify_audit</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.onMissingData">on_missing_data</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.priority">priority</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.query">query</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.validate">validate</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-datadog.monitor.Monitor.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-datadog.monitor.Monitor.property.node"></a>
 
 ```python
 node: Node
@@ -1549,17 +1598,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-datadog.monitor.Monitor.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-datadog.monitor.Monitor.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.Monitor.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.Monitor.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1569,7 +1618,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-datadog.monitor.Monitor.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-datadog.monitor.Monitor.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1579,7 +1628,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-datadog.monitor.Monitor.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-datadog.monitor.Monitor.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1589,7 +1638,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-datadog.monitor.Monitor.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-datadog.monitor.Monitor.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1599,37 +1648,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-datadog.monitor.Monitor.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-datadog.monitor.Monitor.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.Monitor.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-datadog.monitor.Monitor.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.Monitor.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.monitor.Monitor.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-datadog.monitor.Monitor.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-datadog.monitor.Monitor.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1639,87 +1688,107 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-datadog.monitor.Monitor.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-datadog.monitor.Monitor.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-datadog.monitor.Monitor.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.monitor.Monitor.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.monitor.Monitor.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.monitor.Monitor.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.Monitor.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-datadog.monitor.Monitor.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `monitor_thresholds`<sup>Required</sup> <a name="monitor_thresholds" id="@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholds"></a>
+##### `assets`<sup>Required</sup> <a name="assets" id="@cdktn/provider-datadog.monitor.Monitor.property.assets"></a>
+
+```python
+assets: MonitorAssetsList
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList">MonitorAssetsList</a>
+
+---
+
+##### `monitor_thresholds`<sup>Required</sup> <a name="monitor_thresholds" id="@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholds"></a>
 
 ```python
 monitor_thresholds: MonitorMonitorThresholdsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference">MonitorMonitorThresholdsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference">MonitorMonitorThresholdsOutputReference</a>
 
 ---
 
-##### `monitor_threshold_windows`<sup>Required</sup> <a name="monitor_threshold_windows" id="@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindows"></a>
+##### `monitor_threshold_windows`<sup>Required</sup> <a name="monitor_threshold_windows" id="@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholdWindows"></a>
 
 ```python
 monitor_threshold_windows: MonitorMonitorThresholdWindowsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference">MonitorMonitorThresholdWindowsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference">MonitorMonitorThresholdWindowsOutputReference</a>
 
 ---
 
-##### `scheduling_options`<sup>Required</sup> <a name="scheduling_options" id="@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptions"></a>
+##### `scheduling_options`<sup>Required</sup> <a name="scheduling_options" id="@cdktn/provider-datadog.monitor.Monitor.property.schedulingOptions"></a>
 
 ```python
 scheduling_options: MonitorSchedulingOptionsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference">MonitorSchedulingOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference">MonitorSchedulingOptionsOutputReference</a>
 
 ---
 
-##### `variables`<sup>Required</sup> <a name="variables" id="@cdktf/provider-datadog.monitor.Monitor.property.variables"></a>
+##### `variables`<sup>Required</sup> <a name="variables" id="@cdktn/provider-datadog.monitor.Monitor.property.variables"></a>
 
 ```python
 variables: MonitorVariablesOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference">MonitorVariablesOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference">MonitorVariablesOutputReference</a>
 
 ---
 
-##### `draft_status_input`<sup>Optional</sup> <a name="draft_status_input" id="@cdktf/provider-datadog.monitor.Monitor.property.draftStatusInput"></a>
+##### `assets_input`<sup>Optional</sup> <a name="assets_input" id="@cdktn/provider-datadog.monitor.Monitor.property.assetsInput"></a>
+
+```python
+assets_input: IResolvable | typing.List[MonitorAssets]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]
+
+---
+
+##### `draft_status_input`<sup>Optional</sup> <a name="draft_status_input" id="@cdktn/provider-datadog.monitor.Monitor.property.draftStatusInput"></a>
 
 ```python
 draft_status_input: str
@@ -1729,27 +1798,27 @@ draft_status_input: str
 
 ---
 
-##### `enable_logs_sample_input`<sup>Optional</sup> <a name="enable_logs_sample_input" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSampleInput"></a>
+##### `enable_logs_sample_input`<sup>Optional</sup> <a name="enable_logs_sample_input" id="@cdktn/provider-datadog.monitor.Monitor.property.enableLogsSampleInput"></a>
 
 ```python
 enable_logs_sample_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `enable_samples_input`<sup>Optional</sup> <a name="enable_samples_input" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamplesInput"></a>
+##### `enable_samples_input`<sup>Optional</sup> <a name="enable_samples_input" id="@cdktn/provider-datadog.monitor.Monitor.property.enableSamplesInput"></a>
 
 ```python
 enable_samples_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `escalation_message_input`<sup>Optional</sup> <a name="escalation_message_input" id="@cdktf/provider-datadog.monitor.Monitor.property.escalationMessageInput"></a>
+##### `escalation_message_input`<sup>Optional</sup> <a name="escalation_message_input" id="@cdktn/provider-datadog.monitor.Monitor.property.escalationMessageInput"></a>
 
 ```python
 escalation_message_input: str
@@ -1759,7 +1828,7 @@ escalation_message_input: str
 
 ---
 
-##### `evaluation_delay_input`<sup>Optional</sup> <a name="evaluation_delay_input" id="@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelayInput"></a>
+##### `evaluation_delay_input`<sup>Optional</sup> <a name="evaluation_delay_input" id="@cdktn/provider-datadog.monitor.Monitor.property.evaluationDelayInput"></a>
 
 ```python
 evaluation_delay_input: typing.Union[int, float]
@@ -1769,27 +1838,27 @@ evaluation_delay_input: typing.Union[int, float]
 
 ---
 
-##### `force_delete_input`<sup>Optional</sup> <a name="force_delete_input" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDeleteInput"></a>
+##### `force_delete_input`<sup>Optional</sup> <a name="force_delete_input" id="@cdktn/provider-datadog.monitor.Monitor.property.forceDeleteInput"></a>
 
 ```python
 force_delete_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `groupby_simple_monitor_input`<sup>Optional</sup> <a name="groupby_simple_monitor_input" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput"></a>
+##### `groupby_simple_monitor_input`<sup>Optional</sup> <a name="groupby_simple_monitor_input" id="@cdktn/provider-datadog.monitor.Monitor.property.groupbySimpleMonitorInput"></a>
 
 ```python
 groupby_simple_monitor_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `group_retention_duration_input`<sup>Optional</sup> <a name="group_retention_duration_input" id="@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDurationInput"></a>
+##### `group_retention_duration_input`<sup>Optional</sup> <a name="group_retention_duration_input" id="@cdktn/provider-datadog.monitor.Monitor.property.groupRetentionDurationInput"></a>
 
 ```python
 group_retention_duration_input: str
@@ -1799,7 +1868,7 @@ group_retention_duration_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-datadog.monitor.Monitor.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-datadog.monitor.Monitor.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1809,27 +1878,27 @@ id_input: str
 
 ---
 
-##### `include_tags_input`<sup>Optional</sup> <a name="include_tags_input" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTagsInput"></a>
+##### `include_tags_input`<sup>Optional</sup> <a name="include_tags_input" id="@cdktn/provider-datadog.monitor.Monitor.property.includeTagsInput"></a>
 
 ```python
 include_tags_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `locked_input`<sup>Optional</sup> <a name="locked_input" id="@cdktf/provider-datadog.monitor.Monitor.property.lockedInput"></a>
+##### `locked_input`<sup>Optional</sup> <a name="locked_input" id="@cdktn/provider-datadog.monitor.Monitor.property.lockedInput"></a>
 
 ```python
 locked_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktf/provider-datadog.monitor.Monitor.property.messageInput"></a>
+##### `message_input`<sup>Optional</sup> <a name="message_input" id="@cdktn/provider-datadog.monitor.Monitor.property.messageInput"></a>
 
 ```python
 message_input: str
@@ -1839,27 +1908,27 @@ message_input: str
 
 ---
 
-##### `monitor_thresholds_input`<sup>Optional</sup> <a name="monitor_thresholds_input" id="@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdsInput"></a>
+##### `monitor_thresholds_input`<sup>Optional</sup> <a name="monitor_thresholds_input" id="@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholdsInput"></a>
 
 ```python
 monitor_thresholds_input: MonitorMonitorThresholds
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
 
 ---
 
-##### `monitor_threshold_windows_input`<sup>Optional</sup> <a name="monitor_threshold_windows_input" id="@cdktf/provider-datadog.monitor.Monitor.property.monitorThresholdWindowsInput"></a>
+##### `monitor_threshold_windows_input`<sup>Optional</sup> <a name="monitor_threshold_windows_input" id="@cdktn/provider-datadog.monitor.Monitor.property.monitorThresholdWindowsInput"></a>
 
 ```python
 monitor_threshold_windows_input: MonitorMonitorThresholdWindows
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-datadog.monitor.Monitor.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.monitor.Monitor.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1869,7 +1938,7 @@ name_input: str
 
 ---
 
-##### `new_group_delay_input`<sup>Optional</sup> <a name="new_group_delay_input" id="@cdktf/provider-datadog.monitor.Monitor.property.newGroupDelayInput"></a>
+##### `new_group_delay_input`<sup>Optional</sup> <a name="new_group_delay_input" id="@cdktn/provider-datadog.monitor.Monitor.property.newGroupDelayInput"></a>
 
 ```python
 new_group_delay_input: typing.Union[int, float]
@@ -1879,7 +1948,7 @@ new_group_delay_input: typing.Union[int, float]
 
 ---
 
-##### `new_host_delay_input`<sup>Optional</sup> <a name="new_host_delay_input" id="@cdktf/provider-datadog.monitor.Monitor.property.newHostDelayInput"></a>
+##### `new_host_delay_input`<sup>Optional</sup> <a name="new_host_delay_input" id="@cdktn/provider-datadog.monitor.Monitor.property.newHostDelayInput"></a>
 
 ```python
 new_host_delay_input: typing.Union[int, float]
@@ -1889,7 +1958,7 @@ new_host_delay_input: typing.Union[int, float]
 
 ---
 
-##### `no_data_timeframe_input`<sup>Optional</sup> <a name="no_data_timeframe_input" id="@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframeInput"></a>
+##### `no_data_timeframe_input`<sup>Optional</sup> <a name="no_data_timeframe_input" id="@cdktn/provider-datadog.monitor.Monitor.property.noDataTimeframeInput"></a>
 
 ```python
 no_data_timeframe_input: typing.Union[int, float]
@@ -1899,7 +1968,7 @@ no_data_timeframe_input: typing.Union[int, float]
 
 ---
 
-##### `notification_preset_name_input`<sup>Optional</sup> <a name="notification_preset_name_input" id="@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetNameInput"></a>
+##### `notification_preset_name_input`<sup>Optional</sup> <a name="notification_preset_name_input" id="@cdktn/provider-datadog.monitor.Monitor.property.notificationPresetNameInput"></a>
 
 ```python
 notification_preset_name_input: str
@@ -1909,17 +1978,17 @@ notification_preset_name_input: str
 
 ---
 
-##### `notify_audit_input`<sup>Optional</sup> <a name="notify_audit_input" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAuditInput"></a>
+##### `notify_audit_input`<sup>Optional</sup> <a name="notify_audit_input" id="@cdktn/provider-datadog.monitor.Monitor.property.notifyAuditInput"></a>
 
 ```python
 notify_audit_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `notify_by_input`<sup>Optional</sup> <a name="notify_by_input" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyByInput"></a>
+##### `notify_by_input`<sup>Optional</sup> <a name="notify_by_input" id="@cdktn/provider-datadog.monitor.Monitor.property.notifyByInput"></a>
 
 ```python
 notify_by_input: typing.List[str]
@@ -1929,17 +1998,17 @@ notify_by_input: typing.List[str]
 
 ---
 
-##### `notify_no_data_input`<sup>Optional</sup> <a name="notify_no_data_input" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoDataInput"></a>
+##### `notify_no_data_input`<sup>Optional</sup> <a name="notify_no_data_input" id="@cdktn/provider-datadog.monitor.Monitor.property.notifyNoDataInput"></a>
 
 ```python
 notify_no_data_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `on_missing_data_input`<sup>Optional</sup> <a name="on_missing_data_input" id="@cdktf/provider-datadog.monitor.Monitor.property.onMissingDataInput"></a>
+##### `on_missing_data_input`<sup>Optional</sup> <a name="on_missing_data_input" id="@cdktn/provider-datadog.monitor.Monitor.property.onMissingDataInput"></a>
 
 ```python
 on_missing_data_input: str
@@ -1949,7 +2018,7 @@ on_missing_data_input: str
 
 ---
 
-##### `priority_input`<sup>Optional</sup> <a name="priority_input" id="@cdktf/provider-datadog.monitor.Monitor.property.priorityInput"></a>
+##### `priority_input`<sup>Optional</sup> <a name="priority_input" id="@cdktn/provider-datadog.monitor.Monitor.property.priorityInput"></a>
 
 ```python
 priority_input: str
@@ -1959,7 +2028,7 @@ priority_input: str
 
 ---
 
-##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktf/provider-datadog.monitor.Monitor.property.queryInput"></a>
+##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktn/provider-datadog.monitor.Monitor.property.queryInput"></a>
 
 ```python
 query_input: str
@@ -1969,7 +2038,7 @@ query_input: str
 
 ---
 
-##### `renotify_interval_input`<sup>Optional</sup> <a name="renotify_interval_input" id="@cdktf/provider-datadog.monitor.Monitor.property.renotifyIntervalInput"></a>
+##### `renotify_interval_input`<sup>Optional</sup> <a name="renotify_interval_input" id="@cdktn/provider-datadog.monitor.Monitor.property.renotifyIntervalInput"></a>
 
 ```python
 renotify_interval_input: typing.Union[int, float]
@@ -1979,7 +2048,7 @@ renotify_interval_input: typing.Union[int, float]
 
 ---
 
-##### `renotify_occurrences_input`<sup>Optional</sup> <a name="renotify_occurrences_input" id="@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrencesInput"></a>
+##### `renotify_occurrences_input`<sup>Optional</sup> <a name="renotify_occurrences_input" id="@cdktn/provider-datadog.monitor.Monitor.property.renotifyOccurrencesInput"></a>
 
 ```python
 renotify_occurrences_input: typing.Union[int, float]
@@ -1989,7 +2058,7 @@ renotify_occurrences_input: typing.Union[int, float]
 
 ---
 
-##### `renotify_statuses_input`<sup>Optional</sup> <a name="renotify_statuses_input" id="@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatusesInput"></a>
+##### `renotify_statuses_input`<sup>Optional</sup> <a name="renotify_statuses_input" id="@cdktn/provider-datadog.monitor.Monitor.property.renotifyStatusesInput"></a>
 
 ```python
 renotify_statuses_input: typing.List[str]
@@ -1999,17 +2068,17 @@ renotify_statuses_input: typing.List[str]
 
 ---
 
-##### `require_full_window_input`<sup>Optional</sup> <a name="require_full_window_input" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindowInput"></a>
+##### `require_full_window_input`<sup>Optional</sup> <a name="require_full_window_input" id="@cdktn/provider-datadog.monitor.Monitor.property.requireFullWindowInput"></a>
 
 ```python
 require_full_window_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `restricted_roles_input`<sup>Optional</sup> <a name="restricted_roles_input" id="@cdktf/provider-datadog.monitor.Monitor.property.restrictedRolesInput"></a>
+##### `restricted_roles_input`<sup>Optional</sup> <a name="restricted_roles_input" id="@cdktn/provider-datadog.monitor.Monitor.property.restrictedRolesInput"></a>
 
 ```python
 restricted_roles_input: typing.List[str]
@@ -2019,17 +2088,17 @@ restricted_roles_input: typing.List[str]
 
 ---
 
-##### `scheduling_options_input`<sup>Optional</sup> <a name="scheduling_options_input" id="@cdktf/provider-datadog.monitor.Monitor.property.schedulingOptionsInput"></a>
+##### `scheduling_options_input`<sup>Optional</sup> <a name="scheduling_options_input" id="@cdktn/provider-datadog.monitor.Monitor.property.schedulingOptionsInput"></a>
 
 ```python
 scheduling_options_input: MonitorSchedulingOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
 
 ---
 
-##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-datadog.monitor.Monitor.property.tagsInput"></a>
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-datadog.monitor.Monitor.property.tagsInput"></a>
 
 ```python
 tags_input: typing.List[str]
@@ -2039,7 +2108,7 @@ tags_input: typing.List[str]
 
 ---
 
-##### `timeout_h_input`<sup>Optional</sup> <a name="timeout_h_input" id="@cdktf/provider-datadog.monitor.Monitor.property.timeoutHInput"></a>
+##### `timeout_h_input`<sup>Optional</sup> <a name="timeout_h_input" id="@cdktn/provider-datadog.monitor.Monitor.property.timeoutHInput"></a>
 
 ```python
 timeout_h_input: typing.Union[int, float]
@@ -2049,7 +2118,7 @@ timeout_h_input: typing.Union[int, float]
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-datadog.monitor.Monitor.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-datadog.monitor.Monitor.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -2059,27 +2128,27 @@ type_input: str
 
 ---
 
-##### `validate_input`<sup>Optional</sup> <a name="validate_input" id="@cdktf/provider-datadog.monitor.Monitor.property.validateInput"></a>
+##### `validate_input`<sup>Optional</sup> <a name="validate_input" id="@cdktn/provider-datadog.monitor.Monitor.property.validateInput"></a>
 
 ```python
 validate_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `variables_input`<sup>Optional</sup> <a name="variables_input" id="@cdktf/provider-datadog.monitor.Monitor.property.variablesInput"></a>
+##### `variables_input`<sup>Optional</sup> <a name="variables_input" id="@cdktn/provider-datadog.monitor.Monitor.property.variablesInput"></a>
 
 ```python
 variables_input: MonitorVariables
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
 
 ---
 
-##### `draft_status`<sup>Required</sup> <a name="draft_status" id="@cdktf/provider-datadog.monitor.Monitor.property.draftStatus"></a>
+##### `draft_status`<sup>Required</sup> <a name="draft_status" id="@cdktn/provider-datadog.monitor.Monitor.property.draftStatus"></a>
 
 ```python
 draft_status: str
@@ -2089,27 +2158,27 @@ draft_status: str
 
 ---
 
-##### `enable_logs_sample`<sup>Required</sup> <a name="enable_logs_sample" id="@cdktf/provider-datadog.monitor.Monitor.property.enableLogsSample"></a>
+##### `enable_logs_sample`<sup>Required</sup> <a name="enable_logs_sample" id="@cdktn/provider-datadog.monitor.Monitor.property.enableLogsSample"></a>
 
 ```python
 enable_logs_sample: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `enable_samples`<sup>Required</sup> <a name="enable_samples" id="@cdktf/provider-datadog.monitor.Monitor.property.enableSamples"></a>
+##### `enable_samples`<sup>Required</sup> <a name="enable_samples" id="@cdktn/provider-datadog.monitor.Monitor.property.enableSamples"></a>
 
 ```python
 enable_samples: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `escalation_message`<sup>Required</sup> <a name="escalation_message" id="@cdktf/provider-datadog.monitor.Monitor.property.escalationMessage"></a>
+##### `escalation_message`<sup>Required</sup> <a name="escalation_message" id="@cdktn/provider-datadog.monitor.Monitor.property.escalationMessage"></a>
 
 ```python
 escalation_message: str
@@ -2119,7 +2188,7 @@ escalation_message: str
 
 ---
 
-##### `evaluation_delay`<sup>Required</sup> <a name="evaluation_delay" id="@cdktf/provider-datadog.monitor.Monitor.property.evaluationDelay"></a>
+##### `evaluation_delay`<sup>Required</sup> <a name="evaluation_delay" id="@cdktn/provider-datadog.monitor.Monitor.property.evaluationDelay"></a>
 
 ```python
 evaluation_delay: typing.Union[int, float]
@@ -2129,27 +2198,27 @@ evaluation_delay: typing.Union[int, float]
 
 ---
 
-##### `force_delete`<sup>Required</sup> <a name="force_delete" id="@cdktf/provider-datadog.monitor.Monitor.property.forceDelete"></a>
+##### `force_delete`<sup>Required</sup> <a name="force_delete" id="@cdktn/provider-datadog.monitor.Monitor.property.forceDelete"></a>
 
 ```python
 force_delete: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `groupby_simple_monitor`<sup>Required</sup> <a name="groupby_simple_monitor" id="@cdktf/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor"></a>
+##### `groupby_simple_monitor`<sup>Required</sup> <a name="groupby_simple_monitor" id="@cdktn/provider-datadog.monitor.Monitor.property.groupbySimpleMonitor"></a>
 
 ```python
 groupby_simple_monitor: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `group_retention_duration`<sup>Required</sup> <a name="group_retention_duration" id="@cdktf/provider-datadog.monitor.Monitor.property.groupRetentionDuration"></a>
+##### `group_retention_duration`<sup>Required</sup> <a name="group_retention_duration" id="@cdktn/provider-datadog.monitor.Monitor.property.groupRetentionDuration"></a>
 
 ```python
 group_retention_duration: str
@@ -2159,7 +2228,7 @@ group_retention_duration: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.monitor.Monitor.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.monitor.Monitor.property.id"></a>
 
 ```python
 id: str
@@ -2169,27 +2238,27 @@ id: str
 
 ---
 
-##### `include_tags`<sup>Required</sup> <a name="include_tags" id="@cdktf/provider-datadog.monitor.Monitor.property.includeTags"></a>
+##### `include_tags`<sup>Required</sup> <a name="include_tags" id="@cdktn/provider-datadog.monitor.Monitor.property.includeTags"></a>
 
 ```python
 include_tags: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `locked`<sup>Required</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.Monitor.property.locked"></a>
+##### `locked`<sup>Required</sup> <a name="locked" id="@cdktn/provider-datadog.monitor.Monitor.property.locked"></a>
 
 ```python
 locked: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-datadog.monitor.Monitor.property.message"></a>
+##### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-datadog.monitor.Monitor.property.message"></a>
 
 ```python
 message: str
@@ -2199,7 +2268,7 @@ message: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.monitor.Monitor.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.Monitor.property.name"></a>
 
 ```python
 name: str
@@ -2209,7 +2278,7 @@ name: str
 
 ---
 
-##### `new_group_delay`<sup>Required</sup> <a name="new_group_delay" id="@cdktf/provider-datadog.monitor.Monitor.property.newGroupDelay"></a>
+##### `new_group_delay`<sup>Required</sup> <a name="new_group_delay" id="@cdktn/provider-datadog.monitor.Monitor.property.newGroupDelay"></a>
 
 ```python
 new_group_delay: typing.Union[int, float]
@@ -2219,7 +2288,7 @@ new_group_delay: typing.Union[int, float]
 
 ---
 
-##### `new_host_delay`<sup>Required</sup> <a name="new_host_delay" id="@cdktf/provider-datadog.monitor.Monitor.property.newHostDelay"></a>
+##### `new_host_delay`<sup>Required</sup> <a name="new_host_delay" id="@cdktn/provider-datadog.monitor.Monitor.property.newHostDelay"></a>
 
 ```python
 new_host_delay: typing.Union[int, float]
@@ -2229,7 +2298,7 @@ new_host_delay: typing.Union[int, float]
 
 ---
 
-##### `no_data_timeframe`<sup>Required</sup> <a name="no_data_timeframe" id="@cdktf/provider-datadog.monitor.Monitor.property.noDataTimeframe"></a>
+##### `no_data_timeframe`<sup>Required</sup> <a name="no_data_timeframe" id="@cdktn/provider-datadog.monitor.Monitor.property.noDataTimeframe"></a>
 
 ```python
 no_data_timeframe: typing.Union[int, float]
@@ -2239,7 +2308,7 @@ no_data_timeframe: typing.Union[int, float]
 
 ---
 
-##### `notification_preset_name`<sup>Required</sup> <a name="notification_preset_name" id="@cdktf/provider-datadog.monitor.Monitor.property.notificationPresetName"></a>
+##### `notification_preset_name`<sup>Required</sup> <a name="notification_preset_name" id="@cdktn/provider-datadog.monitor.Monitor.property.notificationPresetName"></a>
 
 ```python
 notification_preset_name: str
@@ -2249,17 +2318,17 @@ notification_preset_name: str
 
 ---
 
-##### `notify_audit`<sup>Required</sup> <a name="notify_audit" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyAudit"></a>
+##### `notify_audit`<sup>Required</sup> <a name="notify_audit" id="@cdktn/provider-datadog.monitor.Monitor.property.notifyAudit"></a>
 
 ```python
 notify_audit: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `notify_by`<sup>Required</sup> <a name="notify_by" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyBy"></a>
+##### `notify_by`<sup>Required</sup> <a name="notify_by" id="@cdktn/provider-datadog.monitor.Monitor.property.notifyBy"></a>
 
 ```python
 notify_by: typing.List[str]
@@ -2269,17 +2338,17 @@ notify_by: typing.List[str]
 
 ---
 
-##### `notify_no_data`<sup>Required</sup> <a name="notify_no_data" id="@cdktf/provider-datadog.monitor.Monitor.property.notifyNoData"></a>
+##### `notify_no_data`<sup>Required</sup> <a name="notify_no_data" id="@cdktn/provider-datadog.monitor.Monitor.property.notifyNoData"></a>
 
 ```python
 notify_no_data: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `on_missing_data`<sup>Required</sup> <a name="on_missing_data" id="@cdktf/provider-datadog.monitor.Monitor.property.onMissingData"></a>
+##### `on_missing_data`<sup>Required</sup> <a name="on_missing_data" id="@cdktn/provider-datadog.monitor.Monitor.property.onMissingData"></a>
 
 ```python
 on_missing_data: str
@@ -2289,7 +2358,7 @@ on_missing_data: str
 
 ---
 
-##### `priority`<sup>Required</sup> <a name="priority" id="@cdktf/provider-datadog.monitor.Monitor.property.priority"></a>
+##### `priority`<sup>Required</sup> <a name="priority" id="@cdktn/provider-datadog.monitor.Monitor.property.priority"></a>
 
 ```python
 priority: str
@@ -2299,7 +2368,7 @@ priority: str
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.Monitor.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.Monitor.property.query"></a>
 
 ```python
 query: str
@@ -2309,7 +2378,7 @@ query: str
 
 ---
 
-##### `renotify_interval`<sup>Required</sup> <a name="renotify_interval" id="@cdktf/provider-datadog.monitor.Monitor.property.renotifyInterval"></a>
+##### `renotify_interval`<sup>Required</sup> <a name="renotify_interval" id="@cdktn/provider-datadog.monitor.Monitor.property.renotifyInterval"></a>
 
 ```python
 renotify_interval: typing.Union[int, float]
@@ -2319,7 +2388,7 @@ renotify_interval: typing.Union[int, float]
 
 ---
 
-##### `renotify_occurrences`<sup>Required</sup> <a name="renotify_occurrences" id="@cdktf/provider-datadog.monitor.Monitor.property.renotifyOccurrences"></a>
+##### `renotify_occurrences`<sup>Required</sup> <a name="renotify_occurrences" id="@cdktn/provider-datadog.monitor.Monitor.property.renotifyOccurrences"></a>
 
 ```python
 renotify_occurrences: typing.Union[int, float]
@@ -2329,7 +2398,7 @@ renotify_occurrences: typing.Union[int, float]
 
 ---
 
-##### `renotify_statuses`<sup>Required</sup> <a name="renotify_statuses" id="@cdktf/provider-datadog.monitor.Monitor.property.renotifyStatuses"></a>
+##### `renotify_statuses`<sup>Required</sup> <a name="renotify_statuses" id="@cdktn/provider-datadog.monitor.Monitor.property.renotifyStatuses"></a>
 
 ```python
 renotify_statuses: typing.List[str]
@@ -2339,17 +2408,17 @@ renotify_statuses: typing.List[str]
 
 ---
 
-##### `require_full_window`<sup>Required</sup> <a name="require_full_window" id="@cdktf/provider-datadog.monitor.Monitor.property.requireFullWindow"></a>
+##### `require_full_window`<sup>Required</sup> <a name="require_full_window" id="@cdktn/provider-datadog.monitor.Monitor.property.requireFullWindow"></a>
 
 ```python
 require_full_window: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `restricted_roles`<sup>Required</sup> <a name="restricted_roles" id="@cdktf/provider-datadog.monitor.Monitor.property.restrictedRoles"></a>
+##### `restricted_roles`<sup>Required</sup> <a name="restricted_roles" id="@cdktn/provider-datadog.monitor.Monitor.property.restrictedRoles"></a>
 
 ```python
 restricted_roles: typing.List[str]
@@ -2359,7 +2428,7 @@ restricted_roles: typing.List[str]
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-datadog.monitor.Monitor.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-datadog.monitor.Monitor.property.tags"></a>
 
 ```python
 tags: typing.List[str]
@@ -2369,7 +2438,7 @@ tags: typing.List[str]
 
 ---
 
-##### `timeout_h`<sup>Required</sup> <a name="timeout_h" id="@cdktf/provider-datadog.monitor.Monitor.property.timeoutH"></a>
+##### `timeout_h`<sup>Required</sup> <a name="timeout_h" id="@cdktn/provider-datadog.monitor.Monitor.property.timeoutH"></a>
 
 ```python
 timeout_h: typing.Union[int, float]
@@ -2379,7 +2448,7 @@ timeout_h: typing.Union[int, float]
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-datadog.monitor.Monitor.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-datadog.monitor.Monitor.property.type"></a>
 
 ```python
 type: str
@@ -2389,13 +2458,13 @@ type: str
 
 ---
 
-##### `validate`<sup>Required</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.Monitor.property.validate"></a>
+##### `validate`<sup>Required</sup> <a name="validate" id="@cdktn/provider-datadog.monitor.Monitor.property.validate"></a>
 
 ```python
 validate: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2403,11 +2472,11 @@ validate: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.Monitor.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.Monitor.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-datadog.monitor.Monitor.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-datadog.monitor.Monitor.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -2419,12 +2488,110 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### MonitorConfig <a name="MonitorConfig" id="@cdktf/provider-datadog.monitor.MonitorConfig"></a>
+### MonitorAssets <a name="MonitorAssets" id="@cdktn/provider-datadog.monitor.MonitorAssets"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorAssets.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorAssets(
+  category: str,
+  name: str,
+  url: str,
+  resource_key: str = None,
+  resource_type: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssets.property.category">category</a></code> | <code>str</code> | Type of asset the entity represents on a monitor. Valid values are `runbook`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssets.property.name">name</a></code> | <code>str</code> | Name for the monitor asset. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssets.property.url">url</a></code> | <code>str</code> | URL for the asset. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssets.property.resourceKey">resource_key</a></code> | <code>str</code> | Identifier of the internal Datadog resource that this asset represents. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssets.property.resourceType">resource_type</a></code> | <code>str</code> | Type of internal Datadog resource associated with a monitor asset. Valid values are `notebook`. |
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.monitor.MonitorAssets.property.category"></a>
+
+```python
+category: str
+```
+
+- *Type:* str
+
+Type of asset the entity represents on a monitor. Valid values are `runbook`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#category Monitor#category}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorAssets.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Name for the monitor asset.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-datadog.monitor.MonitorAssets.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+URL for the asset.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#url Monitor#url}
+
+---
+
+##### `resource_key`<sup>Optional</sup> <a name="resource_key" id="@cdktn/provider-datadog.monitor.MonitorAssets.property.resourceKey"></a>
+
+```python
+resource_key: str
+```
+
+- *Type:* str
+
+Identifier of the internal Datadog resource that this asset represents.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#resource_key Monitor#resource_key}
+
+---
+
+##### `resource_type`<sup>Optional</sup> <a name="resource_type" id="@cdktn/provider-datadog.monitor.MonitorAssets.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+Type of internal Datadog resource associated with a monitor asset. Valid values are `notebook`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#resource_type Monitor#resource_type}
+
+---
+
+### MonitorConfig <a name="MonitorConfig" id="@cdktn/provider-datadog.monitor.MonitorConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorConfig.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2438,6 +2605,7 @@ monitor.MonitorConfig(
   name: str,
   query: str,
   type: str,
+  assets: IResolvable | typing.List[MonitorAssets] = None,
   draft_status: str = None,
   enable_logs_sample: bool | IResolvable = None,
   enable_samples: bool | IResolvable = None,
@@ -2477,123 +2645,124 @@ monitor.MonitorConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.message">message</a></code> | <code>str</code> | A message to include with notifications for this monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.name">name</a></code> | <code>str</code> | Name of Datadog monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.query">query</a></code> | <code>str</code> | The monitor query to notify on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.type">type</a></code> | <code>str</code> | The type of the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.draftStatus">draft_status</a></code> | <code>str</code> | Indicates whether the monitor is in a draft or published state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples">enable_samples</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.escalationMessage">escalation_message</a></code> | <code>str</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | The time span after which groups with missing data are dropped from the monitor state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#id Monitor#id}. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags">include_tags</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.locked">locked</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | The time (in seconds) to skip evaluations for new groups. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | **Deprecated**. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before a monitor will notify when data stops reporting. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit">notify_audit</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | Controls what granularity a monitor alerts on. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.onMissingData">on_missing_data</a></code> | <code>str</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.priority">priority</a></code> | <code>str</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | The number of re-notification messages that should be sent on the current status. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktf.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your monitor. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.validate">validate</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorConfig.property.variables">variables</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.message">message</a></code> | <code>str</code> | A message to include with notifications for this monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.name">name</a></code> | <code>str</code> | Name of Datadog monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.query">query</a></code> | <code>str</code> | The monitor query to notify on. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.type">type</a></code> | <code>str</code> | The type of the monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.assets">assets</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]</code> | assets block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.draftStatus">draft_status</a></code> | <code>str</code> | Indicates whether the monitor is in a draft or published state. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.enableLogsSample">enable_logs_sample</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether or not to include a list of log values which triggered the alert. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.enableSamples">enable_samples</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not a list of samples which triggered the alert is included. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.escalationMessage">escalation_message</a></code> | <code>str</code> | A message to include with a re-notification. Supports the `@username` notification allowed elsewhere. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.evaluationDelay">evaluation_delay</a></code> | <code>typing.Union[int, float]</code> | (Only applies to metric alert) Time (in seconds) to delay evaluation, as a non-negative integer. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">groupby_simple_monitor</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to trigger one alert if any source breaches a threshold. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">group_retention_duration</a></code> | <code>str</code> | The time span after which groups with missing data are dropped from the monitor state. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#id Monitor#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.includeTags">include_tags</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">monitor_thresholds</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.monitorThresholdWindows">monitor_threshold_windows</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | monitor_threshold_windows block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.newGroupDelay">new_group_delay</a></code> | <code>typing.Union[int, float]</code> | The time (in seconds) to skip evaluations for new groups. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.newHostDelay">new_host_delay</a></code> | <code>typing.Union[int, float]</code> | **Deprecated**. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.noDataTimeframe">no_data_timeframe</a></code> | <code>typing.Union[int, float]</code> | The number of minutes before a monitor will notify when data stops reporting. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.notificationPresetName">notification_preset_name</a></code> | <code>str</code> | Toggles the display of additional content sent in the monitor notification. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.notifyAudit">notify_audit</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.notifyBy">notify_by</a></code> | <code>typing.List[str]</code> | Controls what granularity a monitor alerts on. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.notifyNoData">notify_no_data</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.onMissingData">on_missing_data</a></code> | <code>str</code> | Controls how groups or monitors are treated if an evaluation does not return any data points. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.priority">priority</a></code> | <code>str</code> | Integer from 1 (high) to 5 (low) indicating alert severity. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.renotifyInterval">renotify_interval</a></code> | <code>typing.Union[int, float]</code> | The number of minutes after the last notification before a monitor will re-notify on the current status. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.renotifyOccurrences">renotify_occurrences</a></code> | <code>typing.Union[int, float]</code> | The number of re-notification messages that should be sent on the current status. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.renotifyStatuses">renotify_statuses</a></code> | <code>typing.List[str]</code> | The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.requireFullWindow">require_full_window</a></code> | <code>bool \| cdktn.IResolvable</code> | A boolean indicating whether this monitor needs a full window of data before it's evaluated. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.restrictedRoles">restricted_roles</a></code> | <code>typing.List[str]</code> | A list of unique role identifiers to define which roles are allowed to edit the monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.schedulingOptions">scheduling_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | scheduling_options block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | A list of tags to associate with your monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.timeoutH">timeout_h</a></code> | <code>typing.Union[int, float]</code> | The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.validate">validate</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.variables">variables</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | variables block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `message`<sup>Required</sup> <a name="message" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.message"></a>
+##### `message`<sup>Required</sup> <a name="message" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.message"></a>
 
 ```python
 message: str
@@ -2605,11 +2774,11 @@ A message to include with notifications for this monitor.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#message Monitor#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#message Monitor#message}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.name"></a>
 
 ```python
 name: str
@@ -2619,11 +2788,11 @@ name: str
 
 Name of Datadog monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.query"></a>
 
 ```python
 query: str
@@ -2637,11 +2806,11 @@ Note this is not the same query you see in the UI and the syntax is different de
 
 **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.type"></a>
 
 ```python
 type: str
@@ -2651,13 +2820,27 @@ type: str
 
 The type of the monitor.
 
-The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`.
+The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#type Monitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#type Monitor#type}
 
 ---
 
-##### `draft_status`<sup>Optional</sup> <a name="draft_status" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.draftStatus"></a>
+##### `assets`<sup>Optional</sup> <a name="assets" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.assets"></a>
+
+```python
+assets: IResolvable | typing.List[MonitorAssets]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]
+
+assets block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#assets Monitor#assets}
+
+---
+
+##### `draft_status`<sup>Optional</sup> <a name="draft_status" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.draftStatus"></a>
 
 ```python
 draft_status: str
@@ -2669,43 +2852,43 @@ Indicates whether the monitor is in a draft or published state.
 
 When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#draft_status Monitor#draft_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#draft_status Monitor#draft_status}
 
 ---
 
-##### `enable_logs_sample`<sup>Optional</sup> <a name="enable_logs_sample" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableLogsSample"></a>
+##### `enable_logs_sample`<sup>Optional</sup> <a name="enable_logs_sample" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.enableLogsSample"></a>
 
 ```python
 enable_logs_sample: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether or not to include a list of log values which triggered the alert.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
 
 ---
 
-##### `enable_samples`<sup>Optional</sup> <a name="enable_samples" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.enableSamples"></a>
+##### `enable_samples`<sup>Optional</sup> <a name="enable_samples" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.enableSamples"></a>
 
 ```python
 enable_samples: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not a list of samples which triggered the alert is included.
 
 This is only used by CI Test and Pipeline monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
 
 ---
 
-##### `escalation_message`<sup>Optional</sup> <a name="escalation_message" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.escalationMessage"></a>
+##### `escalation_message`<sup>Optional</sup> <a name="escalation_message" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.escalationMessage"></a>
 
 ```python
 escalation_message: str
@@ -2715,11 +2898,11 @@ escalation_message: str
 
 A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
 
 ---
 
-##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.evaluationDelay"></a>
+##### `evaluation_delay`<sup>Optional</sup> <a name="evaluation_delay" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.evaluationDelay"></a>
 
 ```python
 evaluation_delay: typing.Union[int, float]
@@ -2731,41 +2914,41 @@ evaluation_delay: typing.Union[int, float]
 
 For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
 
 ---
 
-##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.forceDelete"></a>
+##### `force_delete`<sup>Optional</sup> <a name="force_delete" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.forceDelete"></a>
 
 ```python
 force_delete: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#force_delete Monitor#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#force_delete Monitor#force_delete}
 
 ---
 
-##### `groupby_simple_monitor`<sup>Optional</sup> <a name="groupby_simple_monitor" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor"></a>
+##### `groupby_simple_monitor`<sup>Optional</sup> <a name="groupby_simple_monitor" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor"></a>
 
 ```python
 groupby_simple_monitor: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Whether or not to trigger one alert if any source breaches a threshold.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 
 ---
 
-##### `group_retention_duration`<sup>Optional</sup> <a name="group_retention_duration" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration"></a>
+##### `group_retention_duration`<sup>Optional</sup> <a name="group_retention_duration" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration"></a>
 
 ```python
 group_retention_duration: str
@@ -2777,11 +2960,11 @@ The time span after which groups with missing data are dropped from the monitor 
 
 The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.id"></a>
 
 ```python
 id: str
@@ -2789,72 +2972,72 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#id Monitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#id Monitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `include_tags`<sup>Optional</sup> <a name="include_tags" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.includeTags"></a>
+##### `include_tags`<sup>Optional</sup> <a name="include_tags" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.includeTags"></a>
 
 ```python
 include_tags: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#include_tags Monitor#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#include_tags Monitor#include_tags}
 
 ---
 
-##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.locked"></a>
+##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.locked"></a>
 
 ```python
 locked: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether changes to this monitor should be restricted to the creator or admins.
 
 Defaults to `false`. **Deprecated.** Use `restricted_roles`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#locked Monitor#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#locked Monitor#locked}
 
 ---
 
-##### `monitor_thresholds`<sup>Optional</sup> <a name="monitor_thresholds" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholds"></a>
+##### `monitor_thresholds`<sup>Optional</sup> <a name="monitor_thresholds" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.monitorThresholds"></a>
 
 ```python
 monitor_thresholds: MonitorMonitorThresholds
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
 
 monitor_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
 
 ---
 
-##### `monitor_threshold_windows`<sup>Optional</sup> <a name="monitor_threshold_windows" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.monitorThresholdWindows"></a>
+##### `monitor_threshold_windows`<sup>Optional</sup> <a name="monitor_threshold_windows" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.monitorThresholdWindows"></a>
 
 ```python
 monitor_threshold_windows: MonitorMonitorThresholdWindows
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
 
 monitor_threshold_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
 
 ---
 
-##### `new_group_delay`<sup>Optional</sup> <a name="new_group_delay" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.newGroupDelay"></a>
+##### `new_group_delay`<sup>Optional</sup> <a name="new_group_delay" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.newGroupDelay"></a>
 
 ```python
 new_group_delay: typing.Union[int, float]
@@ -2866,11 +3049,11 @@ The time (in seconds) to skip evaluations for new groups.
 
 `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
 
 ---
 
-##### `new_host_delay`<sup>Optional</sup> <a name="new_host_delay" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.newHostDelay"></a>
+##### `new_host_delay`<sup>Optional</sup> <a name="new_host_delay" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.newHostDelay"></a>
 
 ```python
 new_host_delay: typing.Union[int, float]
@@ -2882,11 +3065,11 @@ new_host_delay: typing.Union[int, float]
 
 See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
 
 ---
 
-##### `no_data_timeframe`<sup>Optional</sup> <a name="no_data_timeframe" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.noDataTimeframe"></a>
+##### `no_data_timeframe`<sup>Optional</sup> <a name="no_data_timeframe" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.noDataTimeframe"></a>
 
 ```python
 no_data_timeframe: typing.Union[int, float]
@@ -2898,11 +3081,11 @@ The number of minutes before a monitor will notify when data stops reporting.
 
 We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
 
 ---
 
-##### `notification_preset_name`<sup>Optional</sup> <a name="notification_preset_name" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notificationPresetName"></a>
+##### `notification_preset_name`<sup>Optional</sup> <a name="notification_preset_name" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.notificationPresetName"></a>
 
 ```python
 notification_preset_name: str
@@ -2910,27 +3093,29 @@ notification_preset_name: str
 
 - *Type:* str
 
-Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`.
+Toggles the display of additional content sent in the monitor notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
 
 ---
 
-##### `notify_audit`<sup>Optional</sup> <a name="notify_audit" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyAudit"></a>
+##### `notify_audit`<sup>Optional</sup> <a name="notify_audit" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.notifyAudit"></a>
 
 ```python
 notify_audit: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
 
 ---
 
-##### `notify_by`<sup>Optional</sup> <a name="notify_by" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyBy"></a>
+##### `notify_by`<sup>Optional</sup> <a name="notify_by" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.notifyBy"></a>
 
 ```python
 notify_by: typing.List[str]
@@ -2942,25 +3127,25 @@ Controls what granularity a monitor alerts on.
 
 Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_by Monitor#notify_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_by Monitor#notify_by}
 
 ---
 
-##### `notify_no_data`<sup>Optional</sup> <a name="notify_no_data" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.notifyNoData"></a>
+##### `notify_no_data`<sup>Optional</sup> <a name="notify_no_data" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.notifyNoData"></a>
 
 ```python
 notify_no_data: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
 
 ---
 
-##### `on_missing_data`<sup>Optional</sup> <a name="on_missing_data" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.onMissingData"></a>
+##### `on_missing_data`<sup>Optional</sup> <a name="on_missing_data" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.onMissingData"></a>
 
 ```python
 on_missing_data: str
@@ -2972,11 +3157,11 @@ Controls how groups or monitors are treated if an evaluation does not return any
 
 The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
 
 ---
 
-##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.priority"></a>
+##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.priority"></a>
 
 ```python
 priority: str
@@ -2986,11 +3171,11 @@ priority: str
 
 Integer from 1 (high) to 5 (low) indicating alert severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#priority Monitor#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#priority Monitor#priority}
 
 ---
 
-##### `renotify_interval`<sup>Optional</sup> <a name="renotify_interval" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyInterval"></a>
+##### `renotify_interval`<sup>Optional</sup> <a name="renotify_interval" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.renotifyInterval"></a>
 
 ```python
 renotify_interval: typing.Union[int, float]
@@ -3002,11 +3187,11 @@ The number of minutes after the last notification before a monitor will re-notif
 
 It will only re-notify if it's not resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
 
 ---
 
-##### `renotify_occurrences`<sup>Optional</sup> <a name="renotify_occurrences" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyOccurrences"></a>
+##### `renotify_occurrences`<sup>Optional</sup> <a name="renotify_occurrences" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.renotifyOccurrences"></a>
 
 ```python
 renotify_occurrences: typing.Union[int, float]
@@ -3016,11 +3201,11 @@ renotify_occurrences: typing.Union[int, float]
 
 The number of re-notification messages that should be sent on the current status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
 
 ---
 
-##### `renotify_statuses`<sup>Optional</sup> <a name="renotify_statuses" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.renotifyStatuses"></a>
+##### `renotify_statuses`<sup>Optional</sup> <a name="renotify_statuses" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.renotifyStatuses"></a>
 
 ```python
 renotify_statuses: typing.List[str]
@@ -3030,27 +3215,27 @@ renotify_statuses: typing.List[str]
 
 The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
 
 ---
 
-##### `require_full_window`<sup>Optional</sup> <a name="require_full_window" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.requireFullWindow"></a>
+##### `require_full_window`<sup>Optional</sup> <a name="require_full_window" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.requireFullWindow"></a>
 
 ```python
 require_full_window: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 A boolean indicating whether this monitor needs a full window of data before it's evaluated.
 
 Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
 
 ---
 
-##### `restricted_roles`<sup>Optional</sup> <a name="restricted_roles" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.restrictedRoles"></a>
+##### `restricted_roles`<sup>Optional</sup> <a name="restricted_roles" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.restrictedRoles"></a>
 
 ```python
 restricted_roles: typing.List[str]
@@ -3064,25 +3249,25 @@ Editing a monitor includes any updates to the monitor configuration, monitor del
 
 > **Note:** When the `TERRAFORM_MONITOR_EXPLICIT_RESTRICTED_ROLES` environment variable is set to `true`, this argument is treated as `Computed`. Terraform will automatically read the current restricted roles list from the Datadog API whenever the attribute is omitted. If `restricted_roles` is explicitly set in the configuration, that value always takes precedence over whatever is discovered during the read. This opt-in behaviour lets you migrate responsibility for monitor permissions to the `datadog_restriction_policy` resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
 
 ---
 
-##### `scheduling_options`<sup>Optional</sup> <a name="scheduling_options" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.schedulingOptions"></a>
+##### `scheduling_options`<sup>Optional</sup> <a name="scheduling_options" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.schedulingOptions"></a>
 
 ```python
 scheduling_options: MonitorSchedulingOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
 
 scheduling_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.tags"></a>
 
 ```python
 tags: typing.List[str]
@@ -3094,11 +3279,11 @@ A list of tags to associate with your monitor.
 
 This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#tags Monitor#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#tags Monitor#tags}
 
 ---
 
-##### `timeout_h`<sup>Optional</sup> <a name="timeout_h" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.timeoutH"></a>
+##### `timeout_h`<sup>Optional</sup> <a name="timeout_h" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.timeoutH"></a>
 
 ```python
 timeout_h: typing.Union[int, float]
@@ -3110,44 +3295,44 @@ The number of hours of the monitor not reporting data before it automatically re
 
 The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
 
 ---
 
-##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.validate"></a>
+##### `validate`<sup>Optional</sup> <a name="validate" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.validate"></a>
 
 ```python
 validate: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#validate Monitor#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#validate Monitor#validate}
 
 ---
 
-##### `variables`<sup>Optional</sup> <a name="variables" id="@cdktf/provider-datadog.monitor.MonitorConfig.property.variables"></a>
+##### `variables`<sup>Optional</sup> <a name="variables" id="@cdktn/provider-datadog.monitor.MonitorConfig.property.variables"></a>
 
 ```python
 variables: MonitorVariables
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#variables Monitor#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#variables Monitor#variables}
 
 ---
 
-### MonitorMonitorThresholds <a name="MonitorMonitorThresholds" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds"></a>
+### MonitorMonitorThresholds <a name="MonitorMonitorThresholds" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorMonitorThresholds(
   critical: str = None,
@@ -3163,16 +3348,16 @@ monitor.MonitorMonitorThresholds(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.critical">critical</a></code> | <code>str</code> | The monitor `CRITICAL` threshold. Must be a number. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.criticalRecovery">critical_recovery</a></code> | <code>str</code> | The monitor `CRITICAL` recovery threshold. Must be a number. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.ok">ok</a></code> | <code>str</code> | The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.unknown">unknown</a></code> | <code>str</code> | The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.warning">warning</a></code> | <code>str</code> | The monitor `WARNING` threshold. Must be a number. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.warningRecovery">warning_recovery</a></code> | <code>str</code> | The monitor `WARNING` recovery threshold. Must be a number. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.critical">critical</a></code> | <code>str</code> | The monitor `CRITICAL` threshold. Must be a number. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.criticalRecovery">critical_recovery</a></code> | <code>str</code> | The monitor `CRITICAL` recovery threshold. Must be a number. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.ok">ok</a></code> | <code>str</code> | The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.unknown">unknown</a></code> | <code>str</code> | The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.warning">warning</a></code> | <code>str</code> | The monitor `WARNING` threshold. Must be a number. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.warningRecovery">warning_recovery</a></code> | <code>str</code> | The monitor `WARNING` recovery threshold. Must be a number. |
 
 ---
 
-##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.critical"></a>
+##### `critical`<sup>Optional</sup> <a name="critical" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.critical"></a>
 
 ```python
 critical: str
@@ -3182,11 +3367,11 @@ critical: str
 
 The monitor `CRITICAL` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#critical Monitor#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical Monitor#critical}
 
 ---
 
-##### `critical_recovery`<sup>Optional</sup> <a name="critical_recovery" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.criticalRecovery"></a>
+##### `critical_recovery`<sup>Optional</sup> <a name="critical_recovery" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.criticalRecovery"></a>
 
 ```python
 critical_recovery: str
@@ -3196,11 +3381,11 @@ critical_recovery: str
 
 The monitor `CRITICAL` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
 
 ---
 
-##### `ok`<sup>Optional</sup> <a name="ok" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.ok"></a>
+##### `ok`<sup>Optional</sup> <a name="ok" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.ok"></a>
 
 ```python
 ok: str
@@ -3210,11 +3395,11 @@ ok: str
 
 The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#ok Monitor#ok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#ok Monitor#ok}
 
 ---
 
-##### `unknown`<sup>Optional</sup> <a name="unknown" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.unknown"></a>
+##### `unknown`<sup>Optional</sup> <a name="unknown" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.unknown"></a>
 
 ```python
 unknown: str
@@ -3224,11 +3409,11 @@ unknown: str
 
 The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#unknown Monitor#unknown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#unknown Monitor#unknown}
 
 ---
 
-##### `warning`<sup>Optional</sup> <a name="warning" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.warning"></a>
+##### `warning`<sup>Optional</sup> <a name="warning" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.warning"></a>
 
 ```python
 warning: str
@@ -3238,11 +3423,11 @@ warning: str
 
 The monitor `WARNING` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#warning Monitor#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning Monitor#warning}
 
 ---
 
-##### `warning_recovery`<sup>Optional</sup> <a name="warning_recovery" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholds.property.warningRecovery"></a>
+##### `warning_recovery`<sup>Optional</sup> <a name="warning_recovery" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholds.property.warningRecovery"></a>
 
 ```python
 warning_recovery: str
@@ -3252,16 +3437,16 @@ warning_recovery: str
 
 The monitor `WARNING` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
 
 ---
 
-### MonitorMonitorThresholdWindows <a name="MonitorMonitorThresholdWindows" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows"></a>
+### MonitorMonitorThresholdWindows <a name="MonitorMonitorThresholdWindows" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorMonitorThresholdWindows(
   recovery_window: str = None,
@@ -3273,12 +3458,12 @@ monitor.MonitorMonitorThresholdWindows(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.recoveryWindow">recovery_window</a></code> | <code>str</code> | Describes how long an anomalous metric must be normal before the alert recovers. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.triggerWindow">trigger_window</a></code> | <code>str</code> | Describes how long a metric must be anomalous before an alert triggers. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.recoveryWindow">recovery_window</a></code> | <code>str</code> | Describes how long an anomalous metric must be normal before the alert recovers. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.triggerWindow">trigger_window</a></code> | <code>str</code> | Describes how long a metric must be anomalous before an alert triggers. |
 
 ---
 
-##### `recovery_window`<sup>Optional</sup> <a name="recovery_window" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.recoveryWindow"></a>
+##### `recovery_window`<sup>Optional</sup> <a name="recovery_window" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.recoveryWindow"></a>
 
 ```python
 recovery_window: str
@@ -3288,11 +3473,11 @@ recovery_window: str
 
 Describes how long an anomalous metric must be normal before the alert recovers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
 
 ---
 
-##### `trigger_window`<sup>Optional</sup> <a name="trigger_window" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.triggerWindow"></a>
+##### `trigger_window`<sup>Optional</sup> <a name="trigger_window" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows.property.triggerWindow"></a>
 
 ```python
 trigger_window: str
@@ -3302,16 +3487,16 @@ trigger_window: str
 
 Describes how long a metric must be anomalous before an alert triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
 
 ---
 
-### MonitorSchedulingOptions <a name="MonitorSchedulingOptions" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptions"></a>
+### MonitorSchedulingOptions <a name="MonitorSchedulingOptions" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptions.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorSchedulingOptions(
   custom_schedule: MonitorSchedulingOptionsCustomSchedule = None,
@@ -3323,45 +3508,45 @@ monitor.MonitorSchedulingOptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions.property.customSchedule">custom_schedule</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a></code> | custom_schedule block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions.property.evaluationWindow">evaluation_window</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a></code> | evaluation_window block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions.property.customSchedule">custom_schedule</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a></code> | custom_schedule block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions.property.evaluationWindow">evaluation_window</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a></code> | evaluation_window block. |
 
 ---
 
-##### `custom_schedule`<sup>Optional</sup> <a name="custom_schedule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptions.property.customSchedule"></a>
+##### `custom_schedule`<sup>Optional</sup> <a name="custom_schedule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptions.property.customSchedule"></a>
 
 ```python
 custom_schedule: MonitorSchedulingOptionsCustomSchedule
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
 
 custom_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
 
 ---
 
-##### `evaluation_window`<sup>Optional</sup> <a name="evaluation_window" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptions.property.evaluationWindow"></a>
+##### `evaluation_window`<sup>Optional</sup> <a name="evaluation_window" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptions.property.evaluationWindow"></a>
 
 ```python
 evaluation_window: MonitorSchedulingOptionsEvaluationWindow
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
 
 evaluation_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
 
 ---
 
-### MonitorSchedulingOptionsCustomSchedule <a name="MonitorSchedulingOptionsCustomSchedule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule"></a>
+### MonitorSchedulingOptionsCustomSchedule <a name="MonitorSchedulingOptionsCustomSchedule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorSchedulingOptionsCustomSchedule(
   recurrence: MonitorSchedulingOptionsCustomScheduleRecurrence
@@ -3372,30 +3557,30 @@ monitor.MonitorSchedulingOptionsCustomSchedule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.property.recurrence">recurrence</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a></code> | recurrence block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.property.recurrence">recurrence</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a></code> | recurrence block. |
 
 ---
 
-##### `recurrence`<sup>Required</sup> <a name="recurrence" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.property.recurrence"></a>
+##### `recurrence`<sup>Required</sup> <a name="recurrence" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule.property.recurrence"></a>
 
 ```python
 recurrence: MonitorSchedulingOptionsCustomScheduleRecurrence
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#recurrence Monitor#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recurrence Monitor#recurrence}
 
 ---
 
-### MonitorSchedulingOptionsCustomScheduleRecurrence <a name="MonitorSchedulingOptionsCustomScheduleRecurrence" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence"></a>
+### MonitorSchedulingOptionsCustomScheduleRecurrence <a name="MonitorSchedulingOptionsCustomScheduleRecurrence" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorSchedulingOptionsCustomScheduleRecurrence(
   rrule: str,
@@ -3408,13 +3593,13 @@ monitor.MonitorSchedulingOptionsCustomScheduleRecurrence(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.rrule">rrule</a></code> | <code>str</code> | Must be a valid `rrule`. See API docs for supported fields. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.timezone">timezone</a></code> | <code>str</code> | 'tz database' format. Example: `America/New_York` or `UTC`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.start">start</a></code> | <code>str</code> | Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.rrule">rrule</a></code> | <code>str</code> | Must be a valid `rrule`. See API docs for supported fields. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.timezone">timezone</a></code> | <code>str</code> | 'tz database' format. Example: `America/New_York` or `UTC`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.start">start</a></code> | <code>str</code> | Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'. |
 
 ---
 
-##### `rrule`<sup>Required</sup> <a name="rrule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.rrule"></a>
+##### `rrule`<sup>Required</sup> <a name="rrule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.rrule"></a>
 
 ```python
 rrule: str
@@ -3424,11 +3609,11 @@ rrule: str
 
 Must be a valid `rrule`. See API docs for supported fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#rrule Monitor#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#rrule Monitor#rrule}
 
 ---
 
-##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.timezone"></a>
+##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.timezone"></a>
 
 ```python
 timezone: str
@@ -3438,11 +3623,11 @@ timezone: str
 
 'tz database' format. Example: `America/New_York` or `UTC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
-##### `start`<sup>Optional</sup> <a name="start" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.start"></a>
+##### `start`<sup>Optional</sup> <a name="start" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence.property.start"></a>
 
 ```python
 start: str
@@ -3452,21 +3637,22 @@ start: str
 
 Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#start Monitor#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#start Monitor#start}
 
 ---
 
-### MonitorSchedulingOptionsEvaluationWindow <a name="MonitorSchedulingOptionsEvaluationWindow" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow"></a>
+### MonitorSchedulingOptionsEvaluationWindow <a name="MonitorSchedulingOptionsEvaluationWindow" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorSchedulingOptionsEvaluationWindow(
   day_starts: str = None,
   hour_starts: typing.Union[int, float] = None,
-  month_starts: typing.Union[int, float] = None
+  month_starts: typing.Union[int, float] = None,
+  timezone: str = None
 )
 ```
 
@@ -3474,13 +3660,14 @@ monitor.MonitorSchedulingOptionsEvaluationWindow(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.dayStarts">day_starts</a></code> | <code>str</code> | The time of the day at which a one day cumulative evaluation window starts. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.hourStarts">hour_starts</a></code> | <code>typing.Union[int, float]</code> | The minute of the hour at which a one hour cumulative evaluation window starts. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.monthStarts">month_starts</a></code> | <code>typing.Union[int, float]</code> | The day of the month at which a one month cumulative evaluation window starts. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.dayStarts">day_starts</a></code> | <code>str</code> | The time of the day at which a one day cumulative evaluation window starts. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.hourStarts">hour_starts</a></code> | <code>typing.Union[int, float]</code> | The minute of the hour at which a one hour cumulative evaluation window starts. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.monthStarts">month_starts</a></code> | <code>typing.Union[int, float]</code> | The day of the month at which a one month cumulative evaluation window starts. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.timezone">timezone</a></code> | <code>str</code> | The timezone for the cumulative evaluation window start time. |
 
 ---
 
-##### `day_starts`<sup>Optional</sup> <a name="day_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.dayStarts"></a>
+##### `day_starts`<sup>Optional</sup> <a name="day_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.dayStarts"></a>
 
 ```python
 day_starts: str
@@ -3492,11 +3679,11 @@ The time of the day at which a one day cumulative evaluation window starts.
 
 Must be defined in UTC time in `HH:mm` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#day_starts Monitor#day_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#day_starts Monitor#day_starts}
 
 ---
 
-##### `hour_starts`<sup>Optional</sup> <a name="hour_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.hourStarts"></a>
+##### `hour_starts`<sup>Optional</sup> <a name="hour_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.hourStarts"></a>
 
 ```python
 hour_starts: typing.Union[int, float]
@@ -3508,11 +3695,11 @@ The minute of the hour at which a one hour cumulative evaluation window starts.
 
 Must be between 0 and 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
 
 ---
 
-##### `month_starts`<sup>Optional</sup> <a name="month_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.monthStarts"></a>
+##### `month_starts`<sup>Optional</sup> <a name="month_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.monthStarts"></a>
 
 ```python
 month_starts: typing.Union[int, float]
@@ -3524,19 +3711,34 @@ The day of the month at which a one month cumulative evaluation window starts.
 
 Must be a value of 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#month_starts Monitor#month_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#month_starts Monitor#month_starts}
 
 ---
 
-### MonitorVariables <a name="MonitorVariables" id="@cdktf/provider-datadog.monitor.MonitorVariables"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariables.Initializer"></a>
+##### `timezone`<sup>Optional</sup> <a name="timezone" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow.property.timezone"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+timezone: str
+```
+
+- *Type:* str
+
+The timezone for the cumulative evaluation window start time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
+
+---
+
+### MonitorVariables <a name="MonitorVariables" id="@cdktn/provider-datadog.monitor.MonitorVariables"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariables.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariables(
   cloud_cost_query: IResolvable | typing.List[MonitorVariablesCloudCostQuery] = None,
+  data_quality_query: IResolvable | typing.List[MonitorVariablesDataQualityQuery] = None,
   event_query: IResolvable | typing.List[MonitorVariablesEventQuery] = None
 )
 ```
@@ -3545,45 +3747,60 @@ monitor.MonitorVariables(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">cloud_cost_query</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | cloud_cost_query block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery">event_query</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | event_query block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery">cloud_cost_query</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | cloud_cost_query block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariables.property.dataQualityQuery">data_quality_query</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]</code> | data_quality_query block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariables.property.eventQuery">event_query</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | event_query block. |
 
 ---
 
-##### `cloud_cost_query`<sup>Optional</sup> <a name="cloud_cost_query" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery"></a>
+##### `cloud_cost_query`<sup>Optional</sup> <a name="cloud_cost_query" id="@cdktn/provider-datadog.monitor.MonitorVariables.property.cloudCostQuery"></a>
 
 ```python
 cloud_cost_query: IResolvable | typing.List[MonitorVariablesCloudCostQuery]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 cloud_cost_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
 
 ---
 
-##### `event_query`<sup>Optional</sup> <a name="event_query" id="@cdktf/provider-datadog.monitor.MonitorVariables.property.eventQuery"></a>
+##### `data_quality_query`<sup>Optional</sup> <a name="data_quality_query" id="@cdktn/provider-datadog.monitor.MonitorVariables.property.dataQualityQuery"></a>
+
+```python
+data_quality_query: IResolvable | typing.List[MonitorVariablesDataQualityQuery]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]
+
+data_quality_query block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+
+---
+
+##### `event_query`<sup>Optional</sup> <a name="event_query" id="@cdktn/provider-datadog.monitor.MonitorVariables.property.eventQuery"></a>
 
 ```python
 event_query: IResolvable | typing.List[MonitorVariablesEventQuery]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#event_query Monitor#event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#event_query Monitor#event_query}
 
 ---
 
-### MonitorVariablesCloudCostQuery <a name="MonitorVariablesCloudCostQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery"></a>
+### MonitorVariablesCloudCostQuery <a name="MonitorVariablesCloudCostQuery" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesCloudCostQuery(
   aggregator: str,
@@ -3597,14 +3814,14 @@ monitor.MonitorVariablesCloudCostQuery(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.aggregator">aggregator</a></code> | <code>str</code> | The aggregation methods available for cloud cost queries. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.name">name</a></code> | <code>str</code> | The name of the query for use in formulas. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.query">query</a></code> | <code>str</code> | The cloud cost query definition. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.aggregator">aggregator</a></code> | <code>str</code> | The aggregation methods available for cloud cost queries. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.name">name</a></code> | <code>str</code> | The name of the query for use in formulas. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.query">query</a></code> | <code>str</code> | The cloud cost query definition. |
 
 ---
 
-##### `aggregator`<sup>Required</sup> <a name="aggregator" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.aggregator"></a>
+##### `aggregator`<sup>Required</sup> <a name="aggregator" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.aggregator"></a>
 
 ```python
 aggregator: str
@@ -3616,11 +3833,11 @@ The aggregation methods available for cloud cost queries.
 
 Valid values are `avg`, `sum`, `max`, `min`, `last`, `area`, `l2norm`, `percentile`, `stddev`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
-##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.dataSource"></a>
+##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.dataSource"></a>
 
 ```python
 data_source: str
@@ -3630,11 +3847,11 @@ data_source: str
 
 The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.name"></a>
 
 ```python
 name: str
@@ -3644,11 +3861,11 @@ name: str
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery.property.query"></a>
 
 ```python
 query: str
@@ -3658,16 +3875,262 @@ query: str
 
 The cloud cost query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
-### MonitorVariablesEventQuery <a name="MonitorVariablesEventQuery" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery"></a>
+### MonitorVariablesDataQualityQuery <a name="MonitorVariablesDataQualityQuery" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorVariablesDataQualityQuery(
+  data_source: str,
+  filter: str,
+  measure: str,
+  name: str,
+  group_by: typing.List[str] = None,
+  monitor_options: MonitorVariablesDataQualityQueryMonitorOptions = None,
+  schema_version: str = None,
+  scope: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for data quality queries. Valid value is `data_quality_metrics`. Valid values are `data_quality_metrics`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.filter">filter</a></code> | <code>str</code> | Filter expression used to match on data entities. Uses AAstra query syntax. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.measure">measure</a></code> | <code>str</code> | The measure to query. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.name">name</a></code> | <code>str</code> | The name of the query for use in formulas. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.groupBy">group_by</a></code> | <code>typing.List[str]</code> | Optional grouping fields for aggregation. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a></code> | monitor_options block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.schemaVersion">schema_version</a></code> | <code>str</code> | Schema version for the data quality query. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.scope">scope</a></code> | <code>str</code> | Optional scoping expression to further filter metrics. |
+
+---
+
+##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.dataSource"></a>
+
+```python
+data_source: str
+```
+
+- *Type:* str
+
+The data source for data quality queries. Valid value is `data_quality_metrics`. Valid values are `data_quality_metrics`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.filter"></a>
+
+```python
+filter: str
+```
+
+- *Type:* str
+
+Filter expression used to match on data entities. Uses AAstra query syntax.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#filter Monitor#filter}
+
+---
+
+##### `measure`<sup>Required</sup> <a name="measure" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.measure"></a>
+
+```python
+measure: str
+```
+
+- *Type:* str
+
+The measure to query.
+
+Common values include `bytes`, `cardinality`, `custom`, `freshness`, `max`, `mean`, `min`, `nullness`, `percent_negative`, `percent_zero`, `row_count`, `stddev`, `sum`, `uniqueness`. Additional values may be supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#measure Monitor#measure}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+The name of the query for use in formulas.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+
+---
+
+##### `group_by`<sup>Optional</sup> <a name="group_by" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.groupBy"></a>
+
+```python
+group_by: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Optional grouping fields for aggregation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by Monitor#group_by}
+
+---
+
+##### `monitor_options`<sup>Optional</sup> <a name="monitor_options" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.monitorOptions"></a>
+
+```python
+monitor_options: MonitorVariablesDataQualityQueryMonitorOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a>
+
+monitor_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
+
+---
+
+##### `schema_version`<sup>Optional</sup> <a name="schema_version" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.schemaVersion"></a>
+
+```python
+schema_version: str
+```
+
+- *Type:* str
+
+Schema version for the data quality query.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#schema_version Monitor#schema_version}
+
+---
+
+##### `scope`<sup>Optional</sup> <a name="scope" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery.property.scope"></a>
+
+```python
+scope: str
+```
+
+- *Type:* str
+
+Optional scoping expression to further filter metrics.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#scope Monitor#scope}
+
+---
+
+### MonitorVariablesDataQualityQueryMonitorOptions <a name="MonitorVariablesDataQualityQueryMonitorOptions" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorVariablesDataQualityQueryMonitorOptions(
+  crontab_override: str = None,
+  custom_sql: str = None,
+  custom_where: str = None,
+  group_by_columns: typing.List[str] = None,
+  model_type_override: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.crontabOverride">crontab_override</a></code> | <code>str</code> | Crontab expression to override the default schedule. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.customSql">custom_sql</a></code> | <code>str</code> | Custom SQL query for the monitor. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.customWhere">custom_where</a></code> | <code>str</code> | Custom WHERE clause for the query. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.groupByColumns">group_by_columns</a></code> | <code>typing.List[str]</code> | Columns to group results by. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.modelTypeOverride">model_type_override</a></code> | <code>str</code> | Override for the model type. Valid values are `freshness`, `percentage`, `any`. |
+
+---
+
+##### `crontab_override`<sup>Optional</sup> <a name="crontab_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.crontabOverride"></a>
+
+```python
+crontab_override: str
+```
+
+- *Type:* str
+
+Crontab expression to override the default schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
+
+---
+
+##### `custom_sql`<sup>Optional</sup> <a name="custom_sql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.customSql"></a>
+
+```python
+custom_sql: str
+```
+
+- *Type:* str
+
+Custom SQL query for the monitor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+
+---
+
+##### `custom_where`<sup>Optional</sup> <a name="custom_where" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.customWhere"></a>
+
+```python
+custom_where: str
+```
+
+- *Type:* str
+
+Custom WHERE clause for the query.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_where Monitor#custom_where}
+
+---
+
+##### `group_by_columns`<sup>Optional</sup> <a name="group_by_columns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.groupByColumns"></a>
+
+```python
+group_by_columns: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Columns to group results by.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+
+---
+
+##### `model_type_override`<sup>Optional</sup> <a name="model_type_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions.property.modelTypeOverride"></a>
+
+```python
+model_type_override: str
+```
+
+- *Type:* str
+
+Override for the model type. Valid values are `freshness`, `percentage`, `any`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
+
+---
+
+### MonitorVariablesEventQuery <a name="MonitorVariablesEventQuery" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQuery(
   compute: IResolvable | typing.List[MonitorVariablesEventQueryCompute],
@@ -3683,30 +4146,30 @@ monitor.MonitorVariablesEventQuery(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | compute block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">name</a></code> | <code>str</code> | The name of query for use in formulas. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">group_by</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | group_by block. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | An array of index names to query in the stream. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute">compute</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | compute block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for event platform-based queries. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.name">name</a></code> | <code>str</code> | The name of query for use in formulas. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.search">search</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | search block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy">group_by</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | group_by block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | An array of index names to query in the stream. |
 
 ---
 
-##### `compute`<sup>Required</sup> <a name="compute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute"></a>
+##### `compute`<sup>Required</sup> <a name="compute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.compute"></a>
 
 ```python
 compute: IResolvable | typing.List[MonitorVariablesEventQueryCompute]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
-##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource"></a>
+##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.dataSource"></a>
 
 ```python
 data_source: str
@@ -3714,13 +4177,15 @@ data_source: str
 
 - *Type:* str
 
-The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`.
+The data source for event platform-based queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#data_source Monitor#data_source}
+Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.name"></a>
 
 ```python
 name: str
@@ -3730,39 +4195,39 @@ name: str
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
-##### `search`<sup>Required</sup> <a name="search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
+##### `search`<sup>Required</sup> <a name="search" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.search"></a>
 
 ```python
 search: MonitorVariablesEventQuerySearch
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
-##### `group_by`<sup>Optional</sup> <a name="group_by" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
+##### `group_by`<sup>Optional</sup> <a name="group_by" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.groupBy"></a>
 
 ```python
 group_by: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
-##### `indexes`<sup>Optional</sup> <a name="indexes" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes"></a>
+##### `indexes`<sup>Optional</sup> <a name="indexes" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery.property.indexes"></a>
 
 ```python
 indexes: typing.List[str]
@@ -3772,16 +4237,16 @@ indexes: typing.List[str]
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
-### MonitorVariablesEventQueryCompute <a name="MonitorVariablesEventQueryCompute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute"></a>
+### MonitorVariablesEventQueryCompute <a name="MonitorVariablesEventQueryCompute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryCompute(
   aggregation: str,
@@ -3794,13 +4259,13 @@ monitor.MonitorVariablesEventQueryCompute(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.aggregation">aggregation</a></code> | <code>str</code> | The aggregation methods for event platform queries. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.interval">interval</a></code> | <code>typing.Union[int, float]</code> | A time interval in milliseconds. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.metric">metric</a></code> | <code>str</code> | The measurable attribute to compute. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.aggregation">aggregation</a></code> | <code>str</code> | The aggregation methods for event platform queries. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.interval">interval</a></code> | <code>typing.Union[int, float]</code> | A time interval in milliseconds. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.metric">metric</a></code> | <code>str</code> | The measurable attribute to compute. |
 
 ---
 
-##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.aggregation"></a>
+##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.aggregation"></a>
 
 ```python
 aggregation: str
@@ -3812,11 +4277,11 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
-##### `interval`<sup>Optional</sup> <a name="interval" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.interval"></a>
+##### `interval`<sup>Optional</sup> <a name="interval" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.interval"></a>
 
 ```python
 interval: typing.Union[int, float]
@@ -3826,11 +4291,11 @@ interval: typing.Union[int, float]
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
-##### `metric`<sup>Optional</sup> <a name="metric" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.metric"></a>
+##### `metric`<sup>Optional</sup> <a name="metric" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute.property.metric"></a>
 
 ```python
 metric: str
@@ -3840,16 +4305,16 @@ metric: str
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
-### MonitorVariablesEventQueryGroupBy <a name="MonitorVariablesEventQueryGroupBy" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy"></a>
+### MonitorVariablesEventQueryGroupBy <a name="MonitorVariablesEventQueryGroupBy" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryGroupBy(
   facet: str,
@@ -3862,13 +4327,13 @@ monitor.MonitorVariablesEventQueryGroupBy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.facet">facet</a></code> | <code>str</code> | The event facet. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | The number of groups to return. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.sort">sort</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | sort block. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.facet">facet</a></code> | <code>str</code> | The event facet. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | The number of groups to return. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.sort">sort</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | sort block. |
 
 ---
 
-##### `facet`<sup>Required</sup> <a name="facet" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.facet"></a>
+##### `facet`<sup>Required</sup> <a name="facet" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.facet"></a>
 
 ```python
 facet: str
@@ -3878,11 +4343,11 @@ facet: str
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
-##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.limit"></a>
+##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.limit"></a>
 
 ```python
 limit: typing.Union[int, float]
@@ -3892,30 +4357,30 @@ limit: typing.Union[int, float]
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
-##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.sort"></a>
+##### `sort`<sup>Optional</sup> <a name="sort" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy.property.sort"></a>
 
 ```python
 sort: MonitorVariablesEventQueryGroupBySort
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a>
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
-### MonitorVariablesEventQueryGroupBySort <a name="MonitorVariablesEventQueryGroupBySort" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort"></a>
+### MonitorVariablesEventQueryGroupBySort <a name="MonitorVariablesEventQueryGroupBySort" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryGroupBySort(
   aggregation: str,
@@ -3928,13 +4393,13 @@ monitor.MonitorVariablesEventQueryGroupBySort(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.aggregation">aggregation</a></code> | <code>str</code> | The aggregation methods for the event platform queries. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.metric">metric</a></code> | <code>str</code> | The metric used for sorting group by results. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.order">order</a></code> | <code>str</code> | Direction of sort. Valid values are `asc`, `desc`. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.aggregation">aggregation</a></code> | <code>str</code> | The aggregation methods for the event platform queries. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.metric">metric</a></code> | <code>str</code> | The metric used for sorting group by results. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.order">order</a></code> | <code>str</code> | Direction of sort. Valid values are `asc`, `desc`. |
 
 ---
 
-##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.aggregation"></a>
+##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.aggregation"></a>
 
 ```python
 aggregation: str
@@ -3946,11 +4411,11 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
-##### `metric`<sup>Optional</sup> <a name="metric" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.metric"></a>
+##### `metric`<sup>Optional</sup> <a name="metric" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.metric"></a>
 
 ```python
 metric: str
@@ -3960,11 +4425,11 @@ metric: str
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
-##### `order`<sup>Optional</sup> <a name="order" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.order"></a>
+##### `order`<sup>Optional</sup> <a name="order" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort.property.order"></a>
 
 ```python
 order: str
@@ -3974,16 +4439,16 @@ order: str
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
-### MonitorVariablesEventQuerySearch <a name="MonitorVariablesEventQuerySearch" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch"></a>
+### MonitorVariablesEventQuerySearch <a name="MonitorVariablesEventQuerySearch" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQuerySearch(
   query: str
@@ -3994,11 +4459,11 @@ monitor.MonitorVariablesEventQuerySearch(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch.property.query">query</a></code> | <code>str</code> | The events search string. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch.property.query">query</a></code> | <code>str</code> | The events search string. |
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch.property.query"></a>
 
 ```python
 query: str
@@ -4008,2243 +4473,20 @@ query: str
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### MonitorMonitorThresholdsOutputReference <a name="MonitorMonitorThresholdsOutputReference" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference"></a>
+### MonitorAssetsList <a name="MonitorAssetsList" id="@cdktn/provider-datadog.monitor.MonitorAssetsList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
-monitor.MonitorMonitorThresholdsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCritical">reset_critical</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCriticalRecovery">reset_critical_recovery</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetOk">reset_ok</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetUnknown">reset_unknown</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarning">reset_warning</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarningRecovery">reset_warning_recovery</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_critical` <a name="reset_critical" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCritical"></a>
-
-```python
-def reset_critical() -> None
-```
-
-##### `reset_critical_recovery` <a name="reset_critical_recovery" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCriticalRecovery"></a>
-
-```python
-def reset_critical_recovery() -> None
-```
-
-##### `reset_ok` <a name="reset_ok" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetOk"></a>
-
-```python
-def reset_ok() -> None
-```
-
-##### `reset_unknown` <a name="reset_unknown" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetUnknown"></a>
-
-```python
-def reset_unknown() -> None
-```
-
-##### `reset_warning` <a name="reset_warning" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarning"></a>
-
-```python
-def reset_warning() -> None
-```
-
-##### `reset_warning_recovery` <a name="reset_warning_recovery" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarningRecovery"></a>
-
-```python
-def reset_warning_recovery() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalInput">critical_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecoveryInput">critical_recovery_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.okInput">ok_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknownInput">unknown_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningInput">warning_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecoveryInput">warning_recovery_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.critical">critical</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecovery">critical_recovery</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.ok">ok</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknown">unknown</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warning">warning</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecovery">warning_recovery</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `critical_input`<sup>Optional</sup> <a name="critical_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalInput"></a>
-
-```python
-critical_input: str
-```
-
-- *Type:* str
-
----
-
-##### `critical_recovery_input`<sup>Optional</sup> <a name="critical_recovery_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecoveryInput"></a>
-
-```python
-critical_recovery_input: str
-```
-
-- *Type:* str
-
----
-
-##### `ok_input`<sup>Optional</sup> <a name="ok_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.okInput"></a>
-
-```python
-ok_input: str
-```
-
-- *Type:* str
-
----
-
-##### `unknown_input`<sup>Optional</sup> <a name="unknown_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknownInput"></a>
-
-```python
-unknown_input: str
-```
-
-- *Type:* str
-
----
-
-##### `warning_input`<sup>Optional</sup> <a name="warning_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningInput"></a>
-
-```python
-warning_input: str
-```
-
-- *Type:* str
-
----
-
-##### `warning_recovery_input`<sup>Optional</sup> <a name="warning_recovery_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecoveryInput"></a>
-
-```python
-warning_recovery_input: str
-```
-
-- *Type:* str
-
----
-
-##### `critical`<sup>Required</sup> <a name="critical" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.critical"></a>
-
-```python
-critical: str
-```
-
-- *Type:* str
-
----
-
-##### `critical_recovery`<sup>Required</sup> <a name="critical_recovery" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecovery"></a>
-
-```python
-critical_recovery: str
-```
-
-- *Type:* str
-
----
-
-##### `ok`<sup>Required</sup> <a name="ok" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.ok"></a>
-
-```python
-ok: str
-```
-
-- *Type:* str
-
----
-
-##### `unknown`<sup>Required</sup> <a name="unknown" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknown"></a>
-
-```python
-unknown: str
-```
-
-- *Type:* str
-
----
-
-##### `warning`<sup>Required</sup> <a name="warning" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warning"></a>
-
-```python
-warning: str
-```
-
-- *Type:* str
-
----
-
-##### `warning_recovery`<sup>Required</sup> <a name="warning_recovery" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecovery"></a>
-
-```python
-warning_recovery: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: MonitorMonitorThresholds
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
-
----
-
-
-### MonitorMonitorThresholdWindowsOutputReference <a name="MonitorMonitorThresholdWindowsOutputReference" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import monitor
-
-monitor.MonitorMonitorThresholdWindowsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetRecoveryWindow">reset_recovery_window</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetTriggerWindow">reset_trigger_window</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_recovery_window` <a name="reset_recovery_window" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetRecoveryWindow"></a>
-
-```python
-def reset_recovery_window() -> None
-```
-
-##### `reset_trigger_window` <a name="reset_trigger_window" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetTriggerWindow"></a>
-
-```python
-def reset_trigger_window() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindowInput">recovery_window_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindowInput">trigger_window_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindow">recovery_window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindow">trigger_window</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `recovery_window_input`<sup>Optional</sup> <a name="recovery_window_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindowInput"></a>
-
-```python
-recovery_window_input: str
-```
-
-- *Type:* str
-
----
-
-##### `trigger_window_input`<sup>Optional</sup> <a name="trigger_window_input" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindowInput"></a>
-
-```python
-trigger_window_input: str
-```
-
-- *Type:* str
-
----
-
-##### `recovery_window`<sup>Required</sup> <a name="recovery_window" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindow"></a>
-
-```python
-recovery_window: str
-```
-
-- *Type:* str
-
----
-
-##### `trigger_window`<sup>Required</sup> <a name="trigger_window" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindow"></a>
-
-```python
-trigger_window: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: MonitorMonitorThresholdWindows
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
-
----
-
-
-### MonitorSchedulingOptionsCustomScheduleOutputReference <a name="MonitorSchedulingOptionsCustomScheduleOutputReference" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import monitor
-
-monitor.MonitorSchedulingOptionsCustomScheduleOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence">put_recurrence</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `put_recurrence` <a name="put_recurrence" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence"></a>
-
-```python
-def put_recurrence(
-  rrule: str,
-  timezone: str,
-  start: str = None
-) -> None
-```
-
-###### `rrule`<sup>Required</sup> <a name="rrule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence.parameter.rrule"></a>
-
-- *Type:* str
-
-Must be a valid `rrule`. See API docs for supported fields.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#rrule Monitor#rrule}
-
----
-
-###### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence.parameter.timezone"></a>
-
-- *Type:* str
-
-'tz database' format. Example: `America/New_York` or `UTC`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#timezone Monitor#timezone}
-
----
-
-###### `start`<sup>Optional</sup> <a name="start" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence.parameter.start"></a>
-
-- *Type:* str
-
-Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#start Monitor#start}
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrence">recurrence</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference">MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrenceInput">recurrence_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `recurrence`<sup>Required</sup> <a name="recurrence" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrence"></a>
-
-```python
-recurrence: MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference">MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference</a>
-
----
-
-##### `recurrence_input`<sup>Optional</sup> <a name="recurrence_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrenceInput"></a>
-
-```python
-recurrence_input: MonitorSchedulingOptionsCustomScheduleRecurrence
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.internalValue"></a>
-
-```python
-internal_value: MonitorSchedulingOptionsCustomSchedule
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
-
----
-
-
-### MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference <a name="MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import monitor
-
-monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resetStart">reset_start</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_start` <a name="reset_start" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resetStart"></a>
-
-```python
-def reset_start() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rruleInput">rrule_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezoneInput">timezone_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rrule">rrule</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `rrule_input`<sup>Optional</sup> <a name="rrule_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rruleInput"></a>
-
-```python
-rrule_input: str
-```
-
-- *Type:* str
-
----
-
-##### `start_input`<sup>Optional</sup> <a name="start_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.startInput"></a>
-
-```python
-start_input: str
-```
-
-- *Type:* str
-
----
-
-##### `timezone_input`<sup>Optional</sup> <a name="timezone_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezoneInput"></a>
-
-```python
-timezone_input: str
-```
-
-- *Type:* str
-
----
-
-##### `rrule`<sup>Required</sup> <a name="rrule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rrule"></a>
-
-```python
-rrule: str
-```
-
-- *Type:* str
-
----
-
-##### `start`<sup>Required</sup> <a name="start" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.start"></a>
-
-```python
-start: str
-```
-
-- *Type:* str
-
----
-
-##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezone"></a>
-
-```python
-timezone: str
-```
-
-- *Type:* str
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.internalValue"></a>
-
-```python
-internal_value: MonitorSchedulingOptionsCustomScheduleRecurrence
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
-
----
-
-
-### MonitorSchedulingOptionsEvaluationWindowOutputReference <a name="MonitorSchedulingOptionsEvaluationWindowOutputReference" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import monitor
-
-monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetDayStarts">reset_day_starts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetHourStarts">reset_hour_starts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetMonthStarts">reset_month_starts</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `reset_day_starts` <a name="reset_day_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetDayStarts"></a>
-
-```python
-def reset_day_starts() -> None
-```
-
-##### `reset_hour_starts` <a name="reset_hour_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetHourStarts"></a>
-
-```python
-def reset_hour_starts() -> None
-```
-
-##### `reset_month_starts` <a name="reset_month_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetMonthStarts"></a>
-
-```python
-def reset_month_starts() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStartsInput">day_starts_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStartsInput">hour_starts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStartsInput">month_starts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStarts">day_starts</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStarts">hour_starts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStarts">month_starts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `day_starts_input`<sup>Optional</sup> <a name="day_starts_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStartsInput"></a>
-
-```python
-day_starts_input: str
-```
-
-- *Type:* str
-
----
-
-##### `hour_starts_input`<sup>Optional</sup> <a name="hour_starts_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStartsInput"></a>
-
-```python
-hour_starts_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `month_starts_input`<sup>Optional</sup> <a name="month_starts_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStartsInput"></a>
-
-```python
-month_starts_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `day_starts`<sup>Required</sup> <a name="day_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStarts"></a>
-
-```python
-day_starts: str
-```
-
-- *Type:* str
-
----
-
-##### `hour_starts`<sup>Required</sup> <a name="hour_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStarts"></a>
-
-```python
-hour_starts: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `month_starts`<sup>Required</sup> <a name="month_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStarts"></a>
-
-```python
-month_starts: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.internalValue"></a>
-
-```python
-internal_value: MonitorSchedulingOptionsEvaluationWindow
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
-
----
-
-
-### MonitorSchedulingOptionsOutputReference <a name="MonitorSchedulingOptionsOutputReference" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import monitor
-
-monitor.MonitorSchedulingOptionsOutputReference(
-  terraform_resource: IInterpolatingParent,
-  terraform_attribute: str
-)
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putCustomSchedule">put_custom_schedule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow">put_evaluation_window</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetCustomSchedule">reset_custom_schedule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetEvaluationWindow">reset_evaluation_window</a></code> | *No description.* |
-
----
-
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.computeFqn"></a>
-
-```python
-def compute_fqn() -> str
-```
-
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getAnyMapAttribute"></a>
-
-```python
-def get_any_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Any]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanAttribute"></a>
-
-```python
-def get_boolean_attribute(
-  terraform_attribute: str
-) -> IResolvable
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanMapAttribute"></a>
-
-```python
-def get_boolean_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[bool]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getListAttribute"></a>
-
-```python
-def get_list_attribute(
-  terraform_attribute: str
-) -> typing.List[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberAttribute"></a>
-
-```python
-def get_number_attribute(
-  terraform_attribute: str
-) -> typing.Union[int, float]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberListAttribute"></a>
-
-```python
-def get_number_list_attribute(
-  terraform_attribute: str
-) -> typing.List[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberMapAttribute"></a>
-
-```python
-def get_number_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[typing.Union[int, float]]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringAttribute"></a>
-
-```python
-def get_string_attribute(
-  terraform_attribute: str
-) -> str
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringMapAttribute"></a>
-
-```python
-def get_string_map_attribute(
-  terraform_attribute: str
-) -> typing.Mapping[str]
-```
-
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* str
-
----
-
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.interpolationForAttribute"></a>
-
-```python
-def interpolation_for_attribute(
-  property: str
-) -> IResolvable
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* str
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resolve"></a>
-
-```python
-def resolve(
-  _context: IResolveContext
-) -> typing.Any
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* cdktf.IResolveContext
-
----
-
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.toString"></a>
-
-```python
-def to_string() -> str
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `put_custom_schedule` <a name="put_custom_schedule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putCustomSchedule"></a>
-
-```python
-def put_custom_schedule(
-  recurrence: MonitorSchedulingOptionsCustomScheduleRecurrence
-) -> None
-```
-
-###### `recurrence`<sup>Required</sup> <a name="recurrence" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putCustomSchedule.parameter.recurrence"></a>
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
-
-recurrence block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#recurrence Monitor#recurrence}
-
----
-
-##### `put_evaluation_window` <a name="put_evaluation_window" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow"></a>
-
-```python
-def put_evaluation_window(
-  day_starts: str = None,
-  hour_starts: typing.Union[int, float] = None,
-  month_starts: typing.Union[int, float] = None
-) -> None
-```
-
-###### `day_starts`<sup>Optional</sup> <a name="day_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow.parameter.dayStarts"></a>
-
-- *Type:* str
-
-The time of the day at which a one day cumulative evaluation window starts.
-
-Must be defined in UTC time in `HH:mm` format.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#day_starts Monitor#day_starts}
-
----
-
-###### `hour_starts`<sup>Optional</sup> <a name="hour_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow.parameter.hourStarts"></a>
-
-- *Type:* typing.Union[int, float]
-
-The minute of the hour at which a one hour cumulative evaluation window starts.
-
-Must be between 0 and 59.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
-
----
-
-###### `month_starts`<sup>Optional</sup> <a name="month_starts" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow.parameter.monthStarts"></a>
-
-- *Type:* typing.Union[int, float]
-
-The day of the month at which a one month cumulative evaluation window starts.
-
-Must be a value of 1.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#month_starts Monitor#month_starts}
-
----
-
-##### `reset_custom_schedule` <a name="reset_custom_schedule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetCustomSchedule"></a>
-
-```python
-def reset_custom_schedule() -> None
-```
-
-##### `reset_evaluation_window` <a name="reset_evaluation_window" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetEvaluationWindow"></a>
-
-```python
-def reset_evaluation_window() -> None
-```
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customSchedule">custom_schedule</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference">MonitorSchedulingOptionsCustomScheduleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindow">evaluation_window</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference">MonitorSchedulingOptionsEvaluationWindowOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customScheduleInput">custom_schedule_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindowInput">evaluation_window_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | *No description.* |
-
----
-
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.creationStack"></a>
-
-```python
-creation_stack: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.fqn"></a>
-
-```python
-fqn: str
-```
-
-- *Type:* str
-
----
-
-##### `custom_schedule`<sup>Required</sup> <a name="custom_schedule" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customSchedule"></a>
-
-```python
-custom_schedule: MonitorSchedulingOptionsCustomScheduleOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference">MonitorSchedulingOptionsCustomScheduleOutputReference</a>
-
----
-
-##### `evaluation_window`<sup>Required</sup> <a name="evaluation_window" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindow"></a>
-
-```python
-evaluation_window: MonitorSchedulingOptionsEvaluationWindowOutputReference
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference">MonitorSchedulingOptionsEvaluationWindowOutputReference</a>
-
----
-
-##### `custom_schedule_input`<sup>Optional</sup> <a name="custom_schedule_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customScheduleInput"></a>
-
-```python
-custom_schedule_input: MonitorSchedulingOptionsCustomSchedule
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
-
----
-
-##### `evaluation_window_input`<sup>Optional</sup> <a name="evaluation_window_input" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindowInput"></a>
-
-```python
-evaluation_window_input: MonitorSchedulingOptionsEvaluationWindow
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
-
----
-
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.internalValue"></a>
-
-```python
-internal_value: MonitorSchedulingOptions
-```
-
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
-
----
-
-
-### MonitorVariablesCloudCostQueryList <a name="MonitorVariablesCloudCostQueryList" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer"></a>
-
-```python
-from cdktf_cdktf_provider_datadog import monitor
-
-monitor.MonitorVariablesCloudCostQueryList(
+monitor.MonitorAssetsList(
   terraform_resource: IInterpolatingParent,
   terraform_attribute: str,
   wraps_set: bool
@@ -6253,21 +4495,21 @@ monitor.MonitorVariablesCloudCostQueryList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6275,7 +4517,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -6287,15 +4529,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -6307,19 +4549,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.resolve"></a>
 
 ```python
 def resolve(
@@ -6329,13 +4571,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6345,15 +4587,15 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.get"></a>
 
 ```python
 def get(
   index: typing.Union[int, float]
-) -> MonitorVariablesCloudCostQueryOutputReference
+) -> MonitorAssetsOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -6366,13 +4608,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6386,7 +4628,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6396,23 +4638,2874 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorAssetsList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[MonitorAssets]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>]
+
+---
+
+
+### MonitorAssetsOutputReference <a name="MonitorAssetsOutputReference" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorAssetsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.resetResourceKey">reset_resource_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.resetResourceType">reset_resource_type</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_resource_key` <a name="reset_resource_key" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.resetResourceKey"></a>
+
+```python
+def reset_resource_key() -> None
+```
+
+##### `reset_resource_type` <a name="reset_resource_type" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.resetResourceType"></a>
+
+```python
+def reset_resource_type() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.categoryInput">category_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceKeyInput">resource_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceTypeInput">resource_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.category">category</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceKey">resource_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `category_input`<sup>Optional</sup> <a name="category_input" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.categoryInput"></a>
+
+```python
+category_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_key_input`<sup>Optional</sup> <a name="resource_key_input" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceKeyInput"></a>
+
+```python
+resource_key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_type_input`<sup>Optional</sup> <a name="resource_type_input" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceTypeInput"></a>
+
+```python
+resource_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.urlInput"></a>
+
+```python
+url_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `category`<sup>Required</sup> <a name="category" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.category"></a>
+
+```python
+category: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_key`<sup>Required</sup> <a name="resource_key" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceKey"></a>
+
+```python
+resource_key: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.resourceType"></a>
+
+```python
+resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorAssetsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | MonitorAssets
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitor.MonitorAssets">MonitorAssets</a>
+
+---
+
+
+### MonitorMonitorThresholdsOutputReference <a name="MonitorMonitorThresholdsOutputReference" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorMonitorThresholdsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCritical">reset_critical</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCriticalRecovery">reset_critical_recovery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetOk">reset_ok</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetUnknown">reset_unknown</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarning">reset_warning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarningRecovery">reset_warning_recovery</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_critical` <a name="reset_critical" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCritical"></a>
+
+```python
+def reset_critical() -> None
+```
+
+##### `reset_critical_recovery` <a name="reset_critical_recovery" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetCriticalRecovery"></a>
+
+```python
+def reset_critical_recovery() -> None
+```
+
+##### `reset_ok` <a name="reset_ok" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetOk"></a>
+
+```python
+def reset_ok() -> None
+```
+
+##### `reset_unknown` <a name="reset_unknown" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetUnknown"></a>
+
+```python
+def reset_unknown() -> None
+```
+
+##### `reset_warning` <a name="reset_warning" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarning"></a>
+
+```python
+def reset_warning() -> None
+```
+
+##### `reset_warning_recovery` <a name="reset_warning_recovery" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.resetWarningRecovery"></a>
+
+```python
+def reset_warning_recovery() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalInput">critical_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecoveryInput">critical_recovery_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.okInput">ok_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknownInput">unknown_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningInput">warning_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecoveryInput">warning_recovery_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.critical">critical</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecovery">critical_recovery</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.ok">ok</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknown">unknown</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warning">warning</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecovery">warning_recovery</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `critical_input`<sup>Optional</sup> <a name="critical_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalInput"></a>
+
+```python
+critical_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `critical_recovery_input`<sup>Optional</sup> <a name="critical_recovery_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecoveryInput"></a>
+
+```python
+critical_recovery_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ok_input`<sup>Optional</sup> <a name="ok_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.okInput"></a>
+
+```python
+ok_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `unknown_input`<sup>Optional</sup> <a name="unknown_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknownInput"></a>
+
+```python
+unknown_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `warning_input`<sup>Optional</sup> <a name="warning_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningInput"></a>
+
+```python
+warning_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `warning_recovery_input`<sup>Optional</sup> <a name="warning_recovery_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecoveryInput"></a>
+
+```python
+warning_recovery_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `critical`<sup>Required</sup> <a name="critical" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.critical"></a>
+
+```python
+critical: str
+```
+
+- *Type:* str
+
+---
+
+##### `critical_recovery`<sup>Required</sup> <a name="critical_recovery" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.criticalRecovery"></a>
+
+```python
+critical_recovery: str
+```
+
+- *Type:* str
+
+---
+
+##### `ok`<sup>Required</sup> <a name="ok" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.ok"></a>
+
+```python
+ok: str
+```
+
+- *Type:* str
+
+---
+
+##### `unknown`<sup>Required</sup> <a name="unknown" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.unknown"></a>
+
+```python
+unknown: str
+```
+
+- *Type:* str
+
+---
+
+##### `warning`<sup>Required</sup> <a name="warning" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warning"></a>
+
+```python
+warning: str
+```
+
+- *Type:* str
+
+---
+
+##### `warning_recovery`<sup>Required</sup> <a name="warning_recovery" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.warningRecovery"></a>
+
+```python
+warning_recovery: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorMonitorThresholds
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a>
+
+---
+
+
+### MonitorMonitorThresholdWindowsOutputReference <a name="MonitorMonitorThresholdWindowsOutputReference" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorMonitorThresholdWindowsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetRecoveryWindow">reset_recovery_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetTriggerWindow">reset_trigger_window</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_recovery_window` <a name="reset_recovery_window" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetRecoveryWindow"></a>
+
+```python
+def reset_recovery_window() -> None
+```
+
+##### `reset_trigger_window` <a name="reset_trigger_window" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.resetTriggerWindow"></a>
+
+```python
+def reset_trigger_window() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindowInput">recovery_window_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindowInput">trigger_window_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindow">recovery_window</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindow">trigger_window</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `recovery_window_input`<sup>Optional</sup> <a name="recovery_window_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindowInput"></a>
+
+```python
+recovery_window_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `trigger_window_input`<sup>Optional</sup> <a name="trigger_window_input" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindowInput"></a>
+
+```python
+trigger_window_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `recovery_window`<sup>Required</sup> <a name="recovery_window" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.recoveryWindow"></a>
+
+```python
+recovery_window: str
+```
+
+- *Type:* str
+
+---
+
+##### `trigger_window`<sup>Required</sup> <a name="trigger_window" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.triggerWindow"></a>
+
+```python
+trigger_window: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindowsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorMonitorThresholdWindows
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholdWindows">MonitorMonitorThresholdWindows</a>
+
+---
+
+
+### MonitorSchedulingOptionsCustomScheduleOutputReference <a name="MonitorSchedulingOptionsCustomScheduleOutputReference" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorSchedulingOptionsCustomScheduleOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence">put_recurrence</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_recurrence` <a name="put_recurrence" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence"></a>
+
+```python
+def put_recurrence(
+  rrule: str,
+  timezone: str,
+  start: str = None
+) -> None
+```
+
+###### `rrule`<sup>Required</sup> <a name="rrule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence.parameter.rrule"></a>
+
+- *Type:* str
+
+Must be a valid `rrule`. See API docs for supported fields.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#rrule Monitor#rrule}
+
+---
+
+###### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence.parameter.timezone"></a>
+
+- *Type:* str
+
+'tz database' format. Example: `America/New_York` or `UTC`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
+
+---
+
+###### `start`<sup>Optional</sup> <a name="start" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.putRecurrence.parameter.start"></a>
+
+- *Type:* str
+
+Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#start Monitor#start}
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrence">recurrence</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference">MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrenceInput">recurrence_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `recurrence`<sup>Required</sup> <a name="recurrence" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrence"></a>
+
+```python
+recurrence: MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference">MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference</a>
+
+---
+
+##### `recurrence_input`<sup>Optional</sup> <a name="recurrence_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.recurrenceInput"></a>
+
+```python
+recurrence_input: MonitorSchedulingOptionsCustomScheduleRecurrence
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorSchedulingOptionsCustomSchedule
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
+
+---
+
+
+### MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference <a name="MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resetStart">reset_start</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_start` <a name="reset_start" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.resetStart"></a>
+
+```python
+def reset_start() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rruleInput">rrule_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.startInput">start_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezoneInput">timezone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rrule">rrule</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.start">start</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `rrule_input`<sup>Optional</sup> <a name="rrule_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rruleInput"></a>
+
+```python
+rrule_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `start_input`<sup>Optional</sup> <a name="start_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.startInput"></a>
+
+```python
+start_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `timezone_input`<sup>Optional</sup> <a name="timezone_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezoneInput"></a>
+
+```python
+timezone_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `rrule`<sup>Required</sup> <a name="rrule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.rrule"></a>
+
+```python
+rrule: str
+```
+
+- *Type:* str
+
+---
+
+##### `start`<sup>Required</sup> <a name="start" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.start"></a>
+
+```python
+start: str
+```
+
+- *Type:* str
+
+---
+
+##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.timezone"></a>
+
+```python
+timezone: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorSchedulingOptionsCustomScheduleRecurrence
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
+
+---
+
+
+### MonitorSchedulingOptionsEvaluationWindowOutputReference <a name="MonitorSchedulingOptionsEvaluationWindowOutputReference" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetDayStarts">reset_day_starts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetHourStarts">reset_hour_starts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetMonthStarts">reset_month_starts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetTimezone">reset_timezone</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_day_starts` <a name="reset_day_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetDayStarts"></a>
+
+```python
+def reset_day_starts() -> None
+```
+
+##### `reset_hour_starts` <a name="reset_hour_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetHourStarts"></a>
+
+```python
+def reset_hour_starts() -> None
+```
+
+##### `reset_month_starts` <a name="reset_month_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetMonthStarts"></a>
+
+```python
+def reset_month_starts() -> None
+```
+
+##### `reset_timezone` <a name="reset_timezone" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.resetTimezone"></a>
+
+```python
+def reset_timezone() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStartsInput">day_starts_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStartsInput">hour_starts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStartsInput">month_starts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.timezoneInput">timezone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStarts">day_starts</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStarts">hour_starts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStarts">month_starts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.timezone">timezone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `day_starts_input`<sup>Optional</sup> <a name="day_starts_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStartsInput"></a>
+
+```python
+day_starts_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `hour_starts_input`<sup>Optional</sup> <a name="hour_starts_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStartsInput"></a>
+
+```python
+hour_starts_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `month_starts_input`<sup>Optional</sup> <a name="month_starts_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStartsInput"></a>
+
+```python
+month_starts_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `timezone_input`<sup>Optional</sup> <a name="timezone_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.timezoneInput"></a>
+
+```python
+timezone_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `day_starts`<sup>Required</sup> <a name="day_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.dayStarts"></a>
+
+```python
+day_starts: str
+```
+
+- *Type:* str
+
+---
+
+##### `hour_starts`<sup>Required</sup> <a name="hour_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.hourStarts"></a>
+
+```python
+hour_starts: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `month_starts`<sup>Required</sup> <a name="month_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.monthStarts"></a>
+
+```python
+month_starts: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `timezone`<sup>Required</sup> <a name="timezone" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.timezone"></a>
+
+```python
+timezone: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorSchedulingOptionsEvaluationWindow
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
+
+---
+
+
+### MonitorSchedulingOptionsOutputReference <a name="MonitorSchedulingOptionsOutputReference" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorSchedulingOptionsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putCustomSchedule">put_custom_schedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow">put_evaluation_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetCustomSchedule">reset_custom_schedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetEvaluationWindow">reset_evaluation_window</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_custom_schedule` <a name="put_custom_schedule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putCustomSchedule"></a>
+
+```python
+def put_custom_schedule(
+  recurrence: MonitorSchedulingOptionsCustomScheduleRecurrence
+) -> None
+```
+
+###### `recurrence`<sup>Required</sup> <a name="recurrence" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putCustomSchedule.parameter.recurrence"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleRecurrence">MonitorSchedulingOptionsCustomScheduleRecurrence</a>
+
+recurrence block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recurrence Monitor#recurrence}
+
+---
+
+##### `put_evaluation_window` <a name="put_evaluation_window" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow"></a>
+
+```python
+def put_evaluation_window(
+  day_starts: str = None,
+  hour_starts: typing.Union[int, float] = None,
+  month_starts: typing.Union[int, float] = None,
+  timezone: str = None
+) -> None
+```
+
+###### `day_starts`<sup>Optional</sup> <a name="day_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow.parameter.dayStarts"></a>
+
+- *Type:* str
+
+The time of the day at which a one day cumulative evaluation window starts.
+
+Must be defined in UTC time in `HH:mm` format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#day_starts Monitor#day_starts}
+
+---
+
+###### `hour_starts`<sup>Optional</sup> <a name="hour_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow.parameter.hourStarts"></a>
+
+- *Type:* typing.Union[int, float]
+
+The minute of the hour at which a one hour cumulative evaluation window starts.
+
+Must be between 0 and 59.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+
+---
+
+###### `month_starts`<sup>Optional</sup> <a name="month_starts" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow.parameter.monthStarts"></a>
+
+- *Type:* typing.Union[int, float]
+
+The day of the month at which a one month cumulative evaluation window starts.
+
+Must be a value of 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#month_starts Monitor#month_starts}
+
+---
+
+###### `timezone`<sup>Optional</sup> <a name="timezone" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.putEvaluationWindow.parameter.timezone"></a>
+
+- *Type:* str
+
+The timezone for the cumulative evaluation window start time.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
+
+---
+
+##### `reset_custom_schedule` <a name="reset_custom_schedule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetCustomSchedule"></a>
+
+```python
+def reset_custom_schedule() -> None
+```
+
+##### `reset_evaluation_window` <a name="reset_evaluation_window" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.resetEvaluationWindow"></a>
+
+```python
+def reset_evaluation_window() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customSchedule">custom_schedule</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference">MonitorSchedulingOptionsCustomScheduleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindow">evaluation_window</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference">MonitorSchedulingOptionsEvaluationWindowOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customScheduleInput">custom_schedule_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindowInput">evaluation_window_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_schedule`<sup>Required</sup> <a name="custom_schedule" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customSchedule"></a>
+
+```python
+custom_schedule: MonitorSchedulingOptionsCustomScheduleOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomScheduleOutputReference">MonitorSchedulingOptionsCustomScheduleOutputReference</a>
+
+---
+
+##### `evaluation_window`<sup>Required</sup> <a name="evaluation_window" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindow"></a>
+
+```python
+evaluation_window: MonitorSchedulingOptionsEvaluationWindowOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindowOutputReference">MonitorSchedulingOptionsEvaluationWindowOutputReference</a>
+
+---
+
+##### `custom_schedule_input`<sup>Optional</sup> <a name="custom_schedule_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.customScheduleInput"></a>
+
+```python
+custom_schedule_input: MonitorSchedulingOptionsCustomSchedule
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsCustomSchedule">MonitorSchedulingOptionsCustomSchedule</a>
+
+---
+
+##### `evaluation_window_input`<sup>Optional</sup> <a name="evaluation_window_input" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.evaluationWindowInput"></a>
+
+```python
+evaluation_window_input: MonitorSchedulingOptionsEvaluationWindow
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsEvaluationWindow">MonitorSchedulingOptionsEvaluationWindow</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorSchedulingOptionsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorSchedulingOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorSchedulingOptions">MonitorSchedulingOptions</a>
+
+---
+
+
+### MonitorVariablesCloudCostQueryList <a name="MonitorVariablesCloudCostQueryList" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorVariablesCloudCostQueryList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> MonitorVariablesCloudCostQueryOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[MonitorVariablesCloudCostQuery]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 ---
 
 
-### MonitorVariablesCloudCostQueryOutputReference <a name="MonitorVariablesCloudCostQueryOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference"></a>
+### MonitorVariablesCloudCostQueryOutputReference <a name="MonitorVariablesCloudCostQueryOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesCloudCostQueryOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6424,22 +7517,22 @@ monitor.MonitorVariablesCloudCostQueryOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6447,7 +7540,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -6455,7 +7548,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -6467,29 +7560,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -6497,13 +7590,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -6511,13 +7604,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -6525,13 +7618,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -6539,13 +7632,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -6553,13 +7646,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -6567,13 +7660,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -6581,13 +7674,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -6595,13 +7688,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -6609,13 +7702,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -6623,13 +7716,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -6639,13 +7732,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6660,21 +7753,21 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregatorInput">aggregator_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSourceInput">data_source_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregator">aggregator</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregatorInput">aggregator_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSourceInput">data_source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregator">aggregator</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6688,7 +7781,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6698,7 +7791,7 @@ fqn: str
 
 ---
 
-##### `aggregator_input`<sup>Optional</sup> <a name="aggregator_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregatorInput"></a>
+##### `aggregator_input`<sup>Optional</sup> <a name="aggregator_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregatorInput"></a>
 
 ```python
 aggregator_input: str
@@ -6708,7 +7801,7 @@ aggregator_input: str
 
 ---
 
-##### `data_source_input`<sup>Optional</sup> <a name="data_source_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSourceInput"></a>
+##### `data_source_input`<sup>Optional</sup> <a name="data_source_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSourceInput"></a>
 
 ```python
 data_source_input: str
@@ -6718,7 +7811,7 @@ data_source_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -6728,7 +7821,7 @@ name_input: str
 
 ---
 
-##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.queryInput"></a>
+##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.queryInput"></a>
 
 ```python
 query_input: str
@@ -6738,7 +7831,7 @@ query_input: str
 
 ---
 
-##### `aggregator`<sup>Required</sup> <a name="aggregator" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregator"></a>
+##### `aggregator`<sup>Required</sup> <a name="aggregator" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.aggregator"></a>
 
 ```python
 aggregator: str
@@ -6748,7 +7841,7 @@ aggregator: str
 
 ---
 
-##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource"></a>
+##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.dataSource"></a>
 
 ```python
 data_source: str
@@ -6758,7 +7851,7 @@ data_source: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -6768,7 +7861,7 @@ name: str
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.query"></a>
 
 ```python
 query: str
@@ -6778,25 +7871,25 @@ query: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | MonitorVariablesCloudCostQuery
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>
 
 ---
 
 
-### MonitorVariablesEventQueryComputeList <a name="MonitorVariablesEventQueryComputeList" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList"></a>
+### MonitorVariablesDataQualityQueryList <a name="MonitorVariablesDataQualityQueryList" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
-monitor.MonitorVariablesEventQueryComputeList(
+monitor.MonitorVariablesDataQualityQueryList(
   terraform_resource: IInterpolatingParent,
   terraform_attribute: str,
   wraps_set: bool
@@ -6805,21 +7898,21 @@ monitor.MonitorVariablesEventQueryComputeList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6827,7 +7920,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -6839,15 +7932,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -6859,19 +7952,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.resolve"></a>
 
 ```python
 def resolve(
@@ -6881,13 +7974,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6897,15 +7990,15 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.get"></a>
 
 ```python
 def get(
   index: typing.Union[int, float]
-) -> MonitorVariablesEventQueryComputeOutputReference
+) -> MonitorVariablesDataQualityQueryOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -6918,13 +8011,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6938,7 +8031,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6948,23 +8041,1173 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[MonitorVariablesDataQualityQuery]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]
+
+---
+
+
+### MonitorVariablesDataQualityQueryMonitorOptionsOutputReference <a name="MonitorVariablesDataQualityQueryMonitorOptionsOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCrontabOverride">reset_crontab_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCustomSql">reset_custom_sql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCustomWhere">reset_custom_where</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetGroupByColumns">reset_group_by_columns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetModelTypeOverride">reset_model_type_override</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_crontab_override` <a name="reset_crontab_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCrontabOverride"></a>
+
+```python
+def reset_crontab_override() -> None
+```
+
+##### `reset_custom_sql` <a name="reset_custom_sql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCustomSql"></a>
+
+```python
+def reset_custom_sql() -> None
+```
+
+##### `reset_custom_where` <a name="reset_custom_where" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetCustomWhere"></a>
+
+```python
+def reset_custom_where() -> None
+```
+
+##### `reset_group_by_columns` <a name="reset_group_by_columns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetGroupByColumns"></a>
+
+```python
+def reset_group_by_columns() -> None
+```
+
+##### `reset_model_type_override` <a name="reset_model_type_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.resetModelTypeOverride"></a>
+
+```python
+def reset_model_type_override() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.crontabOverrideInput">crontab_override_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customSqlInput">custom_sql_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customWhereInput">custom_where_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.groupByColumnsInput">group_by_columns_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelTypeOverrideInput">model_type_override_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.crontabOverride">crontab_override</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customSql">custom_sql</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customWhere">custom_where</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.groupByColumns">group_by_columns</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelTypeOverride">model_type_override</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `crontab_override_input`<sup>Optional</sup> <a name="crontab_override_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.crontabOverrideInput"></a>
+
+```python
+crontab_override_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_sql_input`<sup>Optional</sup> <a name="custom_sql_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customSqlInput"></a>
+
+```python
+custom_sql_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_where_input`<sup>Optional</sup> <a name="custom_where_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customWhereInput"></a>
+
+```python
+custom_where_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_by_columns_input`<sup>Optional</sup> <a name="group_by_columns_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.groupByColumnsInput"></a>
+
+```python
+group_by_columns_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `model_type_override_input`<sup>Optional</sup> <a name="model_type_override_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelTypeOverrideInput"></a>
+
+```python
+model_type_override_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `crontab_override`<sup>Required</sup> <a name="crontab_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.crontabOverride"></a>
+
+```python
+crontab_override: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_sql`<sup>Required</sup> <a name="custom_sql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customSql"></a>
+
+```python
+custom_sql: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_where`<sup>Required</sup> <a name="custom_where" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.customWhere"></a>
+
+```python
+custom_where: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_by_columns`<sup>Required</sup> <a name="group_by_columns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.groupByColumns"></a>
+
+```python
+group_by_columns: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `model_type_override`<sup>Required</sup> <a name="model_type_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.modelTypeOverride"></a>
+
+```python
+model_type_override: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: MonitorVariablesDataQualityQueryMonitorOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a>
+
+---
+
+
+### MonitorVariablesDataQualityQueryOutputReference <a name="MonitorVariablesDataQualityQueryOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorVariablesDataQualityQueryOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.putMonitorOptions">put_monitor_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetGroupBy">reset_group_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetMonitorOptions">reset_monitor_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetSchemaVersion">reset_schema_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetScope">reset_scope</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_monitor_options` <a name="put_monitor_options" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.putMonitorOptions"></a>
+
+```python
+def put_monitor_options(
+  crontab_override: str = None,
+  custom_sql: str = None,
+  custom_where: str = None,
+  group_by_columns: typing.List[str] = None,
+  model_type_override: str = None
+) -> None
+```
+
+###### `crontab_override`<sup>Optional</sup> <a name="crontab_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.putMonitorOptions.parameter.crontabOverride"></a>
+
+- *Type:* str
+
+Crontab expression to override the default schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
+
+---
+
+###### `custom_sql`<sup>Optional</sup> <a name="custom_sql" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.putMonitorOptions.parameter.customSql"></a>
+
+- *Type:* str
+
+Custom SQL query for the monitor.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+
+---
+
+###### `custom_where`<sup>Optional</sup> <a name="custom_where" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.putMonitorOptions.parameter.customWhere"></a>
+
+- *Type:* str
+
+Custom WHERE clause for the query.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_where Monitor#custom_where}
+
+---
+
+###### `group_by_columns`<sup>Optional</sup> <a name="group_by_columns" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.putMonitorOptions.parameter.groupByColumns"></a>
+
+- *Type:* typing.List[str]
+
+Columns to group results by.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+
+---
+
+###### `model_type_override`<sup>Optional</sup> <a name="model_type_override" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.putMonitorOptions.parameter.modelTypeOverride"></a>
+
+- *Type:* str
+
+Override for the model type. Valid values are `freshness`, `percentage`, `any`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
+
+---
+
+##### `reset_group_by` <a name="reset_group_by" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetGroupBy"></a>
+
+```python
+def reset_group_by() -> None
+```
+
+##### `reset_monitor_options` <a name="reset_monitor_options" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetMonitorOptions"></a>
+
+```python
+def reset_monitor_options() -> None
+```
+
+##### `reset_schema_version` <a name="reset_schema_version" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetSchemaVersion"></a>
+
+```python
+def reset_schema_version() -> None
+```
+
+##### `reset_scope` <a name="reset_scope" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.resetScope"></a>
+
+```python
+def reset_scope() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.monitorOptions">monitor_options</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.dataSourceInput">data_source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.groupByInput">group_by_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.measureInput">measure_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.monitorOptionsInput">monitor_options_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.schemaVersionInput">schema_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.scopeInput">scope_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.filter">filter</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.groupBy">group_by</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.measure">measure</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.schemaVersion">schema_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.scope">scope</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `monitor_options`<sup>Required</sup> <a name="monitor_options" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.monitorOptions"></a>
+
+```python
+monitor_options: MonitorVariablesDataQualityQueryMonitorOptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptionsOutputReference">MonitorVariablesDataQualityQueryMonitorOptionsOutputReference</a>
+
+---
+
+##### `data_source_input`<sup>Optional</sup> <a name="data_source_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.dataSourceInput"></a>
+
+```python
+data_source_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.filterInput"></a>
+
+```python
+filter_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_by_input`<sup>Optional</sup> <a name="group_by_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.groupByInput"></a>
+
+```python
+group_by_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `measure_input`<sup>Optional</sup> <a name="measure_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.measureInput"></a>
+
+```python
+measure_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `monitor_options_input`<sup>Optional</sup> <a name="monitor_options_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.monitorOptionsInput"></a>
+
+```python
+monitor_options_input: MonitorVariablesDataQualityQueryMonitorOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryMonitorOptions">MonitorVariablesDataQualityQueryMonitorOptions</a>
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `schema_version_input`<sup>Optional</sup> <a name="schema_version_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.schemaVersionInput"></a>
+
+```python
+schema_version_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `scope_input`<sup>Optional</sup> <a name="scope_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.scopeInput"></a>
+
+```python
+scope_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.dataSource"></a>
+
+```python
+data_source: str
+```
+
+- *Type:* str
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.filter"></a>
+
+```python
+filter: str
+```
+
+- *Type:* str
+
+---
+
+##### `group_by`<sup>Required</sup> <a name="group_by" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.groupBy"></a>
+
+```python
+group_by: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `measure`<sup>Required</sup> <a name="measure" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.measure"></a>
+
+```python
+measure: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `schema_version`<sup>Required</sup> <a name="schema_version" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.schemaVersion"></a>
+
+```python
+schema_version: str
+```
+
+- *Type:* str
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.scope"></a>
+
+```python
+scope: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | MonitorVariablesDataQualityQuery
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>
+
+---
+
+
+### MonitorVariablesEventQueryComputeList <a name="MonitorVariablesEventQueryComputeList" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer"></a>
+
+```python
+from cdktn_provider_datadog import monitor
+
+monitor.MonitorVariablesEventQueryComputeList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> MonitorVariablesEventQueryComputeOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[MonitorVariablesEventQueryCompute]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 ---
 
 
-### MonitorVariablesEventQueryComputeOutputReference <a name="MonitorVariablesEventQueryComputeOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference"></a>
+### MonitorVariablesEventQueryComputeOutputReference <a name="MonitorVariablesEventQueryComputeOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryComputeOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6976,22 +9219,22 @@ monitor.MonitorVariablesEventQueryComputeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6999,7 +9242,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -7007,7 +9250,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -7019,31 +9262,31 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetInterval">reset_interval</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetMetric">reset_metric</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetInterval">reset_interval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetMetric">reset_metric</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -7051,13 +9294,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -7065,13 +9308,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -7079,13 +9322,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -7093,13 +9336,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -7107,13 +9350,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -7121,13 +9364,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -7135,13 +9378,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -7149,13 +9392,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -7163,13 +9406,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -7177,13 +9420,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -7193,13 +9436,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7209,13 +9452,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_interval` <a name="reset_interval" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetInterval"></a>
+##### `reset_interval` <a name="reset_interval" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetInterval"></a>
 
 ```python
 def reset_interval() -> None
 ```
 
-##### `reset_metric` <a name="reset_metric" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetMetric"></a>
+##### `reset_metric` <a name="reset_metric" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.resetMetric"></a>
 
 ```python
 def reset_metric() -> None
@@ -7226,19 +9469,19 @@ def reset_metric() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregationInput">aggregation_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.intervalInput">interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metricInput">metric_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation">aggregation</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval">interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric">metric</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregationInput">aggregation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.intervalInput">interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metricInput">metric_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation">aggregation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval">interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric">metric</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -7252,7 +9495,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -7262,7 +9505,7 @@ fqn: str
 
 ---
 
-##### `aggregation_input`<sup>Optional</sup> <a name="aggregation_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregationInput"></a>
+##### `aggregation_input`<sup>Optional</sup> <a name="aggregation_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregationInput"></a>
 
 ```python
 aggregation_input: str
@@ -7272,7 +9515,7 @@ aggregation_input: str
 
 ---
 
-##### `interval_input`<sup>Optional</sup> <a name="interval_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.intervalInput"></a>
+##### `interval_input`<sup>Optional</sup> <a name="interval_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.intervalInput"></a>
 
 ```python
 interval_input: typing.Union[int, float]
@@ -7282,7 +9525,7 @@ interval_input: typing.Union[int, float]
 
 ---
 
-##### `metric_input`<sup>Optional</sup> <a name="metric_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metricInput"></a>
+##### `metric_input`<sup>Optional</sup> <a name="metric_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metricInput"></a>
 
 ```python
 metric_input: str
@@ -7292,7 +9535,7 @@ metric_input: str
 
 ---
 
-##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation"></a>
+##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.aggregation"></a>
 
 ```python
 aggregation: str
@@ -7302,7 +9545,7 @@ aggregation: str
 
 ---
 
-##### `interval`<sup>Required</sup> <a name="interval" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval"></a>
+##### `interval`<sup>Required</sup> <a name="interval" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.interval"></a>
 
 ```python
 interval: typing.Union[int, float]
@@ -7312,7 +9555,7 @@ interval: typing.Union[int, float]
 
 ---
 
-##### `metric`<sup>Required</sup> <a name="metric" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric"></a>
+##### `metric`<sup>Required</sup> <a name="metric" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.metric"></a>
 
 ```python
 metric: str
@@ -7322,23 +9565,23 @@ metric: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | MonitorVariablesEventQueryCompute
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>
 
 ---
 
 
-### MonitorVariablesEventQueryGroupByList <a name="MonitorVariablesEventQueryGroupByList" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList"></a>
+### MonitorVariablesEventQueryGroupByList <a name="MonitorVariablesEventQueryGroupByList" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryGroupByList(
   terraform_resource: IInterpolatingParent,
@@ -7349,21 +9592,21 @@ monitor.MonitorVariablesEventQueryGroupByList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -7371,7 +9614,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -7383,15 +9626,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -7403,19 +9646,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.resolve"></a>
 
 ```python
 def resolve(
@@ -7425,13 +9668,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7441,7 +9684,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.get"></a>
 
 ```python
 def get(
@@ -7449,7 +9692,7 @@ def get(
 ) -> MonitorVariablesEventQueryGroupByOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -7462,13 +9705,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -7482,7 +9725,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -7492,23 +9735,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 ---
 
 
-### MonitorVariablesEventQueryGroupByOutputReference <a name="MonitorVariablesEventQueryGroupByOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference"></a>
+### MonitorVariablesEventQueryGroupByOutputReference <a name="MonitorVariablesEventQueryGroupByOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryGroupByOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -7520,22 +9763,22 @@ monitor.MonitorVariablesEventQueryGroupByOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -7543,7 +9786,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -7551,7 +9794,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -7563,32 +9806,32 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort">put_sort</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetLimit">reset_limit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetSort">reset_sort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort">put_sort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetLimit">reset_limit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetSort">reset_sort</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -7596,13 +9839,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -7610,13 +9853,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -7624,13 +9867,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -7638,13 +9881,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -7652,13 +9895,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -7666,13 +9909,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -7680,13 +9923,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -7694,13 +9937,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -7708,13 +9951,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -7722,13 +9965,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -7738,13 +9981,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7754,7 +9997,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_sort` <a name="put_sort" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort"></a>
+##### `put_sort` <a name="put_sort" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort"></a>
 
 ```python
 def put_sort(
@@ -7764,7 +10007,7 @@ def put_sort(
 ) -> None
 ```
 
-###### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort.parameter.aggregation"></a>
+###### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort.parameter.aggregation"></a>
 
 - *Type:* str
 
@@ -7772,37 +10015,37 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
-###### `metric`<sup>Optional</sup> <a name="metric" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort.parameter.metric"></a>
+###### `metric`<sup>Optional</sup> <a name="metric" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort.parameter.metric"></a>
 
 - *Type:* str
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
-###### `order`<sup>Optional</sup> <a name="order" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort.parameter.order"></a>
+###### `order`<sup>Optional</sup> <a name="order" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.putSort.parameter.order"></a>
 
 - *Type:* str
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
-##### `reset_limit` <a name="reset_limit" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetLimit"></a>
+##### `reset_limit` <a name="reset_limit" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetLimit"></a>
 
 ```python
 def reset_limit() -> None
 ```
 
-##### `reset_sort` <a name="reset_sort" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetSort"></a>
+##### `reset_sort` <a name="reset_sort" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.resetSort"></a>
 
 ```python
 def reset_sort() -> None
@@ -7813,19 +10056,19 @@ def reset_sort() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sort">sort</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference">MonitorVariablesEventQueryGroupBySortOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facetInput">facet_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limitInput">limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput">sort_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet">facet</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sort">sort</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference">MonitorVariablesEventQueryGroupBySortOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facetInput">facet_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limitInput">limit_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput">sort_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet">facet</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -7839,7 +10082,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -7849,17 +10092,17 @@ fqn: str
 
 ---
 
-##### `sort`<sup>Required</sup> <a name="sort" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sort"></a>
+##### `sort`<sup>Required</sup> <a name="sort" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sort"></a>
 
 ```python
 sort: MonitorVariablesEventQueryGroupBySortOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference">MonitorVariablesEventQueryGroupBySortOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference">MonitorVariablesEventQueryGroupBySortOutputReference</a>
 
 ---
 
-##### `facet_input`<sup>Optional</sup> <a name="facet_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facetInput"></a>
+##### `facet_input`<sup>Optional</sup> <a name="facet_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facetInput"></a>
 
 ```python
 facet_input: str
@@ -7869,7 +10112,7 @@ facet_input: str
 
 ---
 
-##### `limit_input`<sup>Optional</sup> <a name="limit_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limitInput"></a>
+##### `limit_input`<sup>Optional</sup> <a name="limit_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limitInput"></a>
 
 ```python
 limit_input: typing.Union[int, float]
@@ -7879,17 +10122,17 @@ limit_input: typing.Union[int, float]
 
 ---
 
-##### `sort_input`<sup>Optional</sup> <a name="sort_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput"></a>
+##### `sort_input`<sup>Optional</sup> <a name="sort_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.sortInput"></a>
 
 ```python
 sort_input: MonitorVariablesEventQueryGroupBySort
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a>
 
 ---
 
-##### `facet`<sup>Required</sup> <a name="facet" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet"></a>
+##### `facet`<sup>Required</sup> <a name="facet" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.facet"></a>
 
 ```python
 facet: str
@@ -7899,7 +10142,7 @@ facet: str
 
 ---
 
-##### `limit`<sup>Required</sup> <a name="limit" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit"></a>
+##### `limit`<sup>Required</sup> <a name="limit" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.limit"></a>
 
 ```python
 limit: typing.Union[int, float]
@@ -7909,23 +10152,23 @@ limit: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | MonitorVariablesEventQueryGroupBy
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>
 
 ---
 
 
-### MonitorVariablesEventQueryGroupBySortOutputReference <a name="MonitorVariablesEventQueryGroupBySortOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference"></a>
+### MonitorVariablesEventQueryGroupBySortOutputReference <a name="MonitorVariablesEventQueryGroupBySortOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryGroupBySortOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -7935,20 +10178,20 @@ monitor.MonitorVariablesEventQueryGroupBySortOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -7960,31 +10203,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetMetric">reset_metric</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetOrder">reset_order</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetMetric">reset_metric</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetOrder">reset_order</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -7992,13 +10235,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -8006,13 +10249,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -8020,13 +10263,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -8034,13 +10277,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -8048,13 +10291,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -8062,13 +10305,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -8076,13 +10319,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -8090,13 +10333,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -8104,13 +10347,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -8118,13 +10361,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -8134,13 +10377,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -8150,13 +10393,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_metric` <a name="reset_metric" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetMetric"></a>
+##### `reset_metric` <a name="reset_metric" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetMetric"></a>
 
 ```python
 def reset_metric() -> None
 ```
 
-##### `reset_order` <a name="reset_order" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetOrder"></a>
+##### `reset_order` <a name="reset_order" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.resetOrder"></a>
 
 ```python
 def reset_order() -> None
@@ -8167,19 +10410,19 @@ def reset_order() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregationInput">aggregation_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metricInput">metric_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.orderInput">order_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregation">aggregation</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metric">metric</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.order">order</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregationInput">aggregation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metricInput">metric_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.orderInput">order_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregation">aggregation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metric">metric</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.order">order</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -8193,7 +10436,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -8203,7 +10446,7 @@ fqn: str
 
 ---
 
-##### `aggregation_input`<sup>Optional</sup> <a name="aggregation_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregationInput"></a>
+##### `aggregation_input`<sup>Optional</sup> <a name="aggregation_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregationInput"></a>
 
 ```python
 aggregation_input: str
@@ -8213,7 +10456,7 @@ aggregation_input: str
 
 ---
 
-##### `metric_input`<sup>Optional</sup> <a name="metric_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metricInput"></a>
+##### `metric_input`<sup>Optional</sup> <a name="metric_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metricInput"></a>
 
 ```python
 metric_input: str
@@ -8223,7 +10466,7 @@ metric_input: str
 
 ---
 
-##### `order_input`<sup>Optional</sup> <a name="order_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.orderInput"></a>
+##### `order_input`<sup>Optional</sup> <a name="order_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.orderInput"></a>
 
 ```python
 order_input: str
@@ -8233,7 +10476,7 @@ order_input: str
 
 ---
 
-##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregation"></a>
+##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.aggregation"></a>
 
 ```python
 aggregation: str
@@ -8243,7 +10486,7 @@ aggregation: str
 
 ---
 
-##### `metric`<sup>Required</sup> <a name="metric" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metric"></a>
+##### `metric`<sup>Required</sup> <a name="metric" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.metric"></a>
 
 ```python
 metric: str
@@ -8253,7 +10496,7 @@ metric: str
 
 ---
 
-##### `order`<sup>Required</sup> <a name="order" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.order"></a>
+##### `order`<sup>Required</sup> <a name="order" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.order"></a>
 
 ```python
 order: str
@@ -8263,23 +10506,23 @@ order: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySortOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: MonitorVariablesEventQueryGroupBySort
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBySort">MonitorVariablesEventQueryGroupBySort</a>
 
 ---
 
 
-### MonitorVariablesEventQueryList <a name="MonitorVariablesEventQueryList" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList"></a>
+### MonitorVariablesEventQueryList <a name="MonitorVariablesEventQueryList" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryList(
   terraform_resource: IInterpolatingParent,
@@ -8290,21 +10533,21 @@ monitor.MonitorVariablesEventQueryList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -8312,7 +10555,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -8324,15 +10567,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -8344,19 +10587,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.resolve"></a>
 
 ```python
 def resolve(
@@ -8366,13 +10609,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -8382,7 +10625,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.get"></a>
 
 ```python
 def get(
@@ -8390,7 +10633,7 @@ def get(
 ) -> MonitorVariablesEventQueryOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8403,13 +10646,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -8423,7 +10666,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -8433,23 +10676,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[MonitorVariablesEventQuery]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 ---
 
 
-### MonitorVariablesEventQueryOutputReference <a name="MonitorVariablesEventQueryOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference"></a>
+### MonitorVariablesEventQueryOutputReference <a name="MonitorVariablesEventQueryOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQueryOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -8461,22 +10704,22 @@ monitor.MonitorVariablesEventQueryOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -8484,7 +10727,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8492,7 +10735,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -8504,34 +10747,34 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute">put_compute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy">put_group_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch">put_search</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy">reset_group_by</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes">reset_indexes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute">put_compute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy">put_group_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch">put_search</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy">reset_group_by</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes">reset_indexes</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -8539,13 +10782,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -8553,13 +10796,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -8567,13 +10810,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -8581,13 +10824,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -8595,13 +10838,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -8609,13 +10852,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -8623,13 +10866,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -8637,13 +10880,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -8651,13 +10894,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -8665,13 +10908,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -8681,13 +10924,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -8697,7 +10940,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_compute` <a name="put_compute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute"></a>
+##### `put_compute` <a name="put_compute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute"></a>
 
 ```python
 def put_compute(
@@ -8705,13 +10948,13 @@ def put_compute(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putCompute.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 ---
 
-##### `put_group_by` <a name="put_group_by" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy"></a>
+##### `put_group_by` <a name="put_group_by" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy"></a>
 
 ```python
 def put_group_by(
@@ -8719,13 +10962,13 @@ def put_group_by(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putGroupBy.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 ---
 
-##### `put_search` <a name="put_search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch"></a>
+##### `put_search` <a name="put_search" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch"></a>
 
 ```python
 def put_search(
@@ -8733,23 +10976,23 @@ def put_search(
 ) -> None
 ```
 
-###### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch.parameter.query"></a>
+###### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.putSearch.parameter.query"></a>
 
 - *Type:* str
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
-##### `reset_group_by` <a name="reset_group_by" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy"></a>
+##### `reset_group_by` <a name="reset_group_by" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetGroupBy"></a>
 
 ```python
 def reset_group_by() -> None
 ```
 
-##### `reset_indexes` <a name="reset_indexes" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes"></a>
+##### `reset_indexes` <a name="reset_indexes" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.resetIndexes"></a>
 
 ```python
 def reset_indexes() -> None
@@ -8760,25 +11003,25 @@ def reset_indexes() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.compute">compute</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList">MonitorVariablesEventQueryComputeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupBy">group_by</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList">MonitorVariablesEventQueryGroupByList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.search">search</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference">MonitorVariablesEventQuerySearchOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">compute_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSourceInput">data_source_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">group_by_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexesInput">indexes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.searchInput">search_input</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.compute">compute</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList">MonitorVariablesEventQueryComputeList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupBy">group_by</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList">MonitorVariablesEventQueryGroupByList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.search">search</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference">MonitorVariablesEventQuerySearchOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput">compute_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSourceInput">data_source_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput">group_by_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexesInput">indexes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.searchInput">search_input</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource">data_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes">indexes</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -8792,7 +11035,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -8802,47 +11045,47 @@ fqn: str
 
 ---
 
-##### `compute`<sup>Required</sup> <a name="compute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.compute"></a>
+##### `compute`<sup>Required</sup> <a name="compute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.compute"></a>
 
 ```python
 compute: MonitorVariablesEventQueryComputeList
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryComputeList">MonitorVariablesEventQueryComputeList</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryComputeList">MonitorVariablesEventQueryComputeList</a>
 
 ---
 
-##### `group_by`<sup>Required</sup> <a name="group_by" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupBy"></a>
+##### `group_by`<sup>Required</sup> <a name="group_by" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupBy"></a>
 
 ```python
 group_by: MonitorVariablesEventQueryGroupByList
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList">MonitorVariablesEventQueryGroupByList</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupByList">MonitorVariablesEventQueryGroupByList</a>
 
 ---
 
-##### `search`<sup>Required</sup> <a name="search" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.search"></a>
+##### `search`<sup>Required</sup> <a name="search" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.search"></a>
 
 ```python
 search: MonitorVariablesEventQuerySearchOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference">MonitorVariablesEventQuerySearchOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference">MonitorVariablesEventQuerySearchOutputReference</a>
 
 ---
 
-##### `compute_input`<sup>Optional</sup> <a name="compute_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput"></a>
+##### `compute_input`<sup>Optional</sup> <a name="compute_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.computeInput"></a>
 
 ```python
 compute_input: IResolvable | typing.List[MonitorVariablesEventQueryCompute]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryCompute">MonitorVariablesEventQueryCompute</a>]
 
 ---
 
-##### `data_source_input`<sup>Optional</sup> <a name="data_source_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSourceInput"></a>
+##### `data_source_input`<sup>Optional</sup> <a name="data_source_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSourceInput"></a>
 
 ```python
 data_source_input: str
@@ -8852,17 +11095,17 @@ data_source_input: str
 
 ---
 
-##### `group_by_input`<sup>Optional</sup> <a name="group_by_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput"></a>
+##### `group_by_input`<sup>Optional</sup> <a name="group_by_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.groupByInput"></a>
 
 ```python
 group_by_input: IResolvable | typing.List[MonitorVariablesEventQueryGroupBy]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryGroupBy">MonitorVariablesEventQueryGroupBy</a>]
 
 ---
 
-##### `indexes_input`<sup>Optional</sup> <a name="indexes_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexesInput"></a>
+##### `indexes_input`<sup>Optional</sup> <a name="indexes_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexesInput"></a>
 
 ```python
 indexes_input: typing.List[str]
@@ -8872,7 +11115,7 @@ indexes_input: typing.List[str]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -8882,17 +11125,17 @@ name_input: str
 
 ---
 
-##### `search_input`<sup>Optional</sup> <a name="search_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.searchInput"></a>
+##### `search_input`<sup>Optional</sup> <a name="search_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.searchInput"></a>
 
 ```python
 search_input: MonitorVariablesEventQuerySearch
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
 
 ---
 
-##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource"></a>
+##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.dataSource"></a>
 
 ```python
 data_source: str
@@ -8902,7 +11145,7 @@ data_source: str
 
 ---
 
-##### `indexes`<sup>Required</sup> <a name="indexes" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes"></a>
+##### `indexes`<sup>Required</sup> <a name="indexes" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.indexes"></a>
 
 ```python
 indexes: typing.List[str]
@@ -8912,7 +11155,7 @@ indexes: typing.List[str]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.name"></a>
 
 ```python
 name: str
@@ -8922,23 +11165,23 @@ name: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | MonitorVariablesEventQuery
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>
 
 ---
 
 
-### MonitorVariablesEventQuerySearchOutputReference <a name="MonitorVariablesEventQuerySearchOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference"></a>
+### MonitorVariablesEventQuerySearchOutputReference <a name="MonitorVariablesEventQuerySearchOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesEventQuerySearchOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -8948,20 +11191,20 @@ monitor.MonitorVariablesEventQuerySearchOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -8973,29 +11216,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -9003,13 +11246,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -9017,13 +11260,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -9031,13 +11274,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -9045,13 +11288,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -9059,13 +11302,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -9073,13 +11316,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -9087,13 +11330,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -9101,13 +11344,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -9115,13 +11358,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -9129,13 +11372,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -9145,13 +11388,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -9166,15 +11409,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.queryInput">query_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.query">query</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -9188,7 +11431,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -9198,7 +11441,7 @@ fqn: str
 
 ---
 
-##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.queryInput"></a>
+##### `query_input`<sup>Optional</sup> <a name="query_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.queryInput"></a>
 
 ```python
 query_input: str
@@ -9208,7 +11451,7 @@ query_input: str
 
 ---
 
-##### `query`<sup>Required</sup> <a name="query" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.query"></a>
+##### `query`<sup>Required</sup> <a name="query" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.query"></a>
 
 ```python
 query: str
@@ -9218,23 +11461,23 @@ query: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearchOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: MonitorVariablesEventQuerySearch
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuerySearch">MonitorVariablesEventQuerySearch</a>
 
 ---
 
 
-### MonitorVariablesOutputReference <a name="MonitorVariablesOutputReference" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference"></a>
+### MonitorVariablesOutputReference <a name="MonitorVariablesOutputReference" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_datadog import monitor
+from cdktn_provider_datadog import monitor
 
 monitor.MonitorVariablesOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -9244,20 +11487,20 @@ monitor.MonitorVariablesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -9269,33 +11512,35 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery">put_cloud_cost_query</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery">put_event_query</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetCloudCostQuery">reset_cloud_cost_query</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetEventQuery">reset_event_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery">put_cloud_cost_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putDataQualityQuery">put_data_quality_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery">put_event_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resetCloudCostQuery">reset_cloud_cost_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resetDataQualityQuery">reset_data_quality_query</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resetEventQuery">reset_event_query</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -9303,13 +11548,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -9317,13 +11562,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -9331,13 +11576,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -9345,13 +11590,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -9359,13 +11604,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -9373,13 +11618,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -9387,13 +11632,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -9401,13 +11646,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -9415,13 +11660,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -9429,13 +11674,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -9445,13 +11690,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -9461,7 +11706,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_cloud_cost_query` <a name="put_cloud_cost_query" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery"></a>
+##### `put_cloud_cost_query` <a name="put_cloud_cost_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery"></a>
 
 ```python
 def put_cloud_cost_query(
@@ -9469,13 +11714,27 @@ def put_cloud_cost_query(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putCloudCostQuery.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 ---
 
-##### `put_event_query` <a name="put_event_query" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery"></a>
+##### `put_data_quality_query` <a name="put_data_quality_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putDataQualityQuery"></a>
+
+```python
+def put_data_quality_query(
+  value: IResolvable | typing.List[MonitorVariablesDataQualityQuery]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putDataQualityQuery.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]
+
+---
+
+##### `put_event_query` <a name="put_event_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery"></a>
 
 ```python
 def put_event_query(
@@ -9483,19 +11742,25 @@ def put_event_query(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.putEventQuery.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 ---
 
-##### `reset_cloud_cost_query` <a name="reset_cloud_cost_query" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetCloudCostQuery"></a>
+##### `reset_cloud_cost_query` <a name="reset_cloud_cost_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resetCloudCostQuery"></a>
 
 ```python
 def reset_cloud_cost_query() -> None
 ```
 
-##### `reset_event_query` <a name="reset_event_query" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.resetEventQuery"></a>
+##### `reset_data_quality_query` <a name="reset_data_quality_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resetDataQualityQuery"></a>
+
+```python
+def reset_data_quality_query() -> None
+```
+
+##### `reset_event_query` <a name="reset_event_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.resetEventQuery"></a>
 
 ```python
 def reset_event_query() -> None
@@ -9506,17 +11771,19 @@ def reset_event_query() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery">cloud_cost_query</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery">event_query</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">cloud_cost_query_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">event_query_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery">cloud_cost_query</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.dataQualityQuery">data_quality_query</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList">MonitorVariablesDataQualityQueryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery">event_query</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput">cloud_cost_query_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.dataQualityQueryInput">data_quality_query_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput">event_query_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -9530,7 +11797,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -9540,53 +11807,73 @@ fqn: str
 
 ---
 
-##### `cloud_cost_query`<sup>Required</sup> <a name="cloud_cost_query" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery"></a>
+##### `cloud_cost_query`<sup>Required</sup> <a name="cloud_cost_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQuery"></a>
 
 ```python
 cloud_cost_query: MonitorVariablesCloudCostQueryList
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQueryList">MonitorVariablesCloudCostQueryList</a>
 
 ---
 
-##### `event_query`<sup>Required</sup> <a name="event_query" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery"></a>
+##### `data_quality_query`<sup>Required</sup> <a name="data_quality_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.dataQualityQuery"></a>
+
+```python
+data_quality_query: MonitorVariablesDataQualityQueryList
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQueryList">MonitorVariablesDataQualityQueryList</a>
+
+---
+
+##### `event_query`<sup>Required</sup> <a name="event_query" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQuery"></a>
 
 ```python
 event_query: MonitorVariablesEventQueryList
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQueryList">MonitorVariablesEventQueryList</a>
 
 ---
 
-##### `cloud_cost_query_input`<sup>Optional</sup> <a name="cloud_cost_query_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput"></a>
+##### `cloud_cost_query_input`<sup>Optional</sup> <a name="cloud_cost_query_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.cloudCostQueryInput"></a>
 
 ```python
 cloud_cost_query_input: IResolvable | typing.List[MonitorVariablesCloudCostQuery]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesCloudCostQuery">MonitorVariablesCloudCostQuery</a>]
 
 ---
 
-##### `event_query_input`<sup>Optional</sup> <a name="event_query_input" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput"></a>
+##### `data_quality_query_input`<sup>Optional</sup> <a name="data_quality_query_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.dataQualityQueryInput"></a>
+
+```python
+data_quality_query_input: IResolvable | typing.List[MonitorVariablesDataQualityQuery]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesDataQualityQuery">MonitorVariablesDataQualityQuery</a>]
+
+---
+
+##### `event_query_input`<sup>Optional</sup> <a name="event_query_input" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.eventQueryInput"></a>
 
 ```python
 event_query_input: IResolvable | typing.List[MonitorVariablesEventQuery]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-datadog.monitor.MonitorVariablesEventQuery">MonitorVariablesEventQuery</a>]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-datadog.monitor.MonitorVariablesOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: MonitorVariables
 ```
 
-- *Type:* <a href="#@cdktf/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
+- *Type:* <a href="#@cdktn/provider-datadog.monitor.MonitorVariables">MonitorVariables</a>
 
 ---
 

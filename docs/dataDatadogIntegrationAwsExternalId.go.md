@@ -1,28 +1,28 @@
-# `dataDatadogIntegrationAwsExternalId` Submodule <a name="`dataDatadogIntegrationAwsExternalId` Submodule" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId"></a>
+# `dataDatadogIntegrationAwsExternalId` Submodule <a name="`dataDatadogIntegrationAwsExternalId` Submodule" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataDatadogIntegrationAwsExternalId <a name="DataDatadogIntegrationAwsExternalId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId"></a>
+### DataDatadogIntegrationAwsExternalId <a name="DataDatadogIntegrationAwsExternalId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_external_id datadog_integration_aws_external_id}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsexternalid"
 
 datadatadogintegrationawsexternalid.NewDataDatadogIntegrationAwsExternalId(scope Construct, id *string, config DataDatadogIntegrationAwsExternalIdConfig) DataDatadogIntegrationAwsExternalId
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig">DataDatadogIntegrationAwsExternalIdConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig">DataDatadogIntegrationAwsExternalIdConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig">DataDatadogIntegrationAwsExternalIdConfig</a>
+- *Type:* <a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig">DataDatadogIntegrationAwsExternalIdConfig</a>
 
 ---
 
@@ -50,27 +50,27 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toString"></a>
 
 ```go
 func ToString() *string
@@ -78,25 +78,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -104,7 +104,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -112,7 +112,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -120,7 +120,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -128,13 +128,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -142,121 +142,121 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -266,17 +266,17 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataDatadogIntegrationAwsExternalId resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DataDatadogIntegrationAwsExternalId resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsexternalid"
 
 datadatadogintegrationawsexternalid.DataDatadogIntegrationAwsExternalId_IsConstruct(x interface{}) *bool
 ```
@@ -297,7 +297,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -305,45 +305,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsexternalid"
 
 datadatadogintegrationawsexternalid.DataDatadogIntegrationAwsExternalId_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsexternalid"
 
 datadatadogintegrationawsexternalid.DataDatadogIntegrationAwsExternalId_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsexternalid"
 
 datadatadogintegrationawsexternalid.DataDatadogIntegrationAwsExternalId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DataDatadogIntegrationAwsExternalId resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataDatadogIntegrationAwsExternalId resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -351,7 +351,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -359,19 +359,19 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsE
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DataDatadogIntegrationAwsExternalId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataDatadogIntegrationAwsExternalId to import is found.
 
@@ -381,26 +381,26 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountIdInput">AwsAccountIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountIdInput">AwsAccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.node"></a>
 
 ```go
 func Node() Node
@@ -412,17 +412,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -432,7 +432,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -442,7 +442,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -452,7 +452,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -462,17 +462,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -482,7 +482,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -492,37 +492,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.externalId"></a>
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.externalId"></a>
 
 ```go
 func ExternalId() *string
@@ -532,7 +532,7 @@ func ExternalId() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.id"></a>
 
 ```go
 func Id() *string
@@ -542,7 +542,7 @@ func Id() *string
 
 ---
 
-##### `AwsAccountIdInput`<sup>Optional</sup> <a name="AwsAccountIdInput" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountIdInput"></a>
+##### `AwsAccountIdInput`<sup>Optional</sup> <a name="AwsAccountIdInput" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountIdInput"></a>
 
 ```go
 func AwsAccountIdInput() *string
@@ -552,7 +552,7 @@ func AwsAccountIdInput() *string
 
 ---
 
-##### `AwsAccountId`<sup>Required</sup> <a name="AwsAccountId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountId"></a>
+##### `AwsAccountId`<sup>Required</sup> <a name="AwsAccountId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.awsAccountId"></a>
 
 ```go
 func AwsAccountId() *string
@@ -566,11 +566,11 @@ func AwsAccountId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalId.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -582,20 +582,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataDatadogIntegrationAwsExternalIdConfig <a name="DataDatadogIntegrationAwsExternalIdConfig" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig"></a>
+### DataDatadogIntegrationAwsExternalIdConfig <a name="DataDatadogIntegrationAwsExternalIdConfig" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsexternalid"
 
 &datadatadogintegrationawsexternalid.DataDatadogIntegrationAwsExternalIdConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AwsAccountId: *string,
 }
@@ -605,18 +605,18 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/datadatadogintegr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | The AWS account ID of the integration to retrieve the external ID from. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.awsAccountId">AwsAccountId</a></code> | <code>*string</code> | The AWS account ID of the integration to retrieve the external ID from. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -626,7 +626,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -636,47 +636,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -686,7 +686,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AwsAccountId`<sup>Required</sup> <a name="AwsAccountId" id="@cdktf/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.awsAccountId"></a>
+##### `AwsAccountId`<sup>Required</sup> <a name="AwsAccountId" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsExternalId.DataDatadogIntegrationAwsExternalIdConfig.property.awsAccountId"></a>
 
 ```go
 AwsAccountId *string
@@ -698,7 +698,7 @@ The AWS account ID of the integration to retrieve the external ID from.
 
 Must be a valid 12 digits AWS account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_external_id#aws_account_id DataDatadogIntegrationAwsExternalId#aws_account_id}
 
 ---
 

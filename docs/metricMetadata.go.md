@@ -1,28 +1,28 @@
-# `metricMetadata` Submodule <a name="`metricMetadata` Submodule" id="@cdktf/provider-datadog.metricMetadata"></a>
+# `metricMetadata` Submodule <a name="`metricMetadata` Submodule" id="@cdktn/provider-datadog.metricMetadata"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### MetricMetadata <a name="MetricMetadata" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata"></a>
+### MetricMetadata <a name="MetricMetadata" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata datadog_metric_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata datadog_metric_metadata}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/metricmetadata"
 
 metricmetadata.NewMetricMetadata(scope Construct, id *string, config MetricMetadataConfig) MetricMetadata
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig">MetricMetadataConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig">MetricMetadataConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig">MetricMetadataConfig</a>
+- *Type:* <a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig">MetricMetadataConfig</a>
 
 ---
 
@@ -50,40 +50,40 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetDescription">ResetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetPerUnit">ResetPerUnit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetShortName">ResetShortName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetStatsdInterval">ResetStatsdInterval</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetType">ResetType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetUnit">ResetUnit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetPerUnit">ResetPerUnit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetShortName">ResetShortName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetStatsdInterval">ResetStatsdInterval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetUnit">ResetUnit</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.toString"></a>
 
 ```go
 func ToString() *string
@@ -91,25 +91,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -117,7 +117,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -125,7 +125,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -133,19 +133,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -153,7 +153,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -161,7 +161,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -169,151 +169,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -323,7 +323,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -331,7 +331,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -339,7 +339,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -355,7 +355,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -363,7 +363,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -371,43 +371,43 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetDescription"></a>
+##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetDescription"></a>
 
 ```go
 func ResetDescription()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetPerUnit` <a name="ResetPerUnit" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetPerUnit"></a>
+##### `ResetPerUnit` <a name="ResetPerUnit" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetPerUnit"></a>
 
 ```go
 func ResetPerUnit()
 ```
 
-##### `ResetShortName` <a name="ResetShortName" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetShortName"></a>
+##### `ResetShortName` <a name="ResetShortName" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetShortName"></a>
 
 ```go
 func ResetShortName()
 ```
 
-##### `ResetStatsdInterval` <a name="ResetStatsdInterval" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetStatsdInterval"></a>
+##### `ResetStatsdInterval` <a name="ResetStatsdInterval" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetStatsdInterval"></a>
 
 ```go
 func ResetStatsdInterval()
 ```
 
-##### `ResetType` <a name="ResetType" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetType"></a>
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetType"></a>
 
 ```go
 func ResetType()
 ```
 
-##### `ResetUnit` <a name="ResetUnit" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.resetUnit"></a>
+##### `ResetUnit` <a name="ResetUnit" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.resetUnit"></a>
 
 ```go
 func ResetUnit()
@@ -417,17 +417,17 @@ func ResetUnit()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a MetricMetadata resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a MetricMetadata resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/metricmetadata"
 
 metricmetadata.MetricMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -456,45 +456,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/metricmetadata"
 
 metricmetadata.MetricMetadata_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/metricmetadata"
 
 metricmetadata.MetricMetadata_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/metricmetadata"
 
 metricmetadata.MetricMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a MetricMetadata resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a MetricMetadata resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -502,7 +502,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -510,19 +510,19 @@ The construct id used in the generated config for the MetricMetadata to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing MetricMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the MetricMetadata to import is found.
 
@@ -532,40 +532,40 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.metricInput">MetricInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.perUnitInput">PerUnitInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.shortNameInput">ShortNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.statsdIntervalInput">StatsdIntervalInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.unitInput">UnitInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.metric">Metric</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.perUnit">PerUnit</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.shortName">ShortName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.statsdInterval">StatsdInterval</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.unit">Unit</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.metricInput">MetricInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.perUnitInput">PerUnitInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.shortNameInput">ShortNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.statsdIntervalInput">StatsdIntervalInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.unitInput">UnitInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.metric">Metric</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.perUnit">PerUnit</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.shortName">ShortName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.statsdInterval">StatsdInterval</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.unit">Unit</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.node"></a>
 
 ```go
 func Node() Node
@@ -577,17 +577,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -597,7 +597,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -607,7 +607,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -617,7 +617,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -627,17 +627,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -647,7 +647,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -657,7 +657,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -667,37 +667,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -707,7 +707,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.descriptionInput"></a>
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.descriptionInput"></a>
 
 ```go
 func DescriptionInput() *string
@@ -717,7 +717,7 @@ func DescriptionInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -727,7 +727,7 @@ func IdInput() *string
 
 ---
 
-##### `MetricInput`<sup>Optional</sup> <a name="MetricInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.metricInput"></a>
+##### `MetricInput`<sup>Optional</sup> <a name="MetricInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.metricInput"></a>
 
 ```go
 func MetricInput() *string
@@ -737,7 +737,7 @@ func MetricInput() *string
 
 ---
 
-##### `PerUnitInput`<sup>Optional</sup> <a name="PerUnitInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.perUnitInput"></a>
+##### `PerUnitInput`<sup>Optional</sup> <a name="PerUnitInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.perUnitInput"></a>
 
 ```go
 func PerUnitInput() *string
@@ -747,7 +747,7 @@ func PerUnitInput() *string
 
 ---
 
-##### `ShortNameInput`<sup>Optional</sup> <a name="ShortNameInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.shortNameInput"></a>
+##### `ShortNameInput`<sup>Optional</sup> <a name="ShortNameInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.shortNameInput"></a>
 
 ```go
 func ShortNameInput() *string
@@ -757,7 +757,7 @@ func ShortNameInput() *string
 
 ---
 
-##### `StatsdIntervalInput`<sup>Optional</sup> <a name="StatsdIntervalInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.statsdIntervalInput"></a>
+##### `StatsdIntervalInput`<sup>Optional</sup> <a name="StatsdIntervalInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.statsdIntervalInput"></a>
 
 ```go
 func StatsdIntervalInput() *f64
@@ -767,7 +767,7 @@ func StatsdIntervalInput() *f64
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -777,7 +777,7 @@ func TypeInput() *string
 
 ---
 
-##### `UnitInput`<sup>Optional</sup> <a name="UnitInput" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.unitInput"></a>
+##### `UnitInput`<sup>Optional</sup> <a name="UnitInput" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.unitInput"></a>
 
 ```go
 func UnitInput() *string
@@ -787,7 +787,7 @@ func UnitInput() *string
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.description"></a>
 
 ```go
 func Description() *string
@@ -797,7 +797,7 @@ func Description() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.id"></a>
 
 ```go
 func Id() *string
@@ -807,7 +807,7 @@ func Id() *string
 
 ---
 
-##### `Metric`<sup>Required</sup> <a name="Metric" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.metric"></a>
+##### `Metric`<sup>Required</sup> <a name="Metric" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.metric"></a>
 
 ```go
 func Metric() *string
@@ -817,7 +817,7 @@ func Metric() *string
 
 ---
 
-##### `PerUnit`<sup>Required</sup> <a name="PerUnit" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.perUnit"></a>
+##### `PerUnit`<sup>Required</sup> <a name="PerUnit" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.perUnit"></a>
 
 ```go
 func PerUnit() *string
@@ -827,7 +827,7 @@ func PerUnit() *string
 
 ---
 
-##### `ShortName`<sup>Required</sup> <a name="ShortName" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.shortName"></a>
+##### `ShortName`<sup>Required</sup> <a name="ShortName" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.shortName"></a>
 
 ```go
 func ShortName() *string
@@ -837,7 +837,7 @@ func ShortName() *string
 
 ---
 
-##### `StatsdInterval`<sup>Required</sup> <a name="StatsdInterval" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.statsdInterval"></a>
+##### `StatsdInterval`<sup>Required</sup> <a name="StatsdInterval" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.statsdInterval"></a>
 
 ```go
 func StatsdInterval() *f64
@@ -847,7 +847,7 @@ func StatsdInterval() *f64
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.type"></a>
 
 ```go
 func Type() *string
@@ -857,7 +857,7 @@ func Type() *string
 
 ---
 
-##### `Unit`<sup>Required</sup> <a name="Unit" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.unit"></a>
+##### `Unit`<sup>Required</sup> <a name="Unit" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.unit"></a>
 
 ```go
 func Unit() *string
@@ -871,11 +871,11 @@ func Unit() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-datadog.metricMetadata.MetricMetadata.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-datadog.metricMetadata.MetricMetadata.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -887,20 +887,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### MetricMetadataConfig <a name="MetricMetadataConfig" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig"></a>
+### MetricMetadataConfig <a name="MetricMetadataConfig" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/metricmetadata"
 
 &metricmetadata.MetricMetadataConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Metric: *string,
 	Description: *string,
@@ -917,25 +917,25 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/metricmetadata"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.metric">Metric</a></code> | <code>*string</code> | The name of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.description">Description</a></code> | <code>*string</code> | A description of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.perUnit">PerUnit</a></code> | <code>*string</code> | Per unit of the metric such as `second` in `bytes per second`. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.shortName">ShortName</a></code> | <code>*string</code> | A short name of the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.statsdInterval">StatsdInterval</a></code> | <code>*f64</code> | If applicable, statsd flush interval in seconds for the metric. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.type">Type</a></code> | <code>*string</code> | Metric type such as `count`, `gauge`, or `rate`. |
-| <code><a href="#@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.unit">Unit</a></code> | <code>*string</code> | Primary unit of the metric such as `byte` or `operation`. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.metric">Metric</a></code> | <code>*string</code> | The name of the metric. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.description">Description</a></code> | <code>*string</code> | A description of the metric. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#id MetricMetadata#id}. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.perUnit">PerUnit</a></code> | <code>*string</code> | Per unit of the metric such as `second` in `bytes per second`. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.shortName">ShortName</a></code> | <code>*string</code> | A short name of the metric. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.statsdInterval">StatsdInterval</a></code> | <code>*f64</code> | If applicable, statsd flush interval in seconds for the metric. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.type">Type</a></code> | <code>*string</code> | Metric type such as `count`, `gauge`, or `rate`. |
+| <code><a href="#@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.unit">Unit</a></code> | <code>*string</code> | Primary unit of the metric such as `byte` or `operation`. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -945,7 +945,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -955,47 +955,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1005,7 +1005,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Metric`<sup>Required</sup> <a name="Metric" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.metric"></a>
+##### `Metric`<sup>Required</sup> <a name="Metric" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.metric"></a>
 
 ```go
 Metric *string
@@ -1015,11 +1015,11 @@ Metric *string
 
 The name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#metric MetricMetadata#metric}
 
 ---
 
-##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.description"></a>
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.description"></a>
 
 ```go
 Description *string
@@ -1029,11 +1029,11 @@ Description *string
 
 A description of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#description MetricMetadata#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#description MetricMetadata#description}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1041,14 +1041,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#id MetricMetadata#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#id MetricMetadata#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `PerUnit`<sup>Optional</sup> <a name="PerUnit" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.perUnit"></a>
+##### `PerUnit`<sup>Optional</sup> <a name="PerUnit" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.perUnit"></a>
 
 ```go
 PerUnit *string
@@ -1058,11 +1058,11 @@ PerUnit *string
 
 Per unit of the metric such as `second` in `bytes per second`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#per_unit MetricMetadata#per_unit}
 
 ---
 
-##### `ShortName`<sup>Optional</sup> <a name="ShortName" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.shortName"></a>
+##### `ShortName`<sup>Optional</sup> <a name="ShortName" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.shortName"></a>
 
 ```go
 ShortName *string
@@ -1072,11 +1072,11 @@ ShortName *string
 
 A short name of the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#short_name MetricMetadata#short_name}
 
 ---
 
-##### `StatsdInterval`<sup>Optional</sup> <a name="StatsdInterval" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.statsdInterval"></a>
+##### `StatsdInterval`<sup>Optional</sup> <a name="StatsdInterval" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.statsdInterval"></a>
 
 ```go
 StatsdInterval *f64
@@ -1086,11 +1086,11 @@ StatsdInterval *f64
 
 If applicable, statsd flush interval in seconds for the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#statsd_interval MetricMetadata#statsd_interval}
 
 ---
 
-##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.type"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.type"></a>
 
 ```go
 Type *string
@@ -1102,11 +1102,11 @@ Metric type such as `count`, `gauge`, or `rate`.
 
 Updating a metric of type `distribution` is not supported. If you would like to see the `distribution` type returned, contact [Datadog support](https://docs.datadoghq.com/help/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#type MetricMetadata#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#type MetricMetadata#type}
 
 ---
 
-##### `Unit`<sup>Optional</sup> <a name="Unit" id="@cdktf/provider-datadog.metricMetadata.MetricMetadataConfig.property.unit"></a>
+##### `Unit`<sup>Optional</sup> <a name="Unit" id="@cdktn/provider-datadog.metricMetadata.MetricMetadataConfig.property.unit"></a>
 
 ```go
 Unit *string
@@ -1118,7 +1118,7 @@ Primary unit of the metric such as `byte` or `operation`.
 
 For a list of allowed units, refer to [Datadog metric unit documentation](https://docs.datadoghq.com/metrics/units/#unit-list).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_metadata#unit MetricMetadata#unit}
 
 ---
 
