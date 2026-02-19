@@ -1,71 +1,71 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DashboardListConfig extends cdktf.TerraformMetaArguments {
+export interface DashboardListConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the Dashboard List
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list#name DashboardList#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list#name DashboardList#name}
   */
   readonly name: string;
   /**
   * dash_item block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
   */
-  readonly dashItem?: DashboardListDashItem[] | cdktf.IResolvable;
+  readonly dashItem?: DashboardListDashItem[] | cdktn.IResolvable;
 }
 export interface DashboardListDashItem {
   /**
   * The ID of the dashboard to add
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
   */
   readonly dashId: string;
   /**
   * The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list#type DashboardList#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list#type DashboardList#type}
   */
   readonly type: string;
 }
 
-export function dashboardListDashItemToTerraform(struct?: DashboardListDashItem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardListDashItemToTerraform(struct?: DashboardListDashItem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dash_id: cdktf.stringToTerraform(struct!.dashId),
-    type: cdktf.stringToTerraform(struct!.type),
+    dash_id: cdktn.stringToTerraform(struct!.dashId),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dashboardListDashItemToHclTerraform(struct?: DashboardListDashItem | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardListDashItemToHclTerraform(struct?: DashboardListDashItem | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dash_id: {
-      value: cdktf.stringToHclTerraform(struct!.dashId),
+      value: cdktn.stringToHclTerraform(struct!.dashId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -76,9 +76,9 @@ export function dashboardListDashItemToHclTerraform(struct?: DashboardListDashIt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardListDashItemOutputReference extends cdktf.ComplexObject {
+export class DashboardListDashItemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -86,11 +86,11 @@ export class DashboardListDashItemOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardListDashItem | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardListDashItem | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -107,14 +107,14 @@ export class DashboardListDashItemOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardListDashItem | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardListDashItem | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dashId = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -153,15 +153,15 @@ export class DashboardListDashItemOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DashboardListDashItemList extends cdktf.ComplexList {
-  public internalValue? : DashboardListDashItem[] | cdktf.IResolvable
+export class DashboardListDashItemList extends cdktn.ComplexList {
+  public internalValue? : DashboardListDashItem[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -174,9 +174,9 @@ export class DashboardListDashItemList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list datadog_dashboard_list}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list datadog_dashboard_list}
 */
-export class DashboardList extends cdktf.TerraformResource {
+export class DashboardList extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -187,14 +187,14 @@ export class DashboardList extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DashboardList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DashboardList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DashboardList to import
-  * @param importFromId The id of the existing DashboardList that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DashboardList that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DashboardList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dashboard_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dashboard_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -202,7 +202,7 @@ export class DashboardList extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_list datadog_dashboard_list} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_list datadog_dashboard_list} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -213,7 +213,7 @@ export class DashboardList extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dashboard_list',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -255,7 +255,7 @@ export class DashboardList extends cdktf.TerraformResource {
   public get dashItem() {
     return this._dashItem;
   }
-  public putDashItem(value: DashboardListDashItem[] | cdktf.IResolvable) {
+  public putDashItem(value: DashboardListDashItem[] | cdktn.IResolvable) {
     this._dashItem.internalValue = value;
   }
   public resetDashItem() {
@@ -272,21 +272,21 @@ export class DashboardList extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      dash_item: cdktf.listMapper(dashboardListDashItemToTerraform, true)(this._dashItem.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      dash_item: cdktn.listMapper(dashboardListDashItemToTerraform, true)(this._dashItem.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dash_item: {
-        value: cdktf.listMapperHcl(dashboardListDashItemToHclTerraform, true)(this._dashItem.internalValue),
+        value: cdktn.listMapperHcl(dashboardListDashItemToHclTerraform, true)(this._dashItem.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DashboardListDashItemList",

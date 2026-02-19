@@ -1,33 +1,33 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_memberships
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_memberships
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogTeamMembershipsConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogTeamMembershipsConfig extends cdktn.TerraformMetaArguments {
   /**
   * When true, `filter_keyword` string is exact matched against the user's `email`, followed by `name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_memberships#exact_match DataDatadogTeamMemberships#exact_match}
   */
-  readonly exactMatch?: boolean | cdktf.IResolvable;
+  readonly exactMatch?: boolean | cdktn.IResolvable;
   /**
   * Search query, can be user email or name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_memberships#filter_keyword DataDatadogTeamMemberships#filter_keyword}
   */
   readonly filterKeyword?: string;
   /**
   * The team's identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_memberships#team_id DataDatadogTeamMemberships#team_id}
   */
   readonly teamId: string;
 }
@@ -35,8 +35,8 @@ export interface DataDatadogTeamMembershipsTeamMemberships {
 }
 
 export function dataDatadogTeamMembershipsTeamMembershipsToTerraform(struct?: DataDatadogTeamMembershipsTeamMemberships): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -45,8 +45,8 @@ export function dataDatadogTeamMembershipsTeamMembershipsToTerraform(struct?: Da
 
 
 export function dataDatadogTeamMembershipsTeamMembershipsToHclTerraform(struct?: DataDatadogTeamMembershipsTeamMemberships): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -54,7 +54,7 @@ export function dataDatadogTeamMembershipsTeamMembershipsToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataDatadogTeamMembershipsTeamMembershipsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogTeamMembershipsTeamMembershipsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -63,7 +63,7 @@ export class DataDatadogTeamMembershipsTeamMembershipsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -103,14 +103,14 @@ export class DataDatadogTeamMembershipsTeamMembershipsOutputReference extends cd
   }
 }
 
-export class DataDatadogTeamMembershipsTeamMembershipsList extends cdktf.ComplexList {
+export class DataDatadogTeamMembershipsTeamMembershipsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,9 +123,9 @@ export class DataDatadogTeamMembershipsTeamMembershipsList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_memberships datadog_team_memberships}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_memberships datadog_team_memberships}
 */
-export class DataDatadogTeamMemberships extends cdktf.TerraformDataSource {
+export class DataDatadogTeamMemberships extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -136,14 +136,14 @@ export class DataDatadogTeamMemberships extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogTeamMemberships resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogTeamMemberships resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogTeamMemberships to import
-  * @param importFromId The id of the existing DataDatadogTeamMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogTeamMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_memberships#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogTeamMemberships to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_team_memberships", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_team_memberships", importId: importFromId, provider });
       }
 
   // ===========
@@ -151,7 +151,7 @@ export class DataDatadogTeamMemberships extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_memberships datadog_team_memberships} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -162,7 +162,7 @@ export class DataDatadogTeamMemberships extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_team_memberships',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -183,11 +183,11 @@ export class DataDatadogTeamMemberships extends cdktf.TerraformDataSource {
   // ==========
 
   // exact_match - computed: false, optional: true, required: false
-  private _exactMatch?: boolean | cdktf.IResolvable; 
+  private _exactMatch?: boolean | cdktn.IResolvable; 
   public get exactMatch() {
     return this.getBooleanAttribute('exact_match');
   }
-  public set exactMatch(value: boolean | cdktf.IResolvable) {
+  public set exactMatch(value: boolean | cdktn.IResolvable) {
     this._exactMatch = value;
   }
   public resetExactMatch() {
@@ -244,28 +244,28 @@ export class DataDatadogTeamMemberships extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exact_match: cdktf.booleanToTerraform(this._exactMatch),
-      filter_keyword: cdktf.stringToTerraform(this._filterKeyword),
-      team_id: cdktf.stringToTerraform(this._teamId),
+      exact_match: cdktn.booleanToTerraform(this._exactMatch),
+      filter_keyword: cdktn.stringToTerraform(this._filterKeyword),
+      team_id: cdktn.stringToTerraform(this._teamId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exact_match: {
-        value: cdktf.booleanToHclTerraform(this._exactMatch),
+        value: cdktn.booleanToHclTerraform(this._exactMatch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       filter_keyword: {
-        value: cdktf.stringToHclTerraform(this._filterKeyword),
+        value: cdktn.stringToHclTerraform(this._filterKeyword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       team_id: {
-        value: cdktf.stringToHclTerraform(this._teamId),
+        value: cdktn.stringToHclTerraform(this._teamId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

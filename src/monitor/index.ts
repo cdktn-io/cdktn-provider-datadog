@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the monitor is in a draft or published state. When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#draft_status Monitor#draft_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#draft_status Monitor#draft_status}
   */
   readonly draftStatus?: string;
   /**
   * A boolean indicating whether or not to include a list of log values which triggered the alert. This is only used by log monitors. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
   */
-  readonly enableLogsSample?: boolean | cdktf.IResolvable;
+  readonly enableLogsSample?: boolean | cdktn.IResolvable;
   /**
   * Whether or not a list of samples which triggered the alert is included. This is only used by CI Test and Pipeline monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
   */
-  readonly enableSamples?: boolean | cdktf.IResolvable;
+  readonly enableSamples?: boolean | cdktn.IResolvable;
   /**
   * A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
   */
   readonly escalationMessage?: string;
   /**
@@ -41,29 +41,29 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
   */
   readonly evaluationDelay?: number;
   /**
   * A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#force_delete Monitor#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#force_delete Monitor#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * The time span after which groups with missing data are dropped from the monitor state. The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
   */
   readonly groupRetentionDuration?: string;
   /**
   * Whether or not to trigger one alert if any source breaches a threshold. This is only used by log monitors. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
   */
-  readonly groupbySimpleMonitor?: boolean | cdktf.IResolvable;
+  readonly groupbySimpleMonitor?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#id Monitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#id Monitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -72,27 +72,27 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#include_tags Monitor#include_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#include_tags Monitor#include_tags}
   */
-  readonly includeTags?: boolean | cdktf.IResolvable;
+  readonly includeTags?: boolean | cdktn.IResolvable;
   /**
   * A boolean indicating whether changes to this monitor should be restricted to the creator or admins. Defaults to `false`. **Deprecated.** Use `restricted_roles`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#locked Monitor#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#locked Monitor#locked}
   */
-  readonly locked?: boolean | cdktf.IResolvable;
+  readonly locked?: boolean | cdktn.IResolvable;
   /**
   * A message to include with notifications for this monitor.
   * 
   * Email notifications can be sent to specific users by using the same `@username` notation as events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#message Monitor#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#message Monitor#message}
   */
   readonly message: string;
   /**
   * Name of Datadog monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
@@ -100,13 +100,13 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
   */
   readonly newGroupDelay?: number;
   /**
   * **Deprecated**. See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
   */
   readonly newHostDelay?: number;
   /**
@@ -114,43 +114,43 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
   */
   readonly noDataTimeframe?: number;
   /**
-  * Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`.
+  * Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
   */
   readonly notificationPresetName?: string;
   /**
   * A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
   */
-  readonly notifyAudit?: boolean | cdktf.IResolvable;
+  readonly notifyAudit?: boolean | cdktn.IResolvable;
   /**
   * Controls what granularity a monitor alerts on. Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_by Monitor#notify_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_by Monitor#notify_by}
   */
   readonly notifyBy?: string[];
   /**
   * A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
   */
-  readonly notifyNoData?: boolean | cdktf.IResolvable;
+  readonly notifyNoData?: boolean | cdktn.IResolvable;
   /**
   * Controls how groups or monitors are treated if an evaluation does not return any data points. The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
   */
   readonly onMissingData?: string;
   /**
   * Integer from 1 (high) to 5 (low) indicating alert severity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#priority Monitor#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#priority Monitor#priority}
   */
   readonly priority?: string;
   /**
@@ -158,130 +158,175 @@ export interface MonitorConfig extends cdktf.TerraformMetaArguments {
   * 
   * **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
   /**
   * The number of minutes after the last notification before a monitor will re-notify on the current status. It will only re-notify if it's not resolved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
   */
   readonly renotifyInterval?: number;
   /**
   * The number of re-notification messages that should be sent on the current status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
   */
   readonly renotifyOccurrences?: number;
   /**
   * The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
   */
   readonly renotifyStatuses?: string[];
   /**
   * A boolean indicating whether this monitor needs a full window of data before it's evaluated. Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
   */
-  readonly requireFullWindow?: boolean | cdktf.IResolvable;
+  readonly requireFullWindow?: boolean | cdktn.IResolvable;
   /**
   * A list of unique role identifiers to define which roles are allowed to edit the monitor. Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field.
   *  > **Note:** When the `TERRAFORM_MONITOR_EXPLICIT_RESTRICTED_ROLES` environment variable is set to `true`, this argument is treated as `Computed`. Terraform will automatically read the current restricted roles list from the Datadog API whenever the attribute is omitted. If `restricted_roles` is explicitly set in the configuration, that value always takes precedence over whatever is discovered during the read. This opt-in behaviour lets you migrate responsibility for monitor permissions to the `datadog_restriction_policy` resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * A list of tags to associate with your monitor. This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#tags Monitor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#tags Monitor#tags}
   */
   readonly tags?: string[];
   /**
   * The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
   */
   readonly timeoutH?: number;
   /**
-  * The type of the monitor. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`.
+  * The type of the monitor. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#type Monitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#type Monitor#type}
   */
   readonly type: string;
   /**
   * If set to `false`, skip the validation call done during plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#validate Monitor#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#validate Monitor#validate}
   */
-  readonly validate?: boolean | cdktf.IResolvable;
+  readonly validate?: boolean | cdktn.IResolvable;
+  /**
+  * assets block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#assets Monitor#assets}
+  */
+  readonly assets?: MonitorAssets[] | cdktn.IResolvable;
   /**
   * monitor_threshold_windows block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
   */
   readonly monitorThresholdWindows?: MonitorMonitorThresholdWindows;
   /**
   * monitor_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
   */
   readonly monitorThresholds?: MonitorMonitorThresholds;
   /**
   * scheduling_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
   */
   readonly schedulingOptions?: MonitorSchedulingOptions;
   /**
   * variables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#variables Monitor#variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#variables Monitor#variables}
   */
   readonly variables?: MonitorVariables;
 }
-export interface MonitorMonitorThresholdWindows {
+export interface MonitorAssets {
   /**
-  * Describes how long an anomalous metric must be normal before the alert recovers.
+  * Type of asset the entity represents on a monitor. Valid values are `runbook`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#category Monitor#category}
   */
-  readonly recoveryWindow?: string;
+  readonly category: string;
   /**
-  * Describes how long a metric must be anomalous before an alert triggers.
+  * Name for the monitor asset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
   */
-  readonly triggerWindow?: string;
+  readonly name: string;
+  /**
+  * Identifier of the internal Datadog resource that this asset represents.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#resource_key Monitor#resource_key}
+  */
+  readonly resourceKey?: string;
+  /**
+  * Type of internal Datadog resource associated with a monitor asset. Valid values are `notebook`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#resource_type Monitor#resource_type}
+  */
+  readonly resourceType?: string;
+  /**
+  * URL for the asset.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#url Monitor#url}
+  */
+  readonly url: string;
 }
 
-export function monitorMonitorThresholdWindowsToTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAssetsToTerraform(struct?: MonitorAssets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recovery_window: cdktf.stringToTerraform(struct!.recoveryWindow),
-    trigger_window: cdktf.stringToTerraform(struct!.triggerWindow),
+    category: cdktn.stringToTerraform(struct!.category),
+    name: cdktn.stringToTerraform(struct!.name),
+    resource_key: cdktn.stringToTerraform(struct!.resourceKey),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
-export function monitorMonitorThresholdWindowsToHclTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAssetsToHclTerraform(struct?: MonitorAssets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    recovery_window: {
-      value: cdktf.stringToHclTerraform(struct!.recoveryWindow),
+    category: {
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    trigger_window: {
-      value: cdktf.stringToHclTerraform(struct!.triggerWindow),
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_key: {
+      value: cdktn.stringToHclTerraform(struct!.resourceKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    resource_type: {
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -292,14 +337,224 @@ export function monitorMonitorThresholdWindowsToHclTerraform(struct?: MonitorMon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorMonitorThresholdWindowsOutputReference extends cdktf.ComplexObject {
+export class MonitorAssetsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MonitorAssets | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._category !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.category = this._category;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._resourceKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceKey = this._resourceKey;
+    }
+    if (this._resourceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceType = this._resourceType;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorAssets | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._category = undefined;
+      this._name = undefined;
+      this._resourceKey = undefined;
+      this._resourceType = undefined;
+      this._url = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._category = value.category;
+      this._name = value.name;
+      this._resourceKey = value.resourceKey;
+      this._resourceType = value.resourceType;
+      this._url = value.url;
+    }
+  }
+
+  // category - computed: false, optional: false, required: true
+  private _category?: string; 
+  public get category() {
+    return this.getStringAttribute('category');
+  }
+  public set category(value: string) {
+    this._category = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get categoryInput() {
+    return this._category;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // resource_key - computed: false, optional: true, required: false
+  private _resourceKey?: string; 
+  public get resourceKey() {
+    return this.getStringAttribute('resource_key');
+  }
+  public set resourceKey(value: string) {
+    this._resourceKey = value;
+  }
+  public resetResourceKey() {
+    this._resourceKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceKeyInput() {
+    return this._resourceKey;
+  }
+
+  // resource_type - computed: false, optional: true, required: false
+  private _resourceType?: string; 
+  public get resourceType() {
+    return this.getStringAttribute('resource_type');
+  }
+  public set resourceType(value: string) {
+    this._resourceType = value;
+  }
+  public resetResourceType() {
+    this._resourceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeInput() {
+    return this._resourceType;
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+}
+
+export class MonitorAssetsList extends cdktn.ComplexList {
+  public internalValue? : MonitorAssets[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MonitorAssetsOutputReference {
+    return new MonitorAssetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MonitorMonitorThresholdWindows {
+  /**
+  * Describes how long an anomalous metric must be normal before the alert recovers.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+  */
+  readonly recoveryWindow?: string;
+  /**
+  * Describes how long a metric must be anomalous before an alert triggers.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+  */
+  readonly triggerWindow?: string;
+}
+
+export function monitorMonitorThresholdWindowsToTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    recovery_window: cdktn.stringToTerraform(struct!.recoveryWindow),
+    trigger_window: cdktn.stringToTerraform(struct!.triggerWindow),
+  }
+}
+
+
+export function monitorMonitorThresholdWindowsToHclTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    recovery_window: {
+      value: cdktn.stringToHclTerraform(struct!.recoveryWindow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    trigger_window: {
+      value: cdktn.stringToHclTerraform(struct!.triggerWindow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MonitorMonitorThresholdWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -366,95 +621,95 @@ export interface MonitorMonitorThresholds {
   /**
   * The monitor `CRITICAL` threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#critical Monitor#critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical Monitor#critical}
   */
   readonly critical?: string;
   /**
   * The monitor `CRITICAL` recovery threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
   */
   readonly criticalRecovery?: string;
   /**
   * The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#ok Monitor#ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#ok Monitor#ok}
   */
   readonly ok?: string;
   /**
   * The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#unknown Monitor#unknown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#unknown Monitor#unknown}
   */
   readonly unknown?: string;
   /**
   * The monitor `WARNING` threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#warning Monitor#warning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning Monitor#warning}
   */
   readonly warning?: string;
   /**
   * The monitor `WARNING` recovery threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
   */
   readonly warningRecovery?: string;
 }
 
 export function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThresholdsOutputReference | MonitorMonitorThresholds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    critical: cdktf.stringToTerraform(struct!.critical),
-    critical_recovery: cdktf.stringToTerraform(struct!.criticalRecovery),
-    ok: cdktf.stringToTerraform(struct!.ok),
-    unknown: cdktf.stringToTerraform(struct!.unknown),
-    warning: cdktf.stringToTerraform(struct!.warning),
-    warning_recovery: cdktf.stringToTerraform(struct!.warningRecovery),
+    critical: cdktn.stringToTerraform(struct!.critical),
+    critical_recovery: cdktn.stringToTerraform(struct!.criticalRecovery),
+    ok: cdktn.stringToTerraform(struct!.ok),
+    unknown: cdktn.stringToTerraform(struct!.unknown),
+    warning: cdktn.stringToTerraform(struct!.warning),
+    warning_recovery: cdktn.stringToTerraform(struct!.warningRecovery),
   }
 }
 
 
 export function monitorMonitorThresholdsToHclTerraform(struct?: MonitorMonitorThresholdsOutputReference | MonitorMonitorThresholds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     critical: {
-      value: cdktf.stringToHclTerraform(struct!.critical),
+      value: cdktn.stringToHclTerraform(struct!.critical),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     critical_recovery: {
-      value: cdktf.stringToHclTerraform(struct!.criticalRecovery),
+      value: cdktn.stringToHclTerraform(struct!.criticalRecovery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ok: {
-      value: cdktf.stringToHclTerraform(struct!.ok),
+      value: cdktn.stringToHclTerraform(struct!.ok),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unknown: {
-      value: cdktf.stringToHclTerraform(struct!.unknown),
+      value: cdktn.stringToHclTerraform(struct!.unknown),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     warning: {
-      value: cdktf.stringToHclTerraform(struct!.warning),
+      value: cdktn.stringToHclTerraform(struct!.warning),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     warning_recovery: {
-      value: cdktf.stringToHclTerraform(struct!.warningRecovery),
+      value: cdktn.stringToHclTerraform(struct!.warningRecovery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -465,14 +720,14 @@ export function monitorMonitorThresholdsToHclTerraform(struct?: MonitorMonitorTh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject {
+export class MonitorMonitorThresholdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -627,56 +882,56 @@ export interface MonitorSchedulingOptionsCustomScheduleRecurrence {
   /**
   * Must be a valid `rrule`. See API docs for supported fields
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#rrule Monitor#rrule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#rrule Monitor#rrule}
   */
   readonly rrule: string;
   /**
   * Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#start Monitor#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#start Monitor#start}
   */
   readonly start?: string;
   /**
   * 'tz database' format. Example: `America/New_York` or `UTC`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#timezone Monitor#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
   */
   readonly timezone: string;
 }
 
 export function monitorSchedulingOptionsCustomScheduleRecurrenceToTerraform(struct?: MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference | MonitorSchedulingOptionsCustomScheduleRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rrule: cdktf.stringToTerraform(struct!.rrule),
-    start: cdktf.stringToTerraform(struct!.start),
-    timezone: cdktf.stringToTerraform(struct!.timezone),
+    rrule: cdktn.stringToTerraform(struct!.rrule),
+    start: cdktn.stringToTerraform(struct!.start),
+    timezone: cdktn.stringToTerraform(struct!.timezone),
   }
 }
 
 
 export function monitorSchedulingOptionsCustomScheduleRecurrenceToHclTerraform(struct?: MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference | MonitorSchedulingOptionsCustomScheduleRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rrule: {
-      value: cdktf.stringToHclTerraform(struct!.rrule),
+      value: cdktn.stringToHclTerraform(struct!.rrule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start: {
-      value: cdktf.stringToHclTerraform(struct!.start),
+      value: cdktn.stringToHclTerraform(struct!.start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timezone: {
-      value: cdktf.stringToHclTerraform(struct!.timezone),
+      value: cdktn.stringToHclTerraform(struct!.timezone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -687,14 +942,14 @@ export function monitorSchedulingOptionsCustomScheduleRecurrenceToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference extends cdktf.ComplexObject {
+export class MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -777,14 +1032,14 @@ export interface MonitorSchedulingOptionsCustomSchedule {
   /**
   * recurrence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#recurrence Monitor#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recurrence Monitor#recurrence}
   */
   readonly recurrence: MonitorSchedulingOptionsCustomScheduleRecurrence;
 }
 
 export function monitorSchedulingOptionsCustomScheduleToTerraform(struct?: MonitorSchedulingOptionsCustomScheduleOutputReference | MonitorSchedulingOptionsCustomSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -794,8 +1049,8 @@ export function monitorSchedulingOptionsCustomScheduleToTerraform(struct?: Monit
 
 
 export function monitorSchedulingOptionsCustomScheduleToHclTerraform(struct?: MonitorSchedulingOptionsCustomScheduleOutputReference | MonitorSchedulingOptionsCustomSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -811,14 +1066,14 @@ export function monitorSchedulingOptionsCustomScheduleToHclTerraform(struct?: Mo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorSchedulingOptionsCustomScheduleOutputReference extends cdktf.ComplexObject {
+export class MonitorSchedulingOptionsCustomScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -860,59 +1115,72 @@ export interface MonitorSchedulingOptionsEvaluationWindow {
   /**
   * The time of the day at which a one day cumulative evaluation window starts. Must be defined in UTC time in `HH:mm` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#day_starts Monitor#day_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#day_starts Monitor#day_starts}
   */
   readonly dayStarts?: string;
   /**
   * The minute of the hour at which a one hour cumulative evaluation window starts. Must be between 0 and 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
   */
   readonly hourStarts?: number;
   /**
   * The day of the month at which a one month cumulative evaluation window starts. Must be a value of 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#month_starts Monitor#month_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#month_starts Monitor#month_starts}
   */
   readonly monthStarts?: number;
+  /**
+  * The timezone for the cumulative evaluation window start time.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
+  */
+  readonly timezone?: string;
 }
 
 export function monitorSchedulingOptionsEvaluationWindowToTerraform(struct?: MonitorSchedulingOptionsEvaluationWindowOutputReference | MonitorSchedulingOptionsEvaluationWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_starts: cdktf.stringToTerraform(struct!.dayStarts),
-    hour_starts: cdktf.numberToTerraform(struct!.hourStarts),
-    month_starts: cdktf.numberToTerraform(struct!.monthStarts),
+    day_starts: cdktn.stringToTerraform(struct!.dayStarts),
+    hour_starts: cdktn.numberToTerraform(struct!.hourStarts),
+    month_starts: cdktn.numberToTerraform(struct!.monthStarts),
+    timezone: cdktn.stringToTerraform(struct!.timezone),
   }
 }
 
 
 export function monitorSchedulingOptionsEvaluationWindowToHclTerraform(struct?: MonitorSchedulingOptionsEvaluationWindowOutputReference | MonitorSchedulingOptionsEvaluationWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_starts: {
-      value: cdktf.stringToHclTerraform(struct!.dayStarts),
+      value: cdktn.stringToHclTerraform(struct!.dayStarts),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hour_starts: {
-      value: cdktf.numberToHclTerraform(struct!.hourStarts),
+      value: cdktn.numberToHclTerraform(struct!.hourStarts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     month_starts: {
-      value: cdktf.numberToHclTerraform(struct!.monthStarts),
+      value: cdktn.numberToHclTerraform(struct!.monthStarts),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    timezone: {
+      value: cdktn.stringToHclTerraform(struct!.timezone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -920,14 +1188,14 @@ export function monitorSchedulingOptionsEvaluationWindowToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdktf.ComplexObject {
+export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -946,6 +1214,10 @@ export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.monthStarts = this._monthStarts;
     }
+    if (this._timezone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timezone = this._timezone;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -955,12 +1227,14 @@ export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdk
       this._dayStarts = undefined;
       this._hourStarts = undefined;
       this._monthStarts = undefined;
+      this._timezone = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._dayStarts = value.dayStarts;
       this._hourStarts = value.hourStarts;
       this._monthStarts = value.monthStarts;
+      this._timezone = value.timezone;
     }
   }
 
@@ -1011,25 +1285,41 @@ export class MonitorSchedulingOptionsEvaluationWindowOutputReference extends cdk
   public get monthStartsInput() {
     return this._monthStarts;
   }
+
+  // timezone - computed: false, optional: true, required: false
+  private _timezone?: string; 
+  public get timezone() {
+    return this.getStringAttribute('timezone');
+  }
+  public set timezone(value: string) {
+    this._timezone = value;
+  }
+  public resetTimezone() {
+    this._timezone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timezoneInput() {
+    return this._timezone;
+  }
 }
 export interface MonitorSchedulingOptions {
   /**
   * custom_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
   */
   readonly customSchedule?: MonitorSchedulingOptionsCustomSchedule;
   /**
   * evaluation_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
   */
   readonly evaluationWindow?: MonitorSchedulingOptionsEvaluationWindow;
 }
 
 export function monitorSchedulingOptionsToTerraform(struct?: MonitorSchedulingOptionsOutputReference | MonitorSchedulingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1040,8 +1330,8 @@ export function monitorSchedulingOptionsToTerraform(struct?: MonitorSchedulingOp
 
 
 export function monitorSchedulingOptionsToHclTerraform(struct?: MonitorSchedulingOptionsOutputReference | MonitorSchedulingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1063,14 +1353,14 @@ export function monitorSchedulingOptionsToHclTerraform(struct?: MonitorSchedulin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorSchedulingOptionsOutputReference extends cdktf.ComplexObject {
+export class MonitorSchedulingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1137,69 +1427,69 @@ export interface MonitorVariablesCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `sum`, `max`, `min`, `last`, `area`, `l2norm`, `percentile`, `stddev`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#aggregator Monitor#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregator Monitor#aggregator}
   */
   readonly aggregator: string;
   /**
   * The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * The cloud cost query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
 
-export function monitorVariablesCloudCostQueryToTerraform(struct?: MonitorVariablesCloudCostQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesCloudCostQueryToTerraform(struct?: MonitorVariablesCloudCostQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function monitorVariablesCloudCostQueryToHclTerraform(struct?: MonitorVariablesCloudCostQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesCloudCostQueryToHclTerraform(struct?: MonitorVariablesCloudCostQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1210,9 +1500,9 @@ export function monitorVariablesCloudCostQueryToHclTerraform(struct?: MonitorVar
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorVariablesCloudCostQueryOutputReference extends cdktf.ComplexObject {
+export class MonitorVariablesCloudCostQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1220,11 +1510,11 @@ export class MonitorVariablesCloudCostQueryOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorVariablesCloudCostQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorVariablesCloudCostQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1249,7 +1539,7 @@ export class MonitorVariablesCloudCostQueryOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorVariablesCloudCostQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorVariablesCloudCostQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1258,7 +1548,7 @@ export class MonitorVariablesCloudCostQueryOutputReference extends cdktf.Complex
       this._name = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1325,15 +1615,15 @@ export class MonitorVariablesCloudCostQueryOutputReference extends cdktf.Complex
   }
 }
 
-export class MonitorVariablesCloudCostQueryList extends cdktf.ComplexList {
-  public internalValue? : MonitorVariablesCloudCostQuery[] | cdktf.IResolvable
+export class MonitorVariablesCloudCostQueryList extends cdktn.ComplexList {
+  public internalValue? : MonitorVariablesCloudCostQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1344,60 +1634,86 @@ export class MonitorVariablesCloudCostQueryList extends cdktf.ComplexList {
     return new MonitorVariablesCloudCostQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface MonitorVariablesEventQueryCompute {
+export interface MonitorVariablesDataQualityQueryMonitorOptions {
   /**
-  * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
+  * Crontab expression to override the default schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
   */
-  readonly aggregation: string;
+  readonly crontabOverride?: string;
   /**
-  * A time interval in milliseconds.
+  * Custom SQL query for the monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
   */
-  readonly interval?: number;
+  readonly customSql?: string;
   /**
-  * The measurable attribute to compute.
+  * Custom WHERE clause for the query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_where Monitor#custom_where}
   */
-  readonly metric?: string;
+  readonly customWhere?: string;
+  /**
+  * Columns to group results by.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+  */
+  readonly groupByColumns?: string[];
+  /**
+  * Override for the model type. Valid values are `freshness`, `percentage`, `any`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
+  */
+  readonly modelTypeOverride?: string;
 }
 
-export function monitorVariablesEventQueryComputeToTerraform(struct?: MonitorVariablesEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesDataQualityQueryMonitorOptionsToTerraform(struct?: MonitorVariablesDataQualityQueryMonitorOptionsOutputReference | MonitorVariablesDataQualityQueryMonitorOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    metric: cdktf.stringToTerraform(struct!.metric),
+    crontab_override: cdktn.stringToTerraform(struct!.crontabOverride),
+    custom_sql: cdktn.stringToTerraform(struct!.customSql),
+    custom_where: cdktn.stringToTerraform(struct!.customWhere),
+    group_by_columns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupByColumns),
+    model_type_override: cdktn.stringToTerraform(struct!.modelTypeOverride),
   }
 }
 
 
-export function monitorVariablesEventQueryComputeToHclTerraform(struct?: MonitorVariablesEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesDataQualityQueryMonitorOptionsToHclTerraform(struct?: MonitorVariablesDataQualityQueryMonitorOptionsOutputReference | MonitorVariablesDataQualityQueryMonitorOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+    crontab_override: {
+      value: cdktn.stringToHclTerraform(struct!.crontabOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
-    interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+    custom_sql: {
+      value: cdktn.stringToHclTerraform(struct!.customSql),
       isBlock: false,
       type: "simple",
-      storageClassType: "number",
+      storageClassType: "string",
     },
-    metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+    custom_where: {
+      value: cdktn.stringToHclTerraform(struct!.customWhere),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by_columns: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupByColumns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    model_type_override: {
+      value: cdktn.stringToHclTerraform(struct!.modelTypeOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1408,9 +1724,274 @@ export function monitorVariablesEventQueryComputeToHclTerraform(struct?: Monitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorVariablesEventQueryComputeOutputReference extends cdktf.ComplexObject {
+export class MonitorVariablesDataQualityQueryMonitorOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MonitorVariablesDataQualityQueryMonitorOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._crontabOverride !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.crontabOverride = this._crontabOverride;
+    }
+    if (this._customSql !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customSql = this._customSql;
+    }
+    if (this._customWhere !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customWhere = this._customWhere;
+    }
+    if (this._groupByColumns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupByColumns = this._groupByColumns;
+    }
+    if (this._modelTypeOverride !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.modelTypeOverride = this._modelTypeOverride;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariablesDataQualityQueryMonitorOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._crontabOverride = undefined;
+      this._customSql = undefined;
+      this._customWhere = undefined;
+      this._groupByColumns = undefined;
+      this._modelTypeOverride = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._crontabOverride = value.crontabOverride;
+      this._customSql = value.customSql;
+      this._customWhere = value.customWhere;
+      this._groupByColumns = value.groupByColumns;
+      this._modelTypeOverride = value.modelTypeOverride;
+    }
+  }
+
+  // crontab_override - computed: false, optional: true, required: false
+  private _crontabOverride?: string; 
+  public get crontabOverride() {
+    return this.getStringAttribute('crontab_override');
+  }
+  public set crontabOverride(value: string) {
+    this._crontabOverride = value;
+  }
+  public resetCrontabOverride() {
+    this._crontabOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get crontabOverrideInput() {
+    return this._crontabOverride;
+  }
+
+  // custom_sql - computed: false, optional: true, required: false
+  private _customSql?: string; 
+  public get customSql() {
+    return this.getStringAttribute('custom_sql');
+  }
+  public set customSql(value: string) {
+    this._customSql = value;
+  }
+  public resetCustomSql() {
+    this._customSql = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customSqlInput() {
+    return this._customSql;
+  }
+
+  // custom_where - computed: false, optional: true, required: false
+  private _customWhere?: string; 
+  public get customWhere() {
+    return this.getStringAttribute('custom_where');
+  }
+  public set customWhere(value: string) {
+    this._customWhere = value;
+  }
+  public resetCustomWhere() {
+    this._customWhere = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customWhereInput() {
+    return this._customWhere;
+  }
+
+  // group_by_columns - computed: false, optional: true, required: false
+  private _groupByColumns?: string[]; 
+  public get groupByColumns() {
+    return this.getListAttribute('group_by_columns');
+  }
+  public set groupByColumns(value: string[]) {
+    this._groupByColumns = value;
+  }
+  public resetGroupByColumns() {
+    this._groupByColumns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByColumnsInput() {
+    return this._groupByColumns;
+  }
+
+  // model_type_override - computed: false, optional: true, required: false
+  private _modelTypeOverride?: string; 
+  public get modelTypeOverride() {
+    return this.getStringAttribute('model_type_override');
+  }
+  public set modelTypeOverride(value: string) {
+    this._modelTypeOverride = value;
+  }
+  public resetModelTypeOverride() {
+    this._modelTypeOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modelTypeOverrideInput() {
+    return this._modelTypeOverride;
+  }
+}
+export interface MonitorVariablesDataQualityQuery {
+  /**
+  * The data source for data quality queries. Valid value is `data_quality_metrics`. Valid values are `data_quality_metrics`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
+  */
+  readonly dataSource: string;
+  /**
+  * Filter expression used to match on data entities. Uses AAstra query syntax.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#filter Monitor#filter}
+  */
+  readonly filter: string;
+  /**
+  * Optional grouping fields for aggregation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by Monitor#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * The measure to query. Common values include `bytes`, `cardinality`, `custom`, `freshness`, `max`, `mean`, `min`, `nullness`, `percent_negative`, `percent_zero`, `row_count`, `stddev`, `sum`, `uniqueness`. Additional values may be supported.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#measure Monitor#measure}
+  */
+  readonly measure: string;
+  /**
+  * The name of the query for use in formulas.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+  */
+  readonly name: string;
+  /**
+  * Schema version for the data quality query.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#schema_version Monitor#schema_version}
+  */
+  readonly schemaVersion?: string;
+  /**
+  * Optional scoping expression to further filter metrics.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#scope Monitor#scope}
+  */
+  readonly scope?: string;
+  /**
+  * monitor_options block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
+  */
+  readonly monitorOptions?: MonitorVariablesDataQualityQueryMonitorOptions;
+}
+
+export function monitorVariablesDataQualityQueryToTerraform(struct?: MonitorVariablesDataQualityQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    measure: cdktn.stringToTerraform(struct!.measure),
+    name: cdktn.stringToTerraform(struct!.name),
+    schema_version: cdktn.stringToTerraform(struct!.schemaVersion),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    monitor_options: monitorVariablesDataQualityQueryMonitorOptionsToTerraform(struct!.monitorOptions),
+  }
+}
+
+
+export function monitorVariablesDataQualityQueryToHclTerraform(struct?: MonitorVariablesDataQualityQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    data_source: {
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter: {
+      value: cdktn.stringToHclTerraform(struct!.filter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_by: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    measure: {
+      value: cdktn.stringToHclTerraform(struct!.measure),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema_version: {
+      value: cdktn.stringToHclTerraform(struct!.schemaVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktn.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    monitor_options: {
+      value: monitorVariablesDataQualityQueryMonitorOptionsToHclTerraform(struct!.monitorOptions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MonitorVariablesDataQualityQueryMonitorOptionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MonitorVariablesDataQualityQueryOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1418,11 +1999,297 @@ export class MonitorVariablesEventQueryComputeOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorVariablesEventQueryCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorVariablesDataQualityQuery | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataSource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataSource = this._dataSource;
+    }
+    if (this._filter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter;
+    }
+    if (this._groupBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupBy = this._groupBy;
+    }
+    if (this._measure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.measure = this._measure;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._schemaVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schemaVersion = this._schemaVersion;
+    }
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
+    if (this._monitorOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monitorOptions = this._monitorOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MonitorVariablesDataQualityQuery | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dataSource = undefined;
+      this._filter = undefined;
+      this._groupBy = undefined;
+      this._measure = undefined;
+      this._name = undefined;
+      this._schemaVersion = undefined;
+      this._scope = undefined;
+      this._monitorOptions.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dataSource = value.dataSource;
+      this._filter = value.filter;
+      this._groupBy = value.groupBy;
+      this._measure = value.measure;
+      this._name = value.name;
+      this._schemaVersion = value.schemaVersion;
+      this._scope = value.scope;
+      this._monitorOptions.internalValue = value.monitorOptions;
+    }
+  }
+
+  // data_source - computed: false, optional: false, required: true
+  private _dataSource?: string; 
+  public get dataSource() {
+    return this.getStringAttribute('data_source');
+  }
+  public set dataSource(value: string) {
+    this._dataSource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataSourceInput() {
+    return this._dataSource;
+  }
+
+  // filter - computed: false, optional: false, required: true
+  private _filter?: string; 
+  public get filter() {
+    return this.getStringAttribute('filter');
+  }
+  public set filter(value: string) {
+    this._filter = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[]; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[]) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy;
+  }
+
+  // measure - computed: false, optional: false, required: true
+  private _measure?: string; 
+  public get measure() {
+    return this.getStringAttribute('measure');
+  }
+  public set measure(value: string) {
+    this._measure = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get measureInput() {
+    return this._measure;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // schema_version - computed: false, optional: true, required: false
+  private _schemaVersion?: string; 
+  public get schemaVersion() {
+    return this.getStringAttribute('schema_version');
+  }
+  public set schemaVersion(value: string) {
+    this._schemaVersion = value;
+  }
+  public resetSchemaVersion() {
+    this._schemaVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaVersionInput() {
+    return this._schemaVersion;
+  }
+
+  // scope - computed: false, optional: true, required: false
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  public resetScope() {
+    this._scope = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+
+  // monitor_options - computed: false, optional: true, required: false
+  private _monitorOptions = new MonitorVariablesDataQualityQueryMonitorOptionsOutputReference(this, "monitor_options");
+  public get monitorOptions() {
+    return this._monitorOptions;
+  }
+  public putMonitorOptions(value: MonitorVariablesDataQualityQueryMonitorOptions) {
+    this._monitorOptions.internalValue = value;
+  }
+  public resetMonitorOptions() {
+    this._monitorOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitorOptionsInput() {
+    return this._monitorOptions.internalValue;
+  }
+}
+
+export class MonitorVariablesDataQualityQueryList extends cdktn.ComplexList {
+  public internalValue? : MonitorVariablesDataQualityQuery[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): MonitorVariablesDataQualityQueryOutputReference {
+    return new MonitorVariablesDataQualityQueryOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface MonitorVariablesEventQueryCompute {
+  /**
+  * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregation Monitor#aggregation}
+  */
+  readonly aggregation: string;
+  /**
+  * A time interval in milliseconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#interval Monitor#interval}
+  */
+  readonly interval?: number;
+  /**
+  * The measurable attribute to compute.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#metric Monitor#metric}
+  */
+  readonly metric?: string;
+}
+
+export function monitorVariablesEventQueryComputeToTerraform(struct?: MonitorVariablesEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    metric: cdktn.stringToTerraform(struct!.metric),
+  }
+}
+
+
+export function monitorVariablesEventQueryComputeToHclTerraform(struct?: MonitorVariablesEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    aggregation: {
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    interval: {
+      value: cdktn.numberToHclTerraform(struct!.interval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    metric: {
+      value: cdktn.stringToHclTerraform(struct!.metric),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class MonitorVariablesEventQueryComputeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): MonitorVariablesEventQueryCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1443,7 +2310,7 @@ export class MonitorVariablesEventQueryComputeOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorVariablesEventQueryCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorVariablesEventQueryCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1451,7 +2318,7 @@ export class MonitorVariablesEventQueryComputeOutputReference extends cdktf.Comp
       this._interval = undefined;
       this._metric = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1510,15 +2377,15 @@ export class MonitorVariablesEventQueryComputeOutputReference extends cdktf.Comp
   }
 }
 
-export class MonitorVariablesEventQueryComputeList extends cdktf.ComplexList {
-  public internalValue? : MonitorVariablesEventQueryCompute[] | cdktf.IResolvable
+export class MonitorVariablesEventQueryComputeList extends cdktn.ComplexList {
+  public internalValue? : MonitorVariablesEventQueryCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1533,56 +2400,56 @@ export interface MonitorVariablesEventQueryGroupBySort {
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
 
 export function monitorVariablesEventQueryGroupBySortToTerraform(struct?: MonitorVariablesEventQueryGroupBySortOutputReference | MonitorVariablesEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function monitorVariablesEventQueryGroupBySortToHclTerraform(struct?: MonitorVariablesEventQueryGroupBySortOutputReference | MonitorVariablesEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1593,14 +2460,14 @@ export function monitorVariablesEventQueryGroupBySortToHclTerraform(struct?: Mon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorVariablesEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
+export class MonitorVariablesEventQueryGroupBySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1686,50 +2553,50 @@ export interface MonitorVariablesEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesEventQueryGroupBySort;
 }
 
-export function monitorVariablesEventQueryGroupByToTerraform(struct?: MonitorVariablesEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesEventQueryGroupByToTerraform(struct?: MonitorVariablesEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort: monitorVariablesEventQueryGroupBySortToTerraform(struct!.sort),
   }
 }
 
 
-export function monitorVariablesEventQueryGroupByToHclTerraform(struct?: MonitorVariablesEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesEventQueryGroupByToHclTerraform(struct?: MonitorVariablesEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1746,9 +2613,9 @@ export function monitorVariablesEventQueryGroupByToHclTerraform(struct?: Monitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorVariablesEventQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class MonitorVariablesEventQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1756,11 +2623,11 @@ export class MonitorVariablesEventQueryGroupByOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorVariablesEventQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorVariablesEventQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1781,7 +2648,7 @@ export class MonitorVariablesEventQueryGroupByOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorVariablesEventQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorVariablesEventQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1789,7 +2656,7 @@ export class MonitorVariablesEventQueryGroupByOutputReference extends cdktf.Comp
       this._limit = undefined;
       this._sort.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1848,15 +2715,15 @@ export class MonitorVariablesEventQueryGroupByOutputReference extends cdktf.Comp
   }
 }
 
-export class MonitorVariablesEventQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : MonitorVariablesEventQueryGroupBy[] | cdktf.IResolvable
+export class MonitorVariablesEventQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : MonitorVariablesEventQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1871,30 +2738,30 @@ export interface MonitorVariablesEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
 
 export function monitorVariablesEventQuerySearchToTerraform(struct?: MonitorVariablesEventQuerySearchOutputReference | MonitorVariablesEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function monitorVariablesEventQuerySearchToHclTerraform(struct?: MonitorVariablesEventQuerySearchOutputReference | MonitorVariablesEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1905,14 +2772,14 @@ export function monitorVariablesEventQuerySearchToHclTerraform(struct?: MonitorV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorVariablesEventQuerySearchOutputReference extends cdktf.ComplexObject {
+export class MonitorVariablesEventQuerySearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1952,91 +2819,91 @@ export class MonitorVariablesEventQuerySearchOutputReference extends cdktf.Compl
 }
 export interface MonitorVariablesEventQuery {
   /**
-  * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`.
+  * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#indexes Monitor#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#indexes Monitor#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#compute Monitor#compute}
   */
-  readonly compute: MonitorVariablesEventQueryCompute[] | cdktf.IResolvable;
+  readonly compute: MonitorVariablesEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by Monitor#group_by}
   */
-  readonly groupBy?: MonitorVariablesEventQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: MonitorVariablesEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#search Monitor#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#search Monitor#search}
   */
   readonly search: MonitorVariablesEventQuerySearch;
 }
 
-export function monitorVariablesEventQueryToTerraform(struct?: MonitorVariablesEventQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesEventQueryToTerraform(struct?: MonitorVariablesEventQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
-    name: cdktf.stringToTerraform(struct!.name),
-    compute: cdktf.listMapper(monitorVariablesEventQueryComputeToTerraform, true)(struct!.compute),
-    group_by: cdktf.listMapper(monitorVariablesEventQueryGroupByToTerraform, true)(struct!.groupBy),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    indexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.indexes),
+    name: cdktn.stringToTerraform(struct!.name),
+    compute: cdktn.listMapper(monitorVariablesEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktn.listMapper(monitorVariablesEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: monitorVariablesEventQuerySearchToTerraform(struct!.search),
   }
 }
 
 
-export function monitorVariablesEventQueryToHclTerraform(struct?: MonitorVariablesEventQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorVariablesEventQueryToHclTerraform(struct?: MonitorVariablesEventQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     indexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.indexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compute: {
-      value: cdktf.listMapperHcl(monitorVariablesEventQueryComputeToHclTerraform, true)(struct!.compute),
+      value: cdktn.listMapperHcl(monitorVariablesEventQueryComputeToHclTerraform, true)(struct!.compute),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorVariablesEventQueryComputeList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(monitorVariablesEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(monitorVariablesEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorVariablesEventQueryGroupByList",
@@ -2053,9 +2920,9 @@ export function monitorVariablesEventQueryToHclTerraform(struct?: MonitorVariabl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObject {
+export class MonitorVariablesEventQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2063,11 +2930,11 @@ export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorVariablesEventQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorVariablesEventQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2100,7 +2967,7 @@ export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorVariablesEventQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorVariablesEventQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2111,7 +2978,7 @@ export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObje
       this._groupBy.internalValue = undefined;
       this._search.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2174,7 +3041,7 @@ export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObje
   public get compute() {
     return this._compute;
   }
-  public putCompute(value: MonitorVariablesEventQueryCompute[] | cdktf.IResolvable) {
+  public putCompute(value: MonitorVariablesEventQueryCompute[] | cdktn.IResolvable) {
     this._compute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2187,7 +3054,7 @@ export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObje
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: MonitorVariablesEventQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: MonitorVariablesEventQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -2212,15 +3079,15 @@ export class MonitorVariablesEventQueryOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class MonitorVariablesEventQueryList extends cdktf.ComplexList {
-  public internalValue? : MonitorVariablesEventQuery[] | cdktf.IResolvable
+export class MonitorVariablesEventQueryList extends cdktn.ComplexList {
+  public internalValue? : MonitorVariablesEventQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2235,43 +3102,56 @@ export interface MonitorVariables {
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
   */
-  readonly cloudCostQuery?: MonitorVariablesCloudCostQuery[] | cdktf.IResolvable;
+  readonly cloudCostQuery?: MonitorVariablesCloudCostQuery[] | cdktn.IResolvable;
+  /**
+  * data_quality_query block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+  */
+  readonly dataQualityQuery?: MonitorVariablesDataQualityQuery[] | cdktn.IResolvable;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#event_query Monitor#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#event_query Monitor#event_query}
   */
-  readonly eventQuery?: MonitorVariablesEventQuery[] | cdktf.IResolvable;
+  readonly eventQuery?: MonitorVariablesEventQuery[] | cdktn.IResolvable;
 }
 
 export function monitorVariablesToTerraform(struct?: MonitorVariablesOutputReference | MonitorVariables): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_cost_query: cdktf.listMapper(monitorVariablesCloudCostQueryToTerraform, true)(struct!.cloudCostQuery),
-    event_query: cdktf.listMapper(monitorVariablesEventQueryToTerraform, true)(struct!.eventQuery),
+    cloud_cost_query: cdktn.listMapper(monitorVariablesCloudCostQueryToTerraform, true)(struct!.cloudCostQuery),
+    data_quality_query: cdktn.listMapper(monitorVariablesDataQualityQueryToTerraform, true)(struct!.dataQualityQuery),
+    event_query: cdktn.listMapper(monitorVariablesEventQueryToTerraform, true)(struct!.eventQuery),
   }
 }
 
 
 export function monitorVariablesToHclTerraform(struct?: MonitorVariablesOutputReference | MonitorVariables): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_cost_query: {
-      value: cdktf.listMapperHcl(monitorVariablesCloudCostQueryToHclTerraform, true)(struct!.cloudCostQuery),
+      value: cdktn.listMapperHcl(monitorVariablesCloudCostQueryToHclTerraform, true)(struct!.cloudCostQuery),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorVariablesCloudCostQueryList",
     },
+    data_quality_query: {
+      value: cdktn.listMapperHcl(monitorVariablesDataQualityQueryToHclTerraform, true)(struct!.dataQualityQuery),
+      isBlock: true,
+      type: "list",
+      storageClassType: "MonitorVariablesDataQualityQueryList",
+    },
     event_query: {
-      value: cdktf.listMapperHcl(monitorVariablesEventQueryToHclTerraform, true)(struct!.eventQuery),
+      value: cdktn.listMapperHcl(monitorVariablesEventQueryToHclTerraform, true)(struct!.eventQuery),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorVariablesEventQueryList",
@@ -2282,14 +3162,14 @@ export function monitorVariablesToHclTerraform(struct?: MonitorVariablesOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
+export class MonitorVariablesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2299,6 +3179,10 @@ export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
     if (this._cloudCostQuery?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.cloudCostQuery = this._cloudCostQuery?.internalValue;
+    }
+    if (this._dataQualityQuery?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataQualityQuery = this._dataQualityQuery?.internalValue;
     }
     if (this._eventQuery?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2311,11 +3195,13 @@ export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._cloudCostQuery.internalValue = undefined;
+      this._dataQualityQuery.internalValue = undefined;
       this._eventQuery.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._cloudCostQuery.internalValue = value.cloudCostQuery;
+      this._dataQualityQuery.internalValue = value.dataQualityQuery;
       this._eventQuery.internalValue = value.eventQuery;
     }
   }
@@ -2325,7 +3211,7 @@ export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
   public get cloudCostQuery() {
     return this._cloudCostQuery;
   }
-  public putCloudCostQuery(value: MonitorVariablesCloudCostQuery[] | cdktf.IResolvable) {
+  public putCloudCostQuery(value: MonitorVariablesCloudCostQuery[] | cdktn.IResolvable) {
     this._cloudCostQuery.internalValue = value;
   }
   public resetCloudCostQuery() {
@@ -2336,12 +3222,28 @@ export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
     return this._cloudCostQuery.internalValue;
   }
 
+  // data_quality_query - computed: false, optional: true, required: false
+  private _dataQualityQuery = new MonitorVariablesDataQualityQueryList(this, "data_quality_query", false);
+  public get dataQualityQuery() {
+    return this._dataQualityQuery;
+  }
+  public putDataQualityQuery(value: MonitorVariablesDataQualityQuery[] | cdktn.IResolvable) {
+    this._dataQualityQuery.internalValue = value;
+  }
+  public resetDataQualityQuery() {
+    this._dataQualityQuery.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataQualityQueryInput() {
+    return this._dataQualityQuery.internalValue;
+  }
+
   // event_query - computed: false, optional: true, required: false
   private _eventQuery = new MonitorVariablesEventQueryList(this, "event_query", false);
   public get eventQuery() {
     return this._eventQuery;
   }
-  public putEventQuery(value: MonitorVariablesEventQuery[] | cdktf.IResolvable) {
+  public putEventQuery(value: MonitorVariablesEventQuery[] | cdktn.IResolvable) {
     this._eventQuery.internalValue = value;
   }
   public resetEventQuery() {
@@ -2354,9 +3256,9 @@ export class MonitorVariablesOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor datadog_monitor}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor datadog_monitor}
 */
-export class Monitor extends cdktf.TerraformResource {
+export class Monitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2367,14 +3269,14 @@ export class Monitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Monitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Monitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Monitor to import
-  * @param importFromId The id of the existing Monitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Monitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Monitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -2382,7 +3284,7 @@ export class Monitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor datadog_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor datadog_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2393,7 +3295,7 @@ export class Monitor extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -2436,6 +3338,7 @@ export class Monitor extends cdktf.TerraformResource {
     this._timeoutH = config.timeoutH;
     this._type = config.type;
     this._validate = config.validate;
+    this._assets.internalValue = config.assets;
     this._monitorThresholdWindows.internalValue = config.monitorThresholdWindows;
     this._monitorThresholds.internalValue = config.monitorThresholds;
     this._schedulingOptions.internalValue = config.schedulingOptions;
@@ -2463,11 +3366,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // enable_logs_sample - computed: false, optional: true, required: false
-  private _enableLogsSample?: boolean | cdktf.IResolvable; 
+  private _enableLogsSample?: boolean | cdktn.IResolvable; 
   public get enableLogsSample() {
     return this.getBooleanAttribute('enable_logs_sample');
   }
-  public set enableLogsSample(value: boolean | cdktf.IResolvable) {
+  public set enableLogsSample(value: boolean | cdktn.IResolvable) {
     this._enableLogsSample = value;
   }
   public resetEnableLogsSample() {
@@ -2479,11 +3382,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // enable_samples - computed: false, optional: true, required: false
-  private _enableSamples?: boolean | cdktf.IResolvable; 
+  private _enableSamples?: boolean | cdktn.IResolvable; 
   public get enableSamples() {
     return this.getBooleanAttribute('enable_samples');
   }
-  public set enableSamples(value: boolean | cdktf.IResolvable) {
+  public set enableSamples(value: boolean | cdktn.IResolvable) {
     this._enableSamples = value;
   }
   public resetEnableSamples() {
@@ -2527,11 +3430,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // force_delete - computed: false, optional: true, required: false
-  private _forceDelete?: boolean | cdktf.IResolvable; 
+  private _forceDelete?: boolean | cdktn.IResolvable; 
   public get forceDelete() {
     return this.getBooleanAttribute('force_delete');
   }
-  public set forceDelete(value: boolean | cdktf.IResolvable) {
+  public set forceDelete(value: boolean | cdktn.IResolvable) {
     this._forceDelete = value;
   }
   public resetForceDelete() {
@@ -2559,11 +3462,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // groupby_simple_monitor - computed: false, optional: true, required: false
-  private _groupbySimpleMonitor?: boolean | cdktf.IResolvable; 
+  private _groupbySimpleMonitor?: boolean | cdktn.IResolvable; 
   public get groupbySimpleMonitor() {
     return this.getBooleanAttribute('groupby_simple_monitor');
   }
-  public set groupbySimpleMonitor(value: boolean | cdktf.IResolvable) {
+  public set groupbySimpleMonitor(value: boolean | cdktn.IResolvable) {
     this._groupbySimpleMonitor = value;
   }
   public resetGroupbySimpleMonitor() {
@@ -2591,11 +3494,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // include_tags - computed: false, optional: true, required: false
-  private _includeTags?: boolean | cdktf.IResolvable; 
+  private _includeTags?: boolean | cdktn.IResolvable; 
   public get includeTags() {
     return this.getBooleanAttribute('include_tags');
   }
-  public set includeTags(value: boolean | cdktf.IResolvable) {
+  public set includeTags(value: boolean | cdktn.IResolvable) {
     this._includeTags = value;
   }
   public resetIncludeTags() {
@@ -2607,11 +3510,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // locked - computed: false, optional: true, required: false
-  private _locked?: boolean | cdktf.IResolvable; 
+  private _locked?: boolean | cdktn.IResolvable; 
   public get locked() {
     return this.getBooleanAttribute('locked');
   }
-  public set locked(value: boolean | cdktf.IResolvable) {
+  public set locked(value: boolean | cdktn.IResolvable) {
     this._locked = value;
   }
   public resetLocked() {
@@ -2713,11 +3616,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // notify_audit - computed: false, optional: true, required: false
-  private _notifyAudit?: boolean | cdktf.IResolvable; 
+  private _notifyAudit?: boolean | cdktn.IResolvable; 
   public get notifyAudit() {
     return this.getBooleanAttribute('notify_audit');
   }
-  public set notifyAudit(value: boolean | cdktf.IResolvable) {
+  public set notifyAudit(value: boolean | cdktn.IResolvable) {
     this._notifyAudit = value;
   }
   public resetNotifyAudit() {
@@ -2731,7 +3634,7 @@ export class Monitor extends cdktf.TerraformResource {
   // notify_by - computed: false, optional: true, required: false
   private _notifyBy?: string[]; 
   public get notifyBy() {
-    return cdktf.Fn.tolist(this.getListAttribute('notify_by'));
+    return cdktn.Fn.tolist(this.getListAttribute('notify_by'));
   }
   public set notifyBy(value: string[]) {
     this._notifyBy = value;
@@ -2745,11 +3648,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // notify_no_data - computed: false, optional: true, required: false
-  private _notifyNoData?: boolean | cdktf.IResolvable; 
+  private _notifyNoData?: boolean | cdktn.IResolvable; 
   public get notifyNoData() {
     return this.getBooleanAttribute('notify_no_data');
   }
-  public set notifyNoData(value: boolean | cdktf.IResolvable) {
+  public set notifyNoData(value: boolean | cdktn.IResolvable) {
     this._notifyNoData = value;
   }
   public resetNotifyNoData() {
@@ -2840,7 +3743,7 @@ export class Monitor extends cdktf.TerraformResource {
   // renotify_statuses - computed: false, optional: true, required: false
   private _renotifyStatuses?: string[]; 
   public get renotifyStatuses() {
-    return cdktf.Fn.tolist(this.getListAttribute('renotify_statuses'));
+    return cdktn.Fn.tolist(this.getListAttribute('renotify_statuses'));
   }
   public set renotifyStatuses(value: string[]) {
     this._renotifyStatuses = value;
@@ -2854,11 +3757,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // require_full_window - computed: false, optional: true, required: false
-  private _requireFullWindow?: boolean | cdktf.IResolvable; 
+  private _requireFullWindow?: boolean | cdktn.IResolvable; 
   public get requireFullWindow() {
     return this.getBooleanAttribute('require_full_window');
   }
-  public set requireFullWindow(value: boolean | cdktf.IResolvable) {
+  public set requireFullWindow(value: boolean | cdktn.IResolvable) {
     this._requireFullWindow = value;
   }
   public resetRequireFullWindow() {
@@ -2872,7 +3775,7 @@ export class Monitor extends cdktf.TerraformResource {
   // restricted_roles - computed: false, optional: true, required: false
   private _restrictedRoles?: string[]; 
   public get restrictedRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('restricted_roles'));
   }
   public set restrictedRoles(value: string[]) {
     this._restrictedRoles = value;
@@ -2888,7 +3791,7 @@ export class Monitor extends cdktf.TerraformResource {
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -2931,11 +3834,11 @@ export class Monitor extends cdktf.TerraformResource {
   }
 
   // validate - computed: false, optional: true, required: false
-  private _validate?: boolean | cdktf.IResolvable; 
+  private _validate?: boolean | cdktn.IResolvable; 
   public get validate() {
     return this.getBooleanAttribute('validate');
   }
-  public set validate(value: boolean | cdktf.IResolvable) {
+  public set validate(value: boolean | cdktn.IResolvable) {
     this._validate = value;
   }
   public resetValidate() {
@@ -2944,6 +3847,22 @@ export class Monitor extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get validateInput() {
     return this._validate;
+  }
+
+  // assets - computed: false, optional: true, required: false
+  private _assets = new MonitorAssetsList(this, "assets", false);
+  public get assets() {
+    return this._assets;
+  }
+  public putAssets(value: MonitorAssets[] | cdktn.IResolvable) {
+    this._assets.internalValue = value;
+  }
+  public resetAssets() {
+    this._assets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get assetsInput() {
+    return this._assets.internalValue;
   }
 
   // monitor_threshold_windows - computed: false, optional: true, required: false
@@ -3016,38 +3935,39 @@ export class Monitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      draft_status: cdktf.stringToTerraform(this._draftStatus),
-      enable_logs_sample: cdktf.booleanToTerraform(this._enableLogsSample),
-      enable_samples: cdktf.booleanToTerraform(this._enableSamples),
-      escalation_message: cdktf.stringToTerraform(this._escalationMessage),
-      evaluation_delay: cdktf.numberToTerraform(this._evaluationDelay),
-      force_delete: cdktf.booleanToTerraform(this._forceDelete),
-      group_retention_duration: cdktf.stringToTerraform(this._groupRetentionDuration),
-      groupby_simple_monitor: cdktf.booleanToTerraform(this._groupbySimpleMonitor),
-      id: cdktf.stringToTerraform(this._id),
-      include_tags: cdktf.booleanToTerraform(this._includeTags),
-      locked: cdktf.booleanToTerraform(this._locked),
-      message: cdktf.stringToTerraform(this._message),
-      name: cdktf.stringToTerraform(this._name),
-      new_group_delay: cdktf.numberToTerraform(this._newGroupDelay),
-      new_host_delay: cdktf.numberToTerraform(this._newHostDelay),
-      no_data_timeframe: cdktf.numberToTerraform(this._noDataTimeframe),
-      notification_preset_name: cdktf.stringToTerraform(this._notificationPresetName),
-      notify_audit: cdktf.booleanToTerraform(this._notifyAudit),
-      notify_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyBy),
-      notify_no_data: cdktf.booleanToTerraform(this._notifyNoData),
-      on_missing_data: cdktf.stringToTerraform(this._onMissingData),
-      priority: cdktf.stringToTerraform(this._priority),
-      query: cdktf.stringToTerraform(this._query),
-      renotify_interval: cdktf.numberToTerraform(this._renotifyInterval),
-      renotify_occurrences: cdktf.numberToTerraform(this._renotifyOccurrences),
-      renotify_statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._renotifyStatuses),
-      require_full_window: cdktf.booleanToTerraform(this._requireFullWindow),
-      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restrictedRoles),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      timeout_h: cdktf.numberToTerraform(this._timeoutH),
-      type: cdktf.stringToTerraform(this._type),
-      validate: cdktf.booleanToTerraform(this._validate),
+      draft_status: cdktn.stringToTerraform(this._draftStatus),
+      enable_logs_sample: cdktn.booleanToTerraform(this._enableLogsSample),
+      enable_samples: cdktn.booleanToTerraform(this._enableSamples),
+      escalation_message: cdktn.stringToTerraform(this._escalationMessage),
+      evaluation_delay: cdktn.numberToTerraform(this._evaluationDelay),
+      force_delete: cdktn.booleanToTerraform(this._forceDelete),
+      group_retention_duration: cdktn.stringToTerraform(this._groupRetentionDuration),
+      groupby_simple_monitor: cdktn.booleanToTerraform(this._groupbySimpleMonitor),
+      id: cdktn.stringToTerraform(this._id),
+      include_tags: cdktn.booleanToTerraform(this._includeTags),
+      locked: cdktn.booleanToTerraform(this._locked),
+      message: cdktn.stringToTerraform(this._message),
+      name: cdktn.stringToTerraform(this._name),
+      new_group_delay: cdktn.numberToTerraform(this._newGroupDelay),
+      new_host_delay: cdktn.numberToTerraform(this._newHostDelay),
+      no_data_timeframe: cdktn.numberToTerraform(this._noDataTimeframe),
+      notification_preset_name: cdktn.stringToTerraform(this._notificationPresetName),
+      notify_audit: cdktn.booleanToTerraform(this._notifyAudit),
+      notify_by: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notifyBy),
+      notify_no_data: cdktn.booleanToTerraform(this._notifyNoData),
+      on_missing_data: cdktn.stringToTerraform(this._onMissingData),
+      priority: cdktn.stringToTerraform(this._priority),
+      query: cdktn.stringToTerraform(this._query),
+      renotify_interval: cdktn.numberToTerraform(this._renotifyInterval),
+      renotify_occurrences: cdktn.numberToTerraform(this._renotifyOccurrences),
+      renotify_statuses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._renotifyStatuses),
+      require_full_window: cdktn.booleanToTerraform(this._requireFullWindow),
+      restricted_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._restrictedRoles),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      timeout_h: cdktn.numberToTerraform(this._timeoutH),
+      type: cdktn.stringToTerraform(this._type),
+      validate: cdktn.booleanToTerraform(this._validate),
+      assets: cdktn.listMapper(monitorAssetsToTerraform, true)(this._assets.internalValue),
       monitor_threshold_windows: monitorMonitorThresholdWindowsToTerraform(this._monitorThresholdWindows.internalValue),
       monitor_thresholds: monitorMonitorThresholdsToTerraform(this._monitorThresholds.internalValue),
       scheduling_options: monitorSchedulingOptionsToTerraform(this._schedulingOptions.internalValue),
@@ -3058,196 +3978,202 @@ export class Monitor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       draft_status: {
-        value: cdktf.stringToHclTerraform(this._draftStatus),
+        value: cdktn.stringToHclTerraform(this._draftStatus),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_logs_sample: {
-        value: cdktf.booleanToHclTerraform(this._enableLogsSample),
+        value: cdktn.booleanToHclTerraform(this._enableLogsSample),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enable_samples: {
-        value: cdktf.booleanToHclTerraform(this._enableSamples),
+        value: cdktn.booleanToHclTerraform(this._enableSamples),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       escalation_message: {
-        value: cdktf.stringToHclTerraform(this._escalationMessage),
+        value: cdktn.stringToHclTerraform(this._escalationMessage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       evaluation_delay: {
-        value: cdktf.numberToHclTerraform(this._evaluationDelay),
+        value: cdktn.numberToHclTerraform(this._evaluationDelay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       force_delete: {
-        value: cdktf.booleanToHclTerraform(this._forceDelete),
+        value: cdktn.booleanToHclTerraform(this._forceDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       group_retention_duration: {
-        value: cdktf.stringToHclTerraform(this._groupRetentionDuration),
+        value: cdktn.stringToHclTerraform(this._groupRetentionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       groupby_simple_monitor: {
-        value: cdktf.booleanToHclTerraform(this._groupbySimpleMonitor),
+        value: cdktn.booleanToHclTerraform(this._groupbySimpleMonitor),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_tags: {
-        value: cdktf.booleanToHclTerraform(this._includeTags),
+        value: cdktn.booleanToHclTerraform(this._includeTags),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       locked: {
-        value: cdktf.booleanToHclTerraform(this._locked),
+        value: cdktn.booleanToHclTerraform(this._locked),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       message: {
-        value: cdktf.stringToHclTerraform(this._message),
+        value: cdktn.stringToHclTerraform(this._message),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       new_group_delay: {
-        value: cdktf.numberToHclTerraform(this._newGroupDelay),
+        value: cdktn.numberToHclTerraform(this._newGroupDelay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       new_host_delay: {
-        value: cdktf.numberToHclTerraform(this._newHostDelay),
+        value: cdktn.numberToHclTerraform(this._newHostDelay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       no_data_timeframe: {
-        value: cdktf.numberToHclTerraform(this._noDataTimeframe),
+        value: cdktn.numberToHclTerraform(this._noDataTimeframe),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       notification_preset_name: {
-        value: cdktf.stringToHclTerraform(this._notificationPresetName),
+        value: cdktn.stringToHclTerraform(this._notificationPresetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notify_audit: {
-        value: cdktf.booleanToHclTerraform(this._notifyAudit),
+        value: cdktn.booleanToHclTerraform(this._notifyAudit),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       notify_by: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifyBy),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notifyBy),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       notify_no_data: {
-        value: cdktf.booleanToHclTerraform(this._notifyNoData),
+        value: cdktn.booleanToHclTerraform(this._notifyNoData),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       on_missing_data: {
-        value: cdktf.stringToHclTerraform(this._onMissingData),
+        value: cdktn.stringToHclTerraform(this._onMissingData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.stringToHclTerraform(this._priority),
+        value: cdktn.stringToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       renotify_interval: {
-        value: cdktf.numberToHclTerraform(this._renotifyInterval),
+        value: cdktn.numberToHclTerraform(this._renotifyInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       renotify_occurrences: {
-        value: cdktf.numberToHclTerraform(this._renotifyOccurrences),
+        value: cdktn.numberToHclTerraform(this._renotifyOccurrences),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       renotify_statuses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._renotifyStatuses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._renotifyStatuses),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       require_full_window: {
-        value: cdktf.booleanToHclTerraform(this._requireFullWindow),
+        value: cdktn.booleanToHclTerraform(this._requireFullWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       restricted_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._restrictedRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._restrictedRoles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       timeout_h: {
-        value: cdktf.numberToHclTerraform(this._timeoutH),
+        value: cdktn.numberToHclTerraform(this._timeoutH),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validate: {
-        value: cdktf.booleanToHclTerraform(this._validate),
+        value: cdktn.booleanToHclTerraform(this._validate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      assets: {
+        value: cdktn.listMapperHcl(monitorAssetsToHclTerraform, true)(this._assets.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MonitorAssetsList",
       },
       monitor_threshold_windows: {
         value: monitorMonitorThresholdWindowsToHclTerraform(this._monitorThresholdWindows.internalValue),

@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
+export interface DowntimeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Optionally specify an end date when this downtime should expire. Accepts a Unix timestamp in UTC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#end Downtime#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#end Downtime#end}
   */
   readonly end?: number;
   /**
   * String representing date and time to end the downtime in RFC3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#end_date Downtime#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#end_date Downtime#end_date}
   */
   readonly endDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#id Downtime#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#id Downtime#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,55 +34,55 @@ export interface DowntimeConfig extends cdktf.TerraformMetaArguments {
   /**
   * An optional message to provide when creating the downtime, can include notification handles
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#message Downtime#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#message Downtime#message}
   */
   readonly message?: string;
   /**
   * When specified, this downtime will only apply to this monitor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#monitor_id Downtime#monitor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#monitor_id Downtime#monitor_id}
   */
   readonly monitorId?: number;
   /**
   * A list of monitor tags (up to 32) to base the scheduled downtime on. Only monitors that have all selected tags are silenced
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#monitor_tags Downtime#monitor_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#monitor_tags Downtime#monitor_tags}
   */
   readonly monitorTags?: string[];
   /**
   * When true the first recovery notification during the downtime will be muted Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#mute_first_recovery_notification Downtime#mute_first_recovery_notification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#mute_first_recovery_notification Downtime#mute_first_recovery_notification}
   */
-  readonly muteFirstRecoveryNotification?: boolean | cdktf.IResolvable;
+  readonly muteFirstRecoveryNotification?: boolean | cdktn.IResolvable;
   /**
   * specify the group scope to which this downtime applies. For everything use '*'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#scope Downtime#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#scope Downtime#scope}
   */
   readonly scope: string[];
   /**
   * Specify when this downtime should start. Accepts a Unix timestamp in UTC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#start Downtime#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#start Downtime#start}
   */
   readonly start?: number;
   /**
   * String representing date and time to start the downtime in RFC3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#start_date Downtime#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#start_date Downtime#start_date}
   */
   readonly startDate?: string;
   /**
   * The timezone for the downtime. Follows IANA timezone database identifiers. Defaults to `"UTC"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#timezone Downtime#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#timezone Downtime#timezone}
   */
   readonly timezone?: string;
   /**
   * recurrence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#recurrence Downtime#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#recurrence Downtime#recurrence}
   */
   readonly recurrence?: DowntimeRecurrence;
 }
@@ -90,95 +90,95 @@ export interface DowntimeRecurrence {
   /**
   * How often to repeat as an integer. For example to repeat every 3 days, select a `type` of `days` and a `period` of `3`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#period Downtime#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#period Downtime#period}
   */
   readonly period?: number;
   /**
   * The RRULE standard for defining recurring events. For example, to have a recurring event on the first day of each month, use `FREQ=MONTHLY;INTERVAL=1`. Most common rrule options from the iCalendar Spec are supported. Attributes specifying the duration in RRULE are not supported (for example, `DTSTART`, `DTEND`, `DURATION`). Only applicable when `type` is `rrule`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#rrule Downtime#rrule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#rrule Downtime#rrule}
   */
   readonly rrule?: string;
   /**
   * One of `days`, `weeks`, `months`, `years`, or `rrule`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#type Downtime#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#type Downtime#type}
   */
   readonly type: string;
   /**
   * The date at which the recurrence should end as a POSIX timestamp. `until_occurrences` and `until_date` are mutually exclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#until_date Downtime#until_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#until_date Downtime#until_date}
   */
   readonly untilDate?: number;
   /**
   * How many times the downtime will be rescheduled. `until_occurrences` and `until_date` are mutually exclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#until_occurrences Downtime#until_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#until_occurrences Downtime#until_occurrences}
   */
   readonly untilOccurrences?: number;
   /**
   * A list of week days to repeat on. Choose from: `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat` or `Sun`. Only applicable when `type` is `weeks`. First letter must be capitalized.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#week_days Downtime#week_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#week_days Downtime#week_days}
   */
   readonly weekDays?: string[];
 }
 
 export function downtimeRecurrenceToTerraform(struct?: DowntimeRecurrenceOutputReference | DowntimeRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    period: cdktf.numberToTerraform(struct!.period),
-    rrule: cdktf.stringToTerraform(struct!.rrule),
-    type: cdktf.stringToTerraform(struct!.type),
-    until_date: cdktf.numberToTerraform(struct!.untilDate),
-    until_occurrences: cdktf.numberToTerraform(struct!.untilOccurrences),
-    week_days: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weekDays),
+    period: cdktn.numberToTerraform(struct!.period),
+    rrule: cdktn.stringToTerraform(struct!.rrule),
+    type: cdktn.stringToTerraform(struct!.type),
+    until_date: cdktn.numberToTerraform(struct!.untilDate),
+    until_occurrences: cdktn.numberToTerraform(struct!.untilOccurrences),
+    week_days: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weekDays),
   }
 }
 
 
 export function downtimeRecurrenceToHclTerraform(struct?: DowntimeRecurrenceOutputReference | DowntimeRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     period: {
-      value: cdktf.numberToHclTerraform(struct!.period),
+      value: cdktn.numberToHclTerraform(struct!.period),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rrule: {
-      value: cdktf.stringToHclTerraform(struct!.rrule),
+      value: cdktn.stringToHclTerraform(struct!.rrule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     until_date: {
-      value: cdktf.numberToHclTerraform(struct!.untilDate),
+      value: cdktn.numberToHclTerraform(struct!.untilDate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     until_occurrences: {
-      value: cdktf.numberToHclTerraform(struct!.untilOccurrences),
+      value: cdktn.numberToHclTerraform(struct!.untilOccurrences),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     week_days: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weekDays),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weekDays),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -189,14 +189,14 @@ export function downtimeRecurrenceToHclTerraform(struct?: DowntimeRecurrenceOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
+export class DowntimeRecurrenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -346,9 +346,9 @@ export class DowntimeRecurrenceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime datadog_downtime}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime datadog_downtime}
 */
-export class Downtime extends cdktf.TerraformResource {
+export class Downtime extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -359,14 +359,14 @@ export class Downtime extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Downtime resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Downtime resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Downtime to import
-  * @param importFromId The id of the existing Downtime that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Downtime that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Downtime to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_downtime", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_downtime", importId: importFromId, provider });
       }
 
   // ===========
@@ -374,7 +374,7 @@ export class Downtime extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/downtime datadog_downtime} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/downtime datadog_downtime} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -385,7 +385,7 @@ export class Downtime extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_downtime',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -512,7 +512,7 @@ export class Downtime extends cdktf.TerraformResource {
   // monitor_tags - computed: false, optional: true, required: false
   private _monitorTags?: string[]; 
   public get monitorTags() {
-    return cdktf.Fn.tolist(this.getListAttribute('monitor_tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('monitor_tags'));
   }
   public set monitorTags(value: string[]) {
     this._monitorTags = value;
@@ -526,11 +526,11 @@ export class Downtime extends cdktf.TerraformResource {
   }
 
   // mute_first_recovery_notification - computed: false, optional: true, required: false
-  private _muteFirstRecoveryNotification?: boolean | cdktf.IResolvable; 
+  private _muteFirstRecoveryNotification?: boolean | cdktn.IResolvable; 
   public get muteFirstRecoveryNotification() {
     return this.getBooleanAttribute('mute_first_recovery_notification');
   }
-  public set muteFirstRecoveryNotification(value: boolean | cdktf.IResolvable) {
+  public set muteFirstRecoveryNotification(value: boolean | cdktn.IResolvable) {
     this._muteFirstRecoveryNotification = value;
   }
   public resetMuteFirstRecoveryNotification() {
@@ -624,17 +624,17 @@ export class Downtime extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      end: cdktf.numberToTerraform(this._end),
-      end_date: cdktf.stringToTerraform(this._endDate),
-      id: cdktf.stringToTerraform(this._id),
-      message: cdktf.stringToTerraform(this._message),
-      monitor_id: cdktf.numberToTerraform(this._monitorId),
-      monitor_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._monitorTags),
-      mute_first_recovery_notification: cdktf.booleanToTerraform(this._muteFirstRecoveryNotification),
-      scope: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scope),
-      start: cdktf.numberToTerraform(this._start),
-      start_date: cdktf.stringToTerraform(this._startDate),
-      timezone: cdktf.stringToTerraform(this._timezone),
+      end: cdktn.numberToTerraform(this._end),
+      end_date: cdktn.stringToTerraform(this._endDate),
+      id: cdktn.stringToTerraform(this._id),
+      message: cdktn.stringToTerraform(this._message),
+      monitor_id: cdktn.numberToTerraform(this._monitorId),
+      monitor_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._monitorTags),
+      mute_first_recovery_notification: cdktn.booleanToTerraform(this._muteFirstRecoveryNotification),
+      scope: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scope),
+      start: cdktn.numberToTerraform(this._start),
+      start_date: cdktn.stringToTerraform(this._startDate),
+      timezone: cdktn.stringToTerraform(this._timezone),
       recurrence: downtimeRecurrenceToTerraform(this._recurrence.internalValue),
     };
   }
@@ -642,67 +642,67 @@ export class Downtime extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       end: {
-        value: cdktf.numberToHclTerraform(this._end),
+        value: cdktn.numberToHclTerraform(this._end),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       end_date: {
-        value: cdktf.stringToHclTerraform(this._endDate),
+        value: cdktn.stringToHclTerraform(this._endDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message: {
-        value: cdktf.stringToHclTerraform(this._message),
+        value: cdktn.stringToHclTerraform(this._message),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_id: {
-        value: cdktf.numberToHclTerraform(this._monitorId),
+        value: cdktn.numberToHclTerraform(this._monitorId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       monitor_tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._monitorTags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._monitorTags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       mute_first_recovery_notification: {
-        value: cdktf.booleanToHclTerraform(this._muteFirstRecoveryNotification),
+        value: cdktn.booleanToHclTerraform(this._muteFirstRecoveryNotification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       scope: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scope),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scope),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       start: {
-        value: cdktf.numberToHclTerraform(this._start),
+        value: cdktn.numberToHclTerraform(this._start),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       start_date: {
-        value: cdktf.stringToHclTerraform(this._startDate),
+        value: cdktn.stringToHclTerraform(this._startDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

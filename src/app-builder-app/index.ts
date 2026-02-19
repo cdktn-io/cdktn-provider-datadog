@@ -1,59 +1,59 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppBuilderAppConfig extends cdktf.TerraformMetaArguments {
+export interface AppBuilderAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * If specified, this will override the Action Connection IDs for the specified Action Query Names in the App JSON. Otherwise, a map of the App's Action Query Names to Action Connection IDs will be returned in output.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app#action_query_names_to_connection_ids AppBuilderApp#action_query_names_to_connection_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app#action_query_names_to_connection_ids AppBuilderApp#action_query_names_to_connection_ids}
   */
   readonly actionQueryNamesToConnectionIds?: { [key: string]: string };
   /**
   * The JSON representation of the App. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app#app_json AppBuilderApp#app_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app#app_json AppBuilderApp#app_json}
   */
   readonly appJson: string;
   /**
   * If specified, this will override the human-readable description of the App in the App JSON. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app#description AppBuilderApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app#description AppBuilderApp#description}
   */
   readonly description?: string;
   /**
   * If specified, this will override the name of the App in the App JSON. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app#name AppBuilderApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app#name AppBuilderApp#name}
   */
   readonly name?: string;
   /**
   * Set the app to published or unpublished. Published apps are available to other users. To ensure the app is accessible to the correct users, you also need to set a [Restriction Policy](https://docs.datadoghq.com/api/latest/restriction-policies/) on the app if a policy does not yet exist. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app#published AppBuilderApp#published}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app#published AppBuilderApp#published}
   */
-  readonly published?: boolean | cdktf.IResolvable;
+  readonly published?: boolean | cdktn.IResolvable;
   /**
   * The name of the root component of the app. This must be a grid component that contains all other components. If specified, this will override the root instance name of the App in the App JSON. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app#root_instance_name AppBuilderApp#root_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app#root_instance_name AppBuilderApp#root_instance_name}
   */
   readonly rootInstanceName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app datadog_app_builder_app}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app datadog_app_builder_app}
 */
-export class AppBuilderApp extends cdktf.TerraformResource {
+export class AppBuilderApp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -64,14 +64,14 @@ export class AppBuilderApp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppBuilderApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppBuilderApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppBuilderApp to import
-  * @param importFromId The id of the existing AppBuilderApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppBuilderApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppBuilderApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_app_builder_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_app_builder_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -79,7 +79,7 @@ export class AppBuilderApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/app_builder_app datadog_app_builder_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/app_builder_app datadog_app_builder_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class AppBuilderApp extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_app_builder_app',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -180,11 +180,11 @@ export class AppBuilderApp extends cdktf.TerraformResource {
   }
 
   // published - computed: true, optional: true, required: false
-  private _published?: boolean | cdktf.IResolvable; 
+  private _published?: boolean | cdktn.IResolvable; 
   public get published() {
     return this.getBooleanAttribute('published');
   }
-  public set published(value: boolean | cdktf.IResolvable) {
+  public set published(value: boolean | cdktn.IResolvable) {
     this._published = value;
   }
   public resetPublished() {
@@ -217,49 +217,49 @@ export class AppBuilderApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action_query_names_to_connection_ids: cdktf.hashMapper(cdktf.stringToTerraform)(this._actionQueryNamesToConnectionIds),
-      app_json: cdktf.stringToTerraform(this._appJson),
-      description: cdktf.stringToTerraform(this._description),
-      name: cdktf.stringToTerraform(this._name),
-      published: cdktf.booleanToTerraform(this._published),
-      root_instance_name: cdktf.stringToTerraform(this._rootInstanceName),
+      action_query_names_to_connection_ids: cdktn.hashMapper(cdktn.stringToTerraform)(this._actionQueryNamesToConnectionIds),
+      app_json: cdktn.stringToTerraform(this._appJson),
+      description: cdktn.stringToTerraform(this._description),
+      name: cdktn.stringToTerraform(this._name),
+      published: cdktn.booleanToTerraform(this._published),
+      root_instance_name: cdktn.stringToTerraform(this._rootInstanceName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action_query_names_to_connection_ids: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._actionQueryNamesToConnectionIds),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._actionQueryNamesToConnectionIds),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       app_json: {
-        value: cdktf.stringToHclTerraform(this._appJson),
+        value: cdktn.stringToHclTerraform(this._appJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       published: {
-        value: cdktf.booleanToHclTerraform(this._published),
+        value: cdktn.booleanToHclTerraform(this._published),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       root_instance_name: {
-        value: cdktf.stringToHclTerraform(this._rootInstanceName),
+        value: cdktn.stringToHclTerraform(this._rootInstanceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

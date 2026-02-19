@@ -1,21 +1,21 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogTagPipelineRulesetConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogTagPipelineRulesetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset#id DataDatadogTagPipelineRuleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset#id DataDatadogTagPipelineRuleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,16 +24,16 @@ export interface DataDatadogTagPipelineRulesetConfig extends cdktf.TerraformMeta
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset#rules DataDatadogTagPipelineRuleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset#rules DataDatadogTagPipelineRuleset#rules}
   */
-  readonly rules?: DataDatadogTagPipelineRulesetRules[] | cdktf.IResolvable;
+  readonly rules?: DataDatadogTagPipelineRulesetRules[] | cdktn.IResolvable;
 }
 export interface DataDatadogTagPipelineRulesetRulesMapping {
 }
 
-export function dataDatadogTagPipelineRulesetRulesMappingToTerraform(struct?: DataDatadogTagPipelineRulesetRulesMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesMappingToTerraform(struct?: DataDatadogTagPipelineRulesetRulesMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -41,9 +41,9 @@ export function dataDatadogTagPipelineRulesetRulesMappingToTerraform(struct?: Da
 }
 
 
-export function dataDatadogTagPipelineRulesetRulesMappingToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesMapping | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesMappingToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesMapping | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,19 +51,19 @@ export function dataDatadogTagPipelineRulesetRulesMappingToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataDatadogTagPipelineRulesetRulesMappingOutputReference extends cdktf.ComplexObject {
+export class DataDatadogTagPipelineRulesetRulesMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogTagPipelineRulesetRulesMapping | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogTagPipelineRulesetRulesMapping | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -72,12 +72,12 @@ export class DataDatadogTagPipelineRulesetRulesMappingOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogTagPipelineRulesetRulesMapping | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogTagPipelineRulesetRulesMapping | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -97,6 +97,11 @@ export class DataDatadogTagPipelineRulesetRulesMappingOutputReference extends cd
     return this.getBooleanAttribute('if_not_exists');
   }
 
+  // if_tag_exists - computed: true, optional: false, required: false
+  public get ifTagExists() {
+    return this.getStringAttribute('if_tag_exists');
+  }
+
   // source_keys - computed: true, optional: false, required: false
   public get sourceKeys() {
     return this.getListAttribute('source_keys');
@@ -105,9 +110,9 @@ export class DataDatadogTagPipelineRulesetRulesMappingOutputReference extends cd
 export interface DataDatadogTagPipelineRulesetRulesQueryAddition {
 }
 
-export function dataDatadogTagPipelineRulesetRulesQueryAdditionToTerraform(struct?: DataDatadogTagPipelineRulesetRulesQueryAddition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesQueryAdditionToTerraform(struct?: DataDatadogTagPipelineRulesetRulesQueryAddition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -115,9 +120,9 @@ export function dataDatadogTagPipelineRulesetRulesQueryAdditionToTerraform(struc
 }
 
 
-export function dataDatadogTagPipelineRulesetRulesQueryAdditionToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesQueryAddition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesQueryAdditionToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesQueryAddition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -125,19 +130,19 @@ export function dataDatadogTagPipelineRulesetRulesQueryAdditionToHclTerraform(st
   return attrs;
 }
 
-export class DataDatadogTagPipelineRulesetRulesQueryAdditionOutputReference extends cdktf.ComplexObject {
+export class DataDatadogTagPipelineRulesetRulesQueryAdditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogTagPipelineRulesetRulesQueryAddition | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogTagPipelineRulesetRulesQueryAddition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,12 +151,12 @@ export class DataDatadogTagPipelineRulesetRulesQueryAdditionOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogTagPipelineRulesetRulesQueryAddition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogTagPipelineRulesetRulesQueryAddition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -174,9 +179,9 @@ export class DataDatadogTagPipelineRulesetRulesQueryAdditionOutputReference exte
 export interface DataDatadogTagPipelineRulesetRulesQuery {
 }
 
-export function dataDatadogTagPipelineRulesetRulesQueryToTerraform(struct?: DataDatadogTagPipelineRulesetRulesQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesQueryToTerraform(struct?: DataDatadogTagPipelineRulesetRulesQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -184,9 +189,9 @@ export function dataDatadogTagPipelineRulesetRulesQueryToTerraform(struct?: Data
 }
 
 
-export function dataDatadogTagPipelineRulesetRulesQueryToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesQueryToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -194,19 +199,19 @@ export function dataDatadogTagPipelineRulesetRulesQueryToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataDatadogTagPipelineRulesetRulesQueryOutputReference extends cdktf.ComplexObject {
+export class DataDatadogTagPipelineRulesetRulesQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogTagPipelineRulesetRulesQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogTagPipelineRulesetRulesQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -215,12 +220,12 @@ export class DataDatadogTagPipelineRulesetRulesQueryOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogTagPipelineRulesetRulesQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogTagPipelineRulesetRulesQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -240,6 +245,11 @@ export class DataDatadogTagPipelineRulesetRulesQueryOutputReference extends cdkt
     return this.getBooleanAttribute('if_not_exists');
   }
 
+  // if_tag_exists - computed: true, optional: false, required: false
+  public get ifTagExists() {
+    return this.getStringAttribute('if_tag_exists');
+  }
+
   // query - computed: true, optional: false, required: false
   public get query() {
     return this.getStringAttribute('query');
@@ -254,9 +264,9 @@ export class DataDatadogTagPipelineRulesetRulesQueryOutputReference extends cdkt
 export interface DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs {
 }
 
-export function dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -264,9 +274,9 @@ export function dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToTerr
 }
 
 
-export function dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -274,9 +284,9 @@ export function dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToHclT
   return attrs;
 }
 
-export class DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -284,11 +294,11 @@ export class DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -297,12 +307,12 @@ export class DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,15 +333,15 @@ export class DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsOutputRef
   }
 }
 
-export class DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsList extends cdktf.ComplexList {
-  public internalValue? : DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktf.IResolvable
+export class DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsList extends cdktn.ComplexList {
+  public internalValue? : DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -346,30 +356,30 @@ export interface DataDatadogTagPipelineRulesetRulesReferenceTable {
   /**
   * field_pairs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset#field_pairs DataDatadogTagPipelineRuleset#field_pairs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset#field_pairs DataDatadogTagPipelineRuleset#field_pairs}
   */
-  readonly fieldPairs?: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktf.IResolvable;
+  readonly fieldPairs?: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktn.IResolvable;
 }
 
-export function dataDatadogTagPipelineRulesetRulesReferenceTableToTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesReferenceTableToTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field_pairs: cdktf.listMapper(dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToTerraform, true)(struct!.fieldPairs),
+    field_pairs: cdktn.listMapper(dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToTerraform, true)(struct!.fieldPairs),
   }
 }
 
 
-export function dataDatadogTagPipelineRulesetRulesReferenceTableToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesReferenceTableToHclTerraform(struct?: DataDatadogTagPipelineRulesetRulesReferenceTable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     field_pairs: {
-      value: cdktf.listMapperHcl(dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToHclTerraform, true)(struct!.fieldPairs),
+      value: cdktn.listMapperHcl(dataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsToHclTerraform, true)(struct!.fieldPairs),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairsList",
@@ -380,19 +390,19 @@ export function dataDatadogTagPipelineRulesetRulesReferenceTableToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference extends cdktf.ComplexObject {
+export class DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogTagPipelineRulesetRulesReferenceTable | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogTagPipelineRulesetRulesReferenceTable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -405,13 +415,13 @@ export class DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogTagPipelineRulesetRulesReferenceTable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogTagPipelineRulesetRulesReferenceTable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fieldPairs.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -432,6 +442,11 @@ export class DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference ext
     return this.getBooleanAttribute('if_not_exists');
   }
 
+  // if_tag_exists - computed: true, optional: false, required: false
+  public get ifTagExists() {
+    return this.getStringAttribute('if_tag_exists');
+  }
+
   // source_keys - computed: true, optional: false, required: false
   public get sourceKeys() {
     return this.getListAttribute('source_keys');
@@ -447,7 +462,7 @@ export class DataDatadogTagPipelineRulesetRulesReferenceTableOutputReference ext
   public get fieldPairs() {
     return this._fieldPairs;
   }
-  public putFieldPairs(value: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktf.IResolvable) {
+  public putFieldPairs(value: DataDatadogTagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktn.IResolvable) {
     this._fieldPairs.internalValue = value;
   }
   public resetFieldPairs() {
@@ -462,14 +477,14 @@ export interface DataDatadogTagPipelineRulesetRules {
   /**
   * reference_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset#reference_table DataDatadogTagPipelineRuleset#reference_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset#reference_table DataDatadogTagPipelineRuleset#reference_table}
   */
   readonly referenceTable?: DataDatadogTagPipelineRulesetRulesReferenceTable;
 }
 
-export function dataDatadogTagPipelineRulesetRulesToTerraform(struct?: DataDatadogTagPipelineRulesetRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesToTerraform(struct?: DataDatadogTagPipelineRulesetRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -478,9 +493,9 @@ export function dataDatadogTagPipelineRulesetRulesToTerraform(struct?: DataDatad
 }
 
 
-export function dataDatadogTagPipelineRulesetRulesToHclTerraform(struct?: DataDatadogTagPipelineRulesetRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogTagPipelineRulesetRulesToHclTerraform(struct?: DataDatadogTagPipelineRulesetRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -496,9 +511,9 @@ export function dataDatadogTagPipelineRulesetRulesToHclTerraform(struct?: DataDa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatadogTagPipelineRulesetRulesOutputReference extends cdktf.ComplexObject {
+export class DataDatadogTagPipelineRulesetRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -506,11 +521,11 @@ export class DataDatadogTagPipelineRulesetRulesOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatadogTagPipelineRulesetRules | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogTagPipelineRulesetRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -523,13 +538,13 @@ export class DataDatadogTagPipelineRulesetRulesOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogTagPipelineRulesetRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogTagPipelineRulesetRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._referenceTable.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -546,7 +561,7 @@ export class DataDatadogTagPipelineRulesetRulesOutputReference extends cdktf.Com
   }
 
   // metadata - computed: true, optional: false, required: false
-  private _metadata = new cdktf.StringMap(this, "metadata");
+  private _metadata = new cdktn.StringMap(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
@@ -585,15 +600,15 @@ export class DataDatadogTagPipelineRulesetRulesOutputReference extends cdktf.Com
   }
 }
 
-export class DataDatadogTagPipelineRulesetRulesList extends cdktf.ComplexList {
-  public internalValue? : DataDatadogTagPipelineRulesetRules[] | cdktf.IResolvable
+export class DataDatadogTagPipelineRulesetRulesList extends cdktn.ComplexList {
+  public internalValue? : DataDatadogTagPipelineRulesetRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -606,9 +621,9 @@ export class DataDatadogTagPipelineRulesetRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}
 */
-export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
+export class DataDatadogTagPipelineRuleset extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -619,14 +634,14 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogTagPipelineRuleset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogTagPipelineRuleset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogTagPipelineRuleset to import
-  * @param importFromId The id of the existing DataDatadogTagPipelineRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogTagPipelineRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogTagPipelineRuleset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_tag_pipeline_ruleset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_tag_pipeline_ruleset", importId: importFromId, provider });
       }
 
   // ===========
@@ -634,7 +649,7 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -645,7 +660,7 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_tag_pipeline_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -702,7 +717,7 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: DataDatadogTagPipelineRulesetRules[] | cdktf.IResolvable) {
+  public putRules(value: DataDatadogTagPipelineRulesetRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   public resetRules() {
@@ -719,21 +734,21 @@ export class DataDatadogTagPipelineRuleset extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      rules: cdktf.listMapper(dataDatadogTagPipelineRulesetRulesToTerraform, true)(this._rules.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      rules: cdktn.listMapper(dataDatadogTagPipelineRulesetRulesToTerraform, true)(this._rules.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rules: {
-        value: cdktf.listMapperHcl(dataDatadogTagPipelineRulesetRulesToHclTerraform, true)(this._rules.internalValue),
+        value: cdktn.listMapperHcl(dataDatadogTagPipelineRulesetRulesToHclTerraform, true)(this._rules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataDatadogTagPipelineRulesetRulesList",

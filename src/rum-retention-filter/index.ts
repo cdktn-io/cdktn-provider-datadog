@@ -1,59 +1,59 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RumRetentionFilterConfig extends cdktf.TerraformMetaArguments {
+export interface RumRetentionFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * RUM application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter#application_id RumRetentionFilter#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter#application_id RumRetentionFilter#application_id}
   */
   readonly applicationId: string;
   /**
   * Whether the retention filter is to be enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter#enabled RumRetentionFilter#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter#enabled RumRetentionFilter#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The type of RUM events to filter on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter#event_type RumRetentionFilter#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter#event_type RumRetentionFilter#event_type}
   */
   readonly eventType: string;
   /**
   * The name of a RUM retention filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter#name RumRetentionFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter#name RumRetentionFilter#name}
   */
   readonly name: string;
   /**
   * The Query string for a RUM retention filter. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter#query RumRetentionFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter#query RumRetentionFilter#query}
   */
   readonly query?: string;
   /**
-  * The sample rate for a RUM retention filter, between 0 and 100.
+  * The sample rate for a RUM retention filter, between 0.1 and 100. Supports one decimal place (for example, 50.5).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter#sample_rate RumRetentionFilter#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter#sample_rate RumRetentionFilter#sample_rate}
   */
   readonly sampleRate: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter datadog_rum_retention_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter datadog_rum_retention_filter}
 */
-export class RumRetentionFilter extends cdktf.TerraformResource {
+export class RumRetentionFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -64,14 +64,14 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RumRetentionFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RumRetentionFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumRetentionFilter to import
-  * @param importFromId The id of the existing RumRetentionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumRetentionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumRetentionFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_rum_retention_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_rum_retention_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -79,7 +79,7 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filter datadog_rum_retention_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filter datadog_rum_retention_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_rum_retention_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -127,11 +127,11 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -208,49 +208,49 @@ export class RumRetentionFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      event_type: cdktf.stringToTerraform(this._eventType),
-      name: cdktf.stringToTerraform(this._name),
-      query: cdktf.stringToTerraform(this._query),
-      sample_rate: cdktf.numberToTerraform(this._sampleRate),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      event_type: cdktn.stringToTerraform(this._eventType),
+      name: cdktn.stringToTerraform(this._name),
+      query: cdktn.stringToTerraform(this._query),
+      sample_rate: cdktn.numberToTerraform(this._sampleRate),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       event_type: {
-        value: cdktf.stringToHclTerraform(this._eventType),
+        value: cdktn.stringToHclTerraform(this._eventType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sample_rate: {
-        value: cdktf.numberToHclTerraform(this._sampleRate),
+        value: cdktn.numberToHclTerraform(this._sampleRate),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

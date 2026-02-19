@@ -1,59 +1,59 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GcpUcConfigConfig extends cdktf.TerraformMetaArguments {
+export interface GcpUcConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Google Cloud account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config#billing_account_id GcpUcConfig#billing_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config#billing_account_id GcpUcConfig#billing_account_id}
   */
   readonly billingAccountId: string;
   /**
   * The Google Cloud bucket name used to store the Usage Cost export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config#bucket_name GcpUcConfig#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config#bucket_name GcpUcConfig#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The export dataset name used for the Google Cloud Usage Cost report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config#export_dataset_name GcpUcConfig#export_dataset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config#export_dataset_name GcpUcConfig#export_dataset_name}
   */
   readonly exportDatasetName: string;
   /**
   * The export prefix used for the Google Cloud Usage Cost report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config#export_prefix GcpUcConfig#export_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config#export_prefix GcpUcConfig#export_prefix}
   */
   readonly exportPrefix?: string;
   /**
   * The name of the Google Cloud Usage Cost report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config#export_project_name GcpUcConfig#export_project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config#export_project_name GcpUcConfig#export_project_name}
   */
   readonly exportProjectName: string;
   /**
   * The unique Google Cloud service account email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config#service_account GcpUcConfig#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config#service_account GcpUcConfig#service_account}
   */
   readonly serviceAccount: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config datadog_gcp_uc_config}
 */
-export class GcpUcConfig extends cdktf.TerraformResource {
+export class GcpUcConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -64,14 +64,14 @@ export class GcpUcConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GcpUcConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GcpUcConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpUcConfig to import
-  * @param importFromId The id of the existing GcpUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpUcConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_gcp_uc_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_gcp_uc_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -79,7 +79,7 @@ export class GcpUcConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/gcp_uc_config datadog_gcp_uc_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class GcpUcConfig extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_gcp_uc_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -240,49 +240,49 @@ export class GcpUcConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_account_id: cdktf.stringToTerraform(this._billingAccountId),
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      export_dataset_name: cdktf.stringToTerraform(this._exportDatasetName),
-      export_prefix: cdktf.stringToTerraform(this._exportPrefix),
-      export_project_name: cdktf.stringToTerraform(this._exportProjectName),
-      service_account: cdktf.stringToTerraform(this._serviceAccount),
+      billing_account_id: cdktn.stringToTerraform(this._billingAccountId),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      export_dataset_name: cdktn.stringToTerraform(this._exportDatasetName),
+      export_prefix: cdktn.stringToTerraform(this._exportPrefix),
+      export_project_name: cdktn.stringToTerraform(this._exportProjectName),
+      service_account: cdktn.stringToTerraform(this._serviceAccount),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_account_id: {
-        value: cdktf.stringToHclTerraform(this._billingAccountId),
+        value: cdktn.stringToHclTerraform(this._billingAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_dataset_name: {
-        value: cdktf.stringToHclTerraform(this._exportDatasetName),
+        value: cdktn.stringToHclTerraform(this._exportDatasetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_prefix: {
-        value: cdktf.stringToHclTerraform(this._exportPrefix),
+        value: cdktn.stringToHclTerraform(this._exportPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export_project_name: {
-        value: cdktf.stringToHclTerraform(this._exportProjectName),
+        value: cdktn.stringToHclTerraform(this._exportProjectName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account: {
-        value: cdktf.stringToHclTerraform(this._serviceAccount),
+        value: cdktn.stringToHclTerraform(this._serviceAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

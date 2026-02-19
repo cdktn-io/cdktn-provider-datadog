@@ -1,41 +1,41 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogTeamHierarchyLinksConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogTeamHierarchyLinksConfig extends cdktn.TerraformMetaArguments {
   /**
   * Filter by parent team ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links#filter_parent_team DataDatadogTeamHierarchyLinks#filter_parent_team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links#filter_parent_team DataDatadogTeamHierarchyLinks#filter_parent_team}
   */
   readonly filterParentTeam?: string;
   /**
   * Filter by sub team ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links#filter_sub_team DataDatadogTeamHierarchyLinks#filter_sub_team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links#filter_sub_team DataDatadogTeamHierarchyLinks#filter_sub_team}
   */
   readonly filterSubTeam?: string;
   /**
   * The team hierarchy link’s identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links#link_id DataDatadogTeamHierarchyLinks#link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links#link_id DataDatadogTeamHierarchyLinks#link_id}
   */
   readonly linkId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links}
 */
-export class DataDatadogTeamHierarchyLinks extends cdktf.TerraformDataSource {
+export class DataDatadogTeamHierarchyLinks extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class DataDatadogTeamHierarchyLinks extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogTeamHierarchyLinks resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogTeamHierarchyLinks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogTeamHierarchyLinks to import
-  * @param importFromId The id of the existing DataDatadogTeamHierarchyLinks that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogTeamHierarchyLinks that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogTeamHierarchyLinks to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_team_hierarchy_links", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_team_hierarchy_links", importId: importFromId, provider });
       }
 
   // ===========
@@ -61,7 +61,7 @@ export class DataDatadogTeamHierarchyLinks extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class DataDatadogTeamHierarchyLinks extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_team_hierarchy_links',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -161,28 +161,28 @@ export class DataDatadogTeamHierarchyLinks extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter_parent_team: cdktf.stringToTerraform(this._filterParentTeam),
-      filter_sub_team: cdktf.stringToTerraform(this._filterSubTeam),
-      link_id: cdktf.stringToTerraform(this._linkId),
+      filter_parent_team: cdktn.stringToTerraform(this._filterParentTeam),
+      filter_sub_team: cdktn.stringToTerraform(this._filterSubTeam),
+      link_id: cdktn.stringToTerraform(this._linkId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filter_parent_team: {
-        value: cdktf.stringToHclTerraform(this._filterParentTeam),
+        value: cdktn.stringToHclTerraform(this._filterParentTeam),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_sub_team: {
-        value: cdktf.stringToHclTerraform(this._filterSubTeam),
+        value: cdktn.stringToHclTerraform(this._filterSubTeam),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       link_id: {
-        value: cdktf.stringToHclTerraform(this._linkId),
+        value: cdktn.stringToHclTerraform(this._linkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

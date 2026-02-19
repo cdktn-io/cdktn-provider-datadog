@@ -1,81 +1,81 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogsCustomPipelineConfig extends cdktf.TerraformMetaArguments {
+export interface LogsCustomPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
   */
   readonly tags?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
-  readonly filter: LogsCustomPipelineFilter[] | cdktf.IResolvable;
+  readonly filter: LogsCustomPipelineFilter[] | cdktn.IResolvable;
   /**
   * processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
   */
-  readonly processor?: LogsCustomPipelineProcessor[] | cdktf.IResolvable;
+  readonly processor?: LogsCustomPipelineProcessor[] | cdktn.IResolvable;
 }
 export interface LogsCustomPipelineFilter {
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
 
-export function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function logsCustomPipelineFilterToHclTerraform(struct?: LogsCustomPipelineFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineFilterToHclTerraform(struct?: LogsCustomPipelineFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,9 +86,9 @@ export function logsCustomPipelineFilterToHclTerraform(struct?: LogsCustomPipeli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineFilterOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -96,11 +96,11 @@ export class LogsCustomPipelineFilterOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -113,13 +113,13 @@ export class LogsCustomPipelineFilterOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -144,15 +144,15 @@ export class LogsCustomPipelineFilterOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class LogsCustomPipelineFilterList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineFilter[] | cdktf.IResolvable
+export class LogsCustomPipelineFilterList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -167,82 +167,82 @@ export interface LogsCustomPipelineProcessorArithmeticProcessor {
   /**
   * Arithmetic operation between one or more log attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
   */
   readonly expression: string;
   /**
   * Boolean value to enable your pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
+  readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * Your pipeline name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the attribute that contains the result of the arithmetic operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorArithmeticProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expression: cdktf.stringToTerraform(struct!.expression),
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    is_replace_missing: cdktf.booleanToTerraform(struct!.isReplaceMissing),
-    name: cdktf.stringToTerraform(struct!.name),
-    target: cdktf.stringToTerraform(struct!.target),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    is_replace_missing: cdktn.booleanToTerraform(struct!.isReplaceMissing),
+    name: cdktn.stringToTerraform(struct!.name),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorArithmeticProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorArithmeticProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_replace_missing: {
-      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      value: cdktn.booleanToHclTerraform(struct!.isReplaceMissing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -253,14 +253,14 @@ export function logsCustomPipelineProcessorArithmeticProcessorToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -323,11 +323,11 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -339,11 +339,11 @@ export class LogsCustomPipelineProcessorArithmeticProcessorOutputReference exten
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
+  private _isReplaceMissing?: boolean | cdktn.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing');
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
+  public set isReplaceMissing(value: boolean | cdktn.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -387,56 +387,56 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationAppend {
   /**
   * Remove or preserve the remapped source element. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean | cdktf.IResolvable;
+  readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Attribute path containing the value to append.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute path of the array to append to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorArrayProcessorOperationAppendToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationAppend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorArrayProcessorOperationAppendToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationAppend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preserve_source: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      value: cdktn.booleanToHclTerraform(struct!.preserveSource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -447,14 +447,14 @@ export function logsCustomPipelineProcessorArrayProcessorOperationAppendToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorArrayProcessorOperationAppendOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorArrayProcessorOperationAppendOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -492,11 +492,11 @@ export class LogsCustomPipelineProcessorArrayProcessorOperationAppendOutputRefer
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable; 
+  private _preserveSource?: boolean | cdktn.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source');
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable) {
+  public set preserveSource(value: boolean | cdktn.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -537,43 +537,43 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationLength {
   /**
   * Attribute path of the array to compute the length of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the computed length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorArrayProcessorOperationLengthToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationLength): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorArrayProcessorOperationLengthToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationLength): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -584,14 +584,14 @@ export function logsCustomPipelineProcessorArrayProcessorOperationLengthToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorArrayProcessorOperationLengthOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorArrayProcessorOperationLengthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -652,69 +652,69 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationSelect {
   /**
   * Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: string;
   /**
   * Attribute path of the array to search into.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the extracted value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * Attribute key from the matching object that should be extracted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
   */
   readonly valueToExtract: string;
 }
 
 export function logsCustomPipelineProcessorArrayProcessorOperationSelectToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationSelect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.stringToTerraform(struct!.filter),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
-    value_to_extract: cdktf.stringToTerraform(struct!.valueToExtract),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
+    value_to_extract: cdktn.stringToTerraform(struct!.valueToExtract),
   }
 }
 
 
 export function logsCustomPipelineProcessorArrayProcessorOperationSelectToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationSelect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_to_extract: {
-      value: cdktf.stringToHclTerraform(struct!.valueToExtract),
+      value: cdktn.stringToHclTerraform(struct!.valueToExtract),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -725,14 +725,14 @@ export function logsCustomPipelineProcessorArrayProcessorOperationSelectToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorArrayProcessorOperationSelectOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorArrayProcessorOperationSelectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -831,26 +831,26 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperation {
   /**
   * append block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
   */
   readonly append?: LogsCustomPipelineProcessorArrayProcessorOperationAppend;
   /**
   * length block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
   */
   readonly length?: LogsCustomPipelineProcessorArrayProcessorOperationLength;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
   */
   readonly select?: LogsCustomPipelineProcessorArrayProcessorOperationSelect;
 }
 
 export function logsCustomPipelineProcessorArrayProcessorOperationToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorArrayProcessorOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -862,8 +862,8 @@ export function logsCustomPipelineProcessorArrayProcessorOperationToTerraform(st
 
 
 export function logsCustomPipelineProcessorArrayProcessorOperationToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorArrayProcessorOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -891,14 +891,14 @@ export function logsCustomPipelineProcessorArrayProcessorOperationToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorArrayProcessorOperationOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorArrayProcessorOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -987,50 +987,50 @@ export interface LogsCustomPipelineProcessorArrayProcessor {
   /**
   * Boolean value to enable your processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Your processor name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * operation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
   */
   readonly operation: LogsCustomPipelineProcessorArrayProcessorOperation;
 }
 
 export function logsCustomPipelineProcessorArrayProcessorToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorArrayProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
     operation: logsCustomPipelineProcessorArrayProcessorOperationToTerraform(struct!.operation),
   }
 }
 
 
 export function logsCustomPipelineProcessorArrayProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorArrayProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1047,14 +1047,14 @@ export function logsCustomPipelineProcessorArrayProcessorToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorArrayProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorArrayProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1092,11 +1092,11 @@ export class LogsCustomPipelineProcessorArrayProcessorOutputReference extends cd
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1140,134 +1140,134 @@ export interface LogsCustomPipelineProcessorAttributeRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Override the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
-  readonly overrideOnConflict?: boolean | cdktf.IResolvable;
+  readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean | cdktf.IResolvable;
+  readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Defines where the sources are from (log `attribute` or `tag`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
   */
   readonly sourceType: string;
   /**
   * List of source attributes or tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Final attribute or tag name to remap the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
   /**
   * Defines if the target is a log `attribute` or `tag`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
   */
   readonly targetType: string;
 }
 
 export function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorAttributeRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    override_on_conflict: cdktf.booleanToTerraform(struct!.overrideOnConflict),
-    preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
-    source_type: cdktf.stringToTerraform(struct!.sourceType),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
-    target_format: cdktf.stringToTerraform(struct!.targetFormat),
-    target_type: cdktf.stringToTerraform(struct!.targetType),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    override_on_conflict: cdktn.booleanToTerraform(struct!.overrideOnConflict),
+    preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
+    source_type: cdktn.stringToTerraform(struct!.sourceType),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
+    target_format: cdktn.stringToTerraform(struct!.targetFormat),
+    target_type: cdktn.stringToTerraform(struct!.targetType),
   }
 }
 
 
 export function logsCustomPipelineProcessorAttributeRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorAttributeRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_on_conflict: {
-      value: cdktf.booleanToHclTerraform(struct!.overrideOnConflict),
+      value: cdktn.booleanToHclTerraform(struct!.overrideOnConflict),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preserve_source: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      value: cdktn.booleanToHclTerraform(struct!.preserveSource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_type: {
-      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      value: cdktn.stringToHclTerraform(struct!.sourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_format: {
-      value: cdktf.stringToHclTerraform(struct!.targetFormat),
+      value: cdktn.stringToHclTerraform(struct!.targetFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_type: {
-      value: cdktf.stringToHclTerraform(struct!.targetType),
+      value: cdktn.stringToHclTerraform(struct!.targetType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1278,14 +1278,14 @@ export function logsCustomPipelineProcessorAttributeRemapperToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1359,11 +1359,11 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1391,11 +1391,11 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
 
   // override_on_conflict - computed: false, optional: true, required: false
-  private _overrideOnConflict?: boolean | cdktf.IResolvable; 
+  private _overrideOnConflict?: boolean | cdktn.IResolvable; 
   public get overrideOnConflict() {
     return this.getBooleanAttribute('override_on_conflict');
   }
-  public set overrideOnConflict(value: boolean | cdktf.IResolvable) {
+  public set overrideOnConflict(value: boolean | cdktn.IResolvable) {
     this._overrideOnConflict = value;
   }
   public resetOverrideOnConflict() {
@@ -1407,11 +1407,11 @@ export class LogsCustomPipelineProcessorAttributeRemapperOutputReference extends
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable; 
+  private _preserveSource?: boolean | cdktn.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source');
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable) {
+  public set preserveSource(value: boolean | cdktn.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -1494,30 +1494,30 @@ export interface LogsCustomPipelineProcessorCategoryProcessorCategoryFilter {
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
 
 export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorCategoryProcessorCategoryFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorCategoryProcessorCategoryFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1528,14 +1528,14 @@ export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1575,37 +1575,37 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputRef
 }
 export interface LogsCustomPipelineProcessorCategoryProcessorCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorCategoryProcessorCategoryFilter;
 }
 
-export function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     filter: logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct!.filter),
   }
 }
 
 
-export function logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1622,9 +1622,9 @@ export function logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1632,11 +1632,11 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1653,14 +1653,14 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1699,15 +1699,15 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryOutputReference
   }
 }
 
-export class LogsCustomPipelineProcessorCategoryProcessorCategoryList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorCategoryProcessorCategoryList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1722,69 +1722,69 @@ export interface LogsCustomPipelineProcessorCategoryProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the category
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the target attribute whose value is defined by the matching category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
   */
-  readonly category: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable;
+  readonly category: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable;
 }
 
 export function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorCategoryProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    target: cdktf.stringToTerraform(struct!.target),
-    category: cdktf.listMapper(logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    target: cdktn.stringToTerraform(struct!.target),
+    category: cdktn.listMapper(logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
   }
 }
 
 
 export function logsCustomPipelineProcessorCategoryProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorCategoryProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     category: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerraform, true)(struct!.category),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerraform, true)(struct!.category),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorCategoryProcessorCategoryList",
@@ -1795,14 +1795,14 @@ export function logsCustomPipelineProcessorCategoryProcessorToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1846,11 +1846,11 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -1895,7 +1895,7 @@ export class LogsCustomPipelineProcessorCategoryProcessorOutputReference extends
   public get category() {
     return this._category;
   }
-  public putCategory(value: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable) {
+  public putCategory(value: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable) {
     this._category.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1907,56 +1907,56 @@ export interface LogsCustomPipelineProcessorDateRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorDateRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorDateRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorDateRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1967,14 +1967,14 @@ export function logsCustomPipelineProcessorDateRemapperToHclTerraform(struct?: L
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2012,11 +2012,11 @@ export class LogsCustomPipelineProcessorDateRemapperOutputReference extends cdkt
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2060,95 +2060,95 @@ export interface LogsCustomPipelineProcessorDecoderProcessor {
   /**
   * Encoding type: base64 or base16
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
   */
   readonly binaryToTextEncoding: string;
   /**
   * Input representation: utf-8 or integer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
   */
   readonly inputRepresentation: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Encoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Decoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorDecoderProcessorToTerraform(struct?: LogsCustomPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorDecoderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    binary_to_text_encoding: cdktf.stringToTerraform(struct!.binaryToTextEncoding),
-    input_representation: cdktf.stringToTerraform(struct!.inputRepresentation),
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    binary_to_text_encoding: cdktn.stringToTerraform(struct!.binaryToTextEncoding),
+    input_representation: cdktn.stringToTerraform(struct!.inputRepresentation),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorDecoderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorDecoderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     binary_to_text_encoding: {
-      value: cdktf.stringToHclTerraform(struct!.binaryToTextEncoding),
+      value: cdktn.stringToHclTerraform(struct!.binaryToTextEncoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_representation: {
-      value: cdktf.stringToHclTerraform(struct!.inputRepresentation),
+      value: cdktn.stringToHclTerraform(struct!.inputRepresentation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2159,14 +2159,14 @@ export function logsCustomPipelineProcessorDecoderProcessorToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorDecoderProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorDecoderProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2248,11 +2248,11 @@ export class LogsCustomPipelineProcessorDecoderProcessorOutputReference extends 
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2309,69 +2309,69 @@ export interface LogsCustomPipelineProcessorGeoIpParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorGeoIpParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorGeoIpParserToHclTerraform(struct?: LogsCustomPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorGeoIpParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2382,14 +2382,14 @@ export function logsCustomPipelineProcessorGeoIpParserToHclTerraform(struct?: Lo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2433,11 +2433,11 @@ export class LogsCustomPipelineProcessorGeoIpParserOutputReference extends cdktf
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2494,43 +2494,43 @@ export interface LogsCustomPipelineProcessorGrokParserGrok {
   /**
   * Match rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
   */
   readonly matchRules: string;
   /**
   * Support rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
   */
   readonly supportRules: string;
 }
 
 export function logsCustomPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorGrokParserGrok): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_rules: cdktf.stringToTerraform(struct!.matchRules),
-    support_rules: cdktf.stringToTerraform(struct!.supportRules),
+    match_rules: cdktn.stringToTerraform(struct!.matchRules),
+    support_rules: cdktn.stringToTerraform(struct!.supportRules),
   }
 }
 
 
 export function logsCustomPipelineProcessorGrokParserGrokToHclTerraform(struct?: LogsCustomPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorGrokParserGrok): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_rules: {
-      value: cdktf.stringToHclTerraform(struct!.matchRules),
+      value: cdktn.stringToHclTerraform(struct!.matchRules),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     support_rules: {
-      value: cdktf.stringToHclTerraform(struct!.supportRules),
+      value: cdktn.stringToHclTerraform(struct!.supportRules),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2541,14 +2541,14 @@ export function logsCustomPipelineProcessorGrokParserGrokToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorGrokParserGrokOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2609,76 +2609,76 @@ export interface LogsCustomPipelineProcessorGrokParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
   */
   readonly samples?: string[];
   /**
   * Name of the log attribute to parse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * grok block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
   */
   readonly grok: LogsCustomPipelineProcessorGrokParserGrok;
 }
 
 export function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorGrokParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    samples: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.samples),
-    source: cdktf.stringToTerraform(struct!.source),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    samples: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.samples),
+    source: cdktn.stringToTerraform(struct!.source),
     grok: logsCustomPipelineProcessorGrokParserGrokToTerraform(struct!.grok),
   }
 }
 
 
 export function logsCustomPipelineProcessorGrokParserToHclTerraform(struct?: LogsCustomPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorGrokParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     samples: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.samples),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.samples),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2695,14 +2695,14 @@ export function logsCustomPipelineProcessorGrokParserToHclTerraform(struct?: Log
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2752,11 +2752,11 @@ export class LogsCustomPipelineProcessorGrokParserOutputReference extends cdktf.
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -2829,95 +2829,95 @@ export interface LogsCustomPipelineProcessorLookupProcessor {
   /**
   * Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
   */
   readonly defaultLookup?: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * List of entries of the lookup table using `key,value` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
   */
   readonly lookupTable: string[];
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_lookup: cdktf.stringToTerraform(struct!.defaultLookup),
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    lookup_table: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lookupTable),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    default_lookup: cdktn.stringToTerraform(struct!.defaultLookup),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    lookup_table: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.lookupTable),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_lookup: {
-      value: cdktf.stringToHclTerraform(struct!.defaultLookup),
+      value: cdktn.stringToHclTerraform(struct!.defaultLookup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lookup_table: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lookupTable),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.lookupTable),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2928,14 +2928,14 @@ export function logsCustomPipelineProcessorLookupProcessorToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3007,11 +3007,11 @@ export class LogsCustomPipelineProcessorLookupProcessorOutputReference extends c
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3081,56 +3081,56 @@ export interface LogsCustomPipelineProcessorMessageRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorMessageRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorMessageRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorMessageRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -3141,14 +3141,14 @@ export function logsCustomPipelineProcessorMessageRemapperToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3186,11 +3186,11 @@ export class LogsCustomPipelineProcessorMessageRemapperOutputReference extends c
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3234,30 +3234,30 @@ export interface LogsCustomPipelineProcessorPipelineFilter {
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
 
-export function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function logsCustomPipelineProcessorPipelineFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3268,9 +3268,9 @@ export function logsCustomPipelineProcessorPipelineFilterToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineFilterOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3278,11 +3278,11 @@ export class LogsCustomPipelineProcessorPipelineFilterOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorPipelineFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorPipelineFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3295,13 +3295,13 @@ export class LogsCustomPipelineProcessorPipelineFilterOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorPipelineFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3326,15 +3326,15 @@ export class LogsCustomPipelineProcessorPipelineFilterOutputReference extends cd
   }
 }
 
-export class LogsCustomPipelineProcessorPipelineFilterList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorPipelineFilter[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorPipelineFilterList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3349,82 +3349,82 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor
   /**
   * Arithmetic operation between one or more log attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
   */
   readonly expression: string;
   /**
   * Boolean value to enable your pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
+  readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * Your pipeline name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the attribute that contains the result of the arithmetic operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expression: cdktf.stringToTerraform(struct!.expression),
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    is_replace_missing: cdktf.booleanToTerraform(struct!.isReplaceMissing),
-    name: cdktf.stringToTerraform(struct!.name),
-    target: cdktf.stringToTerraform(struct!.target),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    is_replace_missing: cdktn.booleanToTerraform(struct!.isReplaceMissing),
+    name: cdktn.stringToTerraform(struct!.name),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_replace_missing: {
-      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      value: cdktn.booleanToHclTerraform(struct!.isReplaceMissing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3435,14 +3435,14 @@ export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3505,11 +3505,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -3521,11 +3521,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutp
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
+  private _isReplaceMissing?: boolean | cdktn.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing');
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
+  public set isReplaceMissing(value: boolean | cdktn.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -3569,56 +3569,56 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * Remove or preserve the remapped source element. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean | cdktf.IResolvable;
+  readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Attribute path containing the value to append.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute path of the array to append to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     preserve_source: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      value: cdktn.booleanToHclTerraform(struct!.preserveSource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3629,14 +3629,14 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3674,11 +3674,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable; 
+  private _preserveSource?: boolean | cdktn.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source');
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable) {
+  public set preserveSource(value: boolean | cdktn.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -3719,43 +3719,43 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * Attribute path of the array to compute the length of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the computed length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3766,14 +3766,14 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3834,69 +3834,69 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: string;
   /**
   * Attribute path of the array to search into.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the extracted value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * Attribute key from the matching object that should be extracted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
   */
   readonly valueToExtract: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.stringToTerraform(struct!.filter),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
-    value_to_extract: cdktf.stringToTerraform(struct!.valueToExtract),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
+    value_to_extract: cdktn.stringToTerraform(struct!.valueToExtract),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value_to_extract: {
-      value: cdktf.stringToHclTerraform(struct!.valueToExtract),
+      value: cdktn.stringToHclTerraform(struct!.valueToExtract),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3907,14 +3907,14 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4013,26 +4013,26 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * append block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
   */
   readonly append?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend;
   /**
   * length block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
   */
   readonly length?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
   */
   readonly select?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4044,8 +4044,8 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
 
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4073,14 +4073,14 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4169,50 +4169,50 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessor {
   /**
   * Boolean value to enable your processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Your processor name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * operation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
   */
   readonly operation: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
     operation: logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationToTerraform(struct!.operation),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4229,14 +4229,14 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4274,11 +4274,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputRef
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -4322,134 +4322,134 @@ export interface LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Override the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
-  readonly overrideOnConflict?: boolean | cdktf.IResolvable;
+  readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean | cdktf.IResolvable;
+  readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Defines where the sources are from (log `attribute` or `tag`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
   */
   readonly sourceType: string;
   /**
   * List of source attributes or tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Final attribute or tag name to remap the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
   /**
   * Defines if the target is a log `attribute` or `tag`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
   */
   readonly targetType: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    override_on_conflict: cdktf.booleanToTerraform(struct!.overrideOnConflict),
-    preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
-    source_type: cdktf.stringToTerraform(struct!.sourceType),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
-    target_format: cdktf.stringToTerraform(struct!.targetFormat),
-    target_type: cdktf.stringToTerraform(struct!.targetType),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    override_on_conflict: cdktn.booleanToTerraform(struct!.overrideOnConflict),
+    preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
+    source_type: cdktn.stringToTerraform(struct!.sourceType),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
+    target_format: cdktn.stringToTerraform(struct!.targetFormat),
+    target_type: cdktn.stringToTerraform(struct!.targetType),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_on_conflict: {
-      value: cdktf.booleanToHclTerraform(struct!.overrideOnConflict),
+      value: cdktn.booleanToHclTerraform(struct!.overrideOnConflict),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preserve_source: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      value: cdktn.booleanToHclTerraform(struct!.preserveSource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_type: {
-      value: cdktf.stringToHclTerraform(struct!.sourceType),
+      value: cdktn.stringToHclTerraform(struct!.sourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_format: {
-      value: cdktf.stringToHclTerraform(struct!.targetFormat),
+      value: cdktn.stringToHclTerraform(struct!.targetFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_type: {
-      value: cdktf.stringToHclTerraform(struct!.targetType),
+      value: cdktn.stringToHclTerraform(struct!.targetType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4460,14 +4460,14 @@ export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4541,11 +4541,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -4573,11 +4573,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
 
   // override_on_conflict - computed: false, optional: true, required: false
-  private _overrideOnConflict?: boolean | cdktf.IResolvable; 
+  private _overrideOnConflict?: boolean | cdktn.IResolvable; 
   public get overrideOnConflict() {
     return this.getBooleanAttribute('override_on_conflict');
   }
-  public set overrideOnConflict(value: boolean | cdktf.IResolvable) {
+  public set overrideOnConflict(value: boolean | cdktn.IResolvable) {
     this._overrideOnConflict = value;
   }
   public resetOverrideOnConflict() {
@@ -4589,11 +4589,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutput
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable; 
+  private _preserveSource?: boolean | cdktn.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source');
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable) {
+  public set preserveSource(value: boolean | cdktn.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -4676,30 +4676,30 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCa
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4710,14 +4710,14 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4757,37 +4757,37 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter;
 }
 
-export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     filter: logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct!.filter),
   }
 }
 
 
-export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4804,9 +4804,9 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4814,11 +4814,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4835,14 +4835,14 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4881,15 +4881,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
   }
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4904,69 +4904,69 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the category
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the target attribute whose value is defined by the matching category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
   */
-  readonly category: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable;
+  readonly category: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    target: cdktf.stringToTerraform(struct!.target),
-    category: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    target: cdktn.stringToTerraform(struct!.target),
+    category: cdktn.listMapper(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform, true)(struct!.category),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     category: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToHclTerraform, true)(struct!.category),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToHclTerraform, true)(struct!.category),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryList",
@@ -4977,14 +4977,14 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5028,11 +5028,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -5077,7 +5077,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutput
   public get category() {
     return this._category;
   }
-  public putCategory(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktf.IResolvable) {
+  public putCategory(value: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable) {
     this._category.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -5089,56 +5089,56 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorDateRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorDateRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -5149,14 +5149,14 @@ export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5194,11 +5194,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputRefer
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -5242,95 +5242,95 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor {
   /**
   * Encoding type: base64 or base16
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
   */
   readonly binaryToTextEncoding: string;
   /**
   * Input representation: utf-8 or integer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
   */
   readonly inputRepresentation: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Encoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Decoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorDecoderProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    binary_to_text_encoding: cdktf.stringToTerraform(struct!.binaryToTextEncoding),
-    input_representation: cdktf.stringToTerraform(struct!.inputRepresentation),
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    binary_to_text_encoding: cdktn.stringToTerraform(struct!.binaryToTextEncoding),
+    input_representation: cdktn.stringToTerraform(struct!.inputRepresentation),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorDecoderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     binary_to_text_encoding: {
-      value: cdktf.stringToHclTerraform(struct!.binaryToTextEncoding),
+      value: cdktn.stringToHclTerraform(struct!.binaryToTextEncoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input_representation: {
-      value: cdktf.stringToHclTerraform(struct!.inputRepresentation),
+      value: cdktn.stringToHclTerraform(struct!.inputRepresentation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5341,14 +5341,14 @@ export function logsCustomPipelineProcessorPipelineProcessorDecoderProcessorToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5430,11 +5430,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputR
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -5491,69 +5491,69 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGeoIpParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGeoIpParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGeoIpParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5564,14 +5564,14 @@ export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5615,11 +5615,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputRefere
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -5676,43 +5676,43 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok {
   /**
   * Match rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
   */
   readonly matchRules: string;
   /**
   * Support rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
   */
   readonly supportRules: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_rules: cdktf.stringToTerraform(struct!.matchRules),
-    support_rules: cdktf.stringToTerraform(struct!.supportRules),
+    match_rules: cdktn.stringToTerraform(struct!.matchRules),
+    support_rules: cdktn.stringToTerraform(struct!.supportRules),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_rules: {
-      value: cdktf.stringToHclTerraform(struct!.matchRules),
+      value: cdktn.stringToHclTerraform(struct!.matchRules),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     support_rules: {
-      value: cdktf.stringToHclTerraform(struct!.supportRules),
+      value: cdktn.stringToHclTerraform(struct!.supportRules),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5723,14 +5723,14 @@ export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5791,76 +5791,76 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
   */
   readonly samples?: string[];
   /**
   * Name of the log attribute to parse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * grok block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
   */
   readonly grok: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    samples: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.samples),
-    source: cdktf.stringToTerraform(struct!.source),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    samples: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.samples),
+    source: cdktn.stringToTerraform(struct!.source),
     grok: logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(struct!.grok),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     samples: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.samples),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.samples),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5877,14 +5877,14 @@ export function logsCustomPipelineProcessorPipelineProcessorGrokParserToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5934,11 +5934,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReferen
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -6011,95 +6011,95 @@ export interface LogsCustomPipelineProcessorPipelineProcessorLookupProcessor {
   /**
   * Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
   */
   readonly defaultLookup?: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * List of entries of the lookup table using `key,value` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
   */
   readonly lookupTable: string[];
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_lookup: cdktf.stringToTerraform(struct!.defaultLookup),
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    lookup_table: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lookupTable),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    default_lookup: cdktn.stringToTerraform(struct!.defaultLookup),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    lookup_table: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.lookupTable),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_lookup: {
-      value: cdktf.stringToHclTerraform(struct!.defaultLookup),
+      value: cdktn.stringToHclTerraform(struct!.defaultLookup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lookup_table: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lookupTable),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.lookupTable),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6110,14 +6110,14 @@ export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6189,11 +6189,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputRe
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -6263,56 +6263,56 @@ export interface LogsCustomPipelineProcessorPipelineProcessorMessageRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorMessageRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorMessageRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -6323,14 +6323,14 @@ export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6368,11 +6368,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputRe
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -6416,82 +6416,82 @@ export interface LogsCustomPipelineProcessorPipelineProcessorReferenceTableLooku
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the Reference Table for the source attribute and their associated target attribute values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
   */
   readonly lookupEnrichmentTable: string;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    lookup_enrichment_table: cdktf.stringToTerraform(struct!.lookupEnrichmentTable),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    lookup_enrichment_table: cdktn.stringToTerraform(struct!.lookupEnrichmentTable),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lookup_enrichment_table: {
-      value: cdktf.stringToHclTerraform(struct!.lookupEnrichmentTable),
+      value: cdktn.stringToHclTerraform(struct!.lookupEnrichmentTable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6502,14 +6502,14 @@ export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6559,11 +6559,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupPro
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -6633,30 +6633,30 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6667,14 +6667,14 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6716,7 +6716,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * ID to inject into the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6725,44 +6725,44 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Value to assign to target schema field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter;
 }
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.numberToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.numberToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
     filter: logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToTerraform(struct!.filter),
   }
 }
 
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.numberToHclTerraform(struct!.id),
+      value: cdktn.numberToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6779,9 +6779,9 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6789,11 +6789,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6814,7 +6814,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6822,7 +6822,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
       this._name = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6875,15 +6875,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   }
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6898,43 +6898,43 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Fallback sources used to populate value of field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources?: { [key: string]: string };
   /**
   * Values that define when the fallback is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
   */
   readonly values?: { [key: string]: string };
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sources: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sources),
-    values: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.values),
+    sources: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sources),
+    values: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.values),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sources: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sources),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sources),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     values: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.values),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.values),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -6945,14 +6945,14 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7019,7 +7019,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * ID of the field to map log attributes to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7028,37 +7028,37 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Name of the field to map log attributes to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7069,14 +7069,14 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7143,57 +7143,57 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Name of the logs schema category mapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
   */
-  readonly categories: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktf.IResolvable;
+  readonly categories: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable;
   /**
   * fallback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
   */
   readonly fallback?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
   */
   readonly targets: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets;
 }
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    categories: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform, true)(struct!.categories),
+    name: cdktn.stringToTerraform(struct!.name),
+    categories: cdktn.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform, true)(struct!.categories),
     fallback: logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToTerraform(struct!.fallback),
     targets: logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToTerraform(struct!.targets),
   }
 }
 
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     categories: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform, true)(struct!.categories),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform, true)(struct!.categories),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesList",
@@ -7216,9 +7216,9 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7226,11 +7226,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7255,7 +7255,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7264,7 +7264,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
       this._fallback.internalValue = undefined;
       this._targets.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7296,7 +7296,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   public get categories() {
     return this._categories;
   }
-  public putCategories(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktf.IResolvable) {
+  public putCategories(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable) {
     this._categories.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -7334,15 +7334,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   }
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7357,95 +7357,95 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Name of the logs schema remapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * Override or not the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
-  readonly overrideOnConflict?: boolean | cdktf.IResolvable;
+  readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean | cdktf.IResolvable;
+  readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Array of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Target field to map log source field to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
 }
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    override_on_conflict: cdktf.booleanToTerraform(struct!.overrideOnConflict),
-    preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
-    target_format: cdktf.stringToTerraform(struct!.targetFormat),
+    name: cdktn.stringToTerraform(struct!.name),
+    override_on_conflict: cdktn.booleanToTerraform(struct!.overrideOnConflict),
+    preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
+    target_format: cdktn.stringToTerraform(struct!.targetFormat),
   }
 }
 
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_on_conflict: {
-      value: cdktf.booleanToHclTerraform(struct!.overrideOnConflict),
+      value: cdktn.booleanToHclTerraform(struct!.overrideOnConflict),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preserve_source: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      value: cdktn.booleanToHclTerraform(struct!.preserveSource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_format: {
-      value: cdktf.stringToHclTerraform(struct!.targetFormat),
+      value: cdktn.stringToHclTerraform(struct!.targetFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7456,9 +7456,9 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7466,11 +7466,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7503,7 +7503,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7514,7 +7514,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
       this._target = undefined;
       this._targetFormat = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7544,11 +7544,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   }
 
   // override_on_conflict - computed: false, optional: true, required: false
-  private _overrideOnConflict?: boolean | cdktf.IResolvable; 
+  private _overrideOnConflict?: boolean | cdktn.IResolvable; 
   public get overrideOnConflict() {
     return this.getBooleanAttribute('override_on_conflict');
   }
-  public set overrideOnConflict(value: boolean | cdktf.IResolvable) {
+  public set overrideOnConflict(value: boolean | cdktn.IResolvable) {
     this._overrideOnConflict = value;
   }
   public resetOverrideOnConflict() {
@@ -7560,11 +7560,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable; 
+  private _preserveSource?: boolean | cdktn.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source');
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable) {
+  public set preserveSource(value: boolean | cdktn.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -7618,15 +7618,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersS
   }
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7641,43 +7641,43 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * schema_category_mapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
   */
-  readonly schemaCategoryMapper?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktf.IResolvable;
+  readonly schemaCategoryMapper?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable;
   /**
   * schema_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
   */
-  readonly schemaRemapper?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktf.IResolvable;
+  readonly schemaRemapper?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable;
 }
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schema_category_mapper: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform, true)(struct!.schemaCategoryMapper),
-    schema_remapper: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform, true)(struct!.schemaRemapper),
+    schema_category_mapper: cdktn.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform, true)(struct!.schemaCategoryMapper),
+    schema_remapper: cdktn.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform, true)(struct!.schemaRemapper),
   }
 }
 
 
-export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schema_category_mapper: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform, true)(struct!.schemaCategoryMapper),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform, true)(struct!.schemaCategoryMapper),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList",
     },
     schema_remapper: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform, true)(struct!.schemaRemapper),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform, true)(struct!.schemaRemapper),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperList",
@@ -7688,9 +7688,9 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7698,11 +7698,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7719,14 +7719,14 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._schemaCategoryMapper.internalValue = undefined;
       this._schemaRemapper.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7743,7 +7743,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersO
   public get schemaCategoryMapper() {
     return this._schemaCategoryMapper;
   }
-  public putSchemaCategoryMapper(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktf.IResolvable) {
+  public putSchemaCategoryMapper(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable) {
     this._schemaCategoryMapper.internalValue = value;
   }
   public resetSchemaCategoryMapper() {
@@ -7759,7 +7759,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersO
   public get schemaRemapper() {
     return this._schemaRemapper;
   }
-  public putSchemaRemapper(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktf.IResolvable) {
+  public putSchemaRemapper(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable) {
     this._schemaRemapper.internalValue = value;
   }
   public resetSchemaRemapper() {
@@ -7771,15 +7771,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersO
   }
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7794,95 +7794,95 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSche
   /**
   * Class name of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
   */
   readonly className: string;
   /**
   * Class UID of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
   */
   readonly classUid: number;
   /**
   * Optional list of extensions to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
   */
   readonly extensions?: string[];
   /**
   * Optional list of profiles to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
   */
   readonly profiles?: string[];
   /**
   * Type of schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
   */
   readonly schemaType: string;
   /**
   * Version of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
   */
   readonly version: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    class_name: cdktf.stringToTerraform(struct!.className),
-    class_uid: cdktf.numberToTerraform(struct!.classUid),
-    extensions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.extensions),
-    profiles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.profiles),
-    schema_type: cdktf.stringToTerraform(struct!.schemaType),
-    version: cdktf.stringToTerraform(struct!.version),
+    class_name: cdktn.stringToTerraform(struct!.className),
+    class_uid: cdktn.numberToTerraform(struct!.classUid),
+    extensions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.extensions),
+    profiles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.profiles),
+    schema_type: cdktn.stringToTerraform(struct!.schemaType),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     class_name: {
-      value: cdktf.stringToHclTerraform(struct!.className),
+      value: cdktn.stringToHclTerraform(struct!.className),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     class_uid: {
-      value: cdktf.numberToHclTerraform(struct!.classUid),
+      value: cdktn.numberToHclTerraform(struct!.classUid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     extensions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.extensions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.extensions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     profiles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.profiles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.profiles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     schema_type: {
-      value: cdktf.stringToHclTerraform(struct!.schemaType),
+      value: cdktn.stringToHclTerraform(struct!.schemaType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7893,14 +7893,14 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8043,63 +8043,63 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * mappers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
   */
-  readonly mappers: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers[] | cdktf.IResolvable;
+  readonly mappers: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
   */
   readonly schema: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    mappers: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToTerraform, true)(struct!.mappers),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    mappers: cdktn.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToTerraform, true)(struct!.mappers),
     schema: logsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaToTerraform(struct!.schema),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mappers: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToHclTerraform, true)(struct!.mappers),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToHclTerraform, true)(struct!.mappers),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersList",
@@ -8116,14 +8116,14 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8167,11 +8167,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputRe
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -8203,7 +8203,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputRe
   public get mappers() {
     return this._mappers;
   }
-  public putMappers(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers[] | cdktf.IResolvable) {
+  public putMappers(value: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable) {
     this._mappers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -8228,56 +8228,56 @@ export interface LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorServiceRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorServiceRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8288,14 +8288,14 @@ export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8333,11 +8333,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputRe
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -8381,56 +8381,56 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorSpanIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorSpanIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8441,14 +8441,14 @@ export function logsCustomPipelineProcessorPipelineProcessorSpanIdRemapperToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8486,11 +8486,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapperOutputRef
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -8534,56 +8534,56 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStatusRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorStatusRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorStatusRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8594,14 +8594,14 @@ export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8639,11 +8639,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputRef
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -8687,82 +8687,82 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStringBuilderProces
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If it replaces all missing attributes of template by an empty string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
+  readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * The name of the attribute that contains the result of the template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * The formula with one or more attributes and raw text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
   */
   readonly template: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    is_replace_missing: cdktf.booleanToTerraform(struct!.isReplaceMissing),
-    name: cdktf.stringToTerraform(struct!.name),
-    target: cdktf.stringToTerraform(struct!.target),
-    template: cdktf.stringToTerraform(struct!.template),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    is_replace_missing: cdktn.booleanToTerraform(struct!.isReplaceMissing),
+    name: cdktn.stringToTerraform(struct!.name),
+    target: cdktn.stringToTerraform(struct!.target),
+    template: cdktn.stringToTerraform(struct!.template),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_replace_missing: {
-      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      value: cdktn.booleanToHclTerraform(struct!.isReplaceMissing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     template: {
-      value: cdktf.stringToHclTerraform(struct!.template),
+      value: cdktn.stringToHclTerraform(struct!.template),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8773,14 +8773,14 @@ export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8830,11 +8830,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -8846,11 +8846,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorO
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
+  private _isReplaceMissing?: boolean | cdktn.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing');
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
+  public set isReplaceMissing(value: boolean | cdktn.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -8907,56 +8907,56 @@ export interface LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -8967,14 +8967,14 @@ export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9012,11 +9012,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputRe
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -9060,82 +9060,82 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUrlParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Normalize the ending slashes or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
   */
-  readonly normalizeEndingSlashes?: boolean | cdktf.IResolvable;
+  readonly normalizeEndingSlashes?: boolean | cdktn.IResolvable;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUrlParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    normalize_ending_slashes: cdktf.booleanToTerraform(struct!.normalizeEndingSlashes),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    normalize_ending_slashes: cdktn.booleanToTerraform(struct!.normalizeEndingSlashes),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorUrlParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUrlParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     normalize_ending_slashes: {
-      value: cdktf.booleanToHclTerraform(struct!.normalizeEndingSlashes),
+      value: cdktn.booleanToHclTerraform(struct!.normalizeEndingSlashes),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9146,14 +9146,14 @@ export function logsCustomPipelineProcessorPipelineProcessorUrlParserToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9203,11 +9203,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -9235,11 +9235,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReferenc
   }
 
   // normalize_ending_slashes - computed: false, optional: true, required: false
-  private _normalizeEndingSlashes?: boolean | cdktf.IResolvable; 
+  private _normalizeEndingSlashes?: boolean | cdktn.IResolvable; 
   public get normalizeEndingSlashes() {
     return this.getBooleanAttribute('normalize_ending_slashes');
   }
-  public set normalizeEndingSlashes(value: boolean | cdktf.IResolvable) {
+  public set normalizeEndingSlashes(value: boolean | cdktn.IResolvable) {
     this._normalizeEndingSlashes = value;
   }
   public resetNormalizeEndingSlashes() {
@@ -9280,82 +9280,82 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUserAgentParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If the source attribute is URL encoded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
   */
-  readonly isEncoded?: boolean | cdktf.IResolvable;
+  readonly isEncoded?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUserAgentParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    is_encoded: cdktf.booleanToTerraform(struct!.isEncoded),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    is_encoded: cdktn.booleanToTerraform(struct!.isEncoded),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUserAgentParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_encoded: {
-      value: cdktf.booleanToHclTerraform(struct!.isEncoded),
+      value: cdktn.booleanToHclTerraform(struct!.isEncoded),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9366,14 +9366,14 @@ export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9423,11 +9423,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -9439,11 +9439,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputRe
   }
 
   // is_encoded - computed: false, optional: true, required: false
-  private _isEncoded?: boolean | cdktf.IResolvable; 
+  private _isEncoded?: boolean | cdktn.IResolvable; 
   public get isEncoded() {
     return this.getBooleanAttribute('is_encoded');
   }
-  public set isEncoded(value: boolean | cdktf.IResolvable) {
+  public set isEncoded(value: boolean | cdktn.IResolvable) {
     this._isEncoded = value;
   }
   public resetIsEncoded() {
@@ -9500,122 +9500,122 @@ export interface LogsCustomPipelineProcessorPipelineProcessor {
   /**
   * arithmetic_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
   */
   readonly arithmeticProcessor?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor;
   /**
   * array_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
   */
   readonly arrayProcessor?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessor;
   /**
   * attribute_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
   */
   readonly attributeRemapper?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper;
   /**
   * category_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
   */
   readonly categoryProcessor?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor;
   /**
   * date_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
   */
   readonly dateRemapper?: LogsCustomPipelineProcessorPipelineProcessorDateRemapper;
   /**
   * decoder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
   */
   readonly decoderProcessor?: LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor;
   /**
   * geo_ip_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
   */
   readonly geoIpParser?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParser;
   /**
   * grok_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
   */
   readonly grokParser?: LogsCustomPipelineProcessorPipelineProcessorGrokParser;
   /**
   * lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
   */
   readonly lookupProcessor?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessor;
   /**
   * message_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
   */
   readonly messageRemapper?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapper;
   /**
   * reference_table_lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
   */
   readonly referenceTableLookupProcessor?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor;
   /**
   * schema_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
   */
   readonly schemaProcessor?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor;
   /**
   * service_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
   */
   readonly serviceRemapper?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapper;
   /**
   * span_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
   */
   readonly spanIdRemapper?: LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper;
   /**
   * status_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
   */
   readonly statusRemapper?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapper;
   /**
   * string_builder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
   */
   readonly stringBuilderProcessor?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor;
   /**
   * trace_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
   */
   readonly traceIdRemapper?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper;
   /**
   * url_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
   */
   readonly urlParser?: LogsCustomPipelineProcessorPipelineProcessorUrlParser;
   /**
   * user_agent_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
   */
   readonly userAgentParser?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParser;
 }
 
-export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -9642,9 +9642,9 @@ export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?:
 }
 
 
-export function logsCustomPipelineProcessorPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -9768,9 +9768,9 @@ export function logsCustomPipelineProcessorPipelineProcessorToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9778,11 +9778,11 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessor | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorPipelineProcessor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9867,7 +9867,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorPipelineProcessor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9891,7 +9891,7 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
       this._urlParser.internalValue = undefined;
       this._userAgentParser.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10225,15 +10225,15 @@ export class LogsCustomPipelineProcessorPipelineProcessorOutputReference extends
   }
 }
 
-export class LogsCustomPipelineProcessorPipelineProcessorList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorPipelineProcessor[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorPipelineProcessorList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorPipelineProcessor[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10246,89 +10246,89 @@ export class LogsCustomPipelineProcessorPipelineProcessorList extends cdktf.Comp
 }
 export interface LogsCustomPipelineProcessorPipeline {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
   */
   readonly tags?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
-  readonly filter: LogsCustomPipelineProcessorPipelineFilter[] | cdktf.IResolvable;
+  readonly filter: LogsCustomPipelineProcessorPipelineFilter[] | cdktn.IResolvable;
   /**
   * processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
   */
-  readonly processor?: LogsCustomPipelineProcessorPipelineProcessor[] | cdktf.IResolvable;
+  readonly processor?: LogsCustomPipelineProcessorPipelineProcessor[] | cdktn.IResolvable;
 }
 
 export function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCustomPipelineProcessorPipelineOutputReference | LogsCustomPipelineProcessorPipeline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
-    filter: cdktf.listMapper(logsCustomPipelineProcessorPipelineFilterToTerraform, true)(struct!.filter),
-    processor: cdktf.listMapper(logsCustomPipelineProcessorPipelineProcessorToTerraform, true)(struct!.processor),
+    description: cdktn.stringToTerraform(struct!.description),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tags),
+    filter: cdktn.listMapper(logsCustomPipelineProcessorPipelineFilterToTerraform, true)(struct!.filter),
+    processor: cdktn.listMapper(logsCustomPipelineProcessorPipelineProcessorToTerraform, true)(struct!.processor),
   }
 }
 
 
 export function logsCustomPipelineProcessorPipelineToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineOutputReference | LogsCustomPipelineProcessorPipeline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tags),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     filter: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorPipelineFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorPipelineFilterList",
     },
     processor: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorToHclTerraform, true)(struct!.processor),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorPipelineProcessorToHclTerraform, true)(struct!.processor),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorPipelineProcessorList",
@@ -10339,14 +10339,14 @@ export function logsCustomPipelineProcessorPipelineToHclTerraform(struct?: LogsC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10418,11 +10418,11 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -10449,7 +10449,7 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -10467,7 +10467,7 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: LogsCustomPipelineProcessorPipelineFilter[] | cdktf.IResolvable) {
+  public putFilter(value: LogsCustomPipelineProcessorPipelineFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -10480,7 +10480,7 @@ export class LogsCustomPipelineProcessorPipelineOutputReference extends cdktf.Co
   public get processor() {
     return this._processor;
   }
-  public putProcessor(value: LogsCustomPipelineProcessorPipelineProcessor[] | cdktf.IResolvable) {
+  public putProcessor(value: LogsCustomPipelineProcessorPipelineProcessor[] | cdktn.IResolvable) {
     this._processor.internalValue = value;
   }
   public resetProcessor() {
@@ -10495,82 +10495,82 @@ export interface LogsCustomPipelineProcessorReferenceTableLookupProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the Reference Table for the source attribute and their associated target attribute values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
   */
   readonly lookupEnrichmentTable: string;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorReferenceTableLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorReferenceTableLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    lookup_enrichment_table: cdktf.stringToTerraform(struct!.lookupEnrichmentTable),
-    name: cdktf.stringToTerraform(struct!.name),
-    source: cdktf.stringToTerraform(struct!.source),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    lookup_enrichment_table: cdktn.stringToTerraform(struct!.lookupEnrichmentTable),
+    name: cdktn.stringToTerraform(struct!.name),
+    source: cdktn.stringToTerraform(struct!.source),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorReferenceTableLookupProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lookup_enrichment_table: {
-      value: cdktf.stringToHclTerraform(struct!.lookupEnrichmentTable),
+      value: cdktn.stringToHclTerraform(struct!.lookupEnrichmentTable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10581,14 +10581,14 @@ export function logsCustomPipelineProcessorReferenceTableLookupProcessorToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10638,11 +10638,11 @@ export class LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputRefer
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -10712,30 +10712,30 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
 
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10746,14 +10746,14 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10795,7 +10795,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * ID to inject into the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10804,44 +10804,44 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Value to assign to target schema field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter;
 }
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.numberToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.numberToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
     filter: logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToTerraform(struct!.filter),
   }
 }
 
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.numberToHclTerraform(struct!.id),
+      value: cdktn.numberToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10858,9 +10858,9 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10868,11 +10868,11 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10893,7 +10893,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10901,7 +10901,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
       this._name = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10954,15 +10954,15 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
   }
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10977,43 +10977,43 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Fallback sources used to populate value of field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources?: { [key: string]: string };
   /**
   * Values that define when the fallback is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
   */
   readonly values?: { [key: string]: string };
 }
 
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    sources: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sources),
-    values: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.values),
+    sources: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sources),
+    values: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.values),
   }
 }
 
 
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     sources: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sources),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sources),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     values: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.values),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.values),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -11024,14 +11024,14 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11098,7 +11098,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * ID of the field to map log attributes to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -11107,37 +11107,37 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Name of the field to map log attributes to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
 }
 
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11148,14 +11148,14 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11222,57 +11222,57 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Name of the logs schema category mapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
   */
-  readonly categories: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktf.IResolvable;
+  readonly categories: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable;
   /**
   * fallback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
   */
   readonly fallback?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
   */
   readonly targets: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets;
 }
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    categories: cdktf.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform, true)(struct!.categories),
+    name: cdktn.stringToTerraform(struct!.name),
+    categories: cdktn.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform, true)(struct!.categories),
     fallback: logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToTerraform(struct!.fallback),
     targets: logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToTerraform(struct!.targets),
   }
 }
 
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     categories: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform, true)(struct!.categories),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform, true)(struct!.categories),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesList",
@@ -11295,9 +11295,9 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11305,11 +11305,11 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11334,7 +11334,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11343,7 +11343,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
       this._fallback.internalValue = undefined;
       this._targets.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11375,7 +11375,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
   public get categories() {
     return this._categories;
   }
-  public putCategories(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktf.IResolvable) {
+  public putCategories(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable) {
     this._categories.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -11413,15 +11413,15 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapp
   }
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11436,95 +11436,95 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper
   /**
   * Name of the logs schema remapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * Override or not the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
-  readonly overrideOnConflict?: boolean | cdktf.IResolvable;
+  readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
-  readonly preserveSource?: boolean | cdktf.IResolvable;
+  readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Array of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Target field to map log source field to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
 }
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    override_on_conflict: cdktf.booleanToTerraform(struct!.overrideOnConflict),
-    preserve_source: cdktf.booleanToTerraform(struct!.preserveSource),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
-    target_format: cdktf.stringToTerraform(struct!.targetFormat),
+    name: cdktn.stringToTerraform(struct!.name),
+    override_on_conflict: cdktn.booleanToTerraform(struct!.overrideOnConflict),
+    preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
+    target_format: cdktn.stringToTerraform(struct!.targetFormat),
   }
 }
 
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_on_conflict: {
-      value: cdktf.booleanToHclTerraform(struct!.overrideOnConflict),
+      value: cdktn.booleanToHclTerraform(struct!.overrideOnConflict),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preserve_source: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveSource),
+      value: cdktn.booleanToHclTerraform(struct!.preserveSource),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_format: {
-      value: cdktf.stringToHclTerraform(struct!.targetFormat),
+      value: cdktn.stringToHclTerraform(struct!.targetFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11535,9 +11535,9 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11545,11 +11545,11 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11582,7 +11582,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11593,7 +11593,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutp
       this._target = undefined;
       this._targetFormat = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11623,11 +11623,11 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutp
   }
 
   // override_on_conflict - computed: false, optional: true, required: false
-  private _overrideOnConflict?: boolean | cdktf.IResolvable; 
+  private _overrideOnConflict?: boolean | cdktn.IResolvable; 
   public get overrideOnConflict() {
     return this.getBooleanAttribute('override_on_conflict');
   }
-  public set overrideOnConflict(value: boolean | cdktf.IResolvable) {
+  public set overrideOnConflict(value: boolean | cdktn.IResolvable) {
     this._overrideOnConflict = value;
   }
   public resetOverrideOnConflict() {
@@ -11639,11 +11639,11 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutp
   }
 
   // preserve_source - computed: false, optional: true, required: false
-  private _preserveSource?: boolean | cdktf.IResolvable; 
+  private _preserveSource?: boolean | cdktn.IResolvable; 
   public get preserveSource() {
     return this.getBooleanAttribute('preserve_source');
   }
-  public set preserveSource(value: boolean | cdktf.IResolvable) {
+  public set preserveSource(value: boolean | cdktn.IResolvable) {
     this._preserveSource = value;
   }
   public resetPreserveSource() {
@@ -11697,15 +11697,15 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperOutp
   }
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11720,43 +11720,43 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappers {
   /**
   * schema_category_mapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
   */
-  readonly schemaCategoryMapper?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktf.IResolvable;
+  readonly schemaCategoryMapper?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable;
   /**
   * schema_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
   */
-  readonly schemaRemapper?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktf.IResolvable;
+  readonly schemaRemapper?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable;
 }
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    schema_category_mapper: cdktf.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform, true)(struct!.schemaCategoryMapper),
-    schema_remapper: cdktf.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform, true)(struct!.schemaRemapper),
+    schema_category_mapper: cdktn.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform, true)(struct!.schemaCategoryMapper),
+    schema_remapper: cdktn.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform, true)(struct!.schemaRemapper),
   }
 }
 
 
-export function logsCustomPipelineProcessorSchemaProcessorMappersToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorSchemaProcessorMappersToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     schema_category_mapper: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform, true)(struct!.schemaCategoryMapper),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform, true)(struct!.schemaCategoryMapper),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperList",
     },
     schema_remapper: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform, true)(struct!.schemaRemapper),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform, true)(struct!.schemaRemapper),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperList",
@@ -11767,9 +11767,9 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorMappersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11777,11 +11777,11 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11798,14 +11798,14 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._schemaCategoryMapper.internalValue = undefined;
       this._schemaRemapper.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11822,7 +11822,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersOutputReference ex
   public get schemaCategoryMapper() {
     return this._schemaCategoryMapper;
   }
-  public putSchemaCategoryMapper(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktf.IResolvable) {
+  public putSchemaCategoryMapper(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable) {
     this._schemaCategoryMapper.internalValue = value;
   }
   public resetSchemaCategoryMapper() {
@@ -11838,7 +11838,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersOutputReference ex
   public get schemaRemapper() {
     return this._schemaRemapper;
   }
-  public putSchemaRemapper(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktf.IResolvable) {
+  public putSchemaRemapper(value: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable) {
     this._schemaRemapper.internalValue = value;
   }
   public resetSchemaRemapper() {
@@ -11850,15 +11850,15 @@ export class LogsCustomPipelineProcessorSchemaProcessorMappersOutputReference ex
   }
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorMappersList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappers[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorSchemaProcessorMappersList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11873,95 +11873,95 @@ export interface LogsCustomPipelineProcessorSchemaProcessorSchema {
   /**
   * Class name of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
   */
   readonly className: string;
   /**
   * Class UID of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
   */
   readonly classUid: number;
   /**
   * Optional list of extensions to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
   */
   readonly extensions?: string[];
   /**
   * Optional list of profiles to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
   */
   readonly profiles?: string[];
   /**
   * Type of schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
   */
   readonly schemaType: string;
   /**
   * Version of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
   */
   readonly version: string;
 }
 
 export function logsCustomPipelineProcessorSchemaProcessorSchemaToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorSchemaProcessorSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    class_name: cdktf.stringToTerraform(struct!.className),
-    class_uid: cdktf.numberToTerraform(struct!.classUid),
-    extensions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.extensions),
-    profiles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.profiles),
-    schema_type: cdktf.stringToTerraform(struct!.schemaType),
-    version: cdktf.stringToTerraform(struct!.version),
+    class_name: cdktn.stringToTerraform(struct!.className),
+    class_uid: cdktn.numberToTerraform(struct!.classUid),
+    extensions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.extensions),
+    profiles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.profiles),
+    schema_type: cdktn.stringToTerraform(struct!.schemaType),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function logsCustomPipelineProcessorSchemaProcessorSchemaToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorSchemaProcessorSchema): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     class_name: {
-      value: cdktf.stringToHclTerraform(struct!.className),
+      value: cdktn.stringToHclTerraform(struct!.className),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     class_uid: {
-      value: cdktf.numberToHclTerraform(struct!.classUid),
+      value: cdktn.numberToHclTerraform(struct!.classUid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     extensions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.extensions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.extensions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     profiles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.profiles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.profiles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     schema_type: {
-      value: cdktf.stringToHclTerraform(struct!.schemaType),
+      value: cdktn.stringToHclTerraform(struct!.schemaType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11972,14 +11972,14 @@ export function logsCustomPipelineProcessorSchemaProcessorSchemaToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorSchemaOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12122,63 +12122,63 @@ export interface LogsCustomPipelineProcessorSchemaProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * mappers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
   */
-  readonly mappers: LogsCustomPipelineProcessorSchemaProcessorMappers[] | cdktf.IResolvable;
+  readonly mappers: LogsCustomPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
   */
   readonly schema: LogsCustomPipelineProcessorSchemaProcessorSchema;
 }
 
 export function logsCustomPipelineProcessorSchemaProcessorToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorSchemaProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    mappers: cdktf.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersToTerraform, true)(struct!.mappers),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    mappers: cdktn.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersToTerraform, true)(struct!.mappers),
     schema: logsCustomPipelineProcessorSchemaProcessorSchemaToTerraform(struct!.schema),
   }
 }
 
 
 export function logsCustomPipelineProcessorSchemaProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorSchemaProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mappers: {
-      value: cdktf.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersToHclTerraform, true)(struct!.mappers),
+      value: cdktn.listMapperHcl(logsCustomPipelineProcessorSchemaProcessorMappersToHclTerraform, true)(struct!.mappers),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomPipelineProcessorSchemaProcessorMappersList",
@@ -12195,14 +12195,14 @@ export function logsCustomPipelineProcessorSchemaProcessorToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSchemaProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSchemaProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12246,11 +12246,11 @@ export class LogsCustomPipelineProcessorSchemaProcessorOutputReference extends c
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -12282,7 +12282,7 @@ export class LogsCustomPipelineProcessorSchemaProcessorOutputReference extends c
   public get mappers() {
     return this._mappers;
   }
-  public putMappers(value: LogsCustomPipelineProcessorSchemaProcessorMappers[] | cdktf.IResolvable) {
+  public putMappers(value: LogsCustomPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable) {
     this._mappers.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -12307,56 +12307,56 @@ export interface LogsCustomPipelineProcessorServiceRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorServiceRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorServiceRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorServiceRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -12367,14 +12367,14 @@ export function logsCustomPipelineProcessorServiceRemapperToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12412,11 +12412,11 @@ export class LogsCustomPipelineProcessorServiceRemapperOutputReference extends c
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -12460,56 +12460,56 @@ export interface LogsCustomPipelineProcessorSpanIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorSpanIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorSpanIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorSpanIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorSpanIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -12520,14 +12520,14 @@ export function logsCustomPipelineProcessorSpanIdRemapperToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorSpanIdRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorSpanIdRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12565,11 +12565,11 @@ export class LogsCustomPipelineProcessorSpanIdRemapperOutputReference extends cd
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -12613,56 +12613,56 @@ export interface LogsCustomPipelineProcessorStatusRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorStatusRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorStatusRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorStatusRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -12673,14 +12673,14 @@ export function logsCustomPipelineProcessorStatusRemapperToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12718,11 +12718,11 @@ export class LogsCustomPipelineProcessorStatusRemapperOutputReference extends cd
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -12766,82 +12766,82 @@ export interface LogsCustomPipelineProcessorStringBuilderProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If it replaces all missing attributes of template by an empty string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
-  readonly isReplaceMissing?: boolean | cdktf.IResolvable;
+  readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * The name of the attribute that contains the result of the template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * The formula with one or more attributes and raw text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
   */
   readonly template: string;
 }
 
 export function logsCustomPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorStringBuilderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    is_replace_missing: cdktf.booleanToTerraform(struct!.isReplaceMissing),
-    name: cdktf.stringToTerraform(struct!.name),
-    target: cdktf.stringToTerraform(struct!.target),
-    template: cdktf.stringToTerraform(struct!.template),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    is_replace_missing: cdktn.booleanToTerraform(struct!.isReplaceMissing),
+    name: cdktn.stringToTerraform(struct!.name),
+    target: cdktn.stringToTerraform(struct!.target),
+    template: cdktn.stringToTerraform(struct!.template),
   }
 }
 
 
 export function logsCustomPipelineProcessorStringBuilderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorStringBuilderProcessor): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_replace_missing: {
-      value: cdktf.booleanToHclTerraform(struct!.isReplaceMissing),
+      value: cdktn.booleanToHclTerraform(struct!.isReplaceMissing),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     template: {
-      value: cdktf.stringToHclTerraform(struct!.template),
+      value: cdktn.stringToHclTerraform(struct!.template),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12852,14 +12852,14 @@ export function logsCustomPipelineProcessorStringBuilderProcessorToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12909,11 +12909,11 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -12925,11 +12925,11 @@ export class LogsCustomPipelineProcessorStringBuilderProcessorOutputReference ex
   }
 
   // is_replace_missing - computed: false, optional: true, required: false
-  private _isReplaceMissing?: boolean | cdktf.IResolvable; 
+  private _isReplaceMissing?: boolean | cdktn.IResolvable; 
   public get isReplaceMissing() {
     return this.getBooleanAttribute('is_replace_missing');
   }
-  public set isReplaceMissing(value: boolean | cdktf.IResolvable) {
+  public set isReplaceMissing(value: boolean | cdktn.IResolvable) {
     this._isReplaceMissing = value;
   }
   public resetIsReplaceMissing() {
@@ -12986,56 +12986,56 @@ export interface LogsCustomPipelineProcessorTraceIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
 
 export function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorTraceIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
   }
 }
 
 
 export function logsCustomPipelineProcessorTraceIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorTraceIdRemapper): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -13046,14 +13046,14 @@ export function logsCustomPipelineProcessorTraceIdRemapperToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13091,11 +13091,11 @@ export class LogsCustomPipelineProcessorTraceIdRemapperOutputReference extends c
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -13139,82 +13139,82 @@ export interface LogsCustomPipelineProcessorUrlParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Normalize the ending slashes or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
   */
-  readonly normalizeEndingSlashes?: boolean | cdktf.IResolvable;
+  readonly normalizeEndingSlashes?: boolean | cdktn.IResolvable;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorUrlParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    normalize_ending_slashes: cdktf.booleanToTerraform(struct!.normalizeEndingSlashes),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    normalize_ending_slashes: cdktn.booleanToTerraform(struct!.normalizeEndingSlashes),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorUrlParserToHclTerraform(struct?: LogsCustomPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorUrlParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     normalize_ending_slashes: {
-      value: cdktf.booleanToHclTerraform(struct!.normalizeEndingSlashes),
+      value: cdktn.booleanToHclTerraform(struct!.normalizeEndingSlashes),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13225,14 +13225,14 @@ export function logsCustomPipelineProcessorUrlParserToHclTerraform(struct?: Logs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13282,11 +13282,11 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -13314,11 +13314,11 @@ export class LogsCustomPipelineProcessorUrlParserOutputReference extends cdktf.C
   }
 
   // normalize_ending_slashes - computed: false, optional: true, required: false
-  private _normalizeEndingSlashes?: boolean | cdktf.IResolvable; 
+  private _normalizeEndingSlashes?: boolean | cdktn.IResolvable; 
   public get normalizeEndingSlashes() {
     return this.getBooleanAttribute('normalize_ending_slashes');
   }
-  public set normalizeEndingSlashes(value: boolean | cdktf.IResolvable) {
+  public set normalizeEndingSlashes(value: boolean | cdktn.IResolvable) {
     this._normalizeEndingSlashes = value;
   }
   public resetNormalizeEndingSlashes() {
@@ -13359,82 +13359,82 @@ export interface LogsCustomPipelineProcessorUserAgentParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If the source attribute is URL encoded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
   */
-  readonly isEncoded?: boolean | cdktf.IResolvable;
+  readonly isEncoded?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
 
 export function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorUserAgentParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    is_encoded: cdktf.booleanToTerraform(struct!.isEncoded),
-    name: cdktf.stringToTerraform(struct!.name),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
-    target: cdktf.stringToTerraform(struct!.target),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    is_encoded: cdktn.booleanToTerraform(struct!.isEncoded),
+    name: cdktn.stringToTerraform(struct!.name),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
 export function logsCustomPipelineProcessorUserAgentParserToHclTerraform(struct?: LogsCustomPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorUserAgentParser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_encoded: {
-      value: cdktf.booleanToHclTerraform(struct!.isEncoded),
+      value: cdktn.booleanToHclTerraform(struct!.isEncoded),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13445,14 +13445,14 @@ export function logsCustomPipelineProcessorUserAgentParserToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13502,11 +13502,11 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -13518,11 +13518,11 @@ export class LogsCustomPipelineProcessorUserAgentParserOutputReference extends c
   }
 
   // is_encoded - computed: false, optional: true, required: false
-  private _isEncoded?: boolean | cdktf.IResolvable; 
+  private _isEncoded?: boolean | cdktn.IResolvable; 
   public get isEncoded() {
     return this.getBooleanAttribute('is_encoded');
   }
-  public set isEncoded(value: boolean | cdktf.IResolvable) {
+  public set isEncoded(value: boolean | cdktn.IResolvable) {
     this._isEncoded = value;
   }
   public resetIsEncoded() {
@@ -13579,128 +13579,128 @@ export interface LogsCustomPipelineProcessor {
   /**
   * arithmetic_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
   */
   readonly arithmeticProcessor?: LogsCustomPipelineProcessorArithmeticProcessor;
   /**
   * array_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
   */
   readonly arrayProcessor?: LogsCustomPipelineProcessorArrayProcessor;
   /**
   * attribute_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
   */
   readonly attributeRemapper?: LogsCustomPipelineProcessorAttributeRemapper;
   /**
   * category_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
   */
   readonly categoryProcessor?: LogsCustomPipelineProcessorCategoryProcessor;
   /**
   * date_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
   */
   readonly dateRemapper?: LogsCustomPipelineProcessorDateRemapper;
   /**
   * decoder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
   */
   readonly decoderProcessor?: LogsCustomPipelineProcessorDecoderProcessor;
   /**
   * geo_ip_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
   */
   readonly geoIpParser?: LogsCustomPipelineProcessorGeoIpParser;
   /**
   * grok_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
   */
   readonly grokParser?: LogsCustomPipelineProcessorGrokParser;
   /**
   * lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
   */
   readonly lookupProcessor?: LogsCustomPipelineProcessorLookupProcessor;
   /**
   * message_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
   */
   readonly messageRemapper?: LogsCustomPipelineProcessorMessageRemapper;
   /**
   * pipeline block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
   */
   readonly pipeline?: LogsCustomPipelineProcessorPipeline;
   /**
   * reference_table_lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
   */
   readonly referenceTableLookupProcessor?: LogsCustomPipelineProcessorReferenceTableLookupProcessor;
   /**
   * schema_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
   */
   readonly schemaProcessor?: LogsCustomPipelineProcessorSchemaProcessor;
   /**
   * service_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
   */
   readonly serviceRemapper?: LogsCustomPipelineProcessorServiceRemapper;
   /**
   * span_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
   */
   readonly spanIdRemapper?: LogsCustomPipelineProcessorSpanIdRemapper;
   /**
   * status_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
   */
   readonly statusRemapper?: LogsCustomPipelineProcessorStatusRemapper;
   /**
   * string_builder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
   */
   readonly stringBuilderProcessor?: LogsCustomPipelineProcessorStringBuilderProcessor;
   /**
   * trace_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
   */
   readonly traceIdRemapper?: LogsCustomPipelineProcessorTraceIdRemapper;
   /**
   * url_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
   */
   readonly urlParser?: LogsCustomPipelineProcessorUrlParser;
   /**
   * user_agent_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
   */
   readonly userAgentParser?: LogsCustomPipelineProcessorUserAgentParser;
 }
 
-export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -13728,9 +13728,9 @@ export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipeli
 }
 
 
-export function logsCustomPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessor | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessor | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -13860,9 +13860,9 @@ export function logsCustomPipelineProcessorToHclTerraform(struct?: LogsCustomPip
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObject {
+export class LogsCustomPipelineProcessorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13870,11 +13870,11 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomPipelineProcessor | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomPipelineProcessor | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13963,7 +13963,7 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomPipelineProcessor | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomPipelineProcessor | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13988,7 +13988,7 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
       this._urlParser.internalValue = undefined;
       this._userAgentParser.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14339,15 +14339,15 @@ export class LogsCustomPipelineProcessorOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class LogsCustomPipelineProcessorList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomPipelineProcessor[] | cdktf.IResolvable
+export class LogsCustomPipelineProcessorList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomPipelineProcessor[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14360,9 +14360,9 @@ export class LogsCustomPipelineProcessorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}
 */
-export class LogsCustomPipeline extends cdktf.TerraformResource {
+export class LogsCustomPipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -14373,14 +14373,14 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogsCustomPipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogsCustomPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsCustomPipeline to import
-  * @param importFromId The id of the existing LogsCustomPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsCustomPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsCustomPipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_custom_pipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_custom_pipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -14388,7 +14388,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -14399,7 +14399,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_custom_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -14456,11 +14456,11 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -14487,7 +14487,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -14505,7 +14505,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: LogsCustomPipelineFilter[] | cdktf.IResolvable) {
+  public putFilter(value: LogsCustomPipelineFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -14518,7 +14518,7 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
   public get processor() {
     return this._processor;
   }
-  public putProcessor(value: LogsCustomPipelineProcessor[] | cdktf.IResolvable) {
+  public putProcessor(value: LogsCustomPipelineProcessor[] | cdktn.IResolvable) {
     this._processor.internalValue = value;
   }
   public resetProcessor() {
@@ -14535,56 +14535,56 @@ export class LogsCustomPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      filter: cdktf.listMapper(logsCustomPipelineFilterToTerraform, true)(this._filter.internalValue),
-      processor: cdktf.listMapper(logsCustomPipelineProcessorToTerraform, true)(this._processor.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      filter: cdktn.listMapper(logsCustomPipelineFilterToTerraform, true)(this._filter.internalValue),
+      processor: cdktn.listMapper(logsCustomPipelineProcessorToTerraform, true)(this._processor.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       filter: {
-        value: cdktf.listMapperHcl(logsCustomPipelineFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(logsCustomPipelineFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogsCustomPipelineFilterList",
       },
       processor: {
-        value: cdktf.listMapperHcl(logsCustomPipelineProcessorToHclTerraform, true)(this._processor.internalValue),
+        value: cdktn.listMapperHcl(logsCustomPipelineProcessorToHclTerraform, true)(this._processor.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogsCustomPipelineProcessorList",

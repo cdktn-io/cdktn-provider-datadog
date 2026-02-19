@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/service_definition_yaml
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/service_definition_yaml
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServiceDefinitionYamlConfig extends cdktf.TerraformMetaArguments {
+export interface ServiceDefinitionYamlConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/service_definition_yaml#id ServiceDefinitionYaml#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,15 +22,15 @@ export interface ServiceDefinitionYamlConfig extends cdktf.TerraformMetaArgument
   /**
   * The YAML/JSON formatted definition of the service
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/service_definition_yaml#service_definition ServiceDefinitionYaml#service_definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/service_definition_yaml#service_definition ServiceDefinitionYaml#service_definition}
   */
   readonly serviceDefinition: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/service_definition_yaml datadog_service_definition_yaml}
 */
-export class ServiceDefinitionYaml extends cdktf.TerraformResource {
+export class ServiceDefinitionYaml extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -41,14 +41,14 @@ export class ServiceDefinitionYaml extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServiceDefinitionYaml resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServiceDefinitionYaml resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceDefinitionYaml to import
-  * @param importFromId The id of the existing ServiceDefinitionYaml that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/service_definition_yaml#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceDefinitionYaml that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/service_definition_yaml#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceDefinitionYaml to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_service_definition_yaml", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_service_definition_yaml", importId: importFromId, provider });
       }
 
   // ===========
@@ -56,7 +56,7 @@ export class ServiceDefinitionYaml extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/service_definition_yaml datadog_service_definition_yaml} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class ServiceDefinitionYaml extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_service_definition_yaml',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -121,21 +121,21 @@ export class ServiceDefinitionYaml extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      service_definition: cdktf.stringToTerraform(this._serviceDefinition),
+      id: cdktn.stringToTerraform(this._id),
+      service_definition: cdktn.stringToTerraform(this._serviceDefinition),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_definition: {
-        value: cdktf.stringToHclTerraform(this._serviceDefinition),
+        value: cdktn.stringToHclTerraform(this._serviceDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

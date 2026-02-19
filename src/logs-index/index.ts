@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
+export interface LogsIndexConfig extends cdktn.TerraformMetaArguments {
   /**
   * The number of log events you can send in this index per day before you are rate-limited.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#daily_limit LogsIndex#daily_limit}
   */
   readonly dailyLimit?: number;
   /**
   * A percentage threshold of the daily quota at which a Datadog warning event is generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#daily_limit_warning_threshold_percentage LogsIndex#daily_limit_warning_threshold_percentage}
   */
   readonly dailyLimitWarningThresholdPercentage?: number;
   /**
   * If true, sets the daily_limit value to null and the index is not limited on a daily basis (any specified daily_limit value in the request is ignored). If false or omitted, the index's current daily_limit is maintained.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#disable_daily_limit LogsIndex#disable_daily_limit}
   */
-  readonly disableDailyLimit?: boolean | cdktf.IResolvable;
+  readonly disableDailyLimit?: boolean | cdktn.IResolvable;
   /**
   * The total number of days logs are stored in Standard and Flex Tier before being deleted from the index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#flex_retention_days LogsIndex#flex_retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#flex_retention_days LogsIndex#flex_retention_days}
   */
   readonly flexRetentionDays?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#id LogsIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#id LogsIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +46,31 @@ export interface LogsIndexConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the index. Index names cannot be modified after creation. If this value is changed, a new index will be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#name LogsIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#name LogsIndex#name}
   */
   readonly name: string;
   /**
   * The number of days logs are stored in Standard Tier before aging into the Flex Tier or being deleted from the index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#retention_days LogsIndex#retention_days}
   */
   readonly retentionDays?: number;
   /**
   * daily_limit_reset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#daily_limit_reset LogsIndex#daily_limit_reset}
   */
   readonly dailyLimitReset?: LogsIndexDailyLimitReset;
   /**
   * exclusion_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#exclusion_filter LogsIndex#exclusion_filter}
   */
-  readonly exclusionFilter?: LogsIndexExclusionFilter[] | cdktf.IResolvable;
+  readonly exclusionFilter?: LogsIndexExclusionFilter[] | cdktn.IResolvable;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#filter LogsIndex#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#filter LogsIndex#filter}
   */
   readonly filter: LogsIndexFilter;
 }
@@ -78,43 +78,43 @@ export interface LogsIndexDailyLimitReset {
   /**
   * String in `HH:00` format representing the time of day the daily limit should be reset. The hours must be between 00 and 23 (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#reset_time LogsIndex#reset_time}
   */
   readonly resetTime: string;
   /**
   * String in `(-|+)HH:00` format representing the UTC offset to apply to the given reset time. The hours must be between -12 and +14 (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#reset_utc_offset LogsIndex#reset_utc_offset}
   */
   readonly resetUtcOffset: string;
 }
 
 export function logsIndexDailyLimitResetToTerraform(struct?: LogsIndexDailyLimitResetOutputReference | LogsIndexDailyLimitReset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    reset_time: cdktf.stringToTerraform(struct!.resetTime),
-    reset_utc_offset: cdktf.stringToTerraform(struct!.resetUtcOffset),
+    reset_time: cdktn.stringToTerraform(struct!.resetTime),
+    reset_utc_offset: cdktn.stringToTerraform(struct!.resetUtcOffset),
   }
 }
 
 
 export function logsIndexDailyLimitResetToHclTerraform(struct?: LogsIndexDailyLimitResetOutputReference | LogsIndexDailyLimitReset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     reset_time: {
-      value: cdktf.stringToHclTerraform(struct!.resetTime),
+      value: cdktn.stringToHclTerraform(struct!.resetTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reset_utc_offset: {
-      value: cdktf.stringToHclTerraform(struct!.resetUtcOffset),
+      value: cdktn.stringToHclTerraform(struct!.resetUtcOffset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function logsIndexDailyLimitResetToHclTerraform(struct?: LogsIndexDailyLi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsIndexDailyLimitResetOutputReference extends cdktf.ComplexObject {
+export class LogsIndexDailyLimitResetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -193,43 +193,43 @@ export interface LogsIndexExclusionFilterFilter {
   /**
   * Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#query LogsIndex#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#query LogsIndex#query}
   */
   readonly query?: string;
   /**
   * The fraction of logs excluded by the exclusion filter, when active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#sample_rate LogsIndex#sample_rate}
   */
   readonly sampleRate?: number;
 }
 
-export function logsIndexExclusionFilterFilterToTerraform(struct?: LogsIndexExclusionFilterFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsIndexExclusionFilterFilterToTerraform(struct?: LogsIndexExclusionFilterFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
-    sample_rate: cdktf.numberToTerraform(struct!.sampleRate),
+    query: cdktn.stringToTerraform(struct!.query),
+    sample_rate: cdktn.numberToTerraform(struct!.sampleRate),
   }
 }
 
 
-export function logsIndexExclusionFilterFilterToHclTerraform(struct?: LogsIndexExclusionFilterFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsIndexExclusionFilterFilterToHclTerraform(struct?: LogsIndexExclusionFilterFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sample_rate: {
-      value: cdktf.numberToHclTerraform(struct!.sampleRate),
+      value: cdktn.numberToHclTerraform(struct!.sampleRate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -240,9 +240,9 @@ export function logsIndexExclusionFilterFilterToHclTerraform(struct?: LogsIndexE
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsIndexExclusionFilterFilterOutputReference extends cdktf.ComplexObject {
+export class LogsIndexExclusionFilterFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -250,11 +250,11 @@ export class LogsIndexExclusionFilterFilterOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsIndexExclusionFilterFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsIndexExclusionFilterFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -271,14 +271,14 @@ export class LogsIndexExclusionFilterFilterOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsIndexExclusionFilterFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsIndexExclusionFilterFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
       this._sampleRate = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -323,15 +323,15 @@ export class LogsIndexExclusionFilterFilterOutputReference extends cdktf.Complex
   }
 }
 
-export class LogsIndexExclusionFilterFilterList extends cdktf.ComplexList {
-  public internalValue? : LogsIndexExclusionFilterFilter[] | cdktf.IResolvable
+export class LogsIndexExclusionFilterFilterList extends cdktn.ComplexList {
+  public internalValue? : LogsIndexExclusionFilterFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -346,56 +346,56 @@ export interface LogsIndexExclusionFilter {
   /**
   * A boolean stating if the exclusion is active or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#is_enabled LogsIndex#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the exclusion filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#name LogsIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#name LogsIndex#name}
   */
   readonly name?: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#filter LogsIndex#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#filter LogsIndex#filter}
   */
-  readonly filter?: LogsIndexExclusionFilterFilter[] | cdktf.IResolvable;
+  readonly filter?: LogsIndexExclusionFilterFilter[] | cdktn.IResolvable;
 }
 
-export function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsIndexExclusionFilterToTerraform(struct?: LogsIndexExclusionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_enabled: cdktf.booleanToTerraform(struct!.isEnabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    filter: cdktf.listMapper(logsIndexExclusionFilterFilterToTerraform, true)(struct!.filter),
+    is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    filter: cdktn.listMapper(logsIndexExclusionFilterFilterToTerraform, true)(struct!.filter),
   }
 }
 
 
-export function logsIndexExclusionFilterToHclTerraform(struct?: LogsIndexExclusionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsIndexExclusionFilterToHclTerraform(struct?: LogsIndexExclusionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.isEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.isEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter: {
-      value: cdktf.listMapperHcl(logsIndexExclusionFilterFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(logsIndexExclusionFilterFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "LogsIndexExclusionFilterFilterList",
@@ -406,9 +406,9 @@ export function logsIndexExclusionFilterToHclTerraform(struct?: LogsIndexExclusi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject {
+export class LogsIndexExclusionFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -416,11 +416,11 @@ export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsIndexExclusionFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsIndexExclusionFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -441,7 +441,7 @@ export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsIndexExclusionFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsIndexExclusionFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -449,7 +449,7 @@ export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject
       this._name = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -463,11 +463,11 @@ export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -499,7 +499,7 @@ export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: LogsIndexExclusionFilterFilter[] | cdktf.IResolvable) {
+  public putFilter(value: LogsIndexExclusionFilterFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -511,15 +511,15 @@ export class LogsIndexExclusionFilterOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class LogsIndexExclusionFilterList extends cdktf.ComplexList {
-  public internalValue? : LogsIndexExclusionFilter[] | cdktf.IResolvable
+export class LogsIndexExclusionFilterList extends cdktn.ComplexList {
+  public internalValue? : LogsIndexExclusionFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -534,30 +534,30 @@ export interface LogsIndexFilter {
   /**
   * Logs filter criteria. Only logs matching this filter criteria are considered for this index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#query LogsIndex#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#query LogsIndex#query}
   */
   readonly query: string;
 }
 
 export function logsIndexFilterToTerraform(struct?: LogsIndexFilterOutputReference | LogsIndexFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function logsIndexFilterToHclTerraform(struct?: LogsIndexFilterOutputReference | LogsIndexFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -568,14 +568,14 @@ export function logsIndexFilterToHclTerraform(struct?: LogsIndexFilterOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
+export class LogsIndexFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -615,9 +615,9 @@ export class LogsIndexFilterOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index datadog_logs_index}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index datadog_logs_index}
 */
-export class LogsIndex extends cdktf.TerraformResource {
+export class LogsIndex extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -628,14 +628,14 @@ export class LogsIndex extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogsIndex resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogsIndex resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsIndex to import
-  * @param importFromId The id of the existing LogsIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsIndex that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsIndex to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_index", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_index", importId: importFromId, provider });
       }
 
   // ===========
@@ -643,7 +643,7 @@ export class LogsIndex extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_index datadog_logs_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_index datadog_logs_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -654,7 +654,7 @@ export class LogsIndex extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_index',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -714,11 +714,11 @@ export class LogsIndex extends cdktf.TerraformResource {
   }
 
   // disable_daily_limit - computed: true, optional: true, required: false
-  private _disableDailyLimit?: boolean | cdktf.IResolvable; 
+  private _disableDailyLimit?: boolean | cdktn.IResolvable; 
   public get disableDailyLimit() {
     return this.getBooleanAttribute('disable_daily_limit');
   }
-  public set disableDailyLimit(value: boolean | cdktf.IResolvable) {
+  public set disableDailyLimit(value: boolean | cdktn.IResolvable) {
     this._disableDailyLimit = value;
   }
   public resetDisableDailyLimit() {
@@ -811,7 +811,7 @@ export class LogsIndex extends cdktf.TerraformResource {
   public get exclusionFilter() {
     return this._exclusionFilter;
   }
-  public putExclusionFilter(value: LogsIndexExclusionFilter[] | cdktf.IResolvable) {
+  public putExclusionFilter(value: LogsIndexExclusionFilter[] | cdktn.IResolvable) {
     this._exclusionFilter.internalValue = value;
   }
   public resetExclusionFilter() {
@@ -841,15 +841,15 @@ export class LogsIndex extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      daily_limit: cdktf.numberToTerraform(this._dailyLimit),
-      daily_limit_warning_threshold_percentage: cdktf.numberToTerraform(this._dailyLimitWarningThresholdPercentage),
-      disable_daily_limit: cdktf.booleanToTerraform(this._disableDailyLimit),
-      flex_retention_days: cdktf.numberToTerraform(this._flexRetentionDays),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      retention_days: cdktf.numberToTerraform(this._retentionDays),
+      daily_limit: cdktn.numberToTerraform(this._dailyLimit),
+      daily_limit_warning_threshold_percentage: cdktn.numberToTerraform(this._dailyLimitWarningThresholdPercentage),
+      disable_daily_limit: cdktn.booleanToTerraform(this._disableDailyLimit),
+      flex_retention_days: cdktn.numberToTerraform(this._flexRetentionDays),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      retention_days: cdktn.numberToTerraform(this._retentionDays),
       daily_limit_reset: logsIndexDailyLimitResetToTerraform(this._dailyLimitReset.internalValue),
-      exclusion_filter: cdktf.listMapper(logsIndexExclusionFilterToTerraform, true)(this._exclusionFilter.internalValue),
+      exclusion_filter: cdktn.listMapper(logsIndexExclusionFilterToTerraform, true)(this._exclusionFilter.internalValue),
       filter: logsIndexFilterToTerraform(this._filter.internalValue),
     };
   }
@@ -857,43 +857,43 @@ export class LogsIndex extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       daily_limit: {
-        value: cdktf.numberToHclTerraform(this._dailyLimit),
+        value: cdktn.numberToHclTerraform(this._dailyLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       daily_limit_warning_threshold_percentage: {
-        value: cdktf.numberToHclTerraform(this._dailyLimitWarningThresholdPercentage),
+        value: cdktn.numberToHclTerraform(this._dailyLimitWarningThresholdPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disable_daily_limit: {
-        value: cdktf.booleanToHclTerraform(this._disableDailyLimit),
+        value: cdktn.booleanToHclTerraform(this._disableDailyLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       flex_retention_days: {
-        value: cdktf.numberToHclTerraform(this._flexRetentionDays),
+        value: cdktn.numberToHclTerraform(this._flexRetentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_days: {
-        value: cdktf.numberToHclTerraform(this._retentionDays),
+        value: cdktn.numberToHclTerraform(this._retentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -905,7 +905,7 @@ export class LogsIndex extends cdktf.TerraformResource {
         storageClassType: "LogsIndexDailyLimitResetList",
       },
       exclusion_filter: {
-        value: cdktf.listMapperHcl(logsIndexExclusionFilterToHclTerraform, true)(this._exclusionFilter.internalValue),
+        value: cdktn.listMapperHcl(logsIndexExclusionFilterToHclTerraform, true)(this._exclusionFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogsIndexExclusionFilterList",

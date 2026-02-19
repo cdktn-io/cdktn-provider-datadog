@@ -1,125 +1,137 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SyntheticsGlobalVariableConfig extends cdktf.TerraformMetaArguments {
+export interface SyntheticsGlobalVariableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the global variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#description SyntheticsGlobalVariable#description}
   */
   readonly description?: string;
   /**
   * If set to true, the global variable is a FIDO variable. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#is_fido SyntheticsGlobalVariable#is_fido}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#is_fido SyntheticsGlobalVariable#is_fido}
   */
-  readonly isFido?: boolean | cdktf.IResolvable;
+  readonly isFido?: boolean | cdktn.IResolvable;
   /**
   * If set to true, the global variable is a TOTP variable. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#is_totp SyntheticsGlobalVariable#is_totp}
   */
-  readonly isTotp?: boolean | cdktf.IResolvable;
+  readonly isTotp?: boolean | cdktn.IResolvable;
   /**
   * Synthetics global variable name. Must be all uppercase with underscores.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#name SyntheticsGlobalVariable#name}
   */
   readonly name: string;
   /**
   * Id of the Synthetics test to use for a variable from test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#parse_test_id SyntheticsGlobalVariable#parse_test_id}
   */
   readonly parseTestId?: string;
   /**
   * A list of role identifiers to associate with the Synthetics global variable. **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#restricted_roles SyntheticsGlobalVariable#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * If set to true, the value of the global variable is hidden. This setting is automatically set to `true` if `is_totp` or `is_fido` is set to `true`. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#secure SyntheticsGlobalVariable#secure}
   */
-  readonly secure?: boolean | cdktf.IResolvable;
+  readonly secure?: boolean | cdktn.IResolvable;
   /**
   * A list of tags to associate with your synthetics global variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#tags SyntheticsGlobalVariable#tags}
   */
   readonly tags?: string[];
   /**
-  * The value of the global variable. Required unless `is_fido` is set to `true`.
+  * The value of the global variable. Required unless `is_fido` is set to `true` or `value_wo` is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
   */
   readonly value?: string;
   /**
+  * Write-only value of the global variable. Must be used with `value_wo_version`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#value_wo SyntheticsGlobalVariable#value_wo}
+  */
+  readonly valueWo?: string;
+  /**
+  * Version associated with the write-only value. Changing this triggers an update. Can be any string (e.g., '1', 'v2.1', '2024-Q1'). String length must be at least 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#value_wo_version SyntheticsGlobalVariable#value_wo_version}
+  */
+  readonly valueWoVersion?: string;
+  /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#options SyntheticsGlobalVariable#options}
   */
-  readonly options?: SyntheticsGlobalVariableOptions[] | cdktf.IResolvable;
+  readonly options?: SyntheticsGlobalVariableOptions[] | cdktn.IResolvable;
   /**
   * parse_test_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#parse_test_options SyntheticsGlobalVariable#parse_test_options}
   */
-  readonly parseTestOptions?: SyntheticsGlobalVariableParseTestOptions[] | cdktf.IResolvable;
+  readonly parseTestOptions?: SyntheticsGlobalVariableParseTestOptions[] | cdktn.IResolvable;
 }
 export interface SyntheticsGlobalVariableOptionsTotpParameters {
   /**
   * Number of digits for the OTP. Value must be between 4 and 10.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#digits SyntheticsGlobalVariable#digits}
   */
   readonly digits: number;
   /**
   * Interval for which to refresh the token (in seconds). Value must be between 0 and 999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#refresh_interval SyntheticsGlobalVariable#refresh_interval}
   */
   readonly refreshInterval: number;
 }
 
-export function syntheticsGlobalVariableOptionsTotpParametersToTerraform(struct?: SyntheticsGlobalVariableOptionsTotpParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableOptionsTotpParametersToTerraform(struct?: SyntheticsGlobalVariableOptionsTotpParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    digits: cdktf.numberToTerraform(struct!.digits),
-    refresh_interval: cdktf.numberToTerraform(struct!.refreshInterval),
+    digits: cdktn.numberToTerraform(struct!.digits),
+    refresh_interval: cdktn.numberToTerraform(struct!.refreshInterval),
   }
 }
 
 
-export function syntheticsGlobalVariableOptionsTotpParametersToHclTerraform(struct?: SyntheticsGlobalVariableOptionsTotpParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableOptionsTotpParametersToHclTerraform(struct?: SyntheticsGlobalVariableOptionsTotpParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     digits: {
-      value: cdktf.numberToHclTerraform(struct!.digits),
+      value: cdktn.numberToHclTerraform(struct!.digits),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     refresh_interval: {
-      value: cdktf.numberToHclTerraform(struct!.refreshInterval),
+      value: cdktn.numberToHclTerraform(struct!.refreshInterval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -130,9 +142,9 @@ export function syntheticsGlobalVariableOptionsTotpParametersToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extends cdktf.ComplexObject {
+export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -140,11 +152,11 @@ export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SyntheticsGlobalVariableOptionsTotpParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): SyntheticsGlobalVariableOptionsTotpParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -161,14 +173,14 @@ export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsGlobalVariableOptionsTotpParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SyntheticsGlobalVariableOptionsTotpParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._digits = undefined;
       this._refreshInterval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -207,15 +219,15 @@ export class SyntheticsGlobalVariableOptionsTotpParametersOutputReference extend
   }
 }
 
-export class SyntheticsGlobalVariableOptionsTotpParametersList extends cdktf.ComplexList {
-  public internalValue? : SyntheticsGlobalVariableOptionsTotpParameters[] | cdktf.IResolvable
+export class SyntheticsGlobalVariableOptionsTotpParametersList extends cdktn.ComplexList {
+  public internalValue? : SyntheticsGlobalVariableOptionsTotpParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -230,30 +242,30 @@ export interface SyntheticsGlobalVariableOptions {
   /**
   * totp_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#totp_parameters SyntheticsGlobalVariable#totp_parameters}
   */
-  readonly totpParameters?: SyntheticsGlobalVariableOptionsTotpParameters[] | cdktf.IResolvable;
+  readonly totpParameters?: SyntheticsGlobalVariableOptionsTotpParameters[] | cdktn.IResolvable;
 }
 
-export function syntheticsGlobalVariableOptionsToTerraform(struct?: SyntheticsGlobalVariableOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableOptionsToTerraform(struct?: SyntheticsGlobalVariableOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    totp_parameters: cdktf.listMapper(syntheticsGlobalVariableOptionsTotpParametersToTerraform, true)(struct!.totpParameters),
+    totp_parameters: cdktn.listMapper(syntheticsGlobalVariableOptionsTotpParametersToTerraform, true)(struct!.totpParameters),
   }
 }
 
 
-export function syntheticsGlobalVariableOptionsToHclTerraform(struct?: SyntheticsGlobalVariableOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableOptionsToHclTerraform(struct?: SyntheticsGlobalVariableOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     totp_parameters: {
-      value: cdktf.listMapperHcl(syntheticsGlobalVariableOptionsTotpParametersToHclTerraform, true)(struct!.totpParameters),
+      value: cdktn.listMapperHcl(syntheticsGlobalVariableOptionsTotpParametersToHclTerraform, true)(struct!.totpParameters),
       isBlock: true,
       type: "list",
       storageClassType: "SyntheticsGlobalVariableOptionsTotpParametersList",
@@ -264,9 +276,9 @@ export function syntheticsGlobalVariableOptionsToHclTerraform(struct?: Synthetic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.ComplexObject {
+export class SyntheticsGlobalVariableOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -274,11 +286,11 @@ export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SyntheticsGlobalVariableOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): SyntheticsGlobalVariableOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -291,13 +303,13 @@ export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsGlobalVariableOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SyntheticsGlobalVariableOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._totpParameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -313,7 +325,7 @@ export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.Comple
   public get totpParameters() {
     return this._totpParameters;
   }
-  public putTotpParameters(value: SyntheticsGlobalVariableOptionsTotpParameters[] | cdktf.IResolvable) {
+  public putTotpParameters(value: SyntheticsGlobalVariableOptionsTotpParameters[] | cdktn.IResolvable) {
     this._totpParameters.internalValue = value;
   }
   public resetTotpParameters() {
@@ -325,15 +337,15 @@ export class SyntheticsGlobalVariableOptionsOutputReference extends cdktf.Comple
   }
 }
 
-export class SyntheticsGlobalVariableOptionsList extends cdktf.ComplexList {
-  public internalValue? : SyntheticsGlobalVariableOptions[] | cdktf.IResolvable
+export class SyntheticsGlobalVariableOptionsList extends cdktn.ComplexList {
+  public internalValue? : SyntheticsGlobalVariableOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -348,43 +360,43 @@ export interface SyntheticsGlobalVariableParseTestOptionsParser {
   /**
   * Type of parser to extract the value. Valid values are `raw`, `json_path`, `regex`, `x_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
   */
   readonly type: string;
   /**
   * Value for the parser to use, required for type `json_path` or `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#value SyntheticsGlobalVariable#value}
   */
   readonly value?: string;
 }
 
-export function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableParseTestOptionsParserToTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function syntheticsGlobalVariableParseTestOptionsParserToHclTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableParseTestOptionsParserToHclTerraform(struct?: SyntheticsGlobalVariableParseTestOptionsParser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -395,9 +407,9 @@ export function syntheticsGlobalVariableParseTestOptionsParserToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference extends cdktf.ComplexObject {
+export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -405,11 +417,11 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SyntheticsGlobalVariableParseTestOptionsParser | cdktf.IResolvable | undefined {
+  public get internalValue(): SyntheticsGlobalVariableParseTestOptionsParser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -426,14 +438,14 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsGlobalVariableParseTestOptionsParser | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SyntheticsGlobalVariableParseTestOptionsParser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -475,15 +487,15 @@ export class SyntheticsGlobalVariableParseTestOptionsParserOutputReference exten
   }
 }
 
-export class SyntheticsGlobalVariableParseTestOptionsParserList extends cdktf.ComplexList {
-  public internalValue? : SyntheticsGlobalVariableParseTestOptionsParser[] | cdktf.IResolvable
+export class SyntheticsGlobalVariableParseTestOptionsParserList extends cdktn.ComplexList {
+  public internalValue? : SyntheticsGlobalVariableParseTestOptionsParser[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -498,69 +510,69 @@ export interface SyntheticsGlobalVariableParseTestOptions {
   /**
   * Required when type = `http_header`. Defines the header to use to extract the value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#field SyntheticsGlobalVariable#field}
   */
   readonly field?: string;
   /**
   * When type is `local_variable`, name of the local variable to use to extract the value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#local_variable_name SyntheticsGlobalVariable#local_variable_name}
   */
   readonly localVariableName?: string;
   /**
   * Defines the source to use to extract the value. Valid values are `http_body`, `http_header`, `http_status_code`, `local_variable`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#type SyntheticsGlobalVariable#type}
   */
   readonly type: string;
   /**
   * parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#parser SyntheticsGlobalVariable#parser}
   */
-  readonly parser?: SyntheticsGlobalVariableParseTestOptionsParser[] | cdktf.IResolvable;
+  readonly parser?: SyntheticsGlobalVariableParseTestOptionsParser[] | cdktn.IResolvable;
 }
 
-export function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableParseTestOptionsToTerraform(struct?: SyntheticsGlobalVariableParseTestOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field: cdktf.stringToTerraform(struct!.field),
-    local_variable_name: cdktf.stringToTerraform(struct!.localVariableName),
-    type: cdktf.stringToTerraform(struct!.type),
-    parser: cdktf.listMapper(syntheticsGlobalVariableParseTestOptionsParserToTerraform, true)(struct!.parser),
+    field: cdktn.stringToTerraform(struct!.field),
+    local_variable_name: cdktn.stringToTerraform(struct!.localVariableName),
+    type: cdktn.stringToTerraform(struct!.type),
+    parser: cdktn.listMapper(syntheticsGlobalVariableParseTestOptionsParserToTerraform, true)(struct!.parser),
   }
 }
 
 
-export function syntheticsGlobalVariableParseTestOptionsToHclTerraform(struct?: SyntheticsGlobalVariableParseTestOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function syntheticsGlobalVariableParseTestOptionsToHclTerraform(struct?: SyntheticsGlobalVariableParseTestOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     local_variable_name: {
-      value: cdktf.stringToHclTerraform(struct!.localVariableName),
+      value: cdktn.stringToHclTerraform(struct!.localVariableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parser: {
-      value: cdktf.listMapperHcl(syntheticsGlobalVariableParseTestOptionsParserToHclTerraform, true)(struct!.parser),
+      value: cdktn.listMapperHcl(syntheticsGlobalVariableParseTestOptionsParserToHclTerraform, true)(struct!.parser),
       isBlock: true,
       type: "list",
       storageClassType: "SyntheticsGlobalVariableParseTestOptionsParserList",
@@ -571,9 +583,9 @@ export function syntheticsGlobalVariableParseTestOptionsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdktf.ComplexObject {
+export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -581,11 +593,11 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SyntheticsGlobalVariableParseTestOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): SyntheticsGlobalVariableParseTestOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -610,7 +622,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SyntheticsGlobalVariableParseTestOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SyntheticsGlobalVariableParseTestOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -619,7 +631,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
       this._type = undefined;
       this._parser.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -683,7 +695,7 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   public get parser() {
     return this._parser;
   }
-  public putParser(value: SyntheticsGlobalVariableParseTestOptionsParser[] | cdktf.IResolvable) {
+  public putParser(value: SyntheticsGlobalVariableParseTestOptionsParser[] | cdktn.IResolvable) {
     this._parser.internalValue = value;
   }
   public resetParser() {
@@ -695,15 +707,15 @@ export class SyntheticsGlobalVariableParseTestOptionsOutputReference extends cdk
   }
 }
 
-export class SyntheticsGlobalVariableParseTestOptionsList extends cdktf.ComplexList {
-  public internalValue? : SyntheticsGlobalVariableParseTestOptions[] | cdktf.IResolvable
+export class SyntheticsGlobalVariableParseTestOptionsList extends cdktn.ComplexList {
+  public internalValue? : SyntheticsGlobalVariableParseTestOptions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -716,9 +728,9 @@ export class SyntheticsGlobalVariableParseTestOptionsList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable}
 */
-export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
+export class SyntheticsGlobalVariable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -729,14 +741,14 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SyntheticsGlobalVariable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SyntheticsGlobalVariable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsGlobalVariable to import
-  * @param importFromId The id of the existing SyntheticsGlobalVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsGlobalVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsGlobalVariable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_synthetics_global_variable", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_synthetics_global_variable", importId: importFromId, provider });
       }
 
   // ===========
@@ -744,7 +756,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/synthetics_global_variable datadog_synthetics_global_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -755,7 +767,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_synthetics_global_variable',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -775,6 +787,8 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     this._secure = config.secure;
     this._tags = config.tags;
     this._value = config.value;
+    this._valueWo = config.valueWo;
+    this._valueWoVersion = config.valueWoVersion;
     this._options.internalValue = config.options;
     this._parseTestOptions.internalValue = config.parseTestOptions;
   }
@@ -805,11 +819,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // is_fido - computed: true, optional: true, required: false
-  private _isFido?: boolean | cdktf.IResolvable; 
+  private _isFido?: boolean | cdktn.IResolvable; 
   public get isFido() {
     return this.getBooleanAttribute('is_fido');
   }
-  public set isFido(value: boolean | cdktf.IResolvable) {
+  public set isFido(value: boolean | cdktn.IResolvable) {
     this._isFido = value;
   }
   public resetIsFido() {
@@ -821,11 +835,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // is_totp - computed: true, optional: true, required: false
-  private _isTotp?: boolean | cdktf.IResolvable; 
+  private _isTotp?: boolean | cdktn.IResolvable; 
   public get isTotp() {
     return this.getBooleanAttribute('is_totp');
   }
-  public set isTotp(value: boolean | cdktf.IResolvable) {
+  public set isTotp(value: boolean | cdktn.IResolvable) {
     this._isTotp = value;
   }
   public resetIsTotp() {
@@ -868,7 +882,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   // restricted_roles - computed: false, optional: true, required: false
   private _restrictedRoles?: string[]; 
   public get restrictedRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('restricted_roles'));
   }
   public set restrictedRoles(value: string[]) {
     this._restrictedRoles = value;
@@ -882,11 +896,11 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   }
 
   // secure - computed: true, optional: true, required: false
-  private _secure?: boolean | cdktf.IResolvable; 
+  private _secure?: boolean | cdktn.IResolvable; 
   public get secure() {
     return this.getBooleanAttribute('secure');
   }
-  public set secure(value: boolean | cdktf.IResolvable) {
+  public set secure(value: boolean | cdktn.IResolvable) {
     this._secure = value;
   }
   public resetSecure() {
@@ -929,12 +943,44 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
     return this._value;
   }
 
+  // value_wo - computed: false, optional: true, required: false
+  private _valueWo?: string; 
+  public get valueWo() {
+    return this.getStringAttribute('value_wo');
+  }
+  public set valueWo(value: string) {
+    this._valueWo = value;
+  }
+  public resetValueWo() {
+    this._valueWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueWoInput() {
+    return this._valueWo;
+  }
+
+  // value_wo_version - computed: false, optional: true, required: false
+  private _valueWoVersion?: string; 
+  public get valueWoVersion() {
+    return this.getStringAttribute('value_wo_version');
+  }
+  public set valueWoVersion(value: string) {
+    this._valueWoVersion = value;
+  }
+  public resetValueWoVersion() {
+    this._valueWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueWoVersionInput() {
+    return this._valueWoVersion;
+  }
+
   // options - computed: false, optional: true, required: false
   private _options = new SyntheticsGlobalVariableOptionsList(this, "options", false);
   public get options() {
     return this._options;
   }
-  public putOptions(value: SyntheticsGlobalVariableOptions[] | cdktf.IResolvable) {
+  public putOptions(value: SyntheticsGlobalVariableOptions[] | cdktn.IResolvable) {
     this._options.internalValue = value;
   }
   public resetOptions() {
@@ -950,7 +996,7 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
   public get parseTestOptions() {
     return this._parseTestOptions;
   }
-  public putParseTestOptions(value: SyntheticsGlobalVariableParseTestOptions[] | cdktf.IResolvable) {
+  public putParseTestOptions(value: SyntheticsGlobalVariableParseTestOptions[] | cdktn.IResolvable) {
     this._parseTestOptions.internalValue = value;
   }
   public resetParseTestOptions() {
@@ -967,84 +1013,98 @@ export class SyntheticsGlobalVariable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      is_fido: cdktf.booleanToTerraform(this._isFido),
-      is_totp: cdktf.booleanToTerraform(this._isTotp),
-      name: cdktf.stringToTerraform(this._name),
-      parse_test_id: cdktf.stringToTerraform(this._parseTestId),
-      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restrictedRoles),
-      secure: cdktf.booleanToTerraform(this._secure),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      value: cdktf.stringToTerraform(this._value),
-      options: cdktf.listMapper(syntheticsGlobalVariableOptionsToTerraform, true)(this._options.internalValue),
-      parse_test_options: cdktf.listMapper(syntheticsGlobalVariableParseTestOptionsToTerraform, true)(this._parseTestOptions.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      is_fido: cdktn.booleanToTerraform(this._isFido),
+      is_totp: cdktn.booleanToTerraform(this._isTotp),
+      name: cdktn.stringToTerraform(this._name),
+      parse_test_id: cdktn.stringToTerraform(this._parseTestId),
+      restricted_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._restrictedRoles),
+      secure: cdktn.booleanToTerraform(this._secure),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      value: cdktn.stringToTerraform(this._value),
+      value_wo: cdktn.stringToTerraform(this._valueWo),
+      value_wo_version: cdktn.stringToTerraform(this._valueWoVersion),
+      options: cdktn.listMapper(syntheticsGlobalVariableOptionsToTerraform, true)(this._options.internalValue),
+      parse_test_options: cdktn.listMapper(syntheticsGlobalVariableParseTestOptionsToTerraform, true)(this._parseTestOptions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_fido: {
-        value: cdktf.booleanToHclTerraform(this._isFido),
+        value: cdktn.booleanToHclTerraform(this._isFido),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_totp: {
-        value: cdktf.booleanToHclTerraform(this._isTotp),
+        value: cdktn.booleanToHclTerraform(this._isTotp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parse_test_id: {
-        value: cdktf.stringToHclTerraform(this._parseTestId),
+        value: cdktn.stringToHclTerraform(this._parseTestId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restricted_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._restrictedRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._restrictedRoles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       secure: {
-        value: cdktf.booleanToHclTerraform(this._secure),
+        value: cdktn.booleanToHclTerraform(this._secure),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_wo: {
+        value: cdktn.stringToHclTerraform(this._valueWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value_wo_version: {
+        value: cdktn.stringToHclTerraform(this._valueWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.listMapperHcl(syntheticsGlobalVariableOptionsToHclTerraform, true)(this._options.internalValue),
+        value: cdktn.listMapperHcl(syntheticsGlobalVariableOptionsToHclTerraform, true)(this._options.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SyntheticsGlobalVariableOptionsList",
       },
       parse_test_options: {
-        value: cdktf.listMapperHcl(syntheticsGlobalVariableParseTestOptionsToHclTerraform, true)(this._parseTestOptions.internalValue),
+        value: cdktn.listMapperHcl(syntheticsGlobalVariableParseTestOptionsToHclTerraform, true)(this._parseTestOptions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SyntheticsGlobalVariableParseTestOptionsList",

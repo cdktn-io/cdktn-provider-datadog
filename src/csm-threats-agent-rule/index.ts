@@ -1,264 +1,94 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CsmThreatsAgentRuleConfig extends cdktf.TerraformMetaArguments {
+export interface CsmThreatsAgentRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description for the Agent rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
   */
   readonly description?: string;
   /**
   * Indicates whether the Agent rule is enabled. Must not be used without policy_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The SECL expression of the Agent rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
   */
   readonly expression: string;
   /**
   * The name of the Agent rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
   */
   readonly name: string;
   /**
   * The ID of the agent policy in which the rule is saved
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
   */
   readonly policyId?: string;
   /**
   * The list of product tags associated with the rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
   */
   readonly productTags?: string[];
   /**
+  * Indicates whether the Agent rule is silent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#silent CsmThreatsAgentRule#silent}
+  */
+  readonly silent?: boolean | cdktn.IResolvable;
+  /**
   * actions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
   */
-  readonly actions?: CsmThreatsAgentRuleActions[] | cdktf.IResolvable;
+  readonly actions?: CsmThreatsAgentRuleActions[] | cdktn.IResolvable;
 }
 export interface CsmThreatsAgentRuleActionsHash {
-}
-
-export function csmThreatsAgentRuleActionsHashToTerraform(struct?: CsmThreatsAgentRuleActionsHash | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-
-export function csmThreatsAgentRuleActionsHashToHclTerraform(struct?: CsmThreatsAgentRuleActionsHash | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CsmThreatsAgentRuleActionsHashOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
-
   /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false);
-  }
-
-  public get internalValue(): CsmThreatsAgentRuleActionsHash | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CsmThreatsAgentRuleActionsHash | cdktf.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-    }
-  }
-}
-export interface CsmThreatsAgentRuleActionsSet {
-  /**
-  * Whether to append to the set
+  * The field to hash
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
-  */
-  readonly append?: boolean | cdktf.IResolvable;
-  /**
-  * The default value to set
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
-  */
-  readonly defaultValue?: string;
-  /**
-  * The expression to use for the set action
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
-  */
-  readonly expression?: string;
-  /**
-  * The field to get the value from
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
   */
   readonly field?: string;
-  /**
-  * Whether the set action is inherited
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
-  */
-  readonly inherited?: boolean | cdktf.IResolvable;
-  /**
-  * The name of the set action
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
-  */
-  readonly name: string;
-  /**
-  * The scope of the set action (process, container, cgroup, or empty)
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
-  */
-  readonly scope?: string;
-  /**
-  * The maximum size of the set
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
-  */
-  readonly size?: number;
-  /**
-  * The time to live for the set in nanoseconds
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
-  */
-  readonly ttl?: number;
-  /**
-  * The value to set
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
-  */
-  readonly value?: string;
 }
 
-export function csmThreatsAgentRuleActionsSetToTerraform(struct?: CsmThreatsAgentRuleActionsSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function csmThreatsAgentRuleActionsHashToTerraform(struct?: CsmThreatsAgentRuleActionsHash | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    append: cdktf.booleanToTerraform(struct!.append),
-    default_value: cdktf.stringToTerraform(struct!.defaultValue),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    field: cdktf.stringToTerraform(struct!.field),
-    inherited: cdktf.booleanToTerraform(struct!.inherited),
-    name: cdktf.stringToTerraform(struct!.name),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    size: cdktf.numberToTerraform(struct!.size),
-    ttl: cdktf.numberToTerraform(struct!.ttl),
-    value: cdktf.stringToTerraform(struct!.value),
+    field: cdktn.stringToTerraform(struct!.field),
   }
 }
 
 
-export function csmThreatsAgentRuleActionsSetToHclTerraform(struct?: CsmThreatsAgentRuleActionsSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function csmThreatsAgentRuleActionsHashToHclTerraform(struct?: CsmThreatsAgentRuleActionsHash | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    append: {
-      value: cdktf.booleanToHclTerraform(struct!.append),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    default_value: {
-      value: cdktf.stringToHclTerraform(struct!.defaultValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    inherited: {
-      value: cdktf.booleanToHclTerraform(struct!.inherited),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    ttl: {
-      value: cdktf.numberToHclTerraform(struct!.ttl),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -269,19 +99,232 @@ export function csmThreatsAgentRuleActionsSetToHclTerraform(struct?: CsmThreatsA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CsmThreatsAgentRuleActionsSetOutputReference extends cdktf.ComplexObject {
+export class CsmThreatsAgentRuleActionsHashOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CsmThreatsAgentRuleActionsSet | cdktf.IResolvable | undefined {
+  public get internalValue(): CsmThreatsAgentRuleActionsHash | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._field !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CsmThreatsAgentRuleActionsHash | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._field = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._field = value.field;
+    }
+  }
+
+  // field - computed: false, optional: true, required: false
+  private _field?: string; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string) {
+    this._field = value;
+  }
+  public resetField() {
+    this._field = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field;
+  }
+}
+export interface CsmThreatsAgentRuleActionsSet {
+  /**
+  * Whether to append to the set
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
+  */
+  readonly append?: boolean | cdktn.IResolvable;
+  /**
+  * The default value to set
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
+  */
+  readonly defaultValue?: string;
+  /**
+  * The expression to use for the set action
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+  */
+  readonly expression?: string;
+  /**
+  * The field to get the value from
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+  */
+  readonly field?: string;
+  /**
+  * Whether the set action is inherited
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
+  */
+  readonly inherited?: boolean | cdktn.IResolvable;
+  /**
+  * The name of the set action
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+  */
+  readonly name?: string;
+  /**
+  * The scope of the set action (process, container, cgroup, or empty)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
+  */
+  readonly scope?: string;
+  /**
+  * The maximum size of the set
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
+  */
+  readonly size?: number;
+  /**
+  * The time to live for the set in nanoseconds
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
+  */
+  readonly ttl?: number;
+  /**
+  * The value to set
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
+  */
+  readonly value?: string;
+}
+
+export function csmThreatsAgentRuleActionsSetToTerraform(struct?: CsmThreatsAgentRuleActionsSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    append: cdktn.booleanToTerraform(struct!.append),
+    default_value: cdktn.stringToTerraform(struct!.defaultValue),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    field: cdktn.stringToTerraform(struct!.field),
+    inherited: cdktn.booleanToTerraform(struct!.inherited),
+    name: cdktn.stringToTerraform(struct!.name),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    size: cdktn.numberToTerraform(struct!.size),
+    ttl: cdktn.numberToTerraform(struct!.ttl),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function csmThreatsAgentRuleActionsSetToHclTerraform(struct?: CsmThreatsAgentRuleActionsSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    append: {
+      value: cdktn.booleanToHclTerraform(struct!.append),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    default_value: {
+      value: cdktn.stringToHclTerraform(struct!.defaultValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    expression: {
+      value: cdktn.stringToHclTerraform(struct!.expression),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    field: {
+      value: cdktn.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    inherited: {
+      value: cdktn.booleanToHclTerraform(struct!.inherited),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scope: {
+      value: cdktn.stringToHclTerraform(struct!.scope),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size: {
+      value: cdktn.numberToHclTerraform(struct!.size),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    ttl: {
+      value: cdktn.numberToHclTerraform(struct!.ttl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CsmThreatsAgentRuleActionsSetOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): CsmThreatsAgentRuleActionsSet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -330,7 +373,7 @@ export class CsmThreatsAgentRuleActionsSetOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CsmThreatsAgentRuleActionsSet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CsmThreatsAgentRuleActionsSet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -345,7 +388,7 @@ export class CsmThreatsAgentRuleActionsSetOutputReference extends cdktf.ComplexO
       this._ttl = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -366,11 +409,11 @@ export class CsmThreatsAgentRuleActionsSetOutputReference extends cdktf.ComplexO
   }
 
   // append - computed: true, optional: true, required: false
-  private _append?: boolean | cdktf.IResolvable; 
+  private _append?: boolean | cdktn.IResolvable; 
   public get append() {
     return this.getBooleanAttribute('append');
   }
-  public set append(value: boolean | cdktf.IResolvable) {
+  public set append(value: boolean | cdktn.IResolvable) {
     this._append = value;
   }
   public resetAppend() {
@@ -430,11 +473,11 @@ export class CsmThreatsAgentRuleActionsSetOutputReference extends cdktf.ComplexO
   }
 
   // inherited - computed: true, optional: true, required: false
-  private _inherited?: boolean | cdktf.IResolvable; 
+  private _inherited?: boolean | cdktn.IResolvable; 
   public get inherited() {
     return this.getBooleanAttribute('inherited');
   }
-  public set inherited(value: boolean | cdktf.IResolvable) {
+  public set inherited(value: boolean | cdktn.IResolvable) {
     this._inherited = value;
   }
   public resetInherited() {
@@ -445,13 +488,16 @@ export class CsmThreatsAgentRuleActionsSetOutputReference extends cdktf.ComplexO
     return this._inherited;
   }
 
-  // name - computed: false, optional: false, required: true
+  // name - computed: false, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
@@ -526,20 +572,20 @@ export interface CsmThreatsAgentRuleActions {
   /**
   * hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
   */
   readonly hash?: CsmThreatsAgentRuleActionsHash;
   /**
   * set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
   */
   readonly set?: CsmThreatsAgentRuleActionsSet;
 }
 
-export function csmThreatsAgentRuleActionsToTerraform(struct?: CsmThreatsAgentRuleActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function csmThreatsAgentRuleActionsToTerraform(struct?: CsmThreatsAgentRuleActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -549,9 +595,9 @@ export function csmThreatsAgentRuleActionsToTerraform(struct?: CsmThreatsAgentRu
 }
 
 
-export function csmThreatsAgentRuleActionsToHclTerraform(struct?: CsmThreatsAgentRuleActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function csmThreatsAgentRuleActionsToHclTerraform(struct?: CsmThreatsAgentRuleActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -573,9 +619,9 @@ export function csmThreatsAgentRuleActionsToHclTerraform(struct?: CsmThreatsAgen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CsmThreatsAgentRuleActionsOutputReference extends cdktf.ComplexObject {
+export class CsmThreatsAgentRuleActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -583,11 +629,11 @@ export class CsmThreatsAgentRuleActionsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CsmThreatsAgentRuleActions | cdktf.IResolvable | undefined {
+  public get internalValue(): CsmThreatsAgentRuleActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -604,14 +650,14 @@ export class CsmThreatsAgentRuleActionsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CsmThreatsAgentRuleActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CsmThreatsAgentRuleActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._hash.internalValue = undefined;
       this._set.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -623,13 +669,16 @@ export class CsmThreatsAgentRuleActionsOutputReference extends cdktf.ComplexObje
     }
   }
 
-  // hash - computed: false, optional: true, required: true
+  // hash - computed: false, optional: true, required: false
   private _hash = new CsmThreatsAgentRuleActionsHashOutputReference(this, "hash");
   public get hash() {
     return this._hash;
   }
   public putHash(value: CsmThreatsAgentRuleActionsHash) {
     this._hash.internalValue = value;
+  }
+  public resetHash() {
+    this._hash.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hashInput() {
@@ -653,15 +702,15 @@ export class CsmThreatsAgentRuleActionsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class CsmThreatsAgentRuleActionsList extends cdktf.ComplexList {
-  public internalValue? : CsmThreatsAgentRuleActions[] | cdktf.IResolvable
+export class CsmThreatsAgentRuleActionsList extends cdktn.ComplexList {
+  public internalValue? : CsmThreatsAgentRuleActions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -674,9 +723,9 @@ export class CsmThreatsAgentRuleActionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}
 */
-export class CsmThreatsAgentRule extends cdktf.TerraformResource {
+export class CsmThreatsAgentRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -687,14 +736,14 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CsmThreatsAgentRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CsmThreatsAgentRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CsmThreatsAgentRule to import
-  * @param importFromId The id of the existing CsmThreatsAgentRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CsmThreatsAgentRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CsmThreatsAgentRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_csm_threats_agent_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_csm_threats_agent_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -702,7 +751,7 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -713,7 +762,7 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_csm_threats_agent_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -730,6 +779,7 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
     this._name = config.name;
     this._policyId = config.policyId;
     this._productTags = config.productTags;
+    this._silent = config.silent;
     this._actions.internalValue = config.actions;
   }
 
@@ -754,11 +804,11 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -819,7 +869,7 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
   // product_tags - computed: true, optional: true, required: false
   private _productTags?: string[]; 
   public get productTags() {
-    return cdktf.Fn.tolist(this.getListAttribute('product_tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('product_tags'));
   }
   public set productTags(value: string[]) {
     this._productTags = value;
@@ -832,12 +882,28 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
     return this._productTags;
   }
 
+  // silent - computed: true, optional: true, required: false
+  private _silent?: boolean | cdktn.IResolvable; 
+  public get silent() {
+    return this.getBooleanAttribute('silent');
+  }
+  public set silent(value: boolean | cdktn.IResolvable) {
+    this._silent = value;
+  }
+  public resetSilent() {
+    this._silent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get silentInput() {
+    return this._silent;
+  }
+
   // actions - computed: false, optional: true, required: false
   private _actions = new CsmThreatsAgentRuleActionsList(this, "actions", false);
   public get actions() {
     return this._actions;
   }
-  public putActions(value: CsmThreatsAgentRuleActions[] | cdktf.IResolvable) {
+  public putActions(value: CsmThreatsAgentRuleActions[] | cdktn.IResolvable) {
     this._actions.internalValue = value;
   }
   public resetActions() {
@@ -854,56 +920,63 @@ export class CsmThreatsAgentRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      expression: cdktf.stringToTerraform(this._expression),
-      name: cdktf.stringToTerraform(this._name),
-      policy_id: cdktf.stringToTerraform(this._policyId),
-      product_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._productTags),
-      actions: cdktf.listMapper(csmThreatsAgentRuleActionsToTerraform, true)(this._actions.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      expression: cdktn.stringToTerraform(this._expression),
+      name: cdktn.stringToTerraform(this._name),
+      policy_id: cdktn.stringToTerraform(this._policyId),
+      product_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._productTags),
+      silent: cdktn.booleanToTerraform(this._silent),
+      actions: cdktn.listMapper(csmThreatsAgentRuleActionsToTerraform, true)(this._actions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       expression: {
-        value: cdktf.stringToHclTerraform(this._expression),
+        value: cdktn.stringToHclTerraform(this._expression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_id: {
-        value: cdktf.stringToHclTerraform(this._policyId),
+        value: cdktn.stringToHclTerraform(this._policyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       product_tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._productTags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._productTags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
+      silent: {
+        value: cdktn.booleanToHclTerraform(this._silent),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       actions: {
-        value: cdktf.listMapperHcl(csmThreatsAgentRuleActionsToHclTerraform, true)(this._actions.internalValue),
+        value: cdktn.listMapperHcl(csmThreatsAgentRuleActionsToHclTerraform, true)(this._actions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CsmThreatsAgentRuleActionsList",

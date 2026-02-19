@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/domain_allowlist
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/domain_allowlist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DomainAllowlistConfig extends cdktf.TerraformMetaArguments {
+export interface DomainAllowlistConfig extends cdktn.TerraformMetaArguments {
   /**
   * The domains within the domain allowlist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
   */
   readonly domains: string[];
   /**
   * Whether the Email Domain Allowlist is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/domain_allowlist datadog_domain_allowlist}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/domain_allowlist datadog_domain_allowlist}
 */
-export class DomainAllowlist extends cdktf.TerraformResource {
+export class DomainAllowlist extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class DomainAllowlist extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DomainAllowlist resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DomainAllowlist resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DomainAllowlist to import
-  * @param importFromId The id of the existing DomainAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DomainAllowlist that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DomainAllowlist to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_domain_allowlist", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_domain_allowlist", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +55,7 @@ export class DomainAllowlist extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/domain_allowlist datadog_domain_allowlist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class DomainAllowlist extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_domain_allowlist',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -99,11 +99,11 @@ export class DomainAllowlist extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -122,21 +122,21 @@ export class DomainAllowlist extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domains),
-      enabled: cdktf.booleanToTerraform(this._enabled),
+      domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._domains),
+      enabled: cdktn.booleanToTerraform(this._enabled),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._domains),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

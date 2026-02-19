@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorConfigPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorConfigPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy#id MonitorConfigPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface MonitorConfigPolicyConfig extends cdktf.TerraformMetaArguments 
   /**
   * The monitor config policy type Valid values are `tag`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy#policy_type MonitorConfigPolicy#policy_type}
   */
   readonly policyType: string;
   /**
   * tag_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy#tag_policy MonitorConfigPolicy#tag_policy}
   */
   readonly tagPolicy?: MonitorConfigPolicyTagPolicy;
 }
@@ -36,56 +36,56 @@ export interface MonitorConfigPolicyTagPolicy {
   /**
   * The key of the tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy#tag_key MonitorConfigPolicy#tag_key}
   */
   readonly tagKey: string;
   /**
   * If a tag key is required for monitor creation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy#tag_key_required MonitorConfigPolicy#tag_key_required}
   */
-  readonly tagKeyRequired: boolean | cdktf.IResolvable;
+  readonly tagKeyRequired: boolean | cdktn.IResolvable;
   /**
   * Valid values for the tag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy#valid_tag_values MonitorConfigPolicy#valid_tag_values}
   */
   readonly validTagValues: string[];
 }
 
 export function monitorConfigPolicyTagPolicyToTerraform(struct?: MonitorConfigPolicyTagPolicyOutputReference | MonitorConfigPolicyTagPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tag_key: cdktf.stringToTerraform(struct!.tagKey),
-    tag_key_required: cdktf.booleanToTerraform(struct!.tagKeyRequired),
-    valid_tag_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.validTagValues),
+    tag_key: cdktn.stringToTerraform(struct!.tagKey),
+    tag_key_required: cdktn.booleanToTerraform(struct!.tagKeyRequired),
+    valid_tag_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.validTagValues),
   }
 }
 
 
 export function monitorConfigPolicyTagPolicyToHclTerraform(struct?: MonitorConfigPolicyTagPolicyOutputReference | MonitorConfigPolicyTagPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tag_key: {
-      value: cdktf.stringToHclTerraform(struct!.tagKey),
+      value: cdktn.stringToHclTerraform(struct!.tagKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_key_required: {
-      value: cdktf.booleanToHclTerraform(struct!.tagKeyRequired),
+      value: cdktn.booleanToHclTerraform(struct!.tagKeyRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     valid_tag_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.validTagValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.validTagValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -96,14 +96,14 @@ export function monitorConfigPolicyTagPolicyToHclTerraform(struct?: MonitorConfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorConfigPolicyTagPolicyOutputReference extends cdktf.ComplexObject {
+export class MonitorConfigPolicyTagPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -154,11 +154,11 @@ export class MonitorConfigPolicyTagPolicyOutputReference extends cdktf.ComplexOb
   }
 
   // tag_key_required - computed: false, optional: false, required: true
-  private _tagKeyRequired?: boolean | cdktf.IResolvable; 
+  private _tagKeyRequired?: boolean | cdktn.IResolvable; 
   public get tagKeyRequired() {
     return this.getBooleanAttribute('tag_key_required');
   }
-  public set tagKeyRequired(value: boolean | cdktf.IResolvable) {
+  public set tagKeyRequired(value: boolean | cdktn.IResolvable) {
     this._tagKeyRequired = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -181,9 +181,9 @@ export class MonitorConfigPolicyTagPolicyOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy datadog_monitor_config_policy}
 */
-export class MonitorConfigPolicy extends cdktf.TerraformResource {
+export class MonitorConfigPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -194,14 +194,14 @@ export class MonitorConfigPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorConfigPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorConfigPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorConfigPolicy to import
-  * @param importFromId The id of the existing MonitorConfigPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorConfigPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorConfigPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_monitor_config_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_monitor_config_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -209,7 +209,7 @@ export class MonitorConfigPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_config_policy datadog_monitor_config_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +220,7 @@ export class MonitorConfigPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_monitor_config_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -291,8 +291,8 @@ export class MonitorConfigPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      policy_type: cdktf.stringToTerraform(this._policyType),
+      id: cdktn.stringToTerraform(this._id),
+      policy_type: cdktn.stringToTerraform(this._policyType),
       tag_policy: monitorConfigPolicyTagPolicyToTerraform(this._tagPolicy.internalValue),
     };
   }
@@ -300,13 +300,13 @@ export class MonitorConfigPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_type: {
-        value: cdktf.stringToHclTerraform(this._policyType),
+        value: cdktn.stringToHclTerraform(this._policyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

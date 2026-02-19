@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudConfigurationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface CloudConfigurationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the cloud configuration rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Defaults to empty list. This function will be deprecated soon. Use the notification rules function instead. Fields to group by when generating signals, e.g. @resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#group_by CloudConfigurationRule#group_by}
   */
   readonly groupBy?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,99 +34,99 @@ export interface CloudConfigurationRuleConfig extends cdktf.TerraformMetaArgumen
   /**
   * The message associated to the rule that will be shown in findings and signals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
   */
   readonly message: string;
   /**
   * The name of the cloud configuration rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
   */
   readonly name: string;
   /**
   * This function will be deprecated soon. Use the notification rules function instead. Notification targets for signals. Defaults to empty list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
   */
   readonly notifications?: string[];
   /**
   * Policy written in Rego format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
   */
   readonly policy: string;
   /**
   * Related resource types to be checked by the rule. Defaults to empty list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
   */
   readonly relatedResourceTypes?: string[];
   /**
   * Main resource type to be checked by the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
   */
   readonly resourceType: string;
   /**
   * Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
   */
   readonly severity: string;
   /**
   * Tags of the rule, propagated to findings and signals. Defaults to empty list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
   */
   readonly tags?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
   */
-  readonly filter?: CloudConfigurationRuleFilter[] | cdktf.IResolvable;
+  readonly filter?: CloudConfigurationRuleFilter[] | cdktn.IResolvable;
 }
 export interface CloudConfigurationRuleFilter {
   /**
   * The type of filtering action. Valid values are `require`, `suppress`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
   */
   readonly action: string;
   /**
   * Query for selecting logs to apply the filtering action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
   */
   readonly query: string;
 }
 
-export function cloudConfigurationRuleFilterToTerraform(struct?: CloudConfigurationRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudConfigurationRuleFilterToTerraform(struct?: CloudConfigurationRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    query: cdktf.stringToTerraform(struct!.query),
+    action: cdktn.stringToTerraform(struct!.action),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function cloudConfigurationRuleFilterToHclTerraform(struct?: CloudConfigurationRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cloudConfigurationRuleFilterToHclTerraform(struct?: CloudConfigurationRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,9 +137,9 @@ export function cloudConfigurationRuleFilterToHclTerraform(struct?: CloudConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CloudConfigurationRuleFilterOutputReference extends cdktf.ComplexObject {
+export class CloudConfigurationRuleFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -147,11 +147,11 @@ export class CloudConfigurationRuleFilterOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CloudConfigurationRuleFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): CloudConfigurationRuleFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,14 +168,14 @@ export class CloudConfigurationRuleFilterOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CloudConfigurationRuleFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CloudConfigurationRuleFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,15 +214,15 @@ export class CloudConfigurationRuleFilterOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class CloudConfigurationRuleFilterList extends cdktf.ComplexList {
-  public internalValue? : CloudConfigurationRuleFilter[] | cdktf.IResolvable
+export class CloudConfigurationRuleFilterList extends cdktn.ComplexList {
+  public internalValue? : CloudConfigurationRuleFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -235,9 +235,9 @@ export class CloudConfigurationRuleFilterList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}
 */
-export class CloudConfigurationRule extends cdktf.TerraformResource {
+export class CloudConfigurationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -248,14 +248,14 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudConfigurationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudConfigurationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudConfigurationRule to import
-  * @param importFromId The id of the existing CloudConfigurationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudConfigurationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudConfigurationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_cloud_configuration_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_cloud_configuration_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -263,7 +263,7 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -274,7 +274,7 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_cloud_configuration_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -304,11 +304,11 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -466,7 +466,7 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: CloudConfigurationRuleFilter[] | cdktf.IResolvable) {
+  public putFilter(value: CloudConfigurationRuleFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -483,91 +483,91 @@ export class CloudConfigurationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupBy),
-      id: cdktf.stringToTerraform(this._id),
-      message: cdktf.stringToTerraform(this._message),
-      name: cdktf.stringToTerraform(this._name),
-      notifications: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifications),
-      policy: cdktf.stringToTerraform(this._policy),
-      related_resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._relatedResourceTypes),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      severity: cdktf.stringToTerraform(this._severity),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      filter: cdktf.listMapper(cloudConfigurationRuleFilterToTerraform, true)(this._filter.internalValue),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(this._groupBy),
+      id: cdktn.stringToTerraform(this._id),
+      message: cdktn.stringToTerraform(this._message),
+      name: cdktn.stringToTerraform(this._name),
+      notifications: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notifications),
+      policy: cdktn.stringToTerraform(this._policy),
+      related_resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._relatedResourceTypes),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      severity: cdktn.stringToTerraform(this._severity),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      filter: cdktn.listMapper(cloudConfigurationRuleFilterToTerraform, true)(this._filter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       group_by: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupBy),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._groupBy),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message: {
-        value: cdktf.stringToHclTerraform(this._message),
+        value: cdktn.stringToHclTerraform(this._message),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notifications: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifications),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notifications),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       related_resource_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._relatedResourceTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._relatedResourceTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       severity: {
-        value: cdktf.stringToHclTerraform(this._severity),
+        value: cdktn.stringToHclTerraform(this._severity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       filter: {
-        value: cdktf.listMapperHcl(cloudConfigurationRuleFilterToHclTerraform, true)(this._filter.internalValue),
+        value: cdktn.listMapperHcl(cloudConfigurationRuleFilterToHclTerraform, true)(this._filter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CloudConfigurationRuleFilterList",

@@ -1,45 +1,45 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AzureUcConfigConfig extends cdktf.TerraformMetaArguments {
+export interface AzureUcConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The tenant ID of the Azure account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
   */
   readonly accountId: string;
   /**
   * The client ID of the Azure account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
   */
   readonly clientId: string;
   /**
   * The scope of your observed subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
   */
   readonly scope: string;
   /**
   * actual_bill_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
   */
   readonly actualBillConfig: AzureUcConfigActualBillConfig;
   /**
   * amortized_bill_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
   */
   readonly amortizedBillConfig: AzureUcConfigAmortizedBillConfig;
 }
@@ -47,69 +47,69 @@ export interface AzureUcConfigActualBillConfig {
   /**
   * The name of the configured Azure Export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
   */
   readonly exportName: string;
   /**
   * The path where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
   */
   readonly exportPath: string;
   /**
   * The name of the storage account where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
   */
   readonly storageAccount: string;
   /**
   * The name of the storage container where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
   */
   readonly storageContainer: string;
 }
 
-export function azureUcConfigActualBillConfigToTerraform(struct?: AzureUcConfigActualBillConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureUcConfigActualBillConfigToTerraform(struct?: AzureUcConfigActualBillConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    export_name: cdktf.stringToTerraform(struct!.exportName),
-    export_path: cdktf.stringToTerraform(struct!.exportPath),
-    storage_account: cdktf.stringToTerraform(struct!.storageAccount),
-    storage_container: cdktf.stringToTerraform(struct!.storageContainer),
+    export_name: cdktn.stringToTerraform(struct!.exportName),
+    export_path: cdktn.stringToTerraform(struct!.exportPath),
+    storage_account: cdktn.stringToTerraform(struct!.storageAccount),
+    storage_container: cdktn.stringToTerraform(struct!.storageContainer),
   }
 }
 
 
-export function azureUcConfigActualBillConfigToHclTerraform(struct?: AzureUcConfigActualBillConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureUcConfigActualBillConfigToHclTerraform(struct?: AzureUcConfigActualBillConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     export_name: {
-      value: cdktf.stringToHclTerraform(struct!.exportName),
+      value: cdktn.stringToHclTerraform(struct!.exportName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_path: {
-      value: cdktf.stringToHclTerraform(struct!.exportPath),
+      value: cdktn.stringToHclTerraform(struct!.exportPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccount),
+      value: cdktn.stringToHclTerraform(struct!.storageAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_container: {
-      value: cdktf.stringToHclTerraform(struct!.storageContainer),
+      value: cdktn.stringToHclTerraform(struct!.storageContainer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,19 +120,19 @@ export function azureUcConfigActualBillConfigToHclTerraform(struct?: AzureUcConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AzureUcConfigActualBillConfigOutputReference extends cdktf.ComplexObject {
+export class AzureUcConfigActualBillConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AzureUcConfigActualBillConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AzureUcConfigActualBillConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class AzureUcConfigActualBillConfigOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AzureUcConfigActualBillConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AzureUcConfigActualBillConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -166,7 +166,7 @@ export class AzureUcConfigActualBillConfigOutputReference extends cdktf.ComplexO
       this._storageAccount = undefined;
       this._storageContainer = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -236,69 +236,69 @@ export interface AzureUcConfigAmortizedBillConfig {
   /**
   * The name of the configured Azure Export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
   */
   readonly exportName: string;
   /**
   * The path where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
   */
   readonly exportPath: string;
   /**
   * The name of the storage account where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
   */
   readonly storageAccount: string;
   /**
   * The name of the storage container where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
   */
   readonly storageContainer: string;
 }
 
-export function azureUcConfigAmortizedBillConfigToTerraform(struct?: AzureUcConfigAmortizedBillConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureUcConfigAmortizedBillConfigToTerraform(struct?: AzureUcConfigAmortizedBillConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    export_name: cdktf.stringToTerraform(struct!.exportName),
-    export_path: cdktf.stringToTerraform(struct!.exportPath),
-    storage_account: cdktf.stringToTerraform(struct!.storageAccount),
-    storage_container: cdktf.stringToTerraform(struct!.storageContainer),
+    export_name: cdktn.stringToTerraform(struct!.exportName),
+    export_path: cdktn.stringToTerraform(struct!.exportPath),
+    storage_account: cdktn.stringToTerraform(struct!.storageAccount),
+    storage_container: cdktn.stringToTerraform(struct!.storageContainer),
   }
 }
 
 
-export function azureUcConfigAmortizedBillConfigToHclTerraform(struct?: AzureUcConfigAmortizedBillConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureUcConfigAmortizedBillConfigToHclTerraform(struct?: AzureUcConfigAmortizedBillConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     export_name: {
-      value: cdktf.stringToHclTerraform(struct!.exportName),
+      value: cdktn.stringToHclTerraform(struct!.exportName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     export_path: {
-      value: cdktf.stringToHclTerraform(struct!.exportPath),
+      value: cdktn.stringToHclTerraform(struct!.exportPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccount),
+      value: cdktn.stringToHclTerraform(struct!.storageAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_container: {
-      value: cdktf.stringToHclTerraform(struct!.storageContainer),
+      value: cdktn.stringToHclTerraform(struct!.storageContainer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -309,19 +309,19 @@ export function azureUcConfigAmortizedBillConfigToHclTerraform(struct?: AzureUcC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AzureUcConfigAmortizedBillConfigOutputReference extends cdktf.ComplexObject {
+export class AzureUcConfigAmortizedBillConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AzureUcConfigAmortizedBillConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): AzureUcConfigAmortizedBillConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -346,7 +346,7 @@ export class AzureUcConfigAmortizedBillConfigOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AzureUcConfigAmortizedBillConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AzureUcConfigAmortizedBillConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -355,7 +355,7 @@ export class AzureUcConfigAmortizedBillConfigOutputReference extends cdktf.Compl
       this._storageAccount = undefined;
       this._storageContainer = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -423,9 +423,9 @@ export class AzureUcConfigAmortizedBillConfigOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config datadog_azure_uc_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config datadog_azure_uc_config}
 */
-export class AzureUcConfig extends cdktf.TerraformResource {
+export class AzureUcConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -436,14 +436,14 @@ export class AzureUcConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzureUcConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzureUcConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureUcConfig to import
-  * @param importFromId The id of the existing AzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureUcConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_azure_uc_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_azure_uc_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -451,7 +451,7 @@ export class AzureUcConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/azure_uc_config datadog_azure_uc_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/azure_uc_config datadog_azure_uc_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -462,7 +462,7 @@ export class AzureUcConfig extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_azure_uc_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -585,9 +585,9 @@ export class AzureUcConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      scope: cdktf.stringToTerraform(this._scope),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      scope: cdktn.stringToTerraform(this._scope),
       actual_bill_config: azureUcConfigActualBillConfigToTerraform(this._actualBillConfig.internalValue),
       amortized_bill_config: azureUcConfigAmortizedBillConfigToTerraform(this._amortizedBillConfig.internalValue),
     };
@@ -596,19 +596,19 @@ export class AzureUcConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

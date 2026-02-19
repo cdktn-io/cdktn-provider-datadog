@@ -1,13 +1,13 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -15,103 +15,103 @@ export interface DatadogProviderConfig {
   /**
   * (Required unless validate is false) Datadog API key. This can also be set via the DD_API_KEY environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#api_key DatadogProvider#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#api_key DatadogProvider#api_key}
   */
   readonly apiKey?: string;
   /**
   * The API URL. This can also be set via the DD_HOST environment variable, and defaults to `https://api.datadoghq.com`. Note that this URL must not end with the `/api/` path. For example, `https://api.datadoghq.com/` is a correct value, while `https://api.datadoghq.com/api/` is not. And if you're working with "EU" version of Datadog, use `https://api.datadoghq.eu/`. Other Datadog region examples: `https://api.us5.datadoghq.com/`, `https://api.us3.datadoghq.com/` and `https://api.ddog-gov.com/`. See https://docs.datadoghq.com/getting_started/site/ for all available regions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#api_url DatadogProvider#api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#api_url DatadogProvider#api_url}
   */
   readonly apiUrl?: string;
   /**
   * (Required unless validate is false) Datadog APP key. This can also be set via the DD_APP_KEY environment variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#app_key DatadogProvider#app_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#app_key DatadogProvider#app_key}
   */
   readonly appKey?: string;
   /**
   * The AWS access key ID; used for cloud-provider-based authentication. This can also be set using the `AWS_ACCESS_KEY_ID` environment variable. Required when using `cloud_provider_type` set to `aws`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#aws_access_key_id DatadogProvider#aws_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#aws_access_key_id DatadogProvider#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
   * The AWS secret access key; used for cloud-provider-based authentication. This can also be set using the `AWS_SECRET_ACCESS_KEY` environment variable. Required when using `cloud_provider_type` set to `aws`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#aws_secret_access_key DatadogProvider#aws_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#aws_secret_access_key DatadogProvider#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
   * The AWS session token; used for cloud-provider-based authentication. This can also be set using the `AWS_SESSION_TOKEN` environment variable. Required when using `cloud_provider_type` set to `aws` and using temporary credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#aws_session_token DatadogProvider#aws_session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#aws_session_token DatadogProvider#aws_session_token}
   */
   readonly awsSessionToken?: string;
   /**
   * The cloud provider region specifier; used for cloud-provider-based authentication. For example, `us-east-1` for AWS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#cloud_provider_region DatadogProvider#cloud_provider_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#cloud_provider_region DatadogProvider#cloud_provider_region}
   */
   readonly cloudProviderRegion?: string;
   /**
   * Specifies the cloud provider used for cloud-provider-based authentication, enabling keyless access without API or app keys. Only [`aws`] is supported. This feature is in Preview. If you'd like to enable it for your organization, contact [support](https://docs.datadoghq.com/help/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#cloud_provider_type DatadogProvider#cloud_provider_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#cloud_provider_type DatadogProvider#cloud_provider_type}
   */
   readonly cloudProviderType?: string;
   /**
   * The HTTP request retry back off base. Defaults to 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#http_client_retry_backoff_base DatadogProvider#http_client_retry_backoff_base}
   */
   readonly httpClientRetryBackoffBase?: number;
   /**
   * The HTTP request retry back off multiplier. Defaults to 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#http_client_retry_backoff_multiplier DatadogProvider#http_client_retry_backoff_multiplier}
   */
   readonly httpClientRetryBackoffMultiplier?: number;
   /**
   * Enables request retries on HTTP status codes 429 and 5xx. Valid values are [`true`, `false`]. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#http_client_retry_enabled DatadogProvider#http_client_retry_enabled}
   */
   readonly httpClientRetryEnabled?: string;
   /**
   * The HTTP request maximum retry number. Defaults to 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#http_client_retry_max_retries DatadogProvider#http_client_retry_max_retries}
   */
   readonly httpClientRetryMaxRetries?: number;
   /**
   * The HTTP request retry timeout period. Defaults to 60 seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#http_client_retry_timeout DatadogProvider#http_client_retry_timeout}
   */
   readonly httpClientRetryTimeout?: number;
   /**
   * The organization UUID; used for cloud-provider-based authentication. See the [Datadog API documentation](https://docs.datadoghq.com/api/v1/organizations/) for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#org_uuid DatadogProvider#org_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#org_uuid DatadogProvider#org_uuid}
   */
   readonly orgUuid?: string;
   /**
   * Enables validation of the provided API key during provider initialization. Valid values are [`true`, `false`]. Default is true. When false, api_key won't be checked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#validate DatadogProvider#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#validate DatadogProvider#validate}
   */
   readonly validate?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#alias DatadogProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#alias DatadogProvider#alias}
   */
   readonly alias?: string;
   /**
   * default_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#default_tags DatadogProvider#default_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#default_tags DatadogProvider#default_tags}
   */
   readonly defaultTags?: DatadogProviderDefaultTags;
 }
@@ -119,30 +119,30 @@ export interface DatadogProviderDefaultTags {
   /**
   * [Experimental - Logs Pipelines, Monitors Security Monitoring Rules, and Service Level Objectives only] Resource tags to be applied by default across all resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#tags DatadogProvider#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#tags DatadogProvider#tags}
   */
   readonly tags?: { [key: string]: string };
 }
 
 export function datadogProviderDefaultTagsToTerraform(struct?: DatadogProviderDefaultTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
+    tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.tags),
   }
 }
 
 
 export function datadogProviderDefaultTagsToHclTerraform(struct?: DatadogProviderDefaultTags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.tags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.tags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -155,9 +155,9 @@ export function datadogProviderDefaultTagsToHclTerraform(struct?: DatadogProvide
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs datadog}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs datadog}
 */
-export class DatadogProvider extends cdktf.TerraformProvider {
+export class DatadogProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -168,14 +168,14 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatadogProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatadogProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatadogProvider to import
-  * @param importFromId The id of the existing DatadogProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatadogProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatadogProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog", importId: importFromId, provider });
       }
 
   // ===========
@@ -183,7 +183,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs datadog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs datadog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -194,7 +194,7 @@ export class DatadogProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'datadog',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       terraformProviderSource: 'DataDog/datadog'
@@ -500,22 +500,22 @@ export class DatadogProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      api_url: cdktf.stringToTerraform(this._apiUrl),
-      app_key: cdktf.stringToTerraform(this._appKey),
-      aws_access_key_id: cdktf.stringToTerraform(this._awsAccessKeyId),
-      aws_secret_access_key: cdktf.stringToTerraform(this._awsSecretAccessKey),
-      aws_session_token: cdktf.stringToTerraform(this._awsSessionToken),
-      cloud_provider_region: cdktf.stringToTerraform(this._cloudProviderRegion),
-      cloud_provider_type: cdktf.stringToTerraform(this._cloudProviderType),
-      http_client_retry_backoff_base: cdktf.numberToTerraform(this._httpClientRetryBackoffBase),
-      http_client_retry_backoff_multiplier: cdktf.numberToTerraform(this._httpClientRetryBackoffMultiplier),
-      http_client_retry_enabled: cdktf.stringToTerraform(this._httpClientRetryEnabled),
-      http_client_retry_max_retries: cdktf.numberToTerraform(this._httpClientRetryMaxRetries),
-      http_client_retry_timeout: cdktf.numberToTerraform(this._httpClientRetryTimeout),
-      org_uuid: cdktf.stringToTerraform(this._orgUuid),
-      validate: cdktf.stringToTerraform(this._validate),
-      alias: cdktf.stringToTerraform(this._alias),
+      api_key: cdktn.stringToTerraform(this._apiKey),
+      api_url: cdktn.stringToTerraform(this._apiUrl),
+      app_key: cdktn.stringToTerraform(this._appKey),
+      aws_access_key_id: cdktn.stringToTerraform(this._awsAccessKeyId),
+      aws_secret_access_key: cdktn.stringToTerraform(this._awsSecretAccessKey),
+      aws_session_token: cdktn.stringToTerraform(this._awsSessionToken),
+      cloud_provider_region: cdktn.stringToTerraform(this._cloudProviderRegion),
+      cloud_provider_type: cdktn.stringToTerraform(this._cloudProviderType),
+      http_client_retry_backoff_base: cdktn.numberToTerraform(this._httpClientRetryBackoffBase),
+      http_client_retry_backoff_multiplier: cdktn.numberToTerraform(this._httpClientRetryBackoffMultiplier),
+      http_client_retry_enabled: cdktn.stringToTerraform(this._httpClientRetryEnabled),
+      http_client_retry_max_retries: cdktn.numberToTerraform(this._httpClientRetryMaxRetries),
+      http_client_retry_timeout: cdktn.numberToTerraform(this._httpClientRetryTimeout),
+      org_uuid: cdktn.stringToTerraform(this._orgUuid),
+      validate: cdktn.stringToTerraform(this._validate),
+      alias: cdktn.stringToTerraform(this._alias),
       default_tags: datadogProviderDefaultTagsToTerraform(this._defaultTags),
     };
   }
@@ -523,97 +523,97 @@ export class DatadogProvider extends cdktf.TerraformProvider {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key: {
-        value: cdktf.stringToHclTerraform(this._apiKey),
+        value: cdktn.stringToHclTerraform(this._apiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_url: {
-        value: cdktf.stringToHclTerraform(this._apiUrl),
+        value: cdktn.stringToHclTerraform(this._apiUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       app_key: {
-        value: cdktf.stringToHclTerraform(this._appKey),
+        value: cdktn.stringToHclTerraform(this._appKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_access_key_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccessKeyId),
+        value: cdktn.stringToHclTerraform(this._awsAccessKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_secret_access_key: {
-        value: cdktf.stringToHclTerraform(this._awsSecretAccessKey),
+        value: cdktn.stringToHclTerraform(this._awsSecretAccessKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_session_token: {
-        value: cdktf.stringToHclTerraform(this._awsSessionToken),
+        value: cdktn.stringToHclTerraform(this._awsSessionToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_provider_region: {
-        value: cdktf.stringToHclTerraform(this._cloudProviderRegion),
+        value: cdktn.stringToHclTerraform(this._cloudProviderRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_provider_type: {
-        value: cdktf.stringToHclTerraform(this._cloudProviderType),
+        value: cdktn.stringToHclTerraform(this._cloudProviderType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_client_retry_backoff_base: {
-        value: cdktf.numberToHclTerraform(this._httpClientRetryBackoffBase),
+        value: cdktn.numberToHclTerraform(this._httpClientRetryBackoffBase),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       http_client_retry_backoff_multiplier: {
-        value: cdktf.numberToHclTerraform(this._httpClientRetryBackoffMultiplier),
+        value: cdktn.numberToHclTerraform(this._httpClientRetryBackoffMultiplier),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       http_client_retry_enabled: {
-        value: cdktf.stringToHclTerraform(this._httpClientRetryEnabled),
+        value: cdktn.stringToHclTerraform(this._httpClientRetryEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_client_retry_max_retries: {
-        value: cdktf.numberToHclTerraform(this._httpClientRetryMaxRetries),
+        value: cdktn.numberToHclTerraform(this._httpClientRetryMaxRetries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       http_client_retry_timeout: {
-        value: cdktf.numberToHclTerraform(this._httpClientRetryTimeout),
+        value: cdktn.numberToHclTerraform(this._httpClientRetryTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       org_uuid: {
-        value: cdktf.stringToHclTerraform(this._orgUuid),
+        value: cdktn.stringToHclTerraform(this._orgUuid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validate: {
-        value: cdktf.stringToHclTerraform(this._validate),
+        value: cdktn.stringToHclTerraform(this._validate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

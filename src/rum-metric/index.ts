@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RumMetricConfig extends cdktf.TerraformMetaArguments {
+export interface RumMetricConfig extends cdktn.TerraformMetaArguments {
   /**
   * The type of RUM events to filter on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#event_type RumMetric#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#event_type RumMetric#event_type}
   */
   readonly eventType: string;
   /**
   * The name of the RUM-based metric. This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#name RumMetric#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#name RumMetric#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#compute RumMetric#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#compute RumMetric#compute}
   */
   readonly compute?: RumMetricCompute;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#filter RumMetric#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#filter RumMetric#filter}
   */
   readonly filter?: RumMetricFilter;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#group_by RumMetric#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#group_by RumMetric#group_by}
   */
-  readonly groupBy?: RumMetricGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: RumMetricGroupBy[] | cdktn.IResolvable;
   /**
   * uniqueness block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
   */
   readonly uniqueness?: RumMetricUniqueness;
 }
@@ -53,56 +53,56 @@ export interface RumMetricCompute {
   /**
   * The type of aggregation to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include or exclude percentile aggregations for distribution metrics. Only present when `aggregation_type` is `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
   */
-  readonly includePercentiles?: boolean | cdktf.IResolvable;
+  readonly includePercentiles?: boolean | cdktn.IResolvable;
   /**
   * The path to the value the RUM-based metric will aggregate on. Only present when `aggregation_type` is `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#path RumMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#path RumMetric#path}
   */
   readonly path?: string;
 }
 
-export function rumMetricComputeToTerraform(struct?: RumMetricCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricComputeToTerraform(struct?: RumMetricCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation_type: cdktf.stringToTerraform(struct!.aggregationType),
-    include_percentiles: cdktf.booleanToTerraform(struct!.includePercentiles),
-    path: cdktf.stringToTerraform(struct!.path),
+    aggregation_type: cdktn.stringToTerraform(struct!.aggregationType),
+    include_percentiles: cdktn.booleanToTerraform(struct!.includePercentiles),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function rumMetricComputeToHclTerraform(struct?: RumMetricCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricComputeToHclTerraform(struct?: RumMetricCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation_type: {
-      value: cdktf.stringToHclTerraform(struct!.aggregationType),
+      value: cdktn.stringToHclTerraform(struct!.aggregationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_percentiles: {
-      value: cdktf.booleanToHclTerraform(struct!.includePercentiles),
+      value: cdktn.booleanToHclTerraform(struct!.includePercentiles),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function rumMetricComputeToHclTerraform(struct?: RumMetricCompute | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RumMetricComputeOutputReference extends cdktf.ComplexObject {
+export class RumMetricComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RumMetricCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): RumMetricCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,7 +146,7 @@ export class RumMetricComputeOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RumMetricCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RumMetricCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -154,7 +154,7 @@ export class RumMetricComputeOutputReference extends cdktf.ComplexObject {
       this._includePercentiles = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -181,11 +181,11 @@ export class RumMetricComputeOutputReference extends cdktf.ComplexObject {
   }
 
   // include_percentiles - computed: false, optional: true, required: false
-  private _includePercentiles?: boolean | cdktf.IResolvable; 
+  private _includePercentiles?: boolean | cdktn.IResolvable; 
   public get includePercentiles() {
     return this.getBooleanAttribute('include_percentiles');
   }
-  public set includePercentiles(value: boolean | cdktf.IResolvable) {
+  public set includePercentiles(value: boolean | cdktn.IResolvable) {
     this._includePercentiles = value;
   }
   public resetIncludePercentiles() {
@@ -216,30 +216,30 @@ export interface RumMetricFilter {
   /**
   * The search query. Follows RUM search syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#query RumMetric#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#query RumMetric#query}
   */
   readonly query?: string;
 }
 
-export function rumMetricFilterToTerraform(struct?: RumMetricFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricFilterToTerraform(struct?: RumMetricFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function rumMetricFilterToHclTerraform(struct?: RumMetricFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricFilterToHclTerraform(struct?: RumMetricFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -250,19 +250,19 @@ export function rumMetricFilterToHclTerraform(struct?: RumMetricFilter | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RumMetricFilterOutputReference extends cdktf.ComplexObject {
+export class RumMetricFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RumMetricFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): RumMetricFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -275,13 +275,13 @@ export class RumMetricFilterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RumMetricFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RumMetricFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -312,43 +312,43 @@ export interface RumMetricGroupBy {
   /**
   * The path to the value the RUM-based metric will be aggregated over.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#path RumMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#path RumMetric#path}
   */
   readonly path?: string;
   /**
   * Name of the tag that gets created. By default, `path` is used as the tag name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
   */
   readonly tagName?: string;
 }
 
-export function rumMetricGroupByToTerraform(struct?: RumMetricGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricGroupByToTerraform(struct?: RumMetricGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    tag_name: cdktf.stringToTerraform(struct!.tagName),
+    path: cdktn.stringToTerraform(struct!.path),
+    tag_name: cdktn.stringToTerraform(struct!.tagName),
   }
 }
 
 
-export function rumMetricGroupByToHclTerraform(struct?: RumMetricGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricGroupByToHclTerraform(struct?: RumMetricGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.tagName),
+      value: cdktn.stringToHclTerraform(struct!.tagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -359,9 +359,9 @@ export function rumMetricGroupByToHclTerraform(struct?: RumMetricGroupBy | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RumMetricGroupByOutputReference extends cdktf.ComplexObject {
+export class RumMetricGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -369,11 +369,11 @@ export class RumMetricGroupByOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RumMetricGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): RumMetricGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -390,14 +390,14 @@ export class RumMetricGroupByOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RumMetricGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RumMetricGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._path = undefined;
       this._tagName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -442,15 +442,15 @@ export class RumMetricGroupByOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class RumMetricGroupByList extends cdktf.ComplexList {
-  public internalValue? : RumMetricGroupBy[] | cdktf.IResolvable
+export class RumMetricGroupByList extends cdktn.ComplexList {
+  public internalValue? : RumMetricGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -465,30 +465,30 @@ export interface RumMetricUniqueness {
   /**
   * When to count updatable events. `match` when the event is first seen, or `end` when the event is complete.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#when RumMetric#when}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#when RumMetric#when}
   */
   readonly when?: string;
 }
 
-export function rumMetricUniquenessToTerraform(struct?: RumMetricUniqueness | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricUniquenessToTerraform(struct?: RumMetricUniqueness | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    when: cdktf.stringToTerraform(struct!.when),
+    when: cdktn.stringToTerraform(struct!.when),
   }
 }
 
 
-export function rumMetricUniquenessToHclTerraform(struct?: RumMetricUniqueness | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rumMetricUniquenessToHclTerraform(struct?: RumMetricUniqueness | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     when: {
-      value: cdktf.stringToHclTerraform(struct!.when),
+      value: cdktn.stringToHclTerraform(struct!.when),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -499,19 +499,19 @@ export function rumMetricUniquenessToHclTerraform(struct?: RumMetricUniqueness |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RumMetricUniquenessOutputReference extends cdktf.ComplexObject {
+export class RumMetricUniquenessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RumMetricUniqueness | cdktf.IResolvable | undefined {
+  public get internalValue(): RumMetricUniqueness | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -524,13 +524,13 @@ export class RumMetricUniquenessOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RumMetricUniqueness | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RumMetricUniqueness | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._when = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -559,9 +559,9 @@ export class RumMetricUniquenessOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric datadog_rum_metric}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric datadog_rum_metric}
 */
-export class RumMetric extends cdktf.TerraformResource {
+export class RumMetric extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -572,14 +572,14 @@ export class RumMetric extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RumMetric resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RumMetric resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumMetric to import
-  * @param importFromId The id of the existing RumMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumMetric to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_rum_metric", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_rum_metric", importId: importFromId, provider });
       }
 
   // ===========
@@ -587,7 +587,7 @@ export class RumMetric extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_metric datadog_rum_metric} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_metric datadog_rum_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -598,7 +598,7 @@ export class RumMetric extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_rum_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -689,7 +689,7 @@ export class RumMetric extends cdktf.TerraformResource {
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: RumMetricGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: RumMetricGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -722,11 +722,11 @@ export class RumMetric extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      event_type: cdktf.stringToTerraform(this._eventType),
-      name: cdktf.stringToTerraform(this._name),
+      event_type: cdktn.stringToTerraform(this._eventType),
+      name: cdktn.stringToTerraform(this._name),
       compute: rumMetricComputeToTerraform(this._compute.internalValue),
       filter: rumMetricFilterToTerraform(this._filter.internalValue),
-      group_by: cdktf.listMapper(rumMetricGroupByToTerraform, true)(this._groupBy.internalValue),
+      group_by: cdktn.listMapper(rumMetricGroupByToTerraform, true)(this._groupBy.internalValue),
       uniqueness: rumMetricUniquenessToTerraform(this._uniqueness.internalValue),
     };
   }
@@ -734,13 +734,13 @@ export class RumMetric extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       event_type: {
-        value: cdktf.stringToHclTerraform(this._eventType),
+        value: cdktn.stringToHclTerraform(this._eventType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -758,7 +758,7 @@ export class RumMetric extends cdktf.TerraformResource {
         storageClassType: "RumMetricFilter",
       },
       group_by: {
-        value: cdktf.listMapperHcl(rumMetricGroupByToHclTerraform, true)(this._groupBy.internalValue),
+        value: cdktn.listMapperHcl(rumMetricGroupByToHclTerraform, true)(this._groupBy.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "RumMetricGroupByList",

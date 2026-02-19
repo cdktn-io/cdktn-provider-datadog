@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive_order
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogsArchiveOrderConfig extends cdktf.TerraformMetaArguments {
+export interface LogsArchiveOrderConfig extends cdktn.TerraformMetaArguments {
   /**
   * The archive IDs list. The order of archive IDs in this attribute defines the overall archive order for logs. If `archive_ids` is empty or not specified, it will import the actual archive order, and create the resource. Otherwise, it will try to update the order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive_order#archive_ids LogsArchiveOrder#archive_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive_order#archive_ids LogsArchiveOrder#archive_ids}
   */
   readonly archiveIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive_order#id LogsArchiveOrder#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive_order#id LogsArchiveOrder#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,9 +28,9 @@ export interface LogsArchiveOrderConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive_order datadog_logs_archive_order}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive_order datadog_logs_archive_order}
 */
-export class LogsArchiveOrder extends cdktf.TerraformResource {
+export class LogsArchiveOrder extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -41,14 +41,14 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogsArchiveOrder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogsArchiveOrder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsArchiveOrder to import
-  * @param importFromId The id of the existing LogsArchiveOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive_order#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsArchiveOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive_order#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsArchiveOrder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_archive_order", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_archive_order", importId: importFromId, provider });
       }
 
   // ===========
@@ -56,7 +56,7 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive_order datadog_logs_archive_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_archive_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -124,21 +124,21 @@ export class LogsArchiveOrder extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      archive_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._archiveIds),
-      id: cdktf.stringToTerraform(this._id),
+      archive_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._archiveIds),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       archive_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._archiveIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._archiveIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

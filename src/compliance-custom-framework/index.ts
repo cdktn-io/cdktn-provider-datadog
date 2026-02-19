@@ -1,89 +1,89 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ComplianceCustomFrameworkConfig extends cdktf.TerraformMetaArguments {
+export interface ComplianceCustomFrameworkConfig extends cdktn.TerraformMetaArguments {
   /**
   * The framework handle. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
   */
   readonly handle: string;
   /**
   * The URL of the icon representing the framework
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
   */
   readonly iconUrl?: string;
   /**
   * The framework name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
   */
   readonly name: string;
   /**
   * The framework version. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
   */
   readonly version: string;
   /**
   * requirements block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
   */
-  readonly requirements?: ComplianceCustomFrameworkRequirements[] | cdktf.IResolvable;
+  readonly requirements?: ComplianceCustomFrameworkRequirements[] | cdktn.IResolvable;
 }
 export interface ComplianceCustomFrameworkRequirementsControls {
   /**
   * The name of the control. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
   */
   readonly name: string;
   /**
   * The set of rules IDs for the control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
   */
   readonly rulesId: string[];
 }
 
-export function complianceCustomFrameworkRequirementsControlsToTerraform(struct?: ComplianceCustomFrameworkRequirementsControls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function complianceCustomFrameworkRequirementsControlsToTerraform(struct?: ComplianceCustomFrameworkRequirementsControls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    rules_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rulesId),
+    name: cdktn.stringToTerraform(struct!.name),
+    rules_id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rulesId),
   }
 }
 
 
-export function complianceCustomFrameworkRequirementsControlsToHclTerraform(struct?: ComplianceCustomFrameworkRequirementsControls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function complianceCustomFrameworkRequirementsControlsToHclTerraform(struct?: ComplianceCustomFrameworkRequirementsControls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rules_id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rulesId),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rulesId),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -94,9 +94,9 @@ export function complianceCustomFrameworkRequirementsControlsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComplianceCustomFrameworkRequirementsControlsOutputReference extends cdktf.ComplexObject {
+export class ComplianceCustomFrameworkRequirementsControlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,11 +104,11 @@ export class ComplianceCustomFrameworkRequirementsControlsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComplianceCustomFrameworkRequirementsControls | cdktf.IResolvable | undefined {
+  public get internalValue(): ComplianceCustomFrameworkRequirementsControls | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -125,14 +125,14 @@ export class ComplianceCustomFrameworkRequirementsControlsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComplianceCustomFrameworkRequirementsControls | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComplianceCustomFrameworkRequirementsControls | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._rulesId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,7 +160,7 @@ export class ComplianceCustomFrameworkRequirementsControlsOutputReference extend
   // rules_id - computed: false, optional: false, required: true
   private _rulesId?: string[]; 
   public get rulesId() {
-    return cdktf.Fn.tolist(this.getListAttribute('rules_id'));
+    return cdktn.Fn.tolist(this.getListAttribute('rules_id'));
   }
   public set rulesId(value: string[]) {
     this._rulesId = value;
@@ -171,15 +171,15 @@ export class ComplianceCustomFrameworkRequirementsControlsOutputReference extend
   }
 }
 
-export class ComplianceCustomFrameworkRequirementsControlsList extends cdktf.ComplexList {
-  public internalValue? : ComplianceCustomFrameworkRequirementsControls[] | cdktf.IResolvable
+export class ComplianceCustomFrameworkRequirementsControlsList extends cdktn.ComplexList {
+  public internalValue? : ComplianceCustomFrameworkRequirementsControls[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,43 +194,43 @@ export interface ComplianceCustomFrameworkRequirements {
   /**
   * The name of the requirement. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
   */
   readonly name: string;
   /**
   * controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
   */
-  readonly controls?: ComplianceCustomFrameworkRequirementsControls[] | cdktf.IResolvable;
+  readonly controls?: ComplianceCustomFrameworkRequirementsControls[] | cdktn.IResolvable;
 }
 
-export function complianceCustomFrameworkRequirementsToTerraform(struct?: ComplianceCustomFrameworkRequirements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function complianceCustomFrameworkRequirementsToTerraform(struct?: ComplianceCustomFrameworkRequirements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    controls: cdktf.listMapper(complianceCustomFrameworkRequirementsControlsToTerraform, true)(struct!.controls),
+    name: cdktn.stringToTerraform(struct!.name),
+    controls: cdktn.listMapper(complianceCustomFrameworkRequirementsControlsToTerraform, true)(struct!.controls),
   }
 }
 
 
-export function complianceCustomFrameworkRequirementsToHclTerraform(struct?: ComplianceCustomFrameworkRequirements | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function complianceCustomFrameworkRequirementsToHclTerraform(struct?: ComplianceCustomFrameworkRequirements | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     controls: {
-      value: cdktf.listMapperHcl(complianceCustomFrameworkRequirementsControlsToHclTerraform, true)(struct!.controls),
+      value: cdktn.listMapperHcl(complianceCustomFrameworkRequirementsControlsToHclTerraform, true)(struct!.controls),
       isBlock: true,
       type: "list",
       storageClassType: "ComplianceCustomFrameworkRequirementsControlsList",
@@ -241,9 +241,9 @@ export function complianceCustomFrameworkRequirementsToHclTerraform(struct?: Com
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ComplianceCustomFrameworkRequirementsOutputReference extends cdktf.ComplexObject {
+export class ComplianceCustomFrameworkRequirementsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -251,11 +251,11 @@ export class ComplianceCustomFrameworkRequirementsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ComplianceCustomFrameworkRequirements | cdktf.IResolvable | undefined {
+  public get internalValue(): ComplianceCustomFrameworkRequirements | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -272,14 +272,14 @@ export class ComplianceCustomFrameworkRequirementsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ComplianceCustomFrameworkRequirements | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ComplianceCustomFrameworkRequirements | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._controls.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -309,7 +309,7 @@ export class ComplianceCustomFrameworkRequirementsOutputReference extends cdktf.
   public get controls() {
     return this._controls;
   }
-  public putControls(value: ComplianceCustomFrameworkRequirementsControls[] | cdktf.IResolvable) {
+  public putControls(value: ComplianceCustomFrameworkRequirementsControls[] | cdktn.IResolvable) {
     this._controls.internalValue = value;
   }
   public resetControls() {
@@ -321,15 +321,15 @@ export class ComplianceCustomFrameworkRequirementsOutputReference extends cdktf.
   }
 }
 
-export class ComplianceCustomFrameworkRequirementsList extends cdktf.ComplexList {
-  public internalValue? : ComplianceCustomFrameworkRequirements[] | cdktf.IResolvable
+export class ComplianceCustomFrameworkRequirementsList extends cdktn.ComplexList {
+  public internalValue? : ComplianceCustomFrameworkRequirements[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -342,9 +342,9 @@ export class ComplianceCustomFrameworkRequirementsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}
 */
-export class ComplianceCustomFramework extends cdktf.TerraformResource {
+export class ComplianceCustomFramework extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -355,14 +355,14 @@ export class ComplianceCustomFramework extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ComplianceCustomFramework resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ComplianceCustomFramework resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComplianceCustomFramework to import
-  * @param importFromId The id of the existing ComplianceCustomFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComplianceCustomFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComplianceCustomFramework to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_compliance_custom_framework", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_compliance_custom_framework", importId: importFromId, provider });
       }
 
   // ===========
@@ -370,7 +370,7 @@ export class ComplianceCustomFramework extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -381,7 +381,7 @@ export class ComplianceCustomFramework extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_compliance_custom_framework',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -468,7 +468,7 @@ export class ComplianceCustomFramework extends cdktf.TerraformResource {
   public get requirements() {
     return this._requirements;
   }
-  public putRequirements(value: ComplianceCustomFrameworkRequirements[] | cdktf.IResolvable) {
+  public putRequirements(value: ComplianceCustomFrameworkRequirements[] | cdktn.IResolvable) {
     this._requirements.internalValue = value;
   }
   public resetRequirements() {
@@ -485,42 +485,42 @@ export class ComplianceCustomFramework extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      handle: cdktf.stringToTerraform(this._handle),
-      icon_url: cdktf.stringToTerraform(this._iconUrl),
-      name: cdktf.stringToTerraform(this._name),
-      version: cdktf.stringToTerraform(this._version),
-      requirements: cdktf.listMapper(complianceCustomFrameworkRequirementsToTerraform, true)(this._requirements.internalValue),
+      handle: cdktn.stringToTerraform(this._handle),
+      icon_url: cdktn.stringToTerraform(this._iconUrl),
+      name: cdktn.stringToTerraform(this._name),
+      version: cdktn.stringToTerraform(this._version),
+      requirements: cdktn.listMapper(complianceCustomFrameworkRequirementsToTerraform, true)(this._requirements.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       handle: {
-        value: cdktf.stringToHclTerraform(this._handle),
+        value: cdktn.stringToHclTerraform(this._handle),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       icon_url: {
-        value: cdktf.stringToHclTerraform(this._iconUrl),
+        value: cdktn.stringToHclTerraform(this._iconUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requirements: {
-        value: cdktf.listMapperHcl(complianceCustomFrameworkRequirementsToHclTerraform, true)(this._requirements.internalValue),
+        value: cdktn.listMapperHcl(complianceCustomFrameworkRequirementsToHclTerraform, true)(this._requirements.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComplianceCustomFrameworkRequirementsList",

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -19,69 +19,69 @@ powerpackWidgetToHclTerraform,
 PowerpackWidgetList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface PowerpackConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface PowerpackConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description of the powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#description Powerpack#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#description Powerpack#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#id Powerpack#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#id Powerpack#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
+  * The timeframe to use when displaying the powerpack. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#live_span Powerpack#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#live_span Powerpack#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The name for the powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name?: string;
   /**
   * Whether or not title should be displayed in the powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#show_title Powerpack#show_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#show_title Powerpack#show_title}
   */
-  readonly showTitle?: boolean | cdktf.IResolvable;
+  readonly showTitle?: boolean | cdktn.IResolvable;
   /**
   * List of tags to identify this powerpack.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#tags Powerpack#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#tags Powerpack#tags}
   */
   readonly tags?: string[];
   /**
   * layout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#layout Powerpack#layout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#layout Powerpack#layout}
   */
   readonly layout?: PowerpackLayout;
   /**
   * template_variables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#template_variables Powerpack#template_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#template_variables Powerpack#template_variables}
   */
-  readonly templateVariables?: PowerpackTemplateVariables[] | cdktf.IResolvable;
+  readonly templateVariables?: PowerpackTemplateVariables[] | cdktn.IResolvable;
   /**
   * widget block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#widget Powerpack#widget}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#widget Powerpack#widget}
   */
-  readonly widget?: PowerpackWidget[] | cdktf.IResolvable;
+  readonly widget?: PowerpackWidget[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack datadog_powerpack}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack datadog_powerpack}
 */
-export class Powerpack extends cdktf.TerraformResource {
+export class Powerpack extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -92,14 +92,14 @@ export class Powerpack extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Powerpack resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Powerpack resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Powerpack to import
-  * @param importFromId The id of the existing Powerpack that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Powerpack that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Powerpack to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_powerpack", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_powerpack", importId: importFromId, provider });
       }
 
   // ===========
@@ -107,7 +107,7 @@ export class Powerpack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack datadog_powerpack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack datadog_powerpack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -118,7 +118,7 @@ export class Powerpack extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_powerpack',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -209,11 +209,11 @@ export class Powerpack extends cdktf.TerraformResource {
   }
 
   // show_title - computed: false, optional: true, required: false
-  private _showTitle?: boolean | cdktf.IResolvable; 
+  private _showTitle?: boolean | cdktn.IResolvable; 
   public get showTitle() {
     return this.getBooleanAttribute('show_title');
   }
-  public set showTitle(value: boolean | cdktf.IResolvable) {
+  public set showTitle(value: boolean | cdktn.IResolvable) {
     this._showTitle = value;
   }
   public resetShowTitle() {
@@ -227,7 +227,7 @@ export class Powerpack extends cdktf.TerraformResource {
   // tags - computed: false, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -261,7 +261,7 @@ export class Powerpack extends cdktf.TerraformResource {
   public get templateVariables() {
     return this._templateVariables;
   }
-  public putTemplateVariables(value: PowerpackTemplateVariables[] | cdktf.IResolvable) {
+  public putTemplateVariables(value: PowerpackTemplateVariables[] | cdktn.IResolvable) {
     this._templateVariables.internalValue = value;
   }
   public resetTemplateVariables() {
@@ -277,7 +277,7 @@ export class Powerpack extends cdktf.TerraformResource {
   public get widget() {
     return this._widget;
   }
-  public putWidget(value: PowerpackWidget[] | cdktf.IResolvable) {
+  public putWidget(value: PowerpackWidget[] | cdktn.IResolvable) {
     this._widget.internalValue = value;
   }
   public resetWidget() {
@@ -294,52 +294,52 @@ export class Powerpack extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      live_span: cdktf.stringToTerraform(this._liveSpan),
-      name: cdktf.stringToTerraform(this._name),
-      show_title: cdktf.booleanToTerraform(this._showTitle),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      live_span: cdktn.stringToTerraform(this._liveSpan),
+      name: cdktn.stringToTerraform(this._name),
+      show_title: cdktn.booleanToTerraform(this._showTitle),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
       layout: powerpackLayoutToTerraform(this._layout.internalValue),
-      template_variables: cdktf.listMapper(powerpackTemplateVariablesToTerraform, true)(this._templateVariables.internalValue),
-      widget: cdktf.listMapper(powerpackWidgetToTerraform, true)(this._widget.internalValue),
+      template_variables: cdktn.listMapper(powerpackTemplateVariablesToTerraform, true)(this._templateVariables.internalValue),
+      widget: cdktn.listMapper(powerpackWidgetToTerraform, true)(this._widget.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       live_span: {
-        value: cdktf.stringToHclTerraform(this._liveSpan),
+        value: cdktn.stringToHclTerraform(this._liveSpan),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       show_title: {
-        value: cdktf.booleanToHclTerraform(this._showTitle),
+        value: cdktn.booleanToHclTerraform(this._showTitle),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -351,13 +351,13 @@ export class Powerpack extends cdktf.TerraformResource {
         storageClassType: "PowerpackLayoutList",
       },
       template_variables: {
-        value: cdktf.listMapperHcl(powerpackTemplateVariablesToHclTerraform, true)(this._templateVariables.internalValue),
+        value: cdktn.listMapperHcl(powerpackTemplateVariablesToHclTerraform, true)(this._templateVariables.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PowerpackTemplateVariablesList",
       },
       widget: {
-        value: cdktf.listMapperHcl(powerpackWidgetToHclTerraform, true)(this._widget.internalValue),
+        value: cdktn.listMapperHcl(powerpackWidgetToHclTerraform, true)(this._widget.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PowerpackWidgetList",

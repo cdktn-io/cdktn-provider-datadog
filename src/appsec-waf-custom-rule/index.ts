@@ -1,107 +1,107 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsecWafCustomRuleConfig extends cdktf.TerraformMetaArguments {
+export interface AppsecWafCustomRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the WAF custom rule will block the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#blocking AppsecWafCustomRule#blocking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#blocking AppsecWafCustomRule#blocking}
   */
-  readonly blocking: boolean | cdktf.IResolvable;
+  readonly blocking: boolean | cdktn.IResolvable;
   /**
   * Indicates whether the WAF custom rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#enabled AppsecWafCustomRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#enabled AppsecWafCustomRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The Name of the WAF custom rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#name AppsecWafCustomRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#name AppsecWafCustomRule#name}
   */
   readonly name: string;
   /**
   * The path glob for the WAF custom rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#path_glob AppsecWafCustomRule#path_glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#path_glob AppsecWafCustomRule#path_glob}
   */
   readonly pathGlob?: string;
   /**
   * Tags associated with the WAF custom rule. `category` and `type` tags are required. Supported categories include `business_logic`, `attack_attempt` and `security_response`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#tags AppsecWafCustomRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#tags AppsecWafCustomRule#tags}
   */
   readonly tags: { [key: string]: string };
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
   */
   readonly action?: AppsecWafCustomRuleAction;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#condition AppsecWafCustomRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#condition AppsecWafCustomRule#condition}
   */
-  readonly condition?: AppsecWafCustomRuleCondition[] | cdktf.IResolvable;
+  readonly condition?: AppsecWafCustomRuleCondition[] | cdktn.IResolvable;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#scope AppsecWafCustomRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#scope AppsecWafCustomRule#scope}
   */
-  readonly scope?: AppsecWafCustomRuleScope[] | cdktf.IResolvable;
+  readonly scope?: AppsecWafCustomRuleScope[] | cdktn.IResolvable;
 }
 export interface AppsecWafCustomRuleActionParameters {
   /**
   * The location to redirect to when the WAF custom rule triggers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#location AppsecWafCustomRule#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#location AppsecWafCustomRule#location}
   */
   readonly location?: string;
   /**
   * The status code to return when the WAF custom rule triggers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#status_code AppsecWafCustomRule#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#status_code AppsecWafCustomRule#status_code}
   */
   readonly statusCode?: number;
 }
 
-export function appsecWafCustomRuleActionParametersToTerraform(struct?: AppsecWafCustomRuleActionParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleActionParametersToTerraform(struct?: AppsecWafCustomRuleActionParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    location: cdktf.stringToTerraform(struct!.location),
-    status_code: cdktf.numberToTerraform(struct!.statusCode),
+    location: cdktn.stringToTerraform(struct!.location),
+    status_code: cdktn.numberToTerraform(struct!.statusCode),
   }
 }
 
 
-export function appsecWafCustomRuleActionParametersToHclTerraform(struct?: AppsecWafCustomRuleActionParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleActionParametersToHclTerraform(struct?: AppsecWafCustomRuleActionParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.numberToHclTerraform(struct!.statusCode),
+      value: cdktn.numberToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -112,19 +112,19 @@ export function appsecWafCustomRuleActionParametersToHclTerraform(struct?: Appse
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafCustomRuleActionParametersOutputReference extends cdktf.ComplexObject {
+export class AppsecWafCustomRuleActionParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsecWafCustomRuleActionParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafCustomRuleActionParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,14 +141,14 @@ export class AppsecWafCustomRuleActionParametersOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafCustomRuleActionParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafCustomRuleActionParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._location = undefined;
       this._statusCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -196,37 +196,37 @@ export interface AppsecWafCustomRuleAction {
   /**
   * Override the default action to take when the WAF custom rule would block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#action AppsecWafCustomRule#action}
   */
   readonly action?: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
   */
   readonly parameters?: AppsecWafCustomRuleActionParameters;
 }
 
-export function appsecWafCustomRuleActionToTerraform(struct?: AppsecWafCustomRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleActionToTerraform(struct?: AppsecWafCustomRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
+    action: cdktn.stringToTerraform(struct!.action),
     parameters: appsecWafCustomRuleActionParametersToTerraform(struct!.parameters),
   }
 }
 
 
-export function appsecWafCustomRuleActionToHclTerraform(struct?: AppsecWafCustomRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleActionToHclTerraform(struct?: AppsecWafCustomRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -243,19 +243,19 @@ export function appsecWafCustomRuleActionToHclTerraform(struct?: AppsecWafCustom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafCustomRuleActionOutputReference extends cdktf.ComplexObject {
+export class AppsecWafCustomRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsecWafCustomRuleAction | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafCustomRuleAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -272,14 +272,14 @@ export class AppsecWafCustomRuleActionOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafCustomRuleAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafCustomRuleAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._action = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -327,43 +327,43 @@ export interface AppsecWafCustomRuleConditionParametersInput {
   /**
   * Input from the request on which the condition should apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#address AppsecWafCustomRule#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#address AppsecWafCustomRule#address}
   */
   readonly address?: string;
   /**
   * Specific path for the input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#key_path AppsecWafCustomRule#key_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#key_path AppsecWafCustomRule#key_path}
   */
   readonly keyPath?: string[];
 }
 
-export function appsecWafCustomRuleConditionParametersInputToTerraform(struct?: AppsecWafCustomRuleConditionParametersInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionParametersInputToTerraform(struct?: AppsecWafCustomRuleConditionParametersInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    key_path: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keyPath),
+    address: cdktn.stringToTerraform(struct!.address),
+    key_path: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.keyPath),
   }
 }
 
 
-export function appsecWafCustomRuleConditionParametersInputToHclTerraform(struct?: AppsecWafCustomRuleConditionParametersInput | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionParametersInputToHclTerraform(struct?: AppsecWafCustomRuleConditionParametersInput | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_path: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keyPath),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.keyPath),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -374,9 +374,9 @@ export function appsecWafCustomRuleConditionParametersInputToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafCustomRuleConditionParametersInputOutputReference extends cdktf.ComplexObject {
+export class AppsecWafCustomRuleConditionParametersInputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -384,11 +384,11 @@ export class AppsecWafCustomRuleConditionParametersInputOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsecWafCustomRuleConditionParametersInput | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafCustomRuleConditionParametersInput | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -405,14 +405,14 @@ export class AppsecWafCustomRuleConditionParametersInputOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafCustomRuleConditionParametersInput | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafCustomRuleConditionParametersInput | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._address = undefined;
       this._keyPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -457,15 +457,15 @@ export class AppsecWafCustomRuleConditionParametersInputOutputReference extends 
   }
 }
 
-export class AppsecWafCustomRuleConditionParametersInputList extends cdktf.ComplexList {
-  public internalValue? : AppsecWafCustomRuleConditionParametersInput[] | cdktf.IResolvable
+export class AppsecWafCustomRuleConditionParametersInputList extends cdktn.ComplexList {
+  public internalValue? : AppsecWafCustomRuleConditionParametersInput[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -480,43 +480,43 @@ export interface AppsecWafCustomRuleConditionParametersOptions {
   /**
   * Evaluate the value as case sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#case_sensitive AppsecWafCustomRule#case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#case_sensitive AppsecWafCustomRule#case_sensitive}
   */
-  readonly caseSensitive?: boolean | cdktf.IResolvable;
+  readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
   * Only evaluate this condition if the value has a minimum amount of characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#min_length AppsecWafCustomRule#min_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#min_length AppsecWafCustomRule#min_length}
   */
   readonly minLength?: number;
 }
 
-export function appsecWafCustomRuleConditionParametersOptionsToTerraform(struct?: AppsecWafCustomRuleConditionParametersOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionParametersOptionsToTerraform(struct?: AppsecWafCustomRuleConditionParametersOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    case_sensitive: cdktf.booleanToTerraform(struct!.caseSensitive),
-    min_length: cdktf.numberToTerraform(struct!.minLength),
+    case_sensitive: cdktn.booleanToTerraform(struct!.caseSensitive),
+    min_length: cdktn.numberToTerraform(struct!.minLength),
   }
 }
 
 
-export function appsecWafCustomRuleConditionParametersOptionsToHclTerraform(struct?: AppsecWafCustomRuleConditionParametersOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionParametersOptionsToHclTerraform(struct?: AppsecWafCustomRuleConditionParametersOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     case_sensitive: {
-      value: cdktf.booleanToHclTerraform(struct!.caseSensitive),
+      value: cdktn.booleanToHclTerraform(struct!.caseSensitive),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     min_length: {
-      value: cdktf.numberToHclTerraform(struct!.minLength),
+      value: cdktn.numberToHclTerraform(struct!.minLength),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -527,19 +527,19 @@ export function appsecWafCustomRuleConditionParametersOptionsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafCustomRuleConditionParametersOptionsOutputReference extends cdktf.ComplexObject {
+export class AppsecWafCustomRuleConditionParametersOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsecWafCustomRuleConditionParametersOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafCustomRuleConditionParametersOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -556,14 +556,14 @@ export class AppsecWafCustomRuleConditionParametersOptionsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafCustomRuleConditionParametersOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafCustomRuleConditionParametersOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._caseSensitive = undefined;
       this._minLength = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -576,11 +576,11 @@ export class AppsecWafCustomRuleConditionParametersOptionsOutputReference extend
   }
 
   // case_sensitive - computed: false, optional: true, required: false
-  private _caseSensitive?: boolean | cdktf.IResolvable; 
+  private _caseSensitive?: boolean | cdktn.IResolvable; 
   public get caseSensitive() {
     return this.getBooleanAttribute('case_sensitive');
   }
-  public set caseSensitive(value: boolean | cdktf.IResolvable) {
+  public set caseSensitive(value: boolean | cdktn.IResolvable) {
     this._caseSensitive = value;
   }
   public resetCaseSensitive() {
@@ -611,89 +611,89 @@ export interface AppsecWafCustomRuleConditionParameters {
   /**
   * Identifier of a list of data from the denylist. Can only be used as substitution from the list parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#data AppsecWafCustomRule#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#data AppsecWafCustomRule#data}
   */
   readonly data?: string;
   /**
   * List of value to use with the condition. Only used with the phrase_match, !phrase_match, exact_match and !exact_match operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#list AppsecWafCustomRule#list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#list AppsecWafCustomRule#list}
   */
   readonly list?: string[];
   /**
   * Regex to use with the condition. Only used with match_regex and !match_regex operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#regex AppsecWafCustomRule#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#regex AppsecWafCustomRule#regex}
   */
   readonly regex?: string;
   /**
   * Store the captured value in the specified tag name. Only used with the capture_data operator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#value AppsecWafCustomRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#value AppsecWafCustomRule#value}
   */
   readonly value?: string;
   /**
   * input block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#input AppsecWafCustomRule#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#input AppsecWafCustomRule#input}
   */
-  readonly input?: AppsecWafCustomRuleConditionParametersInput[] | cdktf.IResolvable;
+  readonly input?: AppsecWafCustomRuleConditionParametersInput[] | cdktn.IResolvable;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#options AppsecWafCustomRule#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#options AppsecWafCustomRule#options}
   */
   readonly options?: AppsecWafCustomRuleConditionParametersOptions;
 }
 
-export function appsecWafCustomRuleConditionParametersToTerraform(struct?: AppsecWafCustomRuleConditionParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionParametersToTerraform(struct?: AppsecWafCustomRuleConditionParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data: cdktf.stringToTerraform(struct!.data),
-    list: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.list),
-    regex: cdktf.stringToTerraform(struct!.regex),
-    value: cdktf.stringToTerraform(struct!.value),
-    input: cdktf.listMapper(appsecWafCustomRuleConditionParametersInputToTerraform, true)(struct!.input),
+    data: cdktn.stringToTerraform(struct!.data),
+    list: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.list),
+    regex: cdktn.stringToTerraform(struct!.regex),
+    value: cdktn.stringToTerraform(struct!.value),
+    input: cdktn.listMapper(appsecWafCustomRuleConditionParametersInputToTerraform, true)(struct!.input),
     options: appsecWafCustomRuleConditionParametersOptionsToTerraform(struct!.options),
   }
 }
 
 
-export function appsecWafCustomRuleConditionParametersToHclTerraform(struct?: AppsecWafCustomRuleConditionParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionParametersToHclTerraform(struct?: AppsecWafCustomRuleConditionParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data: {
-      value: cdktf.stringToHclTerraform(struct!.data),
+      value: cdktn.stringToHclTerraform(struct!.data),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     list: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.list),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.list),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     regex: {
-      value: cdktf.stringToHclTerraform(struct!.regex),
+      value: cdktn.stringToHclTerraform(struct!.regex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     input: {
-      value: cdktf.listMapperHcl(appsecWafCustomRuleConditionParametersInputToHclTerraform, true)(struct!.input),
+      value: cdktn.listMapperHcl(appsecWafCustomRuleConditionParametersInputToHclTerraform, true)(struct!.input),
       isBlock: true,
       type: "list",
       storageClassType: "AppsecWafCustomRuleConditionParametersInputList",
@@ -710,19 +710,19 @@ export function appsecWafCustomRuleConditionParametersToHclTerraform(struct?: Ap
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafCustomRuleConditionParametersOutputReference extends cdktf.ComplexObject {
+export class AppsecWafCustomRuleConditionParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsecWafCustomRuleConditionParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafCustomRuleConditionParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -755,7 +755,7 @@ export class AppsecWafCustomRuleConditionParametersOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafCustomRuleConditionParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafCustomRuleConditionParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -766,7 +766,7 @@ export class AppsecWafCustomRuleConditionParametersOutputReference extends cdktf
       this._input.internalValue = undefined;
       this._options.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -851,7 +851,7 @@ export class AppsecWafCustomRuleConditionParametersOutputReference extends cdktf
   public get input() {
     return this._input;
   }
-  public putInput(value: AppsecWafCustomRuleConditionParametersInput[] | cdktf.IResolvable) {
+  public putInput(value: AppsecWafCustomRuleConditionParametersInput[] | cdktn.IResolvable) {
     this._input.internalValue = value;
   }
   public resetInput() {
@@ -882,37 +882,37 @@ export interface AppsecWafCustomRuleCondition {
   /**
   * Operator to use for the WAF Condition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#operator AppsecWafCustomRule#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#operator AppsecWafCustomRule#operator}
   */
   readonly operator?: string;
   /**
   * parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#parameters AppsecWafCustomRule#parameters}
   */
   readonly parameters?: AppsecWafCustomRuleConditionParameters;
 }
 
-export function appsecWafCustomRuleConditionToTerraform(struct?: AppsecWafCustomRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionToTerraform(struct?: AppsecWafCustomRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
+    operator: cdktn.stringToTerraform(struct!.operator),
     parameters: appsecWafCustomRuleConditionParametersToTerraform(struct!.parameters),
   }
 }
 
 
-export function appsecWafCustomRuleConditionToHclTerraform(struct?: AppsecWafCustomRuleCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleConditionToHclTerraform(struct?: AppsecWafCustomRuleCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -929,9 +929,9 @@ export function appsecWafCustomRuleConditionToHclTerraform(struct?: AppsecWafCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafCustomRuleConditionOutputReference extends cdktf.ComplexObject {
+export class AppsecWafCustomRuleConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -939,11 +939,11 @@ export class AppsecWafCustomRuleConditionOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsecWafCustomRuleCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafCustomRuleCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -960,14 +960,14 @@ export class AppsecWafCustomRuleConditionOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafCustomRuleCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafCustomRuleCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._operator = undefined;
       this._parameters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1012,15 +1012,15 @@ export class AppsecWafCustomRuleConditionOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class AppsecWafCustomRuleConditionList extends cdktf.ComplexList {
-  public internalValue? : AppsecWafCustomRuleCondition[] | cdktf.IResolvable
+export class AppsecWafCustomRuleConditionList extends cdktn.ComplexList {
+  public internalValue? : AppsecWafCustomRuleCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1035,43 +1035,43 @@ export interface AppsecWafCustomRuleScope {
   /**
   * The environment scope for the WAF custom rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#env AppsecWafCustomRule#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#env AppsecWafCustomRule#env}
   */
   readonly env?: string;
   /**
   * The service scope for the WAF custom rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#service AppsecWafCustomRule#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#service AppsecWafCustomRule#service}
   */
   readonly service?: string;
 }
 
-export function appsecWafCustomRuleScopeToTerraform(struct?: AppsecWafCustomRuleScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleScopeToTerraform(struct?: AppsecWafCustomRuleScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    env: cdktf.stringToTerraform(struct!.env),
-    service: cdktf.stringToTerraform(struct!.service),
+    env: cdktn.stringToTerraform(struct!.env),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function appsecWafCustomRuleScopeToHclTerraform(struct?: AppsecWafCustomRuleScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafCustomRuleScopeToHclTerraform(struct?: AppsecWafCustomRuleScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1082,9 +1082,9 @@ export function appsecWafCustomRuleScopeToHclTerraform(struct?: AppsecWafCustomR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafCustomRuleScopeOutputReference extends cdktf.ComplexObject {
+export class AppsecWafCustomRuleScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1092,11 +1092,11 @@ export class AppsecWafCustomRuleScopeOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsecWafCustomRuleScope | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafCustomRuleScope | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1113,14 +1113,14 @@ export class AppsecWafCustomRuleScopeOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafCustomRuleScope | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafCustomRuleScope | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._env = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1165,15 +1165,15 @@ export class AppsecWafCustomRuleScopeOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class AppsecWafCustomRuleScopeList extends cdktf.ComplexList {
-  public internalValue? : AppsecWafCustomRuleScope[] | cdktf.IResolvable
+export class AppsecWafCustomRuleScopeList extends cdktn.ComplexList {
+  public internalValue? : AppsecWafCustomRuleScope[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1186,9 +1186,9 @@ export class AppsecWafCustomRuleScopeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule}
 */
-export class AppsecWafCustomRule extends cdktf.TerraformResource {
+export class AppsecWafCustomRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1199,14 +1199,14 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsecWafCustomRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsecWafCustomRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsecWafCustomRule to import
-  * @param importFromId The id of the existing AppsecWafCustomRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppsecWafCustomRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsecWafCustomRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_appsec_waf_custom_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_appsec_waf_custom_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -1214,7 +1214,7 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_custom_rule datadog_appsec_waf_custom_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1225,7 +1225,7 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_appsec_waf_custom_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1251,11 +1251,11 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
   // ==========
 
   // blocking - computed: false, optional: false, required: true
-  private _blocking?: boolean | cdktf.IResolvable; 
+  private _blocking?: boolean | cdktn.IResolvable; 
   public get blocking() {
     return this.getBooleanAttribute('blocking');
   }
-  public set blocking(value: boolean | cdktf.IResolvable) {
+  public set blocking(value: boolean | cdktn.IResolvable) {
     this._blocking = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1264,11 +1264,11 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1344,7 +1344,7 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
   public get condition() {
     return this._condition;
   }
-  public putCondition(value: AppsecWafCustomRuleCondition[] | cdktf.IResolvable) {
+  public putCondition(value: AppsecWafCustomRuleCondition[] | cdktn.IResolvable) {
     this._condition.internalValue = value;
   }
   public resetCondition() {
@@ -1360,7 +1360,7 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
   public get scope() {
     return this._scope;
   }
-  public putScope(value: AppsecWafCustomRuleScope[] | cdktf.IResolvable) {
+  public putScope(value: AppsecWafCustomRuleScope[] | cdktn.IResolvable) {
     this._scope.internalValue = value;
   }
   public resetScope() {
@@ -1377,45 +1377,45 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blocking: cdktf.booleanToTerraform(this._blocking),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      name: cdktf.stringToTerraform(this._name),
-      path_glob: cdktf.stringToTerraform(this._pathGlob),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      blocking: cdktn.booleanToTerraform(this._blocking),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      name: cdktn.stringToTerraform(this._name),
+      path_glob: cdktn.stringToTerraform(this._pathGlob),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       action: appsecWafCustomRuleActionToTerraform(this._action.internalValue),
-      condition: cdktf.listMapper(appsecWafCustomRuleConditionToTerraform, true)(this._condition.internalValue),
-      scope: cdktf.listMapper(appsecWafCustomRuleScopeToTerraform, true)(this._scope.internalValue),
+      condition: cdktn.listMapper(appsecWafCustomRuleConditionToTerraform, true)(this._condition.internalValue),
+      scope: cdktn.listMapper(appsecWafCustomRuleScopeToTerraform, true)(this._scope.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       blocking: {
-        value: cdktf.booleanToHclTerraform(this._blocking),
+        value: cdktn.booleanToHclTerraform(this._blocking),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path_glob: {
-        value: cdktf.stringToHclTerraform(this._pathGlob),
+        value: cdktn.stringToHclTerraform(this._pathGlob),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -1427,13 +1427,13 @@ export class AppsecWafCustomRule extends cdktf.TerraformResource {
         storageClassType: "AppsecWafCustomRuleAction",
       },
       condition: {
-        value: cdktf.listMapperHcl(appsecWafCustomRuleConditionToHclTerraform, true)(this._condition.internalValue),
+        value: cdktn.listMapperHcl(appsecWafCustomRuleConditionToHclTerraform, true)(this._condition.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsecWafCustomRuleConditionList",
       },
       scope: {
-        value: cdktf.listMapperHcl(appsecWafCustomRuleScopeToHclTerraform, true)(this._scope.internalValue),
+        value: cdktn.listMapperHcl(appsecWafCustomRuleScopeToHclTerraform, true)(this._scope.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsecWafCustomRuleScopeList",

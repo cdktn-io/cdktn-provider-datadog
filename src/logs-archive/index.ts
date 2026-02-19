@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
+export interface LogsArchiveConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#id LogsArchive#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#id LogsArchive#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,49 +22,49 @@ export interface LogsArchiveConfig extends cdktf.TerraformMetaArguments {
   /**
   * To store the tags in the archive, set the value `true`. If it is set to `false`, the tags will be dropped when the logs are sent to the archive. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#include_tags LogsArchive#include_tags}
   */
-  readonly includeTags?: boolean | cdktf.IResolvable;
+  readonly includeTags?: boolean | cdktn.IResolvable;
   /**
   * Your archive name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#name LogsArchive#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#name LogsArchive#name}
   */
   readonly name: string;
   /**
   * The archive query/filter. Logs matching this query are included in the archive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#query LogsArchive#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#query LogsArchive#query}
   */
   readonly query: string;
   /**
   * To limit the rehydration scan size for the archive, set a value in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#rehydration_max_scan_size_in_gb LogsArchive#rehydration_max_scan_size_in_gb}
   */
   readonly rehydrationMaxScanSizeInGb?: number;
   /**
   * An array of tags to add to rehydrated logs from an archive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#rehydration_tags LogsArchive#rehydration_tags}
   */
   readonly rehydrationTags?: string[];
   /**
   * azure_archive block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#azure_archive LogsArchive#azure_archive}
   */
   readonly azureArchive?: LogsArchiveAzureArchive;
   /**
   * gcs_archive block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#gcs_archive LogsArchive#gcs_archive}
   */
   readonly gcsArchive?: LogsArchiveGcsArchive;
   /**
   * s3_archive block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#s3_archive LogsArchive#s3_archive}
   */
   readonly s3Archive?: LogsArchiveS3Archive;
 }
@@ -72,82 +72,82 @@ export interface LogsArchiveAzureArchive {
   /**
   * Your client id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#client_id LogsArchive#client_id}
   */
   readonly clientId: string;
   /**
   * The container where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#container LogsArchive#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#container LogsArchive#container}
   */
   readonly container: string;
   /**
   * The path where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#path LogsArchive#path}
   */
   readonly path?: string;
   /**
   * The associated storage account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#storage_account LogsArchive#storage_account}
   */
   readonly storageAccount: string;
   /**
   * Your tenant id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#tenant_id LogsArchive#tenant_id}
   */
   readonly tenantId: string;
 }
 
 export function logsArchiveAzureArchiveToTerraform(struct?: LogsArchiveAzureArchiveOutputReference | LogsArchiveAzureArchive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    container: cdktf.stringToTerraform(struct!.container),
-    path: cdktf.stringToTerraform(struct!.path),
-    storage_account: cdktf.stringToTerraform(struct!.storageAccount),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    container: cdktn.stringToTerraform(struct!.container),
+    path: cdktn.stringToTerraform(struct!.path),
+    storage_account: cdktn.stringToTerraform(struct!.storageAccount),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function logsArchiveAzureArchiveToHclTerraform(struct?: LogsArchiveAzureArchiveOutputReference | LogsArchiveAzureArchive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     container: {
-      value: cdktf.stringToHclTerraform(struct!.container),
+      value: cdktn.stringToHclTerraform(struct!.container),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccount),
+      value: cdktn.stringToHclTerraform(struct!.storageAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -158,14 +158,14 @@ export function logsArchiveAzureArchiveToHclTerraform(struct?: LogsArchiveAzureA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsArchiveAzureArchiveOutputReference extends cdktf.ComplexObject {
+export class LogsArchiveAzureArchiveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -286,69 +286,69 @@ export interface LogsArchiveGcsArchive {
   /**
   * Name of your GCS bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
   */
   readonly bucket: string;
   /**
   * Your client email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#client_email LogsArchive#client_email}
   */
   readonly clientEmail: string;
   /**
   * Path where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#path LogsArchive#path}
   */
   readonly path?: string;
   /**
   * Your project id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#project_id LogsArchive#project_id}
   */
   readonly projectId?: string;
 }
 
 export function logsArchiveGcsArchiveToTerraform(struct?: LogsArchiveGcsArchiveOutputReference | LogsArchiveGcsArchive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    client_email: cdktf.stringToTerraform(struct!.clientEmail),
-    path: cdktf.stringToTerraform(struct!.path),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    client_email: cdktn.stringToTerraform(struct!.clientEmail),
+    path: cdktn.stringToTerraform(struct!.path),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
 export function logsArchiveGcsArchiveToHclTerraform(struct?: LogsArchiveGcsArchiveOutputReference | LogsArchiveGcsArchive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_email: {
-      value: cdktf.stringToHclTerraform(struct!.clientEmail),
+      value: cdktn.stringToHclTerraform(struct!.clientEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -359,14 +359,14 @@ export function logsArchiveGcsArchiveToHclTerraform(struct?: LogsArchiveGcsArchi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsArchiveGcsArchiveOutputReference extends cdktf.ComplexObject {
+export class LogsArchiveGcsArchiveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -471,108 +471,108 @@ export interface LogsArchiveS3Archive {
   /**
   * Your AWS account id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#account_id LogsArchive#account_id}
   */
   readonly accountId: string;
   /**
   * Name of your s3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#bucket LogsArchive#bucket}
   */
   readonly bucket: string;
   /**
   * The AWS KMS encryption key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#encryption_key LogsArchive#encryption_key}
   */
   readonly encryptionKey?: string;
   /**
   * The type of encryption on your archive. Valid values are `NO_OVERRIDE`, `SSE_S3`, `SSE_KMS`. Defaults to `"NO_OVERRIDE"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#encryption_type LogsArchive#encryption_type}
   */
   readonly encryptionType?: string;
   /**
   * Path where the archive is stored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#path LogsArchive#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#path LogsArchive#path}
   */
   readonly path?: string;
   /**
   * Your AWS role name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#role_name LogsArchive#role_name}
   */
   readonly roleName: string;
   /**
   * The AWS S3 storage class used to upload the logs. Valid values are `STANDARD`, `STANDARD_IA`, `ONEZONE_IA`, `INTELLIGENT_TIERING`, `GLACIER_IR`. Defaults to `"STANDARD"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#storage_class LogsArchive#storage_class}
   */
   readonly storageClass?: string;
 }
 
 export function logsArchiveS3ArchiveToTerraform(struct?: LogsArchiveS3ArchiveOutputReference | LogsArchiveS3Archive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_id: cdktf.stringToTerraform(struct!.accountId),
-    bucket: cdktf.stringToTerraform(struct!.bucket),
-    encryption_key: cdktf.stringToTerraform(struct!.encryptionKey),
-    encryption_type: cdktf.stringToTerraform(struct!.encryptionType),
-    path: cdktf.stringToTerraform(struct!.path),
-    role_name: cdktf.stringToTerraform(struct!.roleName),
-    storage_class: cdktf.stringToTerraform(struct!.storageClass),
+    account_id: cdktn.stringToTerraform(struct!.accountId),
+    bucket: cdktn.stringToTerraform(struct!.bucket),
+    encryption_key: cdktn.stringToTerraform(struct!.encryptionKey),
+    encryption_type: cdktn.stringToTerraform(struct!.encryptionType),
+    path: cdktn.stringToTerraform(struct!.path),
+    role_name: cdktn.stringToTerraform(struct!.roleName),
+    storage_class: cdktn.stringToTerraform(struct!.storageClass),
   }
 }
 
 
 export function logsArchiveS3ArchiveToHclTerraform(struct?: LogsArchiveS3ArchiveOutputReference | LogsArchiveS3Archive): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_id: {
-      value: cdktf.stringToHclTerraform(struct!.accountId),
+      value: cdktn.stringToHclTerraform(struct!.accountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket: {
-      value: cdktf.stringToHclTerraform(struct!.bucket),
+      value: cdktn.stringToHclTerraform(struct!.bucket),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_key: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionKey),
+      value: cdktn.stringToHclTerraform(struct!.encryptionKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.encryptionType),
+      value: cdktn.stringToHclTerraform(struct!.encryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_name: {
-      value: cdktf.stringToHclTerraform(struct!.roleName),
+      value: cdktn.stringToHclTerraform(struct!.roleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_class: {
-      value: cdktf.stringToHclTerraform(struct!.storageClass),
+      value: cdktn.stringToHclTerraform(struct!.storageClass),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -583,14 +583,14 @@ export function logsArchiveS3ArchiveToHclTerraform(struct?: LogsArchiveS3Archive
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
+export class LogsArchiveS3ArchiveOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -756,9 +756,9 @@ export class LogsArchiveS3ArchiveOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive datadog_logs_archive}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive datadog_logs_archive}
 */
-export class LogsArchive extends cdktf.TerraformResource {
+export class LogsArchive extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -769,14 +769,14 @@ export class LogsArchive extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogsArchive resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogsArchive resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsArchive to import
-  * @param importFromId The id of the existing LogsArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsArchive that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsArchive to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_archive", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_archive", importId: importFromId, provider });
       }
 
   // ===========
@@ -784,7 +784,7 @@ export class LogsArchive extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_archive datadog_logs_archive} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_archive datadog_logs_archive} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -795,7 +795,7 @@ export class LogsArchive extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_archive',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -838,11 +838,11 @@ export class LogsArchive extends cdktf.TerraformResource {
   }
 
   // include_tags - computed: false, optional: true, required: false
-  private _includeTags?: boolean | cdktf.IResolvable; 
+  private _includeTags?: boolean | cdktn.IResolvable; 
   public get includeTags() {
     return this.getBooleanAttribute('include_tags');
   }
-  public set includeTags(value: boolean | cdktf.IResolvable) {
+  public set includeTags(value: boolean | cdktn.IResolvable) {
     this._includeTags = value;
   }
   public resetIncludeTags() {
@@ -965,12 +965,12 @@ export class LogsArchive extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      include_tags: cdktf.booleanToTerraform(this._includeTags),
-      name: cdktf.stringToTerraform(this._name),
-      query: cdktf.stringToTerraform(this._query),
-      rehydration_max_scan_size_in_gb: cdktf.numberToTerraform(this._rehydrationMaxScanSizeInGb),
-      rehydration_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rehydrationTags),
+      id: cdktn.stringToTerraform(this._id),
+      include_tags: cdktn.booleanToTerraform(this._includeTags),
+      name: cdktn.stringToTerraform(this._name),
+      query: cdktn.stringToTerraform(this._query),
+      rehydration_max_scan_size_in_gb: cdktn.numberToTerraform(this._rehydrationMaxScanSizeInGb),
+      rehydration_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._rehydrationTags),
       azure_archive: logsArchiveAzureArchiveToTerraform(this._azureArchive.internalValue),
       gcs_archive: logsArchiveGcsArchiveToTerraform(this._gcsArchive.internalValue),
       s3_archive: logsArchiveS3ArchiveToTerraform(this._s3Archive.internalValue),
@@ -980,37 +980,37 @@ export class LogsArchive extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_tags: {
-        value: cdktf.booleanToHclTerraform(this._includeTags),
+        value: cdktn.booleanToHclTerraform(this._includeTags),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rehydration_max_scan_size_in_gb: {
-        value: cdktf.numberToHclTerraform(this._rehydrationMaxScanSizeInGb),
+        value: cdktn.numberToHclTerraform(this._rehydrationMaxScanSizeInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rehydration_tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rehydrationTags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._rehydrationTags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

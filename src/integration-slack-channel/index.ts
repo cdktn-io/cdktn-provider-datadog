@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationSlackChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Slack account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
   */
   readonly accountName: string;
   /**
   * Slack channel name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
   */
   readonly channelName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface IntegrationSlackChannelConfig extends cdktf.TerraformMetaArgume
   /**
   * display block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
   */
   readonly display: IntegrationSlackChannelDisplay;
 }
@@ -42,82 +42,82 @@ export interface IntegrationSlackChannelDisplay {
   /**
   * Show the main body of the alert event. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
   */
-  readonly message?: boolean | cdktf.IResolvable;
+  readonly message?: boolean | cdktn.IResolvable;
   /**
   * Show interactive buttons to mute the alerting monitor. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#mute_buttons IntegrationSlackChannel#mute_buttons}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#mute_buttons IntegrationSlackChannel#mute_buttons}
   */
-  readonly muteButtons?: boolean | cdktf.IResolvable;
+  readonly muteButtons?: boolean | cdktn.IResolvable;
   /**
   * Show the list of @-handles in the alert event. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#notified IntegrationSlackChannel#notified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#notified IntegrationSlackChannel#notified}
   */
-  readonly notified?: boolean | cdktf.IResolvable;
+  readonly notified?: boolean | cdktn.IResolvable;
   /**
   * Show the alert event's snapshot image. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
   */
-  readonly snapshot?: boolean | cdktf.IResolvable;
+  readonly snapshot?: boolean | cdktn.IResolvable;
   /**
   * Show the scopes on which the monitor alerted. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
   */
-  readonly tags?: boolean | cdktf.IResolvable;
+  readonly tags?: boolean | cdktn.IResolvable;
 }
 
 export function integrationSlackChannelDisplayToTerraform(struct?: IntegrationSlackChannelDisplayOutputReference | IntegrationSlackChannelDisplay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    message: cdktf.booleanToTerraform(struct!.message),
-    mute_buttons: cdktf.booleanToTerraform(struct!.muteButtons),
-    notified: cdktf.booleanToTerraform(struct!.notified),
-    snapshot: cdktf.booleanToTerraform(struct!.snapshot),
-    tags: cdktf.booleanToTerraform(struct!.tags),
+    message: cdktn.booleanToTerraform(struct!.message),
+    mute_buttons: cdktn.booleanToTerraform(struct!.muteButtons),
+    notified: cdktn.booleanToTerraform(struct!.notified),
+    snapshot: cdktn.booleanToTerraform(struct!.snapshot),
+    tags: cdktn.booleanToTerraform(struct!.tags),
   }
 }
 
 
 export function integrationSlackChannelDisplayToHclTerraform(struct?: IntegrationSlackChannelDisplayOutputReference | IntegrationSlackChannelDisplay): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     message: {
-      value: cdktf.booleanToHclTerraform(struct!.message),
+      value: cdktn.booleanToHclTerraform(struct!.message),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     mute_buttons: {
-      value: cdktf.booleanToHclTerraform(struct!.muteButtons),
+      value: cdktn.booleanToHclTerraform(struct!.muteButtons),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     notified: {
-      value: cdktf.booleanToHclTerraform(struct!.notified),
+      value: cdktn.booleanToHclTerraform(struct!.notified),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     snapshot: {
-      value: cdktf.booleanToHclTerraform(struct!.snapshot),
+      value: cdktn.booleanToHclTerraform(struct!.snapshot),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tags: {
-      value: cdktf.booleanToHclTerraform(struct!.tags),
+      value: cdktn.booleanToHclTerraform(struct!.tags),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -128,14 +128,14 @@ export function integrationSlackChannelDisplayToHclTerraform(struct?: Integratio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationSlackChannelDisplayOutputReference extends cdktf.ComplexObject {
+export class IntegrationSlackChannelDisplayOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -185,11 +185,11 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
 
   // message - computed: false, optional: true, required: false
-  private _message?: boolean | cdktf.IResolvable; 
+  private _message?: boolean | cdktn.IResolvable; 
   public get message() {
     return this.getBooleanAttribute('message');
   }
-  public set message(value: boolean | cdktf.IResolvable) {
+  public set message(value: boolean | cdktn.IResolvable) {
     this._message = value;
   }
   public resetMessage() {
@@ -201,11 +201,11 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
 
   // mute_buttons - computed: false, optional: true, required: false
-  private _muteButtons?: boolean | cdktf.IResolvable; 
+  private _muteButtons?: boolean | cdktn.IResolvable; 
   public get muteButtons() {
     return this.getBooleanAttribute('mute_buttons');
   }
-  public set muteButtons(value: boolean | cdktf.IResolvable) {
+  public set muteButtons(value: boolean | cdktn.IResolvable) {
     this._muteButtons = value;
   }
   public resetMuteButtons() {
@@ -217,11 +217,11 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
 
   // notified - computed: false, optional: true, required: false
-  private _notified?: boolean | cdktf.IResolvable; 
+  private _notified?: boolean | cdktn.IResolvable; 
   public get notified() {
     return this.getBooleanAttribute('notified');
   }
-  public set notified(value: boolean | cdktf.IResolvable) {
+  public set notified(value: boolean | cdktn.IResolvable) {
     this._notified = value;
   }
   public resetNotified() {
@@ -233,11 +233,11 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
 
   // snapshot - computed: false, optional: true, required: false
-  private _snapshot?: boolean | cdktf.IResolvable; 
+  private _snapshot?: boolean | cdktn.IResolvable; 
   public get snapshot() {
     return this.getBooleanAttribute('snapshot');
   }
-  public set snapshot(value: boolean | cdktf.IResolvable) {
+  public set snapshot(value: boolean | cdktn.IResolvable) {
     this._snapshot = value;
   }
   public resetSnapshot() {
@@ -249,11 +249,11 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
   }
 
   // tags - computed: false, optional: true, required: false
-  private _tags?: boolean | cdktf.IResolvable; 
+  private _tags?: boolean | cdktn.IResolvable; 
   public get tags() {
     return this.getBooleanAttribute('tags');
   }
-  public set tags(value: boolean | cdktf.IResolvable) {
+  public set tags(value: boolean | cdktn.IResolvable) {
     this._tags = value;
   }
   public resetTags() {
@@ -266,9 +266,9 @@ export class IntegrationSlackChannelDisplayOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}
 */
-export class IntegrationSlackChannel extends cdktf.TerraformResource {
+export class IntegrationSlackChannel extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -279,14 +279,14 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationSlackChannel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationSlackChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationSlackChannel to import
-  * @param importFromId The id of the existing IntegrationSlackChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationSlackChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationSlackChannel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_slack_channel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_slack_channel", importId: importFromId, provider });
       }
 
   // ===========
@@ -294,7 +294,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_slack_channel datadog_integration_slack_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -305,7 +305,7 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_slack_channel',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -387,9 +387,9 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      channel_name: cdktf.stringToTerraform(this._channelName),
-      id: cdktf.stringToTerraform(this._id),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      channel_name: cdktn.stringToTerraform(this._channelName),
+      id: cdktn.stringToTerraform(this._id),
       display: integrationSlackChannelDisplayToTerraform(this._display.internalValue),
     };
   }
@@ -397,19 +397,19 @@ export class IntegrationSlackChannel extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       channel_name: {
-        value: cdktf.stringToHclTerraform(this._channelName),
+        value: cdktn.stringToHclTerraform(this._channelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

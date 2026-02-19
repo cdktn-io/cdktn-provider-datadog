@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SensitiveDataScannerRuleConfig extends cdktf.TerraformMetaArguments {
+export interface SensitiveDataScannerRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#description SensitiveDataScannerRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#description SensitiveDataScannerRule#description}
   */
   readonly description?: string;
   /**
   * Attributes excluded from the scan. If namespaces is provided, it has to be a sub-path of the namespaces array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#excluded_namespaces SensitiveDataScannerRule#excluded_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#excluded_namespaces SensitiveDataScannerRule#excluded_namespaces}
   */
   readonly excludedNamespaces?: string[];
   /**
   * Id of the scanning group the rule belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#group_id SensitiveDataScannerRule#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#group_id SensitiveDataScannerRule#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#id SensitiveDataScannerRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,55 +40,55 @@ export interface SensitiveDataScannerRuleConfig extends cdktf.TerraformMetaArgum
   /**
   * Whether or not the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#is_enabled SensitiveDataScannerRule#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#is_enabled SensitiveDataScannerRule#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#name SensitiveDataScannerRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#name SensitiveDataScannerRule#name}
   */
   readonly name?: string;
   /**
   * Attributes included in the scan. If namespaces is empty or missing, all attributes except excluded_namespaces are scanned. If both are missing the whole event is scanned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#namespaces SensitiveDataScannerRule#namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#namespaces SensitiveDataScannerRule#namespaces}
   */
   readonly namespaces?: string[];
   /**
   * Not included if there is a relationship to a standard pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#pattern SensitiveDataScannerRule#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#pattern SensitiveDataScannerRule#pattern}
   */
   readonly pattern?: string;
   /**
   * Priority level of the rule (optional). Used to order sensitive data discovered in the sds summary page. It must be between 1 and 5 (1 being the most important).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#priority SensitiveDataScannerRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#priority SensitiveDataScannerRule#priority}
   */
   readonly priority?: number;
   /**
   * Id of the standard pattern the rule refers to. If provided, then pattern must not be provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#standard_pattern_id SensitiveDataScannerRule#standard_pattern_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#standard_pattern_id SensitiveDataScannerRule#standard_pattern_id}
   */
   readonly standardPatternId?: string;
   /**
   * List of tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#tags SensitiveDataScannerRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#tags SensitiveDataScannerRule#tags}
   */
   readonly tags?: string[];
   /**
   * included_keyword_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#included_keyword_configuration SensitiveDataScannerRule#included_keyword_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#included_keyword_configuration SensitiveDataScannerRule#included_keyword_configuration}
   */
   readonly includedKeywordConfiguration?: SensitiveDataScannerRuleIncludedKeywordConfiguration;
   /**
   * text_replacement block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#text_replacement SensitiveDataScannerRule#text_replacement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#text_replacement SensitiveDataScannerRule#text_replacement}
   */
   readonly textReplacement?: SensitiveDataScannerRuleTextReplacement;
 }
@@ -96,43 +96,43 @@ export interface SensitiveDataScannerRuleIncludedKeywordConfiguration {
   /**
   * Number of characters before the match to find a keyword validating the match. It must be between 1 and 50 (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#character_count SensitiveDataScannerRule#character_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#character_count SensitiveDataScannerRule#character_count}
   */
   readonly characterCount: number;
   /**
   * Keyword list that is checked during scanning in order to validate a match. The number of keywords in the list must be lower than or equal to 30.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#keywords SensitiveDataScannerRule#keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#keywords SensitiveDataScannerRule#keywords}
   */
   readonly keywords: string[];
 }
 
 export function sensitiveDataScannerRuleIncludedKeywordConfigurationToTerraform(struct?: SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference | SensitiveDataScannerRuleIncludedKeywordConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    character_count: cdktf.numberToTerraform(struct!.characterCount),
-    keywords: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keywords),
+    character_count: cdktn.numberToTerraform(struct!.characterCount),
+    keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.keywords),
   }
 }
 
 
 export function sensitiveDataScannerRuleIncludedKeywordConfigurationToHclTerraform(struct?: SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference | SensitiveDataScannerRuleIncludedKeywordConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     character_count: {
-      value: cdktf.numberToHclTerraform(struct!.characterCount),
+      value: cdktn.numberToHclTerraform(struct!.characterCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     keywords: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keywords),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.keywords),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -143,14 +143,14 @@ export function sensitiveDataScannerRuleIncludedKeywordConfigurationToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference extends cdktf.ComplexObject {
+export class SensitiveDataScannerRuleIncludedKeywordConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -211,69 +211,69 @@ export interface SensitiveDataScannerRuleTextReplacement {
   /**
   * Required if type == 'partial_replacement_from_beginning' or 'partial_replacement_from_end'. It must be > 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#number_of_chars SensitiveDataScannerRule#number_of_chars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#number_of_chars SensitiveDataScannerRule#number_of_chars}
   */
   readonly numberOfChars?: number;
   /**
   * Required if type == 'replacement_string'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#replacement_string SensitiveDataScannerRule#replacement_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#replacement_string SensitiveDataScannerRule#replacement_string}
   */
   readonly replacementString?: string;
   /**
   * Only valid when type == `replacement_string`. When enabled, matches can be unmasked in logs by users with ‘Data Scanner Unmask’ permission. As a security best practice, avoid masking for highly-sensitive, long-lived data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#should_save_match SensitiveDataScannerRule#should_save_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#should_save_match SensitiveDataScannerRule#should_save_match}
   */
-  readonly shouldSaveMatch?: boolean | cdktf.IResolvable;
+  readonly shouldSaveMatch?: boolean | cdktn.IResolvable;
   /**
   * Type of the replacement text. None means no replacement. hash means the data will be stubbed. replacement_string means that one can chose a text to replace the data. partial_replacement_from_beginning allows a user to partially replace the data from the beginning, and partial_replacement_from_end on the other hand, allows to replace data from the end. Valid values are `none`, `hash`, `replacement_string`, `partial_replacement_from_beginning`, `partial_replacement_from_end`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#type SensitiveDataScannerRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#type SensitiveDataScannerRule#type}
   */
   readonly type: string;
 }
 
 export function sensitiveDataScannerRuleTextReplacementToTerraform(struct?: SensitiveDataScannerRuleTextReplacementOutputReference | SensitiveDataScannerRuleTextReplacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    number_of_chars: cdktf.numberToTerraform(struct!.numberOfChars),
-    replacement_string: cdktf.stringToTerraform(struct!.replacementString),
-    should_save_match: cdktf.booleanToTerraform(struct!.shouldSaveMatch),
-    type: cdktf.stringToTerraform(struct!.type),
+    number_of_chars: cdktn.numberToTerraform(struct!.numberOfChars),
+    replacement_string: cdktn.stringToTerraform(struct!.replacementString),
+    should_save_match: cdktn.booleanToTerraform(struct!.shouldSaveMatch),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function sensitiveDataScannerRuleTextReplacementToHclTerraform(struct?: SensitiveDataScannerRuleTextReplacementOutputReference | SensitiveDataScannerRuleTextReplacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     number_of_chars: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfChars),
+      value: cdktn.numberToHclTerraform(struct!.numberOfChars),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     replacement_string: {
-      value: cdktf.stringToHclTerraform(struct!.replacementString),
+      value: cdktn.stringToHclTerraform(struct!.replacementString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     should_save_match: {
-      value: cdktf.booleanToHclTerraform(struct!.shouldSaveMatch),
+      value: cdktn.booleanToHclTerraform(struct!.shouldSaveMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,14 +284,14 @@ export function sensitiveDataScannerRuleTextReplacementToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SensitiveDataScannerRuleTextReplacementOutputReference extends cdktf.ComplexObject {
+export class SensitiveDataScannerRuleTextReplacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -367,11 +367,11 @@ export class SensitiveDataScannerRuleTextReplacementOutputReference extends cdkt
   }
 
   // should_save_match - computed: false, optional: true, required: false
-  private _shouldSaveMatch?: boolean | cdktf.IResolvable; 
+  private _shouldSaveMatch?: boolean | cdktn.IResolvable; 
   public get shouldSaveMatch() {
     return this.getBooleanAttribute('should_save_match');
   }
-  public set shouldSaveMatch(value: boolean | cdktf.IResolvable) {
+  public set shouldSaveMatch(value: boolean | cdktn.IResolvable) {
     this._shouldSaveMatch = value;
   }
   public resetShouldSaveMatch() {
@@ -397,9 +397,9 @@ export class SensitiveDataScannerRuleTextReplacementOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule}
 */
-export class SensitiveDataScannerRule extends cdktf.TerraformResource {
+export class SensitiveDataScannerRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -410,14 +410,14 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SensitiveDataScannerRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SensitiveDataScannerRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SensitiveDataScannerRule to import
-  * @param importFromId The id of the existing SensitiveDataScannerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SensitiveDataScannerRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SensitiveDataScannerRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_sensitive_data_scanner_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_sensitive_data_scanner_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -425,7 +425,7 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/sensitive_data_scanner_rule datadog_sensitive_data_scanner_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -436,7 +436,7 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_sensitive_data_scanner_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -528,11 +528,11 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -677,17 +677,17 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      excluded_namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedNamespaces),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(this._namespaces),
-      pattern: cdktf.stringToTerraform(this._pattern),
-      priority: cdktf.numberToTerraform(this._priority),
-      standard_pattern_id: cdktf.stringToTerraform(this._standardPatternId),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
+      description: cdktn.stringToTerraform(this._description),
+      excluded_namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedNamespaces),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(this._namespaces),
+      pattern: cdktn.stringToTerraform(this._pattern),
+      priority: cdktn.numberToTerraform(this._priority),
+      standard_pattern_id: cdktn.stringToTerraform(this._standardPatternId),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
       included_keyword_configuration: sensitiveDataScannerRuleIncludedKeywordConfigurationToTerraform(this._includedKeywordConfiguration.internalValue),
       text_replacement: sensitiveDataScannerRuleTextReplacementToTerraform(this._textReplacement.internalValue),
     };
@@ -696,67 +696,67 @@ export class SensitiveDataScannerRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       excluded_namespaces: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedNamespaces),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedNamespaces),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespaces: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._namespaces),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._namespaces),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       pattern: {
-        value: cdktf.stringToHclTerraform(this._pattern),
+        value: cdktn.stringToHclTerraform(this._pattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       standard_pattern_id: {
-        value: cdktf.stringToHclTerraform(this._standardPatternId),
+        value: cdktn.stringToHclTerraform(this._standardPatternId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationOpsgenieServiceObjectConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationOpsgenieServiceObjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * The custom url for a custom region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
   */
   readonly customUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,27 +28,27 @@ export interface IntegrationOpsgenieServiceObjectConfig extends cdktf.TerraformM
   /**
   * The name for the Opsgenie service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
   */
   readonly name: string;
   /**
   * The Opsgenie API key for the Opsgenie service. Note: Since the Datadog API never returns Opsgenie API keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
   */
   readonly opsgenieApiKey: string;
   /**
   * The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
   */
   readonly region: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}
 */
-export class IntegrationOpsgenieServiceObject extends cdktf.TerraformResource {
+export class IntegrationOpsgenieServiceObject extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class IntegrationOpsgenieServiceObject extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationOpsgenieServiceObject resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationOpsgenieServiceObject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationOpsgenieServiceObject to import
-  * @param importFromId The id of the existing IntegrationOpsgenieServiceObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationOpsgenieServiceObject that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationOpsgenieServiceObject to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_opsgenie_service_object", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_opsgenie_service_object", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class IntegrationOpsgenieServiceObject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class IntegrationOpsgenieServiceObject extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_opsgenie_service_object',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -184,42 +184,42 @@ export class IntegrationOpsgenieServiceObject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_url: cdktf.stringToTerraform(this._customUrl),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      opsgenie_api_key: cdktf.stringToTerraform(this._opsgenieApiKey),
-      region: cdktf.stringToTerraform(this._region),
+      custom_url: cdktn.stringToTerraform(this._customUrl),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      opsgenie_api_key: cdktn.stringToTerraform(this._opsgenieApiKey),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_url: {
-        value: cdktf.stringToHclTerraform(this._customUrl),
+        value: cdktn.stringToHclTerraform(this._customUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       opsgenie_api_key: {
-        value: cdktf.stringToHclTerraform(this._opsgenieApiKey),
+        value: cdktn.stringToHclTerraform(this._opsgenieApiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

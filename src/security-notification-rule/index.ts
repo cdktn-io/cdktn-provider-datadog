@@ -1,45 +1,45 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityNotificationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityNotificationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the rule is enabled. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#enabled SecurityNotificationRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the rule (must be unique).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#name SecurityNotificationRule#name}
   */
   readonly name: string;
   /**
   * The list of handle targets for the notifications. A target must be prefixed with an @. It can be an email address (@bob@email.com), or any installed integration. For example, a Slack recipient (@slack-ops), or a Teams recipient (@teams-ops).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#targets SecurityNotificationRule#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#targets SecurityNotificationRule#targets}
   */
   readonly targets: string[];
   /**
   * Specifies the time period, in seconds, used to aggregate the notification. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#time_aggregation SecurityNotificationRule#time_aggregation}
   */
   readonly timeAggregation?: number;
   /**
   * selectors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#selectors SecurityNotificationRule#selectors}
   */
   readonly selectors?: SecurityNotificationRuleSelectors;
 }
@@ -47,69 +47,69 @@ export interface SecurityNotificationRuleSelectors {
   /**
   * Comprises one or several key:value pairs for filtering security issues based on tags and attributes. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#query SecurityNotificationRule#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#query SecurityNotificationRule#query}
   */
   readonly query?: string;
   /**
   * Specifies security rule types for filtering signals and vulnerabilities that generate notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#rule_types SecurityNotificationRule#rule_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#rule_types SecurityNotificationRule#rule_types}
   */
   readonly ruleTypes: string[];
   /**
   * The security rules severities to consider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#severities SecurityNotificationRule#severities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#severities SecurityNotificationRule#severities}
   */
   readonly severities?: string[];
   /**
   * The type of security issues the rule applies to. Use `security_signals` for rules based on security signals and `security_findings` for those based on vulnerabilities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#trigger_source SecurityNotificationRule#trigger_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#trigger_source SecurityNotificationRule#trigger_source}
   */
   readonly triggerSource: string;
 }
 
-export function securityNotificationRuleSelectorsToTerraform(struct?: SecurityNotificationRuleSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityNotificationRuleSelectorsToTerraform(struct?: SecurityNotificationRuleSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
-    rule_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ruleTypes),
-    severities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.severities),
-    trigger_source: cdktf.stringToTerraform(struct!.triggerSource),
+    query: cdktn.stringToTerraform(struct!.query),
+    rule_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ruleTypes),
+    severities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.severities),
+    trigger_source: cdktn.stringToTerraform(struct!.triggerSource),
   }
 }
 
 
-export function securityNotificationRuleSelectorsToHclTerraform(struct?: SecurityNotificationRuleSelectors | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityNotificationRuleSelectorsToHclTerraform(struct?: SecurityNotificationRuleSelectors | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rule_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ruleTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ruleTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     severities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.severities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.severities),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     trigger_source: {
-      value: cdktf.stringToHclTerraform(struct!.triggerSource),
+      value: cdktn.stringToHclTerraform(struct!.triggerSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,19 +120,19 @@ export function securityNotificationRuleSelectorsToHclTerraform(struct?: Securit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityNotificationRuleSelectorsOutputReference extends cdktf.ComplexObject {
+export class SecurityNotificationRuleSelectorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecurityNotificationRuleSelectors | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityNotificationRuleSelectors | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class SecurityNotificationRuleSelectorsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityNotificationRuleSelectors | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityNotificationRuleSelectors | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -166,7 +166,7 @@ export class SecurityNotificationRuleSelectorsOutputReference extends cdktf.Comp
       this._severities = undefined;
       this._triggerSource = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -199,7 +199,7 @@ export class SecurityNotificationRuleSelectorsOutputReference extends cdktf.Comp
   // rule_types - computed: false, optional: false, required: true
   private _ruleTypes?: string[]; 
   public get ruleTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('rule_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('rule_types'));
   }
   public set ruleTypes(value: string[]) {
     this._ruleTypes = value;
@@ -212,7 +212,7 @@ export class SecurityNotificationRuleSelectorsOutputReference extends cdktf.Comp
   // severities - computed: true, optional: true, required: false
   private _severities?: string[]; 
   public get severities() {
-    return cdktf.Fn.tolist(this.getListAttribute('severities'));
+    return cdktn.Fn.tolist(this.getListAttribute('severities'));
   }
   public set severities(value: string[]) {
     this._severities = value;
@@ -240,9 +240,9 @@ export class SecurityNotificationRuleSelectorsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule datadog_security_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule datadog_security_notification_rule}
 */
-export class SecurityNotificationRule extends cdktf.TerraformResource {
+export class SecurityNotificationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -253,14 +253,14 @@ export class SecurityNotificationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityNotificationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityNotificationRule to import
-  * @param importFromId The id of the existing SecurityNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityNotificationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_security_notification_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_security_notification_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -268,7 +268,7 @@ export class SecurityNotificationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_notification_rule datadog_security_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -279,7 +279,7 @@ export class SecurityNotificationRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -317,11 +317,11 @@ export class SecurityNotificationRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -368,7 +368,7 @@ export class SecurityNotificationRule extends cdktf.TerraformResource {
   // targets - computed: false, optional: false, required: true
   private _targets?: string[]; 
   public get targets() {
-    return cdktf.Fn.tolist(this.getListAttribute('targets'));
+    return cdktn.Fn.tolist(this.getListAttribute('targets'));
   }
   public set targets(value: string[]) {
     this._targets = value;
@@ -421,10 +421,10 @@ export class SecurityNotificationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      name: cdktf.stringToTerraform(this._name),
-      targets: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targets),
-      time_aggregation: cdktf.numberToTerraform(this._timeAggregation),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      name: cdktn.stringToTerraform(this._name),
+      targets: cdktn.listMapper(cdktn.stringToTerraform, false)(this._targets),
+      time_aggregation: cdktn.numberToTerraform(this._timeAggregation),
       selectors: securityNotificationRuleSelectorsToTerraform(this._selectors.internalValue),
     };
   }
@@ -432,25 +432,25 @@ export class SecurityNotificationRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       targets: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._targets),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._targets),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       time_aggregation: {
-        value: cdktf.numberToHclTerraform(this._timeAggregation),
+        value: cdktn.numberToHclTerraform(this._timeAggregation),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

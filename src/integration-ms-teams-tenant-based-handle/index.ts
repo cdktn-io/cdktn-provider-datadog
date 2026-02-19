@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationMsTeamsTenantBasedHandleConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationMsTeamsTenantBasedHandleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Your channel name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle#channel_name IntegrationMsTeamsTenantBasedHandle#channel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle#channel_name IntegrationMsTeamsTenantBasedHandle#channel_name}
   */
   readonly channelName: string;
   /**
   * Your tenant-based handle name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle#name IntegrationMsTeamsTenantBasedHandle#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle#name IntegrationMsTeamsTenantBasedHandle#name}
   */
   readonly name: string;
   /**
   * Your team name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle#team_name IntegrationMsTeamsTenantBasedHandle#team_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle#team_name IntegrationMsTeamsTenantBasedHandle#team_name}
   */
   readonly teamName: string;
   /**
   * Your tenant name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle#tenant_name IntegrationMsTeamsTenantBasedHandle#tenant_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle#tenant_name IntegrationMsTeamsTenantBasedHandle#tenant_name}
   */
   readonly tenantName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle}
 */
-export class IntegrationMsTeamsTenantBasedHandle extends cdktf.TerraformResource {
+export class IntegrationMsTeamsTenantBasedHandle extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class IntegrationMsTeamsTenantBasedHandle extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationMsTeamsTenantBasedHandle resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationMsTeamsTenantBasedHandle resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationMsTeamsTenantBasedHandle to import
-  * @param importFromId The id of the existing IntegrationMsTeamsTenantBasedHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationMsTeamsTenantBasedHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationMsTeamsTenantBasedHandle to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_ms_teams_tenant_based_handle", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_ms_teams_tenant_based_handle", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class IntegrationMsTeamsTenantBasedHandle extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_tenant_based_handle datadog_integration_ms_teams_tenant_based_handle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class IntegrationMsTeamsTenantBasedHandle extends cdktf.TerraformResource
       terraformResourceType: 'datadog_integration_ms_teams_tenant_based_handle',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -162,35 +162,35 @@ export class IntegrationMsTeamsTenantBasedHandle extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel_name: cdktf.stringToTerraform(this._channelName),
-      name: cdktf.stringToTerraform(this._name),
-      team_name: cdktf.stringToTerraform(this._teamName),
-      tenant_name: cdktf.stringToTerraform(this._tenantName),
+      channel_name: cdktn.stringToTerraform(this._channelName),
+      name: cdktn.stringToTerraform(this._name),
+      team_name: cdktn.stringToTerraform(this._teamName),
+      tenant_name: cdktn.stringToTerraform(this._tenantName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       channel_name: {
-        value: cdktf.stringToHclTerraform(this._channelName),
+        value: cdktn.stringToHclTerraform(this._channelName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       team_name: {
-        value: cdktf.stringToHclTerraform(this._teamName),
+        value: cdktn.stringToHclTerraform(this._teamName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_name: {
-        value: cdktf.stringToHclTerraform(this._tenantName),
+        value: cdktn.stringToHclTerraform(this._tenantName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

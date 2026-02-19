@@ -1,45 +1,45 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CustomAllocationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface CustomAllocationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the custom allocation rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * List of cloud providers the rule applies to. Valid values include `aws`, `azure`, and `gcp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
   */
   readonly providernames: string[];
   /**
   * The name of the custom allocation rule. This field is immutable - changing it will force replacement of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
   */
   readonly ruleName: string;
   /**
   * costs_to_allocate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
   */
-  readonly costsToAllocate?: CustomAllocationRuleCostsToAllocate[] | cdktf.IResolvable;
+  readonly costsToAllocate?: CustomAllocationRuleCostsToAllocate[] | cdktn.IResolvable;
   /**
   * strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
   */
   readonly strategy?: CustomAllocationRuleStrategy;
 }
@@ -47,69 +47,69 @@ export interface CustomAllocationRuleCostsToAllocate {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to filter on (e.g., `aws_product`, `team`, `environment`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to match. Use this field for conditions like `=`, `!=`, `is`, `is not`, `like`. Do not use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to match. Use this field for `in` or `not in` conditions only. Do not use with single-value conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
 
-export function customAllocationRuleCostsToAllocateToTerraform(struct?: CustomAllocationRuleCostsToAllocate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleCostsToAllocateToTerraform(struct?: CustomAllocationRuleCostsToAllocate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition: cdktf.stringToTerraform(struct!.condition),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    condition: cdktn.stringToTerraform(struct!.condition),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    value: cdktn.stringToTerraform(struct!.value),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function customAllocationRuleCostsToAllocateToHclTerraform(struct?: CustomAllocationRuleCostsToAllocate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleCostsToAllocateToHclTerraform(struct?: CustomAllocationRuleCostsToAllocate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -120,9 +120,9 @@ export function customAllocationRuleCostsToAllocateToHclTerraform(struct?: Custo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAllocationRuleCostsToAllocateOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleCostsToAllocateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class CustomAllocationRuleCostsToAllocateOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomAllocationRuleCostsToAllocate | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleCostsToAllocate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class CustomAllocationRuleCostsToAllocateOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleCostsToAllocate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleCostsToAllocate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,7 +168,7 @@ export class CustomAllocationRuleCostsToAllocateOutputReference extends cdktf.Co
       this._value = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,15 +247,15 @@ export class CustomAllocationRuleCostsToAllocateOutputReference extends cdktf.Co
   }
 }
 
-export class CustomAllocationRuleCostsToAllocateList extends cdktf.ComplexList {
-  public internalValue? : CustomAllocationRuleCostsToAllocate[] | cdktf.IResolvable
+export class CustomAllocationRuleCostsToAllocateList extends cdktn.ComplexList {
+  public internalValue? : CustomAllocationRuleCostsToAllocate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -270,43 +270,43 @@ export interface CustomAllocationRuleStrategyAllocatedByAllocatedTags {
   /**
   * The tag key to allocate costs to (e.g., `team`, `environment`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#key CustomAllocationRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#key CustomAllocationRule#key}
   */
   readonly key?: string;
   /**
   * The tag value to allocate costs to (e.g., `backend`, `production`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
 }
 
-export function customAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform(struct?: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform(struct?: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.stringToTerraform(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function customAllocationRuleStrategyAllocatedByAllocatedTagsToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyAllocatedByAllocatedTagsToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -317,9 +317,9 @@ export function customAllocationRuleStrategyAllocatedByAllocatedTagsToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -327,11 +327,11 @@ export class CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -348,14 +348,14 @@ export class CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -400,15 +400,15 @@ export class CustomAllocationRuleStrategyAllocatedByAllocatedTagsOutputReference
   }
 }
 
-export class CustomAllocationRuleStrategyAllocatedByAllocatedTagsList extends cdktf.ComplexList {
-  public internalValue? : CustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktf.IResolvable
+export class CustomAllocationRuleStrategyAllocatedByAllocatedTagsList extends cdktn.ComplexList {
+  public internalValue? : CustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -423,43 +423,43 @@ export interface CustomAllocationRuleStrategyAllocatedBy {
   /**
   * The percentage of costs to allocate to this target as a decimal (e.g., 0.33 for 33%). Used when `method` is `percent`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#percentage CustomAllocationRule#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#percentage CustomAllocationRule#percentage}
   */
   readonly percentage?: number;
   /**
   * allocated_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#allocated_tags CustomAllocationRule#allocated_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#allocated_tags CustomAllocationRule#allocated_tags}
   */
-  readonly allocatedTags?: CustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktf.IResolvable;
+  readonly allocatedTags?: CustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktn.IResolvable;
 }
 
-export function customAllocationRuleStrategyAllocatedByToTerraform(struct?: CustomAllocationRuleStrategyAllocatedBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyAllocatedByToTerraform(struct?: CustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    percentage: cdktf.numberToTerraform(struct!.percentage),
-    allocated_tags: cdktf.listMapper(customAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform, true)(struct!.allocatedTags),
+    percentage: cdktn.numberToTerraform(struct!.percentage),
+    allocated_tags: cdktn.listMapper(customAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform, true)(struct!.allocatedTags),
   }
 }
 
 
-export function customAllocationRuleStrategyAllocatedByToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyAllocatedByToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     percentage: {
-      value: cdktf.numberToHclTerraform(struct!.percentage),
+      value: cdktn.numberToHclTerraform(struct!.percentage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     allocated_tags: {
-      value: cdktf.listMapperHcl(customAllocationRuleStrategyAllocatedByAllocatedTagsToHclTerraform, true)(struct!.allocatedTags),
+      value: cdktn.listMapperHcl(customAllocationRuleStrategyAllocatedByAllocatedTagsToHclTerraform, true)(struct!.allocatedTags),
       isBlock: true,
       type: "list",
       storageClassType: "CustomAllocationRuleStrategyAllocatedByAllocatedTagsList",
@@ -470,9 +470,9 @@ export function customAllocationRuleStrategyAllocatedByToHclTerraform(struct?: C
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAllocationRuleStrategyAllocatedByOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleStrategyAllocatedByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -480,11 +480,11 @@ export class CustomAllocationRuleStrategyAllocatedByOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomAllocationRuleStrategyAllocatedBy | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -501,14 +501,14 @@ export class CustomAllocationRuleStrategyAllocatedByOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleStrategyAllocatedBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._percentage = undefined;
       this._allocatedTags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -541,7 +541,7 @@ export class CustomAllocationRuleStrategyAllocatedByOutputReference extends cdkt
   public get allocatedTags() {
     return this._allocatedTags;
   }
-  public putAllocatedTags(value: CustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktf.IResolvable) {
+  public putAllocatedTags(value: CustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktn.IResolvable) {
     this._allocatedTags.internalValue = value;
   }
   public resetAllocatedTags() {
@@ -553,15 +553,15 @@ export class CustomAllocationRuleStrategyAllocatedByOutputReference extends cdkt
   }
 }
 
-export class CustomAllocationRuleStrategyAllocatedByList extends cdktf.ComplexList {
-  public internalValue? : CustomAllocationRuleStrategyAllocatedBy[] | cdktf.IResolvable
+export class CustomAllocationRuleStrategyAllocatedByList extends cdktn.ComplexList {
+  public internalValue? : CustomAllocationRuleStrategyAllocatedBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -576,69 +576,69 @@ export interface CustomAllocationRuleStrategyAllocatedByFilters {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to filter on for allocation targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to match for allocation. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to match for allocation. Use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
 
-export function customAllocationRuleStrategyAllocatedByFiltersToTerraform(struct?: CustomAllocationRuleStrategyAllocatedByFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyAllocatedByFiltersToTerraform(struct?: CustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition: cdktf.stringToTerraform(struct!.condition),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    condition: cdktn.stringToTerraform(struct!.condition),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    value: cdktn.stringToTerraform(struct!.value),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function customAllocationRuleStrategyAllocatedByFiltersToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedByFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyAllocatedByFiltersToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -649,9 +649,9 @@ export function customAllocationRuleStrategyAllocatedByFiltersToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAllocationRuleStrategyAllocatedByFiltersOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleStrategyAllocatedByFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -659,11 +659,11 @@ export class CustomAllocationRuleStrategyAllocatedByFiltersOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomAllocationRuleStrategyAllocatedByFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -688,7 +688,7 @@ export class CustomAllocationRuleStrategyAllocatedByFiltersOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleStrategyAllocatedByFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -697,7 +697,7 @@ export class CustomAllocationRuleStrategyAllocatedByFiltersOutputReference exten
       this._value = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -776,15 +776,15 @@ export class CustomAllocationRuleStrategyAllocatedByFiltersOutputReference exten
   }
 }
 
-export class CustomAllocationRuleStrategyAllocatedByFiltersList extends cdktf.ComplexList {
-  public internalValue? : CustomAllocationRuleStrategyAllocatedByFilters[] | cdktf.IResolvable
+export class CustomAllocationRuleStrategyAllocatedByFiltersList extends cdktn.ComplexList {
+  public internalValue? : CustomAllocationRuleStrategyAllocatedByFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -799,69 +799,69 @@ export interface CustomAllocationRuleStrategyBasedOnCosts {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to use as the basis for cost allocation calculations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to use for cost calculations. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to use for cost calculations. Use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
 
-export function customAllocationRuleStrategyBasedOnCostsToTerraform(struct?: CustomAllocationRuleStrategyBasedOnCosts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyBasedOnCostsToTerraform(struct?: CustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition: cdktf.stringToTerraform(struct!.condition),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    condition: cdktn.stringToTerraform(struct!.condition),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    value: cdktn.stringToTerraform(struct!.value),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function customAllocationRuleStrategyBasedOnCostsToHclTerraform(struct?: CustomAllocationRuleStrategyBasedOnCosts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyBasedOnCostsToHclTerraform(struct?: CustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -872,9 +872,9 @@ export function customAllocationRuleStrategyBasedOnCostsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAllocationRuleStrategyBasedOnCostsOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleStrategyBasedOnCostsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -882,11 +882,11 @@ export class CustomAllocationRuleStrategyBasedOnCostsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomAllocationRuleStrategyBasedOnCosts | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -911,7 +911,7 @@ export class CustomAllocationRuleStrategyBasedOnCostsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleStrategyBasedOnCosts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -920,7 +920,7 @@ export class CustomAllocationRuleStrategyBasedOnCostsOutputReference extends cdk
       this._value = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -999,15 +999,15 @@ export class CustomAllocationRuleStrategyBasedOnCostsOutputReference extends cdk
   }
 }
 
-export class CustomAllocationRuleStrategyBasedOnCostsList extends cdktf.ComplexList {
-  public internalValue? : CustomAllocationRuleStrategyBasedOnCosts[] | cdktf.IResolvable
+export class CustomAllocationRuleStrategyBasedOnCostsList extends cdktn.ComplexList {
+  public internalValue? : CustomAllocationRuleStrategyBasedOnCosts[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1021,9 +1021,9 @@ export class CustomAllocationRuleStrategyBasedOnCostsList extends cdktf.ComplexL
 export interface CustomAllocationRuleStrategyBasedOnTimeseries {
 }
 
-export function customAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct?: CustomAllocationRuleStrategyBasedOnTimeseries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct?: CustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1031,9 +1031,9 @@ export function customAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct?
 }
 
 
-export function customAllocationRuleStrategyBasedOnTimeseriesToHclTerraform(struct?: CustomAllocationRuleStrategyBasedOnTimeseries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyBasedOnTimeseriesToHclTerraform(struct?: CustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1041,19 +1041,19 @@ export function customAllocationRuleStrategyBasedOnTimeseriesToHclTerraform(stru
   return attrs;
 }
 
-export class CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CustomAllocationRuleStrategyBasedOnTimeseries | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1062,12 +1062,12 @@ export class CustomAllocationRuleStrategyBasedOnTimeseriesOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleStrategyBasedOnTimeseries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1081,69 +1081,69 @@ export interface CustomAllocationRuleStrategyEvaluateGroupedByFilters {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to filter on when grouping costs for evaluation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to match when grouping. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to match when grouping. Use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
 
-export function customAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform(struct?: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform(struct?: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition: cdktf.stringToTerraform(struct!.condition),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    condition: cdktn.stringToTerraform(struct!.condition),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    value: cdktn.stringToTerraform(struct!.value),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function customAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerraform(struct?: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerraform(struct?: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1154,9 +1154,9 @@ export function customAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1164,11 +1164,11 @@ export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1193,7 +1193,7 @@ export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1202,7 +1202,7 @@ export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference
       this._value = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1281,15 +1281,15 @@ export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersOutputReference
   }
 }
 
-export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersList extends cdktf.ComplexList {
-  public internalValue? : CustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktf.IResolvable
+export class CustomAllocationRuleStrategyEvaluateGroupedByFiltersList extends cdktn.ComplexList {
+  public internalValue? : CustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1304,122 +1304,122 @@ export interface CustomAllocationRuleStrategy {
   /**
   * List of tag keys used to allocate costs (e.g., `["team", "project"]`). Costs will be distributed across unique values of these tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
   */
   readonly allocatedByTagKeys?: string[];
   /**
   * List of tag keys used to group costs before allocation. Costs are grouped by these tag values before applying the allocation strategy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
   */
   readonly evaluateGroupedByTagKeys?: string[];
   /**
   * The granularity level for cost allocation. Valid values are `daily` or `monthly`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
   */
   readonly granularity?: string;
   /**
   * The allocation method. Valid values are `even`, `proportional`, `proportional_timeseries`, or `percent`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
   */
   readonly method?: string;
   /**
   * allocated_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
   */
-  readonly allocatedBy?: CustomAllocationRuleStrategyAllocatedBy[] | cdktf.IResolvable;
+  readonly allocatedBy?: CustomAllocationRuleStrategyAllocatedBy[] | cdktn.IResolvable;
   /**
   * allocated_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
   */
-  readonly allocatedByFilters?: CustomAllocationRuleStrategyAllocatedByFilters[] | cdktf.IResolvable;
+  readonly allocatedByFilters?: CustomAllocationRuleStrategyAllocatedByFilters[] | cdktn.IResolvable;
   /**
   * based_on_costs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
   */
-  readonly basedOnCosts?: CustomAllocationRuleStrategyBasedOnCosts[] | cdktf.IResolvable;
+  readonly basedOnCosts?: CustomAllocationRuleStrategyBasedOnCosts[] | cdktn.IResolvable;
   /**
   * based_on_timeseries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
   */
   readonly basedOnTimeseries?: CustomAllocationRuleStrategyBasedOnTimeseries;
   /**
   * evaluate_grouped_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
   */
-  readonly evaluateGroupedByFilters?: CustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktf.IResolvable;
+  readonly evaluateGroupedByFilters?: CustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktn.IResolvable;
 }
 
-export function customAllocationRuleStrategyToTerraform(struct?: CustomAllocationRuleStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyToTerraform(struct?: CustomAllocationRuleStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocated_by_tag_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allocatedByTagKeys),
-    evaluate_grouped_by_tag_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.evaluateGroupedByTagKeys),
-    granularity: cdktf.stringToTerraform(struct!.granularity),
-    method: cdktf.stringToTerraform(struct!.method),
-    allocated_by: cdktf.listMapper(customAllocationRuleStrategyAllocatedByToTerraform, true)(struct!.allocatedBy),
-    allocated_by_filters: cdktf.listMapper(customAllocationRuleStrategyAllocatedByFiltersToTerraform, true)(struct!.allocatedByFilters),
-    based_on_costs: cdktf.listMapper(customAllocationRuleStrategyBasedOnCostsToTerraform, true)(struct!.basedOnCosts),
+    allocated_by_tag_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allocatedByTagKeys),
+    evaluate_grouped_by_tag_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.evaluateGroupedByTagKeys),
+    granularity: cdktn.stringToTerraform(struct!.granularity),
+    method: cdktn.stringToTerraform(struct!.method),
+    allocated_by: cdktn.listMapper(customAllocationRuleStrategyAllocatedByToTerraform, true)(struct!.allocatedBy),
+    allocated_by_filters: cdktn.listMapper(customAllocationRuleStrategyAllocatedByFiltersToTerraform, true)(struct!.allocatedByFilters),
+    based_on_costs: cdktn.listMapper(customAllocationRuleStrategyBasedOnCostsToTerraform, true)(struct!.basedOnCosts),
     based_on_timeseries: customAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct!.basedOnTimeseries),
-    evaluate_grouped_by_filters: cdktf.listMapper(customAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform, true)(struct!.evaluateGroupedByFilters),
+    evaluate_grouped_by_filters: cdktn.listMapper(customAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform, true)(struct!.evaluateGroupedByFilters),
   }
 }
 
 
-export function customAllocationRuleStrategyToHclTerraform(struct?: CustomAllocationRuleStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customAllocationRuleStrategyToHclTerraform(struct?: CustomAllocationRuleStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocated_by_tag_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allocatedByTagKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allocatedByTagKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     evaluate_grouped_by_tag_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.evaluateGroupedByTagKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.evaluateGroupedByTagKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     granularity: {
-      value: cdktf.stringToHclTerraform(struct!.granularity),
+      value: cdktn.stringToHclTerraform(struct!.granularity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     allocated_by: {
-      value: cdktf.listMapperHcl(customAllocationRuleStrategyAllocatedByToHclTerraform, true)(struct!.allocatedBy),
+      value: cdktn.listMapperHcl(customAllocationRuleStrategyAllocatedByToHclTerraform, true)(struct!.allocatedBy),
       isBlock: true,
       type: "list",
       storageClassType: "CustomAllocationRuleStrategyAllocatedByList",
     },
     allocated_by_filters: {
-      value: cdktf.listMapperHcl(customAllocationRuleStrategyAllocatedByFiltersToHclTerraform, true)(struct!.allocatedByFilters),
+      value: cdktn.listMapperHcl(customAllocationRuleStrategyAllocatedByFiltersToHclTerraform, true)(struct!.allocatedByFilters),
       isBlock: true,
       type: "list",
       storageClassType: "CustomAllocationRuleStrategyAllocatedByFiltersList",
     },
     based_on_costs: {
-      value: cdktf.listMapperHcl(customAllocationRuleStrategyBasedOnCostsToHclTerraform, true)(struct!.basedOnCosts),
+      value: cdktn.listMapperHcl(customAllocationRuleStrategyBasedOnCostsToHclTerraform, true)(struct!.basedOnCosts),
       isBlock: true,
       type: "list",
       storageClassType: "CustomAllocationRuleStrategyBasedOnCostsList",
@@ -1431,7 +1431,7 @@ export function customAllocationRuleStrategyToHclTerraform(struct?: CustomAlloca
       storageClassType: "CustomAllocationRuleStrategyBasedOnTimeseries",
     },
     evaluate_grouped_by_filters: {
-      value: cdktf.listMapperHcl(customAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerraform, true)(struct!.evaluateGroupedByFilters),
+      value: cdktn.listMapperHcl(customAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerraform, true)(struct!.evaluateGroupedByFilters),
       isBlock: true,
       type: "list",
       storageClassType: "CustomAllocationRuleStrategyEvaluateGroupedByFiltersList",
@@ -1442,19 +1442,19 @@ export function customAllocationRuleStrategyToHclTerraform(struct?: CustomAlloca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexObject {
+export class CustomAllocationRuleStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CustomAllocationRuleStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomAllocationRuleStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1499,7 +1499,7 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomAllocationRuleStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomAllocationRuleStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1513,7 +1513,7 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexOb
       this._basedOnTimeseries.internalValue = undefined;
       this._evaluateGroupedByFilters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1601,7 +1601,7 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexOb
   public get allocatedBy() {
     return this._allocatedBy;
   }
-  public putAllocatedBy(value: CustomAllocationRuleStrategyAllocatedBy[] | cdktf.IResolvable) {
+  public putAllocatedBy(value: CustomAllocationRuleStrategyAllocatedBy[] | cdktn.IResolvable) {
     this._allocatedBy.internalValue = value;
   }
   public resetAllocatedBy() {
@@ -1617,7 +1617,7 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexOb
   public get allocatedByFilters() {
     return this._allocatedByFilters;
   }
-  public putAllocatedByFilters(value: CustomAllocationRuleStrategyAllocatedByFilters[] | cdktf.IResolvable) {
+  public putAllocatedByFilters(value: CustomAllocationRuleStrategyAllocatedByFilters[] | cdktn.IResolvable) {
     this._allocatedByFilters.internalValue = value;
   }
   public resetAllocatedByFilters() {
@@ -1633,7 +1633,7 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexOb
   public get basedOnCosts() {
     return this._basedOnCosts;
   }
-  public putBasedOnCosts(value: CustomAllocationRuleStrategyBasedOnCosts[] | cdktf.IResolvable) {
+  public putBasedOnCosts(value: CustomAllocationRuleStrategyBasedOnCosts[] | cdktn.IResolvable) {
     this._basedOnCosts.internalValue = value;
   }
   public resetBasedOnCosts() {
@@ -1662,7 +1662,7 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexOb
   public get evaluateGroupedByFilters() {
     return this._evaluateGroupedByFilters;
   }
-  public putEvaluateGroupedByFilters(value: CustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktf.IResolvable) {
+  public putEvaluateGroupedByFilters(value: CustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktn.IResolvable) {
     this._evaluateGroupedByFilters.internalValue = value;
   }
   public resetEvaluateGroupedByFilters() {
@@ -1675,9 +1675,9 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule}
 */
-export class CustomAllocationRule extends cdktf.TerraformResource {
+export class CustomAllocationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1688,14 +1688,14 @@ export class CustomAllocationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CustomAllocationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CustomAllocationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomAllocationRule to import
-  * @param importFromId The id of the existing CustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomAllocationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_custom_allocation_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_custom_allocation_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -1703,7 +1703,7 @@ export class CustomAllocationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1714,7 +1714,7 @@ export class CustomAllocationRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_custom_allocation_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1742,11 +1742,11 @@ export class CustomAllocationRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1815,7 +1815,7 @@ export class CustomAllocationRule extends cdktf.TerraformResource {
   public get costsToAllocate() {
     return this._costsToAllocate;
   }
-  public putCostsToAllocate(value: CustomAllocationRuleCostsToAllocate[] | cdktf.IResolvable) {
+  public putCostsToAllocate(value: CustomAllocationRuleCostsToAllocate[] | cdktn.IResolvable) {
     this._costsToAllocate.internalValue = value;
   }
   public resetCostsToAllocate() {
@@ -1848,10 +1848,10 @@ export class CustomAllocationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      providernames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._providernames),
-      rule_name: cdktf.stringToTerraform(this._ruleName),
-      costs_to_allocate: cdktf.listMapper(customAllocationRuleCostsToAllocateToTerraform, true)(this._costsToAllocate.internalValue),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      providernames: cdktn.listMapper(cdktn.stringToTerraform, false)(this._providernames),
+      rule_name: cdktn.stringToTerraform(this._ruleName),
+      costs_to_allocate: cdktn.listMapper(customAllocationRuleCostsToAllocateToTerraform, true)(this._costsToAllocate.internalValue),
       strategy: customAllocationRuleStrategyToTerraform(this._strategy.internalValue),
     };
   }
@@ -1859,25 +1859,25 @@ export class CustomAllocationRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       providernames: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._providernames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._providernames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       rule_name: {
-        value: cdktf.stringToHclTerraform(this._ruleName),
+        value: cdktn.stringToHclTerraform(this._ruleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       costs_to_allocate: {
-        value: cdktf.listMapperHcl(customAllocationRuleCostsToAllocateToHclTerraform, true)(this._costsToAllocate.internalValue),
+        value: cdktn.listMapperHcl(customAllocationRuleCostsToAllocateToHclTerraform, true)(this._costsToAllocate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CustomAllocationRuleCostsToAllocateList",

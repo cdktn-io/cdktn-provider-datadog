@@ -1,53 +1,53 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebhookConfig extends cdktf.TerraformMetaArguments {
+export interface WebhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * The headers attached to the webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#custom_headers Webhook#custom_headers}
   */
   readonly customHeaders?: string;
   /**
   * Encoding type. Valid values are `json`, `form`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#encode_as Webhook#encode_as}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#encode_as Webhook#encode_as}
   */
   readonly encodeAs?: string;
   /**
   * The name of the webhook. It corresponds with `<WEBHOOK_NAME>`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#name Webhook#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#name Webhook#name}
   */
   readonly name: string;
   /**
   * The payload of the webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#payload Webhook#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#payload Webhook#payload}
   */
   readonly payload?: string;
   /**
   * The URL of the webhook.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#url Webhook#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#url Webhook#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook datadog_webhook}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook datadog_webhook}
 */
-export class Webhook extends cdktf.TerraformResource {
+export class Webhook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -58,14 +58,14 @@ export class Webhook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Webhook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Webhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Webhook to import
-  * @param importFromId The id of the existing Webhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Webhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Webhook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_webhook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_webhook", importId: importFromId, provider });
       }
 
   // ===========
@@ -73,7 +73,7 @@ export class Webhook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/webhook datadog_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/webhook datadog_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class Webhook extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_webhook',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -191,42 +191,42 @@ export class Webhook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_headers: cdktf.stringToTerraform(this._customHeaders),
-      encode_as: cdktf.stringToTerraform(this._encodeAs),
-      name: cdktf.stringToTerraform(this._name),
-      payload: cdktf.stringToTerraform(this._payload),
-      url: cdktf.stringToTerraform(this._url),
+      custom_headers: cdktn.stringToTerraform(this._customHeaders),
+      encode_as: cdktn.stringToTerraform(this._encodeAs),
+      name: cdktn.stringToTerraform(this._name),
+      payload: cdktn.stringToTerraform(this._payload),
+      url: cdktn.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_headers: {
-        value: cdktf.stringToHclTerraform(this._customHeaders),
+        value: cdktn.stringToHclTerraform(this._customHeaders),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encode_as: {
-        value: cdktf.stringToHclTerraform(this._encodeAs),
+        value: cdktn.stringToHclTerraform(this._encodeAs),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       payload: {
-        value: cdktf.stringToHclTerraform(this._payload),
+        value: cdktn.stringToHclTerraform(this._payload),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface MetricTagConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Toggle to include/exclude tags as queryable for your metric. Can only be applied to metrics that have one or more tags configured. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#exclude_tags_mode MetricTagConfiguration#exclude_tags_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#exclude_tags_mode MetricTagConfiguration#exclude_tags_mode}
   */
-  readonly excludeTagsMode?: boolean | cdktf.IResolvable;
+  readonly excludeTagsMode?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#id MetricTagConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,75 +28,75 @@ export interface MetricTagConfigurationConfig extends cdktf.TerraformMetaArgumen
   /**
   * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have a `metric_type` of distribution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#include_percentiles MetricTagConfiguration#include_percentiles}
   */
-  readonly includePercentiles?: boolean | cdktf.IResolvable;
+  readonly includePercentiles?: boolean | cdktn.IResolvable;
   /**
   * The metric name for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#metric_name MetricTagConfiguration#metric_name}
   */
   readonly metricName: string;
   /**
   * The metric's type. This field can't be updated after creation. Valid values are `gauge`, `count`, `rate`, `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#metric_type MetricTagConfiguration#metric_type}
   */
   readonly metricType: string;
   /**
   * A list of tag keys that will be queryable for your metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#tags MetricTagConfiguration#tags}
   */
   readonly tags: string[];
   /**
   * aggregations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#aggregations MetricTagConfiguration#aggregations}
   */
-  readonly aggregations?: MetricTagConfigurationAggregations[] | cdktf.IResolvable;
+  readonly aggregations?: MetricTagConfigurationAggregations[] | cdktn.IResolvable;
 }
 export interface MetricTagConfigurationAggregations {
   /**
   * A space aggregation for use in query. Valid values are `avg`, `max`, `min`, `sum`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#space MetricTagConfiguration#space}
   */
   readonly space: string;
   /**
   * A time aggregation for use in query. Valid values are `avg`, `count`, `max`, `min`, `sum`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#time MetricTagConfiguration#time}
   */
   readonly time: string;
 }
 
-export function metricTagConfigurationAggregationsToTerraform(struct?: MetricTagConfigurationAggregations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function metricTagConfigurationAggregationsToTerraform(struct?: MetricTagConfigurationAggregations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    space: cdktf.stringToTerraform(struct!.space),
-    time: cdktf.stringToTerraform(struct!.time),
+    space: cdktn.stringToTerraform(struct!.space),
+    time: cdktn.stringToTerraform(struct!.time),
   }
 }
 
 
-export function metricTagConfigurationAggregationsToHclTerraform(struct?: MetricTagConfigurationAggregations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function metricTagConfigurationAggregationsToHclTerraform(struct?: MetricTagConfigurationAggregations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     space: {
-      value: cdktf.stringToHclTerraform(struct!.space),
+      value: cdktn.stringToHclTerraform(struct!.space),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time: {
-      value: cdktf.stringToHclTerraform(struct!.time),
+      value: cdktn.stringToHclTerraform(struct!.time),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,9 +107,9 @@ export function metricTagConfigurationAggregationsToHclTerraform(struct?: Metric
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MetricTagConfigurationAggregationsOutputReference extends cdktf.ComplexObject {
+export class MetricTagConfigurationAggregationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -117,11 +117,11 @@ export class MetricTagConfigurationAggregationsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MetricTagConfigurationAggregations | cdktf.IResolvable | undefined {
+  public get internalValue(): MetricTagConfigurationAggregations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,14 +138,14 @@ export class MetricTagConfigurationAggregationsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MetricTagConfigurationAggregations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MetricTagConfigurationAggregations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._space = undefined;
       this._time = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -184,15 +184,15 @@ export class MetricTagConfigurationAggregationsOutputReference extends cdktf.Com
   }
 }
 
-export class MetricTagConfigurationAggregationsList extends cdktf.ComplexList {
-  public internalValue? : MetricTagConfigurationAggregations[] | cdktf.IResolvable
+export class MetricTagConfigurationAggregationsList extends cdktn.ComplexList {
+  public internalValue? : MetricTagConfigurationAggregations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -205,9 +205,9 @@ export class MetricTagConfigurationAggregationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration}
 */
-export class MetricTagConfiguration extends cdktf.TerraformResource {
+export class MetricTagConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -218,14 +218,14 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MetricTagConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MetricTagConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MetricTagConfiguration to import
-  * @param importFromId The id of the existing MetricTagConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MetricTagConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MetricTagConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_metric_tag_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_metric_tag_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -233,7 +233,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/metric_tag_configuration datadog_metric_tag_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -244,7 +244,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_metric_tag_configuration',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -269,11 +269,11 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // ==========
 
   // exclude_tags_mode - computed: false, optional: true, required: false
-  private _excludeTagsMode?: boolean | cdktf.IResolvable; 
+  private _excludeTagsMode?: boolean | cdktn.IResolvable; 
   public get excludeTagsMode() {
     return this.getBooleanAttribute('exclude_tags_mode');
   }
-  public set excludeTagsMode(value: boolean | cdktf.IResolvable) {
+  public set excludeTagsMode(value: boolean | cdktn.IResolvable) {
     this._excludeTagsMode = value;
   }
   public resetExcludeTagsMode() {
@@ -301,11 +301,11 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   }
 
   // include_percentiles - computed: false, optional: true, required: false
-  private _includePercentiles?: boolean | cdktf.IResolvable; 
+  private _includePercentiles?: boolean | cdktn.IResolvable; 
   public get includePercentiles() {
     return this.getBooleanAttribute('include_percentiles');
   }
-  public set includePercentiles(value: boolean | cdktf.IResolvable) {
+  public set includePercentiles(value: boolean | cdktn.IResolvable) {
     this._includePercentiles = value;
   }
   public resetIncludePercentiles() {
@@ -345,7 +345,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   // tags - computed: false, optional: false, required: true
   private _tags?: string[]; 
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -360,7 +360,7 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
   public get aggregations() {
     return this._aggregations;
   }
-  public putAggregations(value: MetricTagConfigurationAggregations[] | cdktf.IResolvable) {
+  public putAggregations(value: MetricTagConfigurationAggregations[] | cdktn.IResolvable) {
     this._aggregations.internalValue = value;
   }
   public resetAggregations() {
@@ -377,56 +377,56 @@ export class MetricTagConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exclude_tags_mode: cdktf.booleanToTerraform(this._excludeTagsMode),
-      id: cdktf.stringToTerraform(this._id),
-      include_percentiles: cdktf.booleanToTerraform(this._includePercentiles),
-      metric_name: cdktf.stringToTerraform(this._metricName),
-      metric_type: cdktf.stringToTerraform(this._metricType),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      aggregations: cdktf.listMapper(metricTagConfigurationAggregationsToTerraform, true)(this._aggregations.internalValue),
+      exclude_tags_mode: cdktn.booleanToTerraform(this._excludeTagsMode),
+      id: cdktn.stringToTerraform(this._id),
+      include_percentiles: cdktn.booleanToTerraform(this._includePercentiles),
+      metric_name: cdktn.stringToTerraform(this._metricName),
+      metric_type: cdktn.stringToTerraform(this._metricType),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      aggregations: cdktn.listMapper(metricTagConfigurationAggregationsToTerraform, true)(this._aggregations.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exclude_tags_mode: {
-        value: cdktf.booleanToHclTerraform(this._excludeTagsMode),
+        value: cdktn.booleanToHclTerraform(this._excludeTagsMode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_percentiles: {
-        value: cdktf.booleanToHclTerraform(this._includePercentiles),
+        value: cdktn.booleanToHclTerraform(this._includePercentiles),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       metric_name: {
-        value: cdktf.stringToHclTerraform(this._metricName),
+        value: cdktn.stringToHclTerraform(this._metricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metric_type: {
-        value: cdktf.stringToHclTerraform(this._metricType),
+        value: cdktn.stringToHclTerraform(this._metricType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       aggregations: {
-        value: cdktf.listMapperHcl(metricTagConfigurationAggregationsToHclTerraform, true)(this._aggregations.internalValue),
+        value: cdktn.listMapperHcl(metricTagConfigurationAggregationsToHclTerraform, true)(this._aggregations.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "MetricTagConfigurationAggregationsList",

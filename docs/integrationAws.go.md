@@ -1,28 +1,28 @@
-# `integrationAws` Submodule <a name="`integrationAws` Submodule" id="@cdktf/provider-datadog.integrationAws"></a>
+# `integrationAws` Submodule <a name="`integrationAws` Submodule" id="@cdktn/provider-datadog.integrationAws"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### IntegrationAws <a name="IntegrationAws" id="@cdktf/provider-datadog.integrationAws.IntegrationAws"></a>
+### IntegrationAws <a name="IntegrationAws" id="@cdktn/provider-datadog.integrationAws.IntegrationAws"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws datadog_integration_aws}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws datadog_integration_aws}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
 
 integrationaws.NewIntegrationAws(scope Construct, id *string, config IntegrationAwsConfig) IntegrationAws
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig">IntegrationAwsConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig">IntegrationAwsConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig">IntegrationAwsConfig</a>
+- *Type:* <a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig">IntegrationAwsConfig</a>
 
 ---
 
@@ -50,46 +50,46 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetAccessKeyId">ResetAccessKeyId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetAccountId">ResetAccountId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetAccountSpecificNamespaceRules">ResetAccountSpecificNamespaceRules</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetCspmResourceCollectionEnabled">ResetCspmResourceCollectionEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetExcludedRegions">ResetExcludedRegions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetExtendedResourceCollectionEnabled">ResetExtendedResourceCollectionEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetFilterTags">ResetFilterTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetHostTags">ResetHostTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetMetricsCollectionEnabled">ResetMetricsCollectionEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetResourceCollectionEnabled">ResetResourceCollectionEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetRoleName">ResetRoleName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.resetSecretAccessKey">ResetSecretAccessKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetAccessKeyId">ResetAccessKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetAccountId">ResetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetAccountSpecificNamespaceRules">ResetAccountSpecificNamespaceRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetCspmResourceCollectionEnabled">ResetCspmResourceCollectionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetExcludedRegions">ResetExcludedRegions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetExtendedResourceCollectionEnabled">ResetExtendedResourceCollectionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetFilterTags">ResetFilterTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetHostTags">ResetHostTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetMetricsCollectionEnabled">ResetMetricsCollectionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetResourceCollectionEnabled">ResetResourceCollectionEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetRoleName">ResetRoleName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.resetSecretAccessKey">ResetSecretAccessKey</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.toString"></a>
 
 ```go
 func ToString() *string
@@ -97,25 +97,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -123,7 +123,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -131,7 +131,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -139,19 +139,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -159,7 +159,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -167,7 +167,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -175,151 +175,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -329,7 +329,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -337,7 +337,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -345,7 +345,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -353,7 +353,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -361,7 +361,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -369,7 +369,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -377,79 +377,79 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccessKeyId` <a name="ResetAccessKeyId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetAccessKeyId"></a>
+##### `ResetAccessKeyId` <a name="ResetAccessKeyId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetAccessKeyId"></a>
 
 ```go
 func ResetAccessKeyId()
 ```
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetAccountId"></a>
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetAccountId"></a>
 
 ```go
 func ResetAccountId()
 ```
 
-##### `ResetAccountSpecificNamespaceRules` <a name="ResetAccountSpecificNamespaceRules" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetAccountSpecificNamespaceRules"></a>
+##### `ResetAccountSpecificNamespaceRules` <a name="ResetAccountSpecificNamespaceRules" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetAccountSpecificNamespaceRules"></a>
 
 ```go
 func ResetAccountSpecificNamespaceRules()
 ```
 
-##### `ResetCspmResourceCollectionEnabled` <a name="ResetCspmResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetCspmResourceCollectionEnabled"></a>
+##### `ResetCspmResourceCollectionEnabled` <a name="ResetCspmResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetCspmResourceCollectionEnabled"></a>
 
 ```go
 func ResetCspmResourceCollectionEnabled()
 ```
 
-##### `ResetExcludedRegions` <a name="ResetExcludedRegions" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetExcludedRegions"></a>
+##### `ResetExcludedRegions` <a name="ResetExcludedRegions" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetExcludedRegions"></a>
 
 ```go
 func ResetExcludedRegions()
 ```
 
-##### `ResetExtendedResourceCollectionEnabled` <a name="ResetExtendedResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetExtendedResourceCollectionEnabled"></a>
+##### `ResetExtendedResourceCollectionEnabled` <a name="ResetExtendedResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetExtendedResourceCollectionEnabled"></a>
 
 ```go
 func ResetExtendedResourceCollectionEnabled()
 ```
 
-##### `ResetFilterTags` <a name="ResetFilterTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetFilterTags"></a>
+##### `ResetFilterTags` <a name="ResetFilterTags" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetFilterTags"></a>
 
 ```go
 func ResetFilterTags()
 ```
 
-##### `ResetHostTags` <a name="ResetHostTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetHostTags"></a>
+##### `ResetHostTags` <a name="ResetHostTags" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetHostTags"></a>
 
 ```go
 func ResetHostTags()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetMetricsCollectionEnabled` <a name="ResetMetricsCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetMetricsCollectionEnabled"></a>
+##### `ResetMetricsCollectionEnabled` <a name="ResetMetricsCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetMetricsCollectionEnabled"></a>
 
 ```go
 func ResetMetricsCollectionEnabled()
 ```
 
-##### `ResetResourceCollectionEnabled` <a name="ResetResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetResourceCollectionEnabled"></a>
+##### `ResetResourceCollectionEnabled` <a name="ResetResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetResourceCollectionEnabled"></a>
 
 ```go
 func ResetResourceCollectionEnabled()
 ```
 
-##### `ResetRoleName` <a name="ResetRoleName" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetRoleName"></a>
+##### `ResetRoleName` <a name="ResetRoleName" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetRoleName"></a>
 
 ```go
 func ResetRoleName()
 ```
 
-##### `ResetSecretAccessKey` <a name="ResetSecretAccessKey" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.resetSecretAccessKey"></a>
+##### `ResetSecretAccessKey` <a name="ResetSecretAccessKey" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.resetSecretAccessKey"></a>
 
 ```go
 func ResetSecretAccessKey()
@@ -459,17 +459,17 @@ func ResetSecretAccessKey()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a IntegrationAws resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a IntegrationAws resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
 
 integrationaws.IntegrationAws_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -498,45 +498,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
 
 integrationaws.IntegrationAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a IntegrationAws resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a IntegrationAws resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -544,7 +544,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -552,19 +552,19 @@ The construct id used in the generated config for the IntegrationAws to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing IntegrationAws that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the IntegrationAws to import is found.
 
@@ -574,51 +574,51 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accessKeyIdInput">AccessKeyIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRulesInput">AccountSpecificNamespaceRulesInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabledInput">CspmResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.excludedRegionsInput">ExcludedRegionsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabledInput">ExtendedResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTagsInput">FilterTagsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.hostTagsInput">HostTagsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabledInput">MetricsCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabledInput">ResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.roleNameInput">RoleNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKeyInput">SecretAccessKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRules">AccountSpecificNamespaceRules</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabled">CspmResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.excludedRegions">ExcludedRegions</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabled">ExtendedResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTags">FilterTags</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.hostTags">HostTags</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabled">MetricsCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.roleName">RoleName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.externalId">ExternalId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accessKeyIdInput">AccessKeyIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRulesInput">AccountSpecificNamespaceRulesInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabledInput">CspmResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.excludedRegionsInput">ExcludedRegionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabledInput">ExtendedResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.filterTagsInput">FilterTagsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.hostTagsInput">HostTagsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabledInput">MetricsCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabledInput">ResourceCollectionEnabledInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.roleNameInput">RoleNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKeyInput">SecretAccessKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRules">AccountSpecificNamespaceRules</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabled">CspmResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.excludedRegions">ExcludedRegions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabled">ExtendedResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.filterTags">FilterTags</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.hostTags">HostTags</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabled">MetricsCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.roleName">RoleName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.node"></a>
 
 ```go
 func Node() Node
@@ -630,17 +630,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -650,7 +650,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -660,7 +660,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -670,7 +670,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -680,17 +680,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -700,7 +700,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -710,7 +710,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -720,37 +720,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -760,7 +760,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.externalId"></a>
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.externalId"></a>
 
 ```go
 func ExternalId() *string
@@ -770,7 +770,7 @@ func ExternalId() *string
 
 ---
 
-##### `AccessKeyIdInput`<sup>Optional</sup> <a name="AccessKeyIdInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accessKeyIdInput"></a>
+##### `AccessKeyIdInput`<sup>Optional</sup> <a name="AccessKeyIdInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accessKeyIdInput"></a>
 
 ```go
 func AccessKeyIdInput() *string
@@ -780,7 +780,7 @@ func AccessKeyIdInput() *string
 
 ---
 
-##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountIdInput"></a>
+##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountIdInput"></a>
 
 ```go
 func AccountIdInput() *string
@@ -790,7 +790,7 @@ func AccountIdInput() *string
 
 ---
 
-##### `AccountSpecificNamespaceRulesInput`<sup>Optional</sup> <a name="AccountSpecificNamespaceRulesInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRulesInput"></a>
+##### `AccountSpecificNamespaceRulesInput`<sup>Optional</sup> <a name="AccountSpecificNamespaceRulesInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRulesInput"></a>
 
 ```go
 func AccountSpecificNamespaceRulesInput() *map[string]interface{}
@@ -800,7 +800,7 @@ func AccountSpecificNamespaceRulesInput() *map[string]interface{}
 
 ---
 
-##### `CspmResourceCollectionEnabledInput`<sup>Optional</sup> <a name="CspmResourceCollectionEnabledInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabledInput"></a>
+##### `CspmResourceCollectionEnabledInput`<sup>Optional</sup> <a name="CspmResourceCollectionEnabledInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabledInput"></a>
 
 ```go
 func CspmResourceCollectionEnabledInput() *string
@@ -810,7 +810,7 @@ func CspmResourceCollectionEnabledInput() *string
 
 ---
 
-##### `ExcludedRegionsInput`<sup>Optional</sup> <a name="ExcludedRegionsInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.excludedRegionsInput"></a>
+##### `ExcludedRegionsInput`<sup>Optional</sup> <a name="ExcludedRegionsInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.excludedRegionsInput"></a>
 
 ```go
 func ExcludedRegionsInput() *[]*string
@@ -820,7 +820,7 @@ func ExcludedRegionsInput() *[]*string
 
 ---
 
-##### `ExtendedResourceCollectionEnabledInput`<sup>Optional</sup> <a name="ExtendedResourceCollectionEnabledInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabledInput"></a>
+##### `ExtendedResourceCollectionEnabledInput`<sup>Optional</sup> <a name="ExtendedResourceCollectionEnabledInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabledInput"></a>
 
 ```go
 func ExtendedResourceCollectionEnabledInput() *string
@@ -830,7 +830,7 @@ func ExtendedResourceCollectionEnabledInput() *string
 
 ---
 
-##### `FilterTagsInput`<sup>Optional</sup> <a name="FilterTagsInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTagsInput"></a>
+##### `FilterTagsInput`<sup>Optional</sup> <a name="FilterTagsInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.filterTagsInput"></a>
 
 ```go
 func FilterTagsInput() *[]*string
@@ -840,7 +840,7 @@ func FilterTagsInput() *[]*string
 
 ---
 
-##### `HostTagsInput`<sup>Optional</sup> <a name="HostTagsInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.hostTagsInput"></a>
+##### `HostTagsInput`<sup>Optional</sup> <a name="HostTagsInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.hostTagsInput"></a>
 
 ```go
 func HostTagsInput() *[]*string
@@ -850,7 +850,7 @@ func HostTagsInput() *[]*string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -860,7 +860,7 @@ func IdInput() *string
 
 ---
 
-##### `MetricsCollectionEnabledInput`<sup>Optional</sup> <a name="MetricsCollectionEnabledInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabledInput"></a>
+##### `MetricsCollectionEnabledInput`<sup>Optional</sup> <a name="MetricsCollectionEnabledInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabledInput"></a>
 
 ```go
 func MetricsCollectionEnabledInput() *string
@@ -870,7 +870,7 @@ func MetricsCollectionEnabledInput() *string
 
 ---
 
-##### `ResourceCollectionEnabledInput`<sup>Optional</sup> <a name="ResourceCollectionEnabledInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabledInput"></a>
+##### `ResourceCollectionEnabledInput`<sup>Optional</sup> <a name="ResourceCollectionEnabledInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabledInput"></a>
 
 ```go
 func ResourceCollectionEnabledInput() *string
@@ -880,7 +880,7 @@ func ResourceCollectionEnabledInput() *string
 
 ---
 
-##### `RoleNameInput`<sup>Optional</sup> <a name="RoleNameInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.roleNameInput"></a>
+##### `RoleNameInput`<sup>Optional</sup> <a name="RoleNameInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.roleNameInput"></a>
 
 ```go
 func RoleNameInput() *string
@@ -890,7 +890,7 @@ func RoleNameInput() *string
 
 ---
 
-##### `SecretAccessKeyInput`<sup>Optional</sup> <a name="SecretAccessKeyInput" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKeyInput"></a>
+##### `SecretAccessKeyInput`<sup>Optional</sup> <a name="SecretAccessKeyInput" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKeyInput"></a>
 
 ```go
 func SecretAccessKeyInput() *string
@@ -900,7 +900,7 @@ func SecretAccessKeyInput() *string
 
 ---
 
-##### `AccessKeyId`<sup>Required</sup> <a name="AccessKeyId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accessKeyId"></a>
+##### `AccessKeyId`<sup>Required</sup> <a name="AccessKeyId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accessKeyId"></a>
 
 ```go
 func AccessKeyId() *string
@@ -910,7 +910,7 @@ func AccessKeyId() *string
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountId"></a>
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountId"></a>
 
 ```go
 func AccountId() *string
@@ -920,7 +920,7 @@ func AccountId() *string
 
 ---
 
-##### `AccountSpecificNamespaceRules`<sup>Required</sup> <a name="AccountSpecificNamespaceRules" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRules"></a>
+##### `AccountSpecificNamespaceRules`<sup>Required</sup> <a name="AccountSpecificNamespaceRules" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.accountSpecificNamespaceRules"></a>
 
 ```go
 func AccountSpecificNamespaceRules() *map[string]interface{}
@@ -930,7 +930,7 @@ func AccountSpecificNamespaceRules() *map[string]interface{}
 
 ---
 
-##### `CspmResourceCollectionEnabled`<sup>Required</sup> <a name="CspmResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabled"></a>
+##### `CspmResourceCollectionEnabled`<sup>Required</sup> <a name="CspmResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.cspmResourceCollectionEnabled"></a>
 
 ```go
 func CspmResourceCollectionEnabled() *string
@@ -940,7 +940,7 @@ func CspmResourceCollectionEnabled() *string
 
 ---
 
-##### `ExcludedRegions`<sup>Required</sup> <a name="ExcludedRegions" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.excludedRegions"></a>
+##### `ExcludedRegions`<sup>Required</sup> <a name="ExcludedRegions" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.excludedRegions"></a>
 
 ```go
 func ExcludedRegions() *[]*string
@@ -950,7 +950,7 @@ func ExcludedRegions() *[]*string
 
 ---
 
-##### `ExtendedResourceCollectionEnabled`<sup>Required</sup> <a name="ExtendedResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabled"></a>
+##### `ExtendedResourceCollectionEnabled`<sup>Required</sup> <a name="ExtendedResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.extendedResourceCollectionEnabled"></a>
 
 ```go
 func ExtendedResourceCollectionEnabled() *string
@@ -960,7 +960,7 @@ func ExtendedResourceCollectionEnabled() *string
 
 ---
 
-##### `FilterTags`<sup>Required</sup> <a name="FilterTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.filterTags"></a>
+##### `FilterTags`<sup>Required</sup> <a name="FilterTags" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.filterTags"></a>
 
 ```go
 func FilterTags() *[]*string
@@ -970,7 +970,7 @@ func FilterTags() *[]*string
 
 ---
 
-##### `HostTags`<sup>Required</sup> <a name="HostTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.hostTags"></a>
+##### `HostTags`<sup>Required</sup> <a name="HostTags" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.hostTags"></a>
 
 ```go
 func HostTags() *[]*string
@@ -980,7 +980,7 @@ func HostTags() *[]*string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.id"></a>
 
 ```go
 func Id() *string
@@ -990,7 +990,7 @@ func Id() *string
 
 ---
 
-##### `MetricsCollectionEnabled`<sup>Required</sup> <a name="MetricsCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabled"></a>
+##### `MetricsCollectionEnabled`<sup>Required</sup> <a name="MetricsCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.metricsCollectionEnabled"></a>
 
 ```go
 func MetricsCollectionEnabled() *string
@@ -1000,7 +1000,7 @@ func MetricsCollectionEnabled() *string
 
 ---
 
-##### `ResourceCollectionEnabled`<sup>Required</sup> <a name="ResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabled"></a>
+##### `ResourceCollectionEnabled`<sup>Required</sup> <a name="ResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.resourceCollectionEnabled"></a>
 
 ```go
 func ResourceCollectionEnabled() *string
@@ -1010,7 +1010,7 @@ func ResourceCollectionEnabled() *string
 
 ---
 
-##### `RoleName`<sup>Required</sup> <a name="RoleName" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.roleName"></a>
+##### `RoleName`<sup>Required</sup> <a name="RoleName" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.roleName"></a>
 
 ```go
 func RoleName() *string
@@ -1020,7 +1020,7 @@ func RoleName() *string
 
 ---
 
-##### `SecretAccessKey`<sup>Required</sup> <a name="SecretAccessKey" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKey"></a>
+##### `SecretAccessKey`<sup>Required</sup> <a name="SecretAccessKey" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.secretAccessKey"></a>
 
 ```go
 func SecretAccessKey() *string
@@ -1034,11 +1034,11 @@ func SecretAccessKey() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAws.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAws.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-datadog.integrationAws.IntegrationAws.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1050,20 +1050,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### IntegrationAwsConfig <a name="IntegrationAwsConfig" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig"></a>
+### IntegrationAwsConfig <a name="IntegrationAwsConfig" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
 
 &integrationaws.IntegrationAwsConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccessKeyId: *string,
 	AccountId: *string,
@@ -1085,30 +1085,30 @@ import "github.com/cdktf/cdktf-provider-datadog-go/datadog/v12/integrationaws"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Your AWS access key ID. Only required if your AWS account is a GovCloud or China account. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Your AWS Account ID without dashes. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountSpecificNamespaceRules">AccountSpecificNamespaceRules</a></code> | <code>*map[string]interface{}</code> | Enables or disables metric collection for specific AWS namespaces for this AWS account only. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.cspmResourceCollectionEnabled">CspmResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects cloud security posture management resources from your AWS account. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.excludedRegions">ExcludedRegions</a></code> | <code>*[]*string</code> | An array of AWS regions to exclude from metrics collection. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.extendedResourceCollectionEnabled">ExtendedResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cspm_resource_collection_enabled`. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.filterTags">FilterTags</a></code> | <code>*[]*string</code> | Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses when collecting metrics from EC2. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.hostTags">HostTags</a></code> | <code>*[]*string</code> | Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#id IntegrationAws#id}. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.metricsCollectionEnabled">MetricsCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects metrics for this AWS account. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects a standard set of resources from your AWS account. **Deprecated.** Deprecated in favor of `extended_resource_collection_enabled`. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Your Datadog role delegation name. |
-| <code><a href="#@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | Your AWS secret access key. Only required if your AWS account is a GovCloud or China account. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.accessKeyId">AccessKeyId</a></code> | <code>*string</code> | Your AWS access key ID. Only required if your AWS account is a GovCloud or China account. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Your AWS Account ID without dashes. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountSpecificNamespaceRules">AccountSpecificNamespaceRules</a></code> | <code>*map[string]interface{}</code> | Enables or disables metric collection for specific AWS namespaces for this AWS account only. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.cspmResourceCollectionEnabled">CspmResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects cloud security posture management resources from your AWS account. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.excludedRegions">ExcludedRegions</a></code> | <code>*[]*string</code> | An array of AWS regions to exclude from metrics collection. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.extendedResourceCollectionEnabled">ExtendedResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cspm_resource_collection_enabled`. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.filterTags">FilterTags</a></code> | <code>*[]*string</code> | Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses when collecting metrics from EC2. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.hostTags">HostTags</a></code> | <code>*[]*string</code> | Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#id IntegrationAws#id}. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.metricsCollectionEnabled">MetricsCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects metrics for this AWS account. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.resourceCollectionEnabled">ResourceCollectionEnabled</a></code> | <code>*string</code> | Whether Datadog collects a standard set of resources from your AWS account. **Deprecated.** Deprecated in favor of `extended_resource_collection_enabled`. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Your Datadog role delegation name. |
+| <code><a href="#@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.secretAccessKey">SecretAccessKey</a></code> | <code>*string</code> | Your AWS secret access key. Only required if your AWS account is a GovCloud or China account. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1118,7 +1118,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1128,47 +1128,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1178,7 +1178,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccessKeyId`<sup>Optional</sup> <a name="AccessKeyId" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.accessKeyId"></a>
+##### `AccessKeyId`<sup>Optional</sup> <a name="AccessKeyId" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.accessKeyId"></a>
 
 ```go
 AccessKeyId *string
@@ -1188,11 +1188,11 @@ AccessKeyId *string
 
 Your AWS access key ID. Only required if your AWS account is a GovCloud or China account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#access_key_id IntegrationAws#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#access_key_id IntegrationAws#access_key_id}
 
 ---
 
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -1202,11 +1202,11 @@ AccountId *string
 
 Your AWS Account ID without dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#account_id IntegrationAws#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#account_id IntegrationAws#account_id}
 
 ---
 
-##### `AccountSpecificNamespaceRules`<sup>Optional</sup> <a name="AccountSpecificNamespaceRules" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountSpecificNamespaceRules"></a>
+##### `AccountSpecificNamespaceRules`<sup>Optional</sup> <a name="AccountSpecificNamespaceRules" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.accountSpecificNamespaceRules"></a>
 
 ```go
 AccountSpecificNamespaceRules *map[string]interface{}
@@ -1218,11 +1218,11 @@ Enables or disables metric collection for specific AWS namespaces for this AWS a
 
 A list of namespaces can be found at the [available namespace rules API endpoint](https://docs.datadoghq.com/api/v1/aws-integration/#list-namespace-rules).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#account_specific_namespace_rules IntegrationAws#account_specific_namespace_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#account_specific_namespace_rules IntegrationAws#account_specific_namespace_rules}
 
 ---
 
-##### `CspmResourceCollectionEnabled`<sup>Optional</sup> <a name="CspmResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.cspmResourceCollectionEnabled"></a>
+##### `CspmResourceCollectionEnabled`<sup>Optional</sup> <a name="CspmResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.cspmResourceCollectionEnabled"></a>
 
 ```go
 CspmResourceCollectionEnabled *string
@@ -1234,11 +1234,11 @@ Whether Datadog collects cloud security posture management resources from your A
 
 This includes additional resources not covered under the general resource_collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#cspm_resource_collection_enabled IntegrationAws#cspm_resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#cspm_resource_collection_enabled IntegrationAws#cspm_resource_collection_enabled}
 
 ---
 
-##### `ExcludedRegions`<sup>Optional</sup> <a name="ExcludedRegions" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.excludedRegions"></a>
+##### `ExcludedRegions`<sup>Optional</sup> <a name="ExcludedRegions" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.excludedRegions"></a>
 
 ```go
 ExcludedRegions *[]*string
@@ -1248,11 +1248,11 @@ ExcludedRegions *[]*string
 
 An array of AWS regions to exclude from metrics collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#excluded_regions IntegrationAws#excluded_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#excluded_regions IntegrationAws#excluded_regions}
 
 ---
 
-##### `ExtendedResourceCollectionEnabled`<sup>Optional</sup> <a name="ExtendedResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.extendedResourceCollectionEnabled"></a>
+##### `ExtendedResourceCollectionEnabled`<sup>Optional</sup> <a name="ExtendedResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.extendedResourceCollectionEnabled"></a>
 
 ```go
 ExtendedResourceCollectionEnabled *string
@@ -1262,11 +1262,11 @@ ExtendedResourceCollectionEnabled *string
 
 Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cspm_resource_collection_enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#extended_resource_collection_enabled IntegrationAws#extended_resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#extended_resource_collection_enabled IntegrationAws#extended_resource_collection_enabled}
 
 ---
 
-##### `FilterTags`<sup>Optional</sup> <a name="FilterTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.filterTags"></a>
+##### `FilterTags`<sup>Optional</sup> <a name="FilterTags" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.filterTags"></a>
 
 ```go
 FilterTags *[]*string
@@ -1278,11 +1278,11 @@ Array of EC2 tags (in the form `key:value`) defines a filter that Datadog uses w
 
 Wildcards, such as `?` (for single characters) and `*` (for multiple characters) can also be used. Only hosts that match one of the defined tags will be imported into Datadog. The rest will be ignored. Host matching a given tag can also be excluded by adding `!` before the tag. e.x. `env:production,instance-type:c1.*,!region:us-east-1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#filter_tags IntegrationAws#filter_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#filter_tags IntegrationAws#filter_tags}
 
 ---
 
-##### `HostTags`<sup>Optional</sup> <a name="HostTags" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.hostTags"></a>
+##### `HostTags`<sup>Optional</sup> <a name="HostTags" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.hostTags"></a>
 
 ```go
 HostTags *[]*string
@@ -1292,11 +1292,11 @@ HostTags *[]*string
 
 Array of tags (in the form `key:value`) to add to all hosts and metrics reporting through this integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#host_tags IntegrationAws#host_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#host_tags IntegrationAws#host_tags}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1304,14 +1304,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#id IntegrationAws#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#id IntegrationAws#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `MetricsCollectionEnabled`<sup>Optional</sup> <a name="MetricsCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.metricsCollectionEnabled"></a>
+##### `MetricsCollectionEnabled`<sup>Optional</sup> <a name="MetricsCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.metricsCollectionEnabled"></a>
 
 ```go
 MetricsCollectionEnabled *string
@@ -1321,11 +1321,11 @@ MetricsCollectionEnabled *string
 
 Whether Datadog collects metrics for this AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#metrics_collection_enabled IntegrationAws#metrics_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#metrics_collection_enabled IntegrationAws#metrics_collection_enabled}
 
 ---
 
-##### `ResourceCollectionEnabled`<sup>Optional</sup> <a name="ResourceCollectionEnabled" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.resourceCollectionEnabled"></a>
+##### `ResourceCollectionEnabled`<sup>Optional</sup> <a name="ResourceCollectionEnabled" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.resourceCollectionEnabled"></a>
 
 ```go
 ResourceCollectionEnabled *string
@@ -1335,11 +1335,11 @@ ResourceCollectionEnabled *string
 
 Whether Datadog collects a standard set of resources from your AWS account. **Deprecated.** Deprecated in favor of `extended_resource_collection_enabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#resource_collection_enabled IntegrationAws#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#resource_collection_enabled IntegrationAws#resource_collection_enabled}
 
 ---
 
-##### `RoleName`<sup>Optional</sup> <a name="RoleName" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.roleName"></a>
+##### `RoleName`<sup>Optional</sup> <a name="RoleName" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.roleName"></a>
 
 ```go
 RoleName *string
@@ -1349,11 +1349,11 @@ RoleName *string
 
 Your Datadog role delegation name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#role_name IntegrationAws#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#role_name IntegrationAws#role_name}
 
 ---
 
-##### `SecretAccessKey`<sup>Optional</sup> <a name="SecretAccessKey" id="@cdktf/provider-datadog.integrationAws.IntegrationAwsConfig.property.secretAccessKey"></a>
+##### `SecretAccessKey`<sup>Optional</sup> <a name="SecretAccessKey" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.property.secretAccessKey"></a>
 
 ```go
 SecretAccessKey *string
@@ -1363,7 +1363,7 @@ SecretAccessKey *string
 
 Your AWS secret access key. Only required if your AWS account is a GovCloud or China account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws#secret_access_key IntegrationAws#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws#secret_access_key IntegrationAws#secret_access_key}
 
 ---
 

@@ -1,69 +1,69 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationAwsAccountConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationAwsAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Tags to apply to all metrics in the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
   */
   readonly accountTags?: string[];
   /**
   * Your AWS Account ID without dashes. Invalid aws_account_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
   */
   readonly awsAccountId: string;
   /**
   * AWS Account partition. Valid values are `aws`, `aws-cn`, `aws-us-gov`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
   */
   readonly awsPartition: string;
   /**
   * auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
   */
   readonly authConfig?: IntegrationAwsAccountAuthConfig;
   /**
   * aws_regions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
   */
   readonly awsRegions?: IntegrationAwsAccountAwsRegions;
   /**
   * logs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
   */
   readonly logsConfig?: IntegrationAwsAccountLogsConfig;
   /**
   * metrics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
   */
   readonly metricsConfig?: IntegrationAwsAccountMetricsConfig;
   /**
   * resources_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
   */
   readonly resourcesConfig?: IntegrationAwsAccountResourcesConfig;
   /**
   * traces_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
   */
   readonly tracesConfig?: IntegrationAwsAccountTracesConfig;
 }
@@ -71,43 +71,43 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigKeys {
   /**
   * AWS Access Key ID. Invalid access_key_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
   */
   readonly accessKeyId?: string;
   /**
   * AWS Secret Access Key. This value is write-only; changes made outside of Terraform will not be drift-detected. Secret_access_key must be non-empty and not contain whitespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
   */
   readonly secretAccessKey?: string;
 }
 
-export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key_id: cdktf.stringToTerraform(struct!.accessKeyId),
-    secret_access_key: cdktf.stringToTerraform(struct!.secretAccessKey),
+    access_key_id: cdktn.stringToTerraform(struct!.accessKeyId),
+    secret_access_key: cdktn.stringToTerraform(struct!.secretAccessKey),
   }
 }
 
 
-export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToHclTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToHclTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.accessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.secretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.secretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,19 +118,19 @@ export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -147,14 +147,14 @@ export class IntegrationAwsAccountAuthConfigAwsAuthConfigKeysOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessKeyId = undefined;
       this._secretAccessKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,43 +202,43 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigRole {
   /**
   * AWS IAM External ID for associated role. If omitted, one will be generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
   */
   readonly externalId?: string;
   /**
   * AWS IAM Role name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
   */
   readonly roleName?: string;
 }
 
-export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_id: cdktf.stringToTerraform(struct!.externalId),
-    role_name: cdktf.stringToTerraform(struct!.roleName),
+    external_id: cdktn.stringToTerraform(struct!.externalId),
+    role_name: cdktn.stringToTerraform(struct!.roleName),
   }
 }
 
 
-export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToHclTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToHclTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_id: {
-      value: cdktf.stringToHclTerraform(struct!.externalId),
+      value: cdktn.stringToHclTerraform(struct!.externalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_name: {
-      value: cdktf.stringToHclTerraform(struct!.roleName),
+      value: cdktn.stringToHclTerraform(struct!.roleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -249,19 +249,19 @@ export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -278,14 +278,14 @@ export class IntegrationAwsAccountAuthConfigAwsAuthConfigRoleOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._externalId = undefined;
       this._roleName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -333,20 +333,20 @@ export interface IntegrationAwsAccountAuthConfig {
   /**
   * aws_auth_config_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
   */
   readonly awsAuthConfigKeys?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys;
   /**
   * aws_auth_config_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
   */
   readonly awsAuthConfigRole?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole;
 }
 
-export function integrationAwsAccountAuthConfigToTerraform(struct?: IntegrationAwsAccountAuthConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAuthConfigToTerraform(struct?: IntegrationAwsAccountAuthConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -356,9 +356,9 @@ export function integrationAwsAccountAuthConfigToTerraform(struct?: IntegrationA
 }
 
 
-export function integrationAwsAccountAuthConfigToHclTerraform(struct?: IntegrationAwsAccountAuthConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAuthConfigToHclTerraform(struct?: IntegrationAwsAccountAuthConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -380,19 +380,19 @@ export function integrationAwsAccountAuthConfigToHclTerraform(struct?: Integrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountAuthConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountAuthConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountAuthConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountAuthConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -409,14 +409,14 @@ export class IntegrationAwsAccountAuthConfigOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountAuthConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountAuthConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._awsAuthConfigKeys.internalValue = undefined;
       this._awsAuthConfigRole.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -464,43 +464,43 @@ export interface IntegrationAwsAccountAwsRegions {
   /**
   * Include all regions. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
   */
-  readonly includeAll?: boolean | cdktf.IResolvable;
+  readonly includeAll?: boolean | cdktn.IResolvable;
   /**
   * Include only these regions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
 
-export function integrationAwsAccountAwsRegionsToTerraform(struct?: IntegrationAwsAccountAwsRegions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAwsRegionsToTerraform(struct?: IntegrationAwsAccountAwsRegions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_all: cdktf.booleanToTerraform(struct!.includeAll),
-    include_only: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeOnly),
+    include_all: cdktn.booleanToTerraform(struct!.includeAll),
+    include_only: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeOnly),
   }
 }
 
 
-export function integrationAwsAccountAwsRegionsToHclTerraform(struct?: IntegrationAwsAccountAwsRegions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountAwsRegionsToHclTerraform(struct?: IntegrationAwsAccountAwsRegions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_all: {
-      value: cdktf.booleanToHclTerraform(struct!.includeAll),
+      value: cdktn.booleanToHclTerraform(struct!.includeAll),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_only: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeOnly),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeOnly),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -511,19 +511,19 @@ export function integrationAwsAccountAwsRegionsToHclTerraform(struct?: Integrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountAwsRegionsOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountAwsRegionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountAwsRegions | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountAwsRegions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -540,14 +540,14 @@ export class IntegrationAwsAccountAwsRegionsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountAwsRegions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountAwsRegions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._includeAll = undefined;
       this._includeOnly = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -560,11 +560,11 @@ export class IntegrationAwsAccountAwsRegionsOutputReference extends cdktf.Comple
   }
 
   // include_all - computed: true, optional: true, required: false
-  private _includeAll?: boolean | cdktf.IResolvable; 
+  private _includeAll?: boolean | cdktn.IResolvable; 
   public get includeAll() {
     return this.getBooleanAttribute('include_all');
   }
-  public set includeAll(value: boolean | cdktf.IResolvable) {
+  public set includeAll(value: boolean | cdktn.IResolvable) {
     this._includeAll = value;
   }
   public resetIncludeAll() {
@@ -595,43 +595,43 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTa
   /**
   * The AWS service for which the tag filters defined in `tags` will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#source IntegrationAwsAccount#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#source IntegrationAwsAccount#source}
   */
   readonly source: string;
   /**
   * The AWS resource tags to filter on for the service specified by `source`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
   */
   readonly tags: string[];
 }
 
-export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source: cdktf.stringToTerraform(struct!.source),
-    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
+    source: cdktn.stringToTerraform(struct!.source),
+    tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tags),
   }
 }
 
 
-export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source: {
-      value: cdktf.stringToHclTerraform(struct!.source),
+      value: cdktn.stringToHclTerraform(struct!.source),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -642,9 +642,9 @@ export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTag
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -652,11 +652,11 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFil
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -673,14 +673,14 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFil
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._source = undefined;
       this._tags = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -719,15 +719,15 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFil
   }
 }
 
-export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList extends cdktf.ComplexList {
-  public internalValue? : IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktf.IResolvable
+export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList extends cdktn.ComplexList {
+  public internalValue? : IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -742,30 +742,30 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig {
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
   */
-  readonly tagFilters?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktf.IResolvable;
+  readonly tagFilters?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktn.IResolvable;
 }
 
-export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tag_filters: cdktf.listMapper(integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform, true)(struct!.tagFilters),
+    tag_filters: cdktn.listMapper(integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform, true)(struct!.tagFilters),
   }
 }
 
 
-export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tag_filters: {
-      value: cdktf.listMapperHcl(integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToHclTerraform, true)(struct!.tagFilters),
+      value: cdktn.listMapperHcl(integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToHclTerraform, true)(struct!.tagFilters),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersList",
@@ -776,19 +776,19 @@ export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -801,13 +801,13 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tagFilters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -823,7 +823,7 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigOutput
   public get tagFilters() {
     return this._tagFilters;
   }
-  public putTagFilters(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktf.IResolvable) {
+  public putTagFilters(value: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktn.IResolvable) {
     this._tagFilters.internalValue = value;
   }
   public resetTagFilters() {
@@ -838,50 +838,50 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarder {
   /**
   * List of Datadog Lambda Log Forwarder ARNs in your AWS account. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
   */
   readonly lambdas?: string[];
   /**
   * List of service IDs set to enable automatic log collection. Use [`datadog_integration_aws_available_logs_services` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_logs_services) or [the AWS Logs Integration API](https://docs.datadoghq.com/api/latest/aws-logs-integration/?#get-list-of-aws-log-ready-services) to get allowed values. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
   */
   readonly sources?: string[];
   /**
   * log_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#log_source_config IntegrationAwsAccount#log_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#log_source_config IntegrationAwsAccount#log_source_config}
   */
   readonly logSourceConfig?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig;
 }
 
-export function integrationAwsAccountLogsConfigLambdaForwarderToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigLambdaForwarderToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lambdas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.lambdas),
-    sources: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sources),
+    lambdas: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.lambdas),
+    sources: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sources),
     log_source_config: integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToTerraform(struct!.logSourceConfig),
   }
 }
 
 
-export function integrationAwsAccountLogsConfigLambdaForwarderToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigLambdaForwarderToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lambdas: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.lambdas),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.lambdas),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     sources: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sources),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sources),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -898,19 +898,19 @@ export function integrationAwsAccountLogsConfigLambdaForwarderToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarder | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountLogsConfigLambdaForwarder | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -931,7 +931,7 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -939,7 +939,7 @@ export class IntegrationAwsAccountLogsConfigLambdaForwarderOutputReference exten
       this._sources = undefined;
       this._logSourceConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1004,14 +1004,14 @@ export interface IntegrationAwsAccountLogsConfig {
   /**
   * lambda_forwarder block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
   */
   readonly lambdaForwarder?: IntegrationAwsAccountLogsConfigLambdaForwarder;
 }
 
-export function integrationAwsAccountLogsConfigToTerraform(struct?: IntegrationAwsAccountLogsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigToTerraform(struct?: IntegrationAwsAccountLogsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1020,9 +1020,9 @@ export function integrationAwsAccountLogsConfigToTerraform(struct?: IntegrationA
 }
 
 
-export function integrationAwsAccountLogsConfigToHclTerraform(struct?: IntegrationAwsAccountLogsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountLogsConfigToHclTerraform(struct?: IntegrationAwsAccountLogsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1038,19 +1038,19 @@ export function integrationAwsAccountLogsConfigToHclTerraform(struct?: Integrati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountLogsConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountLogsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountLogsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountLogsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1063,13 +1063,13 @@ export class IntegrationAwsAccountLogsConfigOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountLogsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountLogsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lambdaForwarder.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1100,43 +1100,43 @@ export interface IntegrationAwsAccountMetricsConfigNamespaceFilters {
   /**
   * Exclude only these namespaces from metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values. Defaults to `["AWS/SQS", "AWS/ElasticMapReduce", "AWS/Usage"]`. `AWS/SQS`, `AWS/ElasticMapReduce`, and `AWS/Usage` are excluded by default to reduce your AWS CloudWatch costs from `GetMetricData` API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
   */
   readonly excludeOnly?: string[];
   /**
   * Include only these namespaces for metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
 
-export function integrationAwsAccountMetricsConfigNamespaceFiltersToTerraform(struct?: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountMetricsConfigNamespaceFiltersToTerraform(struct?: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_only: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeOnly),
-    include_only: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeOnly),
+    exclude_only: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeOnly),
+    include_only: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeOnly),
   }
 }
 
 
-export function integrationAwsAccountMetricsConfigNamespaceFiltersToHclTerraform(struct?: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountMetricsConfigNamespaceFiltersToHclTerraform(struct?: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_only: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludeOnly),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludeOnly),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include_only: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeOnly),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeOnly),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1147,19 +1147,19 @@ export function integrationAwsAccountMetricsConfigNamespaceFiltersToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1176,14 +1176,14 @@ export class IntegrationAwsAccountMetricsConfigNamespaceFiltersOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._excludeOnly = undefined;
       this._includeOnly = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1231,43 +1231,43 @@ export interface IntegrationAwsAccountMetricsConfigTagFilters {
   /**
   * The AWS service for which the tag filters defined in `tags` will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
   */
   readonly namespace: string;
   /**
   * The AWS resource tags to filter on for the service specified by `namespace`. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
   */
   readonly tags?: string[];
 }
 
-export function integrationAwsAccountMetricsConfigTagFiltersToTerraform(struct?: IntegrationAwsAccountMetricsConfigTagFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountMetricsConfigTagFiltersToTerraform(struct?: IntegrationAwsAccountMetricsConfigTagFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tags),
   }
 }
 
 
-export function integrationAwsAccountMetricsConfigTagFiltersToHclTerraform(struct?: IntegrationAwsAccountMetricsConfigTagFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountMetricsConfigTagFiltersToHclTerraform(struct?: IntegrationAwsAccountMetricsConfigTagFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1278,9 +1278,9 @@ export function integrationAwsAccountMetricsConfigTagFiltersToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountMetricsConfigTagFiltersOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountMetricsConfigTagFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1288,11 +1288,11 @@ export class IntegrationAwsAccountMetricsConfigTagFiltersOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationAwsAccountMetricsConfigTagFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountMetricsConfigTagFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1309,14 +1309,14 @@ export class IntegrationAwsAccountMetricsConfigTagFiltersOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountMetricsConfigTagFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountMetricsConfigTagFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._namespace = undefined;
       this._tags = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1358,15 +1358,15 @@ export class IntegrationAwsAccountMetricsConfigTagFiltersOutputReference extends
   }
 }
 
-export class IntegrationAwsAccountMetricsConfigTagFiltersList extends cdktf.ComplexList {
-  public internalValue? : IntegrationAwsAccountMetricsConfigTagFilters[] | cdktf.IResolvable
+export class IntegrationAwsAccountMetricsConfigTagFiltersList extends cdktn.ComplexList {
+  public internalValue? : IntegrationAwsAccountMetricsConfigTagFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1381,83 +1381,83 @@ export interface IntegrationAwsAccountMetricsConfig {
   /**
   * Enable EC2 automute for AWS metrics Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
   */
-  readonly automuteEnabled?: boolean | cdktf.IResolvable;
+  readonly automuteEnabled?: boolean | cdktn.IResolvable;
   /**
   * Enable CloudWatch alarms collection Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
   */
-  readonly collectCloudwatchAlarms?: boolean | cdktf.IResolvable;
+  readonly collectCloudwatchAlarms?: boolean | cdktn.IResolvable;
   /**
   * Enable custom metrics collection Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
   */
-  readonly collectCustomMetrics?: boolean | cdktf.IResolvable;
+  readonly collectCustomMetrics?: boolean | cdktn.IResolvable;
   /**
   * Enable AWS metrics collection Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * namespace_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
   */
   readonly namespaceFilters?: IntegrationAwsAccountMetricsConfigNamespaceFilters;
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
   */
-  readonly tagFilters?: IntegrationAwsAccountMetricsConfigTagFilters[] | cdktf.IResolvable;
+  readonly tagFilters?: IntegrationAwsAccountMetricsConfigTagFilters[] | cdktn.IResolvable;
 }
 
-export function integrationAwsAccountMetricsConfigToTerraform(struct?: IntegrationAwsAccountMetricsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountMetricsConfigToTerraform(struct?: IntegrationAwsAccountMetricsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    automute_enabled: cdktf.booleanToTerraform(struct!.automuteEnabled),
-    collect_cloudwatch_alarms: cdktf.booleanToTerraform(struct!.collectCloudwatchAlarms),
-    collect_custom_metrics: cdktf.booleanToTerraform(struct!.collectCustomMetrics),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    automute_enabled: cdktn.booleanToTerraform(struct!.automuteEnabled),
+    collect_cloudwatch_alarms: cdktn.booleanToTerraform(struct!.collectCloudwatchAlarms),
+    collect_custom_metrics: cdktn.booleanToTerraform(struct!.collectCustomMetrics),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     namespace_filters: integrationAwsAccountMetricsConfigNamespaceFiltersToTerraform(struct!.namespaceFilters),
-    tag_filters: cdktf.listMapper(integrationAwsAccountMetricsConfigTagFiltersToTerraform, true)(struct!.tagFilters),
+    tag_filters: cdktn.listMapper(integrationAwsAccountMetricsConfigTagFiltersToTerraform, true)(struct!.tagFilters),
   }
 }
 
 
-export function integrationAwsAccountMetricsConfigToHclTerraform(struct?: IntegrationAwsAccountMetricsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountMetricsConfigToHclTerraform(struct?: IntegrationAwsAccountMetricsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     automute_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.automuteEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.automuteEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     collect_cloudwatch_alarms: {
-      value: cdktf.booleanToHclTerraform(struct!.collectCloudwatchAlarms),
+      value: cdktn.booleanToHclTerraform(struct!.collectCloudwatchAlarms),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     collect_custom_metrics: {
-      value: cdktf.booleanToHclTerraform(struct!.collectCustomMetrics),
+      value: cdktn.booleanToHclTerraform(struct!.collectCustomMetrics),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1469,7 +1469,7 @@ export function integrationAwsAccountMetricsConfigToHclTerraform(struct?: Integr
       storageClassType: "IntegrationAwsAccountMetricsConfigNamespaceFilters",
     },
     tag_filters: {
-      value: cdktf.listMapperHcl(integrationAwsAccountMetricsConfigTagFiltersToHclTerraform, true)(struct!.tagFilters),
+      value: cdktn.listMapperHcl(integrationAwsAccountMetricsConfigTagFiltersToHclTerraform, true)(struct!.tagFilters),
       isBlock: true,
       type: "list",
       storageClassType: "IntegrationAwsAccountMetricsConfigTagFiltersList",
@@ -1480,19 +1480,19 @@ export function integrationAwsAccountMetricsConfigToHclTerraform(struct?: Integr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountMetricsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountMetricsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1525,7 +1525,7 @@ export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountMetricsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountMetricsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1536,7 +1536,7 @@ export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.Com
       this._namespaceFilters.internalValue = undefined;
       this._tagFilters.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1553,11 +1553,11 @@ export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.Com
   }
 
   // automute_enabled - computed: true, optional: true, required: false
-  private _automuteEnabled?: boolean | cdktf.IResolvable; 
+  private _automuteEnabled?: boolean | cdktn.IResolvable; 
   public get automuteEnabled() {
     return this.getBooleanAttribute('automute_enabled');
   }
-  public set automuteEnabled(value: boolean | cdktf.IResolvable) {
+  public set automuteEnabled(value: boolean | cdktn.IResolvable) {
     this._automuteEnabled = value;
   }
   public resetAutomuteEnabled() {
@@ -1569,11 +1569,11 @@ export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.Com
   }
 
   // collect_cloudwatch_alarms - computed: true, optional: true, required: false
-  private _collectCloudwatchAlarms?: boolean | cdktf.IResolvable; 
+  private _collectCloudwatchAlarms?: boolean | cdktn.IResolvable; 
   public get collectCloudwatchAlarms() {
     return this.getBooleanAttribute('collect_cloudwatch_alarms');
   }
-  public set collectCloudwatchAlarms(value: boolean | cdktf.IResolvable) {
+  public set collectCloudwatchAlarms(value: boolean | cdktn.IResolvable) {
     this._collectCloudwatchAlarms = value;
   }
   public resetCollectCloudwatchAlarms() {
@@ -1585,11 +1585,11 @@ export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.Com
   }
 
   // collect_custom_metrics - computed: true, optional: true, required: false
-  private _collectCustomMetrics?: boolean | cdktf.IResolvable; 
+  private _collectCustomMetrics?: boolean | cdktn.IResolvable; 
   public get collectCustomMetrics() {
     return this.getBooleanAttribute('collect_custom_metrics');
   }
-  public set collectCustomMetrics(value: boolean | cdktf.IResolvable) {
+  public set collectCustomMetrics(value: boolean | cdktn.IResolvable) {
     this._collectCustomMetrics = value;
   }
   public resetCollectCustomMetrics() {
@@ -1601,11 +1601,11 @@ export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.Com
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1637,7 +1637,7 @@ export class IntegrationAwsAccountMetricsConfigOutputReference extends cdktf.Com
   public get tagFilters() {
     return this._tagFilters;
   }
-  public putTagFilters(value: IntegrationAwsAccountMetricsConfigTagFilters[] | cdktf.IResolvable) {
+  public putTagFilters(value: IntegrationAwsAccountMetricsConfigTagFilters[] | cdktn.IResolvable) {
     this._tagFilters.internalValue = value;
   }
   public resetTagFilters() {
@@ -1652,43 +1652,43 @@ export interface IntegrationAwsAccountResourcesConfig {
   /**
   * Enable Cloud Security Management to scan AWS resources for vulnerabilities, misconfigurations, identity risks, and compliance violations. Requires `extended_collection` to be set to `true`. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
   */
-  readonly cloudSecurityPostureManagementCollection?: boolean | cdktf.IResolvable;
+  readonly cloudSecurityPostureManagementCollection?: boolean | cdktn.IResolvable;
   /**
   * Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cloud_security_posture_management_collection`. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
   */
-  readonly extendedCollection?: boolean | cdktf.IResolvable;
+  readonly extendedCollection?: boolean | cdktn.IResolvable;
 }
 
-export function integrationAwsAccountResourcesConfigToTerraform(struct?: IntegrationAwsAccountResourcesConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountResourcesConfigToTerraform(struct?: IntegrationAwsAccountResourcesConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cloud_security_posture_management_collection: cdktf.booleanToTerraform(struct!.cloudSecurityPostureManagementCollection),
-    extended_collection: cdktf.booleanToTerraform(struct!.extendedCollection),
+    cloud_security_posture_management_collection: cdktn.booleanToTerraform(struct!.cloudSecurityPostureManagementCollection),
+    extended_collection: cdktn.booleanToTerraform(struct!.extendedCollection),
   }
 }
 
 
-export function integrationAwsAccountResourcesConfigToHclTerraform(struct?: IntegrationAwsAccountResourcesConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountResourcesConfigToHclTerraform(struct?: IntegrationAwsAccountResourcesConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cloud_security_posture_management_collection: {
-      value: cdktf.booleanToHclTerraform(struct!.cloudSecurityPostureManagementCollection),
+      value: cdktn.booleanToHclTerraform(struct!.cloudSecurityPostureManagementCollection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     extended_collection: {
-      value: cdktf.booleanToHclTerraform(struct!.extendedCollection),
+      value: cdktn.booleanToHclTerraform(struct!.extendedCollection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1699,19 +1699,19 @@ export function integrationAwsAccountResourcesConfigToHclTerraform(struct?: Inte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountResourcesConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountResourcesConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountResourcesConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountResourcesConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1728,14 +1728,14 @@ export class IntegrationAwsAccountResourcesConfigOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountResourcesConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountResourcesConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cloudSecurityPostureManagementCollection = undefined;
       this._extendedCollection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1748,11 +1748,11 @@ export class IntegrationAwsAccountResourcesConfigOutputReference extends cdktf.C
   }
 
   // cloud_security_posture_management_collection - computed: true, optional: true, required: false
-  private _cloudSecurityPostureManagementCollection?: boolean | cdktf.IResolvable; 
+  private _cloudSecurityPostureManagementCollection?: boolean | cdktn.IResolvable; 
   public get cloudSecurityPostureManagementCollection() {
     return this.getBooleanAttribute('cloud_security_posture_management_collection');
   }
-  public set cloudSecurityPostureManagementCollection(value: boolean | cdktf.IResolvable) {
+  public set cloudSecurityPostureManagementCollection(value: boolean | cdktn.IResolvable) {
     this._cloudSecurityPostureManagementCollection = value;
   }
   public resetCloudSecurityPostureManagementCollection() {
@@ -1764,11 +1764,11 @@ export class IntegrationAwsAccountResourcesConfigOutputReference extends cdktf.C
   }
 
   // extended_collection - computed: true, optional: true, required: false
-  private _extendedCollection?: boolean | cdktf.IResolvable; 
+  private _extendedCollection?: boolean | cdktn.IResolvable; 
   public get extendedCollection() {
     return this.getBooleanAttribute('extended_collection');
   }
-  public set extendedCollection(value: boolean | cdktf.IResolvable) {
+  public set extendedCollection(value: boolean | cdktn.IResolvable) {
     this._extendedCollection = value;
   }
   public resetExtendedCollection() {
@@ -1783,43 +1783,43 @@ export interface IntegrationAwsAccountTracesConfigXrayServices {
   /**
   * Include all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
   */
-  readonly includeAll?: boolean | cdktf.IResolvable;
+  readonly includeAll?: boolean | cdktn.IResolvable;
   /**
   * Include only these services. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
 
-export function integrationAwsAccountTracesConfigXrayServicesToTerraform(struct?: IntegrationAwsAccountTracesConfigXrayServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountTracesConfigXrayServicesToTerraform(struct?: IntegrationAwsAccountTracesConfigXrayServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_all: cdktf.booleanToTerraform(struct!.includeAll),
-    include_only: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includeOnly),
+    include_all: cdktn.booleanToTerraform(struct!.includeAll),
+    include_only: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includeOnly),
   }
 }
 
 
-export function integrationAwsAccountTracesConfigXrayServicesToHclTerraform(struct?: IntegrationAwsAccountTracesConfigXrayServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountTracesConfigXrayServicesToHclTerraform(struct?: IntegrationAwsAccountTracesConfigXrayServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_all: {
-      value: cdktf.booleanToHclTerraform(struct!.includeAll),
+      value: cdktn.booleanToHclTerraform(struct!.includeAll),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_only: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includeOnly),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includeOnly),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1830,19 +1830,19 @@ export function integrationAwsAccountTracesConfigXrayServicesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountTracesConfigXrayServicesOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountTracesConfigXrayServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountTracesConfigXrayServices | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountTracesConfigXrayServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1859,14 +1859,14 @@ export class IntegrationAwsAccountTracesConfigXrayServicesOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountTracesConfigXrayServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountTracesConfigXrayServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._includeAll = undefined;
       this._includeOnly = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1879,11 +1879,11 @@ export class IntegrationAwsAccountTracesConfigXrayServicesOutputReference extend
   }
 
   // include_all - computed: false, optional: true, required: false
-  private _includeAll?: boolean | cdktf.IResolvable; 
+  private _includeAll?: boolean | cdktn.IResolvable; 
   public get includeAll() {
     return this.getBooleanAttribute('include_all');
   }
-  public set includeAll(value: boolean | cdktf.IResolvable) {
+  public set includeAll(value: boolean | cdktn.IResolvable) {
     this._includeAll = value;
   }
   public resetIncludeAll() {
@@ -1914,14 +1914,14 @@ export interface IntegrationAwsAccountTracesConfig {
   /**
   * xray_services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
   */
   readonly xrayServices?: IntegrationAwsAccountTracesConfigXrayServices;
 }
 
-export function integrationAwsAccountTracesConfigToTerraform(struct?: IntegrationAwsAccountTracesConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountTracesConfigToTerraform(struct?: IntegrationAwsAccountTracesConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1930,9 +1930,9 @@ export function integrationAwsAccountTracesConfigToTerraform(struct?: Integratio
 }
 
 
-export function integrationAwsAccountTracesConfigToHclTerraform(struct?: IntegrationAwsAccountTracesConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationAwsAccountTracesConfigToHclTerraform(struct?: IntegrationAwsAccountTracesConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1948,19 +1948,19 @@ export function integrationAwsAccountTracesConfigToHclTerraform(struct?: Integra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationAwsAccountTracesConfigOutputReference extends cdktf.ComplexObject {
+export class IntegrationAwsAccountTracesConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IntegrationAwsAccountTracesConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationAwsAccountTracesConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1973,13 +1973,13 @@ export class IntegrationAwsAccountTracesConfigOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationAwsAccountTracesConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationAwsAccountTracesConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._xrayServices.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2008,9 +2008,9 @@ export class IntegrationAwsAccountTracesConfigOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account datadog_integration_aws_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account datadog_integration_aws_account}
 */
-export class IntegrationAwsAccount extends cdktf.TerraformResource {
+export class IntegrationAwsAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2021,14 +2021,14 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationAwsAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationAwsAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationAwsAccount to import
-  * @param importFromId The id of the existing IntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationAwsAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_aws_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_aws_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -2036,7 +2036,7 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2047,7 +2047,7 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -2222,9 +2222,9 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._accountTags),
-      aws_account_id: cdktf.stringToTerraform(this._awsAccountId),
-      aws_partition: cdktf.stringToTerraform(this._awsPartition),
+      account_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._accountTags),
+      aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      aws_partition: cdktn.stringToTerraform(this._awsPartition),
       auth_config: integrationAwsAccountAuthConfigToTerraform(this._authConfig.internalValue),
       aws_regions: integrationAwsAccountAwsRegionsToTerraform(this._awsRegions.internalValue),
       logs_config: integrationAwsAccountLogsConfigToTerraform(this._logsConfig.internalValue),
@@ -2237,19 +2237,19 @@ export class IntegrationAwsAccount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._accountTags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._accountTags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       aws_account_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccountId),
+        value: cdktn.stringToHclTerraform(this._awsAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_partition: {
-        value: cdktf.stringToHclTerraform(this._awsPartition),
+        value: cdktn.stringToHclTerraform(this._awsPartition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
