@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_workflows_webhook_handle
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_workflows_webhook_handle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationMsTeamsWorkflowsWebhookHandleConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationMsTeamsWorkflowsWebhookHandleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Your Microsoft Workflows webhook handle name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_workflows_webhook_handle#name IntegrationMsTeamsWorkflowsWebhookHandle#name}
   */
   readonly name: string;
   /**
   * Your Microsoft Workflows webhook URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_workflows_webhook_handle#url IntegrationMsTeamsWorkflowsWebhookHandle#url}
   */
   readonly url: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle}
 */
-export class IntegrationMsTeamsWorkflowsWebhookHandle extends cdktf.TerraformResource {
+export class IntegrationMsTeamsWorkflowsWebhookHandle extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class IntegrationMsTeamsWorkflowsWebhookHandle extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationMsTeamsWorkflowsWebhookHandle resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationMsTeamsWorkflowsWebhookHandle resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationMsTeamsWorkflowsWebhookHandle to import
-  * @param importFromId The id of the existing IntegrationMsTeamsWorkflowsWebhookHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_workflows_webhook_handle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationMsTeamsWorkflowsWebhookHandle that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_workflows_webhook_handle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationMsTeamsWorkflowsWebhookHandle to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_ms_teams_workflows_webhook_handle", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_ms_teams_workflows_webhook_handle", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +55,7 @@ export class IntegrationMsTeamsWorkflowsWebhookHandle extends cdktf.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_ms_teams_workflows_webhook_handle datadog_integration_ms_teams_workflows_webhook_handle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class IntegrationMsTeamsWorkflowsWebhookHandle extends cdktf.TerraformRes
       terraformResourceType: 'datadog_integration_ms_teams_workflows_webhook_handle',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -122,21 +122,21 @@ export class IntegrationMsTeamsWorkflowsWebhookHandle extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      url: cdktf.stringToTerraform(this._url),
+      name: cdktn.stringToTerraform(this._name),
+      url: cdktn.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

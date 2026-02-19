@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AwsCurConfigConfig extends cdktf.TerraformMetaArguments {
+export interface AwsCurConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The AWS account ID of your billing/payer account. For AWS Organizations, this is typically the management account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#account_id AwsCurConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#account_id AwsCurConfig#account_id}
   */
   readonly accountId: string;
   /**
   * The S3 bucket name where your AWS Cost and Usage Report files are stored. This bucket must have appropriate IAM permissions for Datadog access and should be in the same AWS account as the CUR report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#bucket_name AwsCurConfig#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#bucket_name AwsCurConfig#bucket_name}
   */
   readonly bucketName: string;
   /**
   * The AWS region where the S3 bucket containing your Cost and Usage Report is located (e.g., us-east-1, eu-west-1).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#bucket_region AwsCurConfig#bucket_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#bucket_region AwsCurConfig#bucket_region}
   */
   readonly bucketRegion?: string;
   /**
   * The exact name of your AWS Cost and Usage Report as configured in AWS Billing preferences. This must match the report name exactly as it appears in your AWS billing settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#report_name AwsCurConfig#report_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#report_name AwsCurConfig#report_name}
   */
   readonly reportName: string;
   /**
   * The S3 key prefix where your Cost and Usage Report files are stored within the bucket (e.g., 'cur-reports/', 'billing/cur/').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#report_prefix AwsCurConfig#report_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#report_prefix AwsCurConfig#report_prefix}
   */
   readonly reportPrefix: string;
   /**
   * account_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#account_filters AwsCurConfig#account_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#account_filters AwsCurConfig#account_filters}
   */
   readonly accountFilters?: AwsCurConfigAccountFilters;
 }
@@ -53,56 +53,56 @@ export interface AwsCurConfigAccountFilters {
   /**
   * List of AWS account IDs to exclude from cost analysis. Only used when `include_new_accounts` is `true`. Cannot be used together with `included_accounts`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#excluded_accounts AwsCurConfig#excluded_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#excluded_accounts AwsCurConfig#excluded_accounts}
   */
   readonly excludedAccounts?: string[];
   /**
   * Whether to automatically include new member accounts in your cost analysis. When `true`, use `excluded_accounts` to specify accounts to exclude. When `false`, use `included_accounts` to specify only the accounts to include.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#include_new_accounts AwsCurConfig#include_new_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#include_new_accounts AwsCurConfig#include_new_accounts}
   */
-  readonly includeNewAccounts?: boolean | cdktf.IResolvable;
+  readonly includeNewAccounts?: boolean | cdktn.IResolvable;
   /**
   * List of AWS account IDs to include in cost analysis. Only used when `include_new_accounts` is `false`. Cannot be used together with `excluded_accounts`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#included_accounts AwsCurConfig#included_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#included_accounts AwsCurConfig#included_accounts}
   */
   readonly includedAccounts?: string[];
 }
 
-export function awsCurConfigAccountFiltersToTerraform(struct?: AwsCurConfigAccountFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function awsCurConfigAccountFiltersToTerraform(struct?: AwsCurConfigAccountFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excluded_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedAccounts),
-    include_new_accounts: cdktf.booleanToTerraform(struct!.includeNewAccounts),
-    included_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedAccounts),
+    excluded_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedAccounts),
+    include_new_accounts: cdktn.booleanToTerraform(struct!.includeNewAccounts),
+    included_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.includedAccounts),
   }
 }
 
 
-export function awsCurConfigAccountFiltersToHclTerraform(struct?: AwsCurConfigAccountFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function awsCurConfigAccountFiltersToHclTerraform(struct?: AwsCurConfigAccountFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     excluded_accounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.excludedAccounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.excludedAccounts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include_new_accounts: {
-      value: cdktf.booleanToHclTerraform(struct!.includeNewAccounts),
+      value: cdktn.booleanToHclTerraform(struct!.includeNewAccounts),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     included_accounts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.includedAccounts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.includedAccounts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -113,19 +113,19 @@ export function awsCurConfigAccountFiltersToHclTerraform(struct?: AwsCurConfigAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AwsCurConfigAccountFiltersOutputReference extends cdktf.ComplexObject {
+export class AwsCurConfigAccountFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AwsCurConfigAccountFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): AwsCurConfigAccountFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,7 +146,7 @@ export class AwsCurConfigAccountFiltersOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AwsCurConfigAccountFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AwsCurConfigAccountFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -154,7 +154,7 @@ export class AwsCurConfigAccountFiltersOutputReference extends cdktf.ComplexObje
       this._includeNewAccounts = undefined;
       this._includedAccounts = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -184,11 +184,11 @@ export class AwsCurConfigAccountFiltersOutputReference extends cdktf.ComplexObje
   }
 
   // include_new_accounts - computed: false, optional: true, required: false
-  private _includeNewAccounts?: boolean | cdktf.IResolvable; 
+  private _includeNewAccounts?: boolean | cdktn.IResolvable; 
   public get includeNewAccounts() {
     return this.getBooleanAttribute('include_new_accounts');
   }
-  public set includeNewAccounts(value: boolean | cdktf.IResolvable) {
+  public set includeNewAccounts(value: boolean | cdktn.IResolvable) {
     this._includeNewAccounts = value;
   }
   public resetIncludeNewAccounts() {
@@ -217,9 +217,9 @@ export class AwsCurConfigAccountFiltersOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config datadog_aws_cur_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config datadog_aws_cur_config}
 */
-export class AwsCurConfig extends cdktf.TerraformResource {
+export class AwsCurConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -230,14 +230,14 @@ export class AwsCurConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AwsCurConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AwsCurConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsCurConfig to import
-  * @param importFromId The id of the existing AwsCurConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsCurConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsCurConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_aws_cur_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_aws_cur_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -245,7 +245,7 @@ export class AwsCurConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/aws_cur_config datadog_aws_cur_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/aws_cur_config datadog_aws_cur_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -256,7 +256,7 @@ export class AwsCurConfig extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_aws_cur_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -399,11 +399,11 @@ export class AwsCurConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      bucket_region: cdktf.stringToTerraform(this._bucketRegion),
-      report_name: cdktf.stringToTerraform(this._reportName),
-      report_prefix: cdktf.stringToTerraform(this._reportPrefix),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      bucket_region: cdktn.stringToTerraform(this._bucketRegion),
+      report_name: cdktn.stringToTerraform(this._reportName),
+      report_prefix: cdktn.stringToTerraform(this._reportPrefix),
       account_filters: awsCurConfigAccountFiltersToTerraform(this._accountFilters.internalValue),
     };
   }
@@ -411,31 +411,31 @@ export class AwsCurConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_region: {
-        value: cdktf.stringToHclTerraform(this._bucketRegion),
+        value: cdktn.stringToHclTerraform(this._bucketRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       report_name: {
-        value: cdktf.stringToHclTerraform(this._reportName),
+        value: cdktn.stringToHclTerraform(this._reportName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       report_prefix: {
-        value: cdktf.stringToHclTerraform(this._reportPrefix),
+        value: cdktn.stringToHclTerraform(this._reportPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

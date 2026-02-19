@@ -1,41 +1,41 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IncidentTypeConfig extends cdktf.TerraformMetaArguments {
+export interface IncidentTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Description of the incident type. The description can have a maximum of 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type#description IncidentType#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type#description IncidentType#description}
   */
   readonly description?: string;
   /**
   * Whether this incident type is the default type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type#is_default IncidentType#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type#is_default IncidentType#is_default}
   */
-  readonly isDefault?: boolean | cdktf.IResolvable;
+  readonly isDefault?: boolean | cdktn.IResolvable;
   /**
   * Name of the incident type. Must be between 1 and 50 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type#name IncidentType#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type#name IncidentType#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type datadog_incident_type}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type datadog_incident_type}
 */
-export class IncidentType extends cdktf.TerraformResource {
+export class IncidentType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class IncidentType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IncidentType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IncidentType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentType to import
-  * @param importFromId The id of the existing IncidentType that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentType that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_incident_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_incident_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -61,7 +61,7 @@ export class IncidentType extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_type datadog_incident_type} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_type datadog_incident_type} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class IncidentType extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_incident_type',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -114,11 +114,11 @@ export class IncidentType extends cdktf.TerraformResource {
   }
 
   // is_default - computed: true, optional: true, required: false
-  private _isDefault?: boolean | cdktf.IResolvable; 
+  private _isDefault?: boolean | cdktn.IResolvable; 
   public get isDefault() {
     return this.getBooleanAttribute('is_default');
   }
-  public set isDefault(value: boolean | cdktf.IResolvable) {
+  public set isDefault(value: boolean | cdktn.IResolvable) {
     this._isDefault = value;
   }
   public resetIsDefault() {
@@ -148,28 +148,28 @@ export class IncidentType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      is_default: cdktf.booleanToTerraform(this._isDefault),
-      name: cdktf.stringToTerraform(this._name),
+      description: cdktn.stringToTerraform(this._description),
+      is_default: cdktn.booleanToTerraform(this._isDefault),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_default: {
-        value: cdktf.booleanToHclTerraform(this._isDefault),
+        value: cdktn.booleanToHclTerraform(this._isDefault),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

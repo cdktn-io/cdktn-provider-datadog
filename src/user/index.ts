@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserConfig extends cdktf.TerraformMetaArguments {
+export interface UserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the user is disabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user#disabled User#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user#disabled User#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Email address for user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user#email User#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user#email User#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user#id User#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user#id User#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,27 +34,27 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * User's name. Should be set only for password authentication, as it is overridden by Google or SAML authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user#name User#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user#name User#name}
   */
   readonly name?: string;
   /**
   * A list of role IDs to assign to the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user#roles User#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user#roles User#roles}
   */
   readonly roles?: string[];
   /**
   * Whether an invitation email should be sent when the user is created. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user#send_user_invitation User#send_user_invitation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user#send_user_invitation User#send_user_invitation}
   */
-  readonly sendUserInvitation?: boolean | cdktf.IResolvable;
+  readonly sendUserInvitation?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user datadog_user}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user datadog_user}
 */
-export class User extends cdktf.TerraformResource {
+export class User extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class User extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -80,7 +80,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/user datadog_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/user datadog_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_user',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -115,11 +115,11 @@ export class User extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -178,7 +178,7 @@ export class User extends cdktf.TerraformResource {
   // roles - computed: true, optional: true, required: false
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -192,11 +192,11 @@ export class User extends cdktf.TerraformResource {
   }
 
   // send_user_invitation - computed: false, optional: true, required: false
-  private _sendUserInvitation?: boolean | cdktf.IResolvable; 
+  private _sendUserInvitation?: boolean | cdktn.IResolvable; 
   public get sendUserInvitation() {
     return this.getBooleanAttribute('send_user_invitation');
   }
-  public set sendUserInvitation(value: boolean | cdktf.IResolvable) {
+  public set sendUserInvitation(value: boolean | cdktn.IResolvable) {
     this._sendUserInvitation = value;
   }
   public resetSendUserInvitation() {
@@ -223,49 +223,49 @@ export class User extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      email: cdktf.stringToTerraform(this._email),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._roles),
-      send_user_invitation: cdktf.booleanToTerraform(this._sendUserInvitation),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      email: cdktn.stringToTerraform(this._email),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._roles),
+      send_user_invitation: cdktn.booleanToTerraform(this._sendUserInvitation),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._roles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._roles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       send_user_invitation: {
-        value: cdktf.booleanToHclTerraform(this._sendUserInvitation),
+        value: cdktn.booleanToHclTerraform(this._sendUserInvitation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

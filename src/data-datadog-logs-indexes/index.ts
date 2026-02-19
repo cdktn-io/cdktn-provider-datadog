@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogLogsIndexesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogLogsIndexesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,8 +24,8 @@ export interface DataDatadogLogsIndexesLogsIndexesDailyLimitReset {
 }
 
 export function dataDatadogLogsIndexesLogsIndexesDailyLimitResetToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesDailyLimitReset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -34,8 +34,8 @@ export function dataDatadogLogsIndexesLogsIndexesDailyLimitResetToTerraform(stru
 
 
 export function dataDatadogLogsIndexesLogsIndexesDailyLimitResetToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesDailyLimitReset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -43,7 +43,7 @@ export function dataDatadogLogsIndexesLogsIndexesDailyLimitResetToHclTerraform(s
   return attrs;
 }
 
-export class DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference extends cdktf.ComplexObject {
+export class DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -52,7 +52,7 @@ export class DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -82,14 +82,14 @@ export class DataDatadogLogsIndexesLogsIndexesDailyLimitResetOutputReference ext
   }
 }
 
-export class DataDatadogLogsIndexesLogsIndexesDailyLimitResetList extends cdktf.ComplexList {
+export class DataDatadogLogsIndexesLogsIndexesDailyLimitResetList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -104,8 +104,8 @@ export interface DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter {
 }
 
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -114,8 +114,8 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToTerrafor
 
 
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -123,7 +123,7 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToHclTerra
   return attrs;
 }
 
-export class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference extends cdktf.ComplexObject {
+export class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -132,7 +132,7 @@ export class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -162,14 +162,14 @@ export class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterOutputReferen
   }
 }
 
-export class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList extends cdktf.ComplexList {
+export class DataDatadogLogsIndexesLogsIndexesExclusionFilterFilterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -184,8 +184,8 @@ export interface DataDatadogLogsIndexesLogsIndexesExclusionFilter {
 }
 
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -194,8 +194,8 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToTerraform(stru
 
 
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -203,7 +203,7 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToHclTerraform(s
   return attrs;
 }
 
-export class DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference extends cdktf.ComplexObject {
+export class DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -212,7 +212,7 @@ export class DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -248,14 +248,14 @@ export class DataDatadogLogsIndexesLogsIndexesExclusionFilterOutputReference ext
   }
 }
 
-export class DataDatadogLogsIndexesLogsIndexesExclusionFilterList extends cdktf.ComplexList {
+export class DataDatadogLogsIndexesLogsIndexesExclusionFilterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -270,8 +270,8 @@ export interface DataDatadogLogsIndexesLogsIndexesFilter {
 }
 
 export function dataDatadogLogsIndexesLogsIndexesFilterToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -280,8 +280,8 @@ export function dataDatadogLogsIndexesLogsIndexesFilterToTerraform(struct?: Data
 
 
 export function dataDatadogLogsIndexesLogsIndexesFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -289,7 +289,7 @@ export function dataDatadogLogsIndexesLogsIndexesFilterToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataDatadogLogsIndexesLogsIndexesFilterOutputReference extends cdktf.ComplexObject {
+export class DataDatadogLogsIndexesLogsIndexesFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -298,7 +298,7 @@ export class DataDatadogLogsIndexesLogsIndexesFilterOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -323,14 +323,14 @@ export class DataDatadogLogsIndexesLogsIndexesFilterOutputReference extends cdkt
   }
 }
 
-export class DataDatadogLogsIndexesLogsIndexesFilterList extends cdktf.ComplexList {
+export class DataDatadogLogsIndexesLogsIndexesFilterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -345,8 +345,8 @@ export interface DataDatadogLogsIndexesLogsIndexes {
 }
 
 export function dataDatadogLogsIndexesLogsIndexesToTerraform(struct?: DataDatadogLogsIndexesLogsIndexes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -355,8 +355,8 @@ export function dataDatadogLogsIndexesLogsIndexesToTerraform(struct?: DataDatado
 
 
 export function dataDatadogLogsIndexesLogsIndexesToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -364,7 +364,7 @@ export function dataDatadogLogsIndexesLogsIndexesToHclTerraform(struct?: DataDat
   return attrs;
 }
 
-export class DataDatadogLogsIndexesLogsIndexesOutputReference extends cdktf.ComplexObject {
+export class DataDatadogLogsIndexesLogsIndexesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -373,7 +373,7 @@ export class DataDatadogLogsIndexesLogsIndexesOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -436,14 +436,14 @@ export class DataDatadogLogsIndexesLogsIndexesOutputReference extends cdktf.Comp
   }
 }
 
-export class DataDatadogLogsIndexesLogsIndexesList extends cdktf.ComplexList {
+export class DataDatadogLogsIndexesLogsIndexesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -456,9 +456,9 @@ export class DataDatadogLogsIndexesLogsIndexesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes datadog_logs_indexes}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes datadog_logs_indexes}
 */
-export class DataDatadogLogsIndexes extends cdktf.TerraformDataSource {
+export class DataDatadogLogsIndexes extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -469,14 +469,14 @@ export class DataDatadogLogsIndexes extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogLogsIndexes resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogLogsIndexes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogLogsIndexes to import
-  * @param importFromId The id of the existing DataDatadogLogsIndexes that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogLogsIndexes that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogLogsIndexes to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_indexes", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_indexes", importId: importFromId, provider });
       }
 
   // ===========
@@ -484,7 +484,7 @@ export class DataDatadogLogsIndexes extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -495,7 +495,7 @@ export class DataDatadogLogsIndexes extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_logs_indexes',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -541,14 +541,14 @@ export class DataDatadogLogsIndexes extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

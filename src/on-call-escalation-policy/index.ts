@@ -1,115 +1,115 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OnCallEscalationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface OnCallEscalationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable name for the escalation policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#name OnCallEscalationPolicy#name}
   */
   readonly name: string;
   /**
   * If true, pages will be automatically resolved if unacknowledged after the final step. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#resolve_page_on_policy_end OnCallEscalationPolicy#resolve_page_on_policy_end}
   */
-  readonly resolvePageOnPolicyEnd?: boolean | cdktf.IResolvable;
+  readonly resolvePageOnPolicyEnd?: boolean | cdktn.IResolvable;
   /**
   * If set, policy will be retried this many times after the final step. Must be in the range 0-10. Value must be between 0 and 10. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#retries OnCallEscalationPolicy#retries}
   */
   readonly retries?: number;
   /**
   * A list of team ids associated with the escalation policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#teams OnCallEscalationPolicy#teams}
   */
   readonly teams?: string[];
   /**
   * step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#step OnCallEscalationPolicy#step}
   */
-  readonly step?: OnCallEscalationPolicyStep[] | cdktf.IResolvable;
+  readonly step?: OnCallEscalationPolicyStep[] | cdktn.IResolvable;
 }
 export interface OnCallEscalationPolicyStepTarget {
   /**
   * For schedule targets, specifies which on-call user to page. Valid values: `current` (default), `previous`, `next`. Valid values are `current`, `previous`, `next`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#position OnCallEscalationPolicy#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#position OnCallEscalationPolicy#position}
   */
   readonly position?: string;
   /**
   * Targeted schedule ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#schedule OnCallEscalationPolicy#schedule}
   */
   readonly schedule?: string;
   /**
   * Targeted team ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#team OnCallEscalationPolicy#team}
   */
   readonly team?: string;
   /**
   * Targeted user ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#user OnCallEscalationPolicy#user}
   */
   readonly user?: string;
 }
 
-export function onCallEscalationPolicyStepTargetToTerraform(struct?: OnCallEscalationPolicyStepTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallEscalationPolicyStepTargetToTerraform(struct?: OnCallEscalationPolicyStepTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    position: cdktf.stringToTerraform(struct!.position),
-    schedule: cdktf.stringToTerraform(struct!.schedule),
-    team: cdktf.stringToTerraform(struct!.team),
-    user: cdktf.stringToTerraform(struct!.user),
+    position: cdktn.stringToTerraform(struct!.position),
+    schedule: cdktn.stringToTerraform(struct!.schedule),
+    team: cdktn.stringToTerraform(struct!.team),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
-export function onCallEscalationPolicyStepTargetToHclTerraform(struct?: OnCallEscalationPolicyStepTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallEscalationPolicyStepTargetToHclTerraform(struct?: OnCallEscalationPolicyStepTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     position: {
-      value: cdktf.stringToHclTerraform(struct!.position),
+      value: cdktn.stringToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schedule: {
-      value: cdktf.stringToHclTerraform(struct!.schedule),
+      value: cdktn.stringToHclTerraform(struct!.schedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     team: {
-      value: cdktf.stringToHclTerraform(struct!.team),
+      value: cdktn.stringToHclTerraform(struct!.team),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function onCallEscalationPolicyStepTargetToHclTerraform(struct?: OnCallEs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallEscalationPolicyStepTargetOutputReference extends cdktf.ComplexObject {
+export class OnCallEscalationPolicyStepTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class OnCallEscalationPolicyStepTargetOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OnCallEscalationPolicyStepTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallEscalationPolicyStepTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class OnCallEscalationPolicyStepTargetOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallEscalationPolicyStepTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallEscalationPolicyStepTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,7 +168,7 @@ export class OnCallEscalationPolicyStepTargetOutputReference extends cdktf.Compl
       this._team = undefined;
       this._user = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,15 +247,15 @@ export class OnCallEscalationPolicyStepTargetOutputReference extends cdktf.Compl
   }
 }
 
-export class OnCallEscalationPolicyStepTargetList extends cdktf.ComplexList {
-  public internalValue? : OnCallEscalationPolicyStepTarget[] | cdktf.IResolvable
+export class OnCallEscalationPolicyStepTargetList extends cdktn.ComplexList {
+  public internalValue? : OnCallEscalationPolicyStepTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -270,56 +270,56 @@ export interface OnCallEscalationPolicyStep {
   /**
   * Specifies how this escalation step will assign targets. Can be `default` (page all targets at once) or `round-robin`. Valid values are `default`, `round-robin`. Defaults to `"default"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#assignment OnCallEscalationPolicy#assignment}
   */
   readonly assignment?: string;
   /**
   * Defines how many seconds to wait before escalating to the next step. Value must be between 60 and 36000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#escalate_after_seconds OnCallEscalationPolicy#escalate_after_seconds}
   */
   readonly escalateAfterSeconds: number;
   /**
   * target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#target OnCallEscalationPolicy#target}
   */
-  readonly target?: OnCallEscalationPolicyStepTarget[] | cdktf.IResolvable;
+  readonly target?: OnCallEscalationPolicyStepTarget[] | cdktn.IResolvable;
 }
 
-export function onCallEscalationPolicyStepToTerraform(struct?: OnCallEscalationPolicyStep | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallEscalationPolicyStepToTerraform(struct?: OnCallEscalationPolicyStep | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    assignment: cdktf.stringToTerraform(struct!.assignment),
-    escalate_after_seconds: cdktf.numberToTerraform(struct!.escalateAfterSeconds),
-    target: cdktf.listMapper(onCallEscalationPolicyStepTargetToTerraform, true)(struct!.target),
+    assignment: cdktn.stringToTerraform(struct!.assignment),
+    escalate_after_seconds: cdktn.numberToTerraform(struct!.escalateAfterSeconds),
+    target: cdktn.listMapper(onCallEscalationPolicyStepTargetToTerraform, true)(struct!.target),
   }
 }
 
 
-export function onCallEscalationPolicyStepToHclTerraform(struct?: OnCallEscalationPolicyStep | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallEscalationPolicyStepToHclTerraform(struct?: OnCallEscalationPolicyStep | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     assignment: {
-      value: cdktf.stringToHclTerraform(struct!.assignment),
+      value: cdktn.stringToHclTerraform(struct!.assignment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     escalate_after_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.escalateAfterSeconds),
+      value: cdktn.numberToHclTerraform(struct!.escalateAfterSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     target: {
-      value: cdktf.listMapperHcl(onCallEscalationPolicyStepTargetToHclTerraform, true)(struct!.target),
+      value: cdktn.listMapperHcl(onCallEscalationPolicyStepTargetToHclTerraform, true)(struct!.target),
       isBlock: true,
       type: "list",
       storageClassType: "OnCallEscalationPolicyStepTargetList",
@@ -330,9 +330,9 @@ export function onCallEscalationPolicyStepToHclTerraform(struct?: OnCallEscalati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallEscalationPolicyStepOutputReference extends cdktf.ComplexObject {
+export class OnCallEscalationPolicyStepOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -340,11 +340,11 @@ export class OnCallEscalationPolicyStepOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OnCallEscalationPolicyStep | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallEscalationPolicyStep | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -365,7 +365,7 @@ export class OnCallEscalationPolicyStepOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallEscalationPolicyStep | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallEscalationPolicyStep | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -373,7 +373,7 @@ export class OnCallEscalationPolicyStepOutputReference extends cdktf.ComplexObje
       this._escalateAfterSeconds = undefined;
       this._target.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -425,7 +425,7 @@ export class OnCallEscalationPolicyStepOutputReference extends cdktf.ComplexObje
   public get target() {
     return this._target;
   }
-  public putTarget(value: OnCallEscalationPolicyStepTarget[] | cdktf.IResolvable) {
+  public putTarget(value: OnCallEscalationPolicyStepTarget[] | cdktn.IResolvable) {
     this._target.internalValue = value;
   }
   public resetTarget() {
@@ -437,15 +437,15 @@ export class OnCallEscalationPolicyStepOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class OnCallEscalationPolicyStepList extends cdktf.ComplexList {
-  public internalValue? : OnCallEscalationPolicyStep[] | cdktf.IResolvable
+export class OnCallEscalationPolicyStepList extends cdktn.ComplexList {
+  public internalValue? : OnCallEscalationPolicyStep[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -458,9 +458,9 @@ export class OnCallEscalationPolicyStepList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy}
 */
-export class OnCallEscalationPolicy extends cdktf.TerraformResource {
+export class OnCallEscalationPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -471,14 +471,14 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OnCallEscalationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OnCallEscalationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallEscalationPolicy to import
-  * @param importFromId The id of the existing OnCallEscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallEscalationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallEscalationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_on_call_escalation_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_on_call_escalation_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -486,7 +486,7 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_escalation_policy datadog_on_call_escalation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -497,7 +497,7 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_on_call_escalation_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -538,11 +538,11 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
   }
 
   // resolve_page_on_policy_end - computed: true, optional: true, required: false
-  private _resolvePageOnPolicyEnd?: boolean | cdktf.IResolvable; 
+  private _resolvePageOnPolicyEnd?: boolean | cdktn.IResolvable; 
   public get resolvePageOnPolicyEnd() {
     return this.getBooleanAttribute('resolve_page_on_policy_end');
   }
-  public set resolvePageOnPolicyEnd(value: boolean | cdktf.IResolvable) {
+  public set resolvePageOnPolicyEnd(value: boolean | cdktn.IResolvable) {
     this._resolvePageOnPolicyEnd = value;
   }
   public resetResolvePageOnPolicyEnd() {
@@ -590,7 +590,7 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
   public get step() {
     return this._step;
   }
-  public putStep(value: OnCallEscalationPolicyStep[] | cdktf.IResolvable) {
+  public putStep(value: OnCallEscalationPolicyStep[] | cdktn.IResolvable) {
     this._step.internalValue = value;
   }
   public resetStep() {
@@ -607,42 +607,42 @@ export class OnCallEscalationPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      resolve_page_on_policy_end: cdktf.booleanToTerraform(this._resolvePageOnPolicyEnd),
-      retries: cdktf.numberToTerraform(this._retries),
-      teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
-      step: cdktf.listMapper(onCallEscalationPolicyStepToTerraform, true)(this._step.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      resolve_page_on_policy_end: cdktn.booleanToTerraform(this._resolvePageOnPolicyEnd),
+      retries: cdktn.numberToTerraform(this._retries),
+      teams: cdktn.listMapper(cdktn.stringToTerraform, false)(this._teams),
+      step: cdktn.listMapper(onCallEscalationPolicyStepToTerraform, true)(this._step.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resolve_page_on_policy_end: {
-        value: cdktf.booleanToHclTerraform(this._resolvePageOnPolicyEnd),
+        value: cdktn.booleanToHclTerraform(this._resolvePageOnPolicyEnd),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       retries: {
-        value: cdktf.numberToHclTerraform(this._retries),
+        value: cdktn.numberToHclTerraform(this._retries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       teams: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._teams),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._teams),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       step: {
-        value: cdktf.listMapperHcl(onCallEscalationPolicyStepToHclTerraform, true)(this._step.internalValue),
+        value: cdktn.listMapperHcl(onCallEscalationPolicyStepToHclTerraform, true)(this._step.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OnCallEscalationPolicyStepList",

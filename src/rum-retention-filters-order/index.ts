@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filters_order
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filters_order
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RumRetentionFiltersOrderConfig extends cdktf.TerraformMetaArguments {
+export interface RumRetentionFiltersOrderConfig extends cdktn.TerraformMetaArguments {
   /**
   * RUM application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filters_order#application_id RumRetentionFiltersOrder#application_id}
   */
   readonly applicationId: string;
   /**
   * RUM retention filter ID list. The order of IDs in this attribute defines the order of RUM retention filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filters_order#retention_filter_ids RumRetentionFiltersOrder#retention_filter_ids}
   */
   readonly retentionFilterIds: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order}
 */
-export class RumRetentionFiltersOrder extends cdktf.TerraformResource {
+export class RumRetentionFiltersOrder extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class RumRetentionFiltersOrder extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RumRetentionFiltersOrder resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RumRetentionFiltersOrder resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RumRetentionFiltersOrder to import
-  * @param importFromId The id of the existing RumRetentionFiltersOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filters_order#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RumRetentionFiltersOrder that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filters_order#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RumRetentionFiltersOrder to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_rum_retention_filters_order", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_rum_retention_filters_order", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +55,7 @@ export class RumRetentionFiltersOrder extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/rum_retention_filters_order datadog_rum_retention_filters_order} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class RumRetentionFiltersOrder extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_rum_retention_filters_order',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -122,21 +122,21 @@ export class RumRetentionFiltersOrder extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      retention_filter_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._retentionFilterIds),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      retention_filter_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._retentionFilterIds),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_filter_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._retentionFilterIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._retentionFilterIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

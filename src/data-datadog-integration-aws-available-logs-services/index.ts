@@ -1,23 +1,23 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_available_logs_services
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_available_logs_services
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogIntegrationAwsAvailableLogsServicesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogIntegrationAwsAvailableLogsServicesConfig extends cdktn.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_available_logs_services datadog_integration_aws_available_logs_services}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_available_logs_services datadog_integration_aws_available_logs_services}
 */
-export class DataDatadogIntegrationAwsAvailableLogsServices extends cdktf.TerraformDataSource {
+export class DataDatadogIntegrationAwsAvailableLogsServices extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -28,14 +28,14 @@ export class DataDatadogIntegrationAwsAvailableLogsServices extends cdktf.Terraf
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogIntegrationAwsAvailableLogsServices resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogIntegrationAwsAvailableLogsServices resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogIntegrationAwsAvailableLogsServices to import
-  * @param importFromId The id of the existing DataDatadogIntegrationAwsAvailableLogsServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_available_logs_services#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogIntegrationAwsAvailableLogsServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_available_logs_services#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogIntegrationAwsAvailableLogsServices to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_aws_available_logs_services", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_aws_available_logs_services", importId: importFromId, provider });
       }
 
   // ===========
@@ -43,7 +43,7 @@ export class DataDatadogIntegrationAwsAvailableLogsServices extends cdktf.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_available_logs_services datadog_integration_aws_available_logs_services} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_available_logs_services datadog_integration_aws_available_logs_services} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataDatadogIntegrationAwsAvailableLogsServices extends cdktf.Terraf
       terraformResourceType: 'datadog_integration_aws_available_logs_services',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

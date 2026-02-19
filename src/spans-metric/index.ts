@@ -1,96 +1,96 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpansMetricConfig extends cdktf.TerraformMetaArguments {
+export interface SpansMetricConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the span-based metric. This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#name SpansMetric#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#name SpansMetric#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#compute SpansMetric#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#compute SpansMetric#compute}
   */
   readonly compute?: SpansMetricCompute;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#filter SpansMetric#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#filter SpansMetric#filter}
   */
   readonly filter?: SpansMetricFilter;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#group_by SpansMetric#group_by}
   */
-  readonly groupBy?: SpansMetricGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: SpansMetricGroupBy[] | cdktn.IResolvable;
 }
 export interface SpansMetricCompute {
   /**
   * The type of aggregation to use. This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#aggregation_type SpansMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include or exclude percentile aggregations for distribution metrics. Only present when the `aggregation_type` is `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#include_percentiles SpansMetric#include_percentiles}
   */
-  readonly includePercentiles?: boolean | cdktf.IResolvable;
+  readonly includePercentiles?: boolean | cdktn.IResolvable;
   /**
   * The path to the value the span-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#path SpansMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#path SpansMetric#path}
   */
   readonly path?: string;
 }
 
-export function spansMetricComputeToTerraform(struct?: SpansMetricCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spansMetricComputeToTerraform(struct?: SpansMetricCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation_type: cdktf.stringToTerraform(struct!.aggregationType),
-    include_percentiles: cdktf.booleanToTerraform(struct!.includePercentiles),
-    path: cdktf.stringToTerraform(struct!.path),
+    aggregation_type: cdktn.stringToTerraform(struct!.aggregationType),
+    include_percentiles: cdktn.booleanToTerraform(struct!.includePercentiles),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function spansMetricComputeToHclTerraform(struct?: SpansMetricCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spansMetricComputeToHclTerraform(struct?: SpansMetricCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation_type: {
-      value: cdktf.stringToHclTerraform(struct!.aggregationType),
+      value: cdktn.stringToHclTerraform(struct!.aggregationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_percentiles: {
-      value: cdktf.booleanToHclTerraform(struct!.includePercentiles),
+      value: cdktn.booleanToHclTerraform(struct!.includePercentiles),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,19 +101,19 @@ export function spansMetricComputeToHclTerraform(struct?: SpansMetricCompute | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpansMetricComputeOutputReference extends cdktf.ComplexObject {
+export class SpansMetricComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpansMetricCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): SpansMetricCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,7 +134,7 @@ export class SpansMetricComputeOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpansMetricCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpansMetricCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -142,7 +142,7 @@ export class SpansMetricComputeOutputReference extends cdktf.ComplexObject {
       this._includePercentiles = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -169,11 +169,11 @@ export class SpansMetricComputeOutputReference extends cdktf.ComplexObject {
   }
 
   // include_percentiles - computed: true, optional: true, required: false
-  private _includePercentiles?: boolean | cdktf.IResolvable; 
+  private _includePercentiles?: boolean | cdktn.IResolvable; 
   public get includePercentiles() {
     return this.getBooleanAttribute('include_percentiles');
   }
-  public set includePercentiles(value: boolean | cdktf.IResolvable) {
+  public set includePercentiles(value: boolean | cdktn.IResolvable) {
     this._includePercentiles = value;
   }
   public resetIncludePercentiles() {
@@ -204,30 +204,30 @@ export interface SpansMetricFilter {
   /**
   * The search query - following the span search syntax. Defaults to `"*"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#query SpansMetric#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#query SpansMetric#query}
   */
   readonly query?: string;
 }
 
-export function spansMetricFilterToTerraform(struct?: SpansMetricFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spansMetricFilterToTerraform(struct?: SpansMetricFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function spansMetricFilterToHclTerraform(struct?: SpansMetricFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spansMetricFilterToHclTerraform(struct?: SpansMetricFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -238,19 +238,19 @@ export function spansMetricFilterToHclTerraform(struct?: SpansMetricFilter | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpansMetricFilterOutputReference extends cdktf.ComplexObject {
+export class SpansMetricFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpansMetricFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): SpansMetricFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -263,13 +263,13 @@ export class SpansMetricFilterOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpansMetricFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpansMetricFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,43 +300,43 @@ export interface SpansMetricGroupBy {
   /**
   * The path to the value the span-based metric will be aggregated over.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#path SpansMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#path SpansMetric#path}
   */
   readonly path: string;
   /**
   * Eventual name of the tag that gets created. By default, the path attribute is used as the tag name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#tag_name SpansMetric#tag_name}
   */
   readonly tagName?: string;
 }
 
-export function spansMetricGroupByToTerraform(struct?: SpansMetricGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spansMetricGroupByToTerraform(struct?: SpansMetricGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    tag_name: cdktf.stringToTerraform(struct!.tagName),
+    path: cdktn.stringToTerraform(struct!.path),
+    tag_name: cdktn.stringToTerraform(struct!.tagName),
   }
 }
 
 
-export function spansMetricGroupByToHclTerraform(struct?: SpansMetricGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function spansMetricGroupByToHclTerraform(struct?: SpansMetricGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.tagName),
+      value: cdktn.stringToHclTerraform(struct!.tagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -347,9 +347,9 @@ export function spansMetricGroupByToHclTerraform(struct?: SpansMetricGroupBy | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpansMetricGroupByOutputReference extends cdktf.ComplexObject {
+export class SpansMetricGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -357,11 +357,11 @@ export class SpansMetricGroupByOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SpansMetricGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): SpansMetricGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -378,14 +378,14 @@ export class SpansMetricGroupByOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpansMetricGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpansMetricGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._path = undefined;
       this._tagName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -427,15 +427,15 @@ export class SpansMetricGroupByOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SpansMetricGroupByList extends cdktf.ComplexList {
-  public internalValue? : SpansMetricGroupBy[] | cdktf.IResolvable
+export class SpansMetricGroupByList extends cdktn.ComplexList {
+  public internalValue? : SpansMetricGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -448,9 +448,9 @@ export class SpansMetricGroupByList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric datadog_spans_metric}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric datadog_spans_metric}
 */
-export class SpansMetric extends cdktf.TerraformResource {
+export class SpansMetric extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -461,14 +461,14 @@ export class SpansMetric extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpansMetric resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpansMetric resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpansMetric to import
-  * @param importFromId The id of the existing SpansMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpansMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpansMetric to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_spans_metric", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_spans_metric", importId: importFromId, provider });
       }
 
   // ===========
@@ -476,7 +476,7 @@ export class SpansMetric extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/spans_metric datadog_spans_metric} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/spans_metric datadog_spans_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -487,7 +487,7 @@ export class SpansMetric extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_spans_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -563,7 +563,7 @@ export class SpansMetric extends cdktf.TerraformResource {
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: SpansMetricGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: SpansMetricGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -580,17 +580,17 @@ export class SpansMetric extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
       compute: spansMetricComputeToTerraform(this._compute.internalValue),
       filter: spansMetricFilterToTerraform(this._filter.internalValue),
-      group_by: cdktf.listMapper(spansMetricGroupByToTerraform, true)(this._groupBy.internalValue),
+      group_by: cdktn.listMapper(spansMetricGroupByToTerraform, true)(this._groupBy.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -608,7 +608,7 @@ export class SpansMetric extends cdktf.TerraformResource {
         storageClassType: "SpansMetricFilter",
       },
       group_by: {
-        value: cdktf.listMapperHcl(spansMetricGroupByToHclTerraform, true)(this._groupBy.internalValue),
+        value: cdktn.listMapperHcl(spansMetricGroupByToHclTerraform, true)(this._groupBy.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SpansMetricGroupByList",

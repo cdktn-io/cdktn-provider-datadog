@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiKeyConfig extends cdktf.TerraformMetaArguments {
+export interface ApiKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name for API Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key#name ApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key#name ApiKey#name}
   */
   readonly name: string;
   /**
   * Whether the API key is used for remote config. Set to true only if remote config is enabled in `/organization-settings/remote-config`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key#remote_config_read_enabled ApiKey#remote_config_read_enabled}
   */
-  readonly remoteConfigReadEnabled?: boolean | cdktf.IResolvable;
+  readonly remoteConfigReadEnabled?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key datadog_api_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key}
 */
-export class ApiKey extends cdktf.TerraformResource {
+export class ApiKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class ApiKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiKey to import
-  * @param importFromId The id of the existing ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_api_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_api_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +55,7 @@ export class ApiKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/api_key datadog_api_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/api_key datadog_api_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ApiKey extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -109,11 +109,11 @@ export class ApiKey extends cdktf.TerraformResource {
   }
 
   // remote_config_read_enabled - computed: true, optional: true, required: false
-  private _remoteConfigReadEnabled?: boolean | cdktf.IResolvable; 
+  private _remoteConfigReadEnabled?: boolean | cdktn.IResolvable; 
   public get remoteConfigReadEnabled() {
     return this.getBooleanAttribute('remote_config_read_enabled');
   }
-  public set remoteConfigReadEnabled(value: boolean | cdktf.IResolvable) {
+  public set remoteConfigReadEnabled(value: boolean | cdktn.IResolvable) {
     this._remoteConfigReadEnabled = value;
   }
   public resetRemoteConfigReadEnabled() {
@@ -130,21 +130,21 @@ export class ApiKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      remote_config_read_enabled: cdktf.booleanToTerraform(this._remoteConfigReadEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      remote_config_read_enabled: cdktn.booleanToTerraform(this._remoteConfigReadEnabled),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       remote_config_read_enabled: {
-        value: cdktf.booleanToHclTerraform(this._remoteConfigReadEnabled),
+        value: cdktn.booleanToHclTerraform(this._remoteConfigReadEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

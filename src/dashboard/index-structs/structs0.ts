@@ -1,89 +1,89 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 export interface DashboardTemplateVariable {
   /**
   * The list of values that the template variable drop-down is be limited to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#available_values Dashboard#available_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#available_values Dashboard#available_values}
   */
   readonly availableValues?: string[];
   /**
   * The default value for the template variable on dashboard load. Cannot be used in conjunction with `defaults`. **Deprecated.** Use `defaults` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#default Dashboard#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#default Dashboard#default}
   */
   readonly default?: string;
   /**
   * One or many default values for template variables on load. If more than one default is specified, they will be unioned together with `OR`. Cannot be used in conjunction with `default`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#defaults Dashboard#defaults}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#defaults Dashboard#defaults}
   */
   readonly defaults?: string[];
   /**
   * The name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The tag prefix associated with the variable. Only tags with this prefix appear in the variable dropdown.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#prefix Dashboard#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#prefix Dashboard#prefix}
   */
   readonly prefix?: string;
 }
 
-export function dashboardTemplateVariableToTerraform(struct?: DashboardTemplateVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardTemplateVariableToTerraform(struct?: DashboardTemplateVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    available_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.availableValues),
-    default: cdktf.stringToTerraform(struct!.default),
-    defaults: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaults),
-    name: cdktf.stringToTerraform(struct!.name),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
+    available_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.availableValues),
+    default: cdktn.stringToTerraform(struct!.default),
+    defaults: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.defaults),
+    name: cdktn.stringToTerraform(struct!.name),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
   }
 }
 
 
-export function dashboardTemplateVariableToHclTerraform(struct?: DashboardTemplateVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardTemplateVariableToHclTerraform(struct?: DashboardTemplateVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     available_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.availableValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.availableValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     default: {
-      value: cdktf.stringToHclTerraform(struct!.default),
+      value: cdktn.stringToHclTerraform(struct!.default),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     defaults: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.defaults),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.defaults),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -94,9 +94,9 @@ export function dashboardTemplateVariableToHclTerraform(struct?: DashboardTempla
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObject {
+export class DashboardTemplateVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,11 +104,11 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardTemplateVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardTemplateVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardTemplateVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardTemplateVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -147,7 +147,7 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
       this._name = undefined;
       this._prefix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -240,15 +240,15 @@ export class DashboardTemplateVariableOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class DashboardTemplateVariableList extends cdktf.ComplexList {
-  public internalValue? : DashboardTemplateVariable[] | cdktf.IResolvable
+export class DashboardTemplateVariableList extends cdktn.ComplexList {
+  public internalValue? : DashboardTemplateVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -263,56 +263,56 @@ export interface DashboardTemplateVariablePresetTemplateVariable {
   /**
   * The name of the template variable
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name?: string;
   /**
   * The value that should be assumed by the template variable in this preset. Cannot be used in conjunction with `values`. **Deprecated.** Use `values` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#value Dashboard#value}
   */
   readonly value?: string;
   /**
   * One or many template variable values within the saved view, which will be unioned together using `OR` if more than one is specified. Cannot be used in conjunction with `value`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#values Dashboard#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#values Dashboard#values}
   */
   readonly values?: string[];
 }
 
-export function dashboardTemplateVariablePresetTemplateVariableToTerraform(struct?: DashboardTemplateVariablePresetTemplateVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardTemplateVariablePresetTemplateVariableToTerraform(struct?: DashboardTemplateVariablePresetTemplateVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function dashboardTemplateVariablePresetTemplateVariableToHclTerraform(struct?: DashboardTemplateVariablePresetTemplateVariable | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardTemplateVariablePresetTemplateVariableToHclTerraform(struct?: DashboardTemplateVariablePresetTemplateVariable | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -323,9 +323,9 @@ export function dashboardTemplateVariablePresetTemplateVariableToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardTemplateVariablePresetTemplateVariableOutputReference extends cdktf.ComplexObject {
+export class DashboardTemplateVariablePresetTemplateVariableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -333,11 +333,11 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardTemplateVariablePresetTemplateVariable | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardTemplateVariablePresetTemplateVariable | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -358,7 +358,7 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardTemplateVariablePresetTemplateVariable | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardTemplateVariablePresetTemplateVariable | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -366,7 +366,7 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
       this._value = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -428,15 +428,15 @@ export class DashboardTemplateVariablePresetTemplateVariableOutputReference exte
   }
 }
 
-export class DashboardTemplateVariablePresetTemplateVariableList extends cdktf.ComplexList {
-  public internalValue? : DashboardTemplateVariablePresetTemplateVariable[] | cdktf.IResolvable
+export class DashboardTemplateVariablePresetTemplateVariableList extends cdktn.ComplexList {
+  public internalValue? : DashboardTemplateVariablePresetTemplateVariable[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -451,43 +451,43 @@ export interface DashboardTemplateVariablePreset {
   /**
   * The name of the preset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name?: string;
   /**
   * template_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#template_variable Dashboard#template_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#template_variable Dashboard#template_variable}
   */
-  readonly templateVariable?: DashboardTemplateVariablePresetTemplateVariable[] | cdktf.IResolvable;
+  readonly templateVariable?: DashboardTemplateVariablePresetTemplateVariable[] | cdktn.IResolvable;
 }
 
-export function dashboardTemplateVariablePresetToTerraform(struct?: DashboardTemplateVariablePreset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardTemplateVariablePresetToTerraform(struct?: DashboardTemplateVariablePreset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    template_variable: cdktf.listMapper(dashboardTemplateVariablePresetTemplateVariableToTerraform, true)(struct!.templateVariable),
+    name: cdktn.stringToTerraform(struct!.name),
+    template_variable: cdktn.listMapper(dashboardTemplateVariablePresetTemplateVariableToTerraform, true)(struct!.templateVariable),
   }
 }
 
 
-export function dashboardTemplateVariablePresetToHclTerraform(struct?: DashboardTemplateVariablePreset | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardTemplateVariablePresetToHclTerraform(struct?: DashboardTemplateVariablePreset | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     template_variable: {
-      value: cdktf.listMapperHcl(dashboardTemplateVariablePresetTemplateVariableToHclTerraform, true)(struct!.templateVariable),
+      value: cdktn.listMapperHcl(dashboardTemplateVariablePresetTemplateVariableToHclTerraform, true)(struct!.templateVariable),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardTemplateVariablePresetTemplateVariableList",
@@ -498,9 +498,9 @@ export function dashboardTemplateVariablePresetToHclTerraform(struct?: Dashboard
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardTemplateVariablePresetOutputReference extends cdktf.ComplexObject {
+export class DashboardTemplateVariablePresetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -508,11 +508,11 @@ export class DashboardTemplateVariablePresetOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardTemplateVariablePreset | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardTemplateVariablePreset | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -529,14 +529,14 @@ export class DashboardTemplateVariablePresetOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardTemplateVariablePreset | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardTemplateVariablePreset | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._templateVariable.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -569,7 +569,7 @@ export class DashboardTemplateVariablePresetOutputReference extends cdktf.Comple
   public get templateVariable() {
     return this._templateVariable;
   }
-  public putTemplateVariable(value: DashboardTemplateVariablePresetTemplateVariable[] | cdktf.IResolvable) {
+  public putTemplateVariable(value: DashboardTemplateVariablePresetTemplateVariable[] | cdktn.IResolvable) {
     this._templateVariable.internalValue = value;
   }
   public resetTemplateVariable() {
@@ -581,15 +581,15 @@ export class DashboardTemplateVariablePresetOutputReference extends cdktf.Comple
   }
 }
 
-export class DashboardTemplateVariablePresetList extends cdktf.ComplexList {
-  public internalValue? : DashboardTemplateVariablePreset[] | cdktf.IResolvable
+export class DashboardTemplateVariablePresetList extends cdktn.ComplexList {
+  public internalValue? : DashboardTemplateVariablePreset[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -604,95 +604,108 @@ export interface DashboardWidgetAlertGraphDefinition {
   /**
   * The ID of the monitor used by the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
   */
   readonly alertId: string;
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * Type of visualization to use when displaying the widget. Valid values are `timeseries`, `toplist`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#viz_type Dashboard#viz_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#viz_type Dashboard#viz_type}
   */
   readonly vizType: string;
 }
 
 export function dashboardWidgetAlertGraphDefinitionToTerraform(struct?: DashboardWidgetAlertGraphDefinitionOutputReference | DashboardWidgetAlertGraphDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_id: cdktf.stringToTerraform(struct!.alertId),
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    viz_type: cdktf.stringToTerraform(struct!.vizType),
+    alert_id: cdktn.stringToTerraform(struct!.alertId),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    viz_type: cdktn.stringToTerraform(struct!.vizType),
   }
 }
 
 
 export function dashboardWidgetAlertGraphDefinitionToHclTerraform(struct?: DashboardWidgetAlertGraphDefinitionOutputReference | DashboardWidgetAlertGraphDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_id: {
-      value: cdktf.stringToHclTerraform(struct!.alertId),
+      value: cdktn.stringToHclTerraform(struct!.alertId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     viz_type: {
-      value: cdktf.stringToHclTerraform(struct!.vizType),
+      value: cdktn.stringToHclTerraform(struct!.vizType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -703,14 +716,14 @@ export function dashboardWidgetAlertGraphDefinitionToHclTerraform(struct?: Dashb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetAlertGraphDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetAlertGraphDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -720,6 +733,10 @@ export class DashboardWidgetAlertGraphDefinitionOutputReference extends cdktf.Co
     if (this._alertId !== undefined) {
       hasAnyValues = true;
       internalValueResult.alertId = this._alertId;
+    }
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
     }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
@@ -748,6 +765,7 @@ export class DashboardWidgetAlertGraphDefinitionOutputReference extends cdktf.Co
     if (value === undefined) {
       this.isEmptyObject = false;
       this._alertId = undefined;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._title = undefined;
       this._titleAlign = undefined;
@@ -757,6 +775,7 @@ export class DashboardWidgetAlertGraphDefinitionOutputReference extends cdktf.Co
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._alertId = value.alertId;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._title = value.title;
       this._titleAlign = value.titleAlign;
@@ -776,6 +795,22 @@ export class DashboardWidgetAlertGraphDefinitionOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get alertIdInput() {
     return this._alertId;
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -859,108 +894,108 @@ export interface DashboardWidgetAlertValueDefinition {
   /**
   * The ID of the monitor used by the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
   */
   readonly alertId: string;
   /**
   * The precision to use when displaying the value. Use `*` for maximum precision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#precision Dashboard#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#precision Dashboard#precision}
   */
   readonly precision?: number;
   /**
   * The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#text_align Dashboard#text_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#text_align Dashboard#text_align}
   */
   readonly textAlign?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * The unit for the value displayed in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit Dashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit Dashboard#unit}
   */
   readonly unit?: string;
 }
 
 export function dashboardWidgetAlertValueDefinitionToTerraform(struct?: DashboardWidgetAlertValueDefinitionOutputReference | DashboardWidgetAlertValueDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_id: cdktf.stringToTerraform(struct!.alertId),
-    precision: cdktf.numberToTerraform(struct!.precision),
-    text_align: cdktf.stringToTerraform(struct!.textAlign),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    alert_id: cdktn.stringToTerraform(struct!.alertId),
+    precision: cdktn.numberToTerraform(struct!.precision),
+    text_align: cdktn.stringToTerraform(struct!.textAlign),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
 export function dashboardWidgetAlertValueDefinitionToHclTerraform(struct?: DashboardWidgetAlertValueDefinitionOutputReference | DashboardWidgetAlertValueDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_id: {
-      value: cdktf.stringToHclTerraform(struct!.alertId),
+      value: cdktn.stringToHclTerraform(struct!.alertId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.numberToHclTerraform(struct!.precision),
+      value: cdktn.numberToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     text_align: {
-      value: cdktf.stringToHclTerraform(struct!.textAlign),
+      value: cdktn.stringToHclTerraform(struct!.textAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -971,14 +1006,14 @@ export function dashboardWidgetAlertValueDefinitionToHclTerraform(struct?: Dashb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetAlertValueDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetAlertValueDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1152,69 +1187,69 @@ export interface DashboardWidgetChangeDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#is_hidden Dashboard#is_hidden}
   */
-  readonly isHidden?: boolean | cdktf.IResolvable;
+  readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetChangeDefinitionCustomLinkToTerraform(struct?: DashboardWidgetChangeDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionCustomLinkToTerraform(struct?: DashboardWidgetChangeDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
-    label: cdktf.stringToTerraform(struct!.label),
-    link: cdktf.stringToTerraform(struct!.link),
-    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
+    is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
+    label: cdktn.stringToTerraform(struct!.label),
+    link: cdktn.stringToTerraform(struct!.link),
+    override_label: cdktn.stringToTerraform(struct!.overrideLabel),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionCustomLinkToHclTerraform(struct?: DashboardWidgetChangeDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionCustomLinkToHclTerraform(struct?: DashboardWidgetChangeDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_hidden: {
-      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      value: cdktn.booleanToHclTerraform(struct!.isHidden),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     link: {
-      value: cdktf.stringToHclTerraform(struct!.link),
+      value: cdktn.stringToHclTerraform(struct!.link),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_label: {
-      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      value: cdktn.stringToHclTerraform(struct!.overrideLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1225,9 +1260,9 @@ export function dashboardWidgetChangeDefinitionCustomLinkToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionCustomLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1235,11 +1270,11 @@ export class DashboardWidgetChangeDefinitionCustomLinkOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionCustomLink | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionCustomLink | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1264,7 +1299,7 @@ export class DashboardWidgetChangeDefinitionCustomLinkOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionCustomLink | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionCustomLink | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1273,7 +1308,7 @@ export class DashboardWidgetChangeDefinitionCustomLinkOutputReference extends cd
       this._link = undefined;
       this._overrideLabel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1288,11 +1323,11 @@ export class DashboardWidgetChangeDefinitionCustomLinkOutputReference extends cd
   }
 
   // is_hidden - computed: false, optional: true, required: false
-  private _isHidden?: boolean | cdktf.IResolvable; 
+  private _isHidden?: boolean | cdktn.IResolvable; 
   public get isHidden() {
     return this.getBooleanAttribute('is_hidden');
   }
-  public set isHidden(value: boolean | cdktf.IResolvable) {
+  public set isHidden(value: boolean | cdktn.IResolvable) {
     this._isHidden = value;
   }
   public resetIsHidden() {
@@ -1352,15 +1387,15 @@ export class DashboardWidgetChangeDefinitionCustomLinkOutputReference extends cd
   }
 }
 
-export class DashboardWidgetChangeDefinitionCustomLinkList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionCustomLink[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionCustomLinkList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionCustomLink[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1375,56 +1410,56 @@ export interface DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetChangeDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1435,14 +1470,14 @@ export function dashboardWidgetChangeDefinitionRequestApmQueryComputeQueryToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1528,56 +1563,56 @@ export interface DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1588,14 +1623,14 @@ export function dashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1678,50 +1713,50 @@ export interface DashboardWidgetChangeDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetChangeDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetChangeDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestApmQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestApmQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1738,9 +1773,9 @@ export function dashboardWidgetChangeDefinitionRequestApmQueryGroupByToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1748,11 +1783,11 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1773,7 +1808,7 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1781,7 +1816,7 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByOutputReferenc
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1843,15 +1878,15 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByOutputReferenc
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestApmQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1866,56 +1901,56 @@ export interface DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1926,9 +1961,9 @@ export function dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1936,11 +1971,11 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1961,7 +1996,7 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1969,7 +2004,7 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeOutputRef
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2028,15 +2063,15 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeOutputRef
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2051,64 +2086,64 @@ export interface DashboardWidgetChangeDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetChangeDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetChangeDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryOutputReference | DashboardWidgetChangeDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetChangeDefinitionRequestApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestApmQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestApmQueryOutputReference | DashboardWidgetChangeDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2120,13 +2155,13 @@ export function dashboardWidgetChangeDefinitionRequestApmQueryToHclTerraform(str
       storageClassType: "DashboardWidgetChangeDefinitionRequestApmQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestApmQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestApmQueryMultiComputeList",
@@ -2137,14 +2172,14 @@ export function dashboardWidgetChangeDefinitionRequestApmQueryToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestApmQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2243,7 +2278,7 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryOutputReference exten
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -2259,7 +2294,7 @@ export class DashboardWidgetChangeDefinitionRequestApmQueryOutputReference exten
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -2274,134 +2309,134 @@ export interface DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_value Dashboard#hide_value}
   */
-  readonly hideValue?: boolean | cdktf.IResolvable;
+  readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
 
-export function dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparator: cdktf.stringToTerraform(struct!.comparator),
-    custom_bg_color: cdktf.stringToTerraform(struct!.customBgColor),
-    custom_fg_color: cdktf.stringToTerraform(struct!.customFgColor),
-    hide_value: cdktf.booleanToTerraform(struct!.hideValue),
-    image_url: cdktf.stringToTerraform(struct!.imageUrl),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    palette: cdktf.stringToTerraform(struct!.palette),
-    timeframe: cdktf.stringToTerraform(struct!.timeframe),
-    value: cdktf.numberToTerraform(struct!.value),
+    comparator: cdktn.stringToTerraform(struct!.comparator),
+    custom_bg_color: cdktn.stringToTerraform(struct!.customBgColor),
+    custom_fg_color: cdktn.stringToTerraform(struct!.customFgColor),
+    hide_value: cdktn.booleanToTerraform(struct!.hideValue),
+    image_url: cdktn.stringToTerraform(struct!.imageUrl),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    timeframe: cdktn.stringToTerraform(struct!.timeframe),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparator: {
-      value: cdktf.stringToHclTerraform(struct!.comparator),
+      value: cdktn.stringToHclTerraform(struct!.comparator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_bg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      value: cdktn.stringToHclTerraform(struct!.customBgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_fg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      value: cdktn.stringToHclTerraform(struct!.customFgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hide_value: {
-      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      value: cdktn.booleanToHclTerraform(struct!.hideValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     image_url: {
-      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      value: cdktn.stringToHclTerraform(struct!.imageUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeframe: {
-      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      value: cdktn.stringToHclTerraform(struct!.timeframe),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2412,9 +2447,9 @@ export function dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2422,11 +2457,11 @@ export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2471,7 +2506,7 @@ export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2485,7 +2520,7 @@ export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsOutp
       this._timeframe = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2550,11 +2585,11 @@ export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsOutp
   }
 
   // hide_value - computed: false, optional: true, required: false
-  private _hideValue?: boolean | cdktf.IResolvable; 
+  private _hideValue?: boolean | cdktn.IResolvable; 
   public get hideValue() {
     return this.getBooleanAttribute('hide_value');
   }
-  public set hideValue(value: boolean | cdktf.IResolvable) {
+  public set hideValue(value: boolean | cdktn.IResolvable) {
     this._hideValue = value;
   }
   public resetHideValue() {
@@ -2640,15 +2675,15 @@ export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsOutp
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2663,43 +2698,43 @@ export interface DashboardWidgetChangeDefinitionRequestFormulaLimit {
   /**
   * The number of results to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#count Dashboard#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#count Dashboard#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestFormulaLimitToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference | DashboardWidgetChangeDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    order: cdktf.stringToTerraform(struct!.order),
+    count: cdktn.numberToTerraform(struct!.count),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestFormulaLimitToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference | DashboardWidgetChangeDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2710,14 +2745,14 @@ export function dashboardWidgetChangeDefinitionRequestFormulaLimitToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2784,43 +2819,43 @@ export interface DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCa
   /**
   * per unit name. If you want to represent megabytes/s, you set 'unit_name' = 'megabyte' and 'per_unit_name = 'second'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#per_unit_name Dashboard#per_unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#per_unit_name Dashboard#per_unit_name}
   */
   readonly perUnitName?: string;
   /**
   * Unit name. It should be in singular form ('megabyte' and not 'megabytes')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
   */
   readonly unitName: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    per_unit_name: cdktf.stringToTerraform(struct!.perUnitName),
-    unit_name: cdktf.stringToTerraform(struct!.unitName),
+    per_unit_name: cdktn.stringToTerraform(struct!.perUnitName),
+    unit_name: cdktn.stringToTerraform(struct!.unitName),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     per_unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.perUnitName),
+      value: cdktn.stringToHclTerraform(struct!.perUnitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.unitName),
+      value: cdktn.stringToHclTerraform(struct!.unitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2831,14 +2866,14 @@ export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2902,30 +2937,30 @@ export interface DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCu
   /**
   * Unit label
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#label Dashboard#label}
   */
   readonly label: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label: cdktf.stringToTerraform(struct!.label),
+    label: cdktn.stringToTerraform(struct!.label),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2936,14 +2971,14 @@ export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustomOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2985,20 +3020,20 @@ export interface DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnit {
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#canonical Dashboard#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#canonical Dashboard#canonical}
   */
   readonly canonical?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom Dashboard#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom Dashboard#custom}
   */
   readonly custom?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitCustom;
 }
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3009,8 +3044,8 @@ export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitToT
 
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3032,14 +3067,14 @@ export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3104,30 +3139,30 @@ export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitOutput
 }
 export interface DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
   */
   readonly unitName: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit_name: cdktf.stringToTerraform(struct!.unitName),
+    unit_name: cdktn.stringToTerraform(struct!.unitName),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.unitName),
+      value: cdktn.stringToHclTerraform(struct!.unitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3138,14 +3173,14 @@ export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitSca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3187,20 +3222,20 @@ export interface DashboardWidgetChangeDefinitionRequestFormulaNumberFormat {
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit Dashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit Dashboard#unit}
   */
   readonly unit: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit_scale Dashboard#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit_scale Dashboard#unit_scale}
   */
   readonly unitScale?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatUnitScale;
 }
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3211,8 +3246,8 @@ export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatToTerra
 
 
 export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference | DashboardWidgetChangeDefinitionRequestFormulaNumberFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3234,14 +3269,14 @@ export function dashboardWidgetChangeDefinitionRequestFormulaNumberFormatToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaNumberFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3305,43 +3340,43 @@ export interface DashboardWidgetChangeDefinitionRequestFormulaStyle {
   /**
   * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
   /**
   * Index specifying which color to use within the palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette_index Dashboard#palette_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette_index Dashboard#palette_index}
   */
   readonly paletteIndex?: number;
 }
 
 export function dashboardWidgetChangeDefinitionRequestFormulaStyleToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaStyleOutputReference | DashboardWidgetChangeDefinitionRequestFormulaStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    palette: cdktf.stringToTerraform(struct!.palette),
-    palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    palette_index: cdktn.numberToTerraform(struct!.paletteIndex),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestFormulaStyleToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormulaStyleOutputReference | DashboardWidgetChangeDefinitionRequestFormulaStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette_index: {
-      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      value: cdktn.numberToHclTerraform(struct!.paletteIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3352,14 +3387,14 @@ export function dashboardWidgetChangeDefinitionRequestFormulaStyleToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaStyleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3426,57 +3461,57 @@ export interface DashboardWidgetChangeDefinitionRequestFormula {
   /**
   * An expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
+  readonly conditionalFormats?: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetChangeDefinitionRequestFormulaLimit;
   /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#number_format Dashboard#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#number_format Dashboard#number_format}
   */
   readonly numberFormat?: DashboardWidgetChangeDefinitionRequestFormulaNumberFormat;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetChangeDefinitionRequestFormulaStyle;
 }
 
-export function dashboardWidgetChangeDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormula | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormula | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    cell_display_mode: cdktf.stringToTerraform(struct!.cellDisplayMode),
-    formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
-    conditional_formats: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
+    alias: cdktn.stringToTerraform(struct!.alias),
+    cell_display_mode: cdktn.stringToTerraform(struct!.cellDisplayMode),
+    formula_expression: cdktn.stringToTerraform(struct!.formulaExpression),
+    conditional_formats: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: dashboardWidgetChangeDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     number_format: dashboardWidgetChangeDefinitionRequestFormulaNumberFormatToTerraform(struct!.numberFormat),
     style: dashboardWidgetChangeDefinitionRequestFormulaStyleToTerraform(struct!.style),
@@ -3484,32 +3519,32 @@ export function dashboardWidgetChangeDefinitionRequestFormulaToTerraform(struct?
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestFormulaToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormula | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestFormulaToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestFormula | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
+      value: cdktn.stringToHclTerraform(struct!.alias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cell_display_mode: {
-      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      value: cdktn.stringToHclTerraform(struct!.cellDisplayMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     formula_expression: {
-      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      value: cdktn.stringToHclTerraform(struct!.formulaExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditional_formats: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestFormulaConditionalFormatsList",
@@ -3538,9 +3573,9 @@ export function dashboardWidgetChangeDefinitionRequestFormulaToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestFormulaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3548,11 +3583,11 @@ export class DashboardWidgetChangeDefinitionRequestFormulaOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestFormula | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestFormula | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3589,7 +3624,7 @@ export class DashboardWidgetChangeDefinitionRequestFormulaOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestFormula | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestFormula | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3601,7 +3636,7 @@ export class DashboardWidgetChangeDefinitionRequestFormulaOutputReference extend
       this._numberFormat.internalValue = undefined;
       this._style.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3668,7 +3703,7 @@ export class DashboardWidgetChangeDefinitionRequestFormulaOutputReference extend
   public get conditionalFormats() {
     return this._conditionalFormats;
   }
-  public putConditionalFormats(value: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable) {
+  public putConditionalFormats(value: DashboardWidgetChangeDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable) {
     this._conditionalFormats.internalValue = value;
   }
   public resetConditionalFormats() {
@@ -3728,15 +3763,15 @@ export class DashboardWidgetChangeDefinitionRequestFormulaOutputReference extend
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestFormulaList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestFormula[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestFormulaList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestFormula[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3751,56 +3786,56 @@ export interface DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetChangeDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3811,14 +3846,14 @@ export function dashboardWidgetChangeDefinitionRequestLogQueryComputeQueryToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3904,56 +3939,56 @@ export interface DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3964,14 +3999,14 @@ export function dashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4054,50 +4089,50 @@ export interface DashboardWidgetChangeDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetChangeDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetChangeDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4114,9 +4149,9 @@ export function dashboardWidgetChangeDefinitionRequestLogQueryGroupByToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4124,11 +4159,11 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4149,7 +4184,7 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4157,7 +4192,7 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReferenc
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4219,15 +4254,15 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByOutputReferenc
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestLogQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4242,56 +4277,56 @@ export interface DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4302,9 +4337,9 @@ export function dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4312,11 +4347,11 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4337,7 +4372,7 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4345,7 +4380,7 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeOutputRef
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4404,15 +4439,15 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeOutputRef
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4427,64 +4462,64 @@ export interface DashboardWidgetChangeDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetChangeDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetChangeDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryOutputReference | DashboardWidgetChangeDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetChangeDefinitionRequestLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestLogQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestLogQueryOutputReference | DashboardWidgetChangeDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4496,13 +4531,13 @@ export function dashboardWidgetChangeDefinitionRequestLogQueryToHclTerraform(str
       storageClassType: "DashboardWidgetChangeDefinitionRequestLogQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestLogQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestLogQueryMultiComputeList",
@@ -4513,14 +4548,14 @@ export function dashboardWidgetChangeDefinitionRequestLogQueryToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestLogQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4619,7 +4654,7 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryOutputReference exten
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -4635,7 +4670,7 @@ export class DashboardWidgetChangeDefinitionRequestLogQueryOutputReference exten
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -4650,69 +4685,69 @@ export interface DashboardWidgetChangeDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference | DashboardWidgetChangeDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    search_by: cdktf.stringToTerraform(struct!.searchBy),
+    filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    search_by: cdktn.stringToTerraform(struct!.searchBy),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestProcessQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference | DashboardWidgetChangeDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filterBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_by: {
-      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      value: cdktn.stringToHclTerraform(struct!.searchBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4723,14 +4758,14 @@ export function dashboardWidgetChangeDefinitionRequestProcessQueryToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4838,160 +4873,160 @@ export interface DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQu
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#is_upstream Dashboard#is_upstream}
   */
-  readonly isUpstream?: boolean | cdktf.IResolvable;
+  readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    env: cdktf.stringToTerraform(struct!.env),
-    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
-    name: cdktf.stringToTerraform(struct!.name),
-    operation_name: cdktf.stringToTerraform(struct!.operationName),
-    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
-    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    service: cdktf.stringToTerraform(struct!.service),
-    stat: cdktf.stringToTerraform(struct!.stat),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    env: cdktn.stringToTerraform(struct!.env),
+    is_upstream: cdktn.booleanToTerraform(struct!.isUpstream),
+    name: cdktn.stringToTerraform(struct!.name),
+    operation_name: cdktn.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktn.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktn.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    service: cdktn.stringToTerraform(struct!.service),
+    stat: cdktn.stringToTerraform(struct!.stat),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_upstream: {
-      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      value: cdktn.booleanToHclTerraform(struct!.isUpstream),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_name: {
-      value: cdktf.stringToHclTerraform(struct!.operationName),
+      value: cdktn.stringToHclTerraform(struct!.operationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stat: {
-      value: cdktf.stringToHclTerraform(struct!.stat),
+      value: cdktn.stringToHclTerraform(struct!.stat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5002,14 +5037,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5137,11 +5172,11 @@ export class DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQueryO
   }
 
   // is_upstream - computed: false, optional: true, required: false
-  private _isUpstream?: boolean | cdktf.IResolvable; 
+  private _isUpstream?: boolean | cdktn.IResolvable; 
   public get isUpstream() {
     return this.getBooleanAttribute('is_upstream');
   }
-  public set isUpstream(value: boolean | cdktf.IResolvable) {
+  public set isUpstream(value: boolean | cdktn.IResolvable) {
     this._isUpstream = value;
   }
   public resetIsUpstream() {
@@ -5253,160 +5288,160 @@ export interface DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuer
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    env: cdktf.stringToTerraform(struct!.env),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
-    name: cdktf.stringToTerraform(struct!.name),
-    operation_name: cdktf.stringToTerraform(struct!.operationName),
-    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
-    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    service: cdktf.stringToTerraform(struct!.service),
-    stat: cdktf.stringToTerraform(struct!.stat),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    env: cdktn.stringToTerraform(struct!.env),
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    name: cdktn.stringToTerraform(struct!.name),
+    operation_name: cdktn.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktn.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktn.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    service: cdktn.stringToTerraform(struct!.service),
+    stat: cdktn.stringToTerraform(struct!.stat),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_name: {
-      value: cdktf.stringToHclTerraform(struct!.operationName),
+      value: cdktn.stringToHclTerraform(struct!.operationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stat: {
-      value: cdktf.stringToHclTerraform(struct!.stat),
+      value: cdktn.stringToHclTerraform(struct!.stat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5417,14 +5452,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5674,82 +5709,82 @@ export interface DashboardWidgetChangeDefinitionRequestQueryCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The cloud cost query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryCloudCostQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryCloudCostQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryCloudCostQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryCloudCostQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5760,14 +5795,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryCloudCostQueryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryCloudCostQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5891,56 +5926,56 @@ export interface DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
 
-export function dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    metric: cdktf.stringToTerraform(struct!.metric),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    metric: cdktn.stringToTerraform(struct!.metric),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5951,9 +5986,9 @@ export function dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5961,11 +5996,11 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5986,7 +6021,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5994,7 +6029,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeOutputR
       this._interval = undefined;
       this._metric = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6053,15 +6088,15 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeOutputR
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6076,56 +6111,56 @@ export interface DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySor
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6136,14 +6171,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6229,50 +6264,50 @@ export interface DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort: dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6289,9 +6324,9 @@ export function dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6299,11 +6334,11 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6324,7 +6359,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6332,7 +6367,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputR
       this._limit = undefined;
       this._sort.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6391,15 +6426,15 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByOutputR
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6414,30 +6449,30 @@ export interface DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6448,14 +6483,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryEventQuerySearchToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryEventQuerySearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6497,115 +6532,115 @@ export interface DashboardWidgetChangeDefinitionRequestQueryEventQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Storage location (private beta).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#storage Dashboard#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#storage Dashboard#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
+  readonly compute: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetChangeDefinitionRequestQueryEventQuerySearch;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage: cdktf.stringToTerraform(struct!.storage),
-    compute: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
-    group_by: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    indexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.indexes),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage: cdktn.stringToTerraform(struct!.storage),
+    compute: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetChangeDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryEventQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     indexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.indexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage: {
-      value: cdktf.stringToHclTerraform(struct!.storage),
+      value: cdktn.stringToHclTerraform(struct!.storage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestQueryEventQueryComputeList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupByList",
@@ -6622,14 +6657,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryEventQueryToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6775,7 +6810,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReferenc
   public get compute() {
     return this._compute;
   }
-  public putCompute(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
+  public putCompute(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable) {
     this._compute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -6788,7 +6823,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryEventQueryOutputReferenc
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -6819,82 +6854,95 @@ export interface DashboardWidgetChangeDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
+  /**
+  * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#semantic_mode Dashboard#semantic_mode}
+  */
+  readonly semanticMode?: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
+    semantic_mode: cdktn.stringToTerraform(struct!.semanticMode),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryMetricQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    semantic_mode: {
+      value: cdktn.stringToHclTerraform(struct!.semanticMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6905,14 +6953,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryMetricQueryToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6939,6 +6987,10 @@ export class DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReferen
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
+    if (this._semanticMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.semanticMode = this._semanticMode;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -6950,6 +7002,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReferen
       this._dataSource = undefined;
       this._name = undefined;
       this._query = undefined;
+      this._semanticMode = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -6958,6 +7011,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReferen
       this._dataSource = value.dataSource;
       this._name = value.name;
       this._query = value.query;
+      this._semanticMode = value.semanticMode;
     }
   }
 
@@ -7034,152 +7088,168 @@ export class DashboardWidgetChangeDefinitionRequestQueryMetricQueryOutputReferen
   public get queryInput() {
     return this._query;
   }
+
+  // semantic_mode - computed: false, optional: true, required: false
+  private _semanticMode?: string; 
+  public get semanticMode() {
+    return this.getStringAttribute('semantic_mode');
+  }
+  public set semanticMode(value: string) {
+    this._semanticMode = value;
+  }
+  public resetSemanticMode() {
+    this._semanticMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get semanticModeInput() {
+    return this._semanticMode;
+  }
 }
 export interface DashboardWidgetChangeDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
-  readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
+  readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    is_normalized_cpu: cdktf.booleanToTerraform(struct!.isNormalizedCpu),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    name: cdktf.stringToTerraform(struct!.name),
-    sort: cdktf.stringToTerraform(struct!.sort),
-    tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
-    text_filter: cdktf.stringToTerraform(struct!.textFilter),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    is_normalized_cpu: cdktn.booleanToTerraform(struct!.isNormalizedCpu),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    name: cdktn.stringToTerraform(struct!.name),
+    sort: cdktn.stringToTerraform(struct!.sort),
+    tag_filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagFilters),
+    text_filter: cdktn.stringToTerraform(struct!.textFilter),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQueryProcessQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetChangeDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_normalized_cpu: {
-      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      value: cdktn.booleanToHclTerraform(struct!.isNormalizedCpu),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sort: {
-      value: cdktf.stringToHclTerraform(struct!.sort),
+      value: cdktn.stringToHclTerraform(struct!.sort),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagFilters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     text_filter: {
-      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      value: cdktn.stringToHclTerraform(struct!.textFilter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7190,14 +7260,14 @@ export function dashboardWidgetChangeDefinitionRequestQueryProcessQueryToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7322,11 +7392,11 @@ export class DashboardWidgetChangeDefinitionRequestQueryProcessQueryOutputRefere
   }
 
   // is_normalized_cpu - computed: false, optional: true, required: false
-  private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
+  private _isNormalizedCpu?: boolean | cdktn.IResolvable; 
   public get isNormalizedCpu() {
     return this.getBooleanAttribute('is_normalized_cpu');
   }
-  public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
+  public set isNormalizedCpu(value: boolean | cdktn.IResolvable) {
     this._isNormalizedCpu = value;
   }
   public resetIsNormalizedCpu() {
@@ -7431,121 +7501,121 @@ export interface DashboardWidgetChangeDefinitionRequestQuerySloQuery {
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#additional_query_filters Dashboard#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#additional_query_filters Dashboard#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_mode Dashboard#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_mode Dashboard#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#measure Dashboard#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#measure Dashboard#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#slo_id Dashboard#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#slo_id Dashboard#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#slo_query_type Dashboard#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#slo_query_type Dashboard#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestQuerySloQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQuerySloQueryOutputReference | DashboardWidgetChangeDefinitionRequestQuerySloQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_query_filters: cdktf.stringToTerraform(struct!.additionalQueryFilters),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    group_mode: cdktf.stringToTerraform(struct!.groupMode),
-    measure: cdktf.stringToTerraform(struct!.measure),
-    name: cdktf.stringToTerraform(struct!.name),
-    slo_id: cdktf.stringToTerraform(struct!.sloId),
-    slo_query_type: cdktf.stringToTerraform(struct!.sloQueryType),
+    additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    group_mode: cdktn.stringToTerraform(struct!.groupMode),
+    measure: cdktn.stringToTerraform(struct!.measure),
+    name: cdktn.stringToTerraform(struct!.name),
+    slo_id: cdktn.stringToTerraform(struct!.sloId),
+    slo_query_type: cdktn.stringToTerraform(struct!.sloQueryType),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestQuerySloQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQuerySloQueryOutputReference | DashboardWidgetChangeDefinitionRequestQuerySloQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_query_filters: {
-      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      value: cdktn.stringToHclTerraform(struct!.additionalQueryFilters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_mode: {
-      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      value: cdktn.stringToHclTerraform(struct!.groupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     measure: {
-      value: cdktf.stringToHclTerraform(struct!.measure),
+      value: cdktn.stringToHclTerraform(struct!.measure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slo_id: {
-      value: cdktf.stringToHclTerraform(struct!.sloId),
+      value: cdktn.stringToHclTerraform(struct!.sloId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slo_query_type: {
-      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      value: cdktn.stringToHclTerraform(struct!.sloQueryType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7556,14 +7626,14 @@ export function dashboardWidgetChangeDefinitionRequestQuerySloQueryToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQuerySloQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7753,50 +7823,50 @@ export interface DashboardWidgetChangeDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetChangeDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetChangeDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cloud_cost_query Dashboard#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cloud_cost_query Dashboard#cloud_cost_query}
   */
   readonly cloudCostQuery?: DashboardWidgetChangeDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetChangeDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetChangeDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetChangeDefinitionRequestQueryProcessQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#slo_query Dashboard#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#slo_query Dashboard#slo_query}
   */
   readonly sloQuery?: DashboardWidgetChangeDefinitionRequestQuerySloQuery;
 }
 
-export function dashboardWidgetChangeDefinitionRequestQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7811,9 +7881,9 @@ export function dashboardWidgetChangeDefinitionRequestQueryToTerraform(struct?: 
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7865,9 +7935,9 @@ export function dashboardWidgetChangeDefinitionRequestQueryToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7875,11 +7945,11 @@ export class DashboardWidgetChangeDefinitionRequestQueryOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7916,7 +7986,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7928,7 +7998,7 @@ export class DashboardWidgetChangeDefinitionRequestQueryOutputReference extends 
       this._processQuery.internalValue = undefined;
       this._sloQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8058,15 +8128,15 @@ export class DashboardWidgetChangeDefinitionRequestQueryOutputReference extends 
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestQueryList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestQuery[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestQueryList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8081,56 +8151,56 @@ export interface DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetChangeDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8141,14 +8211,14 @@ export function dashboardWidgetChangeDefinitionRequestRumQueryComputeQueryToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8234,56 +8304,56 @@ export interface DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8294,14 +8364,14 @@ export function dashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8384,50 +8454,50 @@ export interface DashboardWidgetChangeDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetChangeDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetChangeDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8444,9 +8514,9 @@ export function dashboardWidgetChangeDefinitionRequestRumQueryGroupByToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8454,11 +8524,11 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8479,7 +8549,7 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8487,7 +8557,7 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByOutputReferenc
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8549,15 +8619,15 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByOutputReferenc
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestRumQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8572,56 +8642,56 @@ export interface DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -8632,9 +8702,9 @@ export function dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8642,11 +8712,11 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8667,7 +8737,7 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8675,7 +8745,7 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeOutputRef
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8734,15 +8804,15 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeOutputRef
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8757,64 +8827,64 @@ export interface DashboardWidgetChangeDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetChangeDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetChangeDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryOutputReference | DashboardWidgetChangeDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetChangeDefinitionRequestRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestRumQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestRumQueryOutputReference | DashboardWidgetChangeDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8826,13 +8896,13 @@ export function dashboardWidgetChangeDefinitionRequestRumQueryToHclTerraform(str
       storageClassType: "DashboardWidgetChangeDefinitionRequestRumQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestRumQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestRumQueryMultiComputeList",
@@ -8843,14 +8913,14 @@ export function dashboardWidgetChangeDefinitionRequestRumQueryToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestRumQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8949,7 +9019,7 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryOutputReference exten
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -8965,7 +9035,7 @@ export class DashboardWidgetChangeDefinitionRequestRumQueryOutputReference exten
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -8980,56 +9050,56 @@ export interface DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9040,14 +9110,14 @@ export function dashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9133,56 +9203,56 @@ export interface DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQ
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9193,14 +9263,14 @@ export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9283,50 +9353,50 @@ export interface DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetChangeDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9343,9 +9413,9 @@ export function dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9353,11 +9423,11 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9378,7 +9448,7 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9386,7 +9456,7 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByOutputRef
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9448,15 +9518,15 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByOutputRef
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9471,56 +9541,56 @@ export interface DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9531,9 +9601,9 @@ export function dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9541,11 +9611,11 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9566,7 +9636,7 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9574,7 +9644,7 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutp
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9633,15 +9703,15 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeOutp
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9656,64 +9726,64 @@ export interface DashboardWidgetChangeDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetChangeDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference | DashboardWidgetChangeDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionRequestSecurityQueryToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference | DashboardWidgetChangeDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9725,13 +9795,13 @@ export function dashboardWidgetChangeDefinitionRequestSecurityQueryToHclTerrafor
       storageClassType: "DashboardWidgetChangeDefinitionRequestSecurityQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestSecurityQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestSecurityQueryMultiComputeList",
@@ -9742,14 +9812,14 @@ export function dashboardWidgetChangeDefinitionRequestSecurityQueryToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9848,7 +9918,7 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference 
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetChangeDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -9864,7 +9934,7 @@ export class DashboardWidgetChangeDefinitionRequestSecurityQueryOutputReference 
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetChangeDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -9879,157 +9949,157 @@ export interface DashboardWidgetChangeDefinitionRequest {
   /**
   * Whether to show absolute or relative change. Valid values are `absolute`, `relative`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#change_type Dashboard#change_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#change_type Dashboard#change_type}
   */
   readonly changeType?: string;
   /**
   * Choose from when to compare current data to. Valid values are `hour_before`, `day_before`, `week_before`, `month_before`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compare_to Dashboard#compare_to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compare_to Dashboard#compare_to}
   */
   readonly compareTo?: string;
   /**
   * A Boolean indicating whether an increase in the value is good (displayed in green) or not (displayed in red).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#increase_good Dashboard#increase_good}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#increase_good Dashboard#increase_good}
   */
-  readonly increaseGood?: boolean | cdktf.IResolvable;
+  readonly increaseGood?: boolean | cdktn.IResolvable;
   /**
   * What to order by. Valid values are `change`, `name`, `present`, `past`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order_by Dashboard#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order_by Dashboard#order_by}
   */
   readonly orderBy?: string;
   /**
   * Widget sorting method. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order_dir Dashboard#order_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order_dir Dashboard#order_dir}
   */
   readonly orderDir?: string;
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * If set to `true`, displays the current value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#show_present Dashboard#show_present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#show_present Dashboard#show_present}
   */
-  readonly showPresent?: boolean | cdktf.IResolvable;
+  readonly showPresent?: boolean | cdktn.IResolvable;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetChangeDefinitionRequestApmQuery;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetChangeDefinitionRequestFormula[] | cdktf.IResolvable;
+  readonly formula?: DashboardWidgetChangeDefinitionRequestFormula[] | cdktn.IResolvable;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetChangeDefinitionRequestLogQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetChangeDefinitionRequestProcessQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetChangeDefinitionRequestQuery[] | cdktf.IResolvable;
+  readonly query?: DashboardWidgetChangeDefinitionRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetChangeDefinitionRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetChangeDefinitionRequestSecurityQuery;
 }
 
-export function dashboardWidgetChangeDefinitionRequestToTerraform(struct?: DashboardWidgetChangeDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestToTerraform(struct?: DashboardWidgetChangeDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    change_type: cdktf.stringToTerraform(struct!.changeType),
-    compare_to: cdktf.stringToTerraform(struct!.compareTo),
-    increase_good: cdktf.booleanToTerraform(struct!.increaseGood),
-    order_by: cdktf.stringToTerraform(struct!.orderBy),
-    order_dir: cdktf.stringToTerraform(struct!.orderDir),
-    q: cdktf.stringToTerraform(struct!.q),
-    show_present: cdktf.booleanToTerraform(struct!.showPresent),
+    change_type: cdktn.stringToTerraform(struct!.changeType),
+    compare_to: cdktn.stringToTerraform(struct!.compareTo),
+    increase_good: cdktn.booleanToTerraform(struct!.increaseGood),
+    order_by: cdktn.stringToTerraform(struct!.orderBy),
+    order_dir: cdktn.stringToTerraform(struct!.orderDir),
+    q: cdktn.stringToTerraform(struct!.q),
+    show_present: cdktn.booleanToTerraform(struct!.showPresent),
     apm_query: dashboardWidgetChangeDefinitionRequestApmQueryToTerraform(struct!.apmQuery),
-    formula: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestFormulaToTerraform, true)(struct!.formula),
+    formula: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestFormulaToTerraform, true)(struct!.formula),
     log_query: dashboardWidgetChangeDefinitionRequestLogQueryToTerraform(struct!.logQuery),
     process_query: dashboardWidgetChangeDefinitionRequestProcessQueryToTerraform(struct!.processQuery),
-    query: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestQueryToTerraform, true)(struct!.query),
+    query: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestQueryToTerraform, true)(struct!.query),
     rum_query: dashboardWidgetChangeDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
     security_query: dashboardWidgetChangeDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
   }
 }
 
 
-export function dashboardWidgetChangeDefinitionRequestToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetChangeDefinitionRequestToHclTerraform(struct?: DashboardWidgetChangeDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     change_type: {
-      value: cdktf.stringToHclTerraform(struct!.changeType),
+      value: cdktn.stringToHclTerraform(struct!.changeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compare_to: {
-      value: cdktf.stringToHclTerraform(struct!.compareTo),
+      value: cdktn.stringToHclTerraform(struct!.compareTo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     increase_good: {
-      value: cdktf.booleanToHclTerraform(struct!.increaseGood),
+      value: cdktn.booleanToHclTerraform(struct!.increaseGood),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     order_by: {
-      value: cdktf.stringToHclTerraform(struct!.orderBy),
+      value: cdktn.stringToHclTerraform(struct!.orderBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order_dir: {
-      value: cdktf.stringToHclTerraform(struct!.orderDir),
+      value: cdktn.stringToHclTerraform(struct!.orderDir),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     q: {
-      value: cdktf.stringToHclTerraform(struct!.q),
+      value: cdktn.stringToHclTerraform(struct!.q),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     show_present: {
-      value: cdktf.booleanToHclTerraform(struct!.showPresent),
+      value: cdktn.booleanToHclTerraform(struct!.showPresent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -10041,7 +10111,7 @@ export function dashboardWidgetChangeDefinitionRequestToHclTerraform(struct?: Da
       storageClassType: "DashboardWidgetChangeDefinitionRequestApmQueryList",
     },
     formula: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestFormulaList",
@@ -10059,7 +10129,7 @@ export function dashboardWidgetChangeDefinitionRequestToHclTerraform(struct?: Da
       storageClassType: "DashboardWidgetChangeDefinitionRequestProcessQueryList",
     },
     query: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestQueryToHclTerraform, true)(struct!.query),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestQueryList",
@@ -10082,9 +10152,9 @@ export function dashboardWidgetChangeDefinitionRequestToHclTerraform(struct?: Da
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10092,11 +10162,11 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetChangeDefinitionRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetChangeDefinitionRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10161,7 +10231,7 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetChangeDefinitionRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetChangeDefinitionRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10180,7 +10250,7 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
       this._rumQuery.internalValue = undefined;
       this._securityQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10237,11 +10307,11 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
   }
 
   // increase_good - computed: false, optional: true, required: false
-  private _increaseGood?: boolean | cdktf.IResolvable; 
+  private _increaseGood?: boolean | cdktn.IResolvable; 
   public get increaseGood() {
     return this.getBooleanAttribute('increase_good');
   }
-  public set increaseGood(value: boolean | cdktf.IResolvable) {
+  public set increaseGood(value: boolean | cdktn.IResolvable) {
     this._increaseGood = value;
   }
   public resetIncreaseGood() {
@@ -10301,11 +10371,11 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
   }
 
   // show_present - computed: false, optional: true, required: false
-  private _showPresent?: boolean | cdktf.IResolvable; 
+  private _showPresent?: boolean | cdktn.IResolvable; 
   public get showPresent() {
     return this.getBooleanAttribute('show_present');
   }
-  public set showPresent(value: boolean | cdktf.IResolvable) {
+  public set showPresent(value: boolean | cdktn.IResolvable) {
     this._showPresent = value;
   }
   public resetShowPresent() {
@@ -10337,7 +10407,7 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
   public get formula() {
     return this._formula;
   }
-  public putFormula(value: DashboardWidgetChangeDefinitionRequestFormula[] | cdktf.IResolvable) {
+  public putFormula(value: DashboardWidgetChangeDefinitionRequestFormula[] | cdktn.IResolvable) {
     this._formula.internalValue = value;
   }
   public resetFormula() {
@@ -10385,7 +10455,7 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
   public get query() {
     return this._query;
   }
-  public putQuery(value: DashboardWidgetChangeDefinitionRequestQuery[] | cdktf.IResolvable) {
+  public putQuery(value: DashboardWidgetChangeDefinitionRequestQuery[] | cdktn.IResolvable) {
     this._query.internalValue = value;
   }
   public resetQuery() {
@@ -10429,15 +10499,15 @@ export class DashboardWidgetChangeDefinitionRequestOutputReference extends cdktf
   }
 }
 
-export class DashboardWidgetChangeDefinitionRequestList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetChangeDefinitionRequest[] | cdktf.IResolvable
+export class DashboardWidgetChangeDefinitionRequestList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetChangeDefinitionRequest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10450,97 +10520,110 @@ export class DashboardWidgetChangeDefinitionRequestList extends cdktf.ComplexLis
 }
 export interface DashboardWidgetChangeDefinition {
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetChangeDefinitionCustomLink[] | cdktf.IResolvable;
+  readonly customLink?: DashboardWidgetChangeDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetChangeDefinitionRequest[] | cdktf.IResolvable;
+  readonly request?: DashboardWidgetChangeDefinitionRequest[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetChangeDefinitionToTerraform(struct?: DashboardWidgetChangeDefinitionOutputReference | DashboardWidgetChangeDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(dashboardWidgetChangeDefinitionCustomLinkToTerraform, true)(struct!.customLink),
-    request: cdktf.listMapper(dashboardWidgetChangeDefinitionRequestToTerraform, true)(struct!.request),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    custom_link: cdktn.listMapper(dashboardWidgetChangeDefinitionCustomLinkToTerraform, true)(struct!.customLink),
+    request: cdktn.listMapper(dashboardWidgetChangeDefinitionRequestToTerraform, true)(struct!.request),
   }
 }
 
 
 export function dashboardWidgetChangeDefinitionToHclTerraform(struct?: DashboardWidgetChangeDefinitionOutputReference | DashboardWidgetChangeDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_link: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionCustomLinkList",
     },
     request: {
-      value: cdktf.listMapperHcl(dashboardWidgetChangeDefinitionRequestToHclTerraform, true)(struct!.request),
+      value: cdktn.listMapperHcl(dashboardWidgetChangeDefinitionRequestToHclTerraform, true)(struct!.request),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetChangeDefinitionRequestList",
@@ -10551,20 +10634,24 @@ export function dashboardWidgetChangeDefinitionToHclTerraform(struct?: Dashboard
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetChangeDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetChangeDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetChangeDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
+    }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
@@ -10595,6 +10682,7 @@ export class DashboardWidgetChangeDefinitionOutputReference extends cdktf.Comple
   public set internalValue(value: DashboardWidgetChangeDefinition | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._title = undefined;
       this._titleAlign = undefined;
@@ -10604,6 +10692,7 @@ export class DashboardWidgetChangeDefinitionOutputReference extends cdktf.Comple
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._title = value.title;
       this._titleAlign = value.titleAlign;
@@ -10611,6 +10700,22 @@ export class DashboardWidgetChangeDefinitionOutputReference extends cdktf.Comple
       this._customLink.internalValue = value.customLink;
       this._request.internalValue = value.request;
     }
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -10682,7 +10787,7 @@ export class DashboardWidgetChangeDefinitionOutputReference extends cdktf.Comple
   public get customLink() {
     return this._customLink;
   }
-  public putCustomLink(value: DashboardWidgetChangeDefinitionCustomLink[] | cdktf.IResolvable) {
+  public putCustomLink(value: DashboardWidgetChangeDefinitionCustomLink[] | cdktn.IResolvable) {
     this._customLink.internalValue = value;
   }
   public resetCustomLink() {
@@ -10698,7 +10803,7 @@ export class DashboardWidgetChangeDefinitionOutputReference extends cdktf.Comple
   public get request() {
     return this._request;
   }
-  public putRequest(value: DashboardWidgetChangeDefinitionRequest[] | cdktf.IResolvable) {
+  public putRequest(value: DashboardWidgetChangeDefinitionRequest[] | cdktn.IResolvable) {
     this._request.internalValue = value;
   }
   public resetRequest() {
@@ -10713,134 +10818,147 @@ export interface DashboardWidgetCheckStatusDefinition {
   /**
   * The check to use in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#check Dashboard#check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#check Dashboard#check}
   */
   readonly check: string;
   /**
   * The check group to use in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group Dashboard#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group Dashboard#group}
   */
   readonly group?: string;
   /**
   * When `grouping = "cluster"`, indicates a list of tags to use for grouping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The kind of grouping to use. Valid values are `check`, `cluster`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#grouping Dashboard#grouping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#grouping Dashboard#grouping}
   */
   readonly grouping: string;
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * A list of tags to use in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#tags Dashboard#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#tags Dashboard#tags}
   */
   readonly tags?: string[];
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
 }
 
 export function dashboardWidgetCheckStatusDefinitionToTerraform(struct?: DashboardWidgetCheckStatusDefinitionOutputReference | DashboardWidgetCheckStatusDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    check: cdktf.stringToTerraform(struct!.check),
-    group: cdktf.stringToTerraform(struct!.group),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
-    grouping: cdktf.stringToTerraform(struct!.grouping),
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
+    check: cdktn.stringToTerraform(struct!.check),
+    group: cdktn.stringToTerraform(struct!.group),
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    grouping: cdktn.stringToTerraform(struct!.grouping),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tags),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
   }
 }
 
 
 export function dashboardWidgetCheckStatusDefinitionToHclTerraform(struct?: DashboardWidgetCheckStatusDefinitionOutputReference | DashboardWidgetCheckStatusDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     check: {
-      value: cdktf.stringToHclTerraform(struct!.check),
+      value: cdktn.stringToHclTerraform(struct!.check),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group: {
-      value: cdktf.stringToHclTerraform(struct!.group),
+      value: cdktn.stringToHclTerraform(struct!.group),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     grouping: {
-      value: cdktf.stringToHclTerraform(struct!.grouping),
+      value: cdktn.stringToHclTerraform(struct!.grouping),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10851,14 +10969,14 @@ export function dashboardWidgetCheckStatusDefinitionToHclTerraform(struct?: Dash
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetCheckStatusDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetCheckStatusDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10880,6 +10998,10 @@ export class DashboardWidgetCheckStatusDefinitionOutputReference extends cdktf.C
     if (this._grouping !== undefined) {
       hasAnyValues = true;
       internalValueResult.grouping = this._grouping;
+    }
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
     }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
@@ -10911,6 +11033,7 @@ export class DashboardWidgetCheckStatusDefinitionOutputReference extends cdktf.C
       this._group = undefined;
       this._groupBy = undefined;
       this._grouping = undefined;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._tags = undefined;
       this._title = undefined;
@@ -10923,6 +11046,7 @@ export class DashboardWidgetCheckStatusDefinitionOutputReference extends cdktf.C
       this._group = value.group;
       this._groupBy = value.groupBy;
       this._grouping = value.grouping;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._tags = value.tags;
       this._title = value.title;
@@ -10987,6 +11111,22 @@ export class DashboardWidgetCheckStatusDefinitionOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get groupingInput() {
     return this._grouping;
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -11073,56 +11213,56 @@ export interface DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11133,14 +11273,14 @@ export function dashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11226,56 +11366,56 @@ export interface DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11286,14 +11426,14 @@ export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11376,50 +11516,50 @@ export interface DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetDistributionDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11436,9 +11576,9 @@ export function dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11446,11 +11586,11 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11471,7 +11611,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11479,7 +11619,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11541,15 +11681,15 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByOutputRe
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestApmQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11564,56 +11704,56 @@ export interface DashboardWidgetDistributionDefinitionRequestApmQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11624,9 +11764,9 @@ export function dashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11634,11 +11774,11 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11659,7 +11799,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11667,7 +11807,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11726,15 +11866,15 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeOut
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11749,64 +11889,64 @@ export interface DashboardWidgetDistributionDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetDistributionDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestApmQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestApmQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11818,13 +11958,13 @@ export function dashboardWidgetDistributionDefinitionRequestApmQueryToHclTerrafo
       storageClassType: "DashboardWidgetDistributionDefinitionRequestApmQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestApmQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestApmQueryMultiComputeList",
@@ -11835,14 +11975,14 @@ export function dashboardWidgetDistributionDefinitionRequestApmQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11941,7 +12081,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -11957,7 +12097,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -11972,69 +12112,69 @@ export interface DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumn
   /**
   * A user-assigned alias for the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * The column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    cell_display_mode: cdktf.stringToTerraform(struct!.cellDisplayMode),
-    name: cdktf.stringToTerraform(struct!.name),
-    order: cdktf.stringToTerraform(struct!.order),
+    alias: cdktn.stringToTerraform(struct!.alias),
+    cell_display_mode: cdktn.stringToTerraform(struct!.cellDisplayMode),
+    name: cdktn.stringToTerraform(struct!.name),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
+      value: cdktn.stringToHclTerraform(struct!.alias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cell_display_mode: {
-      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      value: cdktn.stringToHclTerraform(struct!.cellDisplayMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12045,9 +12185,9 @@ export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12055,11 +12195,11 @@ export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12084,7 +12224,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12093,7 +12233,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsOut
       this._name = undefined;
       this._order = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12169,15 +12309,15 @@ export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsOut
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12192,108 +12332,108 @@ export interface DashboardWidgetDistributionDefinitionRequestApmStatsQuery {
   /**
   * The environment name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * The operation name associated with the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The organization's host group name and value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag Dashboard#primary_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag Dashboard#primary_tag}
   */
   readonly primaryTag: string;
   /**
   * The resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#resource Dashboard#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#resource Dashboard#resource}
   */
   readonly resource?: string;
   /**
   * The level of detail for the request. Valid values are `service`, `resource`, `span`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#row_type Dashboard#row_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#row_type Dashboard#row_type}
   */
   readonly rowType: string;
   /**
   * The service name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#columns Dashboard#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#columns Dashboard#columns}
   */
-  readonly columns?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns[] | cdktf.IResolvable;
+  readonly columns?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    env: cdktf.stringToTerraform(struct!.env),
-    name: cdktf.stringToTerraform(struct!.name),
-    primary_tag: cdktf.stringToTerraform(struct!.primaryTag),
-    resource: cdktf.stringToTerraform(struct!.resource),
-    row_type: cdktf.stringToTerraform(struct!.rowType),
-    service: cdktf.stringToTerraform(struct!.service),
-    columns: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToTerraform, true)(struct!.columns),
+    env: cdktn.stringToTerraform(struct!.env),
+    name: cdktn.stringToTerraform(struct!.name),
+    primary_tag: cdktn.stringToTerraform(struct!.primaryTag),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    row_type: cdktn.stringToTerraform(struct!.rowType),
+    service: cdktn.stringToTerraform(struct!.service),
+    columns: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToTerraform, true)(struct!.columns),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference | DashboardWidgetDistributionDefinitionRequestApmStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTag),
+      value: cdktn.stringToHclTerraform(struct!.primaryTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     row_type: {
-      value: cdktf.stringToHclTerraform(struct!.rowType),
+      value: cdktn.stringToHclTerraform(struct!.rowType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     columns: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToHclTerraform, true)(struct!.columns),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsToHclTerraform, true)(struct!.columns),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumnsList",
@@ -12304,14 +12444,14 @@ export function dashboardWidgetDistributionDefinitionRequestApmStatsQueryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12458,7 +12598,7 @@ export class DashboardWidgetDistributionDefinitionRequestApmStatsQueryOutputRefe
   public get columns() {
     return this._columns;
   }
-  public putColumns(value: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns[] | cdktf.IResolvable) {
+  public putColumns(value: DashboardWidgetDistributionDefinitionRequestApmStatsQueryColumns[] | cdktn.IResolvable) {
     this._columns.internalValue = value;
   }
   public resetColumns() {
@@ -12473,56 +12613,56 @@ export interface DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -12533,14 +12673,14 @@ export function dashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12626,56 +12766,56 @@ export interface DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12686,14 +12826,14 @@ export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12776,50 +12916,50 @@ export interface DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetDistributionDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -12836,9 +12976,9 @@ export function dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12846,11 +12986,11 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12871,7 +13011,7 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12879,7 +13019,7 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12941,15 +13081,15 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByOutputRe
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestLogQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12964,56 +13104,56 @@ export interface DashboardWidgetDistributionDefinitionRequestLogQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -13024,9 +13164,9 @@ export function dashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13034,11 +13174,11 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13059,7 +13199,7 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13067,7 +13207,7 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13126,15 +13266,15 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeOut
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13149,64 +13289,64 @@ export interface DashboardWidgetDistributionDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetDistributionDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference | DashboardWidgetDistributionDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestLogQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference | DashboardWidgetDistributionDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13218,13 +13358,13 @@ export function dashboardWidgetDistributionDefinitionRequestLogQueryToHclTerrafo
       storageClassType: "DashboardWidgetDistributionDefinitionRequestLogQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestLogQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestLogQueryMultiComputeList",
@@ -13235,14 +13375,14 @@ export function dashboardWidgetDistributionDefinitionRequestLogQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13341,7 +13481,7 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -13357,7 +13497,7 @@ export class DashboardWidgetDistributionDefinitionRequestLogQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -13372,69 +13512,69 @@ export interface DashboardWidgetDistributionDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#filter_by Dashboard#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#filter_by Dashboard#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_by Dashboard#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_by Dashboard#search_by}
   */
   readonly searchBy?: string;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestProcessQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestProcessQueryOutputReference | DashboardWidgetDistributionDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    search_by: cdktf.stringToTerraform(struct!.searchBy),
+    filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    search_by: cdktn.stringToTerraform(struct!.searchBy),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestProcessQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestProcessQueryOutputReference | DashboardWidgetDistributionDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filterBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_by: {
-      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      value: cdktn.stringToHclTerraform(struct!.searchBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13445,14 +13585,14 @@ export function dashboardWidgetDistributionDefinitionRequestProcessQueryToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestProcessQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13560,56 +13700,56 @@ export interface DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -13620,14 +13760,14 @@ export function dashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13713,56 +13853,56 @@ export interface DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13773,14 +13913,14 @@ export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13863,50 +14003,50 @@ export interface DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetDistributionDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -13923,9 +14063,9 @@ export function dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13933,11 +14073,11 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13958,7 +14098,7 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13966,7 +14106,7 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14028,15 +14168,15 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByOutputRe
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestRumQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14051,56 +14191,56 @@ export interface DashboardWidgetDistributionDefinitionRequestRumQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -14111,9 +14251,9 @@ export function dashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14121,11 +14261,11 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14146,7 +14286,7 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14154,7 +14294,7 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14213,15 +14353,15 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeOut
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14236,64 +14376,64 @@ export interface DashboardWidgetDistributionDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetDistributionDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference | DashboardWidgetDistributionDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestRumQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference | DashboardWidgetDistributionDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14305,13 +14445,13 @@ export function dashboardWidgetDistributionDefinitionRequestRumQueryToHclTerrafo
       storageClassType: "DashboardWidgetDistributionDefinitionRequestRumQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestRumQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestRumQueryMultiComputeList",
@@ -14322,14 +14462,14 @@ export function dashboardWidgetDistributionDefinitionRequestRumQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14428,7 +14568,7 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -14444,7 +14584,7 @@ export class DashboardWidgetDistributionDefinitionRequestRumQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -14459,56 +14599,56 @@ export interface DashboardWidgetDistributionDefinitionRequestSecurityQueryComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -14519,14 +14659,14 @@ export function dashboardWidgetDistributionDefinitionRequestSecurityQueryCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14612,56 +14752,56 @@ export interface DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupB
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14672,14 +14812,14 @@ export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14762,50 +14902,50 @@ export interface DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupB
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -14822,9 +14962,9 @@ export function dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14832,11 +14972,11 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14857,7 +14997,7 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14865,7 +15005,7 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByOut
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14927,15 +15067,15 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByOut
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14950,56 +15090,56 @@ export interface DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiC
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -15010,9 +15150,9 @@ export function dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15020,11 +15160,11 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15045,7 +15185,7 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -15053,7 +15193,7 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompu
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15112,15 +15252,15 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompu
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15135,64 +15275,64 @@ export interface DashboardWidgetDistributionDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestSecurityQueryToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputReference | DashboardWidgetDistributionDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestSecurityQueryToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputReference | DashboardWidgetDistributionDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15204,13 +15344,13 @@ export function dashboardWidgetDistributionDefinitionRequestSecurityQueryToHclTe
       storageClassType: "DashboardWidgetDistributionDefinitionRequestSecurityQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiComputeList",
@@ -15221,14 +15361,14 @@ export function dashboardWidgetDistributionDefinitionRequestSecurityQueryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15327,7 +15467,7 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputRefe
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -15343,7 +15483,7 @@ export class DashboardWidgetDistributionDefinitionRequestSecurityQueryOutputRefe
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetDistributionDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -15358,30 +15498,30 @@ export interface DashboardWidgetDistributionDefinitionRequestStyle {
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
 }
 
 export function dashboardWidgetDistributionDefinitionRequestStyleToTerraform(struct?: DashboardWidgetDistributionDefinitionRequestStyleOutputReference | DashboardWidgetDistributionDefinitionRequestStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    palette: cdktf.stringToTerraform(struct!.palette),
+    palette: cdktn.stringToTerraform(struct!.palette),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionRequestStyleToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequestStyleOutputReference | DashboardWidgetDistributionDefinitionRequestStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15392,14 +15532,14 @@ export function dashboardWidgetDistributionDefinitionRequestStyleToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestStyleOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestStyleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15444,60 +15584,60 @@ export interface DashboardWidgetDistributionDefinitionRequest {
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#apm_query Dashboard#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#apm_query Dashboard#apm_query}
   */
   readonly apmQuery?: DashboardWidgetDistributionDefinitionRequestApmQuery;
   /**
   * apm_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#apm_stats_query Dashboard#apm_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#apm_stats_query Dashboard#apm_stats_query}
   */
   readonly apmStatsQuery?: DashboardWidgetDistributionDefinitionRequestApmStatsQuery;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetDistributionDefinitionRequestLogQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetDistributionDefinitionRequestProcessQuery;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetDistributionDefinitionRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#security_query Dashboard#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#security_query Dashboard#security_query}
   */
   readonly securityQuery?: DashboardWidgetDistributionDefinitionRequestSecurityQuery;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetDistributionDefinitionRequestStyle;
 }
 
-export function dashboardWidgetDistributionDefinitionRequestToTerraform(struct?: DashboardWidgetDistributionDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestToTerraform(struct?: DashboardWidgetDistributionDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    q: cdktf.stringToTerraform(struct!.q),
+    q: cdktn.stringToTerraform(struct!.q),
     apm_query: dashboardWidgetDistributionDefinitionRequestApmQueryToTerraform(struct!.apmQuery),
     apm_stats_query: dashboardWidgetDistributionDefinitionRequestApmStatsQueryToTerraform(struct!.apmStatsQuery),
     log_query: dashboardWidgetDistributionDefinitionRequestLogQueryToTerraform(struct!.logQuery),
@@ -15509,14 +15649,14 @@ export function dashboardWidgetDistributionDefinitionRequestToTerraform(struct?:
 }
 
 
-export function dashboardWidgetDistributionDefinitionRequestToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetDistributionDefinitionRequestToHclTerraform(struct?: DashboardWidgetDistributionDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     q: {
-      value: cdktf.stringToHclTerraform(struct!.q),
+      value: cdktn.stringToHclTerraform(struct!.q),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15569,9 +15709,9 @@ export function dashboardWidgetDistributionDefinitionRequestToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionRequestOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15579,11 +15719,11 @@ export class DashboardWidgetDistributionDefinitionRequestOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetDistributionDefinitionRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetDistributionDefinitionRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15624,7 +15764,7 @@ export class DashboardWidgetDistributionDefinitionRequestOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetDistributionDefinitionRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetDistributionDefinitionRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -15637,7 +15777,7 @@ export class DashboardWidgetDistributionDefinitionRequestOutputReference extends
       this._securityQuery.internalValue = undefined;
       this._style.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -15784,15 +15924,15 @@ export class DashboardWidgetDistributionDefinitionRequestOutputReference extends
   }
 }
 
-export class DashboardWidgetDistributionDefinitionRequestList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetDistributionDefinitionRequest[] | cdktf.IResolvable
+export class DashboardWidgetDistributionDefinitionRequestList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetDistributionDefinitionRequest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -15807,69 +15947,69 @@ export interface DashboardWidgetDistributionDefinitionXaxis {
   /**
   * Always include zero or fit the axis to the data range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#include_zero Dashboard#include_zero}
   */
-  readonly includeZero?: boolean | cdktf.IResolvable;
+  readonly includeZero?: boolean | cdktn.IResolvable;
   /**
   * Specify the maximum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
 
 export function dashboardWidgetDistributionDefinitionXaxisToTerraform(struct?: DashboardWidgetDistributionDefinitionXaxisOutputReference | DashboardWidgetDistributionDefinitionXaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_zero: cdktf.booleanToTerraform(struct!.includeZero),
-    max: cdktf.stringToTerraform(struct!.max),
-    min: cdktf.stringToTerraform(struct!.min),
-    scale: cdktf.stringToTerraform(struct!.scale),
+    include_zero: cdktn.booleanToTerraform(struct!.includeZero),
+    max: cdktn.stringToTerraform(struct!.max),
+    min: cdktn.stringToTerraform(struct!.min),
+    scale: cdktn.stringToTerraform(struct!.scale),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionXaxisToHclTerraform(struct?: DashboardWidgetDistributionDefinitionXaxisOutputReference | DashboardWidgetDistributionDefinitionXaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_zero: {
-      value: cdktf.booleanToHclTerraform(struct!.includeZero),
+      value: cdktn.booleanToHclTerraform(struct!.includeZero),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max: {
-      value: cdktf.stringToHclTerraform(struct!.max),
+      value: cdktn.stringToHclTerraform(struct!.max),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min: {
-      value: cdktf.stringToHclTerraform(struct!.min),
+      value: cdktn.stringToHclTerraform(struct!.min),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scale: {
-      value: cdktf.stringToHclTerraform(struct!.scale),
+      value: cdktn.stringToHclTerraform(struct!.scale),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15880,14 +16020,14 @@ export function dashboardWidgetDistributionDefinitionXaxisToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionXaxisOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionXaxisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15931,11 +16071,11 @@ export class DashboardWidgetDistributionDefinitionXaxisOutputReference extends c
   }
 
   // include_zero - computed: false, optional: true, required: false
-  private _includeZero?: boolean | cdktf.IResolvable; 
+  private _includeZero?: boolean | cdktn.IResolvable; 
   public get includeZero() {
     return this.getBooleanAttribute('include_zero');
   }
-  public set includeZero(value: boolean | cdktf.IResolvable) {
+  public set includeZero(value: boolean | cdktn.IResolvable) {
     this._includeZero = value;
   }
   public resetIncludeZero() {
@@ -15998,82 +16138,82 @@ export interface DashboardWidgetDistributionDefinitionYaxis {
   /**
   * Always include zero or fit the axis to the data range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#include_zero Dashboard#include_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#include_zero Dashboard#include_zero}
   */
-  readonly includeZero?: boolean | cdktf.IResolvable;
+  readonly includeZero?: boolean | cdktn.IResolvable;
   /**
   * The label of the axis to display on the graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#max Dashboard#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#max Dashboard#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#min Dashboard#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#min Dashboard#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#scale Dashboard#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#scale Dashboard#scale}
   */
   readonly scale?: string;
 }
 
 export function dashboardWidgetDistributionDefinitionYaxisToTerraform(struct?: DashboardWidgetDistributionDefinitionYaxisOutputReference | DashboardWidgetDistributionDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_zero: cdktf.booleanToTerraform(struct!.includeZero),
-    label: cdktf.stringToTerraform(struct!.label),
-    max: cdktf.stringToTerraform(struct!.max),
-    min: cdktf.stringToTerraform(struct!.min),
-    scale: cdktf.stringToTerraform(struct!.scale),
+    include_zero: cdktn.booleanToTerraform(struct!.includeZero),
+    label: cdktn.stringToTerraform(struct!.label),
+    max: cdktn.stringToTerraform(struct!.max),
+    min: cdktn.stringToTerraform(struct!.min),
+    scale: cdktn.stringToTerraform(struct!.scale),
   }
 }
 
 
 export function dashboardWidgetDistributionDefinitionYaxisToHclTerraform(struct?: DashboardWidgetDistributionDefinitionYaxisOutputReference | DashboardWidgetDistributionDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_zero: {
-      value: cdktf.booleanToHclTerraform(struct!.includeZero),
+      value: cdktn.booleanToHclTerraform(struct!.includeZero),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max: {
-      value: cdktf.stringToHclTerraform(struct!.max),
+      value: cdktn.stringToHclTerraform(struct!.max),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min: {
-      value: cdktf.stringToHclTerraform(struct!.min),
+      value: cdktn.stringToHclTerraform(struct!.min),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scale: {
-      value: cdktf.stringToHclTerraform(struct!.scale),
+      value: cdktn.stringToHclTerraform(struct!.scale),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16084,14 +16224,14 @@ export function dashboardWidgetDistributionDefinitionYaxisToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionYaxisOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionYaxisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16141,11 +16281,11 @@ export class DashboardWidgetDistributionDefinitionYaxisOutputReference extends c
   }
 
   // include_zero - computed: false, optional: true, required: false
-  private _includeZero?: boolean | cdktf.IResolvable; 
+  private _includeZero?: boolean | cdktn.IResolvable; 
   public get includeZero() {
     return this.getBooleanAttribute('include_zero');
   }
-  public set includeZero(value: boolean | cdktf.IResolvable) {
+  public set includeZero(value: boolean | cdktn.IResolvable) {
     this._includeZero = value;
   }
   public resetIncludeZero() {
@@ -16222,74 +16362,81 @@ export class DashboardWidgetDistributionDefinitionYaxisOutputReference extends c
 }
 export interface DashboardWidgetDistributionDefinition {
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The size of the legend displayed in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#legend_size Dashboard#legend_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#legend_size Dashboard#legend_size}
   */
   readonly legendSize?: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * Whether or not to show the legend on this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#show_legend Dashboard#show_legend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#show_legend Dashboard#show_legend}
   */
-  readonly showLegend?: boolean | cdktf.IResolvable;
+  readonly showLegend?: boolean | cdktn.IResolvable;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetDistributionDefinitionRequest[] | cdktf.IResolvable;
+  readonly request?: DashboardWidgetDistributionDefinitionRequest[] | cdktn.IResolvable;
   /**
   * xaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#xaxis Dashboard#xaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#xaxis Dashboard#xaxis}
   */
   readonly xaxis?: DashboardWidgetDistributionDefinitionXaxis;
   /**
   * yaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#yaxis Dashboard#yaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#yaxis Dashboard#yaxis}
   */
   readonly yaxis?: DashboardWidgetDistributionDefinitionYaxis;
 }
 
 export function dashboardWidgetDistributionDefinitionToTerraform(struct?: DashboardWidgetDistributionDefinitionOutputReference | DashboardWidgetDistributionDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    legend_size: cdktf.stringToTerraform(struct!.legendSize),
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    show_legend: cdktf.booleanToTerraform(struct!.showLegend),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    request: cdktf.listMapper(dashboardWidgetDistributionDefinitionRequestToTerraform, true)(struct!.request),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    legend_size: cdktn.stringToTerraform(struct!.legendSize),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    show_legend: cdktn.booleanToTerraform(struct!.showLegend),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    request: cdktn.listMapper(dashboardWidgetDistributionDefinitionRequestToTerraform, true)(struct!.request),
     xaxis: dashboardWidgetDistributionDefinitionXaxisToTerraform(struct!.xaxis),
     yaxis: dashboardWidgetDistributionDefinitionYaxisToTerraform(struct!.yaxis),
   }
@@ -16297,49 +16444,55 @@ export function dashboardWidgetDistributionDefinitionToTerraform(struct?: Dashbo
 
 
 export function dashboardWidgetDistributionDefinitionToHclTerraform(struct?: DashboardWidgetDistributionDefinitionOutputReference | DashboardWidgetDistributionDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     legend_size: {
-      value: cdktf.stringToHclTerraform(struct!.legendSize),
+      value: cdktn.stringToHclTerraform(struct!.legendSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     show_legend: {
-      value: cdktf.booleanToHclTerraform(struct!.showLegend),
+      value: cdktn.booleanToHclTerraform(struct!.showLegend),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     request: {
-      value: cdktf.listMapperHcl(dashboardWidgetDistributionDefinitionRequestToHclTerraform, true)(struct!.request),
+      value: cdktn.listMapperHcl(dashboardWidgetDistributionDefinitionRequestToHclTerraform, true)(struct!.request),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetDistributionDefinitionRequestList",
@@ -16362,20 +16515,24 @@ export function dashboardWidgetDistributionDefinitionToHclTerraform(struct?: Das
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetDistributionDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetDistributionDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetDistributionDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
+    }
     if (this._legendSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.legendSize = this._legendSize;
@@ -16418,6 +16575,7 @@ export class DashboardWidgetDistributionDefinitionOutputReference extends cdktf.
   public set internalValue(value: DashboardWidgetDistributionDefinition | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._hideIncompleteCostData = undefined;
       this._legendSize = undefined;
       this._liveSpan = undefined;
       this._showLegend = undefined;
@@ -16430,6 +16588,7 @@ export class DashboardWidgetDistributionDefinitionOutputReference extends cdktf.
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._legendSize = value.legendSize;
       this._liveSpan = value.liveSpan;
       this._showLegend = value.showLegend;
@@ -16440,6 +16599,22 @@ export class DashboardWidgetDistributionDefinitionOutputReference extends cdktf.
       this._xaxis.internalValue = value.xaxis;
       this._yaxis.internalValue = value.yaxis;
     }
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // legend_size - computed: false, optional: true, required: false
@@ -16475,11 +16650,11 @@ export class DashboardWidgetDistributionDefinitionOutputReference extends cdktf.
   }
 
   // show_legend - computed: false, optional: true, required: false
-  private _showLegend?: boolean | cdktf.IResolvable; 
+  private _showLegend?: boolean | cdktn.IResolvable; 
   public get showLegend() {
     return this.getBooleanAttribute('show_legend');
   }
-  public set showLegend(value: boolean | cdktf.IResolvable) {
+  public set showLegend(value: boolean | cdktn.IResolvable) {
     this._showLegend = value;
   }
   public resetShowLegend() {
@@ -16543,7 +16718,7 @@ export class DashboardWidgetDistributionDefinitionOutputReference extends cdktf.
   public get request() {
     return this._request;
   }
-  public putRequest(value: DashboardWidgetDistributionDefinitionRequest[] | cdktf.IResolvable) {
+  public putRequest(value: DashboardWidgetDistributionDefinitionRequest[] | cdktn.IResolvable) {
     this._request.internalValue = value;
   }
   public resetRequest() {
@@ -16590,108 +16765,121 @@ export interface DashboardWidgetEventStreamDefinition {
   /**
   * The size to use to display an event. Valid values are `s`, `l`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#event_size Dashboard#event_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#event_size Dashboard#event_size}
   */
   readonly eventSize?: string;
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The query to use in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
   /**
   * The execution method for multi-value filters, options: `and` or `or`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#tags_execution Dashboard#tags_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#tags_execution Dashboard#tags_execution}
   */
   readonly tagsExecution?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
 }
 
 export function dashboardWidgetEventStreamDefinitionToTerraform(struct?: DashboardWidgetEventStreamDefinitionOutputReference | DashboardWidgetEventStreamDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    event_size: cdktf.stringToTerraform(struct!.eventSize),
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    query: cdktf.stringToTerraform(struct!.query),
-    tags_execution: cdktf.stringToTerraform(struct!.tagsExecution),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
+    event_size: cdktn.stringToTerraform(struct!.eventSize),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    query: cdktn.stringToTerraform(struct!.query),
+    tags_execution: cdktn.stringToTerraform(struct!.tagsExecution),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
   }
 }
 
 
 export function dashboardWidgetEventStreamDefinitionToHclTerraform(struct?: DashboardWidgetEventStreamDefinitionOutputReference | DashboardWidgetEventStreamDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     event_size: {
-      value: cdktf.stringToHclTerraform(struct!.eventSize),
+      value: cdktn.stringToHclTerraform(struct!.eventSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags_execution: {
-      value: cdktf.stringToHclTerraform(struct!.tagsExecution),
+      value: cdktn.stringToHclTerraform(struct!.tagsExecution),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16702,14 +16890,14 @@ export function dashboardWidgetEventStreamDefinitionToHclTerraform(struct?: Dash
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetEventStreamDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetEventStreamDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16719,6 +16907,10 @@ export class DashboardWidgetEventStreamDefinitionOutputReference extends cdktf.C
     if (this._eventSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.eventSize = this._eventSize;
+    }
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
     }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
@@ -16751,6 +16943,7 @@ export class DashboardWidgetEventStreamDefinitionOutputReference extends cdktf.C
     if (value === undefined) {
       this.isEmptyObject = false;
       this._eventSize = undefined;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._query = undefined;
       this._tagsExecution = undefined;
@@ -16761,6 +16954,7 @@ export class DashboardWidgetEventStreamDefinitionOutputReference extends cdktf.C
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._eventSize = value.eventSize;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._query = value.query;
       this._tagsExecution = value.tagsExecution;
@@ -16784,6 +16978,22 @@ export class DashboardWidgetEventStreamDefinitionOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get eventSizeInput() {
     return this._eventSize;
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -16881,97 +17091,110 @@ export class DashboardWidgetEventStreamDefinitionOutputReference extends cdktf.C
 }
 export interface DashboardWidgetEventTimelineDefinition {
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The query to use in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
   /**
   * The execution method for multi-value filters, options: `and` or `or`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#tags_execution Dashboard#tags_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#tags_execution Dashboard#tags_execution}
   */
   readonly tagsExecution?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
 }
 
 export function dashboardWidgetEventTimelineDefinitionToTerraform(struct?: DashboardWidgetEventTimelineDefinitionOutputReference | DashboardWidgetEventTimelineDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    query: cdktf.stringToTerraform(struct!.query),
-    tags_execution: cdktf.stringToTerraform(struct!.tagsExecution),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    query: cdktn.stringToTerraform(struct!.query),
+    tags_execution: cdktn.stringToTerraform(struct!.tagsExecution),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
   }
 }
 
 
 export function dashboardWidgetEventTimelineDefinitionToHclTerraform(struct?: DashboardWidgetEventTimelineDefinitionOutputReference | DashboardWidgetEventTimelineDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags_execution: {
-      value: cdktf.stringToHclTerraform(struct!.tagsExecution),
+      value: cdktn.stringToHclTerraform(struct!.tagsExecution),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16982,20 +17205,24 @@ export function dashboardWidgetEventTimelineDefinitionToHclTerraform(struct?: Da
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetEventTimelineDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetEventTimelineDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetEventTimelineDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
+    }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
@@ -17026,6 +17253,7 @@ export class DashboardWidgetEventTimelineDefinitionOutputReference extends cdktf
   public set internalValue(value: DashboardWidgetEventTimelineDefinition | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._query = undefined;
       this._tagsExecution = undefined;
@@ -17035,6 +17263,7 @@ export class DashboardWidgetEventTimelineDefinitionOutputReference extends cdktf
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._query = value.query;
       this._tagsExecution = value.tagsExecution;
@@ -17042,6 +17271,22 @@ export class DashboardWidgetEventTimelineDefinitionOutputReference extends cdktf
       this._titleAlign = value.titleAlign;
       this._titleSize = value.titleSize;
     }
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -17141,69 +17386,69 @@ export interface DashboardWidgetFreeTextDefinition {
   /**
   * The color of the text in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#color Dashboard#color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#color Dashboard#color}
   */
   readonly color?: string;
   /**
   * The size of the text in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#font_size Dashboard#font_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#font_size Dashboard#font_size}
   */
   readonly fontSize?: string;
   /**
   * The text to display in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#text Dashboard#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#text Dashboard#text}
   */
   readonly text: string;
   /**
   * The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#text_align Dashboard#text_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#text_align Dashboard#text_align}
   */
   readonly textAlign?: string;
 }
 
 export function dashboardWidgetFreeTextDefinitionToTerraform(struct?: DashboardWidgetFreeTextDefinitionOutputReference | DashboardWidgetFreeTextDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color: cdktf.stringToTerraform(struct!.color),
-    font_size: cdktf.stringToTerraform(struct!.fontSize),
-    text: cdktf.stringToTerraform(struct!.text),
-    text_align: cdktf.stringToTerraform(struct!.textAlign),
+    color: cdktn.stringToTerraform(struct!.color),
+    font_size: cdktn.stringToTerraform(struct!.fontSize),
+    text: cdktn.stringToTerraform(struct!.text),
+    text_align: cdktn.stringToTerraform(struct!.textAlign),
   }
 }
 
 
 export function dashboardWidgetFreeTextDefinitionToHclTerraform(struct?: DashboardWidgetFreeTextDefinitionOutputReference | DashboardWidgetFreeTextDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color: {
-      value: cdktf.stringToHclTerraform(struct!.color),
+      value: cdktn.stringToHclTerraform(struct!.color),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     font_size: {
-      value: cdktf.stringToHclTerraform(struct!.fontSize),
+      value: cdktn.stringToHclTerraform(struct!.fontSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_align: {
-      value: cdktf.stringToHclTerraform(struct!.textAlign),
+      value: cdktn.stringToHclTerraform(struct!.textAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17214,14 +17459,14 @@ export function dashboardWidgetFreeTextDefinitionToHclTerraform(struct?: Dashboa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetFreeTextDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetFreeTextDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17329,69 +17574,69 @@ export interface DashboardWidgetGeomapDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#is_hidden Dashboard#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#is_hidden Dashboard#is_hidden}
   */
-  readonly isHidden?: boolean | cdktf.IResolvable;
+  readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#label Dashboard#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#link Dashboard#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#link Dashboard#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#override_label Dashboard#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#override_label Dashboard#override_label}
   */
   readonly overrideLabel?: string;
 }
 
-export function dashboardWidgetGeomapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGeomapDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionCustomLinkToTerraform(struct?: DashboardWidgetGeomapDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
-    label: cdktf.stringToTerraform(struct!.label),
-    link: cdktf.stringToTerraform(struct!.link),
-    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
+    is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
+    label: cdktn.stringToTerraform(struct!.label),
+    link: cdktn.stringToTerraform(struct!.link),
+    override_label: cdktn.stringToTerraform(struct!.overrideLabel),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionCustomLinkToHclTerraform(struct?: DashboardWidgetGeomapDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionCustomLinkToHclTerraform(struct?: DashboardWidgetGeomapDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_hidden: {
-      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      value: cdktn.booleanToHclTerraform(struct!.isHidden),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     link: {
-      value: cdktf.stringToHclTerraform(struct!.link),
+      value: cdktn.stringToHclTerraform(struct!.link),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_label: {
-      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      value: cdktn.stringToHclTerraform(struct!.overrideLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17402,9 +17647,9 @@ export function dashboardWidgetGeomapDefinitionCustomLinkToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionCustomLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17412,11 +17657,11 @@ export class DashboardWidgetGeomapDefinitionCustomLinkOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionCustomLink | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionCustomLink | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17441,7 +17686,7 @@ export class DashboardWidgetGeomapDefinitionCustomLinkOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionCustomLink | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionCustomLink | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17450,7 +17695,7 @@ export class DashboardWidgetGeomapDefinitionCustomLinkOutputReference extends cd
       this._link = undefined;
       this._overrideLabel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17465,11 +17710,11 @@ export class DashboardWidgetGeomapDefinitionCustomLinkOutputReference extends cd
   }
 
   // is_hidden - computed: false, optional: true, required: false
-  private _isHidden?: boolean | cdktf.IResolvable; 
+  private _isHidden?: boolean | cdktn.IResolvable; 
   public get isHidden() {
     return this.getBooleanAttribute('is_hidden');
   }
-  public set isHidden(value: boolean | cdktf.IResolvable) {
+  public set isHidden(value: boolean | cdktn.IResolvable) {
     this._isHidden = value;
   }
   public resetIsHidden() {
@@ -17529,15 +17774,15 @@ export class DashboardWidgetGeomapDefinitionCustomLinkOutputReference extends cd
   }
 }
 
-export class DashboardWidgetGeomapDefinitionCustomLinkList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionCustomLink[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionCustomLinkList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionCustomLink[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17552,134 +17797,134 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#comparator Dashboard#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#comparator Dashboard#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom_bg_color Dashboard#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom_bg_color Dashboard#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom_fg_color Dashboard#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom_fg_color Dashboard#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#hide_value Dashboard#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_value Dashboard#hide_value}
   */
-  readonly hideValue?: boolean | cdktf.IResolvable;
+  readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#image_url Dashboard#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#image_url Dashboard#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#timeframe Dashboard#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#timeframe Dashboard#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#value Dashboard#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#value Dashboard#value}
   */
   readonly value: number;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparator: cdktf.stringToTerraform(struct!.comparator),
-    custom_bg_color: cdktf.stringToTerraform(struct!.customBgColor),
-    custom_fg_color: cdktf.stringToTerraform(struct!.customFgColor),
-    hide_value: cdktf.booleanToTerraform(struct!.hideValue),
-    image_url: cdktf.stringToTerraform(struct!.imageUrl),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    palette: cdktf.stringToTerraform(struct!.palette),
-    timeframe: cdktf.stringToTerraform(struct!.timeframe),
-    value: cdktf.numberToTerraform(struct!.value),
+    comparator: cdktn.stringToTerraform(struct!.comparator),
+    custom_bg_color: cdktn.stringToTerraform(struct!.customBgColor),
+    custom_fg_color: cdktn.stringToTerraform(struct!.customFgColor),
+    hide_value: cdktn.booleanToTerraform(struct!.hideValue),
+    image_url: cdktn.stringToTerraform(struct!.imageUrl),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    timeframe: cdktn.stringToTerraform(struct!.timeframe),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparator: {
-      value: cdktf.stringToHclTerraform(struct!.comparator),
+      value: cdktn.stringToHclTerraform(struct!.comparator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_bg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      value: cdktn.stringToHclTerraform(struct!.customBgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_fg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      value: cdktn.stringToHclTerraform(struct!.customFgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hide_value: {
-      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      value: cdktn.booleanToHclTerraform(struct!.hideValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     image_url: {
-      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      value: cdktn.stringToHclTerraform(struct!.imageUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeframe: {
-      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      value: cdktn.stringToHclTerraform(struct!.timeframe),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -17690,9 +17935,9 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17700,11 +17945,11 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17749,7 +17994,7 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17763,7 +18008,7 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutp
       this._timeframe = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -17828,11 +18073,11 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutp
   }
 
   // hide_value - computed: false, optional: true, required: false
-  private _hideValue?: boolean | cdktf.IResolvable; 
+  private _hideValue?: boolean | cdktn.IResolvable; 
   public get hideValue() {
     return this.getBooleanAttribute('hide_value');
   }
-  public set hideValue(value: boolean | cdktf.IResolvable) {
+  public set hideValue(value: boolean | cdktn.IResolvable) {
     this._hideValue = value;
   }
   public resetHideValue() {
@@ -17918,15 +18163,15 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsOutp
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -17941,43 +18186,43 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaLimit {
   /**
   * The number of results to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#count Dashboard#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#count Dashboard#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaLimitToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    order: cdktf.stringToTerraform(struct!.order),
+    count: cdktn.numberToTerraform(struct!.count),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaLimitToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17988,14 +18233,14 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaLimitToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18062,43 +18307,43 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCa
   /**
   * per unit name. If you want to represent megabytes/s, you set 'unit_name' = 'megabyte' and 'per_unit_name = 'second'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#per_unit_name Dashboard#per_unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#per_unit_name Dashboard#per_unit_name}
   */
   readonly perUnitName?: string;
   /**
   * Unit name. It should be in singular form ('megabyte' and not 'megabytes')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
   */
   readonly unitName: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    per_unit_name: cdktf.stringToTerraform(struct!.perUnitName),
-    unit_name: cdktf.stringToTerraform(struct!.unitName),
+    per_unit_name: cdktn.stringToTerraform(struct!.perUnitName),
+    unit_name: cdktn.stringToTerraform(struct!.unitName),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     per_unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.perUnitName),
+      value: cdktn.stringToHclTerraform(struct!.perUnitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.unitName),
+      value: cdktn.stringToHclTerraform(struct!.unitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18109,14 +18354,14 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18180,30 +18425,30 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCu
   /**
   * Unit label
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#label Dashboard#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#label Dashboard#label}
   */
   readonly label: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label: cdktf.stringToTerraform(struct!.label),
+    label: cdktn.stringToTerraform(struct!.label),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18214,14 +18459,14 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustomOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18263,20 +18508,20 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnit {
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#canonical Dashboard#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#canonical Dashboard#canonical}
   */
   readonly canonical?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom Dashboard#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom Dashboard#custom}
   */
   readonly custom?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitCustom;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -18287,8 +18532,8 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitToT
 
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -18310,14 +18555,14 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18382,30 +18627,30 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitOutput
 }
 export interface DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit_name Dashboard#unit_name}
   */
   readonly unitName: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit_name: cdktf.stringToTerraform(struct!.unitName),
+    unit_name: cdktn.stringToTerraform(struct!.unitName),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.unitName),
+      value: cdktn.stringToHclTerraform(struct!.unitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18416,14 +18661,14 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitSca
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18465,20 +18710,20 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaNumberFormat {
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit Dashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit Dashboard#unit}
   */
   readonly unit: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit_scale Dashboard#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit_scale Dashboard#unit_scale}
   */
   readonly unitScale?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatUnitScale;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -18489,8 +18734,8 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatToTerra
 
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaNumberFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -18512,14 +18757,14 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaNumberFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18583,43 +18828,43 @@ export interface DashboardWidgetGeomapDefinitionRequestFormulaStyle {
   /**
   * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette Dashboard#palette}
   */
   readonly palette?: string;
   /**
   * Index specifying which color to use within the palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette_index Dashboard#palette_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette_index Dashboard#palette_index}
   */
   readonly paletteIndex?: number;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaStyleToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    palette: cdktf.stringToTerraform(struct!.palette),
-    palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    palette_index: cdktn.numberToTerraform(struct!.paletteIndex),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestFormulaStyleToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference | DashboardWidgetGeomapDefinitionRequestFormulaStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette_index: {
-      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      value: cdktn.numberToHclTerraform(struct!.paletteIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -18630,14 +18875,14 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaStyleToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaStyleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18704,57 +18949,57 @@ export interface DashboardWidgetGeomapDefinitionRequestFormula {
   /**
   * An expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#alias Dashboard#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#alias Dashboard#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cell_display_mode Dashboard#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#formula_expression Dashboard#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#formula_expression Dashboard#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#conditional_formats Dashboard#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#conditional_formats Dashboard#conditional_formats}
   */
-  readonly conditionalFormats?: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
+  readonly conditionalFormats?: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: DashboardWidgetGeomapDefinitionRequestFormulaLimit;
   /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#number_format Dashboard#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#number_format Dashboard#number_format}
   */
   readonly numberFormat?: DashboardWidgetGeomapDefinitionRequestFormulaNumberFormat;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetGeomapDefinitionRequestFormulaStyle;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormula | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestFormulaToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormula | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    cell_display_mode: cdktf.stringToTerraform(struct!.cellDisplayMode),
-    formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
-    conditional_formats: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
+    alias: cdktn.stringToTerraform(struct!.alias),
+    cell_display_mode: cdktn.stringToTerraform(struct!.cellDisplayMode),
+    formula_expression: cdktn.stringToTerraform(struct!.formulaExpression),
+    conditional_formats: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: dashboardWidgetGeomapDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     number_format: dashboardWidgetGeomapDefinitionRequestFormulaNumberFormatToTerraform(struct!.numberFormat),
     style: dashboardWidgetGeomapDefinitionRequestFormulaStyleToTerraform(struct!.style),
@@ -18762,32 +19007,32 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaToTerraform(struct?
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestFormulaToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormula | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestFormulaToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestFormula | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
+      value: cdktn.stringToHclTerraform(struct!.alias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cell_display_mode: {
-      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      value: cdktn.stringToHclTerraform(struct!.cellDisplayMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     formula_expression: {
-      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      value: cdktn.stringToHclTerraform(struct!.formulaExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditional_formats: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormatsList",
@@ -18816,9 +19061,9 @@ export function dashboardWidgetGeomapDefinitionRequestFormulaToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestFormulaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -18826,11 +19071,11 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestFormula | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestFormula | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18867,7 +19112,7 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestFormula | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestFormula | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -18879,7 +19124,7 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaOutputReference extend
       this._numberFormat.internalValue = undefined;
       this._style.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18946,7 +19191,7 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaOutputReference extend
   public get conditionalFormats() {
     return this._conditionalFormats;
   }
-  public putConditionalFormats(value: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable) {
+  public putConditionalFormats(value: DashboardWidgetGeomapDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable) {
     this._conditionalFormats.internalValue = value;
   }
   public resetConditionalFormats() {
@@ -19006,15 +19251,15 @@ export class DashboardWidgetGeomapDefinitionRequestFormulaOutputReference extend
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestFormulaList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestFormula[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestFormulaList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestFormula[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19029,56 +19274,56 @@ export interface DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference | DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -19089,14 +19334,14 @@ export function dashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19182,56 +19427,56 @@ export interface DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19242,14 +19487,14 @@ export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19332,50 +19577,50 @@ export interface DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetGeomapDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -19392,9 +19637,9 @@ export function dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -19402,11 +19647,11 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19427,7 +19672,7 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19435,7 +19680,7 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByOutputReferenc
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19497,15 +19742,15 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByOutputReferenc
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestLogQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19520,56 +19765,56 @@ export interface DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -19580,9 +19825,9 @@ export function dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -19590,11 +19835,11 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19615,7 +19860,7 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19623,7 +19868,7 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputRef
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19682,15 +19927,15 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeOutputRef
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19705,64 +19950,64 @@ export interface DashboardWidgetGeomapDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGeomapDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestLogQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference | DashboardWidgetGeomapDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestLogQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference | DashboardWidgetGeomapDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19774,13 +20019,13 @@ export function dashboardWidgetGeomapDefinitionRequestLogQueryToHclTerraform(str
       storageClassType: "DashboardWidgetGeomapDefinitionRequestLogQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestLogQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestLogQueryMultiComputeList",
@@ -19791,14 +20036,14 @@ export function dashboardWidgetGeomapDefinitionRequestLogQueryToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19897,7 +20142,7 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference exten
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetGeomapDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -19913,7 +20158,7 @@ export class DashboardWidgetGeomapDefinitionRequestLogQueryOutputReference exten
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetGeomapDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -19928,160 +20173,160 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQu
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#is_upstream Dashboard#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#is_upstream Dashboard#is_upstream}
   */
-  readonly isUpstream?: boolean | cdktf.IResolvable;
+  readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    env: cdktf.stringToTerraform(struct!.env),
-    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
-    name: cdktf.stringToTerraform(struct!.name),
-    operation_name: cdktf.stringToTerraform(struct!.operationName),
-    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
-    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    service: cdktf.stringToTerraform(struct!.service),
-    stat: cdktf.stringToTerraform(struct!.stat),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    env: cdktn.stringToTerraform(struct!.env),
+    is_upstream: cdktn.booleanToTerraform(struct!.isUpstream),
+    name: cdktn.stringToTerraform(struct!.name),
+    operation_name: cdktn.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktn.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktn.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    service: cdktn.stringToTerraform(struct!.service),
+    stat: cdktn.stringToTerraform(struct!.stat),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_upstream: {
-      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      value: cdktn.booleanToHclTerraform(struct!.isUpstream),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_name: {
-      value: cdktf.stringToHclTerraform(struct!.operationName),
+      value: cdktn.stringToHclTerraform(struct!.operationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stat: {
-      value: cdktf.stringToHclTerraform(struct!.stat),
+      value: cdktn.stringToHclTerraform(struct!.stat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20092,14 +20337,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -20227,11 +20472,11 @@ export class DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQueryO
   }
 
   // is_upstream - computed: false, optional: true, required: false
-  private _isUpstream?: boolean | cdktf.IResolvable; 
+  private _isUpstream?: boolean | cdktn.IResolvable; 
   public get isUpstream() {
     return this.getBooleanAttribute('is_upstream');
   }
-  public set isUpstream(value: boolean | cdktf.IResolvable) {
+  public set isUpstream(value: boolean | cdktn.IResolvable) {
     this._isUpstream = value;
   }
   public resetIsUpstream() {
@@ -20343,160 +20588,160 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuer
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#env Dashboard#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#env Dashboard#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#operation_name Dashboard#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_name Dashboard#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#primary_tag_value Dashboard#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#resource_name Dashboard#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#service Dashboard#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#service Dashboard#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#stat Dashboard#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#stat Dashboard#stat}
   */
   readonly stat: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    env: cdktf.stringToTerraform(struct!.env),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
-    name: cdktf.stringToTerraform(struct!.name),
-    operation_name: cdktf.stringToTerraform(struct!.operationName),
-    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
-    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    service: cdktf.stringToTerraform(struct!.service),
-    stat: cdktf.stringToTerraform(struct!.stat),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    env: cdktn.stringToTerraform(struct!.env),
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    name: cdktn.stringToTerraform(struct!.name),
+    operation_name: cdktn.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktn.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktn.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    service: cdktn.stringToTerraform(struct!.service),
+    stat: cdktn.stringToTerraform(struct!.stat),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_name: {
-      value: cdktf.stringToHclTerraform(struct!.operationName),
+      value: cdktn.stringToHclTerraform(struct!.operationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stat: {
-      value: cdktf.stringToHclTerraform(struct!.stat),
+      value: cdktn.stringToHclTerraform(struct!.stat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20507,14 +20752,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -20764,82 +21009,82 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The cloud cost query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20850,14 +21095,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryCloudCostQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -20981,56 +21226,56 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    metric: cdktf.stringToTerraform(struct!.metric),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    metric: cdktn.stringToTerraform(struct!.metric),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -21041,9 +21286,9 @@ export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -21051,11 +21296,11 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21076,7 +21321,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -21084,7 +21329,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputR
       this._interval = undefined;
       this._metric = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -21143,15 +21388,15 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeOutputR
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -21166,56 +21411,56 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySor
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order?: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -21226,14 +21471,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -21319,50 +21564,50 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort Dashboard#sort}
   */
   readonly sort?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort: dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -21379,9 +21624,9 @@ export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -21389,11 +21634,11 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21414,7 +21659,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -21422,7 +21667,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputR
       this._limit = undefined;
       this._sort.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -21481,15 +21726,15 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByOutputR
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -21504,30 +21749,30 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference | DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -21538,14 +21783,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -21587,115 +21832,115 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryEventQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#indexes Dashboard#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#indexes Dashboard#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * Storage location (private beta).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#storage Dashboard#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#storage Dashboard#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute Dashboard#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute Dashboard#compute}
   */
-  readonly compute: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
+  readonly compute: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search Dashboard#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search Dashboard#search}
   */
   readonly search?: DashboardWidgetGeomapDefinitionRequestQueryEventQuerySearch;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage: cdktf.stringToTerraform(struct!.storage),
-    compute: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
-    group_by: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    indexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.indexes),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage: cdktn.stringToTerraform(struct!.storage),
+    compute: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: dashboardWidgetGeomapDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     indexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.indexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage: {
-      value: cdktf.stringToHclTerraform(struct!.storage),
+      value: cdktn.stringToHclTerraform(struct!.storage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestQueryEventQueryComputeList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupByList",
@@ -21712,14 +21957,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryEventQueryToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -21865,7 +22110,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReferenc
   public get compute() {
     return this._compute;
   }
-  public putCompute(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
+  public putCompute(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable) {
     this._compute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -21878,7 +22123,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryEventQueryOutputReferenc
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetGeomapDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -21909,82 +22154,95 @@ export interface DashboardWidgetGeomapDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
   readonly query: string;
+  /**
+  * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#semantic_mode Dashboard#semantic_mode}
+  */
+  readonly semanticMode?: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
+    semantic_mode: cdktn.stringToTerraform(struct!.semanticMode),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryMetricQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    semantic_mode: {
+      value: cdktn.stringToHclTerraform(struct!.semanticMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -21995,14 +22253,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryMetricQueryToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -22029,6 +22287,10 @@ export class DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReferen
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
+    if (this._semanticMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.semanticMode = this._semanticMode;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -22040,6 +22302,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReferen
       this._dataSource = undefined;
       this._name = undefined;
       this._query = undefined;
+      this._semanticMode = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -22048,6 +22311,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReferen
       this._dataSource = value.dataSource;
       this._name = value.name;
       this._query = value.query;
+      this._semanticMode = value.semanticMode;
     }
   }
 
@@ -22124,152 +22388,168 @@ export class DashboardWidgetGeomapDefinitionRequestQueryMetricQueryOutputReferen
   public get queryInput() {
     return this._query;
   }
+
+  // semantic_mode - computed: false, optional: true, required: false
+  private _semanticMode?: string; 
+  public get semanticMode() {
+    return this.getStringAttribute('semantic_mode');
+  }
+  public set semanticMode(value: string) {
+    this._semanticMode = value;
+  }
+  public resetSemanticMode() {
+    this._semanticMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get semanticModeInput() {
+    return this._semanticMode;
+  }
 }
 export interface DashboardWidgetGeomapDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregator Dashboard#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#is_normalized_cpu Dashboard#is_normalized_cpu}
   */
-  readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
+  readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric Dashboard#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric Dashboard#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort Dashboard#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort Dashboard#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#tag_filters Dashboard#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#tag_filters Dashboard#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#text_filter Dashboard#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#text_filter Dashboard#text_filter}
   */
   readonly textFilter?: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    is_normalized_cpu: cdktf.booleanToTerraform(struct!.isNormalizedCpu),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    name: cdktf.stringToTerraform(struct!.name),
-    sort: cdktf.stringToTerraform(struct!.sort),
-    tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
-    text_filter: cdktf.stringToTerraform(struct!.textFilter),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    is_normalized_cpu: cdktn.booleanToTerraform(struct!.isNormalizedCpu),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    name: cdktn.stringToTerraform(struct!.name),
+    sort: cdktn.stringToTerraform(struct!.sort),
+    tag_filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagFilters),
+    text_filter: cdktn.stringToTerraform(struct!.textFilter),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQueryProcessQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_normalized_cpu: {
-      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      value: cdktn.booleanToHclTerraform(struct!.isNormalizedCpu),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sort: {
-      value: cdktf.stringToHclTerraform(struct!.sort),
+      value: cdktn.stringToHclTerraform(struct!.sort),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagFilters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     text_filter: {
-      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      value: cdktn.stringToHclTerraform(struct!.textFilter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -22280,14 +22560,14 @@ export function dashboardWidgetGeomapDefinitionRequestQueryProcessQueryToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -22412,11 +22692,11 @@ export class DashboardWidgetGeomapDefinitionRequestQueryProcessQueryOutputRefere
   }
 
   // is_normalized_cpu - computed: false, optional: true, required: false
-  private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
+  private _isNormalizedCpu?: boolean | cdktn.IResolvable; 
   public get isNormalizedCpu() {
     return this.getBooleanAttribute('is_normalized_cpu');
   }
-  public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
+  public set isNormalizedCpu(value: boolean | cdktn.IResolvable) {
     this._isNormalizedCpu = value;
   }
   public resetIsNormalizedCpu() {
@@ -22521,121 +22801,121 @@ export interface DashboardWidgetGeomapDefinitionRequestQuerySloQuery {
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#additional_query_filters Dashboard#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#additional_query_filters Dashboard#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cross_org_uuids Dashboard#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#data_source Dashboard#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#data_source Dashboard#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_mode Dashboard#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_mode Dashboard#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#measure Dashboard#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#measure Dashboard#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#name Dashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#name Dashboard#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#slo_id Dashboard#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#slo_id Dashboard#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#slo_query_type Dashboard#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#slo_query_type Dashboard#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestQuerySloQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQuerySloQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_query_filters: cdktf.stringToTerraform(struct!.additionalQueryFilters),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    group_mode: cdktf.stringToTerraform(struct!.groupMode),
-    measure: cdktf.stringToTerraform(struct!.measure),
-    name: cdktf.stringToTerraform(struct!.name),
-    slo_id: cdktf.stringToTerraform(struct!.sloId),
-    slo_query_type: cdktf.stringToTerraform(struct!.sloQueryType),
+    additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    group_mode: cdktn.stringToTerraform(struct!.groupMode),
+    measure: cdktn.stringToTerraform(struct!.measure),
+    name: cdktn.stringToTerraform(struct!.name),
+    slo_id: cdktn.stringToTerraform(struct!.sloId),
+    slo_query_type: cdktn.stringToTerraform(struct!.sloQueryType),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestQuerySloQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference | DashboardWidgetGeomapDefinitionRequestQuerySloQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_query_filters: {
-      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      value: cdktn.stringToHclTerraform(struct!.additionalQueryFilters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_mode: {
-      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      value: cdktn.stringToHclTerraform(struct!.groupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     measure: {
-      value: cdktf.stringToHclTerraform(struct!.measure),
+      value: cdktn.stringToHclTerraform(struct!.measure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slo_id: {
-      value: cdktf.stringToHclTerraform(struct!.sloId),
+      value: cdktn.stringToHclTerraform(struct!.sloId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slo_query_type: {
-      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      value: cdktn.stringToHclTerraform(struct!.sloQueryType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -22646,14 +22926,14 @@ export function dashboardWidgetGeomapDefinitionRequestQuerySloQueryToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQuerySloQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -22843,50 +23123,50 @@ export interface DashboardWidgetGeomapDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#apm_dependency_stats_query Dashboard#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardWidgetGeomapDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#apm_resource_stats_query Dashboard#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardWidgetGeomapDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#cloud_cost_query Dashboard#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#cloud_cost_query Dashboard#cloud_cost_query}
   */
   readonly cloudCostQuery?: DashboardWidgetGeomapDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#event_query Dashboard#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#event_query Dashboard#event_query}
   */
   readonly eventQuery?: DashboardWidgetGeomapDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#metric_query Dashboard#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#metric_query Dashboard#metric_query}
   */
   readonly metricQuery?: DashboardWidgetGeomapDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#process_query Dashboard#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#process_query Dashboard#process_query}
   */
   readonly processQuery?: DashboardWidgetGeomapDefinitionRequestQueryProcessQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#slo_query Dashboard#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#slo_query Dashboard#slo_query}
   */
   readonly sloQuery?: DashboardWidgetGeomapDefinitionRequestQuerySloQuery;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -22901,9 +23181,9 @@ export function dashboardWidgetGeomapDefinitionRequestQueryToTerraform(struct?: 
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -22955,9 +23235,9 @@ export function dashboardWidgetGeomapDefinitionRequestQueryToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -22965,11 +23245,11 @@ export class DashboardWidgetGeomapDefinitionRequestQueryOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -23006,7 +23286,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -23018,7 +23298,7 @@ export class DashboardWidgetGeomapDefinitionRequestQueryOutputReference extends 
       this._processQuery.internalValue = undefined;
       this._sloQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -23148,15 +23428,15 @@ export class DashboardWidgetGeomapDefinitionRequestQueryOutputReference extends 
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestQueryList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestQuery[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestQueryList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -23171,56 +23451,56 @@ export interface DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference | DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -23231,14 +23511,14 @@ export function dashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -23324,56 +23604,56 @@ export interface DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#order Dashboard#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#order Dashboard#order}
   */
   readonly order: string;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -23384,14 +23664,14 @@ export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -23474,50 +23754,50 @@ export interface DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#limit Dashboard#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#limit Dashboard#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#sort_query Dashboard#sort_query}
   */
   readonly sortQuery?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: dashboardWidgetGeomapDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -23534,9 +23814,9 @@ export function dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -23544,11 +23824,11 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -23569,7 +23849,7 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -23577,7 +23857,7 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByOutputReferenc
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -23639,15 +23919,15 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByOutputReferenc
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestRumQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -23662,56 +23942,56 @@ export interface DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#aggregation Dashboard#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#facet Dashboard#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#facet Dashboard#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#interval Dashboard#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#interval Dashboard#interval}
   */
   readonly interval?: number;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -23722,9 +24002,9 @@ export function dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -23732,11 +24012,11 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -23757,7 +24037,7 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -23765,7 +24045,7 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputRef
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -23824,15 +24104,15 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeOutputRef
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -23847,64 +24127,64 @@ export interface DashboardWidgetGeomapDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#index Dashboard#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#index Dashboard#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#search_query Dashboard#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#search_query Dashboard#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#compute_query Dashboard#compute_query}
   */
   readonly computeQuery?: DashboardWidgetGeomapDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#group_by Dashboard#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#group_by Dashboard#group_by}
   */
-  readonly groupBy?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#multi_compute Dashboard#multi_compute}
   */
-  readonly multiCompute?: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function dashboardWidgetGeomapDefinitionRequestRumQueryToTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference | DashboardWidgetGeomapDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: dashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionRequestRumQueryToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference | DashboardWidgetGeomapDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -23916,13 +24196,13 @@ export function dashboardWidgetGeomapDefinitionRequestRumQueryToHclTerraform(str
       storageClassType: "DashboardWidgetGeomapDefinitionRequestRumQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestRumQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestRumQueryMultiComputeList",
@@ -23933,14 +24213,14 @@ export function dashboardWidgetGeomapDefinitionRequestRumQueryToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -24039,7 +24319,7 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference exten
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: DashboardWidgetGeomapDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -24055,7 +24335,7 @@ export class DashboardWidgetGeomapDefinitionRequestRumQueryOutputReference exten
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: DashboardWidgetGeomapDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -24070,64 +24350,64 @@ export interface DashboardWidgetGeomapDefinitionRequest {
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#q Dashboard#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#q Dashboard#q}
   */
   readonly q?: string;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#formula Dashboard#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#formula Dashboard#formula}
   */
-  readonly formula?: DashboardWidgetGeomapDefinitionRequestFormula[] | cdktf.IResolvable;
+  readonly formula?: DashboardWidgetGeomapDefinitionRequestFormula[] | cdktn.IResolvable;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#log_query Dashboard#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#log_query Dashboard#log_query}
   */
   readonly logQuery?: DashboardWidgetGeomapDefinitionRequestLogQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#query Dashboard#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#query Dashboard#query}
   */
-  readonly query?: DashboardWidgetGeomapDefinitionRequestQuery[] | cdktf.IResolvable;
+  readonly query?: DashboardWidgetGeomapDefinitionRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#rum_query Dashboard#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#rum_query Dashboard#rum_query}
   */
   readonly rumQuery?: DashboardWidgetGeomapDefinitionRequestRumQuery;
 }
 
-export function dashboardWidgetGeomapDefinitionRequestToTerraform(struct?: DashboardWidgetGeomapDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestToTerraform(struct?: DashboardWidgetGeomapDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    q: cdktf.stringToTerraform(struct!.q),
-    formula: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestFormulaToTerraform, true)(struct!.formula),
+    q: cdktn.stringToTerraform(struct!.q),
+    formula: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestFormulaToTerraform, true)(struct!.formula),
     log_query: dashboardWidgetGeomapDefinitionRequestLogQueryToTerraform(struct!.logQuery),
-    query: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestQueryToTerraform, true)(struct!.query),
+    query: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestQueryToTerraform, true)(struct!.query),
     rum_query: dashboardWidgetGeomapDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
   }
 }
 
 
-export function dashboardWidgetGeomapDefinitionRequestToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardWidgetGeomapDefinitionRequestToHclTerraform(struct?: DashboardWidgetGeomapDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     q: {
-      value: cdktf.stringToHclTerraform(struct!.q),
+      value: cdktn.stringToHclTerraform(struct!.q),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     formula: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestFormulaList",
@@ -24139,7 +24419,7 @@ export function dashboardWidgetGeomapDefinitionRequestToHclTerraform(struct?: Da
       storageClassType: "DashboardWidgetGeomapDefinitionRequestLogQueryList",
     },
     query: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestQueryToHclTerraform, true)(struct!.query),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestQueryList",
@@ -24156,9 +24436,9 @@ export function dashboardWidgetGeomapDefinitionRequestToHclTerraform(struct?: Da
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -24166,11 +24446,11 @@ export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardWidgetGeomapDefinitionRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardWidgetGeomapDefinitionRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -24199,7 +24479,7 @@ export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardWidgetGeomapDefinitionRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardWidgetGeomapDefinitionRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -24209,7 +24489,7 @@ export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktf
       this._query.internalValue = undefined;
       this._rumQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -24245,7 +24525,7 @@ export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktf
   public get formula() {
     return this._formula;
   }
-  public putFormula(value: DashboardWidgetGeomapDefinitionRequestFormula[] | cdktf.IResolvable) {
+  public putFormula(value: DashboardWidgetGeomapDefinitionRequestFormula[] | cdktn.IResolvable) {
     this._formula.internalValue = value;
   }
   public resetFormula() {
@@ -24277,7 +24557,7 @@ export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktf
   public get query() {
     return this._query;
   }
-  public putQuery(value: DashboardWidgetGeomapDefinitionRequestQuery[] | cdktf.IResolvable) {
+  public putQuery(value: DashboardWidgetGeomapDefinitionRequestQuery[] | cdktn.IResolvable) {
     this._query.internalValue = value;
   }
   public resetQuery() {
@@ -24305,15 +24585,15 @@ export class DashboardWidgetGeomapDefinitionRequestOutputReference extends cdktf
   }
 }
 
-export class DashboardWidgetGeomapDefinitionRequestList extends cdktf.ComplexList {
-  public internalValue? : DashboardWidgetGeomapDefinitionRequest[] | cdktf.IResolvable
+export class DashboardWidgetGeomapDefinitionRequestList extends cdktn.ComplexList {
+  public internalValue? : DashboardWidgetGeomapDefinitionRequest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -24328,43 +24608,43 @@ export interface DashboardWidgetGeomapDefinitionStyle {
   /**
   * The color palette to apply to the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette Dashboard#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette Dashboard#palette}
   */
   readonly palette: string;
   /**
   * A Boolean indicating whether to flip the palette tones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#palette_flip Dashboard#palette_flip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#palette_flip Dashboard#palette_flip}
   */
-  readonly paletteFlip: boolean | cdktf.IResolvable;
+  readonly paletteFlip: boolean | cdktn.IResolvable;
 }
 
 export function dashboardWidgetGeomapDefinitionStyleToTerraform(struct?: DashboardWidgetGeomapDefinitionStyleOutputReference | DashboardWidgetGeomapDefinitionStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    palette: cdktf.stringToTerraform(struct!.palette),
-    palette_flip: cdktf.booleanToTerraform(struct!.paletteFlip),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    palette_flip: cdktn.booleanToTerraform(struct!.paletteFlip),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionStyleToHclTerraform(struct?: DashboardWidgetGeomapDefinitionStyleOutputReference | DashboardWidgetGeomapDefinitionStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette_flip: {
-      value: cdktf.booleanToHclTerraform(struct!.paletteFlip),
+      value: cdktn.booleanToHclTerraform(struct!.paletteFlip),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -24375,14 +24655,14 @@ export function dashboardWidgetGeomapDefinitionStyleToHclTerraform(struct?: Dash
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionStyleOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionStyleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -24427,11 +24707,11 @@ export class DashboardWidgetGeomapDefinitionStyleOutputReference extends cdktf.C
   }
 
   // palette_flip - computed: false, optional: false, required: true
-  private _paletteFlip?: boolean | cdktf.IResolvable; 
+  private _paletteFlip?: boolean | cdktn.IResolvable; 
   public get paletteFlip() {
     return this.getBooleanAttribute('palette_flip');
   }
-  public set paletteFlip(value: boolean | cdktf.IResolvable) {
+  public set paletteFlip(value: boolean | cdktn.IResolvable) {
     this._paletteFlip = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -24443,30 +24723,30 @@ export interface DashboardWidgetGeomapDefinitionView {
   /**
   * The two-letter ISO code of a country to focus the map on (or `WORLD`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#focus Dashboard#focus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#focus Dashboard#focus}
   */
   readonly focus: string;
 }
 
 export function dashboardWidgetGeomapDefinitionViewToTerraform(struct?: DashboardWidgetGeomapDefinitionViewOutputReference | DashboardWidgetGeomapDefinitionView): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    focus: cdktf.stringToTerraform(struct!.focus),
+    focus: cdktn.stringToTerraform(struct!.focus),
   }
 }
 
 
 export function dashboardWidgetGeomapDefinitionViewToHclTerraform(struct?: DashboardWidgetGeomapDefinitionViewOutputReference | DashboardWidgetGeomapDefinitionView): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     focus: {
-      value: cdktf.stringToHclTerraform(struct!.focus),
+      value: cdktn.stringToHclTerraform(struct!.focus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -24477,14 +24757,14 @@ export function dashboardWidgetGeomapDefinitionViewToHclTerraform(struct?: Dashb
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionViewOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionViewOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -24524,67 +24804,74 @@ export class DashboardWidgetGeomapDefinitionViewOutputReference extends cdktf.Co
 }
 export interface DashboardWidgetGeomapDefinition {
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#custom_link Dashboard#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#custom_link Dashboard#custom_link}
   */
-  readonly customLink?: DashboardWidgetGeomapDefinitionCustomLink[] | cdktf.IResolvable;
+  readonly customLink?: DashboardWidgetGeomapDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#request Dashboard#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#request Dashboard#request}
   */
-  readonly request?: DashboardWidgetGeomapDefinitionRequest[] | cdktf.IResolvable;
+  readonly request?: DashboardWidgetGeomapDefinitionRequest[] | cdktn.IResolvable;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#style Dashboard#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#style Dashboard#style}
   */
   readonly style?: DashboardWidgetGeomapDefinitionStyle;
   /**
   * view block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#view Dashboard#view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#view Dashboard#view}
   */
   readonly view: DashboardWidgetGeomapDefinitionView;
 }
 
 export function dashboardWidgetGeomapDefinitionToTerraform(struct?: DashboardWidgetGeomapDefinitionOutputReference | DashboardWidgetGeomapDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(dashboardWidgetGeomapDefinitionCustomLinkToTerraform, true)(struct!.customLink),
-    request: cdktf.listMapper(dashboardWidgetGeomapDefinitionRequestToTerraform, true)(struct!.request),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    custom_link: cdktn.listMapper(dashboardWidgetGeomapDefinitionCustomLinkToTerraform, true)(struct!.customLink),
+    request: cdktn.listMapper(dashboardWidgetGeomapDefinitionRequestToTerraform, true)(struct!.request),
     style: dashboardWidgetGeomapDefinitionStyleToTerraform(struct!.style),
     view: dashboardWidgetGeomapDefinitionViewToTerraform(struct!.view),
   }
@@ -24592,43 +24879,49 @@ export function dashboardWidgetGeomapDefinitionToTerraform(struct?: DashboardWid
 
 
 export function dashboardWidgetGeomapDefinitionToHclTerraform(struct?: DashboardWidgetGeomapDefinitionOutputReference | DashboardWidgetGeomapDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_link: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionCustomLinkList",
     },
     request: {
-      value: cdktf.listMapperHcl(dashboardWidgetGeomapDefinitionRequestToHclTerraform, true)(struct!.request),
+      value: cdktn.listMapperHcl(dashboardWidgetGeomapDefinitionRequestToHclTerraform, true)(struct!.request),
       isBlock: true,
       type: "list",
       storageClassType: "DashboardWidgetGeomapDefinitionRequestList",
@@ -24651,20 +24944,24 @@ export function dashboardWidgetGeomapDefinitionToHclTerraform(struct?: Dashboard
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGeomapDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGeomapDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): DashboardWidgetGeomapDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
+    }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
       internalValueResult.liveSpan = this._liveSpan;
@@ -24703,6 +25000,7 @@ export class DashboardWidgetGeomapDefinitionOutputReference extends cdktf.Comple
   public set internalValue(value: DashboardWidgetGeomapDefinition | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._title = undefined;
       this._titleAlign = undefined;
@@ -24714,6 +25012,7 @@ export class DashboardWidgetGeomapDefinitionOutputReference extends cdktf.Comple
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._title = value.title;
       this._titleAlign = value.titleAlign;
@@ -24723,6 +25022,22 @@ export class DashboardWidgetGeomapDefinitionOutputReference extends cdktf.Comple
       this._style.internalValue = value.style;
       this._view.internalValue = value.view;
     }
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -24794,7 +25109,7 @@ export class DashboardWidgetGeomapDefinitionOutputReference extends cdktf.Comple
   public get customLink() {
     return this._customLink;
   }
-  public putCustomLink(value: DashboardWidgetGeomapDefinitionCustomLink[] | cdktf.IResolvable) {
+  public putCustomLink(value: DashboardWidgetGeomapDefinitionCustomLink[] | cdktn.IResolvable) {
     this._customLink.internalValue = value;
   }
   public resetCustomLink() {
@@ -24810,7 +25125,7 @@ export class DashboardWidgetGeomapDefinitionOutputReference extends cdktf.Comple
   public get request() {
     return this._request;
   }
-  public putRequest(value: DashboardWidgetGeomapDefinitionRequest[] | cdktf.IResolvable) {
+  public putRequest(value: DashboardWidgetGeomapDefinitionRequest[] | cdktn.IResolvable) {
     this._request.internalValue = value;
   }
   public resetRequest() {
@@ -24854,95 +25169,108 @@ export interface DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition {
   /**
   * The ID of the monitor used by the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
   */
   readonly alertId: string;
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#hide_incomplete_cost_data Dashboard#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#live_span Dashboard#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#live_span Dashboard#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * Type of visualization to use when displaying the widget. Valid values are `timeseries`, `toplist`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#viz_type Dashboard#viz_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#viz_type Dashboard#viz_type}
   */
   readonly vizType: string;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_id: cdktf.stringToTerraform(struct!.alertId),
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    viz_type: cdktf.stringToTerraform(struct!.vizType),
+    alert_id: cdktn.stringToTerraform(struct!.alertId),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    viz_type: cdktn.stringToTerraform(struct!.vizType),
   }
 }
 
 
 export function dashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionToHclTerraform(struct?: DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetAlertGraphDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_id: {
-      value: cdktf.stringToHclTerraform(struct!.alertId),
+      value: cdktn.stringToHclTerraform(struct!.alertId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     viz_type: {
-      value: cdktf.stringToHclTerraform(struct!.vizType),
+      value: cdktn.stringToHclTerraform(struct!.vizType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -24953,14 +25281,14 @@ export function dashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -24970,6 +25298,10 @@ export class DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputRefer
     if (this._alertId !== undefined) {
       hasAnyValues = true;
       internalValueResult.alertId = this._alertId;
+    }
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
     }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
@@ -24998,6 +25330,7 @@ export class DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputRefer
     if (value === undefined) {
       this.isEmptyObject = false;
       this._alertId = undefined;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._title = undefined;
       this._titleAlign = undefined;
@@ -25007,6 +25340,7 @@ export class DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputRefer
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._alertId = value.alertId;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._title = value.title;
       this._titleAlign = value.titleAlign;
@@ -25026,6 +25360,22 @@ export class DashboardWidgetGroupDefinitionWidgetAlertGraphDefinitionOutputRefer
   // Temporarily expose input value. Use with caution.
   public get alertIdInput() {
     return this._alertId;
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -25109,108 +25459,108 @@ export interface DashboardWidgetGroupDefinitionWidgetAlertValueDefinition {
   /**
   * The ID of the monitor used by the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#alert_id Dashboard#alert_id}
   */
   readonly alertId: string;
   /**
   * The precision to use when displaying the value. Use `*` for maximum precision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#precision Dashboard#precision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#precision Dashboard#precision}
   */
   readonly precision?: number;
   /**
   * The alignment of the text in the widget. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#text_align Dashboard#text_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#text_align Dashboard#text_align}
   */
   readonly textAlign?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_align Dashboard#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_align Dashboard#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title_size Dashboard#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title_size Dashboard#title_size}
   */
   readonly titleSize?: string;
   /**
   * The unit for the value displayed in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#unit Dashboard#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#unit Dashboard#unit}
   */
   readonly unit?: string;
 }
 
 export function dashboardWidgetGroupDefinitionWidgetAlertValueDefinitionToTerraform(struct?: DashboardWidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetAlertValueDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alert_id: cdktf.stringToTerraform(struct!.alertId),
-    precision: cdktf.numberToTerraform(struct!.precision),
-    text_align: cdktf.stringToTerraform(struct!.textAlign),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    unit: cdktf.stringToTerraform(struct!.unit),
+    alert_id: cdktn.stringToTerraform(struct!.alertId),
+    precision: cdktn.numberToTerraform(struct!.precision),
+    text_align: cdktn.stringToTerraform(struct!.textAlign),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    unit: cdktn.stringToTerraform(struct!.unit),
   }
 }
 
 
 export function dashboardWidgetGroupDefinitionWidgetAlertValueDefinitionToHclTerraform(struct?: DashboardWidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference | DashboardWidgetGroupDefinitionWidgetAlertValueDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alert_id: {
-      value: cdktf.stringToHclTerraform(struct!.alertId),
+      value: cdktn.stringToHclTerraform(struct!.alertId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     precision: {
-      value: cdktf.numberToHclTerraform(struct!.precision),
+      value: cdktn.numberToHclTerraform(struct!.precision),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     text_align: {
-      value: cdktf.stringToHclTerraform(struct!.textAlign),
+      value: cdktn.stringToHclTerraform(struct!.textAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit: {
-      value: cdktf.stringToHclTerraform(struct!.unit),
+      value: cdktn.stringToHclTerraform(struct!.unit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -25221,14 +25571,14 @@ export function dashboardWidgetGroupDefinitionWidgetAlertValueDefinitionToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardWidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference extends cdktf.ComplexObject {
+export class DashboardWidgetGroupDefinitionWidgetAlertValueDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 

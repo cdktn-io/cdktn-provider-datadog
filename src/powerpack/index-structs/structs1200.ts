@@ -1,9 +1,9 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 import { PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery,
 powerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryToTerraform,
 powerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryToHclTerraform,
@@ -32,64 +32,64 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXLogQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXLogQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,13 +101,13 @@ export function powerpackWidgetScatterplotDefinitionRequestXLogQueryToHclTerrafo
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXLogQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiComputeList",
@@ -118,14 +118,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXLogQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -224,7 +224,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestXLogQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -240,7 +240,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXLogQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestXLogQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -255,69 +255,69 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXProcessQuery {
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_by Powerpack#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_by Powerpack#search_by}
   */
   readonly searchBy?: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXProcessQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    search_by: cdktf.stringToTerraform(struct!.searchBy),
+    filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    search_by: cdktn.stringToTerraform(struct!.searchBy),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXProcessQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filterBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_by: {
-      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      value: cdktn.stringToHclTerraform(struct!.searchBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -328,14 +328,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXProcessQueryToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -443,56 +443,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -503,14 +503,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -596,56 +596,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -656,14 +656,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -746,50 +746,50 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -806,9 +806,9 @@ export function powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -816,11 +816,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -841,7 +841,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -849,7 +849,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -911,15 +911,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByOutputRe
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -934,56 +934,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -994,9 +994,9 @@ export function powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1004,11 +1004,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1029,7 +1029,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1037,7 +1037,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1096,15 +1096,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeOut
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1119,64 +1119,64 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXRumQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXRumQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1188,13 +1188,13 @@ export function powerpackWidgetScatterplotDefinitionRequestXRumQueryToHclTerrafo
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXRumQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiComputeList",
@@ -1205,14 +1205,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXRumQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1311,7 +1311,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -1327,7 +1327,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXRumQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestXRumQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -1342,56 +1342,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1402,14 +1402,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1495,56 +1495,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupB
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1555,14 +1555,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1645,50 +1645,50 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupB
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1705,9 +1705,9 @@ export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1715,11 +1715,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1740,7 +1740,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1748,7 +1748,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOut
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1810,15 +1810,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByOut
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1833,56 +1833,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiC
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1893,9 +1893,9 @@ export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1903,11 +1903,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1928,7 +1928,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1936,7 +1936,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompu
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1995,15 +1995,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompu
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2018,64 +2018,64 @@ export interface PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2087,13 +2087,13 @@ export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryToHclTe
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiComputeList",
@@ -2104,14 +2104,14 @@ export function powerpackWidgetScatterplotDefinitionRequestXSecurityQueryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2210,7 +2210,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -2226,7 +2226,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryOutputRefe
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestXSecurityQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -2241,55 +2241,55 @@ export interface PowerpackWidgetScatterplotDefinitionRequestX {
   /**
   * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#q Powerpack#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#q Powerpack#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
   */
   readonly apmQuery?: PowerpackWidgetScatterplotDefinitionRequestXApmQuery;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#log_query Powerpack#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#log_query Powerpack#log_query}
   */
   readonly logQuery?: PowerpackWidgetScatterplotDefinitionRequestXLogQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetScatterplotDefinitionRequestXProcessQuery;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
   */
   readonly rumQuery?: PowerpackWidgetScatterplotDefinitionRequestXRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#security_query Powerpack#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#security_query Powerpack#security_query}
   */
   readonly securityQuery?: PowerpackWidgetScatterplotDefinitionRequestXSecurityQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestXToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestX | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestX | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    q: cdktf.stringToTerraform(struct!.q),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    q: cdktn.stringToTerraform(struct!.q),
     apm_query: powerpackWidgetScatterplotDefinitionRequestXApmQueryToTerraform(struct!.apmQuery),
     log_query: powerpackWidgetScatterplotDefinitionRequestXLogQueryToTerraform(struct!.logQuery),
     process_query: powerpackWidgetScatterplotDefinitionRequestXProcessQueryToTerraform(struct!.processQuery),
@@ -2299,20 +2299,20 @@ export function powerpackWidgetScatterplotDefinitionRequestXToTerraform(struct?:
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestXToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestX | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestXToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestX | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     q: {
-      value: cdktf.stringToHclTerraform(struct!.q),
+      value: cdktn.stringToHclTerraform(struct!.q),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2353,9 +2353,9 @@ export function powerpackWidgetScatterplotDefinitionRequestXToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestXOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2363,11 +2363,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestXOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestX | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestX | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2404,7 +2404,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestX | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestX | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2416,7 +2416,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestXOutputReference extends
       this._rumQuery.internalValue = undefined;
       this._securityQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2546,15 +2546,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestXOutputReference extends
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestXList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestXList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestX[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2569,56 +2569,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2629,14 +2629,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2722,56 +2722,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2782,14 +2782,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2872,50 +2872,50 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2932,9 +2932,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2942,11 +2942,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2967,7 +2967,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2975,7 +2975,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3037,15 +3037,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByOutputRe
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3060,56 +3060,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3120,9 +3120,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3130,11 +3130,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3155,7 +3155,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3163,7 +3163,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3222,15 +3222,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeOut
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3245,64 +3245,64 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYApmQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYApmQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYApmQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3314,13 +3314,13 @@ export function powerpackWidgetScatterplotDefinitionRequestYApmQueryToHclTerrafo
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYApmQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiComputeList",
@@ -3331,14 +3331,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYApmQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3437,7 +3437,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -3453,7 +3453,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYApmQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYApmQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -3468,56 +3468,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3528,14 +3528,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3621,56 +3621,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3681,14 +3681,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3771,50 +3771,50 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3831,9 +3831,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3841,11 +3841,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3866,7 +3866,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3874,7 +3874,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3936,15 +3936,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByOutputRe
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3959,56 +3959,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4019,9 +4019,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4029,11 +4029,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4054,7 +4054,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4062,7 +4062,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4121,15 +4121,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeOut
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4144,64 +4144,64 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYLogQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYLogQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4213,13 +4213,13 @@ export function powerpackWidgetScatterplotDefinitionRequestYLogQueryToHclTerrafo
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYLogQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiComputeList",
@@ -4230,14 +4230,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYLogQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4336,7 +4336,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -4352,7 +4352,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYLogQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYLogQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -4367,69 +4367,69 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYProcessQuery {
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_by Powerpack#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_by Powerpack#search_by}
   */
   readonly searchBy?: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYProcessQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    search_by: cdktf.stringToTerraform(struct!.searchBy),
+    filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    search_by: cdktn.stringToTerraform(struct!.searchBy),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYProcessQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filterBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_by: {
-      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      value: cdktn.stringToHclTerraform(struct!.searchBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4440,14 +4440,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYProcessQueryToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4555,56 +4555,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4615,14 +4615,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4708,56 +4708,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4768,14 +4768,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4858,50 +4858,50 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4918,9 +4918,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4928,11 +4928,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4953,7 +4953,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4961,7 +4961,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5023,15 +5023,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByOutputRe
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5046,56 +5046,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5106,9 +5106,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5116,11 +5116,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5141,7 +5141,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5149,7 +5149,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5208,15 +5208,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeOut
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5231,64 +5231,64 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYRumQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYRumQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5300,13 +5300,13 @@ export function powerpackWidgetScatterplotDefinitionRequestYRumQueryToHclTerrafo
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYRumQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiComputeList",
@@ -5317,14 +5317,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYRumQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5423,7 +5423,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -5439,7 +5439,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYRumQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYRumQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -5454,56 +5454,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5514,14 +5514,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5607,56 +5607,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupB
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5667,14 +5667,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -5757,50 +5757,50 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupB
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -5817,9 +5817,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5827,11 +5827,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5852,7 +5852,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5860,7 +5860,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOut
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5922,15 +5922,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByOut
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5945,56 +5945,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiC
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -6005,9 +6005,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6015,11 +6015,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6040,7 +6040,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6048,7 +6048,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompu
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6107,15 +6107,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompu
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6130,64 +6130,64 @@ export interface PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference | PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6199,13 +6199,13 @@ export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryToHclTe
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiComputeList",
@@ -6216,14 +6216,14 @@ export function powerpackWidgetScatterplotDefinitionRequestYSecurityQueryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6322,7 +6322,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputRefe
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -6338,7 +6338,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryOutputRefe
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetScatterplotDefinitionRequestYSecurityQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -6353,55 +6353,55 @@ export interface PowerpackWidgetScatterplotDefinitionRequestY {
   /**
   * Aggregator used for the request. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#q Powerpack#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#q Powerpack#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
   */
   readonly apmQuery?: PowerpackWidgetScatterplotDefinitionRequestYApmQuery;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#log_query Powerpack#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#log_query Powerpack#log_query}
   */
   readonly logQuery?: PowerpackWidgetScatterplotDefinitionRequestYLogQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetScatterplotDefinitionRequestYProcessQuery;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
   */
   readonly rumQuery?: PowerpackWidgetScatterplotDefinitionRequestYRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#security_query Powerpack#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#security_query Powerpack#security_query}
   */
   readonly securityQuery?: PowerpackWidgetScatterplotDefinitionRequestYSecurityQuery;
 }
 
-export function powerpackWidgetScatterplotDefinitionRequestYToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestY | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestY | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    q: cdktf.stringToTerraform(struct!.q),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    q: cdktn.stringToTerraform(struct!.q),
     apm_query: powerpackWidgetScatterplotDefinitionRequestYApmQueryToTerraform(struct!.apmQuery),
     log_query: powerpackWidgetScatterplotDefinitionRequestYLogQueryToTerraform(struct!.logQuery),
     process_query: powerpackWidgetScatterplotDefinitionRequestYProcessQueryToTerraform(struct!.processQuery),
@@ -6411,20 +6411,20 @@ export function powerpackWidgetScatterplotDefinitionRequestYToTerraform(struct?:
 }
 
 
-export function powerpackWidgetScatterplotDefinitionRequestYToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestY | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetScatterplotDefinitionRequestYToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestY | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     q: {
-      value: cdktf.stringToHclTerraform(struct!.q),
+      value: cdktn.stringToHclTerraform(struct!.q),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6465,9 +6465,9 @@ export function powerpackWidgetScatterplotDefinitionRequestYToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestYOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6475,11 +6475,11 @@ export class PowerpackWidgetScatterplotDefinitionRequestYOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestY | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetScatterplotDefinitionRequestY | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6516,7 +6516,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestY | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetScatterplotDefinitionRequestY | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6528,7 +6528,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestYOutputReference extends
       this._rumQuery.internalValue = undefined;
       this._securityQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6658,15 +6658,15 @@ export class PowerpackWidgetScatterplotDefinitionRequestYOutputReference extends
   }
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestYList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable
+export class PowerpackWidgetScatterplotDefinitionRequestYList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetScatterplotDefinitionRequestY[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6681,56 +6681,56 @@ export interface PowerpackWidgetScatterplotDefinitionRequest {
   /**
   * scatterplot_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#scatterplot_table Powerpack#scatterplot_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#scatterplot_table Powerpack#scatterplot_table}
   */
-  readonly scatterplotTable?: PowerpackWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable;
+  readonly scatterplotTable?: PowerpackWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktn.IResolvable;
   /**
   * x block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#x Powerpack#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#x Powerpack#x}
   */
-  readonly x?: PowerpackWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable;
+  readonly x?: PowerpackWidgetScatterplotDefinitionRequestX[] | cdktn.IResolvable;
   /**
   * y block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#y Powerpack#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#y Powerpack#y}
   */
-  readonly y?: PowerpackWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable;
+  readonly y?: PowerpackWidgetScatterplotDefinitionRequestY[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetScatterplotDefinitionRequestToTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestOutputReference | PowerpackWidgetScatterplotDefinitionRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    scatterplot_table: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestScatterplotTableToTerraform, true)(struct!.scatterplotTable),
-    x: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestXToTerraform, true)(struct!.x),
-    y: cdktf.listMapper(powerpackWidgetScatterplotDefinitionRequestYToTerraform, true)(struct!.y),
+    scatterplot_table: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestScatterplotTableToTerraform, true)(struct!.scatterplotTable),
+    x: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestXToTerraform, true)(struct!.x),
+    y: cdktn.listMapper(powerpackWidgetScatterplotDefinitionRequestYToTerraform, true)(struct!.y),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionRequestToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionRequestOutputReference | PowerpackWidgetScatterplotDefinitionRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     scatterplot_table: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestScatterplotTableToHclTerraform, true)(struct!.scatterplotTable),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestScatterplotTableToHclTerraform, true)(struct!.scatterplotTable),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestScatterplotTableList",
     },
     x: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXToHclTerraform, true)(struct!.x),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestXToHclTerraform, true)(struct!.x),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestXList",
     },
     y: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYToHclTerraform, true)(struct!.y),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionRequestYToHclTerraform, true)(struct!.y),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionRequestYList",
@@ -6741,14 +6741,14 @@ export function powerpackWidgetScatterplotDefinitionRequestToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionRequestOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6790,7 +6790,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestOutputReference extends 
   public get scatterplotTable() {
     return this._scatterplotTable;
   }
-  public putScatterplotTable(value: PowerpackWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktf.IResolvable) {
+  public putScatterplotTable(value: PowerpackWidgetScatterplotDefinitionRequestScatterplotTable[] | cdktn.IResolvable) {
     this._scatterplotTable.internalValue = value;
   }
   public resetScatterplotTable() {
@@ -6806,7 +6806,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestOutputReference extends 
   public get x() {
     return this._x;
   }
-  public putX(value: PowerpackWidgetScatterplotDefinitionRequestX[] | cdktf.IResolvable) {
+  public putX(value: PowerpackWidgetScatterplotDefinitionRequestX[] | cdktn.IResolvable) {
     this._x.internalValue = value;
   }
   public resetX() {
@@ -6822,7 +6822,7 @@ export class PowerpackWidgetScatterplotDefinitionRequestOutputReference extends 
   public get y() {
     return this._y;
   }
-  public putY(value: PowerpackWidgetScatterplotDefinitionRequestY[] | cdktf.IResolvable) {
+  public putY(value: PowerpackWidgetScatterplotDefinitionRequestY[] | cdktn.IResolvable) {
     this._y.internalValue = value;
   }
   public resetY() {
@@ -6837,82 +6837,82 @@ export interface PowerpackWidgetScatterplotDefinitionXaxis {
   /**
   * Always include zero or fit the axis to the data range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
   */
-  readonly includeZero?: boolean | cdktf.IResolvable;
+  readonly includeZero?: boolean | cdktn.IResolvable;
   /**
   * The label of the axis to display on the graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#max Powerpack#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#max Powerpack#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#min Powerpack#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#min Powerpack#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#scale Powerpack#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#scale Powerpack#scale}
   */
   readonly scale?: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionXaxisToTerraform(struct?: PowerpackWidgetScatterplotDefinitionXaxisOutputReference | PowerpackWidgetScatterplotDefinitionXaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_zero: cdktf.booleanToTerraform(struct!.includeZero),
-    label: cdktf.stringToTerraform(struct!.label),
-    max: cdktf.stringToTerraform(struct!.max),
-    min: cdktf.stringToTerraform(struct!.min),
-    scale: cdktf.stringToTerraform(struct!.scale),
+    include_zero: cdktn.booleanToTerraform(struct!.includeZero),
+    label: cdktn.stringToTerraform(struct!.label),
+    max: cdktn.stringToTerraform(struct!.max),
+    min: cdktn.stringToTerraform(struct!.min),
+    scale: cdktn.stringToTerraform(struct!.scale),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionXaxisToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionXaxisOutputReference | PowerpackWidgetScatterplotDefinitionXaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_zero: {
-      value: cdktf.booleanToHclTerraform(struct!.includeZero),
+      value: cdktn.booleanToHclTerraform(struct!.includeZero),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max: {
-      value: cdktf.stringToHclTerraform(struct!.max),
+      value: cdktn.stringToHclTerraform(struct!.max),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min: {
-      value: cdktf.stringToHclTerraform(struct!.min),
+      value: cdktn.stringToHclTerraform(struct!.min),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scale: {
-      value: cdktf.stringToHclTerraform(struct!.scale),
+      value: cdktn.stringToHclTerraform(struct!.scale),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6923,14 +6923,14 @@ export function powerpackWidgetScatterplotDefinitionXaxisToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionXaxisOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionXaxisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -6980,11 +6980,11 @@ export class PowerpackWidgetScatterplotDefinitionXaxisOutputReference extends cd
   }
 
   // include_zero - computed: false, optional: true, required: false
-  private _includeZero?: boolean | cdktf.IResolvable; 
+  private _includeZero?: boolean | cdktn.IResolvable; 
   public get includeZero() {
     return this.getBooleanAttribute('include_zero');
   }
-  public set includeZero(value: boolean | cdktf.IResolvable) {
+  public set includeZero(value: boolean | cdktn.IResolvable) {
     this._includeZero = value;
   }
   public resetIncludeZero() {
@@ -7063,82 +7063,82 @@ export interface PowerpackWidgetScatterplotDefinitionYaxis {
   /**
   * Always include zero or fit the axis to the data range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
   */
-  readonly includeZero?: boolean | cdktf.IResolvable;
+  readonly includeZero?: boolean | cdktn.IResolvable;
   /**
   * The label of the axis to display on the graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#max Powerpack#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#max Powerpack#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#min Powerpack#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#min Powerpack#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#scale Powerpack#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#scale Powerpack#scale}
   */
   readonly scale?: string;
 }
 
 export function powerpackWidgetScatterplotDefinitionYaxisToTerraform(struct?: PowerpackWidgetScatterplotDefinitionYaxisOutputReference | PowerpackWidgetScatterplotDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_zero: cdktf.booleanToTerraform(struct!.includeZero),
-    label: cdktf.stringToTerraform(struct!.label),
-    max: cdktf.stringToTerraform(struct!.max),
-    min: cdktf.stringToTerraform(struct!.min),
-    scale: cdktf.stringToTerraform(struct!.scale),
+    include_zero: cdktn.booleanToTerraform(struct!.includeZero),
+    label: cdktn.stringToTerraform(struct!.label),
+    max: cdktn.stringToTerraform(struct!.max),
+    min: cdktn.stringToTerraform(struct!.min),
+    scale: cdktn.stringToTerraform(struct!.scale),
   }
 }
 
 
 export function powerpackWidgetScatterplotDefinitionYaxisToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionYaxisOutputReference | PowerpackWidgetScatterplotDefinitionYaxis): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_zero: {
-      value: cdktf.booleanToHclTerraform(struct!.includeZero),
+      value: cdktn.booleanToHclTerraform(struct!.includeZero),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max: {
-      value: cdktf.stringToHclTerraform(struct!.max),
+      value: cdktn.stringToHclTerraform(struct!.max),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min: {
-      value: cdktf.stringToHclTerraform(struct!.min),
+      value: cdktn.stringToHclTerraform(struct!.min),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scale: {
-      value: cdktf.stringToHclTerraform(struct!.scale),
+      value: cdktn.stringToHclTerraform(struct!.scale),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7149,14 +7149,14 @@ export function powerpackWidgetScatterplotDefinitionYaxisToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionYaxisOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionYaxisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7206,11 +7206,11 @@ export class PowerpackWidgetScatterplotDefinitionYaxisOutputReference extends cd
   }
 
   // include_zero - computed: false, optional: true, required: false
-  private _includeZero?: boolean | cdktf.IResolvable; 
+  private _includeZero?: boolean | cdktn.IResolvable; 
   public get includeZero() {
     return this.getBooleanAttribute('include_zero');
   }
-  public set includeZero(value: boolean | cdktf.IResolvable) {
+  public set includeZero(value: boolean | cdktn.IResolvable) {
     this._includeZero = value;
   }
   public resetIncludeZero() {
@@ -7289,71 +7289,78 @@ export interface PowerpackWidgetScatterplotDefinition {
   /**
   * List of groups used for colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#color_by_groups Powerpack#color_by_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#color_by_groups Powerpack#color_by_groups}
   */
   readonly colorByGroups?: string[];
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#hide_incomplete_cost_data Powerpack#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#live_span Powerpack#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#live_span Powerpack#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title Powerpack#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title Powerpack#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_align Powerpack#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_align Powerpack#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_size Powerpack#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_size Powerpack#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
   */
-  readonly customLink?: PowerpackWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable;
+  readonly customLink?: PowerpackWidgetScatterplotDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#request Powerpack#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#request Powerpack#request}
   */
   readonly request?: PowerpackWidgetScatterplotDefinitionRequest;
   /**
   * xaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#xaxis Powerpack#xaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#xaxis Powerpack#xaxis}
   */
   readonly xaxis?: PowerpackWidgetScatterplotDefinitionXaxis;
   /**
   * yaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#yaxis Powerpack#yaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#yaxis Powerpack#yaxis}
   */
   readonly yaxis?: PowerpackWidgetScatterplotDefinitionYaxis;
 }
 
 export function powerpackWidgetScatterplotDefinitionToTerraform(struct?: PowerpackWidgetScatterplotDefinitionOutputReference | PowerpackWidgetScatterplotDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    color_by_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.colorByGroups),
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(powerpackWidgetScatterplotDefinitionCustomLinkToTerraform, true)(struct!.customLink),
+    color_by_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.colorByGroups),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    custom_link: cdktn.listMapper(powerpackWidgetScatterplotDefinitionCustomLinkToTerraform, true)(struct!.customLink),
     request: powerpackWidgetScatterplotDefinitionRequestToTerraform(struct!.request),
     xaxis: powerpackWidgetScatterplotDefinitionXaxisToTerraform(struct!.xaxis),
     yaxis: powerpackWidgetScatterplotDefinitionYaxisToTerraform(struct!.yaxis),
@@ -7362,43 +7369,49 @@ export function powerpackWidgetScatterplotDefinitionToTerraform(struct?: Powerpa
 
 
 export function powerpackWidgetScatterplotDefinitionToHclTerraform(struct?: PowerpackWidgetScatterplotDefinitionOutputReference | PowerpackWidgetScatterplotDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     color_by_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.colorByGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.colorByGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_link: {
-      value: cdktf.listMapperHcl(powerpackWidgetScatterplotDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      value: cdktn.listMapperHcl(powerpackWidgetScatterplotDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetScatterplotDefinitionCustomLinkList",
@@ -7427,14 +7440,14 @@ export function powerpackWidgetScatterplotDefinitionToHclTerraform(struct?: Powe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetScatterplotDefinitionOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetScatterplotDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7444,6 +7457,10 @@ export class PowerpackWidgetScatterplotDefinitionOutputReference extends cdktf.C
     if (this._colorByGroups !== undefined) {
       hasAnyValues = true;
       internalValueResult.colorByGroups = this._colorByGroups;
+    }
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
     }
     if (this._liveSpan !== undefined) {
       hasAnyValues = true;
@@ -7484,6 +7501,7 @@ export class PowerpackWidgetScatterplotDefinitionOutputReference extends cdktf.C
     if (value === undefined) {
       this.isEmptyObject = false;
       this._colorByGroups = undefined;
+      this._hideIncompleteCostData = undefined;
       this._liveSpan = undefined;
       this._title = undefined;
       this._titleAlign = undefined;
@@ -7496,6 +7514,7 @@ export class PowerpackWidgetScatterplotDefinitionOutputReference extends cdktf.C
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._colorByGroups = value.colorByGroups;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._liveSpan = value.liveSpan;
       this._title = value.title;
       this._titleAlign = value.titleAlign;
@@ -7521,6 +7540,22 @@ export class PowerpackWidgetScatterplotDefinitionOutputReference extends cdktf.C
   // Temporarily expose input value. Use with caution.
   public get colorByGroupsInput() {
     return this._colorByGroups;
+  }
+
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
   }
 
   // live_span - computed: false, optional: true, required: false
@@ -7592,7 +7627,7 @@ export class PowerpackWidgetScatterplotDefinitionOutputReference extends cdktf.C
   public get customLink() {
     return this._customLink;
   }
-  public putCustomLink(value: PowerpackWidgetScatterplotDefinitionCustomLink[] | cdktf.IResolvable) {
+  public putCustomLink(value: PowerpackWidgetScatterplotDefinitionCustomLink[] | cdktn.IResolvable) {
     this._customLink.internalValue = value;
   }
   public resetCustomLink() {
@@ -7655,147 +7690,147 @@ export interface PowerpackWidgetServiceLevelObjectiveDefinition {
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The global time target of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#global_time_target Powerpack#global_time_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#global_time_target Powerpack#global_time_target}
   */
   readonly globalTimeTarget?: string;
   /**
   * Whether to show the error budget or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#show_error_budget Powerpack#show_error_budget}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#show_error_budget Powerpack#show_error_budget}
   */
-  readonly showErrorBudget?: boolean | cdktf.IResolvable;
+  readonly showErrorBudget?: boolean | cdktn.IResolvable;
   /**
   * The ID of the service level objective used by the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#slo_id Powerpack#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#slo_id Powerpack#slo_id}
   */
   readonly sloId: string;
   /**
   * A list of time windows to display in the widget. Valid values are `7d`, `30d`, `90d`, `week_to_date`, `previous_week`, `month_to_date`, `previous_month`, `global_time`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#time_windows Powerpack#time_windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#time_windows Powerpack#time_windows}
   */
   readonly timeWindows: string[];
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title Powerpack#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title Powerpack#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_align Powerpack#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_align Powerpack#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_size Powerpack#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_size Powerpack#title_size}
   */
   readonly titleSize?: string;
   /**
   * The view mode for the widget. Valid values are `overall`, `component`, `both`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#view_mode Powerpack#view_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#view_mode Powerpack#view_mode}
   */
   readonly viewMode: string;
   /**
   * The type of view to use when displaying the widget. Only `detail` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#view_type Powerpack#view_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#view_type Powerpack#view_type}
   */
   readonly viewType: string;
 }
 
 export function powerpackWidgetServiceLevelObjectiveDefinitionToTerraform(struct?: PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference | PowerpackWidgetServiceLevelObjectiveDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_query_filters: cdktf.stringToTerraform(struct!.additionalQueryFilters),
-    global_time_target: cdktf.stringToTerraform(struct!.globalTimeTarget),
-    show_error_budget: cdktf.booleanToTerraform(struct!.showErrorBudget),
-    slo_id: cdktf.stringToTerraform(struct!.sloId),
-    time_windows: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.timeWindows),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    view_mode: cdktf.stringToTerraform(struct!.viewMode),
-    view_type: cdktf.stringToTerraform(struct!.viewType),
+    additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
+    global_time_target: cdktn.stringToTerraform(struct!.globalTimeTarget),
+    show_error_budget: cdktn.booleanToTerraform(struct!.showErrorBudget),
+    slo_id: cdktn.stringToTerraform(struct!.sloId),
+    time_windows: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.timeWindows),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    view_mode: cdktn.stringToTerraform(struct!.viewMode),
+    view_type: cdktn.stringToTerraform(struct!.viewType),
   }
 }
 
 
 export function powerpackWidgetServiceLevelObjectiveDefinitionToHclTerraform(struct?: PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference | PowerpackWidgetServiceLevelObjectiveDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_query_filters: {
-      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      value: cdktn.stringToHclTerraform(struct!.additionalQueryFilters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     global_time_target: {
-      value: cdktf.stringToHclTerraform(struct!.globalTimeTarget),
+      value: cdktn.stringToHclTerraform(struct!.globalTimeTarget),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     show_error_budget: {
-      value: cdktf.booleanToHclTerraform(struct!.showErrorBudget),
+      value: cdktn.booleanToHclTerraform(struct!.showErrorBudget),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     slo_id: {
-      value: cdktf.stringToHclTerraform(struct!.sloId),
+      value: cdktn.stringToHclTerraform(struct!.sloId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_windows: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.timeWindows),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.timeWindows),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     view_mode: {
-      value: cdktf.stringToHclTerraform(struct!.viewMode),
+      value: cdktn.stringToHclTerraform(struct!.viewMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     view_type: {
-      value: cdktf.stringToHclTerraform(struct!.viewType),
+      value: cdktn.stringToHclTerraform(struct!.viewType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7806,14 +7841,14 @@ export function powerpackWidgetServiceLevelObjectiveDefinitionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -7925,11 +7960,11 @@ export class PowerpackWidgetServiceLevelObjectiveDefinitionOutputReference exten
   }
 
   // show_error_budget - computed: false, optional: true, required: false
-  private _showErrorBudget?: boolean | cdktf.IResolvable; 
+  private _showErrorBudget?: boolean | cdktn.IResolvable; 
   public get showErrorBudget() {
     return this.getBooleanAttribute('show_error_budget');
   }
-  public set showErrorBudget(value: boolean | cdktf.IResolvable) {
+  public set showErrorBudget(value: boolean | cdktn.IResolvable) {
     this._showErrorBudget = value;
   }
   public resetShowErrorBudget() {
@@ -8044,69 +8079,69 @@ export interface PowerpackWidgetServicemapDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
   */
-  readonly isHidden?: boolean | cdktf.IResolvable;
+  readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#link Powerpack#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#link Powerpack#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#override_label Powerpack#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#override_label Powerpack#override_label}
   */
   readonly overrideLabel?: string;
 }
 
-export function powerpackWidgetServicemapDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetServicemapDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetServicemapDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetServicemapDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
-    label: cdktf.stringToTerraform(struct!.label),
-    link: cdktf.stringToTerraform(struct!.link),
-    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
+    is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
+    label: cdktn.stringToTerraform(struct!.label),
+    link: cdktn.stringToTerraform(struct!.link),
+    override_label: cdktn.stringToTerraform(struct!.overrideLabel),
   }
 }
 
 
-export function powerpackWidgetServicemapDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetServicemapDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetServicemapDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetServicemapDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_hidden: {
-      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      value: cdktn.booleanToHclTerraform(struct!.isHidden),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     link: {
-      value: cdktf.stringToHclTerraform(struct!.link),
+      value: cdktn.stringToHclTerraform(struct!.link),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_label: {
-      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      value: cdktn.stringToHclTerraform(struct!.overrideLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8117,9 +8152,9 @@ export function powerpackWidgetServicemapDefinitionCustomLinkToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetServicemapDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetServicemapDefinitionCustomLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8127,11 +8162,11 @@ export class PowerpackWidgetServicemapDefinitionCustomLinkOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetServicemapDefinitionCustomLink | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetServicemapDefinitionCustomLink | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8156,7 +8191,7 @@ export class PowerpackWidgetServicemapDefinitionCustomLinkOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetServicemapDefinitionCustomLink | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetServicemapDefinitionCustomLink | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8165,7 +8200,7 @@ export class PowerpackWidgetServicemapDefinitionCustomLinkOutputReference extend
       this._link = undefined;
       this._overrideLabel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8180,11 +8215,11 @@ export class PowerpackWidgetServicemapDefinitionCustomLinkOutputReference extend
   }
 
   // is_hidden - computed: false, optional: true, required: false
-  private _isHidden?: boolean | cdktf.IResolvable; 
+  private _isHidden?: boolean | cdktn.IResolvable; 
   public get isHidden() {
     return this.getBooleanAttribute('is_hidden');
   }
-  public set isHidden(value: boolean | cdktf.IResolvable) {
+  public set isHidden(value: boolean | cdktn.IResolvable) {
     this._isHidden = value;
   }
   public resetIsHidden() {
@@ -8244,15 +8279,15 @@ export class PowerpackWidgetServicemapDefinitionCustomLinkOutputReference extend
   }
 }
 
-export class PowerpackWidgetServicemapDefinitionCustomLinkList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable
+export class PowerpackWidgetServicemapDefinitionCustomLinkList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetServicemapDefinitionCustomLink[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8267,95 +8302,95 @@ export interface PowerpackWidgetServicemapDefinition {
   /**
   * Your environment and primary tag (or `*` if enabled for your account).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#filters Powerpack#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#filters Powerpack#filters}
   */
   readonly filters: string[];
   /**
   * The ID of the service to map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title Powerpack#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title Powerpack#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_align Powerpack#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_align Powerpack#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_size Powerpack#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_size Powerpack#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
   */
-  readonly customLink?: PowerpackWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable;
+  readonly customLink?: PowerpackWidgetServicemapDefinitionCustomLink[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetServicemapDefinitionToTerraform(struct?: PowerpackWidgetServicemapDefinitionOutputReference | PowerpackWidgetServicemapDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filters),
-    service: cdktf.stringToTerraform(struct!.service),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(powerpackWidgetServicemapDefinitionCustomLinkToTerraform, true)(struct!.customLink),
+    filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filters),
+    service: cdktn.stringToTerraform(struct!.service),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    custom_link: cdktn.listMapper(powerpackWidgetServicemapDefinitionCustomLinkToTerraform, true)(struct!.customLink),
   }
 }
 
 
 export function powerpackWidgetServicemapDefinitionToHclTerraform(struct?: PowerpackWidgetServicemapDefinitionOutputReference | PowerpackWidgetServicemapDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_link: {
-      value: cdktf.listMapperHcl(powerpackWidgetServicemapDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      value: cdktn.listMapperHcl(powerpackWidgetServicemapDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetServicemapDefinitionCustomLinkList",
@@ -8366,14 +8401,14 @@ export function powerpackWidgetServicemapDefinitionToHclTerraform(struct?: Power
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetServicemapDefinitionOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetServicemapDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8507,7 +8542,7 @@ export class PowerpackWidgetServicemapDefinitionOutputReference extends cdktf.Co
   public get customLink() {
     return this._customLink;
   }
-  public putCustomLink(value: PowerpackWidgetServicemapDefinitionCustomLink[] | cdktf.IResolvable) {
+  public putCustomLink(value: PowerpackWidgetServicemapDefinitionCustomLink[] | cdktn.IResolvable) {
     this._customLink.internalValue = value;
   }
   public resetCustomLink() {
@@ -8522,43 +8557,43 @@ export interface PowerpackWidgetSloListDefinitionRequestQuerySort {
   /**
   * The facet path for the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#column Powerpack#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#column Powerpack#column}
   */
   readonly column: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetSloListDefinitionRequestQuerySortToTerraform(struct?: PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference | PowerpackWidgetSloListDefinitionRequestQuerySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    column: cdktf.stringToTerraform(struct!.column),
-    order: cdktf.stringToTerraform(struct!.order),
+    column: cdktn.stringToTerraform(struct!.column),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSloListDefinitionRequestQuerySortToHclTerraform(struct?: PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference | PowerpackWidgetSloListDefinitionRequestQuerySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     column: {
-      value: cdktf.stringToHclTerraform(struct!.column),
+      value: cdktn.stringToHclTerraform(struct!.column),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8569,14 +8604,14 @@ export function powerpackWidgetSloListDefinitionRequestQuerySortToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSloListDefinitionRequestQuerySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8637,50 +8672,50 @@ export interface PowerpackWidgetSloListDefinitionRequestQuery {
   /**
   * Maximum number of results to display in the table. Defaults to `100`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * Widget query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#query_string Powerpack#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#query_string Powerpack#query_string}
   */
   readonly queryString: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: PowerpackWidgetSloListDefinitionRequestQuerySort;
 }
 
 export function powerpackWidgetSloListDefinitionRequestQueryToTerraform(struct?: PowerpackWidgetSloListDefinitionRequestQueryOutputReference | PowerpackWidgetSloListDefinitionRequestQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limit: cdktf.numberToTerraform(struct!.limit),
-    query_string: cdktf.stringToTerraform(struct!.queryString),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    query_string: cdktn.stringToTerraform(struct!.queryString),
     sort: powerpackWidgetSloListDefinitionRequestQuerySortToTerraform(struct!.sort),
   }
 }
 
 
 export function powerpackWidgetSloListDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetSloListDefinitionRequestQueryOutputReference | PowerpackWidgetSloListDefinitionRequestQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     query_string: {
-      value: cdktf.stringToHclTerraform(struct!.queryString),
+      value: cdktn.stringToHclTerraform(struct!.queryString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8697,14 +8732,14 @@ export function powerpackWidgetSloListDefinitionRequestQueryToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSloListDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSloListDefinitionRequestQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8790,37 +8825,37 @@ export interface PowerpackWidgetSloListDefinitionRequest {
   /**
   * The request type for the SLO List request. Valid values are `slo_list`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#request_type Powerpack#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#request_type Powerpack#request_type}
   */
   readonly requestType: string;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: PowerpackWidgetSloListDefinitionRequestQuery;
 }
 
 export function powerpackWidgetSloListDefinitionRequestToTerraform(struct?: PowerpackWidgetSloListDefinitionRequestOutputReference | PowerpackWidgetSloListDefinitionRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_type: cdktf.stringToTerraform(struct!.requestType),
+    request_type: cdktn.stringToTerraform(struct!.requestType),
     query: powerpackWidgetSloListDefinitionRequestQueryToTerraform(struct!.query),
   }
 }
 
 
 export function powerpackWidgetSloListDefinitionRequestToHclTerraform(struct?: PowerpackWidgetSloListDefinitionRequestOutputReference | PowerpackWidgetSloListDefinitionRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_type: {
-      value: cdktf.stringToHclTerraform(struct!.requestType),
+      value: cdktn.stringToHclTerraform(struct!.requestType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8837,14 +8872,14 @@ export function powerpackWidgetSloListDefinitionRequestToHclTerraform(struct?: P
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSloListDefinitionRequestOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSloListDefinitionRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -8905,63 +8940,63 @@ export interface PowerpackWidgetSloListDefinition {
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title Powerpack#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title Powerpack#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_align Powerpack#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_align Powerpack#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_size Powerpack#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_size Powerpack#title_size}
   */
   readonly titleSize?: string;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#request Powerpack#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#request Powerpack#request}
   */
   readonly request: PowerpackWidgetSloListDefinitionRequest;
 }
 
 export function powerpackWidgetSloListDefinitionToTerraform(struct?: PowerpackWidgetSloListDefinitionOutputReference | PowerpackWidgetSloListDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
     request: powerpackWidgetSloListDefinitionRequestToTerraform(struct!.request),
   }
 }
 
 
 export function powerpackWidgetSloListDefinitionToHclTerraform(struct?: PowerpackWidgetSloListDefinitionOutputReference | PowerpackWidgetSloListDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8978,14 +9013,14 @@ export function powerpackWidgetSloListDefinitionToHclTerraform(struct?: Powerpac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSloListDefinitionOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSloListDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9093,69 +9128,69 @@ export interface PowerpackWidgetSunburstDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
   */
-  readonly isHidden?: boolean | cdktf.IResolvable;
+  readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#link Powerpack#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#link Powerpack#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#override_label Powerpack#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#override_label Powerpack#override_label}
   */
   readonly overrideLabel?: string;
 }
 
-export function powerpackWidgetSunburstDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetSunburstDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetSunburstDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
-    label: cdktf.stringToTerraform(struct!.label),
-    link: cdktf.stringToTerraform(struct!.link),
-    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
+    is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
+    label: cdktn.stringToTerraform(struct!.label),
+    link: cdktn.stringToTerraform(struct!.link),
+    override_label: cdktn.stringToTerraform(struct!.overrideLabel),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_hidden: {
-      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      value: cdktn.booleanToHclTerraform(struct!.isHidden),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     link: {
-      value: cdktf.stringToHclTerraform(struct!.link),
+      value: cdktn.stringToHclTerraform(struct!.link),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_label: {
-      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      value: cdktn.stringToHclTerraform(struct!.overrideLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9166,9 +9201,9 @@ export function powerpackWidgetSunburstDefinitionCustomLinkToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionCustomLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9176,11 +9211,11 @@ export class PowerpackWidgetSunburstDefinitionCustomLinkOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionCustomLink | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionCustomLink | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9205,7 +9240,7 @@ export class PowerpackWidgetSunburstDefinitionCustomLinkOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionCustomLink | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionCustomLink | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9214,7 +9249,7 @@ export class PowerpackWidgetSunburstDefinitionCustomLinkOutputReference extends 
       this._link = undefined;
       this._overrideLabel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9229,11 +9264,11 @@ export class PowerpackWidgetSunburstDefinitionCustomLinkOutputReference extends 
   }
 
   // is_hidden - computed: false, optional: true, required: false
-  private _isHidden?: boolean | cdktf.IResolvable; 
+  private _isHidden?: boolean | cdktn.IResolvable; 
   public get isHidden() {
     return this.getBooleanAttribute('is_hidden');
   }
-  public set isHidden(value: boolean | cdktf.IResolvable) {
+  public set isHidden(value: boolean | cdktn.IResolvable) {
     this._isHidden = value;
   }
   public resetIsHidden() {
@@ -9293,15 +9328,15 @@ export class PowerpackWidgetSunburstDefinitionCustomLinkOutputReference extends 
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionCustomLinkList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionCustomLink[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionCustomLinkList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionCustomLink[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9316,56 +9351,56 @@ export interface PowerpackWidgetSunburstDefinitionLegendInline {
   /**
   * Whether to hide the percentages of the groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#hide_percent Powerpack#hide_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#hide_percent Powerpack#hide_percent}
   */
-  readonly hidePercent?: boolean | cdktf.IResolvable;
+  readonly hidePercent?: boolean | cdktn.IResolvable;
   /**
   * Whether to hide the values of the groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
   */
-  readonly hideValue?: boolean | cdktf.IResolvable;
+  readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * The type of legend (inline or automatic). Valid values are `inline`, `automatic`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#type Powerpack#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#type Powerpack#type}
   */
   readonly type: string;
 }
 
 export function powerpackWidgetSunburstDefinitionLegendInlineToTerraform(struct?: PowerpackWidgetSunburstDefinitionLegendInlineOutputReference | PowerpackWidgetSunburstDefinitionLegendInline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hide_percent: cdktf.booleanToTerraform(struct!.hidePercent),
-    hide_value: cdktf.booleanToTerraform(struct!.hideValue),
-    type: cdktf.stringToTerraform(struct!.type),
+    hide_percent: cdktn.booleanToTerraform(struct!.hidePercent),
+    hide_value: cdktn.booleanToTerraform(struct!.hideValue),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionLegendInlineToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionLegendInlineOutputReference | PowerpackWidgetSunburstDefinitionLegendInline): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hide_percent: {
-      value: cdktf.booleanToHclTerraform(struct!.hidePercent),
+      value: cdktn.booleanToHclTerraform(struct!.hidePercent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hide_value: {
-      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      value: cdktn.booleanToHclTerraform(struct!.hideValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9376,14 +9411,14 @@ export function powerpackWidgetSunburstDefinitionLegendInlineToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionLegendInlineOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionLegendInlineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9421,11 +9456,11 @@ export class PowerpackWidgetSunburstDefinitionLegendInlineOutputReference extend
   }
 
   // hide_percent - computed: false, optional: true, required: false
-  private _hidePercent?: boolean | cdktf.IResolvable; 
+  private _hidePercent?: boolean | cdktn.IResolvable; 
   public get hidePercent() {
     return this.getBooleanAttribute('hide_percent');
   }
-  public set hidePercent(value: boolean | cdktf.IResolvable) {
+  public set hidePercent(value: boolean | cdktn.IResolvable) {
     this._hidePercent = value;
   }
   public resetHidePercent() {
@@ -9437,11 +9472,11 @@ export class PowerpackWidgetSunburstDefinitionLegendInlineOutputReference extend
   }
 
   // hide_value - computed: false, optional: true, required: false
-  private _hideValue?: boolean | cdktf.IResolvable; 
+  private _hideValue?: boolean | cdktn.IResolvable; 
   public get hideValue() {
     return this.getBooleanAttribute('hide_value');
   }
-  public set hideValue(value: boolean | cdktf.IResolvable) {
+  public set hideValue(value: boolean | cdktn.IResolvable) {
     this._hideValue = value;
   }
   public resetHideValue() {
@@ -9469,30 +9504,30 @@ export interface PowerpackWidgetSunburstDefinitionLegendTable {
   /**
   * The type of legend (table or none). Valid values are `table`, `none`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#type Powerpack#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#type Powerpack#type}
   */
   readonly type: string;
 }
 
 export function powerpackWidgetSunburstDefinitionLegendTableToTerraform(struct?: PowerpackWidgetSunburstDefinitionLegendTableOutputReference | PowerpackWidgetSunburstDefinitionLegendTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionLegendTableToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionLegendTableOutputReference | PowerpackWidgetSunburstDefinitionLegendTable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9503,14 +9538,14 @@ export function powerpackWidgetSunburstDefinitionLegendTableToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionLegendTableOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionLegendTableOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9552,56 +9587,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9612,14 +9647,14 @@ export function powerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9705,56 +9740,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9765,14 +9800,14 @@ export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -9855,50 +9890,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetSunburstDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -9915,9 +9950,9 @@ export function powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9925,11 +9960,11 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9950,7 +9985,7 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9958,7 +9993,7 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputRefere
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10020,15 +10055,15 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByOutputRefere
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10043,56 +10078,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -10103,9 +10138,9 @@ export function powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10113,11 +10148,11 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10138,7 +10173,7 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10146,7 +10181,7 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputR
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10205,15 +10240,15 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeOutputR
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10228,64 +10263,64 @@ export interface PowerpackWidgetSunburstDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestApmQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestApmQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10297,13 +10332,13 @@ export function powerpackWidgetSunburstDefinitionRequestApmQueryToHclTerraform(s
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestApmQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestApmQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestApmQueryMultiComputeList",
@@ -10314,14 +10349,14 @@ export function powerpackWidgetSunburstDefinitionRequestApmQueryToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10420,7 +10455,7 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference ext
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -10436,7 +10471,7 @@ export class PowerpackWidgetSunburstDefinitionRequestApmQueryOutputReference ext
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -10451,56 +10486,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -10511,14 +10546,14 @@ export function powerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10604,56 +10639,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQu
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10664,14 +10699,14 @@ export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -10754,50 +10789,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetSunburstDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -10814,9 +10849,9 @@ export function powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10824,11 +10859,11 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10849,7 +10884,7 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10857,7 +10892,7 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputRefe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10919,15 +10954,15 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByOutputRefe
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10942,56 +10977,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11002,9 +11037,9 @@ export function powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11012,11 +11047,11 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11037,7 +11072,7 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11045,7 +11080,7 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutpu
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11104,15 +11139,15 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeOutpu
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11127,64 +11162,64 @@ export interface PowerpackWidgetSunburstDefinitionRequestAuditQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestAuditQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestAuditQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11196,13 +11231,13 @@ export function powerpackWidgetSunburstDefinitionRequestAuditQueryToHclTerraform
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestAuditQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestAuditQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiComputeList",
@@ -11213,14 +11248,14 @@ export function powerpackWidgetSunburstDefinitionRequestAuditQueryToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11319,7 +11354,7 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference e
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -11335,7 +11370,7 @@ export class PowerpackWidgetSunburstDefinitionRequestAuditQueryOutputReference e
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -11350,134 +11385,134 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormulaConditionalForma
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#comparator Powerpack#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#comparator Powerpack#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
   */
-  readonly hideValue?: boolean | cdktf.IResolvable;
+  readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#image_url Powerpack#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#image_url Powerpack#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#timeframe Powerpack#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#timeframe Powerpack#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#value Powerpack#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#value Powerpack#value}
   */
   readonly value: number;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparator: cdktf.stringToTerraform(struct!.comparator),
-    custom_bg_color: cdktf.stringToTerraform(struct!.customBgColor),
-    custom_fg_color: cdktf.stringToTerraform(struct!.customFgColor),
-    hide_value: cdktf.booleanToTerraform(struct!.hideValue),
-    image_url: cdktf.stringToTerraform(struct!.imageUrl),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    palette: cdktf.stringToTerraform(struct!.palette),
-    timeframe: cdktf.stringToTerraform(struct!.timeframe),
-    value: cdktf.numberToTerraform(struct!.value),
+    comparator: cdktn.stringToTerraform(struct!.comparator),
+    custom_bg_color: cdktn.stringToTerraform(struct!.customBgColor),
+    custom_fg_color: cdktn.stringToTerraform(struct!.customFgColor),
+    hide_value: cdktn.booleanToTerraform(struct!.hideValue),
+    image_url: cdktn.stringToTerraform(struct!.imageUrl),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    timeframe: cdktn.stringToTerraform(struct!.timeframe),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparator: {
-      value: cdktf.stringToHclTerraform(struct!.comparator),
+      value: cdktn.stringToHclTerraform(struct!.comparator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_bg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      value: cdktn.stringToHclTerraform(struct!.customBgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_fg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      value: cdktn.stringToHclTerraform(struct!.customFgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hide_value: {
-      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      value: cdktn.booleanToHclTerraform(struct!.hideValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     image_url: {
-      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      value: cdktn.stringToHclTerraform(struct!.imageUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeframe: {
-      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      value: cdktn.stringToHclTerraform(struct!.timeframe),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -11488,9 +11523,9 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11498,11 +11533,11 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11547,7 +11582,7 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11561,7 +11596,7 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOu
       this._timeframe = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11626,11 +11661,11 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOu
   }
 
   // hide_value - computed: false, optional: true, required: false
-  private _hideValue?: boolean | cdktf.IResolvable; 
+  private _hideValue?: boolean | cdktn.IResolvable; 
   public get hideValue() {
     return this.getBooleanAttribute('hide_value');
   }
-  public set hideValue(value: boolean | cdktf.IResolvable) {
+  public set hideValue(value: boolean | cdktn.IResolvable) {
     this._hideValue = value;
   }
   public resetHideValue() {
@@ -11716,15 +11751,15 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsOu
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11739,43 +11774,43 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormulaLimit {
   /**
   * The number of results to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#count Powerpack#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#count Powerpack#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaLimitToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    order: cdktf.stringToTerraform(struct!.order),
+    count: cdktn.numberToTerraform(struct!.count),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaLimitToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11786,14 +11821,14 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaLimitToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11860,43 +11895,43 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit
   /**
   * per unit name. If you want to represent megabytes/s, you set 'unit_name' = 'megabyte' and 'per_unit_name = 'second'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#per_unit_name Powerpack#per_unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#per_unit_name Powerpack#per_unit_name}
   */
   readonly perUnitName?: string;
   /**
   * Unit name. It should be in singular form ('megabyte' and not 'megabytes')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
   */
   readonly unitName: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    per_unit_name: cdktf.stringToTerraform(struct!.perUnitName),
-    unit_name: cdktf.stringToTerraform(struct!.unitName),
+    per_unit_name: cdktn.stringToTerraform(struct!.perUnitName),
+    unit_name: cdktn.stringToTerraform(struct!.unitName),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     per_unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.perUnitName),
+      value: cdktn.stringToHclTerraform(struct!.perUnitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.unitName),
+      value: cdktn.stringToHclTerraform(struct!.unitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11907,14 +11942,14 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -11978,30 +12013,30 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit
   /**
   * Unit label
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label: cdktf.stringToTerraform(struct!.label),
+    label: cdktn.stringToTerraform(struct!.label),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12012,14 +12047,14 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustomOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12061,20 +12096,20 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#canonical Powerpack#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#canonical Powerpack#canonical}
   */
   readonly canonical?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom Powerpack#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom Powerpack#custom}
   */
   readonly custom?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -12085,8 +12120,8 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitT
 
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -12108,14 +12143,14 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12180,30 +12215,30 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutp
 }
 export interface PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
   */
   readonly unitName: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    unit_name: cdktf.stringToTerraform(struct!.unitName),
+    unit_name: cdktn.stringToTerraform(struct!.unitName),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     unit_name: {
-      value: cdktf.stringToHclTerraform(struct!.unitName),
+      value: cdktn.stringToHclTerraform(struct!.unitName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12214,14 +12249,14 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12263,20 +12298,20 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat {
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#unit Powerpack#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#unit Powerpack#unit}
   */
   readonly unit: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#unit_scale Powerpack#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#unit_scale Powerpack#unit_scale}
   */
   readonly unitScale?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -12287,8 +12322,8 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatToTer
 
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -12310,14 +12345,14 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12381,43 +12416,43 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormulaStyle {
   /**
   * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette?: string;
   /**
   * Index specifying which color to use within the palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#palette_index Powerpack#palette_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#palette_index Powerpack#palette_index}
   */
   readonly paletteIndex?: number;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaStyleToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    palette: cdktf.stringToTerraform(struct!.palette),
-    palette_index: cdktf.numberToTerraform(struct!.paletteIndex),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    palette_index: cdktn.numberToTerraform(struct!.paletteIndex),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestFormulaStyleToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetSunburstDefinitionRequestFormulaStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette_index: {
-      value: cdktf.numberToHclTerraform(struct!.paletteIndex),
+      value: cdktn.numberToHclTerraform(struct!.paletteIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -12428,14 +12463,14 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaStyleToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaStyleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12502,57 +12537,57 @@ export interface PowerpackWidgetSunburstDefinitionRequestFormula {
   /**
   * An expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#alias Powerpack#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#alias Powerpack#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cell_display_mode Powerpack#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cell_display_mode Powerpack#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#formula_expression Powerpack#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#formula_expression Powerpack#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
   */
-  readonly conditionalFormats?: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable;
+  readonly conditionalFormats?: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: PowerpackWidgetSunburstDefinitionRequestFormulaLimit;
   /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#number_format Powerpack#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#number_format Powerpack#number_format}
   */
   readonly numberFormat?: PowerpackWidgetSunburstDefinitionRequestFormulaNumberFormat;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#style Powerpack#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#style Powerpack#style}
   */
   readonly style?: PowerpackWidgetSunburstDefinitionRequestFormulaStyle;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestFormulaToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormula | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestFormulaToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormula | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alias: cdktf.stringToTerraform(struct!.alias),
-    cell_display_mode: cdktf.stringToTerraform(struct!.cellDisplayMode),
-    formula_expression: cdktf.stringToTerraform(struct!.formulaExpression),
-    conditional_formats: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
+    alias: cdktn.stringToTerraform(struct!.alias),
+    cell_display_mode: cdktn.stringToTerraform(struct!.cellDisplayMode),
+    formula_expression: cdktn.stringToTerraform(struct!.formulaExpression),
+    conditional_formats: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToTerraform, true)(struct!.conditionalFormats),
     limit: powerpackWidgetSunburstDefinitionRequestFormulaLimitToTerraform(struct!.limit),
     number_format: powerpackWidgetSunburstDefinitionRequestFormulaNumberFormatToTerraform(struct!.numberFormat),
     style: powerpackWidgetSunburstDefinitionRequestFormulaStyleToTerraform(struct!.style),
@@ -12560,32 +12595,32 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaToTerraform(struc
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestFormulaToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormula | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestFormulaToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestFormula | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alias: {
-      value: cdktf.stringToHclTerraform(struct!.alias),
+      value: cdktn.stringToHclTerraform(struct!.alias),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cell_display_mode: {
-      value: cdktf.stringToHclTerraform(struct!.cellDisplayMode),
+      value: cdktn.stringToHclTerraform(struct!.cellDisplayMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     formula_expression: {
-      value: cdktf.stringToHclTerraform(struct!.formulaExpression),
+      value: cdktn.stringToHclTerraform(struct!.formulaExpression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     conditional_formats: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsToHclTerraform, true)(struct!.conditionalFormats),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormatsList",
@@ -12614,9 +12649,9 @@ export function powerpackWidgetSunburstDefinitionRequestFormulaToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12624,11 +12659,11 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestFormula | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestFormula | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12665,7 +12700,7 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestFormula | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestFormula | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12677,7 +12712,7 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference exte
       this._numberFormat.internalValue = undefined;
       this._style.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12744,7 +12779,7 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference exte
   public get conditionalFormats() {
     return this._conditionalFormats;
   }
-  public putConditionalFormats(value: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable) {
+  public putConditionalFormats(value: PowerpackWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable) {
     this._conditionalFormats.internalValue = value;
   }
   public resetConditionalFormats() {
@@ -12804,15 +12839,15 @@ export class PowerpackWidgetSunburstDefinitionRequestFormulaOutputReference exte
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestFormulaList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestFormula[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestFormulaList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestFormula[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12827,56 +12862,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -12887,14 +12922,14 @@ export function powerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -12980,56 +13015,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13040,14 +13075,14 @@ export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13130,50 +13165,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -13190,9 +13225,9 @@ export function powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13200,11 +13235,11 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13225,7 +13260,7 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13233,7 +13268,7 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputRefere
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13295,15 +13330,15 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByOutputRefere
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13318,56 +13353,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -13378,9 +13413,9 @@ export function powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13388,11 +13423,11 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13413,7 +13448,7 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13421,7 +13456,7 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputR
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13480,15 +13515,15 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeOutputR
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13503,64 +13538,64 @@ export interface PowerpackWidgetSunburstDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestLogQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestLogQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestLogQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13572,13 +13607,13 @@ export function powerpackWidgetSunburstDefinitionRequestLogQueryToHclTerraform(s
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestLogQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestLogQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestLogQueryMultiComputeList",
@@ -13589,14 +13624,14 @@ export function powerpackWidgetSunburstDefinitionRequestLogQueryToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13695,7 +13730,7 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference ext
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -13711,7 +13746,7 @@ export class PowerpackWidgetSunburstDefinitionRequestLogQueryOutputReference ext
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -13726,56 +13761,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -13786,14 +13821,14 @@ export function powerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -13879,56 +13914,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13939,14 +13974,14 @@ export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14029,50 +14064,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -14089,9 +14124,9 @@ export function powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14099,11 +14134,11 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14124,7 +14159,7 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14132,7 +14167,7 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14194,15 +14229,15 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByOutputRe
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14217,56 +14252,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -14277,9 +14312,9 @@ export function powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -14287,11 +14322,11 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -14312,7 +14347,7 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -14320,7 +14355,7 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14379,15 +14414,15 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeOut
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14402,64 +14437,64 @@ export interface PowerpackWidgetSunburstDefinitionRequestNetworkQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestNetworkQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestNetworkQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestNetworkQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestNetworkQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14471,13 +14506,13 @@ export function powerpackWidgetSunburstDefinitionRequestNetworkQueryToHclTerrafo
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestNetworkQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiComputeList",
@@ -14488,14 +14523,14 @@ export function powerpackWidgetSunburstDefinitionRequestNetworkQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14594,7 +14629,7 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -14610,7 +14645,7 @@ export class PowerpackWidgetSunburstDefinitionRequestNetworkQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -14625,69 +14660,69 @@ export interface PowerpackWidgetSunburstDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_by Powerpack#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_by Powerpack#search_by}
   */
   readonly searchBy?: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestProcessQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterBy),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    search_by: cdktf.stringToTerraform(struct!.searchBy),
+    filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    search_by: cdktn.stringToTerraform(struct!.searchBy),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestProcessQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filterBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_by: {
-      value: cdktf.stringToHclTerraform(struct!.searchBy),
+      value: cdktn.stringToHclTerraform(struct!.searchBy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14698,14 +14733,14 @@ export function powerpackWidgetSunburstDefinitionRequestProcessQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -14813,160 +14848,160 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStats
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#env Powerpack#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#env Powerpack#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#is_upstream Powerpack#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#is_upstream Powerpack#is_upstream}
   */
-  readonly isUpstream?: boolean | cdktf.IResolvable;
+  readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#stat Powerpack#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#stat Powerpack#stat}
   */
   readonly stat: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    env: cdktf.stringToTerraform(struct!.env),
-    is_upstream: cdktf.booleanToTerraform(struct!.isUpstream),
-    name: cdktf.stringToTerraform(struct!.name),
-    operation_name: cdktf.stringToTerraform(struct!.operationName),
-    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
-    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    service: cdktf.stringToTerraform(struct!.service),
-    stat: cdktf.stringToTerraform(struct!.stat),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    env: cdktn.stringToTerraform(struct!.env),
+    is_upstream: cdktn.booleanToTerraform(struct!.isUpstream),
+    name: cdktn.stringToTerraform(struct!.name),
+    operation_name: cdktn.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktn.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktn.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    service: cdktn.stringToTerraform(struct!.service),
+    stat: cdktn.stringToTerraform(struct!.stat),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_upstream: {
-      value: cdktf.booleanToHclTerraform(struct!.isUpstream),
+      value: cdktn.booleanToHclTerraform(struct!.isUpstream),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_name: {
-      value: cdktf.stringToHclTerraform(struct!.operationName),
+      value: cdktn.stringToHclTerraform(struct!.operationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stat: {
-      value: cdktf.stringToHclTerraform(struct!.stat),
+      value: cdktn.stringToHclTerraform(struct!.stat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14977,14 +15012,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15112,11 +15147,11 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuer
   }
 
   // is_upstream - computed: false, optional: true, required: false
-  private _isUpstream?: boolean | cdktf.IResolvable; 
+  private _isUpstream?: boolean | cdktn.IResolvable; 
   public get isUpstream() {
     return this.getBooleanAttribute('is_upstream');
   }
-  public set isUpstream(value: boolean | cdktf.IResolvable) {
+  public set isUpstream(value: boolean | cdktn.IResolvable) {
     this._isUpstream = value;
   }
   public resetIsUpstream() {
@@ -15228,160 +15263,160 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQu
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#env Powerpack#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#env Powerpack#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#stat Powerpack#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#stat Powerpack#stat}
   */
   readonly stat: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    env: cdktf.stringToTerraform(struct!.env),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
-    name: cdktf.stringToTerraform(struct!.name),
-    operation_name: cdktf.stringToTerraform(struct!.operationName),
-    primary_tag_name: cdktf.stringToTerraform(struct!.primaryTagName),
-    primary_tag_value: cdktf.stringToTerraform(struct!.primaryTagValue),
-    resource_name: cdktf.stringToTerraform(struct!.resourceName),
-    service: cdktf.stringToTerraform(struct!.service),
-    stat: cdktf.stringToTerraform(struct!.stat),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    env: cdktn.stringToTerraform(struct!.env),
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    name: cdktn.stringToTerraform(struct!.name),
+    operation_name: cdktn.stringToTerraform(struct!.operationName),
+    primary_tag_name: cdktn.stringToTerraform(struct!.primaryTagName),
+    primary_tag_value: cdktn.stringToTerraform(struct!.primaryTagValue),
+    resource_name: cdktn.stringToTerraform(struct!.resourceName),
+    service: cdktn.stringToTerraform(struct!.service),
+    stat: cdktn.stringToTerraform(struct!.stat),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operation_name: {
-      value: cdktf.stringToHclTerraform(struct!.operationName),
+      value: cdktn.stringToHclTerraform(struct!.operationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagName),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_tag_value: {
-      value: cdktf.stringToHclTerraform(struct!.primaryTagValue),
+      value: cdktn.stringToHclTerraform(struct!.primaryTagValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceName),
+      value: cdktn.stringToHclTerraform(struct!.resourceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stat: {
-      value: cdktf.stringToHclTerraform(struct!.stat),
+      value: cdktn.stringToHclTerraform(struct!.stat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15392,14 +15427,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15649,82 +15684,82 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The cloud cost query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15735,14 +15770,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -15866,56 +15901,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute 
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    interval: cdktf.numberToTerraform(struct!.interval),
-    metric: cdktf.stringToTerraform(struct!.metric),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    metric: cdktn.stringToTerraform(struct!.metric),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -15926,9 +15961,9 @@ export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -15936,11 +15971,11 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -15961,7 +15996,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -15969,7 +16004,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutpu
       this._interval = undefined;
       this._metric = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -16028,15 +16063,15 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeOutpu
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -16051,56 +16086,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByS
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16111,14 +16146,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16204,50 +16239,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy 
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort: powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct!.sort),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -16264,9 +16299,9 @@ export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -16274,11 +16309,11 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -16299,7 +16334,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -16307,7 +16342,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutpu
       this._limit = undefined;
       this._sort.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -16366,15 +16401,15 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByOutpu
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -16389,30 +16424,30 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16423,14 +16458,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16472,115 +16507,115 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryEventQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#indexes Powerpack#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#indexes Powerpack#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Storage location (private beta).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#storage Powerpack#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#storage Powerpack#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute Powerpack#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute Powerpack#compute}
   */
-  readonly compute: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable;
+  readonly compute: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search Powerpack#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search Powerpack#search}
   */
   readonly search?: PowerpackWidgetSunburstDefinitionRequestQueryEventQuerySearch;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    indexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.indexes),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage: cdktf.stringToTerraform(struct!.storage),
-    compute: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
-    group_by: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    indexes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.indexes),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage: cdktn.stringToTerraform(struct!.storage),
+    compute: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToTerraform, true)(struct!.compute),
+    group_by: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform, true)(struct!.groupBy),
     search: powerpackWidgetSunburstDefinitionRequestQueryEventQuerySearchToTerraform(struct!.search),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryEventQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     indexes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.indexes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.indexes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage: {
-      value: cdktf.stringToHclTerraform(struct!.storage),
+      value: cdktn.stringToHclTerraform(struct!.storage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeToHclTerraform, true)(struct!.compute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestQueryEventQueryComputeList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupByList",
@@ -16597,14 +16632,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryEventQueryToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16750,7 +16785,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputRefere
   public get compute() {
     return this._compute;
   }
-  public putCompute(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktf.IResolvable) {
+  public putCompute(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable) {
     this._compute.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -16763,7 +16798,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryEventQueryOutputRefere
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -16794,82 +16829,95 @@ export interface PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
+  /**
+  * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#semantic_mode Powerpack#semantic_mode}
+  */
+  readonly semanticMode?: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryMetricQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
+    semantic_mode: cdktn.stringToTerraform(struct!.semanticMode),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryMetricQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    semantic_mode: {
+      value: cdktn.stringToHclTerraform(struct!.semanticMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -16880,14 +16928,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryMetricQueryToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -16914,6 +16962,10 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputRefer
       hasAnyValues = true;
       internalValueResult.query = this._query;
     }
+    if (this._semanticMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.semanticMode = this._semanticMode;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -16925,6 +16977,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputRefer
       this._dataSource = undefined;
       this._name = undefined;
       this._query = undefined;
+      this._semanticMode = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -16933,6 +16986,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputRefer
       this._dataSource = value.dataSource;
       this._name = value.name;
       this._query = value.query;
+      this._semanticMode = value.semanticMode;
     }
   }
 
@@ -17009,152 +17063,168 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryMetricQueryOutputRefer
   public get queryInput() {
     return this._query;
   }
+
+  // semantic_mode - computed: false, optional: true, required: false
+  private _semanticMode?: string; 
+  public get semanticMode() {
+    return this.getStringAttribute('semantic_mode');
+  }
+  public set semanticMode(value: string) {
+    this._semanticMode = value;
+  }
+  public resetSemanticMode() {
+    this._semanticMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get semanticModeInput() {
+    return this._semanticMode;
+  }
 }
 export interface PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#is_normalized_cpu Powerpack#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#is_normalized_cpu Powerpack#is_normalized_cpu}
   */
-  readonly isNormalizedCpu?: boolean | cdktf.IResolvable;
+  readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#tag_filters Powerpack#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#tag_filters Powerpack#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#text_filter Powerpack#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#text_filter Powerpack#text_filter}
   */
   readonly textFilter?: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQueryProcessQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregator: cdktf.stringToTerraform(struct!.aggregator),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    is_normalized_cpu: cdktf.booleanToTerraform(struct!.isNormalizedCpu),
-    limit: cdktf.numberToTerraform(struct!.limit),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    name: cdktf.stringToTerraform(struct!.name),
-    sort: cdktf.stringToTerraform(struct!.sort),
-    tag_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tagFilters),
-    text_filter: cdktf.stringToTerraform(struct!.textFilter),
+    aggregator: cdktn.stringToTerraform(struct!.aggregator),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    is_normalized_cpu: cdktn.booleanToTerraform(struct!.isNormalizedCpu),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    name: cdktn.stringToTerraform(struct!.name),
+    sort: cdktn.stringToTerraform(struct!.sort),
+    tag_filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tagFilters),
+    text_filter: cdktn.stringToTerraform(struct!.textFilter),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQueryProcessQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregator: {
-      value: cdktf.stringToHclTerraform(struct!.aggregator),
+      value: cdktn.stringToHclTerraform(struct!.aggregator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_normalized_cpu: {
-      value: cdktf.booleanToHclTerraform(struct!.isNormalizedCpu),
+      value: cdktn.booleanToHclTerraform(struct!.isNormalizedCpu),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sort: {
-      value: cdktf.stringToHclTerraform(struct!.sort),
+      value: cdktn.stringToHclTerraform(struct!.sort),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tagFilters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tagFilters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     text_filter: {
-      value: cdktf.stringToHclTerraform(struct!.textFilter),
+      value: cdktn.stringToHclTerraform(struct!.textFilter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17165,14 +17235,14 @@ export function powerpackWidgetSunburstDefinitionRequestQueryProcessQueryToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17297,11 +17367,11 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryProcessQueryOutputRefe
   }
 
   // is_normalized_cpu - computed: false, optional: true, required: false
-  private _isNormalizedCpu?: boolean | cdktf.IResolvable; 
+  private _isNormalizedCpu?: boolean | cdktn.IResolvable; 
   public get isNormalizedCpu() {
     return this.getBooleanAttribute('is_normalized_cpu');
   }
-  public set isNormalizedCpu(value: boolean | cdktf.IResolvable) {
+  public set isNormalizedCpu(value: boolean | cdktn.IResolvable) {
     this._isNormalizedCpu = value;
   }
   public resetIsNormalizedCpu() {
@@ -17406,121 +17476,121 @@ export interface PowerpackWidgetSunburstDefinitionRequestQuerySloQuery {
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_mode Powerpack#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_mode Powerpack#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#measure Powerpack#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#measure Powerpack#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#slo_id Powerpack#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#slo_id Powerpack#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#slo_query_type Powerpack#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#slo_query_type Powerpack#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestQuerySloQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQuerySloQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_query_filters: cdktf.stringToTerraform(struct!.additionalQueryFilters),
-    cross_org_uuids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.crossOrgUuids),
-    data_source: cdktf.stringToTerraform(struct!.dataSource),
-    group_mode: cdktf.stringToTerraform(struct!.groupMode),
-    measure: cdktf.stringToTerraform(struct!.measure),
-    name: cdktf.stringToTerraform(struct!.name),
-    slo_id: cdktf.stringToTerraform(struct!.sloId),
-    slo_query_type: cdktf.stringToTerraform(struct!.sloQueryType),
+    additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
+    cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
+    data_source: cdktn.stringToTerraform(struct!.dataSource),
+    group_mode: cdktn.stringToTerraform(struct!.groupMode),
+    measure: cdktn.stringToTerraform(struct!.measure),
+    name: cdktn.stringToTerraform(struct!.name),
+    slo_id: cdktn.stringToTerraform(struct!.sloId),
+    slo_query_type: cdktn.stringToTerraform(struct!.sloQueryType),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestQuerySloQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestQuerySloQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_query_filters: {
-      value: cdktf.stringToHclTerraform(struct!.additionalQueryFilters),
+      value: cdktn.stringToHclTerraform(struct!.additionalQueryFilters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cross_org_uuids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.crossOrgUuids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.crossOrgUuids),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data_source: {
-      value: cdktf.stringToHclTerraform(struct!.dataSource),
+      value: cdktn.stringToHclTerraform(struct!.dataSource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     group_mode: {
-      value: cdktf.stringToHclTerraform(struct!.groupMode),
+      value: cdktn.stringToHclTerraform(struct!.groupMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     measure: {
-      value: cdktf.stringToHclTerraform(struct!.measure),
+      value: cdktn.stringToHclTerraform(struct!.measure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slo_id: {
-      value: cdktf.stringToHclTerraform(struct!.sloId),
+      value: cdktn.stringToHclTerraform(struct!.sloId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slo_query_type: {
-      value: cdktf.stringToHclTerraform(struct!.sloQueryType),
+      value: cdktn.stringToHclTerraform(struct!.sloQueryType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -17531,14 +17601,14 @@ export function powerpackWidgetSunburstDefinitionRequestQuerySloQueryToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQuerySloQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -17728,50 +17798,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: PowerpackWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: PowerpackWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
   */
   readonly cloudCostQuery?: PowerpackWidgetSunburstDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#event_query Powerpack#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#event_query Powerpack#event_query}
   */
   readonly eventQuery?: PowerpackWidgetSunburstDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric_query Powerpack#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric_query Powerpack#metric_query}
   */
   readonly metricQuery?: PowerpackWidgetSunburstDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetSunburstDefinitionRequestQueryProcessQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#slo_query Powerpack#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#slo_query Powerpack#slo_query}
   */
   readonly sloQuery?: PowerpackWidgetSunburstDefinitionRequestQuerySloQuery;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -17786,9 +17856,9 @@ export function powerpackWidgetSunburstDefinitionRequestQueryToTerraform(struct?
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQuery | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestQuery | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -17840,9 +17910,9 @@ export function powerpackWidgetSunburstDefinitionRequestQueryToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -17850,11 +17920,11 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestQuery | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestQuery | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -17891,7 +17961,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestQuery | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestQuery | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -17903,7 +17973,7 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryOutputReference extend
       this._processQuery.internalValue = undefined;
       this._sloQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18033,15 +18103,15 @@ export class PowerpackWidgetSunburstDefinitionRequestQueryOutputReference extend
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestQueryList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestQuery[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestQueryList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestQuery[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -18056,56 +18126,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -18116,14 +18186,14 @@ export function powerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18209,56 +18279,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18269,14 +18339,14 @@ export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18359,50 +18429,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -18419,9 +18489,9 @@ export function powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -18429,11 +18499,11 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18454,7 +18524,7 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -18462,7 +18532,7 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputRefere
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18524,15 +18594,15 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByOutputRefere
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -18547,56 +18617,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -18607,9 +18677,9 @@ export function powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -18617,11 +18687,11 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -18642,7 +18712,7 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -18650,7 +18720,7 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputR
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -18709,15 +18779,15 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeOutputR
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -18732,64 +18802,64 @@ export interface PowerpackWidgetSunburstDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestRumQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestRumQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestRumQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -18801,13 +18871,13 @@ export function powerpackWidgetSunburstDefinitionRequestRumQueryToHclTerraform(s
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestRumQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestRumQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestRumQueryMultiComputeList",
@@ -18818,14 +18888,14 @@ export function powerpackWidgetSunburstDefinitionRequestRumQueryToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -18924,7 +18994,7 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference ext
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -18940,7 +19010,7 @@ export class PowerpackWidgetSunburstDefinitionRequestRumQueryOutputReference ext
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -18955,56 +19025,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQue
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -19015,14 +19085,14 @@ export function powerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19108,56 +19178,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySor
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19168,14 +19238,14 @@ export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySort
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19258,50 +19328,50 @@ export interface PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -19318,9 +19388,9 @@ export function powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -19328,11 +19398,11 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19353,7 +19423,7 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19361,7 +19431,7 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputR
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19423,15 +19493,15 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByOutputR
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19446,56 +19516,56 @@ export interface PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompu
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -19506,9 +19576,9 @@ export function powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -19516,11 +19586,11 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -19541,7 +19611,7 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -19549,7 +19619,7 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOu
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -19608,15 +19678,15 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeOu
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -19631,64 +19701,64 @@ export interface PowerpackWidgetSunburstDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestSecurityQueryToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestSecurityQueryToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetSunburstDefinitionRequestSecurityQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19700,13 +19770,13 @@ export function powerpackWidgetSunburstDefinitionRequestSecurityQueryToHclTerraf
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestSecurityQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiComputeList",
@@ -19717,14 +19787,14 @@ export function powerpackWidgetSunburstDefinitionRequestSecurityQueryToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19823,7 +19893,7 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReferenc
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -19839,7 +19909,7 @@ export class PowerpackWidgetSunburstDefinitionRequestSecurityQueryOutputReferenc
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -19854,30 +19924,30 @@ export interface PowerpackWidgetSunburstDefinitionRequestStyle {
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette?: string;
 }
 
 export function powerpackWidgetSunburstDefinitionRequestStyleToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestStyleOutputReference | PowerpackWidgetSunburstDefinitionRequestStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    palette: cdktf.stringToTerraform(struct!.palette),
+    palette: cdktn.stringToTerraform(struct!.palette),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionRequestStyleToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequestStyleOutputReference | PowerpackWidgetSunburstDefinitionRequestStyle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -19888,14 +19958,14 @@ export function powerpackWidgetSunburstDefinitionRequestStyleToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestStyleOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestStyleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -19940,85 +20010,85 @@ export interface PowerpackWidgetSunburstDefinitionRequest {
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#q Powerpack#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#q Powerpack#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
   */
   readonly apmQuery?: PowerpackWidgetSunburstDefinitionRequestApmQuery;
   /**
   * audit_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#audit_query Powerpack#audit_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#audit_query Powerpack#audit_query}
   */
   readonly auditQuery?: PowerpackWidgetSunburstDefinitionRequestAuditQuery;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#formula Powerpack#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#formula Powerpack#formula}
   */
-  readonly formula?: PowerpackWidgetSunburstDefinitionRequestFormula[] | cdktf.IResolvable;
+  readonly formula?: PowerpackWidgetSunburstDefinitionRequestFormula[] | cdktn.IResolvable;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#log_query Powerpack#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#log_query Powerpack#log_query}
   */
   readonly logQuery?: PowerpackWidgetSunburstDefinitionRequestLogQuery;
   /**
   * network_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#network_query Powerpack#network_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#network_query Powerpack#network_query}
   */
   readonly networkQuery?: PowerpackWidgetSunburstDefinitionRequestNetworkQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetSunburstDefinitionRequestProcessQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#query Powerpack#query}
   */
-  readonly query?: PowerpackWidgetSunburstDefinitionRequestQuery[] | cdktf.IResolvable;
+  readonly query?: PowerpackWidgetSunburstDefinitionRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
   */
   readonly rumQuery?: PowerpackWidgetSunburstDefinitionRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#security_query Powerpack#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#security_query Powerpack#security_query}
   */
   readonly securityQuery?: PowerpackWidgetSunburstDefinitionRequestSecurityQuery;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#style Powerpack#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#style Powerpack#style}
   */
   readonly style?: PowerpackWidgetSunburstDefinitionRequestStyle;
 }
 
-export function powerpackWidgetSunburstDefinitionRequestToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestToTerraform(struct?: PowerpackWidgetSunburstDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    q: cdktf.stringToTerraform(struct!.q),
+    q: cdktn.stringToTerraform(struct!.q),
     apm_query: powerpackWidgetSunburstDefinitionRequestApmQueryToTerraform(struct!.apmQuery),
     audit_query: powerpackWidgetSunburstDefinitionRequestAuditQueryToTerraform(struct!.auditQuery),
-    formula: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestFormulaToTerraform, true)(struct!.formula),
+    formula: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestFormulaToTerraform, true)(struct!.formula),
     log_query: powerpackWidgetSunburstDefinitionRequestLogQueryToTerraform(struct!.logQuery),
     network_query: powerpackWidgetSunburstDefinitionRequestNetworkQueryToTerraform(struct!.networkQuery),
     process_query: powerpackWidgetSunburstDefinitionRequestProcessQueryToTerraform(struct!.processQuery),
-    query: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestQueryToTerraform, true)(struct!.query),
+    query: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestQueryToTerraform, true)(struct!.query),
     rum_query: powerpackWidgetSunburstDefinitionRequestRumQueryToTerraform(struct!.rumQuery),
     security_query: powerpackWidgetSunburstDefinitionRequestSecurityQueryToTerraform(struct!.securityQuery),
     style: powerpackWidgetSunburstDefinitionRequestStyleToTerraform(struct!.style),
@@ -20026,14 +20096,14 @@ export function powerpackWidgetSunburstDefinitionRequestToTerraform(struct?: Pow
 }
 
 
-export function powerpackWidgetSunburstDefinitionRequestToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetSunburstDefinitionRequestToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     q: {
-      value: cdktf.stringToHclTerraform(struct!.q),
+      value: cdktn.stringToHclTerraform(struct!.q),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20051,7 +20121,7 @@ export function powerpackWidgetSunburstDefinitionRequestToHclTerraform(struct?: 
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestAuditQueryList",
     },
     formula: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestFormulaToHclTerraform, true)(struct!.formula),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestFormulaList",
@@ -20075,7 +20145,7 @@ export function powerpackWidgetSunburstDefinitionRequestToHclTerraform(struct?: 
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestProcessQueryList",
     },
     query: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestQueryToHclTerraform, true)(struct!.query),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestQueryToHclTerraform, true)(struct!.query),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestQueryList",
@@ -20104,9 +20174,9 @@ export function powerpackWidgetSunburstDefinitionRequestToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -20114,11 +20184,11 @@ export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetSunburstDefinitionRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetSunburstDefinitionRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20171,7 +20241,7 @@ export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetSunburstDefinitionRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -20187,7 +20257,7 @@ export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdk
       this._securityQuery.internalValue = undefined;
       this._style.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -20261,7 +20331,7 @@ export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdk
   public get formula() {
     return this._formula;
   }
-  public putFormula(value: PowerpackWidgetSunburstDefinitionRequestFormula[] | cdktf.IResolvable) {
+  public putFormula(value: PowerpackWidgetSunburstDefinitionRequestFormula[] | cdktn.IResolvable) {
     this._formula.internalValue = value;
   }
   public resetFormula() {
@@ -20325,7 +20395,7 @@ export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdk
   public get query() {
     return this._query;
   }
-  public putQuery(value: PowerpackWidgetSunburstDefinitionRequestQuery[] | cdktf.IResolvable) {
+  public putQuery(value: PowerpackWidgetSunburstDefinitionRequestQuery[] | cdktn.IResolvable) {
     this._query.internalValue = value;
   }
   public resetQuery() {
@@ -20385,15 +20455,15 @@ export class PowerpackWidgetSunburstDefinitionRequestOutputReference extends cdk
   }
 }
 
-export class PowerpackWidgetSunburstDefinitionRequestList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetSunburstDefinitionRequest[] | cdktf.IResolvable
+export class PowerpackWidgetSunburstDefinitionRequestList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetSunburstDefinitionRequest[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -20406,118 +20476,131 @@ export class PowerpackWidgetSunburstDefinitionRequestList extends cdktf.ComplexL
 }
 export interface PowerpackWidgetSunburstDefinition {
   /**
+  * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#hide_incomplete_cost_data Powerpack#hide_incomplete_cost_data}
+  */
+  readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
+  /**
   * Whether or not to show the total value in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#hide_total Powerpack#hide_total}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#hide_total Powerpack#hide_total}
   */
-  readonly hideTotal?: boolean | cdktf.IResolvable;
+  readonly hideTotal?: boolean | cdktn.IResolvable;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#live_span Powerpack#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#live_span Powerpack#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title Powerpack#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title Powerpack#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. One of `left`, `center`, or `right`. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_align Powerpack#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_align Powerpack#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title. Default is 16.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#title_size Powerpack#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#title_size Powerpack#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
   */
-  readonly customLink?: PowerpackWidgetSunburstDefinitionCustomLink[] | cdktf.IResolvable;
+  readonly customLink?: PowerpackWidgetSunburstDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * legend_inline block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#legend_inline Powerpack#legend_inline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#legend_inline Powerpack#legend_inline}
   */
   readonly legendInline?: PowerpackWidgetSunburstDefinitionLegendInline;
   /**
   * legend_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#legend_table Powerpack#legend_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#legend_table Powerpack#legend_table}
   */
   readonly legendTable?: PowerpackWidgetSunburstDefinitionLegendTable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#request Powerpack#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#request Powerpack#request}
   */
-  readonly request?: PowerpackWidgetSunburstDefinitionRequest[] | cdktf.IResolvable;
+  readonly request?: PowerpackWidgetSunburstDefinitionRequest[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetSunburstDefinitionToTerraform(struct?: PowerpackWidgetSunburstDefinitionOutputReference | PowerpackWidgetSunburstDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hide_total: cdktf.booleanToTerraform(struct!.hideTotal),
-    live_span: cdktf.stringToTerraform(struct!.liveSpan),
-    title: cdktf.stringToTerraform(struct!.title),
-    title_align: cdktf.stringToTerraform(struct!.titleAlign),
-    title_size: cdktf.stringToTerraform(struct!.titleSize),
-    custom_link: cdktf.listMapper(powerpackWidgetSunburstDefinitionCustomLinkToTerraform, true)(struct!.customLink),
+    hide_incomplete_cost_data: cdktn.booleanToTerraform(struct!.hideIncompleteCostData),
+    hide_total: cdktn.booleanToTerraform(struct!.hideTotal),
+    live_span: cdktn.stringToTerraform(struct!.liveSpan),
+    title: cdktn.stringToTerraform(struct!.title),
+    title_align: cdktn.stringToTerraform(struct!.titleAlign),
+    title_size: cdktn.stringToTerraform(struct!.titleSize),
+    custom_link: cdktn.listMapper(powerpackWidgetSunburstDefinitionCustomLinkToTerraform, true)(struct!.customLink),
     legend_inline: powerpackWidgetSunburstDefinitionLegendInlineToTerraform(struct!.legendInline),
     legend_table: powerpackWidgetSunburstDefinitionLegendTableToTerraform(struct!.legendTable),
-    request: cdktf.listMapper(powerpackWidgetSunburstDefinitionRequestToTerraform, true)(struct!.request),
+    request: cdktn.listMapper(powerpackWidgetSunburstDefinitionRequestToTerraform, true)(struct!.request),
   }
 }
 
 
 export function powerpackWidgetSunburstDefinitionToHclTerraform(struct?: PowerpackWidgetSunburstDefinitionOutputReference | PowerpackWidgetSunburstDefinition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    hide_incomplete_cost_data: {
+      value: cdktn.booleanToHclTerraform(struct!.hideIncompleteCostData),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     hide_total: {
-      value: cdktf.booleanToHclTerraform(struct!.hideTotal),
+      value: cdktn.booleanToHclTerraform(struct!.hideTotal),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     live_span: {
-      value: cdktf.stringToHclTerraform(struct!.liveSpan),
+      value: cdktn.stringToHclTerraform(struct!.liveSpan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_align: {
-      value: cdktf.stringToHclTerraform(struct!.titleAlign),
+      value: cdktn.stringToHclTerraform(struct!.titleAlign),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title_size: {
-      value: cdktf.stringToHclTerraform(struct!.titleSize),
+      value: cdktn.stringToHclTerraform(struct!.titleSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_link: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionCustomLinkToHclTerraform, true)(struct!.customLink),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionCustomLinkList",
@@ -20535,7 +20618,7 @@ export function powerpackWidgetSunburstDefinitionToHclTerraform(struct?: Powerpa
       storageClassType: "PowerpackWidgetSunburstDefinitionLegendTableList",
     },
     request: {
-      value: cdktf.listMapperHcl(powerpackWidgetSunburstDefinitionRequestToHclTerraform, true)(struct!.request),
+      value: cdktn.listMapperHcl(powerpackWidgetSunburstDefinitionRequestToHclTerraform, true)(struct!.request),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetSunburstDefinitionRequestList",
@@ -20546,20 +20629,24 @@ export function powerpackWidgetSunburstDefinitionToHclTerraform(struct?: Powerpa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetSunburstDefinitionOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetSunburstDefinitionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): PowerpackWidgetSunburstDefinition | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._hideIncompleteCostData !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hideIncompleteCostData = this._hideIncompleteCostData;
+    }
     if (this._hideTotal !== undefined) {
       hasAnyValues = true;
       internalValueResult.hideTotal = this._hideTotal;
@@ -20602,6 +20689,7 @@ export class PowerpackWidgetSunburstDefinitionOutputReference extends cdktf.Comp
   public set internalValue(value: PowerpackWidgetSunburstDefinition | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._hideIncompleteCostData = undefined;
       this._hideTotal = undefined;
       this._liveSpan = undefined;
       this._title = undefined;
@@ -20614,6 +20702,7 @@ export class PowerpackWidgetSunburstDefinitionOutputReference extends cdktf.Comp
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._hideIncompleteCostData = value.hideIncompleteCostData;
       this._hideTotal = value.hideTotal;
       this._liveSpan = value.liveSpan;
       this._title = value.title;
@@ -20626,12 +20715,28 @@ export class PowerpackWidgetSunburstDefinitionOutputReference extends cdktf.Comp
     }
   }
 
+  // hide_incomplete_cost_data - computed: true, optional: true, required: false
+  private _hideIncompleteCostData?: boolean | cdktn.IResolvable; 
+  public get hideIncompleteCostData() {
+    return this.getBooleanAttribute('hide_incomplete_cost_data');
+  }
+  public set hideIncompleteCostData(value: boolean | cdktn.IResolvable) {
+    this._hideIncompleteCostData = value;
+  }
+  public resetHideIncompleteCostData() {
+    this._hideIncompleteCostData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hideIncompleteCostDataInput() {
+    return this._hideIncompleteCostData;
+  }
+
   // hide_total - computed: false, optional: true, required: false
-  private _hideTotal?: boolean | cdktf.IResolvable; 
+  private _hideTotal?: boolean | cdktn.IResolvable; 
   public get hideTotal() {
     return this.getBooleanAttribute('hide_total');
   }
-  public set hideTotal(value: boolean | cdktf.IResolvable) {
+  public set hideTotal(value: boolean | cdktn.IResolvable) {
     this._hideTotal = value;
   }
   public resetHideTotal() {
@@ -20711,7 +20816,7 @@ export class PowerpackWidgetSunburstDefinitionOutputReference extends cdktf.Comp
   public get customLink() {
     return this._customLink;
   }
-  public putCustomLink(value: PowerpackWidgetSunburstDefinitionCustomLink[] | cdktf.IResolvable) {
+  public putCustomLink(value: PowerpackWidgetSunburstDefinitionCustomLink[] | cdktn.IResolvable) {
     this._customLink.internalValue = value;
   }
   public resetCustomLink() {
@@ -20759,7 +20864,7 @@ export class PowerpackWidgetSunburstDefinitionOutputReference extends cdktf.Comp
   public get request() {
     return this._request;
   }
-  public putRequest(value: PowerpackWidgetSunburstDefinitionRequest[] | cdktf.IResolvable) {
+  public putRequest(value: PowerpackWidgetSunburstDefinitionRequest[] | cdktn.IResolvable) {
     this._request.internalValue = value;
   }
   public resetRequest() {
@@ -20774,69 +20879,69 @@ export interface PowerpackWidgetTimeseriesDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
   */
-  readonly isHidden?: boolean | cdktf.IResolvable;
+  readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#link Powerpack#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#link Powerpack#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#override_label Powerpack#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#override_label Powerpack#override_label}
   */
   readonly overrideLabel?: string;
 }
 
-export function powerpackWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_hidden: cdktf.booleanToTerraform(struct!.isHidden),
-    label: cdktf.stringToTerraform(struct!.label),
-    link: cdktf.stringToTerraform(struct!.link),
-    override_label: cdktf.stringToTerraform(struct!.overrideLabel),
+    is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
+    label: cdktn.stringToTerraform(struct!.label),
+    link: cdktn.stringToTerraform(struct!.link),
+    override_label: cdktn.stringToTerraform(struct!.overrideLabel),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionCustomLink | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionCustomLink | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_hidden: {
-      value: cdktf.booleanToHclTerraform(struct!.isHidden),
+      value: cdktn.booleanToHclTerraform(struct!.isHidden),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     link: {
-      value: cdktf.stringToHclTerraform(struct!.link),
+      value: cdktn.stringToHclTerraform(struct!.link),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     override_label: {
-      value: cdktf.stringToHclTerraform(struct!.overrideLabel),
+      value: cdktn.stringToHclTerraform(struct!.overrideLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -20847,9 +20952,9 @@ export function powerpackWidgetTimeseriesDefinitionCustomLinkToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -20857,11 +20962,11 @@ export class PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionCustomLink | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionCustomLink | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -20886,7 +20991,7 @@ export class PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionCustomLink | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionCustomLink | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -20895,7 +21000,7 @@ export class PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference extend
       this._link = undefined;
       this._overrideLabel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -20910,11 +21015,11 @@ export class PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference extend
   }
 
   // is_hidden - computed: false, optional: true, required: false
-  private _isHidden?: boolean | cdktf.IResolvable; 
+  private _isHidden?: boolean | cdktn.IResolvable; 
   public get isHidden() {
     return this.getBooleanAttribute('is_hidden');
   }
-  public set isHidden(value: boolean | cdktf.IResolvable) {
+  public set isHidden(value: boolean | cdktn.IResolvable) {
     this._isHidden = value;
   }
   public resetIsHidden() {
@@ -20974,15 +21079,15 @@ export class PowerpackWidgetTimeseriesDefinitionCustomLinkOutputReference extend
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionCustomLinkList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionCustomLink[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionCustomLinkList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionCustomLink[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -20997,43 +21102,43 @@ export interface PowerpackWidgetTimeseriesDefinitionEvent {
   /**
   * The event query to use in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#q Powerpack#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#q Powerpack#q}
   */
   readonly q: string;
   /**
   * The execution method for multi-value filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#tags_execution Powerpack#tags_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#tags_execution Powerpack#tags_execution}
   */
   readonly tagsExecution?: string;
 }
 
-export function powerpackWidgetTimeseriesDefinitionEventToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionEvent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionEventToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionEvent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    q: cdktf.stringToTerraform(struct!.q),
-    tags_execution: cdktf.stringToTerraform(struct!.tagsExecution),
+    q: cdktn.stringToTerraform(struct!.q),
+    tags_execution: cdktn.stringToTerraform(struct!.tagsExecution),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionEventToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionEvent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionEventToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionEvent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     q: {
-      value: cdktf.stringToHclTerraform(struct!.q),
+      value: cdktn.stringToHclTerraform(struct!.q),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tags_execution: {
-      value: cdktf.stringToHclTerraform(struct!.tagsExecution),
+      value: cdktn.stringToHclTerraform(struct!.tagsExecution),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -21044,9 +21149,9 @@ export function powerpackWidgetTimeseriesDefinitionEventToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionEventOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionEventOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -21054,11 +21159,11 @@ export class PowerpackWidgetTimeseriesDefinitionEventOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionEvent | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionEvent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21075,14 +21180,14 @@ export class PowerpackWidgetTimeseriesDefinitionEventOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionEvent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionEvent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._q = undefined;
       this._tagsExecution = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -21124,15 +21229,15 @@ export class PowerpackWidgetTimeseriesDefinitionEventOutputReference extends cdk
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionEventList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionEvent[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionEventList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionEvent[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -21147,56 +21252,56 @@ export interface PowerpackWidgetTimeseriesDefinitionMarker {
   /**
   * How the marker lines are displayed, options are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}. Example: `error dashed`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#display_type Powerpack#display_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#display_type Powerpack#display_type}
   */
   readonly displayType?: string;
   /**
   * A label for the line or range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * A mathematical expression describing the marker, for example: `y > 1`, `-5 < y < 0`, `y = 19`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#value Powerpack#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#value Powerpack#value}
   */
   readonly value: string;
 }
 
-export function powerpackWidgetTimeseriesDefinitionMarkerToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionMarker | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionMarkerToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionMarker | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    display_type: cdktf.stringToTerraform(struct!.displayType),
-    label: cdktf.stringToTerraform(struct!.label),
-    value: cdktf.stringToTerraform(struct!.value),
+    display_type: cdktn.stringToTerraform(struct!.displayType),
+    label: cdktn.stringToTerraform(struct!.label),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionMarkerToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionMarker | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionMarkerToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionMarker | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     display_type: {
-      value: cdktf.stringToHclTerraform(struct!.displayType),
+      value: cdktn.stringToHclTerraform(struct!.displayType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -21207,9 +21312,9 @@ export function powerpackWidgetTimeseriesDefinitionMarkerToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionMarkerOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionMarkerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -21217,11 +21322,11 @@ export class PowerpackWidgetTimeseriesDefinitionMarkerOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionMarker | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionMarker | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21242,7 +21347,7 @@ export class PowerpackWidgetTimeseriesDefinitionMarkerOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionMarker | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionMarker | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -21250,7 +21355,7 @@ export class PowerpackWidgetTimeseriesDefinitionMarkerOutputReference extends cd
       this._label = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -21309,15 +21414,15 @@ export class PowerpackWidgetTimeseriesDefinitionMarkerOutputReference extends cd
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionMarkerList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionMarker[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionMarkerList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionMarker[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -21332,56 +21437,56 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -21392,14 +21497,14 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -21485,56 +21590,56 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQu
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -21545,14 +21650,14 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQue
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -21635,50 +21740,50 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -21695,9 +21800,9 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -21705,11 +21810,11 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21730,7 +21835,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -21738,7 +21843,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputRefe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -21800,15 +21905,15 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByOutputRefe
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -21823,56 +21928,56 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -21883,9 +21988,9 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -21893,11 +21998,11 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -21918,7 +22023,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -21926,7 +22031,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutpu
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -21985,15 +22090,15 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeOutpu
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -22008,64 +22113,64 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -22077,13 +22182,13 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryToHclTerraform
       storageClassType: "PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeList",
@@ -22094,14 +22199,14 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -22200,7 +22305,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference e
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -22216,7 +22321,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference e
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -22231,56 +22336,56 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -22291,14 +22396,14 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -22384,56 +22489,56 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
 
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    order: cdktf.stringToTerraform(struct!.order),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -22444,14 +22549,14 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -22534,50 +22639,50 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery;
 }
 
-export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    facet: cdktf.stringToTerraform(struct!.facet),
-    limit: cdktf.numberToTerraform(struct!.limit),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    limit: cdktn.numberToTerraform(struct!.limit),
     sort_query: powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct!.sortQuery),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -22594,9 +22699,9 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -22604,11 +22709,11 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -22629,7 +22734,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -22637,7 +22742,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputRe
       this._limit = undefined;
       this._sortQuery.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -22699,15 +22804,15 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByOutputRe
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -22722,56 +22827,56 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
 
-export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation: cdktf.stringToTerraform(struct!.aggregation),
-    facet: cdktf.stringToTerraform(struct!.facet),
-    interval: cdktf.numberToTerraform(struct!.interval),
+    aggregation: cdktn.stringToTerraform(struct!.aggregation),
+    facet: cdktn.stringToTerraform(struct!.facet),
+    interval: cdktn.numberToTerraform(struct!.interval),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation: {
-      value: cdktf.stringToHclTerraform(struct!.aggregation),
+      value: cdktn.stringToHclTerraform(struct!.aggregation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     facet: {
-      value: cdktf.stringToHclTerraform(struct!.facet),
+      value: cdktn.stringToHclTerraform(struct!.facet),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -22782,9 +22887,9 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -22792,11 +22897,11 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -22817,7 +22922,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -22825,7 +22930,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOut
       this._facet = undefined;
       this._interval = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -22884,15 +22989,15 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeOut
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -22907,64 +23012,64 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
-  readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
-  readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable;
+  readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable;
 }
 
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index: cdktf.stringToTerraform(struct!.index),
-    search_query: cdktf.stringToTerraform(struct!.searchQuery),
+    index: cdktn.stringToTerraform(struct!.index),
+    search_query: cdktn.stringToTerraform(struct!.searchQuery),
     compute_query: powerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToTerraform(struct!.computeQuery),
-    group_by: cdktf.listMapper(powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform, true)(struct!.groupBy),
-    multi_compute: cdktf.listMapper(powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform, true)(struct!.multiCompute),
+    group_by: cdktn.listMapper(powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform, true)(struct!.groupBy),
+    multi_compute: cdktn.listMapper(powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform, true)(struct!.multiCompute),
   }
 }
 
 
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQuery): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index: {
-      value: cdktf.stringToHclTerraform(struct!.index),
+      value: cdktn.stringToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     search_query: {
-      value: cdktf.stringToHclTerraform(struct!.searchQuery),
+      value: cdktn.stringToHclTerraform(struct!.searchQuery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -22976,13 +23081,13 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryToHclTerrafo
       storageClassType: "PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToHclTerraform, true)(struct!.groupBy),
+      value: cdktn.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToHclTerraform, true)(struct!.groupBy),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByList",
     },
     multi_compute: {
-      value: cdktf.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
+      value: cdktn.listMapperHcl(powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToHclTerraform, true)(struct!.multiCompute),
       isBlock: true,
       type: "list",
       storageClassType: "PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeList",
@@ -22993,14 +23098,14 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -23099,7 +23204,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -23115,7 +23220,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference
   public get multiCompute() {
     return this._multiCompute;
   }
-  public putMultiCompute(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktf.IResolvable) {
+  public putMultiCompute(value: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable) {
     this._multiCompute.internalValue = value;
   }
   public resetMultiCompute() {
@@ -23130,134 +23235,134 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFor
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#comparator Powerpack#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#comparator Powerpack#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
   */
-  readonly hideValue?: boolean | cdktf.IResolvable;
+  readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#image_url Powerpack#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#image_url Powerpack#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#timeframe Powerpack#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#timeframe Powerpack#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#value Powerpack#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#value Powerpack#value}
   */
   readonly value: number;
 }
 
-export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comparator: cdktf.stringToTerraform(struct!.comparator),
-    custom_bg_color: cdktf.stringToTerraform(struct!.customBgColor),
-    custom_fg_color: cdktf.stringToTerraform(struct!.customFgColor),
-    hide_value: cdktf.booleanToTerraform(struct!.hideValue),
-    image_url: cdktf.stringToTerraform(struct!.imageUrl),
-    metric: cdktf.stringToTerraform(struct!.metric),
-    palette: cdktf.stringToTerraform(struct!.palette),
-    timeframe: cdktf.stringToTerraform(struct!.timeframe),
-    value: cdktf.numberToTerraform(struct!.value),
+    comparator: cdktn.stringToTerraform(struct!.comparator),
+    custom_bg_color: cdktn.stringToTerraform(struct!.customBgColor),
+    custom_fg_color: cdktn.stringToTerraform(struct!.customFgColor),
+    hide_value: cdktn.booleanToTerraform(struct!.hideValue),
+    image_url: cdktn.stringToTerraform(struct!.imageUrl),
+    metric: cdktn.stringToTerraform(struct!.metric),
+    palette: cdktn.stringToTerraform(struct!.palette),
+    timeframe: cdktn.stringToTerraform(struct!.timeframe),
+    value: cdktn.numberToTerraform(struct!.value),
   }
 }
 
 
-export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comparator: {
-      value: cdktf.stringToHclTerraform(struct!.comparator),
+      value: cdktn.stringToHclTerraform(struct!.comparator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_bg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customBgColor),
+      value: cdktn.stringToHclTerraform(struct!.customBgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_fg_color: {
-      value: cdktf.stringToHclTerraform(struct!.customFgColor),
+      value: cdktn.stringToHclTerraform(struct!.customFgColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hide_value: {
-      value: cdktf.booleanToHclTerraform(struct!.hideValue),
+      value: cdktn.booleanToHclTerraform(struct!.hideValue),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     image_url: {
-      value: cdktf.stringToHclTerraform(struct!.imageUrl),
+      value: cdktn.stringToHclTerraform(struct!.imageUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     metric: {
-      value: cdktf.stringToHclTerraform(struct!.metric),
+      value: cdktn.stringToHclTerraform(struct!.metric),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     palette: {
-      value: cdktf.stringToHclTerraform(struct!.palette),
+      value: cdktn.stringToHclTerraform(struct!.palette),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     timeframe: {
-      value: cdktf.stringToHclTerraform(struct!.timeframe),
+      value: cdktn.stringToHclTerraform(struct!.timeframe),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.numberToHclTerraform(struct!.value),
+      value: cdktn.numberToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -23268,9 +23373,9 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalForm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -23278,11 +23383,11 @@ export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined {
+  public get internalValue(): PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -23327,7 +23432,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -23341,7 +23446,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats
       this._timeframe = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -23406,11 +23511,11 @@ export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats
   }
 
   // hide_value - computed: false, optional: true, required: false
-  private _hideValue?: boolean | cdktf.IResolvable; 
+  private _hideValue?: boolean | cdktn.IResolvable; 
   public get hideValue() {
     return this.getBooleanAttribute('hide_value');
   }
-  public set hideValue(value: boolean | cdktf.IResolvable) {
+  public set hideValue(value: boolean | cdktn.IResolvable) {
     this._hideValue = value;
   }
   public resetHideValue() {
@@ -23496,15 +23601,15 @@ export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats
   }
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList extends cdktf.ComplexList {
-  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[] | cdktf.IResolvable
+export class PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsList extends cdktn.ComplexList {
+  public internalValue? : PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -23519,43 +23624,43 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit {
   /**
   * The number of results to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#count Powerpack#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#count Powerpack#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
 
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaLimitToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    order: cdktf.stringToTerraform(struct!.order),
+    count: cdktn.numberToTerraform(struct!.count),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaLimitToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -23566,14 +23671,14 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaLimitToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference extends cdktf.ComplexObject {
+export class PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 

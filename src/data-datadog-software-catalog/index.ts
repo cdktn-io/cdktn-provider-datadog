@@ -1,57 +1,57 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogSoftwareCatalogConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogSoftwareCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Filter entities by excluding snapshotted entities.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_exclude_snapshot DataDatadogSoftwareCatalog#filter_exclude_snapshot}
   */
   readonly filterExcludeSnapshot?: string;
   /**
   * Filter entities by UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_id DataDatadogSoftwareCatalog#filter_id}
   */
   readonly filterId?: string;
   /**
   * Filter entities by kind.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_kind DataDatadogSoftwareCatalog#filter_kind}
   */
   readonly filterKind?: string;
   /**
   * Filter entities by name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_name DataDatadogSoftwareCatalog#filter_name}
   */
   readonly filterName?: string;
   /**
   * Filter entities by owner.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_owner DataDatadogSoftwareCatalog#filter_owner}
   */
   readonly filterOwner?: string;
   /**
   * Filter entities by reference.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_ref DataDatadogSoftwareCatalog#filter_ref}
   */
   readonly filterRef?: string;
   /**
   * Filter entities by relation type. Valid values are `RelationTypeOwns`, `RelationTypeOwnedBy`, `RelationTypeDependsOn`, `RelationTypeDependencyOf`, `RelationTypePartsOf`, `RelationTypeHasPart`, `RelationTypeOtherOwns`, `RelationTypeOtherOwnedBy`, `RelationTypeImplementedBy`, `RelationTypeImplements`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#filter_relation_type DataDatadogSoftwareCatalog#filter_relation_type}
   */
   readonly filterRelationType?: string;
 }
@@ -59,8 +59,8 @@ export interface DataDatadogSoftwareCatalogEntities {
 }
 
 export function dataDatadogSoftwareCatalogEntitiesToTerraform(struct?: DataDatadogSoftwareCatalogEntities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -69,8 +69,8 @@ export function dataDatadogSoftwareCatalogEntitiesToTerraform(struct?: DataDatad
 
 
 export function dataDatadogSoftwareCatalogEntitiesToHclTerraform(struct?: DataDatadogSoftwareCatalogEntities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -78,7 +78,7 @@ export function dataDatadogSoftwareCatalogEntitiesToHclTerraform(struct?: DataDa
   return attrs;
 }
 
-export class DataDatadogSoftwareCatalogEntitiesOutputReference extends cdktf.ComplexObject {
+export class DataDatadogSoftwareCatalogEntitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -87,7 +87,7 @@ export class DataDatadogSoftwareCatalogEntitiesOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -142,14 +142,14 @@ export class DataDatadogSoftwareCatalogEntitiesOutputReference extends cdktf.Com
   }
 }
 
-export class DataDatadogSoftwareCatalogEntitiesList extends cdktf.ComplexList {
+export class DataDatadogSoftwareCatalogEntitiesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -162,9 +162,9 @@ export class DataDatadogSoftwareCatalogEntitiesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog datadog_software_catalog}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog datadog_software_catalog}
 */
-export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
+export class DataDatadogSoftwareCatalog extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -175,14 +175,14 @@ export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogSoftwareCatalog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogSoftwareCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogSoftwareCatalog to import
-  * @param importFromId The id of the existing DataDatadogSoftwareCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogSoftwareCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogSoftwareCatalog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_software_catalog", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_software_catalog", importId: importFromId, provider });
       }
 
   // ===========
@@ -190,7 +190,7 @@ export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/software_catalog datadog_software_catalog} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +201,7 @@ export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_software_catalog',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -354,56 +354,56 @@ export class DataDatadogSoftwareCatalog extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter_exclude_snapshot: cdktf.stringToTerraform(this._filterExcludeSnapshot),
-      filter_id: cdktf.stringToTerraform(this._filterId),
-      filter_kind: cdktf.stringToTerraform(this._filterKind),
-      filter_name: cdktf.stringToTerraform(this._filterName),
-      filter_owner: cdktf.stringToTerraform(this._filterOwner),
-      filter_ref: cdktf.stringToTerraform(this._filterRef),
-      filter_relation_type: cdktf.stringToTerraform(this._filterRelationType),
+      filter_exclude_snapshot: cdktn.stringToTerraform(this._filterExcludeSnapshot),
+      filter_id: cdktn.stringToTerraform(this._filterId),
+      filter_kind: cdktn.stringToTerraform(this._filterKind),
+      filter_name: cdktn.stringToTerraform(this._filterName),
+      filter_owner: cdktn.stringToTerraform(this._filterOwner),
+      filter_ref: cdktn.stringToTerraform(this._filterRef),
+      filter_relation_type: cdktn.stringToTerraform(this._filterRelationType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filter_exclude_snapshot: {
-        value: cdktf.stringToHclTerraform(this._filterExcludeSnapshot),
+        value: cdktn.stringToHclTerraform(this._filterExcludeSnapshot),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_id: {
-        value: cdktf.stringToHclTerraform(this._filterId),
+        value: cdktn.stringToHclTerraform(this._filterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_kind: {
-        value: cdktf.stringToHclTerraform(this._filterKind),
+        value: cdktn.stringToHclTerraform(this._filterKind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_name: {
-        value: cdktf.stringToHclTerraform(this._filterName),
+        value: cdktn.stringToHclTerraform(this._filterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_owner: {
-        value: cdktf.stringToHclTerraform(this._filterOwner),
+        value: cdktn.stringToHclTerraform(this._filterOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_ref: {
-        value: cdktf.stringToHclTerraform(this._filterRef),
+        value: cdktn.stringToHclTerraform(this._filterRef),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_relation_type: {
-        value: cdktf.stringToHclTerraform(this._filterRelationType),
+        value: cdktn.stringToHclTerraform(this._filterRelationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

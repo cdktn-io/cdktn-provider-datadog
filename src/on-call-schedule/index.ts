@@ -1,83 +1,83 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OnCallScheduleConfig extends cdktf.TerraformMetaArguments {
+export interface OnCallScheduleConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable name for the new schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
   */
   readonly name: string;
   /**
   * A list of team ids associated with the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#teams OnCallSchedule#teams}
   */
   readonly teams?: string[];
   /**
   * The time zone in which the schedule is defined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
   */
   readonly timeZone: string;
   /**
   * layer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#layer OnCallSchedule#layer}
   */
-  readonly layer?: OnCallScheduleLayer[] | cdktf.IResolvable;
+  readonly layer?: OnCallScheduleLayer[] | cdktn.IResolvable;
 }
 export interface OnCallScheduleLayerInterval {
   /**
   * The number of full days in each rotation period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#days OnCallSchedule#days}
   */
   readonly days?: number;
   /**
   * For intervals that are not expressible in whole days, this will be added to `days`. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#seconds OnCallSchedule#seconds}
   */
   readonly seconds?: number;
 }
 
-export function onCallScheduleLayerIntervalToTerraform(struct?: OnCallScheduleLayerInterval | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallScheduleLayerIntervalToTerraform(struct?: OnCallScheduleLayerInterval | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
-    seconds: cdktf.numberToTerraform(struct!.seconds),
+    days: cdktn.numberToTerraform(struct!.days),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
   }
 }
 
 
-export function onCallScheduleLayerIntervalToHclTerraform(struct?: OnCallScheduleLayerInterval | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallScheduleLayerIntervalToHclTerraform(struct?: OnCallScheduleLayerInterval | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     seconds: {
-      value: cdktf.numberToHclTerraform(struct!.seconds),
+      value: cdktn.numberToHclTerraform(struct!.seconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -88,19 +88,19 @@ export function onCallScheduleLayerIntervalToHclTerraform(struct?: OnCallSchedul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallScheduleLayerIntervalOutputReference extends cdktf.ComplexObject {
+export class OnCallScheduleLayerIntervalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OnCallScheduleLayerInterval | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallScheduleLayerInterval | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -117,14 +117,14 @@ export class OnCallScheduleLayerIntervalOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallScheduleLayerInterval | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallScheduleLayerInterval | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._days = undefined;
       this._seconds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -172,69 +172,69 @@ export interface OnCallScheduleLayerRestriction {
   /**
   * The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#end_day OnCallSchedule#end_day}
   */
   readonly endDay: string;
   /**
   * The time of day when the restriction ends (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#end_time OnCallSchedule#end_time}
   */
   readonly endTime: string;
   /**
   * The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#start_day OnCallSchedule#start_day}
   */
   readonly startDay: string;
   /**
   * The time of day when the restriction begins (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#start_time OnCallSchedule#start_time}
   */
   readonly startTime: string;
 }
 
-export function onCallScheduleLayerRestrictionToTerraform(struct?: OnCallScheduleLayerRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallScheduleLayerRestrictionToTerraform(struct?: OnCallScheduleLayerRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_day: cdktf.stringToTerraform(struct!.endDay),
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_day: cdktf.stringToTerraform(struct!.startDay),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    end_day: cdktn.stringToTerraform(struct!.endDay),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_day: cdktn.stringToTerraform(struct!.startDay),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
-export function onCallScheduleLayerRestrictionToHclTerraform(struct?: OnCallScheduleLayerRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallScheduleLayerRestrictionToHclTerraform(struct?: OnCallScheduleLayerRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_day: {
-      value: cdktf.stringToHclTerraform(struct!.endDay),
+      value: cdktn.stringToHclTerraform(struct!.endDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_day: {
-      value: cdktf.stringToHclTerraform(struct!.startDay),
+      value: cdktn.stringToHclTerraform(struct!.startDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -245,9 +245,9 @@ export function onCallScheduleLayerRestrictionToHclTerraform(struct?: OnCallSche
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallScheduleLayerRestrictionOutputReference extends cdktf.ComplexObject {
+export class OnCallScheduleLayerRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -255,11 +255,11 @@ export class OnCallScheduleLayerRestrictionOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OnCallScheduleLayerRestriction | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallScheduleLayerRestriction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -284,7 +284,7 @@ export class OnCallScheduleLayerRestrictionOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallScheduleLayerRestriction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallScheduleLayerRestriction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -293,7 +293,7 @@ export class OnCallScheduleLayerRestrictionOutputReference extends cdktf.Complex
       this._startDay = undefined;
       this._startTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -360,15 +360,15 @@ export class OnCallScheduleLayerRestrictionOutputReference extends cdktf.Complex
   }
 }
 
-export class OnCallScheduleLayerRestrictionList extends cdktf.ComplexList {
-  public internalValue? : OnCallScheduleLayerRestriction[] | cdktf.IResolvable
+export class OnCallScheduleLayerRestrictionList extends cdktn.ComplexList {
+  public internalValue? : OnCallScheduleLayerRestriction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -383,109 +383,109 @@ export interface OnCallScheduleLayer {
   /**
   * The date/time when this layer should become active (in ISO 8601).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#effective_date OnCallSchedule#effective_date}
   */
   readonly effectiveDate: string;
   /**
   * The date/time after which this layer no longer applies (in ISO 8601).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#end_date OnCallSchedule#end_date}
   */
   readonly endDate?: string;
   /**
   * The name of this layer. Should be unique within the schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#name OnCallSchedule#name}
   */
   readonly name: string;
   /**
   * The date/time when the rotation for this layer starts (in ISO 8601).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#rotation_start OnCallSchedule#rotation_start}
   */
   readonly rotationStart: string;
   /**
   * The time zone for this layer. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#time_zone OnCallSchedule#time_zone}
   */
   readonly timeZone?: string;
   /**
-  * List of user IDs for the layer. Can either be a valid user id or null
+  * List of user IDs for the layer. Can either be a valid user id or `null` to represent No-one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#users OnCallSchedule#users}
   */
   readonly users: string[];
   /**
   * interval block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#interval OnCallSchedule#interval}
   */
   readonly interval?: OnCallScheduleLayerInterval;
   /**
   * restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#restriction OnCallSchedule#restriction}
   */
-  readonly restriction?: OnCallScheduleLayerRestriction[] | cdktf.IResolvable;
+  readonly restriction?: OnCallScheduleLayerRestriction[] | cdktn.IResolvable;
 }
 
-export function onCallScheduleLayerToTerraform(struct?: OnCallScheduleLayer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallScheduleLayerToTerraform(struct?: OnCallScheduleLayer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effective_date: cdktf.stringToTerraform(struct!.effectiveDate),
-    end_date: cdktf.stringToTerraform(struct!.endDate),
-    name: cdktf.stringToTerraform(struct!.name),
-    rotation_start: cdktf.stringToTerraform(struct!.rotationStart),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
-    users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
+    effective_date: cdktn.stringToTerraform(struct!.effectiveDate),
+    end_date: cdktn.stringToTerraform(struct!.endDate),
+    name: cdktn.stringToTerraform(struct!.name),
+    rotation_start: cdktn.stringToTerraform(struct!.rotationStart),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
+    users: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.users),
     interval: onCallScheduleLayerIntervalToTerraform(struct!.interval),
-    restriction: cdktf.listMapper(onCallScheduleLayerRestrictionToTerraform, true)(struct!.restriction),
+    restriction: cdktn.listMapper(onCallScheduleLayerRestrictionToTerraform, true)(struct!.restriction),
   }
 }
 
 
-export function onCallScheduleLayerToHclTerraform(struct?: OnCallScheduleLayer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallScheduleLayerToHclTerraform(struct?: OnCallScheduleLayer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effective_date: {
-      value: cdktf.stringToHclTerraform(struct!.effectiveDate),
+      value: cdktn.stringToHclTerraform(struct!.effectiveDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     end_date: {
-      value: cdktf.stringToHclTerraform(struct!.endDate),
+      value: cdktn.stringToHclTerraform(struct!.endDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_start: {
-      value: cdktf.stringToHclTerraform(struct!.rotationStart),
+      value: cdktn.stringToHclTerraform(struct!.rotationStart),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     users: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.users),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.users),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -497,7 +497,7 @@ export function onCallScheduleLayerToHclTerraform(struct?: OnCallScheduleLayer |
       storageClassType: "OnCallScheduleLayerInterval",
     },
     restriction: {
-      value: cdktf.listMapperHcl(onCallScheduleLayerRestrictionToHclTerraform, true)(struct!.restriction),
+      value: cdktn.listMapperHcl(onCallScheduleLayerRestrictionToHclTerraform, true)(struct!.restriction),
       isBlock: true,
       type: "list",
       storageClassType: "OnCallScheduleLayerRestrictionList",
@@ -508,9 +508,9 @@ export function onCallScheduleLayerToHclTerraform(struct?: OnCallScheduleLayer |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
+export class OnCallScheduleLayerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -518,11 +518,11 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OnCallScheduleLayer | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallScheduleLayer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -563,7 +563,7 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallScheduleLayer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallScheduleLayer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -576,7 +576,7 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
       this._interval.internalValue = undefined;
       this._restriction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -704,7 +704,7 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
   public get restriction() {
     return this._restriction;
   }
-  public putRestriction(value: OnCallScheduleLayerRestriction[] | cdktf.IResolvable) {
+  public putRestriction(value: OnCallScheduleLayerRestriction[] | cdktn.IResolvable) {
     this._restriction.internalValue = value;
   }
   public resetRestriction() {
@@ -716,15 +716,15 @@ export class OnCallScheduleLayerOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OnCallScheduleLayerList extends cdktf.ComplexList {
-  public internalValue? : OnCallScheduleLayer[] | cdktf.IResolvable
+export class OnCallScheduleLayerList extends cdktn.ComplexList {
+  public internalValue? : OnCallScheduleLayer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -737,9 +737,9 @@ export class OnCallScheduleLayerList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule datadog_on_call_schedule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule datadog_on_call_schedule}
 */
-export class OnCallSchedule extends cdktf.TerraformResource {
+export class OnCallSchedule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -750,14 +750,14 @@ export class OnCallSchedule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OnCallSchedule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OnCallSchedule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallSchedule to import
-  * @param importFromId The id of the existing OnCallSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallSchedule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallSchedule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_on_call_schedule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_on_call_schedule", importId: importFromId, provider });
       }
 
   // ===========
@@ -765,7 +765,7 @@ export class OnCallSchedule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_schedule datadog_on_call_schedule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -776,7 +776,7 @@ export class OnCallSchedule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_on_call_schedule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -849,7 +849,7 @@ export class OnCallSchedule extends cdktf.TerraformResource {
   public get layer() {
     return this._layer;
   }
-  public putLayer(value: OnCallScheduleLayer[] | cdktf.IResolvable) {
+  public putLayer(value: OnCallScheduleLayer[] | cdktn.IResolvable) {
     this._layer.internalValue = value;
   }
   public resetLayer() {
@@ -866,35 +866,35 @@ export class OnCallSchedule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      teams: cdktf.listMapper(cdktf.stringToTerraform, false)(this._teams),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      layer: cdktf.listMapper(onCallScheduleLayerToTerraform, true)(this._layer.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      teams: cdktn.listMapper(cdktn.stringToTerraform, false)(this._teams),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      layer: cdktn.listMapper(onCallScheduleLayerToTerraform, true)(this._layer.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       teams: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._teams),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._teams),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       layer: {
-        value: cdktf.listMapperHcl(onCallScheduleLayerToHclTerraform, true)(this._layer.internalValue),
+        value: cdktn.listMapperHcl(onCallScheduleLayerToHclTerraform, true)(this._layer.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OnCallScheduleLayerList",

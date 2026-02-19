@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationCloudflareAccountConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationCloudflareAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * The API key (or token) for the Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account#api_key IntegrationCloudflareAccount#api_key}
   */
   readonly apiKey: string;
   /**
   * The email associated with the Cloudflare account. If an API key is provided (and not a token), this field is also required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account#email IntegrationCloudflareAccount#email}
   */
   readonly email?: string;
   /**
   * The name of the Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account#name IntegrationCloudflareAccount#name}
   */
   readonly name: string;
   /**
   * An allowlist of resources to pull metrics for. Includes `web`, `dns`, `lb` (load balancer), and `worker`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account#resources IntegrationCloudflareAccount#resources}
   */
   readonly resources?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account}
 */
-export class IntegrationCloudflareAccount extends cdktf.TerraformResource {
+export class IntegrationCloudflareAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class IntegrationCloudflareAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationCloudflareAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationCloudflareAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationCloudflareAccount to import
-  * @param importFromId The id of the existing IntegrationCloudflareAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationCloudflareAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationCloudflareAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_cloudflare_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_cloudflare_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class IntegrationCloudflareAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_cloudflare_account datadog_integration_cloudflare_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class IntegrationCloudflareAccount extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_cloudflare_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -149,7 +149,7 @@ export class IntegrationCloudflareAccount extends cdktf.TerraformResource {
   // resources - computed: true, optional: true, required: false
   private _resources?: string[]; 
   public get resources() {
-    return cdktf.Fn.tolist(this.getListAttribute('resources'));
+    return cdktn.Fn.tolist(this.getListAttribute('resources'));
   }
   public set resources(value: string[]) {
     this._resources = value;
@@ -168,35 +168,35 @@ export class IntegrationCloudflareAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      email: cdktf.stringToTerraform(this._email),
-      name: cdktf.stringToTerraform(this._name),
-      resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resources),
+      api_key: cdktn.stringToTerraform(this._apiKey),
+      email: cdktn.stringToTerraform(this._email),
+      name: cdktn.stringToTerraform(this._name),
+      resources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resources),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key: {
-        value: cdktf.stringToHclTerraform(this._apiKey),
+        value: cdktn.stringToHclTerraform(this._apiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resources: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resources),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resources),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

@@ -1,23 +1,23 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_namespace_rules
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_namespace_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogIntegrationAwsNamespaceRulesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogIntegrationAwsNamespaceRulesConfig extends cdktn.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}
 */
-export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformDataSource {
+export class DataDatadogIntegrationAwsNamespaceRules extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -28,14 +28,14 @@ export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogIntegrationAwsNamespaceRules resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogIntegrationAwsNamespaceRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogIntegrationAwsNamespaceRules to import
-  * @param importFromId The id of the existing DataDatadogIntegrationAwsNamespaceRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_namespace_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogIntegrationAwsNamespaceRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_namespace_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogIntegrationAwsNamespaceRules to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_aws_namespace_rules", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_aws_namespace_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -43,7 +43,7 @@ export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataDatadogIntegrationAwsNamespaceRules extends cdktf.TerraformData
       terraformResourceType: 'datadog_integration_aws_namespace_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

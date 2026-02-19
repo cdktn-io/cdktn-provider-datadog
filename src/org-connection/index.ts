@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/org_connection
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/org_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrgConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface OrgConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set of connection types to enable for this connection (., metrics, logs).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
   */
   readonly connectionTypes: string[];
   /**
   * UUID of the sink (destination) organization. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
   */
   readonly sinkOrgId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/org_connection datadog_org_connection}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/org_connection datadog_org_connection}
 */
-export class OrgConnection extends cdktf.TerraformResource {
+export class OrgConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class OrgConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrgConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrgConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrgConnection to import
-  * @param importFromId The id of the existing OrgConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrgConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrgConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_org_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_org_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +55,7 @@ export class OrgConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/org_connection datadog_org_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/org_connection datadog_org_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class OrgConnection extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_org_connection',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -88,7 +88,7 @@ export class OrgConnection extends cdktf.TerraformResource {
   // connection_types - computed: false, optional: false, required: true
   private _connectionTypes?: string[]; 
   public get connectionTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('connection_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('connection_types'));
   }
   public set connectionTypes(value: string[]) {
     this._connectionTypes = value;
@@ -147,21 +147,21 @@ export class OrgConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._connectionTypes),
-      sink_org_id: cdktf.stringToTerraform(this._sinkOrgId),
+      connection_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._connectionTypes),
+      sink_org_id: cdktn.stringToTerraform(this._sinkOrgId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._connectionTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._connectionTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       sink_org_id: {
-        value: cdktf.stringToHclTerraform(this._sinkOrgId),
+        value: cdktn.stringToHclTerraform(this._sinkOrgId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

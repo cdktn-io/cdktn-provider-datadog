@@ -1,30 +1,30 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/aws_cur_config
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/aws_cur_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogAwsCurConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogAwsCurConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Datadog cloud account ID for the AWS CUR configuration you want to retrieve information about.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
   */
   readonly cloudAccountId: number;
 }
 export interface DataDatadogAwsCurConfigAccountFilters {
 }
 
-export function dataDatadogAwsCurConfigAccountFiltersToTerraform(struct?: DataDatadogAwsCurConfigAccountFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogAwsCurConfigAccountFiltersToTerraform(struct?: DataDatadogAwsCurConfigAccountFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -32,9 +32,9 @@ export function dataDatadogAwsCurConfigAccountFiltersToTerraform(struct?: DataDa
 }
 
 
-export function dataDatadogAwsCurConfigAccountFiltersToHclTerraform(struct?: DataDatadogAwsCurConfigAccountFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogAwsCurConfigAccountFiltersToHclTerraform(struct?: DataDatadogAwsCurConfigAccountFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -42,19 +42,19 @@ export function dataDatadogAwsCurConfigAccountFiltersToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataDatadogAwsCurConfigAccountFiltersOutputReference extends cdktf.ComplexObject {
+export class DataDatadogAwsCurConfigAccountFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogAwsCurConfigAccountFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogAwsCurConfigAccountFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -63,12 +63,12 @@ export class DataDatadogAwsCurConfigAccountFiltersOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogAwsCurConfigAccountFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogAwsCurConfigAccountFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -95,9 +95,9 @@ export class DataDatadogAwsCurConfigAccountFiltersOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}
 */
-export class DataDatadogAwsCurConfig extends cdktf.TerraformDataSource {
+export class DataDatadogAwsCurConfig extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -108,14 +108,14 @@ export class DataDatadogAwsCurConfig extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogAwsCurConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogAwsCurConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogAwsCurConfig to import
-  * @param importFromId The id of the existing DataDatadogAwsCurConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/aws_cur_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogAwsCurConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/aws_cur_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogAwsCurConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_aws_cur_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_aws_cur_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -123,7 +123,7 @@ export class DataDatadogAwsCurConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/aws_cur_config datadog_aws_cur_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -134,7 +134,7 @@ export class DataDatadogAwsCurConfig extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_aws_cur_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -232,14 +232,14 @@ export class DataDatadogAwsCurConfig extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloud_account_id: cdktf.numberToTerraform(this._cloudAccountId),
+      cloud_account_id: cdktn.numberToTerraform(this._cloudAccountId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cloud_account_id: {
-        value: cdktf.numberToHclTerraform(this._cloudAccountId),
+        value: cdktn.numberToHclTerraform(this._cloudAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/api_key
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/api_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogApiKeyConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogApiKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether to use exact match when searching by name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/api_key#exact_match DataDatadogApiKey#exact_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/api_key#exact_match DataDatadogApiKey#exact_match}
   */
-  readonly exactMatch?: boolean | cdktf.IResolvable;
+  readonly exactMatch?: boolean | cdktn.IResolvable;
   /**
   * The ID of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/api_key#id DataDatadogApiKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,15 +30,15 @@ export interface DataDatadogApiKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name for API Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/api_key#name DataDatadogApiKey#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/api_key datadog_api_key}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/api_key datadog_api_key}
 */
-export class DataDatadogApiKey extends cdktf.TerraformDataSource {
+export class DataDatadogApiKey extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -49,14 +49,14 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogApiKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogApiKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogApiKey to import
-  * @param importFromId The id of the existing DataDatadogApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/api_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogApiKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/api_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogApiKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_api_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_api_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -64,7 +64,7 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/api_key datadog_api_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/api_key datadog_api_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,7 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_api_key',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -96,11 +96,11 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
   // ==========
 
   // exact_match - computed: false, optional: true, required: false
-  private _exactMatch?: boolean | cdktf.IResolvable; 
+  private _exactMatch?: boolean | cdktn.IResolvable; 
   public get exactMatch() {
     return this.getBooleanAttribute('exact_match');
   }
-  public set exactMatch(value: boolean | cdktf.IResolvable) {
+  public set exactMatch(value: boolean | cdktn.IResolvable) {
     this._exactMatch = value;
   }
   public resetExactMatch() {
@@ -159,28 +159,28 @@ export class DataDatadogApiKey extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exact_match: cdktf.booleanToTerraform(this._exactMatch),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      exact_match: cdktn.booleanToTerraform(this._exactMatch),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exact_match: {
-        value: cdktf.booleanToHclTerraform(this._exactMatch),
+        value: cdktn.booleanToHclTerraform(this._exactMatch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

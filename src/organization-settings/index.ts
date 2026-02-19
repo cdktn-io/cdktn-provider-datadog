@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#id OrganizationSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#id OrganizationSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments
   /**
   * Name for Organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#name OrganizationSettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#name OrganizationSettings#name}
   */
   readonly name?: string;
   /**
   * List of emails used for security event notifications from the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#security_contacts OrganizationSettings#security_contacts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#security_contacts OrganizationSettings#security_contacts}
   */
   readonly securityContacts?: string[];
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#settings OrganizationSettings#settings}
   */
   readonly settings?: OrganizationSettingsSettings;
 }
@@ -42,30 +42,30 @@ export interface OrganizationSettingsSettingsSaml {
   /**
   * Whether or not SAML is enabled for this organization. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function organizationSettingsSettingsSamlToTerraform(struct?: OrganizationSettingsSettingsSamlOutputReference | OrganizationSettingsSettingsSaml): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function organizationSettingsSettingsSamlToHclTerraform(struct?: OrganizationSettingsSettingsSamlOutputReference | OrganizationSettingsSettingsSaml): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -76,14 +76,14 @@ export function organizationSettingsSettingsSamlToHclTerraform(struct?: Organiza
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.ComplexObject {
+export class OrganizationSettingsSettingsSamlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -109,11 +109,11 @@ export class OrganizationSettingsSettingsSamlOutputReference extends cdktf.Compl
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -128,43 +128,43 @@ export interface OrganizationSettingsSettingsSamlAutocreateUsersDomains {
   /**
   * List of domains where the SAML automated user creation is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#domains OrganizationSettings#domains}
   */
   readonly domains?: string[];
   /**
   * Whether or not the automated user creation based on SAML domain is enabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function organizationSettingsSettingsSamlAutocreateUsersDomainsToTerraform(struct?: OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference | OrganizationSettingsSettingsSamlAutocreateUsersDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domains: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.domains),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    domains: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.domains),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function organizationSettingsSettingsSamlAutocreateUsersDomainsToHclTerraform(struct?: OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference | OrganizationSettingsSettingsSamlAutocreateUsersDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domains: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.domains),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.domains),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -175,14 +175,14 @@ export function organizationSettingsSettingsSamlAutocreateUsersDomainsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference extends cdktf.ComplexObject {
+export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -230,11 +230,11 @@ export class OrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReferen
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -249,30 +249,30 @@ export interface OrganizationSettingsSettingsSamlIdpInitiatedLogin {
   /**
   * Whether or not a SAML identity provider metadata file was provided to the Datadog organization. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct?: OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference | OrganizationSettingsSettingsSamlIdpInitiatedLogin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function organizationSettingsSettingsSamlIdpInitiatedLoginToHclTerraform(struct?: OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference | OrganizationSettingsSettingsSamlIdpInitiatedLogin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -283,14 +283,14 @@ export function organizationSettingsSettingsSamlIdpInitiatedLoginToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference extends cdktf.ComplexObject {
+export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -316,11 +316,11 @@ export class OrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference ex
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -335,30 +335,30 @@ export interface OrganizationSettingsSettingsSamlStrictMode {
   /**
   * Whether or not the SAML strict mode is enabled. If true, all users must log in with SAML. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#enabled OrganizationSettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function organizationSettingsSettingsSamlStrictModeToTerraform(struct?: OrganizationSettingsSettingsSamlStrictModeOutputReference | OrganizationSettingsSettingsSamlStrictMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function organizationSettingsSettingsSamlStrictModeToHclTerraform(struct?: OrganizationSettingsSettingsSamlStrictModeOutputReference | OrganizationSettingsSettingsSamlStrictMode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -369,14 +369,14 @@ export function organizationSettingsSettingsSamlStrictModeToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends cdktf.ComplexObject {
+export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -402,11 +402,11 @@ export class OrganizationSettingsSettingsSamlStrictModeOutputReference extends c
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -421,49 +421,49 @@ export interface OrganizationSettingsSettings {
   /**
   * Whether or not the organization users can share widgets outside of Datadog. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#private_widget_share OrganizationSettings#private_widget_share}
   */
-  readonly privateWidgetShare?: boolean | cdktf.IResolvable;
+  readonly privateWidgetShare?: boolean | cdktn.IResolvable;
   /**
   * The access role of the user. Options are `st` (standard user), `adm` (admin user), or `ro` (read-only user). Allowed enum values: `st`, `adm` , `ro`, `ERROR` Defaults to `"st"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#saml_autocreate_access_role OrganizationSettings#saml_autocreate_access_role}
   */
   readonly samlAutocreateAccessRole?: string;
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#saml OrganizationSettings#saml}
   */
   readonly saml: OrganizationSettingsSettingsSaml;
   /**
   * saml_autocreate_users_domains block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#saml_autocreate_users_domains OrganizationSettings#saml_autocreate_users_domains}
   */
   readonly samlAutocreateUsersDomains: OrganizationSettingsSettingsSamlAutocreateUsersDomains;
   /**
   * saml_idp_initiated_login block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#saml_idp_initiated_login OrganizationSettings#saml_idp_initiated_login}
   */
   readonly samlIdpInitiatedLogin: OrganizationSettingsSettingsSamlIdpInitiatedLogin;
   /**
   * saml_strict_mode block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#saml_strict_mode OrganizationSettings#saml_strict_mode}
   */
   readonly samlStrictMode: OrganizationSettingsSettingsSamlStrictMode;
 }
 
 export function organizationSettingsSettingsToTerraform(struct?: OrganizationSettingsSettingsOutputReference | OrganizationSettingsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    private_widget_share: cdktf.booleanToTerraform(struct!.privateWidgetShare),
-    saml_autocreate_access_role: cdktf.stringToTerraform(struct!.samlAutocreateAccessRole),
+    private_widget_share: cdktn.booleanToTerraform(struct!.privateWidgetShare),
+    saml_autocreate_access_role: cdktn.stringToTerraform(struct!.samlAutocreateAccessRole),
     saml: organizationSettingsSettingsSamlToTerraform(struct!.saml),
     saml_autocreate_users_domains: organizationSettingsSettingsSamlAutocreateUsersDomainsToTerraform(struct!.samlAutocreateUsersDomains),
     saml_idp_initiated_login: organizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct!.samlIdpInitiatedLogin),
@@ -473,19 +473,19 @@ export function organizationSettingsSettingsToTerraform(struct?: OrganizationSet
 
 
 export function organizationSettingsSettingsToHclTerraform(struct?: OrganizationSettingsSettingsOutputReference | OrganizationSettingsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     private_widget_share: {
-      value: cdktf.booleanToHclTerraform(struct!.privateWidgetShare),
+      value: cdktn.booleanToHclTerraform(struct!.privateWidgetShare),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     saml_autocreate_access_role: {
-      value: cdktf.stringToHclTerraform(struct!.samlAutocreateAccessRole),
+      value: cdktn.stringToHclTerraform(struct!.samlAutocreateAccessRole),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -520,14 +520,14 @@ export function organizationSettingsSettingsToHclTerraform(struct?: Organization
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexObject {
+export class OrganizationSettingsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -583,11 +583,11 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
   }
 
   // private_widget_share - computed: false, optional: true, required: false
-  private _privateWidgetShare?: boolean | cdktf.IResolvable; 
+  private _privateWidgetShare?: boolean | cdktn.IResolvable; 
   public get privateWidgetShare() {
     return this.getBooleanAttribute('private_widget_share');
   }
-  public set privateWidgetShare(value: boolean | cdktf.IResolvable) {
+  public set privateWidgetShare(value: boolean | cdktn.IResolvable) {
     this._privateWidgetShare = value;
   }
   public resetPrivateWidgetShare() {
@@ -688,9 +688,9 @@ export class OrganizationSettingsSettingsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings datadog_organization_settings}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings datadog_organization_settings}
 */
-export class OrganizationSettings extends cdktf.TerraformResource {
+export class OrganizationSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -701,14 +701,14 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationSettings to import
-  * @param importFromId The id of the existing OrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_organization_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_organization_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -716,7 +716,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/organization_settings datadog_organization_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/organization_settings datadog_organization_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -727,7 +727,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_organization_settings',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -828,9 +828,9 @@ export class OrganizationSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      security_contacts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._securityContacts),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      security_contacts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._securityContacts),
       settings: organizationSettingsSettingsToTerraform(this._settings.internalValue),
     };
   }
@@ -838,19 +838,19 @@ export class OrganizationSettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_contacts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._securityContacts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._securityContacts),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

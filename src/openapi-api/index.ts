@@ -1,29 +1,29 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OpenapiApiConfig extends cdktf.TerraformMetaArguments {
+export interface OpenapiApiConfig extends cdktn.TerraformMetaArguments {
   /**
   * The textual content of the OpenAPI specification. Use [`file()`](https://developer.hashicorp.com/terraform/language/functions/file) in order to reference another file in the repository (see exmaple).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api#spec OpenapiApi#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api#spec OpenapiApi#spec}
   */
   readonly spec: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api datadog_openapi_api}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api datadog_openapi_api}
 */
-export class OpenapiApi extends cdktf.TerraformResource {
+export class OpenapiApi extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -34,14 +34,14 @@ export class OpenapiApi extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OpenapiApi resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OpenapiApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OpenapiApi to import
-  * @param importFromId The id of the existing OpenapiApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OpenapiApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OpenapiApi to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_openapi_api", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_openapi_api", importId: importFromId, provider });
       }
 
   // ===========
@@ -49,7 +49,7 @@ export class OpenapiApi extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/openapi_api datadog_openapi_api} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/openapi_api datadog_openapi_api} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class OpenapiApi extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_openapi_api',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -102,14 +102,14 @@ export class OpenapiApi extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      spec: cdktf.stringToTerraform(this._spec),
+      spec: cdktn.stringToTerraform(this._spec),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       spec: {
-        value: cdktf.stringToHclTerraform(this._spec),
+        value: cdktn.stringToHclTerraform(this._spec),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

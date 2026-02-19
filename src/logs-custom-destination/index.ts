@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogsCustomDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface LogsCustomDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether logs matching this custom destination should be forwarded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Whether tags from the forwarded logs should be forwarded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
   */
-  readonly forwardTags?: boolean | cdktf.IResolvable;
+  readonly forwardTags?: boolean | cdktn.IResolvable;
   /**
   * List of [tag keys](https://docs.datadoghq.com/getting_started/tagging/#define-tags) to be filtered.
   * 				An empty list represents no restriction is in place and either all or no tags will be
   * 				forwarded depending on `forward_tags_restriction_list_type` parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
   */
   readonly forwardTagsRestrictionList?: string[];
   /**
@@ -38,87 +38,87 @@ export interface LogsCustomDestinationConfig extends cdktf.TerraformMetaArgument
   * 				are forwarded.
   * 				`BLOCK_LIST` works the opposite way. It does not forward the tags matching the ones on the list. Valid values are `ALLOW_LIST`, `BLOCK_LIST`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
   */
   readonly forwardTagsRestrictionListType?: string;
   /**
   * The custom destination name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
   */
   readonly name: string;
   /**
   * The custom destination query filter. Logs matching this query are forwarded to the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
   */
   readonly query?: string;
   /**
   * elasticsearch_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
   */
-  readonly elasticsearchDestination?: LogsCustomDestinationElasticsearchDestination[] | cdktf.IResolvable;
+  readonly elasticsearchDestination?: LogsCustomDestinationElasticsearchDestination[] | cdktn.IResolvable;
   /**
   * http_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
   */
-  readonly httpDestination?: LogsCustomDestinationHttpDestination[] | cdktf.IResolvable;
+  readonly httpDestination?: LogsCustomDestinationHttpDestination[] | cdktn.IResolvable;
   /**
   * microsoft_sentinel_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#microsoft_sentinel_destination LogsCustomDestination#microsoft_sentinel_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#microsoft_sentinel_destination LogsCustomDestination#microsoft_sentinel_destination}
   */
-  readonly microsoftSentinelDestination?: LogsCustomDestinationMicrosoftSentinelDestination[] | cdktf.IResolvable;
+  readonly microsoftSentinelDestination?: LogsCustomDestinationMicrosoftSentinelDestination[] | cdktn.IResolvable;
   /**
   * splunk_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
   */
-  readonly splunkDestination?: LogsCustomDestinationSplunkDestination[] | cdktf.IResolvable;
+  readonly splunkDestination?: LogsCustomDestinationSplunkDestination[] | cdktn.IResolvable;
 }
 export interface LogsCustomDestinationElasticsearchDestinationBasicAuth {
   /**
   * The password of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
   */
   readonly password: string;
   /**
   * The username of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
   */
   readonly username: string;
 }
 
-export function logsCustomDestinationElasticsearchDestinationBasicAuthToTerraform(struct?: LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationElasticsearchDestinationBasicAuthToTerraform(struct?: LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function logsCustomDestinationElasticsearchDestinationBasicAuthToHclTerraform(struct?: LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationElasticsearchDestinationBasicAuthToHclTerraform(struct?: LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -129,9 +129,9 @@ export function logsCustomDestinationElasticsearchDestinationBasicAuthToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference extends cdktf.ComplexObject {
+export class LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -139,11 +139,11 @@ export class LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,14 +160,14 @@ export class LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomDestinationElasticsearchDestinationBasicAuth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._password = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,15 +206,15 @@ export class LogsCustomDestinationElasticsearchDestinationBasicAuthOutputReferen
   }
 }
 
-export class LogsCustomDestinationElasticsearchDestinationBasicAuthList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktf.IResolvable
+export class LogsCustomDestinationElasticsearchDestinationBasicAuthList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -229,13 +229,13 @@ export interface LogsCustomDestinationElasticsearchDestination {
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * Name of the Elasticsearch index (must follow [Elasticsearch's criteria](https://www.elastic.co/guide/en/elasticsearch/reference/8.11/indices-create-index.html#indices-create-api-path-params)).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
   */
   readonly indexName: string;
   /**
@@ -249,57 +249,57 @@ export interface LogsCustomDestinationElasticsearchDestination {
   * 							If this field is missing or is blank, it means that the index name will always be the same
   * 							(that is, no rotation).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
   */
   readonly indexRotation?: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
   */
-  readonly basicAuth?: LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktf.IResolvable;
+  readonly basicAuth?: LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktn.IResolvable;
 }
 
-export function logsCustomDestinationElasticsearchDestinationToTerraform(struct?: LogsCustomDestinationElasticsearchDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationElasticsearchDestinationToTerraform(struct?: LogsCustomDestinationElasticsearchDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    index_name: cdktf.stringToTerraform(struct!.indexName),
-    index_rotation: cdktf.stringToTerraform(struct!.indexRotation),
-    basic_auth: cdktf.listMapper(logsCustomDestinationElasticsearchDestinationBasicAuthToTerraform, true)(struct!.basicAuth),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
+    index_rotation: cdktn.stringToTerraform(struct!.indexRotation),
+    basic_auth: cdktn.listMapper(logsCustomDestinationElasticsearchDestinationBasicAuthToTerraform, true)(struct!.basicAuth),
   }
 }
 
 
-export function logsCustomDestinationElasticsearchDestinationToHclTerraform(struct?: LogsCustomDestinationElasticsearchDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationElasticsearchDestinationToHclTerraform(struct?: LogsCustomDestinationElasticsearchDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_rotation: {
-      value: cdktf.stringToHclTerraform(struct!.indexRotation),
+      value: cdktn.stringToHclTerraform(struct!.indexRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     basic_auth: {
-      value: cdktf.listMapperHcl(logsCustomDestinationElasticsearchDestinationBasicAuthToHclTerraform, true)(struct!.basicAuth),
+      value: cdktn.listMapperHcl(logsCustomDestinationElasticsearchDestinationBasicAuthToHclTerraform, true)(struct!.basicAuth),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomDestinationElasticsearchDestinationBasicAuthList",
@@ -310,9 +310,9 @@ export function logsCustomDestinationElasticsearchDestinationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomDestinationElasticsearchDestinationOutputReference extends cdktf.ComplexObject {
+export class LogsCustomDestinationElasticsearchDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -320,11 +320,11 @@ export class LogsCustomDestinationElasticsearchDestinationOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomDestinationElasticsearchDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomDestinationElasticsearchDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,7 +349,7 @@ export class LogsCustomDestinationElasticsearchDestinationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomDestinationElasticsearchDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomDestinationElasticsearchDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -358,7 +358,7 @@ export class LogsCustomDestinationElasticsearchDestinationOutputReference extend
       this._indexRotation = undefined;
       this._basicAuth.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -419,7 +419,7 @@ export class LogsCustomDestinationElasticsearchDestinationOutputReference extend
   public get basicAuth() {
     return this._basicAuth;
   }
-  public putBasicAuth(value: LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktf.IResolvable) {
+  public putBasicAuth(value: LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktn.IResolvable) {
     this._basicAuth.internalValue = value;
   }
   public resetBasicAuth() {
@@ -431,15 +431,15 @@ export class LogsCustomDestinationElasticsearchDestinationOutputReference extend
   }
 }
 
-export class LogsCustomDestinationElasticsearchDestinationList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomDestinationElasticsearchDestination[] | cdktf.IResolvable
+export class LogsCustomDestinationElasticsearchDestinationList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomDestinationElasticsearchDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -454,43 +454,43 @@ export interface LogsCustomDestinationHttpDestinationBasicAuth {
   /**
   * The password of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
   */
   readonly password: string;
   /**
   * The username of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
   */
   readonly username: string;
 }
 
-export function logsCustomDestinationHttpDestinationBasicAuthToTerraform(struct?: LogsCustomDestinationHttpDestinationBasicAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationHttpDestinationBasicAuthToTerraform(struct?: LogsCustomDestinationHttpDestinationBasicAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    password: cdktf.stringToTerraform(struct!.password),
-    username: cdktf.stringToTerraform(struct!.username),
+    password: cdktn.stringToTerraform(struct!.password),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function logsCustomDestinationHttpDestinationBasicAuthToHclTerraform(struct?: LogsCustomDestinationHttpDestinationBasicAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationHttpDestinationBasicAuthToHclTerraform(struct?: LogsCustomDestinationHttpDestinationBasicAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -501,9 +501,9 @@ export function logsCustomDestinationHttpDestinationBasicAuthToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomDestinationHttpDestinationBasicAuthOutputReference extends cdktf.ComplexObject {
+export class LogsCustomDestinationHttpDestinationBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -511,11 +511,11 @@ export class LogsCustomDestinationHttpDestinationBasicAuthOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomDestinationHttpDestinationBasicAuth | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomDestinationHttpDestinationBasicAuth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -532,14 +532,14 @@ export class LogsCustomDestinationHttpDestinationBasicAuthOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomDestinationHttpDestinationBasicAuth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomDestinationHttpDestinationBasicAuth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._password = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -578,15 +578,15 @@ export class LogsCustomDestinationHttpDestinationBasicAuthOutputReference extend
   }
 }
 
-export class LogsCustomDestinationHttpDestinationBasicAuthList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomDestinationHttpDestinationBasicAuth[] | cdktf.IResolvable
+export class LogsCustomDestinationHttpDestinationBasicAuthList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomDestinationHttpDestinationBasicAuth[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -601,43 +601,43 @@ export interface LogsCustomDestinationHttpDestinationCustomHeaderAuth {
   /**
   * The header name of the authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
   */
   readonly headerName: string;
   /**
   * The header value of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
   */
   readonly headerValue: string;
 }
 
-export function logsCustomDestinationHttpDestinationCustomHeaderAuthToTerraform(struct?: LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationHttpDestinationCustomHeaderAuthToTerraform(struct?: LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
   }
 }
 
 
-export function logsCustomDestinationHttpDestinationCustomHeaderAuthToHclTerraform(struct?: LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationHttpDestinationCustomHeaderAuthToHclTerraform(struct?: LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -648,9 +648,9 @@ export function logsCustomDestinationHttpDestinationCustomHeaderAuthToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference extends cdktf.ComplexObject {
+export class LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -658,11 +658,11 @@ export class LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -679,14 +679,14 @@ export class LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomDestinationHttpDestinationCustomHeaderAuth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._headerName = undefined;
       this._headerValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -725,15 +725,15 @@ export class LogsCustomDestinationHttpDestinationCustomHeaderAuthOutputReference
   }
 }
 
-export class LogsCustomDestinationHttpDestinationCustomHeaderAuthList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktf.IResolvable
+export class LogsCustomDestinationHttpDestinationCustomHeaderAuthList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -748,56 +748,56 @@ export interface LogsCustomDestinationHttpDestination {
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
   */
-  readonly basicAuth?: LogsCustomDestinationHttpDestinationBasicAuth[] | cdktf.IResolvable;
+  readonly basicAuth?: LogsCustomDestinationHttpDestinationBasicAuth[] | cdktn.IResolvable;
   /**
   * custom_header_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
   */
-  readonly customHeaderAuth?: LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktf.IResolvable;
+  readonly customHeaderAuth?: LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktn.IResolvable;
 }
 
-export function logsCustomDestinationHttpDestinationToTerraform(struct?: LogsCustomDestinationHttpDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationHttpDestinationToTerraform(struct?: LogsCustomDestinationHttpDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    basic_auth: cdktf.listMapper(logsCustomDestinationHttpDestinationBasicAuthToTerraform, true)(struct!.basicAuth),
-    custom_header_auth: cdktf.listMapper(logsCustomDestinationHttpDestinationCustomHeaderAuthToTerraform, true)(struct!.customHeaderAuth),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    basic_auth: cdktn.listMapper(logsCustomDestinationHttpDestinationBasicAuthToTerraform, true)(struct!.basicAuth),
+    custom_header_auth: cdktn.listMapper(logsCustomDestinationHttpDestinationCustomHeaderAuthToTerraform, true)(struct!.customHeaderAuth),
   }
 }
 
 
-export function logsCustomDestinationHttpDestinationToHclTerraform(struct?: LogsCustomDestinationHttpDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationHttpDestinationToHclTerraform(struct?: LogsCustomDestinationHttpDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     basic_auth: {
-      value: cdktf.listMapperHcl(logsCustomDestinationHttpDestinationBasicAuthToHclTerraform, true)(struct!.basicAuth),
+      value: cdktn.listMapperHcl(logsCustomDestinationHttpDestinationBasicAuthToHclTerraform, true)(struct!.basicAuth),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomDestinationHttpDestinationBasicAuthList",
     },
     custom_header_auth: {
-      value: cdktf.listMapperHcl(logsCustomDestinationHttpDestinationCustomHeaderAuthToHclTerraform, true)(struct!.customHeaderAuth),
+      value: cdktn.listMapperHcl(logsCustomDestinationHttpDestinationCustomHeaderAuthToHclTerraform, true)(struct!.customHeaderAuth),
       isBlock: true,
       type: "list",
       storageClassType: "LogsCustomDestinationHttpDestinationCustomHeaderAuthList",
@@ -808,9 +808,9 @@ export function logsCustomDestinationHttpDestinationToHclTerraform(struct?: Logs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomDestinationHttpDestinationOutputReference extends cdktf.ComplexObject {
+export class LogsCustomDestinationHttpDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -818,11 +818,11 @@ export class LogsCustomDestinationHttpDestinationOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomDestinationHttpDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomDestinationHttpDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -843,7 +843,7 @@ export class LogsCustomDestinationHttpDestinationOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomDestinationHttpDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomDestinationHttpDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -851,7 +851,7 @@ export class LogsCustomDestinationHttpDestinationOutputReference extends cdktf.C
       this._basicAuth.internalValue = undefined;
       this._customHeaderAuth.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -882,7 +882,7 @@ export class LogsCustomDestinationHttpDestinationOutputReference extends cdktf.C
   public get basicAuth() {
     return this._basicAuth;
   }
-  public putBasicAuth(value: LogsCustomDestinationHttpDestinationBasicAuth[] | cdktf.IResolvable) {
+  public putBasicAuth(value: LogsCustomDestinationHttpDestinationBasicAuth[] | cdktn.IResolvable) {
     this._basicAuth.internalValue = value;
   }
   public resetBasicAuth() {
@@ -898,7 +898,7 @@ export class LogsCustomDestinationHttpDestinationOutputReference extends cdktf.C
   public get customHeaderAuth() {
     return this._customHeaderAuth;
   }
-  public putCustomHeaderAuth(value: LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktf.IResolvable) {
+  public putCustomHeaderAuth(value: LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktn.IResolvable) {
     this._customHeaderAuth.internalValue = value;
   }
   public resetCustomHeaderAuth() {
@@ -910,15 +910,15 @@ export class LogsCustomDestinationHttpDestinationOutputReference extends cdktf.C
   }
 }
 
-export class LogsCustomDestinationHttpDestinationList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomDestinationHttpDestination[] | cdktf.IResolvable
+export class LogsCustomDestinationHttpDestinationList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomDestinationHttpDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -933,82 +933,82 @@ export interface LogsCustomDestinationMicrosoftSentinelDestination {
   /**
   * Client ID from the Datadog Azure Integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#client_id LogsCustomDestination#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#client_id LogsCustomDestination#client_id}
   */
   readonly clientId: string;
   /**
   * Azure Data Collection Endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#data_collection_endpoint LogsCustomDestination#data_collection_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#data_collection_endpoint LogsCustomDestination#data_collection_endpoint}
   */
   readonly dataCollectionEndpoint: string;
   /**
   *  Azure Data Collection Rule ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#data_collection_rule_id LogsCustomDestination#data_collection_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#data_collection_rule_id LogsCustomDestination#data_collection_rule_id}
   */
   readonly dataCollectionRuleId: string;
   /**
   * Azure stream name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#stream_name LogsCustomDestination#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#stream_name LogsCustomDestination#stream_name}
   */
   readonly streamName: string;
   /**
   * Tenant ID from the Datadog Azure Integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#tenant_id LogsCustomDestination#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#tenant_id LogsCustomDestination#tenant_id}
   */
   readonly tenantId: string;
 }
 
-export function logsCustomDestinationMicrosoftSentinelDestinationToTerraform(struct?: LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationMicrosoftSentinelDestinationToTerraform(struct?: LogsCustomDestinationMicrosoftSentinelDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    data_collection_endpoint: cdktf.stringToTerraform(struct!.dataCollectionEndpoint),
-    data_collection_rule_id: cdktf.stringToTerraform(struct!.dataCollectionRuleId),
-    stream_name: cdktf.stringToTerraform(struct!.streamName),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    data_collection_endpoint: cdktn.stringToTerraform(struct!.dataCollectionEndpoint),
+    data_collection_rule_id: cdktn.stringToTerraform(struct!.dataCollectionRuleId),
+    stream_name: cdktn.stringToTerraform(struct!.streamName),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
-export function logsCustomDestinationMicrosoftSentinelDestinationToHclTerraform(struct?: LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationMicrosoftSentinelDestinationToHclTerraform(struct?: LogsCustomDestinationMicrosoftSentinelDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_collection_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.dataCollectionEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.dataCollectionEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_collection_rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.dataCollectionRuleId),
+      value: cdktn.stringToHclTerraform(struct!.dataCollectionRuleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     stream_name: {
-      value: cdktf.stringToHclTerraform(struct!.streamName),
+      value: cdktn.stringToHclTerraform(struct!.streamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1019,9 +1019,9 @@ export function logsCustomDestinationMicrosoftSentinelDestinationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomDestinationMicrosoftSentinelDestinationOutputReference extends cdktf.ComplexObject {
+export class LogsCustomDestinationMicrosoftSentinelDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1029,11 +1029,11 @@ export class LogsCustomDestinationMicrosoftSentinelDestinationOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomDestinationMicrosoftSentinelDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1062,7 +1062,7 @@ export class LogsCustomDestinationMicrosoftSentinelDestinationOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomDestinationMicrosoftSentinelDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomDestinationMicrosoftSentinelDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1072,7 +1072,7 @@ export class LogsCustomDestinationMicrosoftSentinelDestinationOutputReference ex
       this._streamName = undefined;
       this._tenantId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1153,15 +1153,15 @@ export class LogsCustomDestinationMicrosoftSentinelDestinationOutputReference ex
   }
 }
 
-export class LogsCustomDestinationMicrosoftSentinelDestinationList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomDestinationMicrosoftSentinelDestination[] | cdktf.IResolvable
+export class LogsCustomDestinationMicrosoftSentinelDestinationList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomDestinationMicrosoftSentinelDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1176,43 +1176,43 @@ export interface LogsCustomDestinationSplunkDestination {
   /**
   * Access token of the Splunk HTTP Event Collector. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
   */
   readonly accessToken: string;
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
 }
 
-export function logsCustomDestinationSplunkDestinationToTerraform(struct?: LogsCustomDestinationSplunkDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationSplunkDestinationToTerraform(struct?: LogsCustomDestinationSplunkDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
   }
 }
 
 
-export function logsCustomDestinationSplunkDestinationToHclTerraform(struct?: LogsCustomDestinationSplunkDestination | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsCustomDestinationSplunkDestinationToHclTerraform(struct?: LogsCustomDestinationSplunkDestination | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1223,9 +1223,9 @@ export function logsCustomDestinationSplunkDestinationToHclTerraform(struct?: Lo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsCustomDestinationSplunkDestinationOutputReference extends cdktf.ComplexObject {
+export class LogsCustomDestinationSplunkDestinationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1233,11 +1233,11 @@ export class LogsCustomDestinationSplunkDestinationOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsCustomDestinationSplunkDestination | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsCustomDestinationSplunkDestination | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1254,14 +1254,14 @@ export class LogsCustomDestinationSplunkDestinationOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsCustomDestinationSplunkDestination | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsCustomDestinationSplunkDestination | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessToken = undefined;
       this._endpoint = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1300,15 +1300,15 @@ export class LogsCustomDestinationSplunkDestinationOutputReference extends cdktf
   }
 }
 
-export class LogsCustomDestinationSplunkDestinationList extends cdktf.ComplexList {
-  public internalValue? : LogsCustomDestinationSplunkDestination[] | cdktf.IResolvable
+export class LogsCustomDestinationSplunkDestinationList extends cdktn.ComplexList {
+  public internalValue? : LogsCustomDestinationSplunkDestination[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1321,9 +1321,9 @@ export class LogsCustomDestinationSplunkDestinationList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}
 */
-export class LogsCustomDestination extends cdktf.TerraformResource {
+export class LogsCustomDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1334,14 +1334,14 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogsCustomDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogsCustomDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsCustomDestination to import
-  * @param importFromId The id of the existing LogsCustomDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsCustomDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsCustomDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_custom_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_custom_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -1349,7 +1349,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1360,7 +1360,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_custom_destination',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1388,11 +1388,11 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1404,11 +1404,11 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   }
 
   // forward_tags - computed: true, optional: true, required: false
-  private _forwardTags?: boolean | cdktf.IResolvable; 
+  private _forwardTags?: boolean | cdktn.IResolvable; 
   public get forwardTags() {
     return this.getBooleanAttribute('forward_tags');
   }
-  public set forwardTags(value: boolean | cdktf.IResolvable) {
+  public set forwardTags(value: boolean | cdktn.IResolvable) {
     this._forwardTags = value;
   }
   public resetForwardTags() {
@@ -1490,7 +1490,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   public get elasticsearchDestination() {
     return this._elasticsearchDestination;
   }
-  public putElasticsearchDestination(value: LogsCustomDestinationElasticsearchDestination[] | cdktf.IResolvable) {
+  public putElasticsearchDestination(value: LogsCustomDestinationElasticsearchDestination[] | cdktn.IResolvable) {
     this._elasticsearchDestination.internalValue = value;
   }
   public resetElasticsearchDestination() {
@@ -1506,7 +1506,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   public get httpDestination() {
     return this._httpDestination;
   }
-  public putHttpDestination(value: LogsCustomDestinationHttpDestination[] | cdktf.IResolvable) {
+  public putHttpDestination(value: LogsCustomDestinationHttpDestination[] | cdktn.IResolvable) {
     this._httpDestination.internalValue = value;
   }
   public resetHttpDestination() {
@@ -1522,7 +1522,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   public get microsoftSentinelDestination() {
     return this._microsoftSentinelDestination;
   }
-  public putMicrosoftSentinelDestination(value: LogsCustomDestinationMicrosoftSentinelDestination[] | cdktf.IResolvable) {
+  public putMicrosoftSentinelDestination(value: LogsCustomDestinationMicrosoftSentinelDestination[] | cdktn.IResolvable) {
     this._microsoftSentinelDestination.internalValue = value;
   }
   public resetMicrosoftSentinelDestination() {
@@ -1538,7 +1538,7 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
   public get splunkDestination() {
     return this._splunkDestination;
   }
-  public putSplunkDestination(value: LogsCustomDestinationSplunkDestination[] | cdktf.IResolvable) {
+  public putSplunkDestination(value: LogsCustomDestinationSplunkDestination[] | cdktn.IResolvable) {
     this._splunkDestination.internalValue = value;
   }
   public resetSplunkDestination() {
@@ -1555,77 +1555,77 @@ export class LogsCustomDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      forward_tags: cdktf.booleanToTerraform(this._forwardTags),
-      forward_tags_restriction_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._forwardTagsRestrictionList),
-      forward_tags_restriction_list_type: cdktf.stringToTerraform(this._forwardTagsRestrictionListType),
-      name: cdktf.stringToTerraform(this._name),
-      query: cdktf.stringToTerraform(this._query),
-      elasticsearch_destination: cdktf.listMapper(logsCustomDestinationElasticsearchDestinationToTerraform, true)(this._elasticsearchDestination.internalValue),
-      http_destination: cdktf.listMapper(logsCustomDestinationHttpDestinationToTerraform, true)(this._httpDestination.internalValue),
-      microsoft_sentinel_destination: cdktf.listMapper(logsCustomDestinationMicrosoftSentinelDestinationToTerraform, true)(this._microsoftSentinelDestination.internalValue),
-      splunk_destination: cdktf.listMapper(logsCustomDestinationSplunkDestinationToTerraform, true)(this._splunkDestination.internalValue),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      forward_tags: cdktn.booleanToTerraform(this._forwardTags),
+      forward_tags_restriction_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._forwardTagsRestrictionList),
+      forward_tags_restriction_list_type: cdktn.stringToTerraform(this._forwardTagsRestrictionListType),
+      name: cdktn.stringToTerraform(this._name),
+      query: cdktn.stringToTerraform(this._query),
+      elasticsearch_destination: cdktn.listMapper(logsCustomDestinationElasticsearchDestinationToTerraform, true)(this._elasticsearchDestination.internalValue),
+      http_destination: cdktn.listMapper(logsCustomDestinationHttpDestinationToTerraform, true)(this._httpDestination.internalValue),
+      microsoft_sentinel_destination: cdktn.listMapper(logsCustomDestinationMicrosoftSentinelDestinationToTerraform, true)(this._microsoftSentinelDestination.internalValue),
+      splunk_destination: cdktn.listMapper(logsCustomDestinationSplunkDestinationToTerraform, true)(this._splunkDestination.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       forward_tags: {
-        value: cdktf.booleanToHclTerraform(this._forwardTags),
+        value: cdktn.booleanToHclTerraform(this._forwardTags),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       forward_tags_restriction_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._forwardTagsRestrictionList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._forwardTagsRestrictionList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       forward_tags_restriction_list_type: {
-        value: cdktf.stringToHclTerraform(this._forwardTagsRestrictionListType),
+        value: cdktn.stringToHclTerraform(this._forwardTagsRestrictionListType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       elasticsearch_destination: {
-        value: cdktf.listMapperHcl(logsCustomDestinationElasticsearchDestinationToHclTerraform, true)(this._elasticsearchDestination.internalValue),
+        value: cdktn.listMapperHcl(logsCustomDestinationElasticsearchDestinationToHclTerraform, true)(this._elasticsearchDestination.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogsCustomDestinationElasticsearchDestinationList",
       },
       http_destination: {
-        value: cdktf.listMapperHcl(logsCustomDestinationHttpDestinationToHclTerraform, true)(this._httpDestination.internalValue),
+        value: cdktn.listMapperHcl(logsCustomDestinationHttpDestinationToHclTerraform, true)(this._httpDestination.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogsCustomDestinationHttpDestinationList",
       },
       microsoft_sentinel_destination: {
-        value: cdktf.listMapperHcl(logsCustomDestinationMicrosoftSentinelDestinationToHclTerraform, true)(this._microsoftSentinelDestination.internalValue),
+        value: cdktn.listMapperHcl(logsCustomDestinationMicrosoftSentinelDestinationToHclTerraform, true)(this._microsoftSentinelDestination.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogsCustomDestinationMicrosoftSentinelDestinationList",
       },
       splunk_destination: {
-        value: cdktf.listMapperHcl(logsCustomDestinationSplunkDestinationToHclTerraform, true)(this._splunkDestination.internalValue),
+        value: cdktn.listMapperHcl(logsCustomDestinationSplunkDestinationToHclTerraform, true)(this._splunkDestination.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogsCustomDestinationSplunkDestinationList",

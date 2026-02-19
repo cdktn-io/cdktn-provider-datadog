@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
+export interface SloCorrectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Category the SLO correction belongs to. Valid values are `Scheduled Maintenance`, `Outside Business Hours`, `Deployment`, `Other`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#category SloCorrection#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#category SloCorrection#category}
   */
   readonly category: string;
   /**
   * Description of the correction being made.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#description SloCorrection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#description SloCorrection#description}
   */
   readonly description?: string;
   /**
   * Length of time in seconds for a specified `rrule` recurring SLO correction (required if specifying `rrule`)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#duration SloCorrection#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#duration SloCorrection#duration}
   */
   readonly duration?: number;
   /**
   * Ending time of the correction in epoch seconds. Required for one time corrections, but optional if `rrule` is specified
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#end SloCorrection#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#end SloCorrection#end}
   */
   readonly end?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#id SloCorrection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#id SloCorrection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,33 +46,33 @@ export interface SloCorrectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Recurrence rules as defined in the iCalendar RFC 5545. Supported rules for SLO corrections are `FREQ`, `INTERVAL`, `COUNT` and `UNTIL`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#rrule SloCorrection#rrule}
   */
   readonly rrule?: string;
   /**
   * ID of the SLO that this correction will be applied to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#slo_id SloCorrection#slo_id}
   */
   readonly sloId: string;
   /**
   * Starting time of the correction in epoch seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#start SloCorrection#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#start SloCorrection#start}
   */
   readonly start: number;
   /**
   * The timezone to display in the UI for the correction times. Prefers IANA timezone name format (for example, 'America/Los_Angeles', 'Europe/Paris'), but some common standard abbreviations are supported. Defaults to 'UTC'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#timezone SloCorrection#timezone}
   */
   readonly timezone?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction datadog_slo_correction}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction datadog_slo_correction}
 */
-export class SloCorrection extends cdktf.TerraformResource {
+export class SloCorrection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -83,14 +83,14 @@ export class SloCorrection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SloCorrection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SloCorrection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SloCorrection to import
-  * @param importFromId The id of the existing SloCorrection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SloCorrection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SloCorrection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_slo_correction", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_slo_correction", importId: importFromId, provider });
       }
 
   // ===========
@@ -98,7 +98,7 @@ export class SloCorrection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/slo_correction datadog_slo_correction} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/slo_correction datadog_slo_correction} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,7 @@ export class SloCorrection extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_slo_correction',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -276,70 +276,70 @@ export class SloCorrection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      category: cdktf.stringToTerraform(this._category),
-      description: cdktf.stringToTerraform(this._description),
-      duration: cdktf.numberToTerraform(this._duration),
-      end: cdktf.numberToTerraform(this._end),
-      id: cdktf.stringToTerraform(this._id),
-      rrule: cdktf.stringToTerraform(this._rrule),
-      slo_id: cdktf.stringToTerraform(this._sloId),
-      start: cdktf.numberToTerraform(this._start),
-      timezone: cdktf.stringToTerraform(this._timezone),
+      category: cdktn.stringToTerraform(this._category),
+      description: cdktn.stringToTerraform(this._description),
+      duration: cdktn.numberToTerraform(this._duration),
+      end: cdktn.numberToTerraform(this._end),
+      id: cdktn.stringToTerraform(this._id),
+      rrule: cdktn.stringToTerraform(this._rrule),
+      slo_id: cdktn.stringToTerraform(this._sloId),
+      start: cdktn.numberToTerraform(this._start),
+      timezone: cdktn.stringToTerraform(this._timezone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       category: {
-        value: cdktf.stringToHclTerraform(this._category),
+        value: cdktn.stringToHclTerraform(this._category),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       duration: {
-        value: cdktf.numberToHclTerraform(this._duration),
+        value: cdktn.numberToHclTerraform(this._duration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       end: {
-        value: cdktf.numberToHclTerraform(this._end),
+        value: cdktn.numberToHclTerraform(this._end),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rrule: {
-        value: cdktf.stringToHclTerraform(this._rrule),
+        value: cdktn.stringToHclTerraform(this._rrule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       slo_id: {
-        value: cdktf.stringToHclTerraform(this._sloId),
+        value: cdktn.stringToHclTerraform(this._sloId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start: {
-        value: cdktf.numberToHclTerraform(this._start),
+        value: cdktn.numberToHclTerraform(this._start),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

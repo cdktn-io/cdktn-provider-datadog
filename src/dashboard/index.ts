@@ -1,5 +1,5 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
@@ -19,22 +19,22 @@ dashboardWidgetToHclTerraform,
 DashboardWidgetList} from './index-structs'
 export * from './index-structs'
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
-export interface DashboardConfig extends cdktf.TerraformMetaArguments {
+import * as cdktn from 'cdktn';
+export interface DashboardConfig extends cdktn.TerraformMetaArguments {
   /**
   * A list of dashboard lists this dashboard belongs to. This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#dashboard_lists Dashboard#dashboard_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#dashboard_lists Dashboard#dashboard_lists}
   */
   readonly dashboardLists?: number[];
   /**
   * The description of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#description Dashboard#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#description Dashboard#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#id Dashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#id Dashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,75 +43,75 @@ export interface DashboardConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether this dashboard is read-only. **Deprecated.** This field is deprecated and non-functional. Use `restricted_roles` instead to define which roles are required to edit the dashboard. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#is_read_only Dashboard#is_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#is_read_only Dashboard#is_read_only}
   */
-  readonly isReadOnly?: boolean | cdktf.IResolvable;
+  readonly isReadOnly?: boolean | cdktn.IResolvable;
   /**
   * The layout type of the dashboard. Valid values are `ordered`, `free`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#layout_type Dashboard#layout_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#layout_type Dashboard#layout_type}
   */
   readonly layoutType: string;
   /**
   * The list of handles for the users to notify when changes are made to this dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#notify_list Dashboard#notify_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#notify_list Dashboard#notify_list}
   */
   readonly notifyList?: string[];
   /**
   * The reflow type of a new dashboard layout. Set this only when layout type is `ordered`. If set to `fixed`, the dashboard expects all widgets to have a layout, and if it's set to `auto`, widgets should not have layouts. Valid values are `auto`, `fixed`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#reflow_type Dashboard#reflow_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#reflow_type Dashboard#reflow_type}
   */
   readonly reflowType?: string;
   /**
   * UUIDs of roles whose associated users are authorized to edit the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#restricted_roles Dashboard#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#restricted_roles Dashboard#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * A list of tags assigned to the Dashboard. Only team names of the form `team:<name>` are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#tags Dashboard#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#tags Dashboard#tags}
   */
   readonly tags?: string[];
   /**
   * The title of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#title Dashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#title Dashboard#title}
   */
   readonly title: string;
   /**
   * The URL of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#url Dashboard#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#url Dashboard#url}
   */
   readonly url?: string;
   /**
   * template_variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#template_variable Dashboard#template_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#template_variable Dashboard#template_variable}
   */
-  readonly templateVariable?: DashboardTemplateVariable[] | cdktf.IResolvable;
+  readonly templateVariable?: DashboardTemplateVariable[] | cdktn.IResolvable;
   /**
   * template_variable_preset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#template_variable_preset Dashboard#template_variable_preset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#template_variable_preset Dashboard#template_variable_preset}
   */
-  readonly templateVariablePreset?: DashboardTemplateVariablePreset[] | cdktf.IResolvable;
+  readonly templateVariablePreset?: DashboardTemplateVariablePreset[] | cdktn.IResolvable;
   /**
   * widget block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#widget Dashboard#widget}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#widget Dashboard#widget}
   */
-  readonly widget?: DashboardWidget[] | cdktf.IResolvable;
+  readonly widget?: DashboardWidget[] | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard datadog_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard datadog_dashboard}
 */
-export class Dashboard extends cdktf.TerraformResource {
+export class Dashboard extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -122,14 +122,14 @@ export class Dashboard extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Dashboard resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Dashboard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Dashboard to import
-  * @param importFromId The id of the existing Dashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Dashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Dashboard to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dashboard", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dashboard", importId: importFromId, provider });
       }
 
   // ===========
@@ -137,7 +137,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard datadog_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard datadog_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -148,7 +148,7 @@ export class Dashboard extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -182,7 +182,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // dashboard_lists - computed: false, optional: true, required: false
   private _dashboardLists?: number[]; 
   public get dashboardLists() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('dashboard_lists')));
   }
   public set dashboardLists(value: number[]) {
     this._dashboardLists = value;
@@ -197,7 +197,7 @@ export class Dashboard extends cdktf.TerraformResource {
 
   // dashboard_lists_removed - computed: true, optional: false, required: false
   public get dashboardListsRemoved() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists_removed')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('dashboard_lists_removed')));
   }
 
   // description - computed: false, optional: true, required: false
@@ -233,11 +233,11 @@ export class Dashboard extends cdktf.TerraformResource {
   }
 
   // is_read_only - computed: false, optional: true, required: false
-  private _isReadOnly?: boolean | cdktf.IResolvable; 
+  private _isReadOnly?: boolean | cdktn.IResolvable; 
   public get isReadOnly() {
     return this.getBooleanAttribute('is_read_only');
   }
-  public set isReadOnly(value: boolean | cdktf.IResolvable) {
+  public set isReadOnly(value: boolean | cdktn.IResolvable) {
     this._isReadOnly = value;
   }
   public resetIsReadOnly() {
@@ -264,7 +264,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // notify_list - computed: false, optional: true, required: false
   private _notifyList?: string[]; 
   public get notifyList() {
-    return cdktf.Fn.tolist(this.getListAttribute('notify_list'));
+    return cdktn.Fn.tolist(this.getListAttribute('notify_list'));
   }
   public set notifyList(value: string[]) {
     this._notifyList = value;
@@ -296,7 +296,7 @@ export class Dashboard extends cdktf.TerraformResource {
   // restricted_roles - computed: false, optional: true, required: false
   private _restrictedRoles?: string[]; 
   public get restrictedRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('restricted_roles'));
   }
   public set restrictedRoles(value: string[]) {
     this._restrictedRoles = value;
@@ -359,7 +359,7 @@ export class Dashboard extends cdktf.TerraformResource {
   public get templateVariable() {
     return this._templateVariable;
   }
-  public putTemplateVariable(value: DashboardTemplateVariable[] | cdktf.IResolvable) {
+  public putTemplateVariable(value: DashboardTemplateVariable[] | cdktn.IResolvable) {
     this._templateVariable.internalValue = value;
   }
   public resetTemplateVariable() {
@@ -375,7 +375,7 @@ export class Dashboard extends cdktf.TerraformResource {
   public get templateVariablePreset() {
     return this._templateVariablePreset;
   }
-  public putTemplateVariablePreset(value: DashboardTemplateVariablePreset[] | cdktf.IResolvable) {
+  public putTemplateVariablePreset(value: DashboardTemplateVariablePreset[] | cdktn.IResolvable) {
     this._templateVariablePreset.internalValue = value;
   }
   public resetTemplateVariablePreset() {
@@ -391,7 +391,7 @@ export class Dashboard extends cdktf.TerraformResource {
   public get widget() {
     return this._widget;
   }
-  public putWidget(value: DashboardWidget[] | cdktf.IResolvable) {
+  public putWidget(value: DashboardWidget[] | cdktn.IResolvable) {
     this._widget.internalValue = value;
   }
   public resetWidget() {
@@ -408,105 +408,105 @@ export class Dashboard extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dashboard_lists: cdktf.listMapper(cdktf.numberToTerraform, false)(this._dashboardLists),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      is_read_only: cdktf.booleanToTerraform(this._isReadOnly),
-      layout_type: cdktf.stringToTerraform(this._layoutType),
-      notify_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notifyList),
-      reflow_type: cdktf.stringToTerraform(this._reflowType),
-      restricted_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._restrictedRoles),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      title: cdktf.stringToTerraform(this._title),
-      url: cdktf.stringToTerraform(this._url),
-      template_variable: cdktf.listMapper(dashboardTemplateVariableToTerraform, true)(this._templateVariable.internalValue),
-      template_variable_preset: cdktf.listMapper(dashboardTemplateVariablePresetToTerraform, true)(this._templateVariablePreset.internalValue),
-      widget: cdktf.listMapper(dashboardWidgetToTerraform, true)(this._widget.internalValue),
+      dashboard_lists: cdktn.listMapper(cdktn.numberToTerraform, false)(this._dashboardLists),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      is_read_only: cdktn.booleanToTerraform(this._isReadOnly),
+      layout_type: cdktn.stringToTerraform(this._layoutType),
+      notify_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._notifyList),
+      reflow_type: cdktn.stringToTerraform(this._reflowType),
+      restricted_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._restrictedRoles),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      title: cdktn.stringToTerraform(this._title),
+      url: cdktn.stringToTerraform(this._url),
+      template_variable: cdktn.listMapper(dashboardTemplateVariableToTerraform, true)(this._templateVariable.internalValue),
+      template_variable_preset: cdktn.listMapper(dashboardTemplateVariablePresetToTerraform, true)(this._templateVariablePreset.internalValue),
+      widget: cdktn.listMapper(dashboardWidgetToTerraform, true)(this._widget.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dashboard_lists: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._dashboardLists),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._dashboardLists),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_read_only: {
-        value: cdktf.booleanToHclTerraform(this._isReadOnly),
+        value: cdktn.booleanToHclTerraform(this._isReadOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       layout_type: {
-        value: cdktf.stringToHclTerraform(this._layoutType),
+        value: cdktn.stringToHclTerraform(this._layoutType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notify_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._notifyList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._notifyList),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       reflow_type: {
-        value: cdktf.stringToHclTerraform(this._reflowType),
+        value: cdktn.stringToHclTerraform(this._reflowType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restricted_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._restrictedRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._restrictedRoles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_variable: {
-        value: cdktf.listMapperHcl(dashboardTemplateVariableToHclTerraform, true)(this._templateVariable.internalValue),
+        value: cdktn.listMapperHcl(dashboardTemplateVariableToHclTerraform, true)(this._templateVariable.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DashboardTemplateVariableList",
       },
       template_variable_preset: {
-        value: cdktf.listMapperHcl(dashboardTemplateVariablePresetToHclTerraform, true)(this._templateVariablePreset.internalValue),
+        value: cdktn.listMapperHcl(dashboardTemplateVariablePresetToHclTerraform, true)(this._templateVariablePreset.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DashboardTemplateVariablePresetList",
       },
       widget: {
-        value: cdktf.listMapperHcl(dashboardWidgetToHclTerraform, true)(this._widget.internalValue),
+        value: cdktn.listMapperHcl(dashboardWidgetToHclTerraform, true)(this._widget.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DashboardWidgetList",

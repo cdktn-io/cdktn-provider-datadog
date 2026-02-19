@@ -1,17 +1,17 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RestrictionPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface RestrictionPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier for the resource, formatted as resource_type:resource_id.
   * 
@@ -23,57 +23,57 @@ export interface RestrictionPolicyConfig extends cdktf.TerraformMetaArguments {
   * * Dashboards : support is in private beta. Reach out to your Datadog contact or support to enable this.
   * * Monitors : Management of restriction policy through terraform is now available in Preview. Please request access via https://docs.datadoghq.com/help
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
   */
   readonly resourceId: string;
   /**
   * bindings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
   */
-  readonly bindings?: RestrictionPolicyBindings[] | cdktf.IResolvable;
+  readonly bindings?: RestrictionPolicyBindings[] | cdktn.IResolvable;
 }
 export interface RestrictionPolicyBindings {
   /**
   * An array of principals. A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role`, `team`, `user`, and `org`. Org ID can be obtained using a `GET /api/v2/current_user` API request. Find it in the `data.relationships.org.data.id` field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
   */
   readonly principals: string[];
   /**
   * The role/level of access. See this page for more details https://docs.datadoghq.com/api/latest/restriction-policies/#supported-relations-for-resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
   */
   readonly relation: string;
 }
 
-export function restrictionPolicyBindingsToTerraform(struct?: RestrictionPolicyBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function restrictionPolicyBindingsToTerraform(struct?: RestrictionPolicyBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.principals),
-    relation: cdktf.stringToTerraform(struct!.relation),
+    principals: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.principals),
+    relation: cdktn.stringToTerraform(struct!.relation),
   }
 }
 
 
-export function restrictionPolicyBindingsToHclTerraform(struct?: RestrictionPolicyBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function restrictionPolicyBindingsToHclTerraform(struct?: RestrictionPolicyBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     principals: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.principals),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.principals),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     relation: {
-      value: cdktf.stringToHclTerraform(struct!.relation),
+      value: cdktn.stringToHclTerraform(struct!.relation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -84,9 +84,9 @@ export function restrictionPolicyBindingsToHclTerraform(struct?: RestrictionPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RestrictionPolicyBindingsOutputReference extends cdktf.ComplexObject {
+export class RestrictionPolicyBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -94,11 +94,11 @@ export class RestrictionPolicyBindingsOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RestrictionPolicyBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): RestrictionPolicyBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -115,14 +115,14 @@ export class RestrictionPolicyBindingsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RestrictionPolicyBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RestrictionPolicyBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._principals = undefined;
       this._relation = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -137,7 +137,7 @@ export class RestrictionPolicyBindingsOutputReference extends cdktf.ComplexObjec
   // principals - computed: false, optional: false, required: true
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -161,15 +161,15 @@ export class RestrictionPolicyBindingsOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class RestrictionPolicyBindingsList extends cdktf.ComplexList {
-  public internalValue? : RestrictionPolicyBindings[] | cdktf.IResolvable
+export class RestrictionPolicyBindingsList extends cdktn.ComplexList {
+  public internalValue? : RestrictionPolicyBindings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -182,9 +182,9 @@ export class RestrictionPolicyBindingsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy datadog_restriction_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy datadog_restriction_policy}
 */
-export class RestrictionPolicy extends cdktf.TerraformResource {
+export class RestrictionPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -195,14 +195,14 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RestrictionPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RestrictionPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RestrictionPolicy to import
-  * @param importFromId The id of the existing RestrictionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RestrictionPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RestrictionPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_restriction_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_restriction_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -210,7 +210,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/restriction_policy datadog_restriction_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/restriction_policy datadog_restriction_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -221,7 +221,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_restriction_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -263,7 +263,7 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
   public get bindings() {
     return this._bindings;
   }
-  public putBindings(value: RestrictionPolicyBindings[] | cdktf.IResolvable) {
+  public putBindings(value: RestrictionPolicyBindings[] | cdktn.IResolvable) {
     this._bindings.internalValue = value;
   }
   public resetBindings() {
@@ -280,21 +280,21 @@ export class RestrictionPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      resource_id: cdktf.stringToTerraform(this._resourceId),
-      bindings: cdktf.listMapper(restrictionPolicyBindingsToTerraform, true)(this._bindings.internalValue),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
+      bindings: cdktn.listMapper(restrictionPolicyBindingsToTerraform, true)(this._bindings.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bindings: {
-        value: cdktf.listMapperHcl(restrictionPolicyBindingsToHclTerraform, true)(this._bindings.internalValue),
+        value: cdktn.listMapperHcl(restrictionPolicyBindingsToHclTerraform, true)(this._bindings.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "RestrictionPolicyBindingsList",

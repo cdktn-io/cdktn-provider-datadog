@@ -1,24 +1,24 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/csm_threats_policies
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/csm_threats_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogCsmThreatsPoliciesConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogCsmThreatsPoliciesConfig extends cdktn.TerraformMetaArguments {
 }
 export interface DataDatadogCsmThreatsPoliciesPolicies {
 }
 
 export function dataDatadogCsmThreatsPoliciesPoliciesToTerraform(struct?: DataDatadogCsmThreatsPoliciesPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -27,8 +27,8 @@ export function dataDatadogCsmThreatsPoliciesPoliciesToTerraform(struct?: DataDa
 
 
 export function dataDatadogCsmThreatsPoliciesPoliciesToHclTerraform(struct?: DataDatadogCsmThreatsPoliciesPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -36,7 +36,7 @@ export function dataDatadogCsmThreatsPoliciesPoliciesToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataDatadogCsmThreatsPoliciesPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataDatadogCsmThreatsPoliciesPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -45,7 +45,7 @@ export class DataDatadogCsmThreatsPoliciesPoliciesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -75,7 +75,7 @@ export class DataDatadogCsmThreatsPoliciesPoliciesOutputReference extends cdktf.
   }
 
   // host_tags_lists - computed: true, optional: false, required: false
-  private _hostTagsLists = new cdktf.StringListList(this, "host_tags_lists", true);
+  private _hostTagsLists = new cdktn.StringListList(this, "host_tags_lists", true);
   public get hostTagsLists() {
     return this._hostTagsLists;
   }
@@ -92,18 +92,18 @@ export class DataDatadogCsmThreatsPoliciesPoliciesOutputReference extends cdktf.
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
 }
 
-export class DataDatadogCsmThreatsPoliciesPoliciesList extends cdktf.ComplexList {
+export class DataDatadogCsmThreatsPoliciesPoliciesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -116,9 +116,9 @@ export class DataDatadogCsmThreatsPoliciesPoliciesList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies}
 */
-export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
+export class DataDatadogCsmThreatsPolicies extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -129,14 +129,14 @@ export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogCsmThreatsPolicies resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogCsmThreatsPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCsmThreatsPolicies to import
-  * @param importFromId The id of the existing DataDatadogCsmThreatsPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/csm_threats_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCsmThreatsPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/csm_threats_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCsmThreatsPolicies to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_csm_threats_policies", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_csm_threats_policies", importId: importFromId, provider });
       }
 
   // ===========
@@ -144,7 +144,7 @@ export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/csm_threats_policies datadog_csm_threats_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class DataDatadogCsmThreatsPolicies extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_csm_threats_policies',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -1,77 +1,77 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatasetConfig extends cdktf.TerraformMetaArguments {
+export interface DatasetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset#name Dataset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset#name Dataset#name}
   */
   readonly name: string;
   /**
   * An array of principals. A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role` and `team`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset#principals Dataset#principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset#principals Dataset#principals}
   */
   readonly principals: string[];
   /**
   * product_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset#product_filters Dataset#product_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset#product_filters Dataset#product_filters}
   */
-  readonly productFilters?: DatasetProductFilters[] | cdktf.IResolvable;
+  readonly productFilters?: DatasetProductFilters[] | cdktn.IResolvable;
 }
 export interface DatasetProductFilters {
   /**
   * A list of tag-based filters used to restrict access to the product type. Each filter is formatted as `@tag.key:value`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset#filters Dataset#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset#filters Dataset#filters}
   */
   readonly filters: string[];
   /**
   * The product type of the dataset. Supported types: `apm`, `rum`, `synthetics`, `metrics`, `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset#product Dataset#product}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset#product Dataset#product}
   */
   readonly product: string;
 }
 
-export function datasetProductFiltersToTerraform(struct?: DatasetProductFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datasetProductFiltersToTerraform(struct?: DatasetProductFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filters),
-    product: cdktf.stringToTerraform(struct!.product),
+    filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filters),
+    product: cdktn.stringToTerraform(struct!.product),
   }
 }
 
 
-export function datasetProductFiltersToHclTerraform(struct?: DatasetProductFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datasetProductFiltersToHclTerraform(struct?: DatasetProductFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filters),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     product: {
-      value: cdktf.stringToHclTerraform(struct!.product),
+      value: cdktn.stringToHclTerraform(struct!.product),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,9 +82,9 @@ export function datasetProductFiltersToHclTerraform(struct?: DatasetProductFilte
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatasetProductFiltersOutputReference extends cdktf.ComplexObject {
+export class DatasetProductFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -92,11 +92,11 @@ export class DatasetProductFiltersOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatasetProductFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): DatasetProductFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -113,14 +113,14 @@ export class DatasetProductFiltersOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatasetProductFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatasetProductFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filters = undefined;
       this._product = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -135,7 +135,7 @@ export class DatasetProductFiltersOutputReference extends cdktf.ComplexObject {
   // filters - computed: false, optional: false, required: true
   private _filters?: string[]; 
   public get filters() {
-    return cdktf.Fn.tolist(this.getListAttribute('filters'));
+    return cdktn.Fn.tolist(this.getListAttribute('filters'));
   }
   public set filters(value: string[]) {
     this._filters = value;
@@ -159,15 +159,15 @@ export class DatasetProductFiltersOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class DatasetProductFiltersList extends cdktf.ComplexList {
-  public internalValue? : DatasetProductFilters[] | cdktf.IResolvable
+export class DatasetProductFiltersList extends cdktn.ComplexList {
+  public internalValue? : DatasetProductFilters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -180,9 +180,9 @@ export class DatasetProductFiltersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset datadog_dataset}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset datadog_dataset}
 */
-export class Dataset extends cdktf.TerraformResource {
+export class Dataset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -193,14 +193,14 @@ export class Dataset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Dataset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Dataset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Dataset to import
-  * @param importFromId The id of the existing Dataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Dataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Dataset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dataset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dataset", importId: importFromId, provider });
       }
 
   // ===========
@@ -208,7 +208,7 @@ export class Dataset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dataset datadog_dataset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dataset datadog_dataset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -219,7 +219,7 @@ export class Dataset extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dataset',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -270,7 +270,7 @@ export class Dataset extends cdktf.TerraformResource {
   // principals - computed: false, optional: false, required: true
   private _principals?: string[]; 
   public get principals() {
-    return cdktf.Fn.tolist(this.getListAttribute('principals'));
+    return cdktn.Fn.tolist(this.getListAttribute('principals'));
   }
   public set principals(value: string[]) {
     this._principals = value;
@@ -285,7 +285,7 @@ export class Dataset extends cdktf.TerraformResource {
   public get productFilters() {
     return this._productFilters;
   }
-  public putProductFilters(value: DatasetProductFilters[] | cdktf.IResolvable) {
+  public putProductFilters(value: DatasetProductFilters[] | cdktn.IResolvable) {
     this._productFilters.internalValue = value;
   }
   public resetProductFilters() {
@@ -302,28 +302,28 @@ export class Dataset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._principals),
-      product_filters: cdktf.listMapper(datasetProductFiltersToTerraform, true)(this._productFilters.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      principals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._principals),
+      product_filters: cdktn.listMapper(datasetProductFiltersToTerraform, true)(this._productFilters.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       principals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._principals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._principals),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       product_filters: {
-        value: cdktf.listMapperHcl(datasetProductFiltersToHclTerraform, true)(this._productFilters.internalValue),
+        value: cdktn.listMapperHcl(datasetProductFiltersToHclTerraform, true)(this._productFilters.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DatasetProductFiltersList",

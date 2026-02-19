@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_integration_pipeline
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_integration_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogsIntegrationPipelineConfig extends cdktf.TerraformMetaArguments {
+export interface LogsIntegrationPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,15 +22,15 @@ export interface LogsIntegrationPipelineConfig extends cdktf.TerraformMetaArgume
   /**
   * Boolean value to enable your pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
   */
-  readonly isEnabled?: boolean | cdktf.IResolvable;
+  readonly isEnabled?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline}
 */
-export class LogsIntegrationPipeline extends cdktf.TerraformResource {
+export class LogsIntegrationPipeline extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -41,14 +41,14 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogsIntegrationPipeline resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogsIntegrationPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsIntegrationPipeline to import
-  * @param importFromId The id of the existing LogsIntegrationPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_integration_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsIntegrationPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_integration_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsIntegrationPipeline to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_integration_pipeline", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_integration_pipeline", importId: importFromId, provider });
       }
 
   // ===========
@@ -56,7 +56,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_integration_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -103,11 +103,11 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: true, required: false
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   public resetIsEnabled() {
@@ -124,21 +124,21 @@ export class LogsIntegrationPipeline extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

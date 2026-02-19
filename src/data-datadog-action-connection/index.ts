@@ -1,21 +1,21 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogActionConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogActionConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID for Connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection#id DataDatadogActionConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection#id DataDatadogActionConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,16 +24,16 @@ export interface DataDatadogActionConnectionConfig extends cdktf.TerraformMetaAr
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection#http DataDatadogActionConnection#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection#http DataDatadogActionConnection#http}
   */
   readonly http?: DataDatadogActionConnectionHttp;
 }
 export interface DataDatadogActionConnectionAwsAssumeRole {
 }
 
-export function dataDatadogActionConnectionAwsAssumeRoleToTerraform(struct?: DataDatadogActionConnectionAwsAssumeRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionAwsAssumeRoleToTerraform(struct?: DataDatadogActionConnectionAwsAssumeRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -41,9 +41,9 @@ export function dataDatadogActionConnectionAwsAssumeRoleToTerraform(struct?: Dat
 }
 
 
-export function dataDatadogActionConnectionAwsAssumeRoleToHclTerraform(struct?: DataDatadogActionConnectionAwsAssumeRole | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionAwsAssumeRoleToHclTerraform(struct?: DataDatadogActionConnectionAwsAssumeRole | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -51,19 +51,19 @@ export function dataDatadogActionConnectionAwsAssumeRoleToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataDatadogActionConnectionAwsAssumeRoleOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionAwsAssumeRoleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogActionConnectionAwsAssumeRole | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionAwsAssumeRole | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -72,12 +72,12 @@ export class DataDatadogActionConnectionAwsAssumeRoleOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionAwsAssumeRole | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionAwsAssumeRole | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -110,9 +110,9 @@ export class DataDatadogActionConnectionAwsAssumeRoleOutputReference extends cdk
 export interface DataDatadogActionConnectionAws {
 }
 
-export function dataDatadogActionConnectionAwsToTerraform(struct?: DataDatadogActionConnectionAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionAwsToTerraform(struct?: DataDatadogActionConnectionAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -120,9 +120,9 @@ export function dataDatadogActionConnectionAwsToTerraform(struct?: DataDatadogAc
 }
 
 
-export function dataDatadogActionConnectionAwsToHclTerraform(struct?: DataDatadogActionConnectionAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionAwsToHclTerraform(struct?: DataDatadogActionConnectionAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -130,19 +130,19 @@ export function dataDatadogActionConnectionAwsToHclTerraform(struct?: DataDatado
   return attrs;
 }
 
-export class DataDatadogActionConnectionAwsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionAwsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogActionConnectionAws | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionAws | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,12 +151,12 @@ export class DataDatadogActionConnectionAwsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionAws | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionAws | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -175,9 +175,9 @@ export class DataDatadogActionConnectionAwsOutputReference extends cdktf.Complex
 export interface DataDatadogActionConnectionHttpTokenAuthBody {
 }
 
-export function dataDatadogActionConnectionHttpTokenAuthBodyToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthBodyToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -185,9 +185,9 @@ export function dataDatadogActionConnectionHttpTokenAuthBodyToTerraform(struct?:
 }
 
 
-export function dataDatadogActionConnectionHttpTokenAuthBodyToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthBodyToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -195,19 +195,19 @@ export function dataDatadogActionConnectionHttpTokenAuthBodyToHclTerraform(struc
   return attrs;
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthBodyOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionHttpTokenAuthBodyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthBody | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthBody | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -216,12 +216,12 @@ export class DataDatadogActionConnectionHttpTokenAuthBodyOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthBody | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthBody | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -244,9 +244,9 @@ export class DataDatadogActionConnectionHttpTokenAuthBodyOutputReference extends
 export interface DataDatadogActionConnectionHttpTokenAuthHeader {
 }
 
-export function dataDatadogActionConnectionHttpTokenAuthHeaderToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthHeaderToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -254,9 +254,9 @@ export function dataDatadogActionConnectionHttpTokenAuthHeaderToTerraform(struct
 }
 
 
-export function dataDatadogActionConnectionHttpTokenAuthHeaderToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthHeaderToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -264,9 +264,9 @@ export function dataDatadogActionConnectionHttpTokenAuthHeaderToHclTerraform(str
   return attrs;
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -274,11 +274,11 @@ export class DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -287,12 +287,12 @@ export class DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -313,15 +313,15 @@ export class DataDatadogActionConnectionHttpTokenAuthHeaderOutputReference exten
   }
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthHeaderList extends cdktf.ComplexList {
-  public internalValue? : DataDatadogActionConnectionHttpTokenAuthHeader[] | cdktf.IResolvable
+export class DataDatadogActionConnectionHttpTokenAuthHeaderList extends cdktn.ComplexList {
+  public internalValue? : DataDatadogActionConnectionHttpTokenAuthHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -335,9 +335,9 @@ export class DataDatadogActionConnectionHttpTokenAuthHeaderList extends cdktf.Co
 export interface DataDatadogActionConnectionHttpTokenAuthToken {
 }
 
-export function dataDatadogActionConnectionHttpTokenAuthTokenToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthTokenToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -345,9 +345,9 @@ export function dataDatadogActionConnectionHttpTokenAuthTokenToTerraform(struct?
 }
 
 
-export function dataDatadogActionConnectionHttpTokenAuthTokenToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthTokenToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -355,9 +355,9 @@ export function dataDatadogActionConnectionHttpTokenAuthTokenToHclTerraform(stru
   return attrs;
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthTokenOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionHttpTokenAuthTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -365,11 +365,11 @@ export class DataDatadogActionConnectionHttpTokenAuthTokenOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthToken | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -378,12 +378,12 @@ export class DataDatadogActionConnectionHttpTokenAuthTokenOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -409,15 +409,15 @@ export class DataDatadogActionConnectionHttpTokenAuthTokenOutputReference extend
   }
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthTokenList extends cdktf.ComplexList {
-  public internalValue? : DataDatadogActionConnectionHttpTokenAuthToken[] | cdktf.IResolvable
+export class DataDatadogActionConnectionHttpTokenAuthTokenList extends cdktn.ComplexList {
+  public internalValue? : DataDatadogActionConnectionHttpTokenAuthToken[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -431,9 +431,9 @@ export class DataDatadogActionConnectionHttpTokenAuthTokenList extends cdktf.Com
 export interface DataDatadogActionConnectionHttpTokenAuthUrlParameter {
 }
 
-export function dataDatadogActionConnectionHttpTokenAuthUrlParameterToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthUrlParameterToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -441,9 +441,9 @@ export function dataDatadogActionConnectionHttpTokenAuthUrlParameterToTerraform(
 }
 
 
-export function dataDatadogActionConnectionHttpTokenAuthUrlParameterToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthUrlParameterToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -451,9 +451,9 @@ export function dataDatadogActionConnectionHttpTokenAuthUrlParameterToHclTerrafo
   return attrs;
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -461,11 +461,11 @@ export class DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -474,12 +474,12 @@ export class DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuthUrlParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -500,15 +500,15 @@ export class DataDatadogActionConnectionHttpTokenAuthUrlParameterOutputReference
   }
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthUrlParameterList extends cdktf.ComplexList {
-  public internalValue? : DataDatadogActionConnectionHttpTokenAuthUrlParameter[] | cdktf.IResolvable
+export class DataDatadogActionConnectionHttpTokenAuthUrlParameterList extends cdktn.ComplexList {
+  public internalValue? : DataDatadogActionConnectionHttpTokenAuthUrlParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -523,56 +523,56 @@ export interface DataDatadogActionConnectionHttpTokenAuth {
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection#header DataDatadogActionConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection#header DataDatadogActionConnection#header}
   */
-  readonly header?: DataDatadogActionConnectionHttpTokenAuthHeader[] | cdktf.IResolvable;
+  readonly header?: DataDatadogActionConnectionHttpTokenAuthHeader[] | cdktn.IResolvable;
   /**
   * token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection#token DataDatadogActionConnection#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection#token DataDatadogActionConnection#token}
   */
-  readonly token?: DataDatadogActionConnectionHttpTokenAuthToken[] | cdktf.IResolvable;
+  readonly token?: DataDatadogActionConnectionHttpTokenAuthToken[] | cdktn.IResolvable;
   /**
   * url_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection#url_parameter DataDatadogActionConnection#url_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection#url_parameter DataDatadogActionConnection#url_parameter}
   */
-  readonly urlParameter?: DataDatadogActionConnectionHttpTokenAuthUrlParameter[] | cdktf.IResolvable;
+  readonly urlParameter?: DataDatadogActionConnectionHttpTokenAuthUrlParameter[] | cdktn.IResolvable;
 }
 
-export function dataDatadogActionConnectionHttpTokenAuthToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthToTerraform(struct?: DataDatadogActionConnectionHttpTokenAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header: cdktf.listMapper(dataDatadogActionConnectionHttpTokenAuthHeaderToTerraform, true)(struct!.header),
-    token: cdktf.listMapper(dataDatadogActionConnectionHttpTokenAuthTokenToTerraform, true)(struct!.token),
-    url_parameter: cdktf.listMapper(dataDatadogActionConnectionHttpTokenAuthUrlParameterToTerraform, true)(struct!.urlParameter),
+    header: cdktn.listMapper(dataDatadogActionConnectionHttpTokenAuthHeaderToTerraform, true)(struct!.header),
+    token: cdktn.listMapper(dataDatadogActionConnectionHttpTokenAuthTokenToTerraform, true)(struct!.token),
+    url_parameter: cdktn.listMapper(dataDatadogActionConnectionHttpTokenAuthUrlParameterToTerraform, true)(struct!.urlParameter),
   }
 }
 
 
-export function dataDatadogActionConnectionHttpTokenAuthToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpTokenAuthToHclTerraform(struct?: DataDatadogActionConnectionHttpTokenAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header: {
-      value: cdktf.listMapperHcl(dataDatadogActionConnectionHttpTokenAuthHeaderToHclTerraform, true)(struct!.header),
+      value: cdktn.listMapperHcl(dataDatadogActionConnectionHttpTokenAuthHeaderToHclTerraform, true)(struct!.header),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatadogActionConnectionHttpTokenAuthHeaderList",
     },
     token: {
-      value: cdktf.listMapperHcl(dataDatadogActionConnectionHttpTokenAuthTokenToHclTerraform, true)(struct!.token),
+      value: cdktn.listMapperHcl(dataDatadogActionConnectionHttpTokenAuthTokenToHclTerraform, true)(struct!.token),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatadogActionConnectionHttpTokenAuthTokenList",
     },
     url_parameter: {
-      value: cdktf.listMapperHcl(dataDatadogActionConnectionHttpTokenAuthUrlParameterToHclTerraform, true)(struct!.urlParameter),
+      value: cdktn.listMapperHcl(dataDatadogActionConnectionHttpTokenAuthUrlParameterToHclTerraform, true)(struct!.urlParameter),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatadogActionConnectionHttpTokenAuthUrlParameterList",
@@ -583,19 +583,19 @@ export function dataDatadogActionConnectionHttpTokenAuthToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatadogActionConnectionHttpTokenAuthOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionHttpTokenAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogActionConnectionHttpTokenAuth | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionHttpTokenAuth | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -616,7 +616,7 @@ export class DataDatadogActionConnectionHttpTokenAuthOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuth | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionHttpTokenAuth | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -624,7 +624,7 @@ export class DataDatadogActionConnectionHttpTokenAuthOutputReference extends cdk
       this._token.internalValue = undefined;
       this._urlParameter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -648,7 +648,7 @@ export class DataDatadogActionConnectionHttpTokenAuthOutputReference extends cdk
   public get header() {
     return this._header;
   }
-  public putHeader(value: DataDatadogActionConnectionHttpTokenAuthHeader[] | cdktf.IResolvable) {
+  public putHeader(value: DataDatadogActionConnectionHttpTokenAuthHeader[] | cdktn.IResolvable) {
     this._header.internalValue = value;
   }
   public resetHeader() {
@@ -664,7 +664,7 @@ export class DataDatadogActionConnectionHttpTokenAuthOutputReference extends cdk
   public get token() {
     return this._token;
   }
-  public putToken(value: DataDatadogActionConnectionHttpTokenAuthToken[] | cdktf.IResolvable) {
+  public putToken(value: DataDatadogActionConnectionHttpTokenAuthToken[] | cdktn.IResolvable) {
     this._token.internalValue = value;
   }
   public resetToken() {
@@ -680,7 +680,7 @@ export class DataDatadogActionConnectionHttpTokenAuthOutputReference extends cdk
   public get urlParameter() {
     return this._urlParameter;
   }
-  public putUrlParameter(value: DataDatadogActionConnectionHttpTokenAuthUrlParameter[] | cdktf.IResolvable) {
+  public putUrlParameter(value: DataDatadogActionConnectionHttpTokenAuthUrlParameter[] | cdktn.IResolvable) {
     this._urlParameter.internalValue = value;
   }
   public resetUrlParameter() {
@@ -695,14 +695,14 @@ export interface DataDatadogActionConnectionHttp {
   /**
   * token_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection#token_auth DataDatadogActionConnection#token_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection#token_auth DataDatadogActionConnection#token_auth}
   */
   readonly tokenAuth?: DataDatadogActionConnectionHttpTokenAuth;
 }
 
-export function dataDatadogActionConnectionHttpToTerraform(struct?: DataDatadogActionConnectionHttp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpToTerraform(struct?: DataDatadogActionConnectionHttp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -711,9 +711,9 @@ export function dataDatadogActionConnectionHttpToTerraform(struct?: DataDatadogA
 }
 
 
-export function dataDatadogActionConnectionHttpToHclTerraform(struct?: DataDatadogActionConnectionHttp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogActionConnectionHttpToHclTerraform(struct?: DataDatadogActionConnectionHttp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -729,19 +729,19 @@ export function dataDatadogActionConnectionHttpToHclTerraform(struct?: DataDatad
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatadogActionConnectionHttpOutputReference extends cdktf.ComplexObject {
+export class DataDatadogActionConnectionHttpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogActionConnectionHttp | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogActionConnectionHttp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -754,13 +754,13 @@ export class DataDatadogActionConnectionHttpOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogActionConnectionHttp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogActionConnectionHttp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tokenAuth.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -794,9 +794,9 @@ export class DataDatadogActionConnectionHttpOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection datadog_action_connection}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection datadog_action_connection}
 */
-export class DataDatadogActionConnection extends cdktf.TerraformDataSource {
+export class DataDatadogActionConnection extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -807,14 +807,14 @@ export class DataDatadogActionConnection extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogActionConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogActionConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogActionConnection to import
-  * @param importFromId The id of the existing DataDatadogActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogActionConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_action_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_action_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -822,7 +822,7 @@ export class DataDatadogActionConnection extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/action_connection datadog_action_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/action_connection datadog_action_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -833,7 +833,7 @@ export class DataDatadogActionConnection extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_action_connection',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -898,7 +898,7 @@ export class DataDatadogActionConnection extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
+      id: cdktn.stringToTerraform(this._id),
       http: dataDatadogActionConnectionHttpToTerraform(this._http.internalValue),
     };
   }
@@ -906,7 +906,7 @@ export class DataDatadogActionConnection extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

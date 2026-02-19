@@ -1,133 +1,133 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IntegrationGcpConfig extends cdktf.TerraformMetaArguments {
+export interface IntegrationGcpConfig extends cdktn.TerraformMetaArguments {
   /**
   * Silence monitors for expected GCE instance shutdowns. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
   */
-  readonly automute?: boolean | cdktf.IResolvable;
+  readonly automute?: boolean | cdktn.IResolvable;
   /**
   * Your email found in your JSON service account key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
   */
   readonly clientEmail: string;
   /**
   * Your ID found in your JSON service account key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
   */
   readonly clientId: string;
   /**
   * List of filters to limit the Cloud Run revisions that are pulled into Datadog by using tags. Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
   */
   readonly cloudRunRevisionFilters?: string[];
   /**
   * Whether Datadog collects cloud security posture management resources from your GCP project. If enabled, requires `resource_collection_enabled` to also be enabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
   */
-  readonly cspmResourceCollectionEnabled?: boolean | cdktf.IResolvable;
+  readonly cspmResourceCollectionEnabled?: boolean | cdktn.IResolvable;
   /**
-  * List of filters to limit the VM instances that are pulled into Datadog by using tags. Only VM instance resources that apply to specified filters are imported into Datadog. Defaults to `""`.
+  * List of filters to limit the VM instances that are pulled into Datadog by using tags. Only VM instance resources that apply to specified filters are imported into Datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
   */
   readonly hostFilters?: string;
   /**
   * When enabled, Datadog scans for all resource change data in your Google Cloud environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
   */
-  readonly isResourceChangeCollectionEnabled?: boolean | cdktf.IResolvable;
+  readonly isResourceChangeCollectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * When enabled, Datadog will attempt to collect Security Command Center Findings. Note: This requires additional permissions on the service account. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
   */
-  readonly isSecurityCommandCenterEnabled?: boolean | cdktf.IResolvable;
+  readonly isSecurityCommandCenterEnabled?: boolean | cdktn.IResolvable;
   /**
   * Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
   */
-  readonly monitoredResourceConfigs?: IntegrationGcpMonitoredResourceConfigs[] | cdktf.IResolvable;
+  readonly monitoredResourceConfigs?: IntegrationGcpMonitoredResourceConfigs[] | cdktn.IResolvable;
   /**
   * Your private key name found in your JSON service account key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
   */
   readonly privateKey: string;
   /**
   * Your private key ID found in your JSON service account key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
   */
   readonly privateKeyId: string;
   /**
   * Your Google Cloud project ID found in your JSON service account key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
   */
   readonly projectId: string;
   /**
   * When enabled, Datadog scans for all resources in your GCP environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
   */
-  readonly resourceCollectionEnabled?: boolean | cdktf.IResolvable;
+  readonly resourceCollectionEnabled?: boolean | cdktn.IResolvable;
 }
 export interface IntegrationGcpMonitoredResourceConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}
   */
   readonly filters?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#type IntegrationGcp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#type IntegrationGcp#type}
   */
   readonly type?: string;
 }
 
-export function integrationGcpMonitoredResourceConfigsToTerraform(struct?: IntegrationGcpMonitoredResourceConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationGcpMonitoredResourceConfigsToTerraform(struct?: IntegrationGcpMonitoredResourceConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filters),
-    type: cdktf.stringToTerraform(struct!.type),
+    filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filters),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function integrationGcpMonitoredResourceConfigsToHclTerraform(struct?: IntegrationGcpMonitoredResourceConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function integrationGcpMonitoredResourceConfigsToHclTerraform(struct?: IntegrationGcpMonitoredResourceConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filters),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,9 +138,9 @@ export function integrationGcpMonitoredResourceConfigsToHclTerraform(struct?: In
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IntegrationGcpMonitoredResourceConfigsOutputReference extends cdktf.ComplexObject {
+export class IntegrationGcpMonitoredResourceConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -148,11 +148,11 @@ export class IntegrationGcpMonitoredResourceConfigsOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IntegrationGcpMonitoredResourceConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): IntegrationGcpMonitoredResourceConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -169,14 +169,14 @@ export class IntegrationGcpMonitoredResourceConfigsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IntegrationGcpMonitoredResourceConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IntegrationGcpMonitoredResourceConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filters = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -191,7 +191,7 @@ export class IntegrationGcpMonitoredResourceConfigsOutputReference extends cdktf
   // filters - computed: true, optional: true, required: false
   private _filters?: string[]; 
   public get filters() {
-    return cdktf.Fn.tolist(this.getListAttribute('filters'));
+    return cdktn.Fn.tolist(this.getListAttribute('filters'));
   }
   public set filters(value: string[]) {
     this._filters = value;
@@ -221,15 +221,15 @@ export class IntegrationGcpMonitoredResourceConfigsOutputReference extends cdktf
   }
 }
 
-export class IntegrationGcpMonitoredResourceConfigsList extends cdktf.ComplexList {
-  public internalValue? : IntegrationGcpMonitoredResourceConfigs[] | cdktf.IResolvable
+export class IntegrationGcpMonitoredResourceConfigsList extends cdktn.ComplexList {
+  public internalValue? : IntegrationGcpMonitoredResourceConfigs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -242,9 +242,9 @@ export class IntegrationGcpMonitoredResourceConfigsList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp datadog_integration_gcp}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp datadog_integration_gcp}
 */
-export class IntegrationGcp extends cdktf.TerraformResource {
+export class IntegrationGcp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -255,14 +255,14 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IntegrationGcp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IntegrationGcp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationGcp to import
-  * @param importFromId The id of the existing IntegrationGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationGcp that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationGcp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_gcp", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_integration_gcp", importId: importFromId, provider });
       }
 
   // ===========
@@ -270,7 +270,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/integration_gcp datadog_integration_gcp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/integration_gcp datadog_integration_gcp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -281,7 +281,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_integration_gcp',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -312,11 +312,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // ==========
 
   // automute - computed: true, optional: true, required: false
-  private _automute?: boolean | cdktf.IResolvable; 
+  private _automute?: boolean | cdktn.IResolvable; 
   public get automute() {
     return this.getBooleanAttribute('automute');
   }
-  public set automute(value: boolean | cdktf.IResolvable) {
+  public set automute(value: boolean | cdktn.IResolvable) {
     this._automute = value;
   }
   public resetAutomute() {
@@ -356,7 +356,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   // cloud_run_revision_filters - computed: true, optional: true, required: false
   private _cloudRunRevisionFilters?: string[]; 
   public get cloudRunRevisionFilters() {
-    return cdktf.Fn.tolist(this.getListAttribute('cloud_run_revision_filters'));
+    return cdktn.Fn.tolist(this.getListAttribute('cloud_run_revision_filters'));
   }
   public set cloudRunRevisionFilters(value: string[]) {
     this._cloudRunRevisionFilters = value;
@@ -370,11 +370,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // cspm_resource_collection_enabled - computed: true, optional: true, required: false
-  private _cspmResourceCollectionEnabled?: boolean | cdktf.IResolvable; 
+  private _cspmResourceCollectionEnabled?: boolean | cdktn.IResolvable; 
   public get cspmResourceCollectionEnabled() {
     return this.getBooleanAttribute('cspm_resource_collection_enabled');
   }
-  public set cspmResourceCollectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set cspmResourceCollectionEnabled(value: boolean | cdktn.IResolvable) {
     this._cspmResourceCollectionEnabled = value;
   }
   public resetCspmResourceCollectionEnabled() {
@@ -407,11 +407,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // is_resource_change_collection_enabled - computed: true, optional: true, required: false
-  private _isResourceChangeCollectionEnabled?: boolean | cdktf.IResolvable; 
+  private _isResourceChangeCollectionEnabled?: boolean | cdktn.IResolvable; 
   public get isResourceChangeCollectionEnabled() {
     return this.getBooleanAttribute('is_resource_change_collection_enabled');
   }
-  public set isResourceChangeCollectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set isResourceChangeCollectionEnabled(value: boolean | cdktn.IResolvable) {
     this._isResourceChangeCollectionEnabled = value;
   }
   public resetIsResourceChangeCollectionEnabled() {
@@ -423,11 +423,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // is_security_command_center_enabled - computed: true, optional: true, required: false
-  private _isSecurityCommandCenterEnabled?: boolean | cdktf.IResolvable; 
+  private _isSecurityCommandCenterEnabled?: boolean | cdktn.IResolvable; 
   public get isSecurityCommandCenterEnabled() {
     return this.getBooleanAttribute('is_security_command_center_enabled');
   }
-  public set isSecurityCommandCenterEnabled(value: boolean | cdktf.IResolvable) {
+  public set isSecurityCommandCenterEnabled(value: boolean | cdktn.IResolvable) {
     this._isSecurityCommandCenterEnabled = value;
   }
   public resetIsSecurityCommandCenterEnabled() {
@@ -443,7 +443,7 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   public get monitoredResourceConfigs() {
     return this._monitoredResourceConfigs;
   }
-  public putMonitoredResourceConfigs(value: IntegrationGcpMonitoredResourceConfigs[] | cdktf.IResolvable) {
+  public putMonitoredResourceConfigs(value: IntegrationGcpMonitoredResourceConfigs[] | cdktn.IResolvable) {
     this._monitoredResourceConfigs.internalValue = value;
   }
   public resetMonitoredResourceConfigs() {
@@ -494,11 +494,11 @@ export class IntegrationGcp extends cdktf.TerraformResource {
   }
 
   // resource_collection_enabled - computed: true, optional: true, required: false
-  private _resourceCollectionEnabled?: boolean | cdktf.IResolvable; 
+  private _resourceCollectionEnabled?: boolean | cdktn.IResolvable; 
   public get resourceCollectionEnabled() {
     return this.getBooleanAttribute('resource_collection_enabled');
   }
-  public set resourceCollectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set resourceCollectionEnabled(value: boolean | cdktn.IResolvable) {
     this._resourceCollectionEnabled = value;
   }
   public resetResourceCollectionEnabled() {
@@ -515,98 +515,98 @@ export class IntegrationGcp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automute: cdktf.booleanToTerraform(this._automute),
-      client_email: cdktf.stringToTerraform(this._clientEmail),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      cloud_run_revision_filters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cloudRunRevisionFilters),
-      cspm_resource_collection_enabled: cdktf.booleanToTerraform(this._cspmResourceCollectionEnabled),
-      host_filters: cdktf.stringToTerraform(this._hostFilters),
-      is_resource_change_collection_enabled: cdktf.booleanToTerraform(this._isResourceChangeCollectionEnabled),
-      is_security_command_center_enabled: cdktf.booleanToTerraform(this._isSecurityCommandCenterEnabled),
-      monitored_resource_configs: cdktf.listMapper(integrationGcpMonitoredResourceConfigsToTerraform, false)(this._monitoredResourceConfigs.internalValue),
-      private_key: cdktf.stringToTerraform(this._privateKey),
-      private_key_id: cdktf.stringToTerraform(this._privateKeyId),
-      project_id: cdktf.stringToTerraform(this._projectId),
-      resource_collection_enabled: cdktf.booleanToTerraform(this._resourceCollectionEnabled),
+      automute: cdktn.booleanToTerraform(this._automute),
+      client_email: cdktn.stringToTerraform(this._clientEmail),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      cloud_run_revision_filters: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cloudRunRevisionFilters),
+      cspm_resource_collection_enabled: cdktn.booleanToTerraform(this._cspmResourceCollectionEnabled),
+      host_filters: cdktn.stringToTerraform(this._hostFilters),
+      is_resource_change_collection_enabled: cdktn.booleanToTerraform(this._isResourceChangeCollectionEnabled),
+      is_security_command_center_enabled: cdktn.booleanToTerraform(this._isSecurityCommandCenterEnabled),
+      monitored_resource_configs: cdktn.listMapper(integrationGcpMonitoredResourceConfigsToTerraform, false)(this._monitoredResourceConfigs.internalValue),
+      private_key: cdktn.stringToTerraform(this._privateKey),
+      private_key_id: cdktn.stringToTerraform(this._privateKeyId),
+      project_id: cdktn.stringToTerraform(this._projectId),
+      resource_collection_enabled: cdktn.booleanToTerraform(this._resourceCollectionEnabled),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automute: {
-        value: cdktf.booleanToHclTerraform(this._automute),
+        value: cdktn.booleanToHclTerraform(this._automute),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       client_email: {
-        value: cdktf.stringToHclTerraform(this._clientEmail),
+        value: cdktn.stringToHclTerraform(this._clientEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloud_run_revision_filters: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cloudRunRevisionFilters),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._cloudRunRevisionFilters),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       cspm_resource_collection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._cspmResourceCollectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._cspmResourceCollectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       host_filters: {
-        value: cdktf.stringToHclTerraform(this._hostFilters),
+        value: cdktn.stringToHclTerraform(this._hostFilters),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_resource_change_collection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isResourceChangeCollectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._isResourceChangeCollectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_security_command_center_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isSecurityCommandCenterEnabled),
+        value: cdktn.booleanToHclTerraform(this._isSecurityCommandCenterEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       monitored_resource_configs: {
-        value: cdktf.listMapperHcl(integrationGcpMonitoredResourceConfigsToHclTerraform, false)(this._monitoredResourceConfigs.internalValue),
+        value: cdktn.listMapperHcl(integrationGcpMonitoredResourceConfigsToHclTerraform, false)(this._monitoredResourceConfigs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IntegrationGcpMonitoredResourceConfigsList",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key_id: {
-        value: cdktf.stringToHclTerraform(this._privateKeyId),
+        value: cdktn.stringToHclTerraform(this._privateKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_id: {
-        value: cdktf.stringToHclTerraform(this._projectId),
+        value: cdktn.stringToHclTerraform(this._projectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_collection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._resourceCollectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._resourceCollectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

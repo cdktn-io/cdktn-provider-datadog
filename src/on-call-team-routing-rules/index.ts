@@ -1,21 +1,21 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OnCallTeamRoutingRulesConfig extends cdktf.TerraformMetaArguments {
+export interface OnCallTeamRoutingRulesConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the team to associate the routing rules with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,51 +24,51 @@ export interface OnCallTeamRoutingRulesConfig extends cdktf.TerraformMetaArgumen
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
   */
-  readonly rule?: OnCallTeamRoutingRulesRule[] | cdktf.IResolvable;
+  readonly rule?: OnCallTeamRoutingRulesRule[] | cdktn.IResolvable;
 }
 export interface OnCallTeamRoutingRulesRuleActionSendSlackMessage {
   /**
   * Slack channel ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
   */
   readonly channel?: string;
   /**
   * Slack workspace ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
   */
   readonly workspace?: string;
 }
 
-export function onCallTeamRoutingRulesRuleActionSendSlackMessageToTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleActionSendSlackMessageToTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel: cdktf.stringToTerraform(struct!.channel),
-    workspace: cdktf.stringToTerraform(struct!.workspace),
+    channel: cdktn.stringToTerraform(struct!.channel),
+    workspace: cdktn.stringToTerraform(struct!.workspace),
   }
 }
 
 
-export function onCallTeamRoutingRulesRuleActionSendSlackMessageToHclTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleActionSendSlackMessageToHclTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel: {
-      value: cdktf.stringToHclTerraform(struct!.channel),
+      value: cdktn.stringToHclTerraform(struct!.channel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace: {
-      value: cdktf.stringToHclTerraform(struct!.workspace),
+      value: cdktn.stringToHclTerraform(struct!.workspace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -79,19 +79,19 @@ export function onCallTeamRoutingRulesRuleActionSendSlackMessageToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference extends cdktf.ComplexObject {
+export class OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -108,14 +108,14 @@ export class OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallTeamRoutingRulesRuleActionSendSlackMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._channel = undefined;
       this._workspace = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -163,56 +163,56 @@ export interface OnCallTeamRoutingRulesRuleActionSendTeamsMessage {
   /**
   * Teams channel ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
   */
   readonly channel?: string;
   /**
   * Teams team ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
   */
   readonly team?: string;
   /**
   * Teams tenant ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
   */
   readonly tenant?: string;
 }
 
-export function onCallTeamRoutingRulesRuleActionSendTeamsMessageToTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleActionSendTeamsMessageToTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    channel: cdktf.stringToTerraform(struct!.channel),
-    team: cdktf.stringToTerraform(struct!.team),
-    tenant: cdktf.stringToTerraform(struct!.tenant),
+    channel: cdktn.stringToTerraform(struct!.channel),
+    team: cdktn.stringToTerraform(struct!.team),
+    tenant: cdktn.stringToTerraform(struct!.tenant),
   }
 }
 
 
-export function onCallTeamRoutingRulesRuleActionSendTeamsMessageToHclTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleActionSendTeamsMessageToHclTerraform(struct?: OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     channel: {
-      value: cdktf.stringToHclTerraform(struct!.channel),
+      value: cdktn.stringToHclTerraform(struct!.channel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     team: {
-      value: cdktf.stringToHclTerraform(struct!.team),
+      value: cdktn.stringToHclTerraform(struct!.team),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant: {
-      value: cdktf.stringToHclTerraform(struct!.tenant),
+      value: cdktn.stringToHclTerraform(struct!.tenant),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -223,19 +223,19 @@ export function onCallTeamRoutingRulesRuleActionSendTeamsMessageToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference extends cdktf.ComplexObject {
+export class OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -256,7 +256,7 @@ export class OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallTeamRoutingRulesRuleActionSendTeamsMessage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -264,7 +264,7 @@ export class OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference ext
       this._team = undefined;
       this._tenant = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -329,20 +329,20 @@ export interface OnCallTeamRoutingRulesRuleAction {
   /**
   * send_slack_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
   */
   readonly sendSlackMessage?: OnCallTeamRoutingRulesRuleActionSendSlackMessage;
   /**
   * send_teams_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
   */
   readonly sendTeamsMessage?: OnCallTeamRoutingRulesRuleActionSendTeamsMessage;
 }
 
-export function onCallTeamRoutingRulesRuleActionToTerraform(struct?: OnCallTeamRoutingRulesRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleActionToTerraform(struct?: OnCallTeamRoutingRulesRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -352,9 +352,9 @@ export function onCallTeamRoutingRulesRuleActionToTerraform(struct?: OnCallTeamR
 }
 
 
-export function onCallTeamRoutingRulesRuleActionToHclTerraform(struct?: OnCallTeamRoutingRulesRuleAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleActionToHclTerraform(struct?: OnCallTeamRoutingRulesRuleAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -376,9 +376,9 @@ export function onCallTeamRoutingRulesRuleActionToHclTerraform(struct?: OnCallTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktf.ComplexObject {
+export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -386,11 +386,11 @@ export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OnCallTeamRoutingRulesRuleAction | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallTeamRoutingRulesRuleAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -407,14 +407,14 @@ export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallTeamRoutingRulesRuleAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallTeamRoutingRulesRuleAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._sendSlackMessage.internalValue = undefined;
       this._sendTeamsMessage.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -459,15 +459,15 @@ export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktf.Compl
   }
 }
 
-export class OnCallTeamRoutingRulesRuleActionList extends cdktf.ComplexList {
-  public internalValue? : OnCallTeamRoutingRulesRuleAction[] | cdktf.IResolvable
+export class OnCallTeamRoutingRulesRuleActionList extends cdktn.ComplexList {
+  public internalValue? : OnCallTeamRoutingRulesRuleAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -482,69 +482,69 @@ export interface OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction {
   /**
   * The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
   */
   readonly endDay?: string;
   /**
   * The time of day when the restriction ends (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
   */
   readonly endTime?: string;
   /**
   * The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
   */
   readonly startDay?: string;
   /**
   * The time of day when the restriction begins (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
   */
   readonly startTime?: string;
 }
 
-export function onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_day: cdktf.stringToTerraform(struct!.endDay),
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_day: cdktf.stringToTerraform(struct!.startDay),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    end_day: cdktn.stringToTerraform(struct!.endDay),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_day: cdktn.stringToTerraform(struct!.startDay),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
-export function onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToHclTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToHclTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_day: {
-      value: cdktf.stringToHclTerraform(struct!.endDay),
+      value: cdktn.stringToHclTerraform(struct!.endDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_day: {
-      value: cdktf.stringToHclTerraform(struct!.startDay),
+      value: cdktn.stringToHclTerraform(struct!.startDay),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -555,9 +555,9 @@ export function onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference extends cdktf.ComplexObject {
+export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -565,11 +565,11 @@ export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -594,7 +594,7 @@ export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -603,7 +603,7 @@ export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReferenc
       this._startDay = undefined;
       this._startTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -682,15 +682,15 @@ export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionOutputReferenc
   }
 }
 
-export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList extends cdktf.ComplexList {
-  public internalValue? : OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction[] | cdktf.IResolvable
+export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList extends cdktn.ComplexList {
+  public internalValue? : OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -705,43 +705,43 @@ export interface OnCallTeamRoutingRulesRuleTimeRestrictions {
   /**
   * Specifies the time zone applicable to the restrictions, e.g. `America/New_York`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
   */
   readonly timeZone?: string;
   /**
   * restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
   */
-  readonly restriction?: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction[] | cdktf.IResolvable;
+  readonly restriction?: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction[] | cdktn.IResolvable;
 }
 
-export function onCallTeamRoutingRulesRuleTimeRestrictionsToTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleTimeRestrictionsToTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
-    restriction: cdktf.listMapper(onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToTerraform, true)(struct!.restriction),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
+    restriction: cdktn.listMapper(onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToTerraform, true)(struct!.restriction),
   }
 }
 
 
-export function onCallTeamRoutingRulesRuleTimeRestrictionsToHclTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleTimeRestrictionsToHclTerraform(struct?: OnCallTeamRoutingRulesRuleTimeRestrictions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     restriction: {
-      value: cdktf.listMapperHcl(onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToHclTerraform, true)(struct!.restriction),
+      value: cdktn.listMapperHcl(onCallTeamRoutingRulesRuleTimeRestrictionsRestrictionToHclTerraform, true)(struct!.restriction),
       isBlock: true,
       type: "list",
       storageClassType: "OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList",
@@ -752,19 +752,19 @@ export function onCallTeamRoutingRulesRuleTimeRestrictionsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference extends cdktf.ComplexObject {
+export class OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OnCallTeamRoutingRulesRuleTimeRestrictions | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallTeamRoutingRulesRuleTimeRestrictions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -781,14 +781,14 @@ export class OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallTeamRoutingRulesRuleTimeRestrictions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallTeamRoutingRulesRuleTimeRestrictions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._timeZone = undefined;
       this._restriction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -821,7 +821,7 @@ export class OnCallTeamRoutingRulesRuleTimeRestrictionsOutputReference extends c
   public get restriction() {
     return this._restriction;
   }
-  public putRestriction(value: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction[] | cdktf.IResolvable) {
+  public putRestriction(value: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction[] | cdktn.IResolvable) {
     this._restriction.internalValue = value;
   }
   public resetRestriction() {
@@ -836,76 +836,76 @@ export interface OnCallTeamRoutingRulesRule {
   /**
   * ID of the policy to be applied when this routing rule matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
   */
   readonly escalationPolicy?: string;
   /**
   * Defines the query or condition that triggers this routing rule. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
   */
   readonly query?: string;
   /**
   * Defines the urgency for pages created via this rule. Only valid if `escalation_policy` is set. Valid values are `high`, `low`, `dynamic`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
   */
   readonly urgency?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
   */
-  readonly action?: OnCallTeamRoutingRulesRuleAction[] | cdktf.IResolvable;
+  readonly action?: OnCallTeamRoutingRulesRuleAction[] | cdktn.IResolvable;
   /**
   * time_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
   */
   readonly timeRestrictions?: OnCallTeamRoutingRulesRuleTimeRestrictions;
 }
 
-export function onCallTeamRoutingRulesRuleToTerraform(struct?: OnCallTeamRoutingRulesRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleToTerraform(struct?: OnCallTeamRoutingRulesRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    escalation_policy: cdktf.stringToTerraform(struct!.escalationPolicy),
-    query: cdktf.stringToTerraform(struct!.query),
-    urgency: cdktf.stringToTerraform(struct!.urgency),
-    action: cdktf.listMapper(onCallTeamRoutingRulesRuleActionToTerraform, true)(struct!.action),
+    escalation_policy: cdktn.stringToTerraform(struct!.escalationPolicy),
+    query: cdktn.stringToTerraform(struct!.query),
+    urgency: cdktn.stringToTerraform(struct!.urgency),
+    action: cdktn.listMapper(onCallTeamRoutingRulesRuleActionToTerraform, true)(struct!.action),
     time_restrictions: onCallTeamRoutingRulesRuleTimeRestrictionsToTerraform(struct!.timeRestrictions),
   }
 }
 
 
-export function onCallTeamRoutingRulesRuleToHclTerraform(struct?: OnCallTeamRoutingRulesRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function onCallTeamRoutingRulesRuleToHclTerraform(struct?: OnCallTeamRoutingRulesRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     escalation_policy: {
-      value: cdktf.stringToHclTerraform(struct!.escalationPolicy),
+      value: cdktn.stringToHclTerraform(struct!.escalationPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     urgency: {
-      value: cdktf.stringToHclTerraform(struct!.urgency),
+      value: cdktn.stringToHclTerraform(struct!.urgency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     action: {
-      value: cdktf.listMapperHcl(onCallTeamRoutingRulesRuleActionToHclTerraform, true)(struct!.action),
+      value: cdktn.listMapperHcl(onCallTeamRoutingRulesRuleActionToHclTerraform, true)(struct!.action),
       isBlock: true,
       type: "list",
       storageClassType: "OnCallTeamRoutingRulesRuleActionList",
@@ -922,9 +922,9 @@ export function onCallTeamRoutingRulesRuleToHclTerraform(struct?: OnCallTeamRout
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OnCallTeamRoutingRulesRuleOutputReference extends cdktf.ComplexObject {
+export class OnCallTeamRoutingRulesRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -932,11 +932,11 @@ export class OnCallTeamRoutingRulesRuleOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OnCallTeamRoutingRulesRule | cdktf.IResolvable | undefined {
+  public get internalValue(): OnCallTeamRoutingRulesRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -965,7 +965,7 @@ export class OnCallTeamRoutingRulesRuleOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OnCallTeamRoutingRulesRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OnCallTeamRoutingRulesRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -975,7 +975,7 @@ export class OnCallTeamRoutingRulesRuleOutputReference extends cdktf.ComplexObje
       this._action.internalValue = undefined;
       this._timeRestrictions.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1048,7 +1048,7 @@ export class OnCallTeamRoutingRulesRuleOutputReference extends cdktf.ComplexObje
   public get action() {
     return this._action;
   }
-  public putAction(value: OnCallTeamRoutingRulesRuleAction[] | cdktf.IResolvable) {
+  public putAction(value: OnCallTeamRoutingRulesRuleAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   public resetAction() {
@@ -1076,15 +1076,15 @@ export class OnCallTeamRoutingRulesRuleOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class OnCallTeamRoutingRulesRuleList extends cdktf.ComplexList {
-  public internalValue? : OnCallTeamRoutingRulesRule[] | cdktf.IResolvable
+export class OnCallTeamRoutingRulesRuleList extends cdktn.ComplexList {
+  public internalValue? : OnCallTeamRoutingRulesRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1097,9 +1097,9 @@ export class OnCallTeamRoutingRulesRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}
 */
-export class OnCallTeamRoutingRules extends cdktf.TerraformResource {
+export class OnCallTeamRoutingRules extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1110,14 +1110,14 @@ export class OnCallTeamRoutingRules extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OnCallTeamRoutingRules resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OnCallTeamRoutingRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallTeamRoutingRules to import
-  * @param importFromId The id of the existing OnCallTeamRoutingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallTeamRoutingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallTeamRoutingRules to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_on_call_team_routing_rules", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_on_call_team_routing_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -1125,7 +1125,7 @@ export class OnCallTeamRoutingRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1136,7 +1136,7 @@ export class OnCallTeamRoutingRules extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_on_call_team_routing_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -1173,7 +1173,7 @@ export class OnCallTeamRoutingRules extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: OnCallTeamRoutingRulesRule[] | cdktf.IResolvable) {
+  public putRule(value: OnCallTeamRoutingRulesRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1190,21 +1190,21 @@ export class OnCallTeamRoutingRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      rule: cdktf.listMapper(onCallTeamRoutingRulesRuleToTerraform, true)(this._rule.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      rule: cdktn.listMapper(onCallTeamRoutingRulesRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.listMapperHcl(onCallTeamRoutingRulesRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(onCallTeamRoutingRulesRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OnCallTeamRoutingRulesRuleList",

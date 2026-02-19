@@ -1,113 +1,113 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppsecWafExclusionFilterConfig extends cdktf.TerraformMetaArguments {
+export interface AppsecWafExclusionFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * A description for the exclusion filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#description AppsecWafExclusionFilter#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#description AppsecWafExclusionFilter#description}
   */
   readonly description: string;
   /**
   * Indicates whether the exclusion filter is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#enabled AppsecWafExclusionFilter#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#enabled AppsecWafExclusionFilter#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The event query matched by the legacy exclusion filter. Cannot be created nor updated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#event_query AppsecWafExclusionFilter#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#event_query AppsecWafExclusionFilter#event_query}
   */
   readonly eventQuery?: string;
   /**
   * The client IP addresses matched by the exclusion filter (CIDR notation is supported).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#ip_list AppsecWafExclusionFilter#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#ip_list AppsecWafExclusionFilter#ip_list}
   */
   readonly ipList?: string[];
   /**
   * The action taken when the exclusion filter matches. When set to `monitor`, security traces are emitted but the requests are not blocked. By default, security traces are not emitted and the requests are not blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#on_match AppsecWafExclusionFilter#on_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#on_match AppsecWafExclusionFilter#on_match}
   */
   readonly onMatch?: string;
   /**
   * A list of parameters matched by the exclusion filter in the HTTP query string and HTTP request body. Nested parameters can be matched by joining fields with a dot character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#parameters AppsecWafExclusionFilter#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#parameters AppsecWafExclusionFilter#parameters}
   */
   readonly parameters?: string[];
   /**
   * The HTTP path glob expression matched by the exclusion filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#path_glob AppsecWafExclusionFilter#path_glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#path_glob AppsecWafExclusionFilter#path_glob}
   */
   readonly pathGlob?: string;
   /**
   * rules_target block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#rules_target AppsecWafExclusionFilter#rules_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#rules_target AppsecWafExclusionFilter#rules_target}
   */
-  readonly rulesTarget?: AppsecWafExclusionFilterRulesTarget[] | cdktf.IResolvable;
+  readonly rulesTarget?: AppsecWafExclusionFilterRulesTarget[] | cdktn.IResolvable;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#scope AppsecWafExclusionFilter#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#scope AppsecWafExclusionFilter#scope}
   */
-  readonly scope?: AppsecWafExclusionFilterScope[] | cdktf.IResolvable;
+  readonly scope?: AppsecWafExclusionFilterScope[] | cdktn.IResolvable;
 }
 export interface AppsecWafExclusionFilterRulesTargetTags {
   /**
   * The category of the targeted WAF rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#category AppsecWafExclusionFilter#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#category AppsecWafExclusionFilter#category}
   */
   readonly category?: string;
   /**
   * The type of the targeted WAF rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#type AppsecWafExclusionFilter#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#type AppsecWafExclusionFilter#type}
   */
   readonly type?: string;
 }
 
-export function appsecWafExclusionFilterRulesTargetTagsToTerraform(struct?: AppsecWafExclusionFilterRulesTargetTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafExclusionFilterRulesTargetTagsToTerraform(struct?: AppsecWafExclusionFilterRulesTargetTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    category: cdktf.stringToTerraform(struct!.category),
-    type: cdktf.stringToTerraform(struct!.type),
+    category: cdktn.stringToTerraform(struct!.category),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function appsecWafExclusionFilterRulesTargetTagsToHclTerraform(struct?: AppsecWafExclusionFilterRulesTargetTags | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafExclusionFilterRulesTargetTagsToHclTerraform(struct?: AppsecWafExclusionFilterRulesTargetTags | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,19 +118,19 @@ export function appsecWafExclusionFilterRulesTargetTagsToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafExclusionFilterRulesTargetTagsOutputReference extends cdktf.ComplexObject {
+export class AppsecWafExclusionFilterRulesTargetTagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppsecWafExclusionFilterRulesTargetTags | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafExclusionFilterRulesTargetTags | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -147,14 +147,14 @@ export class AppsecWafExclusionFilterRulesTargetTagsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafExclusionFilterRulesTargetTags | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafExclusionFilterRulesTargetTags | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._category = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,37 +202,37 @@ export interface AppsecWafExclusionFilterRulesTarget {
   /**
   * Target a single WAF rule based on its identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#rule_id AppsecWafExclusionFilter#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#rule_id AppsecWafExclusionFilter#rule_id}
   */
   readonly ruleId?: string;
   /**
   * tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#tags AppsecWafExclusionFilter#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#tags AppsecWafExclusionFilter#tags}
   */
   readonly tags?: AppsecWafExclusionFilterRulesTargetTags;
 }
 
-export function appsecWafExclusionFilterRulesTargetToTerraform(struct?: AppsecWafExclusionFilterRulesTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafExclusionFilterRulesTargetToTerraform(struct?: AppsecWafExclusionFilterRulesTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule_id: cdktf.stringToTerraform(struct!.ruleId),
+    rule_id: cdktn.stringToTerraform(struct!.ruleId),
     tags: appsecWafExclusionFilterRulesTargetTagsToTerraform(struct!.tags),
   }
 }
 
 
-export function appsecWafExclusionFilterRulesTargetToHclTerraform(struct?: AppsecWafExclusionFilterRulesTarget | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafExclusionFilterRulesTargetToHclTerraform(struct?: AppsecWafExclusionFilterRulesTarget | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      value: cdktn.stringToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -249,9 +249,9 @@ export function appsecWafExclusionFilterRulesTargetToHclTerraform(struct?: Appse
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafExclusionFilterRulesTargetOutputReference extends cdktf.ComplexObject {
+export class AppsecWafExclusionFilterRulesTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -259,11 +259,11 @@ export class AppsecWafExclusionFilterRulesTargetOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsecWafExclusionFilterRulesTarget | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafExclusionFilterRulesTarget | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,14 +280,14 @@ export class AppsecWafExclusionFilterRulesTargetOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafExclusionFilterRulesTarget | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafExclusionFilterRulesTarget | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ruleId = undefined;
       this._tags.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -332,15 +332,15 @@ export class AppsecWafExclusionFilterRulesTargetOutputReference extends cdktf.Co
   }
 }
 
-export class AppsecWafExclusionFilterRulesTargetList extends cdktf.ComplexList {
-  public internalValue? : AppsecWafExclusionFilterRulesTarget[] | cdktf.IResolvable
+export class AppsecWafExclusionFilterRulesTargetList extends cdktn.ComplexList {
+  public internalValue? : AppsecWafExclusionFilterRulesTarget[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -355,43 +355,43 @@ export interface AppsecWafExclusionFilterScope {
   /**
   * Deploy on this environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#env AppsecWafExclusionFilter#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#env AppsecWafExclusionFilter#env}
   */
   readonly env?: string;
   /**
   * Deploy on this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#service AppsecWafExclusionFilter#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#service AppsecWafExclusionFilter#service}
   */
   readonly service?: string;
 }
 
-export function appsecWafExclusionFilterScopeToTerraform(struct?: AppsecWafExclusionFilterScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafExclusionFilterScopeToTerraform(struct?: AppsecWafExclusionFilterScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    env: cdktf.stringToTerraform(struct!.env),
-    service: cdktf.stringToTerraform(struct!.service),
+    env: cdktn.stringToTerraform(struct!.env),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function appsecWafExclusionFilterScopeToHclTerraform(struct?: AppsecWafExclusionFilterScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appsecWafExclusionFilterScopeToHclTerraform(struct?: AppsecWafExclusionFilterScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     env: {
-      value: cdktf.stringToHclTerraform(struct!.env),
+      value: cdktn.stringToHclTerraform(struct!.env),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -402,9 +402,9 @@ export function appsecWafExclusionFilterScopeToHclTerraform(struct?: AppsecWafEx
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppsecWafExclusionFilterScopeOutputReference extends cdktf.ComplexObject {
+export class AppsecWafExclusionFilterScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -412,11 +412,11 @@ export class AppsecWafExclusionFilterScopeOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AppsecWafExclusionFilterScope | cdktf.IResolvable | undefined {
+  public get internalValue(): AppsecWafExclusionFilterScope | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -433,14 +433,14 @@ export class AppsecWafExclusionFilterScopeOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppsecWafExclusionFilterScope | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppsecWafExclusionFilterScope | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._env = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -485,15 +485,15 @@ export class AppsecWafExclusionFilterScopeOutputReference extends cdktf.ComplexO
   }
 }
 
-export class AppsecWafExclusionFilterScopeList extends cdktf.ComplexList {
-  public internalValue? : AppsecWafExclusionFilterScope[] | cdktf.IResolvable
+export class AppsecWafExclusionFilterScopeList extends cdktn.ComplexList {
+  public internalValue? : AppsecWafExclusionFilterScope[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -506,9 +506,9 @@ export class AppsecWafExclusionFilterScopeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter}
 */
-export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
+export class AppsecWafExclusionFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -519,14 +519,14 @@ export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppsecWafExclusionFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppsecWafExclusionFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppsecWafExclusionFilter to import
-  * @param importFromId The id of the existing AppsecWafExclusionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AppsecWafExclusionFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppsecWafExclusionFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_appsec_waf_exclusion_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_appsec_waf_exclusion_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -534,7 +534,7 @@ export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/appsec_waf_exclusion_filter datadog_appsec_waf_exclusion_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -545,7 +545,7 @@ export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_appsec_waf_exclusion_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -585,11 +585,11 @@ export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -687,7 +687,7 @@ export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
   public get rulesTarget() {
     return this._rulesTarget;
   }
-  public putRulesTarget(value: AppsecWafExclusionFilterRulesTarget[] | cdktf.IResolvable) {
+  public putRulesTarget(value: AppsecWafExclusionFilterRulesTarget[] | cdktn.IResolvable) {
     this._rulesTarget.internalValue = value;
   }
   public resetRulesTarget() {
@@ -703,7 +703,7 @@ export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
   public get scope() {
     return this._scope;
   }
-  public putScope(value: AppsecWafExclusionFilterScope[] | cdktf.IResolvable) {
+  public putScope(value: AppsecWafExclusionFilterScope[] | cdktn.IResolvable) {
     this._scope.internalValue = value;
   }
   public resetScope() {
@@ -720,70 +720,70 @@ export class AppsecWafExclusionFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      event_query: cdktf.stringToTerraform(this._eventQuery),
-      ip_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipList),
-      on_match: cdktf.stringToTerraform(this._onMatch),
-      parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._parameters),
-      path_glob: cdktf.stringToTerraform(this._pathGlob),
-      rules_target: cdktf.listMapper(appsecWafExclusionFilterRulesTargetToTerraform, true)(this._rulesTarget.internalValue),
-      scope: cdktf.listMapper(appsecWafExclusionFilterScopeToTerraform, true)(this._scope.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      event_query: cdktn.stringToTerraform(this._eventQuery),
+      ip_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipList),
+      on_match: cdktn.stringToTerraform(this._onMatch),
+      parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(this._parameters),
+      path_glob: cdktn.stringToTerraform(this._pathGlob),
+      rules_target: cdktn.listMapper(appsecWafExclusionFilterRulesTargetToTerraform, true)(this._rulesTarget.internalValue),
+      scope: cdktn.listMapper(appsecWafExclusionFilterScopeToTerraform, true)(this._scope.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       event_query: {
-        value: cdktf.stringToHclTerraform(this._eventQuery),
+        value: cdktn.stringToHclTerraform(this._eventQuery),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_list: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipList),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipList),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       on_match: {
-        value: cdktf.stringToHclTerraform(this._onMatch),
+        value: cdktn.stringToHclTerraform(this._onMatch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._parameters),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._parameters),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       path_glob: {
-        value: cdktf.stringToHclTerraform(this._pathGlob),
+        value: cdktn.stringToHclTerraform(this._pathGlob),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rules_target: {
-        value: cdktf.listMapperHcl(appsecWafExclusionFilterRulesTargetToHclTerraform, true)(this._rulesTarget.internalValue),
+        value: cdktn.listMapperHcl(appsecWafExclusionFilterRulesTargetToHclTerraform, true)(this._rulesTarget.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsecWafExclusionFilterRulesTargetList",
       },
       scope: {
-        value: cdktf.listMapperHcl(appsecWafExclusionFilterScopeToHclTerraform, true)(this._scope.internalValue),
+        value: cdktn.listMapperHcl(appsecWafExclusionFilterScopeToHclTerraform, true)(this._scope.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AppsecWafExclusionFilterScopeList",

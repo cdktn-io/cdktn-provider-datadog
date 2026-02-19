@@ -1,107 +1,107 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IncidentNotificationRuleConfig extends cdktf.TerraformMetaArguments {
+export interface IncidentNotificationRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the notification rule is enabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The notification handles (targets) for this rule. Examples: @team-email@company.com, @slack-channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#handles IncidentNotificationRule#handles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#handles IncidentNotificationRule#handles}
   */
   readonly handles: string[];
   /**
   * The ID of the incident type this notification rule is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
   */
   readonly incidentType: string;
   /**
   * The ID of the notification template to use for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
   */
   readonly notificationTemplate?: string;
   /**
   * List of incident fields that trigger re-notification when changed. Valid values are: status, severity, customer_impact, title, description, detected, root_cause, services, state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
   */
   readonly renotifyOn?: string[];
   /**
   * The trigger event for this notification rule. Valid values are: incident_created_trigger, incident_saved_trigger.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
   */
   readonly trigger: string;
   /**
   * The visibility of the notification rule. Valid values are: all, organization, private. Defaults to organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
   */
   readonly visibility?: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
   */
-  readonly conditions?: IncidentNotificationRuleConditions[] | cdktf.IResolvable;
+  readonly conditions?: IncidentNotificationRuleConditions[] | cdktn.IResolvable;
 }
 export interface IncidentNotificationRuleConditions {
   /**
   * The incident field to evaluate. Common values include: state, severity, services, teams. Custom fields are also supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
   */
   readonly field: string;
   /**
   * The value(s) to compare against. Multiple values are ORed together.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
   */
   readonly values: string[];
 }
 
-export function incidentNotificationRuleConditionsToTerraform(struct?: IncidentNotificationRuleConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function incidentNotificationRuleConditionsToTerraform(struct?: IncidentNotificationRuleConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    field: cdktf.stringToTerraform(struct!.field),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    field: cdktn.stringToTerraform(struct!.field),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function incidentNotificationRuleConditionsToHclTerraform(struct?: IncidentNotificationRuleConditions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function incidentNotificationRuleConditionsToHclTerraform(struct?: IncidentNotificationRuleConditions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     field: {
-      value: cdktf.stringToHclTerraform(struct!.field),
+      value: cdktn.stringToHclTerraform(struct!.field),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -112,9 +112,9 @@ export function incidentNotificationRuleConditionsToHclTerraform(struct?: Incide
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IncidentNotificationRuleConditionsOutputReference extends cdktf.ComplexObject {
+export class IncidentNotificationRuleConditionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -122,11 +122,11 @@ export class IncidentNotificationRuleConditionsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IncidentNotificationRuleConditions | cdktf.IResolvable | undefined {
+  public get internalValue(): IncidentNotificationRuleConditions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -143,14 +143,14 @@ export class IncidentNotificationRuleConditionsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IncidentNotificationRuleConditions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IncidentNotificationRuleConditions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._field = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -189,15 +189,15 @@ export class IncidentNotificationRuleConditionsOutputReference extends cdktf.Com
   }
 }
 
-export class IncidentNotificationRuleConditionsList extends cdktf.ComplexList {
-  public internalValue? : IncidentNotificationRuleConditions[] | cdktf.IResolvable
+export class IncidentNotificationRuleConditionsList extends cdktn.ComplexList {
+  public internalValue? : IncidentNotificationRuleConditions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -210,9 +210,9 @@ export class IncidentNotificationRuleConditionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}
 */
-export class IncidentNotificationRule extends cdktf.TerraformResource {
+export class IncidentNotificationRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -223,14 +223,14 @@ export class IncidentNotificationRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IncidentNotificationRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IncidentNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentNotificationRule to import
-  * @param importFromId The id of the existing IncidentNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentNotificationRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_incident_notification_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_incident_notification_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -238,7 +238,7 @@ export class IncidentNotificationRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +249,7 @@ export class IncidentNotificationRule extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_incident_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -280,11 +280,11 @@ export class IncidentNotificationRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -397,7 +397,7 @@ export class IncidentNotificationRule extends cdktf.TerraformResource {
   public get conditions() {
     return this._conditions;
   }
-  public putConditions(value: IncidentNotificationRuleConditions[] | cdktf.IResolvable) {
+  public putConditions(value: IncidentNotificationRuleConditions[] | cdktn.IResolvable) {
     this._conditions.internalValue = value;
   }
   public resetConditions() {
@@ -414,63 +414,63 @@ export class IncidentNotificationRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      handles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._handles),
-      incident_type: cdktf.stringToTerraform(this._incidentType),
-      notification_template: cdktf.stringToTerraform(this._notificationTemplate),
-      renotify_on: cdktf.listMapper(cdktf.stringToTerraform, false)(this._renotifyOn),
-      trigger: cdktf.stringToTerraform(this._trigger),
-      visibility: cdktf.stringToTerraform(this._visibility),
-      conditions: cdktf.listMapper(incidentNotificationRuleConditionsToTerraform, true)(this._conditions.internalValue),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      handles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._handles),
+      incident_type: cdktn.stringToTerraform(this._incidentType),
+      notification_template: cdktn.stringToTerraform(this._notificationTemplate),
+      renotify_on: cdktn.listMapper(cdktn.stringToTerraform, false)(this._renotifyOn),
+      trigger: cdktn.stringToTerraform(this._trigger),
+      visibility: cdktn.stringToTerraform(this._visibility),
+      conditions: cdktn.listMapper(incidentNotificationRuleConditionsToTerraform, true)(this._conditions.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       handles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._handles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._handles),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       incident_type: {
-        value: cdktf.stringToHclTerraform(this._incidentType),
+        value: cdktn.stringToHclTerraform(this._incidentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_template: {
-        value: cdktf.stringToHclTerraform(this._notificationTemplate),
+        value: cdktn.stringToHclTerraform(this._notificationTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       renotify_on: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._renotifyOn),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._renotifyOn),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       trigger: {
-        value: cdktf.stringToHclTerraform(this._trigger),
+        value: cdktn.stringToHclTerraform(this._trigger),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       visibility: {
-        value: cdktf.stringToHclTerraform(this._visibility),
+        value: cdktn.stringToHclTerraform(this._visibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       conditions: {
-        value: cdktf.listMapperHcl(incidentNotificationRuleConditionsToHclTerraform, true)(this._conditions.internalValue),
+        value: cdktn.listMapperHcl(incidentNotificationRuleConditionsToHclTerraform, true)(this._conditions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "IncidentNotificationRuleConditionsList",

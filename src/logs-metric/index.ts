@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
+export interface LogsMetricConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#id LogsMetric#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#id LogsMetric#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,82 +22,82 @@ export interface LogsMetricConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the log-based metric. This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#name LogsMetric#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#name LogsMetric#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#compute LogsMetric#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#compute LogsMetric#compute}
   */
   readonly compute: LogsMetricCompute;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#filter LogsMetric#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#filter LogsMetric#filter}
   */
   readonly filter: LogsMetricFilter;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
   */
-  readonly groupBy?: LogsMetricGroupBy[] | cdktf.IResolvable;
+  readonly groupBy?: LogsMetricGroupBy[] | cdktn.IResolvable;
 }
 export interface LogsMetricCompute {
   /**
   * The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have an `aggregation_type` of distribution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
   */
-  readonly includePercentiles?: boolean | cdktf.IResolvable;
+  readonly includePercentiles?: boolean | cdktn.IResolvable;
   /**
   * The path to the value the log-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#path LogsMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#path LogsMetric#path}
   */
   readonly path?: string;
 }
 
 export function logsMetricComputeToTerraform(struct?: LogsMetricComputeOutputReference | LogsMetricCompute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aggregation_type: cdktf.stringToTerraform(struct!.aggregationType),
-    include_percentiles: cdktf.booleanToTerraform(struct!.includePercentiles),
-    path: cdktf.stringToTerraform(struct!.path),
+    aggregation_type: cdktn.stringToTerraform(struct!.aggregationType),
+    include_percentiles: cdktn.booleanToTerraform(struct!.includePercentiles),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
 export function logsMetricComputeToHclTerraform(struct?: LogsMetricComputeOutputReference | LogsMetricCompute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aggregation_type: {
-      value: cdktf.stringToHclTerraform(struct!.aggregationType),
+      value: cdktn.stringToHclTerraform(struct!.aggregationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_percentiles: {
-      value: cdktf.booleanToHclTerraform(struct!.includePercentiles),
+      value: cdktn.booleanToHclTerraform(struct!.includePercentiles),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,14 +108,14 @@ export function logsMetricComputeToHclTerraform(struct?: LogsMetricComputeOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
+export class LogsMetricComputeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -166,11 +166,11 @@ export class LogsMetricComputeOutputReference extends cdktf.ComplexObject {
   }
 
   // include_percentiles - computed: false, optional: true, required: false
-  private _includePercentiles?: boolean | cdktf.IResolvable; 
+  private _includePercentiles?: boolean | cdktn.IResolvable; 
   public get includePercentiles() {
     return this.getBooleanAttribute('include_percentiles');
   }
-  public set includePercentiles(value: boolean | cdktf.IResolvable) {
+  public set includePercentiles(value: boolean | cdktn.IResolvable) {
     this._includePercentiles = value;
   }
   public resetIncludePercentiles() {
@@ -201,30 +201,30 @@ export interface LogsMetricFilter {
   /**
   * The search query - following the log search syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#query LogsMetric#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#query LogsMetric#query}
   */
   readonly query: string;
 }
 
 export function logsMetricFilterToTerraform(struct?: LogsMetricFilterOutputReference | LogsMetricFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    query: cdktf.stringToTerraform(struct!.query),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function logsMetricFilterToHclTerraform(struct?: LogsMetricFilterOutputReference | LogsMetricFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -235,14 +235,14 @@ export function logsMetricFilterToHclTerraform(struct?: LogsMetricFilterOutputRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsMetricFilterOutputReference extends cdktf.ComplexObject {
+export class LogsMetricFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -284,43 +284,43 @@ export interface LogsMetricGroupBy {
   /**
   * The path to the value the log-based metric will be aggregated over.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#path LogsMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#path LogsMetric#path}
   */
   readonly path: string;
   /**
   * Name of the tag that gets created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
   */
   readonly tagName: string;
 }
 
-export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    path: cdktf.stringToTerraform(struct!.path),
-    tag_name: cdktf.stringToTerraform(struct!.tagName),
+    path: cdktn.stringToTerraform(struct!.path),
+    tag_name: cdktn.stringToTerraform(struct!.tagName),
   }
 }
 
 
-export function logsMetricGroupByToHclTerraform(struct?: LogsMetricGroupBy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logsMetricGroupByToHclTerraform(struct?: LogsMetricGroupBy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tag_name: {
-      value: cdktf.stringToHclTerraform(struct!.tagName),
+      value: cdktn.stringToHclTerraform(struct!.tagName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -331,9 +331,9 @@ export function logsMetricGroupByToHclTerraform(struct?: LogsMetricGroupBy | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogsMetricGroupByOutputReference extends cdktf.ComplexObject {
+export class LogsMetricGroupByOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -341,11 +341,11 @@ export class LogsMetricGroupByOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogsMetricGroupBy | cdktf.IResolvable | undefined {
+  public get internalValue(): LogsMetricGroupBy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -362,14 +362,14 @@ export class LogsMetricGroupByOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogsMetricGroupBy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogsMetricGroupBy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._path = undefined;
       this._tagName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -408,15 +408,15 @@ export class LogsMetricGroupByOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LogsMetricGroupByList extends cdktf.ComplexList {
-  public internalValue? : LogsMetricGroupBy[] | cdktf.IResolvable
+export class LogsMetricGroupByList extends cdktn.ComplexList {
+  public internalValue? : LogsMetricGroupBy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -429,9 +429,9 @@ export class LogsMetricGroupByList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric datadog_logs_metric}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric datadog_logs_metric}
 */
-export class LogsMetric extends cdktf.TerraformResource {
+export class LogsMetric extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -442,14 +442,14 @@ export class LogsMetric extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogsMetric resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogsMetric resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsMetric to import
-  * @param importFromId The id of the existing LogsMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsMetric to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_metric", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_logs_metric", importId: importFromId, provider });
       }
 
   // ===========
@@ -457,7 +457,7 @@ export class LogsMetric extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/logs_metric datadog_logs_metric} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/logs_metric datadog_logs_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -468,7 +468,7 @@ export class LogsMetric extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_logs_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -550,7 +550,7 @@ export class LogsMetric extends cdktf.TerraformResource {
   public get groupBy() {
     return this._groupBy;
   }
-  public putGroupBy(value: LogsMetricGroupBy[] | cdktf.IResolvable) {
+  public putGroupBy(value: LogsMetricGroupBy[] | cdktn.IResolvable) {
     this._groupBy.internalValue = value;
   }
   public resetGroupBy() {
@@ -567,24 +567,24 @@ export class LogsMetric extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       compute: logsMetricComputeToTerraform(this._compute.internalValue),
       filter: logsMetricFilterToTerraform(this._filter.internalValue),
-      group_by: cdktf.listMapper(logsMetricGroupByToTerraform, true)(this._groupBy.internalValue),
+      group_by: cdktn.listMapper(logsMetricGroupByToTerraform, true)(this._groupBy.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -602,7 +602,7 @@ export class LogsMetric extends cdktf.TerraformResource {
         storageClassType: "LogsMetricFilterList",
       },
       group_by: {
-        value: cdktf.listMapperHcl(logsMetricGroupByToHclTerraform, true)(this._groupBy.internalValue),
+        value: cdktn.listMapperHcl(logsMetricGroupByToHclTerraform, true)(this._groupBy.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LogsMetricGroupByList",

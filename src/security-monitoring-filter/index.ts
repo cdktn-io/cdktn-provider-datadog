@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityMonitoringFilterConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityMonitoringFilterConfig extends cdktn.TerraformMetaArguments {
   /**
   * The filtered data type. Valid values are `logs`. Defaults to `"logs"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
   */
   readonly filteredDataType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,69 +28,69 @@ export interface SecurityMonitoringFilterConfig extends cdktf.TerraformMetaArgum
   /**
   * Whether the security filter is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
   */
-  readonly isEnabled: boolean | cdktf.IResolvable;
+  readonly isEnabled: boolean | cdktn.IResolvable;
   /**
   * The name of the security filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * The query of the security filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;
   /**
   * exclusion_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
   */
-  readonly exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | cdktf.IResolvable;
+  readonly exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | cdktn.IResolvable;
 }
 export interface SecurityMonitoringFilterExclusionFilter {
   /**
   * Exclusion filter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * Exclusion filter query. Logs that match this query are excluded from the security filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;
 }
 
-export function securityMonitoringFilterExclusionFilterToTerraform(struct?: SecurityMonitoringFilterExclusionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityMonitoringFilterExclusionFilterToTerraform(struct?: SecurityMonitoringFilterExclusionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    query: cdktf.stringToTerraform(struct!.query),
+    name: cdktn.stringToTerraform(struct!.name),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
-export function securityMonitoringFilterExclusionFilterToHclTerraform(struct?: SecurityMonitoringFilterExclusionFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityMonitoringFilterExclusionFilterToHclTerraform(struct?: SecurityMonitoringFilterExclusionFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,9 +101,9 @@ export function securityMonitoringFilterExclusionFilterToHclTerraform(struct?: S
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityMonitoringFilterExclusionFilterOutputReference extends cdktf.ComplexObject {
+export class SecurityMonitoringFilterExclusionFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class SecurityMonitoringFilterExclusionFilterOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityMonitoringFilterExclusionFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityMonitoringFilterExclusionFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class SecurityMonitoringFilterExclusionFilterOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityMonitoringFilterExclusionFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityMonitoringFilterExclusionFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._query = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -178,15 +178,15 @@ export class SecurityMonitoringFilterExclusionFilterOutputReference extends cdkt
   }
 }
 
-export class SecurityMonitoringFilterExclusionFilterList extends cdktf.ComplexList {
-  public internalValue? : SecurityMonitoringFilterExclusionFilter[] | cdktf.IResolvable
+export class SecurityMonitoringFilterExclusionFilterList extends cdktn.ComplexList {
+  public internalValue? : SecurityMonitoringFilterExclusionFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -199,9 +199,9 @@ export class SecurityMonitoringFilterExclusionFilterList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}
 */
-export class SecurityMonitoringFilter extends cdktf.TerraformResource {
+export class SecurityMonitoringFilter extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -212,14 +212,14 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityMonitoringFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityMonitoringFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityMonitoringFilter to import
-  * @param importFromId The id of the existing SecurityMonitoringFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityMonitoringFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityMonitoringFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_security_monitoring_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_security_monitoring_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -227,7 +227,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -238,7 +238,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -294,11 +294,11 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   }
 
   // is_enabled - computed: false, optional: false, required: true
-  private _isEnabled?: boolean | cdktf.IResolvable; 
+  private _isEnabled?: boolean | cdktn.IResolvable; 
   public get isEnabled() {
     return this.getBooleanAttribute('is_enabled');
   }
-  public set isEnabled(value: boolean | cdktf.IResolvable) {
+  public set isEnabled(value: boolean | cdktn.IResolvable) {
     this._isEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -342,7 +342,7 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
   public get exclusionFilter() {
     return this._exclusionFilter;
   }
-  public putExclusionFilter(value: SecurityMonitoringFilterExclusionFilter[] | cdktf.IResolvable) {
+  public putExclusionFilter(value: SecurityMonitoringFilterExclusionFilter[] | cdktn.IResolvable) {
     this._exclusionFilter.internalValue = value;
   }
   public resetExclusionFilter() {
@@ -359,49 +359,49 @@ export class SecurityMonitoringFilter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filtered_data_type: cdktf.stringToTerraform(this._filteredDataType),
-      id: cdktf.stringToTerraform(this._id),
-      is_enabled: cdktf.booleanToTerraform(this._isEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      query: cdktf.stringToTerraform(this._query),
-      exclusion_filter: cdktf.listMapper(securityMonitoringFilterExclusionFilterToTerraform, true)(this._exclusionFilter.internalValue),
+      filtered_data_type: cdktn.stringToTerraform(this._filteredDataType),
+      id: cdktn.stringToTerraform(this._id),
+      is_enabled: cdktn.booleanToTerraform(this._isEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      query: cdktn.stringToTerraform(this._query),
+      exclusion_filter: cdktn.listMapper(securityMonitoringFilterExclusionFilterToTerraform, true)(this._exclusionFilter.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filtered_data_type: {
-        value: cdktf.stringToHclTerraform(this._filteredDataType),
+        value: cdktn.stringToHclTerraform(this._filteredDataType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_enabled: {
-        value: cdktf.booleanToHclTerraform(this._isEnabled),
+        value: cdktn.booleanToHclTerraform(this._isEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclusion_filter: {
-        value: cdktf.listMapperHcl(securityMonitoringFilterExclusionFilterToHclTerraform, true)(this._exclusionFilter.internalValue),
+        value: cdktn.listMapperHcl(securityMonitoringFilterExclusionFilterToHclTerraform, true)(this._exclusionFilter.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SecurityMonitoringFilterExclusionFilterList",

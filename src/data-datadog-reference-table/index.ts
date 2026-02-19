@@ -1,21 +1,21 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogReferenceTableConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogReferenceTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * The UUID of the reference table. Either id or table_name must be specified, but not both.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,22 +24,22 @@ export interface DataDatadogReferenceTableConfig extends cdktf.TerraformMetaArgu
   /**
   * The name of the reference table. Either id or table_name must be specified, but not both.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
   */
   readonly tableName?: string;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
   */
   readonly schema?: DataDatadogReferenceTableSchema;
 }
 export interface DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail {
 }
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -47,9 +47,9 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToTer
 }
 
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,19 +57,19 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToHcl
   return attrs;
 }
 
-export class DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference extends cdktf.ComplexObject {
+export class DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -78,12 +78,12 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -111,9 +111,9 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailOutputRe
 export interface DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail {
 }
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -121,9 +121,9 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToT
 }
 
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -131,19 +131,19 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToH
   return attrs;
 }
 
-export class DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference extends cdktf.ComplexObject {
+export class DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,12 +152,12 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -195,9 +195,9 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailOutput
 export interface DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail {
 }
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -205,9 +205,9 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToTer
 }
 
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -215,19 +215,19 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToHcl
   return attrs;
 }
 
-export class DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference extends cdktf.ComplexObject {
+export class DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -236,12 +236,12 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -274,9 +274,9 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailOutputRe
 export interface DataDatadogReferenceTableFileMetadataAccessDetails {
 }
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -284,9 +284,9 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsToTerraform(st
 }
 
 
-export function dataDatadogReferenceTableFileMetadataAccessDetailsToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetails | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataAccessDetailsToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetails | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -294,19 +294,19 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsToHclTerraform
   return attrs;
 }
 
-export class DataDatadogReferenceTableFileMetadataAccessDetailsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogReferenceTableFileMetadataAccessDetailsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetails | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogReferenceTableFileMetadataAccessDetails | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -315,12 +315,12 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetails | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogReferenceTableFileMetadataAccessDetails | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -351,9 +351,9 @@ export class DataDatadogReferenceTableFileMetadataAccessDetailsOutputReference e
 export interface DataDatadogReferenceTableFileMetadata {
 }
 
-export function dataDatadogReferenceTableFileMetadataToTerraform(struct?: DataDatadogReferenceTableFileMetadata | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataToTerraform(struct?: DataDatadogReferenceTableFileMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -361,9 +361,9 @@ export function dataDatadogReferenceTableFileMetadataToTerraform(struct?: DataDa
 }
 
 
-export function dataDatadogReferenceTableFileMetadataToHclTerraform(struct?: DataDatadogReferenceTableFileMetadata | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableFileMetadataToHclTerraform(struct?: DataDatadogReferenceTableFileMetadata | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -371,19 +371,19 @@ export function dataDatadogReferenceTableFileMetadataToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataDatadogReferenceTableFileMetadataOutputReference extends cdktf.ComplexObject {
+export class DataDatadogReferenceTableFileMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogReferenceTableFileMetadata | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogReferenceTableFileMetadata | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -392,12 +392,12 @@ export class DataDatadogReferenceTableFileMetadataOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogReferenceTableFileMetadata | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogReferenceTableFileMetadata | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -436,9 +436,9 @@ export class DataDatadogReferenceTableFileMetadataOutputReference extends cdktf.
 export interface DataDatadogReferenceTableSchemaFields {
 }
 
-export function dataDatadogReferenceTableSchemaFieldsToTerraform(struct?: DataDatadogReferenceTableSchemaFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableSchemaFieldsToTerraform(struct?: DataDatadogReferenceTableSchemaFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -446,9 +446,9 @@ export function dataDatadogReferenceTableSchemaFieldsToTerraform(struct?: DataDa
 }
 
 
-export function dataDatadogReferenceTableSchemaFieldsToHclTerraform(struct?: DataDatadogReferenceTableSchemaFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableSchemaFieldsToHclTerraform(struct?: DataDatadogReferenceTableSchemaFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -456,9 +456,9 @@ export function dataDatadogReferenceTableSchemaFieldsToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataDatadogReferenceTableSchemaFieldsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogReferenceTableSchemaFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -466,11 +466,11 @@ export class DataDatadogReferenceTableSchemaFieldsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataDatadogReferenceTableSchemaFields | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogReferenceTableSchemaFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -479,12 +479,12 @@ export class DataDatadogReferenceTableSchemaFieldsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogReferenceTableSchemaFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogReferenceTableSchemaFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -505,15 +505,15 @@ export class DataDatadogReferenceTableSchemaFieldsOutputReference extends cdktf.
   }
 }
 
-export class DataDatadogReferenceTableSchemaFieldsList extends cdktf.ComplexList {
-  public internalValue? : DataDatadogReferenceTableSchemaFields[] | cdktf.IResolvable
+export class DataDatadogReferenceTableSchemaFieldsList extends cdktn.ComplexList {
+  public internalValue? : DataDatadogReferenceTableSchemaFields[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -528,30 +528,30 @@ export interface DataDatadogReferenceTableSchema {
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
   */
-  readonly fields?: DataDatadogReferenceTableSchemaFields[] | cdktf.IResolvable;
+  readonly fields?: DataDatadogReferenceTableSchemaFields[] | cdktn.IResolvable;
 }
 
-export function dataDatadogReferenceTableSchemaToTerraform(struct?: DataDatadogReferenceTableSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableSchemaToTerraform(struct?: DataDatadogReferenceTableSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fields: cdktf.listMapper(dataDatadogReferenceTableSchemaFieldsToTerraform, true)(struct!.fields),
+    fields: cdktn.listMapper(dataDatadogReferenceTableSchemaFieldsToTerraform, true)(struct!.fields),
   }
 }
 
 
-export function dataDatadogReferenceTableSchemaToHclTerraform(struct?: DataDatadogReferenceTableSchema | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataDatadogReferenceTableSchemaToHclTerraform(struct?: DataDatadogReferenceTableSchema | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fields: {
-      value: cdktf.listMapperHcl(dataDatadogReferenceTableSchemaFieldsToHclTerraform, true)(struct!.fields),
+      value: cdktn.listMapperHcl(dataDatadogReferenceTableSchemaFieldsToHclTerraform, true)(struct!.fields),
       isBlock: true,
       type: "list",
       storageClassType: "DataDatadogReferenceTableSchemaFieldsList",
@@ -562,19 +562,19 @@ export function dataDatadogReferenceTableSchemaToHclTerraform(struct?: DataDatad
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataDatadogReferenceTableSchemaOutputReference extends cdktf.ComplexObject {
+export class DataDatadogReferenceTableSchemaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataDatadogReferenceTableSchema | cdktf.IResolvable | undefined {
+  public get internalValue(): DataDatadogReferenceTableSchema | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -587,13 +587,13 @@ export class DataDatadogReferenceTableSchemaOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataDatadogReferenceTableSchema | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataDatadogReferenceTableSchema | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._fields.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -614,7 +614,7 @@ export class DataDatadogReferenceTableSchemaOutputReference extends cdktf.Comple
   public get fields() {
     return this._fields;
   }
-  public putFields(value: DataDatadogReferenceTableSchemaFields[] | cdktf.IResolvable) {
+  public putFields(value: DataDatadogReferenceTableSchemaFields[] | cdktn.IResolvable) {
     this._fields.internalValue = value;
   }
   public resetFields() {
@@ -627,9 +627,9 @@ export class DataDatadogReferenceTableSchemaOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table datadog_reference_table}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table datadog_reference_table}
 */
-export class DataDatadogReferenceTable extends cdktf.TerraformDataSource {
+export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -640,14 +640,14 @@ export class DataDatadogReferenceTable extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogReferenceTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogReferenceTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogReferenceTable to import
-  * @param importFromId The id of the existing DataDatadogReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogReferenceTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_reference_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_reference_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -655,7 +655,7 @@ export class DataDatadogReferenceTable extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/reference_table datadog_reference_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table datadog_reference_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -666,7 +666,7 @@ export class DataDatadogReferenceTable extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_reference_table',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -786,8 +786,8 @@ export class DataDatadogReferenceTable extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      table_name: cdktf.stringToTerraform(this._tableName),
+      id: cdktn.stringToTerraform(this._id),
+      table_name: cdktn.stringToTerraform(this._tableName),
       schema: dataDatadogReferenceTableSchemaToTerraform(this._schema.internalValue),
     };
   }
@@ -795,13 +795,13 @@ export class DataDatadogReferenceTable extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

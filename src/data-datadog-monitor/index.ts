@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataDatadogMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface DataDatadogMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor#id DataDatadogMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor#id DataDatadogMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataDatadogMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
   */
   readonly monitorTagsFilter?: string[];
   /**
   * A monitor name to limit the search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
   */
   readonly nameFilter?: string;
   /**
   * A list of tags to limit the search. This filters on the monitor scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
   */
   readonly tagsFilter?: string[];
 }
@@ -42,8 +42,8 @@ export interface DataDatadogMonitorMonitorThresholdWindows {
 }
 
 export function dataDatadogMonitorMonitorThresholdWindowsToTerraform(struct?: DataDatadogMonitorMonitorThresholdWindows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataDatadogMonitorMonitorThresholdWindowsToTerraform(struct?: Da
 
 
 export function dataDatadogMonitorMonitorThresholdWindowsToHclTerraform(struct?: DataDatadogMonitorMonitorThresholdWindows): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataDatadogMonitorMonitorThresholdWindowsToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataDatadogMonitorMonitorThresholdWindowsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogMonitorMonitorThresholdWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataDatadogMonitorMonitorThresholdWindowsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +100,14 @@ export class DataDatadogMonitorMonitorThresholdWindowsOutputReference extends cd
   }
 }
 
-export class DataDatadogMonitorMonitorThresholdWindowsList extends cdktf.ComplexList {
+export class DataDatadogMonitorMonitorThresholdWindowsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -122,8 +122,8 @@ export interface DataDatadogMonitorMonitorThresholds {
 }
 
 export function dataDatadogMonitorMonitorThresholdsToTerraform(struct?: DataDatadogMonitorMonitorThresholds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -132,8 +132,8 @@ export function dataDatadogMonitorMonitorThresholdsToTerraform(struct?: DataData
 
 
 export function dataDatadogMonitorMonitorThresholdsToHclTerraform(struct?: DataDatadogMonitorMonitorThresholds): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -141,7 +141,7 @@ export function dataDatadogMonitorMonitorThresholdsToHclTerraform(struct?: DataD
   return attrs;
 }
 
-export class DataDatadogMonitorMonitorThresholdsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogMonitorMonitorThresholdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -150,7 +150,7 @@ export class DataDatadogMonitorMonitorThresholdsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class DataDatadogMonitorMonitorThresholdsOutputReference extends cdktf.Co
   }
 }
 
-export class DataDatadogMonitorMonitorThresholdsList extends cdktf.ComplexList {
+export class DataDatadogMonitorMonitorThresholdsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,8 +222,8 @@ export interface DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence {
 }
 
 export function dataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceToTerraform(struct?: DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -232,8 +232,8 @@ export function dataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceToTer
 
 
 export function dataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceToHclTerraform(struct?: DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,7 +241,7 @@ export function dataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceToHcl
   return attrs;
 }
 
-export class DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference extends cdktf.ComplexObject {
+export class DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -250,7 +250,7 @@ export class DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -285,14 +285,14 @@ export class DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputRe
   }
 }
 
-export class DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList extends cdktf.ComplexList {
+export class DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -307,8 +307,8 @@ export interface DataDatadogMonitorSchedulingOptionsCustomSchedule {
 }
 
 export function dataDatadogMonitorSchedulingOptionsCustomScheduleToTerraform(struct?: DataDatadogMonitorSchedulingOptionsCustomSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -317,8 +317,8 @@ export function dataDatadogMonitorSchedulingOptionsCustomScheduleToTerraform(str
 
 
 export function dataDatadogMonitorSchedulingOptionsCustomScheduleToHclTerraform(struct?: DataDatadogMonitorSchedulingOptionsCustomSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -326,7 +326,7 @@ export function dataDatadogMonitorSchedulingOptionsCustomScheduleToHclTerraform(
   return attrs;
 }
 
-export class DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference extends cdktf.ComplexObject {
+export class DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -335,7 +335,7 @@ export class DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -361,14 +361,14 @@ export class DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference ex
   }
 }
 
-export class DataDatadogMonitorSchedulingOptionsCustomScheduleList extends cdktf.ComplexList {
+export class DataDatadogMonitorSchedulingOptionsCustomScheduleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -383,8 +383,8 @@ export interface DataDatadogMonitorSchedulingOptionsEvaluationWindow {
 }
 
 export function dataDatadogMonitorSchedulingOptionsEvaluationWindowToTerraform(struct?: DataDatadogMonitorSchedulingOptionsEvaluationWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -393,8 +393,8 @@ export function dataDatadogMonitorSchedulingOptionsEvaluationWindowToTerraform(s
 
 
 export function dataDatadogMonitorSchedulingOptionsEvaluationWindowToHclTerraform(struct?: DataDatadogMonitorSchedulingOptionsEvaluationWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -402,7 +402,7 @@ export function dataDatadogMonitorSchedulingOptionsEvaluationWindowToHclTerrafor
   return attrs;
 }
 
-export class DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference extends cdktf.ComplexObject {
+export class DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -411,7 +411,7 @@ export class DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -444,16 +444,21 @@ export class DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference 
   public get monthStarts() {
     return this.getNumberAttribute('month_starts');
   }
+
+  // timezone - computed: true, optional: false, required: false
+  public get timezone() {
+    return this.getStringAttribute('timezone');
+  }
 }
 
-export class DataDatadogMonitorSchedulingOptionsEvaluationWindowList extends cdktf.ComplexList {
+export class DataDatadogMonitorSchedulingOptionsEvaluationWindowList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -468,8 +473,8 @@ export interface DataDatadogMonitorSchedulingOptions {
 }
 
 export function dataDatadogMonitorSchedulingOptionsToTerraform(struct?: DataDatadogMonitorSchedulingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -478,8 +483,8 @@ export function dataDatadogMonitorSchedulingOptionsToTerraform(struct?: DataData
 
 
 export function dataDatadogMonitorSchedulingOptionsToHclTerraform(struct?: DataDatadogMonitorSchedulingOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -487,7 +492,7 @@ export function dataDatadogMonitorSchedulingOptionsToHclTerraform(struct?: DataD
   return attrs;
 }
 
-export class DataDatadogMonitorSchedulingOptionsOutputReference extends cdktf.ComplexObject {
+export class DataDatadogMonitorSchedulingOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -496,7 +501,7 @@ export class DataDatadogMonitorSchedulingOptionsOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -528,14 +533,14 @@ export class DataDatadogMonitorSchedulingOptionsOutputReference extends cdktf.Co
   }
 }
 
-export class DataDatadogMonitorSchedulingOptionsList extends cdktf.ComplexList {
+export class DataDatadogMonitorSchedulingOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -548,9 +553,9 @@ export class DataDatadogMonitorSchedulingOptionsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor datadog_monitor}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor datadog_monitor}
 */
-export class DataDatadogMonitor extends cdktf.TerraformDataSource {
+export class DataDatadogMonitor extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -561,14 +566,14 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataDatadogMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataDatadogMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogMonitor to import
-  * @param importFromId The id of the existing DataDatadogMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -576,7 +581,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/data-sources/monitor datadog_monitor} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/monitor datadog_monitor} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -587,7 +592,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -745,7 +750,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // notify_by - computed: true, optional: false, required: false
   public get notifyBy() {
-    return cdktf.Fn.tolist(this.getListAttribute('notify_by'));
+    return cdktn.Fn.tolist(this.getListAttribute('notify_by'));
   }
 
   // notify_no_data - computed: true, optional: false, required: false
@@ -775,7 +780,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // renotify_statuses - computed: true, optional: false, required: false
   public get renotifyStatuses() {
-    return cdktf.Fn.tolist(this.getListAttribute('renotify_statuses'));
+    return cdktn.Fn.tolist(this.getListAttribute('renotify_statuses'));
   }
 
   // require_full_window - computed: true, optional: false, required: false
@@ -785,7 +790,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // restricted_roles - computed: true, optional: false, required: false
   public get restrictedRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('restricted_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('restricted_roles'));
   }
 
   // scheduling_options - computed: true, optional: false, required: false
@@ -796,7 +801,7 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
 
   // tags_filter - computed: false, optional: true, required: false
@@ -831,35 +836,35 @@ export class DataDatadogMonitor extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      monitor_tags_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._monitorTagsFilter),
-      name_filter: cdktf.stringToTerraform(this._nameFilter),
-      tags_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tagsFilter),
+      id: cdktn.stringToTerraform(this._id),
+      monitor_tags_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._monitorTagsFilter),
+      name_filter: cdktn.stringToTerraform(this._nameFilter),
+      tags_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tagsFilter),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitor_tags_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._monitorTagsFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._monitorTagsFilter),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name_filter: {
-        value: cdktf.stringToHclTerraform(this._nameFilter),
+        value: cdktn.stringToHclTerraform(this._nameFilter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tagsFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tagsFilter),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

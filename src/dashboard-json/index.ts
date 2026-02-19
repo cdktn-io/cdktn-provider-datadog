@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json
+// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
+export interface DashboardJsonConfig extends cdktn.TerraformMetaArguments {
   /**
   * The JSON formatted definition of the Dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json#dashboard DashboardJson#dashboard}
   */
   readonly dashboard: string;
   /**
   * A list of dashboard lists this dashboard belongs to. This attribute should not be set if managing the corresponding dashboard lists using Terraform as it causes inconsistent behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json#dashboard_lists DashboardJson#dashboard_lists}
   */
   readonly dashboardLists?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json#id DashboardJson#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json#id DashboardJson#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,15 +34,15 @@ export interface DashboardJsonConfig extends cdktf.TerraformMetaArguments {
   /**
   * The URL of the dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json#url DashboardJson#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json#url DashboardJson#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json datadog_dashboard_json}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json datadog_dashboard_json}
 */
-export class DashboardJson extends cdktf.TerraformResource {
+export class DashboardJson extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DashboardJson extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DashboardJson resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DashboardJson resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DashboardJson to import
-  * @param importFromId The id of the existing DashboardJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DashboardJson that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DashboardJson to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dashboard_json", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "datadog_dashboard_json", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.82.0/docs/resources/dashboard_json datadog_dashboard_json} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard_json datadog_dashboard_json} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DashboardJson extends cdktf.TerraformResource {
       terraformResourceType: 'datadog_dashboard_json',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.82.0',
+        providerVersion: '3.89.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
@@ -116,7 +116,7 @@ export class DashboardJson extends cdktf.TerraformResource {
   // dashboard_lists - computed: false, optional: true, required: false
   private _dashboardLists?: number[]; 
   public get dashboardLists() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('dashboard_lists')));
   }
   public set dashboardLists(value: number[]) {
     this._dashboardLists = value;
@@ -131,7 +131,7 @@ export class DashboardJson extends cdktf.TerraformResource {
 
   // dashboard_lists_removed - computed: true, optional: false, required: false
   public get dashboardListsRemoved() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('dashboard_lists_removed')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('dashboard_lists_removed')));
   }
 
   // id - computed: true, optional: true, required: false
@@ -172,35 +172,35 @@ export class DashboardJson extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dashboard: cdktf.stringToTerraform(this._dashboard),
-      dashboard_lists: cdktf.listMapper(cdktf.numberToTerraform, false)(this._dashboardLists),
-      id: cdktf.stringToTerraform(this._id),
-      url: cdktf.stringToTerraform(this._url),
+      dashboard: cdktn.stringToTerraform(this._dashboard),
+      dashboard_lists: cdktn.listMapper(cdktn.numberToTerraform, false)(this._dashboardLists),
+      id: cdktn.stringToTerraform(this._id),
+      url: cdktn.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dashboard: {
-        value: cdktf.stringToHclTerraform(this._dashboard),
+        value: cdktn.stringToHclTerraform(this._dashboard),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dashboard_lists: {
-        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._dashboardLists),
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._dashboardLists),
         isBlock: false,
         type: "set",
         storageClassType: "numberList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
