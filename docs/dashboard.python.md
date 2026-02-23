@@ -278,6 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.with">with</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.addOverride">add_override</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -325,6 +326,29 @@ def to_string() -> str
 ```
 
 Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-datadog.dashboard.Dashboard.with"></a>
+
+```python
+def with(
+  mixins: *IMixin
+) -> IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-datadog.dashboard.Dashboard.with.parameter.mixins"></a>
+
+- *Type:* *constructs.IMixin
+
+The mixins to apply.
+
+---
 
 ##### `add_override` <a name="add_override" id="@cdktn/provider-datadog.dashboard.Dashboard.addOverride"></a>
 
@@ -149973,27 +149997,3 @@ dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDe
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.dataSource">data_source</a></code> | <code>str</code> | The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.env">env</a></code> | <code>str</code> | APM environment. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.name">name</a></code> | <code>str</code> | The name of query for use in formulas. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.service">service</a></code> | <code>str</code> | APM service. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.stat">stat</a></code> | <code>str</code> | APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.crossOrgUuids">cross_org_uuids</a></code> | <code>typing.List[str]</code> | The source organization UUID for cross organization queries. Feature in Private Beta. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.groupBy">group_by</a></code> | <code>typing.List[str]</code> | Array of fields to group results by. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.operationName">operation_name</a></code> | <code>str</code> | Name of operation on service. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.primaryTagName">primary_tag_name</a></code> | <code>str</code> | The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.primaryTagValue">primary_tag_value</a></code> | <code>str</code> | Filter APM data by the second primary tag. `primary_tag_name` must also be specified. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.resourceName">resource_name</a></code> | <code>str</code> | APM resource. |
-
----
-
-##### `data_source`<sup>Required</sup> <a name="data_source" id="@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryApmResourceStatsQuery.property.dataSource"></a>
-
-```python
-data_source: str
-```
-
-- *Type:* str

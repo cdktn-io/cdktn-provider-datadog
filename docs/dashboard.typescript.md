@@ -51,6 +51,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.with">with</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.addOverride">addOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -98,6 +99,27 @@ public toString(): string
 ```
 
 Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-datadog.dashboard.Dashboard.with"></a>
+
+```typescript
+public with(mixins: ...IMixin[]): IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-datadog.dashboard.Dashboard.with.parameter.mixins"></a>
+
+- *Type:* ...constructs.IMixin[]
+
+The mixins to apply.
+
+---
 
 ##### `addOverride` <a name="addOverride" id="@cdktn/provider-datadog.dashboard.Dashboard.addOverride"></a>
 
@@ -149975,25 +149997,3 @@ A mathematical expression describing the marker, for example: `y > 1`, `-5 < y <
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#value Dashboard#value}
 
----
-
-##### `displayType`<sup>Optional</sup> <a name="displayType" id="@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionMarker.property.displayType"></a>
-
-```typescript
-public readonly displayType: string;
-```
-
-- *Type:* string
-
-How the marker lines are displayed, options are one of {`error`, `warning`, `info`, `ok`} combined with one of {`dashed`, `solid`, `bold`}.
-
-Example: `error dashed`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/dashboard#display_type Dashboard#display_type}
-
----
-
-##### `label`<sup>Optional</sup> <a name="label" id="@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionTimeseriesDefinitionMarker.property.label"></a>
-
-```typescript
-public readonly label: string;
