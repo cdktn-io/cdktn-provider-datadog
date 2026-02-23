@@ -51,6 +51,7 @@ Must be unique amongst siblings in the same scope
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.with">With</a></code> | Applies one or more mixins to this construct. |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktn/provider-datadog.dashboard.Dashboard.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
@@ -98,6 +99,27 @@ func ToString() *string
 ```
 
 Returns a string representation of this construct.
+
+##### `With` <a name="With" id="@cdktn/provider-datadog.dashboard.Dashboard.with"></a>
+
+```go
+func With(mixins ...IMixin) IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-datadog.dashboard.Dashboard.with.parameter.mixins"></a>
+
+- *Type:* ...github.com/aws/constructs-go/constructs/v10.IMixin
+
+The mixins to apply.
+
+---
 
 ##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-datadog.dashboard.Dashboard.addOverride"></a>
 
@@ -149975,25 +149997,3 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/dashboard"
 	CrossOrgUuids: *[]*string,
 	GroupBy: interface{},
 	Indexes: *[]*string,
-	Search: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch,
-	Storage: *string,
-}
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.compute">Compute</a></code> | <code>interface{}</code> | compute block. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.dataSource">DataSource</a></code> | <code>*string</code> | The data source for event platform-based queries. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.name">Name</a></code> | <code>*string</code> | The name of query for use in formulas. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.crossOrgUuids">CrossOrgUuids</a></code> | <code>*[]*string</code> | The source organization UUID for cross organization queries. Feature in Private Beta. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.groupBy">GroupBy</a></code> | <code>interface{}</code> | group_by block. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.indexes">Indexes</a></code> | <code>*[]*string</code> | An array of index names to query in the stream. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.search">Search</a></code> | <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch">DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuerySearch</a></code> | search block. |
-| <code><a href="#@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.storage">Storage</a></code> | <code>*string</code> | Storage location (private beta). |
-
----
-
-##### `Compute`<sup>Required</sup> <a name="Compute" id="@cdktn/provider-datadog.dashboard.DashboardWidgetSplitGraphDefinitionSourceWidgetDefinitionScatterplotDefinitionRequestScatterplotTableQueryEventQuery.property.compute"></a>
-
