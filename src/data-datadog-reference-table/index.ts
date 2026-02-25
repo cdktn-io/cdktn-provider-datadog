@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table
+// https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogReferenceTableConfig extends cdktn.TerraformMetaArgu
   /**
   * The UUID of the reference table. Either id or table_name must be specified, but not both.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataDatadogReferenceTableConfig extends cdktn.TerraformMetaArgu
   /**
   * The name of the reference table. Either id or table_name must be specified, but not both.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
   */
   readonly tableName?: string;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
   */
   readonly schema?: DataDatadogReferenceTableSchema;
 }
@@ -528,7 +528,7 @@ export interface DataDatadogReferenceTableSchema {
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
   */
   readonly fields?: DataDatadogReferenceTableSchemaFields[] | cdktn.IResolvable;
 }
@@ -627,7 +627,7 @@ export class DataDatadogReferenceTableSchemaOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table datadog_reference_table}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table datadog_reference_table}
 */
 export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
 
@@ -643,7 +643,7 @@ export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogReferenceTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogReferenceTable to import
-  * @param importFromId The id of the existing DataDatadogReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogReferenceTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -655,7 +655,7 @@ export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/reference_table datadog_reference_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table datadog_reference_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -666,7 +666,7 @@ export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_reference_table',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.89.0',
+        providerVersion: '3.90.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

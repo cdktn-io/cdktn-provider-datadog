@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table
+// https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface ReferenceTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description of the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#description ReferenceTable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#description ReferenceTable#description}
   */
   readonly description?: string;
   /**
   * The source type for the reference table. Valid values are `S3`, `GCS`, `AZURE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#source ReferenceTable#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#source ReferenceTable#source}
   */
   readonly source: string;
   /**
   * The name of the reference table. This must be unique within your organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
   */
   readonly tableName: string;
   /**
   * A list of tags to associate with the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#tags ReferenceTable#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#tags ReferenceTable#tags}
   */
   readonly tags?: string[];
   /**
   * file_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
   */
   readonly fileMetadata?: ReferenceTableFileMetadata;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#schema ReferenceTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#schema ReferenceTable#schema}
   */
   readonly schema?: ReferenceTableSchema;
 }
@@ -53,19 +53,19 @@ export interface ReferenceTableFileMetadataAccessDetailsAwsDetail {
   /**
   * The ID of the AWS account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#aws_account_id ReferenceTable#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#aws_account_id ReferenceTable#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
   * The name of the AWS S3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#aws_bucket_name ReferenceTable#aws_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#aws_bucket_name ReferenceTable#aws_bucket_name}
   */
   readonly awsBucketName?: string;
   /**
   * The relative file path from the AWS S3 bucket root to the CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
   */
   readonly filePath?: string;
 }
@@ -219,31 +219,31 @@ export interface ReferenceTableFileMetadataAccessDetailsAzureDetail {
   /**
   * The Azure client ID (application ID).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#azure_client_id ReferenceTable#azure_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#azure_client_id ReferenceTable#azure_client_id}
   */
   readonly azureClientId?: string;
   /**
   * The name of the Azure container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#azure_container_name ReferenceTable#azure_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#azure_container_name ReferenceTable#azure_container_name}
   */
   readonly azureContainerName?: string;
   /**
   * The name of the Azure storage account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#azure_storage_account_name ReferenceTable#azure_storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#azure_storage_account_name ReferenceTable#azure_storage_account_name}
   */
   readonly azureStorageAccountName?: string;
   /**
   * The ID of the Azure tenant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#azure_tenant_id ReferenceTable#azure_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#azure_tenant_id ReferenceTable#azure_tenant_id}
   */
   readonly azureTenantId?: string;
   /**
   * The relative file path from the Azure container root to the CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
   */
   readonly filePath?: string;
 }
@@ -455,25 +455,25 @@ export interface ReferenceTableFileMetadataAccessDetailsGcpDetail {
   /**
   * The relative file path from the GCS bucket root to the CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
   */
   readonly filePath?: string;
   /**
   * The name of the GCP bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#gcp_bucket_name ReferenceTable#gcp_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#gcp_bucket_name ReferenceTable#gcp_bucket_name}
   */
   readonly gcpBucketName?: string;
   /**
   * The ID of the GCP project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#gcp_project_id ReferenceTable#gcp_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#gcp_project_id ReferenceTable#gcp_project_id}
   */
   readonly gcpProjectId?: string;
   /**
   * The email of the GCP service account used to access the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#gcp_service_account_email ReferenceTable#gcp_service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#gcp_service_account_email ReferenceTable#gcp_service_account_email}
   */
   readonly gcpServiceAccountEmail?: string;
 }
@@ -656,19 +656,19 @@ export interface ReferenceTableFileMetadataAccessDetails {
   /**
   * aws_detail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#aws_detail ReferenceTable#aws_detail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#aws_detail ReferenceTable#aws_detail}
   */
   readonly awsDetail?: ReferenceTableFileMetadataAccessDetailsAwsDetail;
   /**
   * azure_detail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#azure_detail ReferenceTable#azure_detail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#azure_detail ReferenceTable#azure_detail}
   */
   readonly azureDetail?: ReferenceTableFileMetadataAccessDetailsAzureDetail;
   /**
   * gcp_detail block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#gcp_detail ReferenceTable#gcp_detail}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#gcp_detail ReferenceTable#gcp_detail}
   */
   readonly gcpDetail?: ReferenceTableFileMetadataAccessDetailsGcpDetail;
 }
@@ -822,13 +822,13 @@ export interface ReferenceTableFileMetadata {
   /**
   * Whether this table should automatically sync with the cloud storage source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#sync_enabled ReferenceTable#sync_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#sync_enabled ReferenceTable#sync_enabled}
   */
   readonly syncEnabled: boolean | cdktn.IResolvable;
   /**
   * access_details block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#access_details ReferenceTable#access_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#access_details ReferenceTable#access_details}
   */
   readonly accessDetails?: ReferenceTableFileMetadataAccessDetails;
 }
@@ -965,15 +965,15 @@ export interface ReferenceTableSchemaFields {
   /**
   * The name of the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#name ReferenceTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#name ReferenceTable#name}
   */
-  readonly name?: string;
+  readonly name: string;
   /**
   * The data type of the field. Must be one of: STRING, INT32. Valid values are `STRING`, `INT32`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#type ReferenceTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#type ReferenceTable#type}
   */
-  readonly type?: string;
+  readonly type: string;
 }
 
 export function referenceTableSchemaFieldsToTerraform(struct?: ReferenceTableSchemaFields | cdktn.IResolvable): any {
@@ -1062,7 +1062,7 @@ export class ReferenceTableSchemaFieldsOutputReference extends cdktn.ComplexObje
     }
   }
 
-  // name - computed: true, optional: true, required: false
+  // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -1070,24 +1070,18 @@ export class ReferenceTableSchemaFieldsOutputReference extends cdktn.ComplexObje
   public set name(value: string) {
     this._name = value;
   }
-  public resetName() {
-    this._name = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
   }
 
-  // type - computed: true, optional: true, required: false
+  // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
   public set type(value: string) {
     this._type = value;
-  }
-  public resetType() {
-    this._type = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
@@ -1118,13 +1112,13 @@ export interface ReferenceTableSchema {
   /**
   * List of field names that serve as primary keys for the table. Currently only one primary key is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
   */
-  readonly primaryKeys?: string[];
+  readonly primaryKeys: string[];
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#fields ReferenceTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#fields ReferenceTable#fields}
   */
   readonly fields?: ReferenceTableSchemaFields[] | cdktn.IResolvable;
 }
@@ -1213,16 +1207,13 @@ export class ReferenceTableSchemaOutputReference extends cdktn.ComplexObject {
     }
   }
 
-  // primary_keys - computed: true, optional: true, required: false
+  // primary_keys - computed: false, optional: false, required: true
   private _primaryKeys?: string[]; 
   public get primaryKeys() {
     return this.getListAttribute('primary_keys');
   }
   public set primaryKeys(value: string[]) {
     this._primaryKeys = value;
-  }
-  public resetPrimaryKeys() {
-    this._primaryKeys = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get primaryKeysInput() {
@@ -1247,7 +1238,7 @@ export class ReferenceTableSchemaOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table datadog_reference_table}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table datadog_reference_table}
 */
 export class ReferenceTable extends cdktn.TerraformResource {
 
@@ -1263,7 +1254,7 @@ export class ReferenceTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ReferenceTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ReferenceTable to import
-  * @param importFromId The id of the existing ReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ReferenceTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1275,7 +1266,7 @@ export class ReferenceTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/reference_table datadog_reference_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/reference_table datadog_reference_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1286,7 +1277,7 @@ export class ReferenceTable extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_reference_table',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.89.0',
+        providerVersion: '3.90.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset
+// https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface TagPipelineRulesetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the ruleset is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
   */
   readonly name: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
   */
   readonly rules?: TagPipelineRulesetRules[] | cdktn.IResolvable;
 }
@@ -35,25 +35,25 @@ export interface TagPipelineRulesetRulesMapping {
   /**
   * The destination key for the mapping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#destination_key TagPipelineRuleset#destination_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#destination_key TagPipelineRuleset#destination_key}
   */
   readonly destinationKey?: string;
   /**
   * Whether to apply the mapping only if the destination key doesn't exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
   */
   readonly ifNotExists?: boolean | cdktn.IResolvable;
   /**
   * Behavior when the tag already exists. Valid values: `append` (append to the existing tag value), `replace` (replace existing tag value), `do_not_apply` (never apply if tag already exists). Valid values are `append`, `replace`, `do_not_apply`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
   */
   readonly ifTagExists?: string;
   /**
   * The source keys for the mapping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
   */
   readonly sourceKeys?: string[];
 }
@@ -236,13 +236,13 @@ export interface TagPipelineRulesetRulesQueryAddition {
   /**
   * The key to add.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#key TagPipelineRuleset#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#key TagPipelineRuleset#key}
   */
   readonly key?: string;
   /**
   * The value to add.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#value TagPipelineRuleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#value TagPipelineRuleset#value}
   */
   readonly value?: string;
 }
@@ -367,31 +367,31 @@ export interface TagPipelineRulesetRulesQuery {
   /**
   * Whether the query matching is case insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
   */
   readonly caseInsensitivity?: boolean | cdktn.IResolvable;
   /**
   * Whether to apply the query only if the key doesn't exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
   */
   readonly ifNotExists?: boolean | cdktn.IResolvable;
   /**
   * Behavior when the tag already exists. Valid values: `append` (append to the existing tag value), `replace` (replace existing tag value), `do_not_apply` (never apply if tag already exists). Valid values are `append`, `replace`, `do_not_apply`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
   */
   readonly ifTagExists?: string;
   /**
   * The query string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
   */
   readonly query?: string;
   /**
   * addition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#addition TagPipelineRuleset#addition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#addition TagPipelineRuleset#addition}
   */
   readonly addition?: TagPipelineRulesetRulesQueryAddition;
 }
@@ -603,13 +603,13 @@ export interface TagPipelineRulesetRulesReferenceTableFieldPairs {
   /**
   * The input column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#input_column TagPipelineRuleset#input_column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#input_column TagPipelineRuleset#input_column}
   */
   readonly inputColumn?: string;
   /**
   * The output key name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#output_key TagPipelineRuleset#output_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#output_key TagPipelineRuleset#output_key}
   */
   readonly outputKey?: string;
 }
@@ -756,37 +756,37 @@ export interface TagPipelineRulesetRulesReferenceTable {
   /**
   * Whether the reference table lookup is case insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
   */
   readonly caseInsensitivity?: boolean | cdktn.IResolvable;
   /**
   * Whether to apply the reference table only if the key doesn't exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
   */
   readonly ifNotExists?: boolean | cdktn.IResolvable;
   /**
   * Behavior when the tag already exists. Valid values: `append` (append to the existing tag value), `replace` (replace existing tag value), `do_not_apply` (never apply if tag already exists). Valid values are `append`, `replace`, `do_not_apply`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
   */
   readonly ifTagExists?: string;
   /**
   * The source keys for the reference table lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
   */
   readonly sourceKeys?: string[];
   /**
   * The name of the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#table_name TagPipelineRuleset#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#table_name TagPipelineRuleset#table_name}
   */
   readonly tableName?: string;
   /**
   * field_pairs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#field_pairs TagPipelineRuleset#field_pairs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#field_pairs TagPipelineRuleset#field_pairs}
   */
   readonly fieldPairs?: TagPipelineRulesetRulesReferenceTableFieldPairs[] | cdktn.IResolvable;
 }
@@ -1027,31 +1027,31 @@ export interface TagPipelineRulesetRules {
   /**
   * Whether the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The name of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
   */
   readonly name: string;
   /**
   * mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#mapping TagPipelineRuleset#mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#mapping TagPipelineRuleset#mapping}
   */
   readonly mapping?: TagPipelineRulesetRulesMapping;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
   */
   readonly query?: TagPipelineRulesetRulesQuery;
   /**
   * reference_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#reference_table TagPipelineRuleset#reference_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#reference_table TagPipelineRuleset#reference_table}
   */
   readonly referenceTable?: TagPipelineRulesetRulesReferenceTable;
 }
@@ -1283,7 +1283,7 @@ export class TagPipelineRulesetRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}
 */
 export class TagPipelineRuleset extends cdktn.TerraformResource {
 
@@ -1299,7 +1299,7 @@ export class TagPipelineRuleset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TagPipelineRuleset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TagPipelineRuleset to import
-  * @param importFromId The id of the existing TagPipelineRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TagPipelineRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TagPipelineRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1311,7 +1311,7 @@ export class TagPipelineRuleset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1322,7 +1322,7 @@ export class TagPipelineRuleset extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_tag_pipeline_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.89.0',
+        providerVersion: '3.90.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
