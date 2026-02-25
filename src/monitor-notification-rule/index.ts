@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface MonitorNotificationRuleConfig extends cdktn.TerraformMetaArgume
   /**
   * The name of the monitor notification rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
   */
   readonly name: string;
   /**
   * List of recipients to notify. Cannot be used with `conditional_recipients`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
   */
   readonly recipients?: string[];
   /**
   * conditional_recipients block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
   */
   readonly conditionalRecipients?: MonitorNotificationRuleConditionalRecipients;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
   */
   readonly filter?: MonitorNotificationRuleFilter;
 }
@@ -41,13 +41,13 @@ export interface MonitorNotificationRuleConditionalRecipientsConditions {
   /**
   * A list of recipients to notify. Uses the same format as the monitor message field. Must not start with an '@'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
   */
   readonly recipients: string[];
   /**
   * Defines the condition under which the recipients are notified. Supported formats: Monitor status condition using `transition_type:<status>` (for example `transition_type:is_alert`) or a single tag `key:value pair` (for example `env:prod`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
   */
   readonly scope: string;
 }
@@ -188,13 +188,13 @@ export interface MonitorNotificationRuleConditionalRecipients {
   /**
   * If none of the `conditions` applied, `fallback_recipients` will get notified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
   */
   readonly fallbackRecipients?: string[];
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
   */
   readonly conditions?: MonitorNotificationRuleConditionalRecipientsConditions[] | cdktn.IResolvable;
 }
@@ -319,13 +319,13 @@ export interface MonitorNotificationRuleFilter {
   /**
   * A scope expression composed of `key:value` pairs (such as `env:prod`) with boolean operators (AND, OR, NOT) and parentheses for grouping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
   */
   readonly scope?: string;
   /**
   * A list of tag key:value pairs (e.g. team:product). All tags must match (AND semantics).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
   */
   readonly tags?: string[];
 }
@@ -448,7 +448,7 @@ export class MonitorNotificationRuleFilterOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}
 */
 export class MonitorNotificationRule extends cdktn.TerraformResource {
 
@@ -464,7 +464,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitorNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorNotificationRule to import
-  * @param importFromId The id of the existing MonitorNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitorNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -476,7 +476,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -487,7 +487,7 @@ export class MonitorNotificationRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_monitor_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.89.0',
+        providerVersion: '3.90.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
