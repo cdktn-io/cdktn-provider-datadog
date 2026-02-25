@@ -4,7 +4,7 @@
 
 ### Monitor <a name="Monitor" id="@cdktn/provider-datadog.monitor.Monitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor datadog_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitor.Monitor.Initializer"></a>
 
@@ -785,7 +785,7 @@ The construct id used in the generated config for the Monitor to import.
 
 The id of the existing Monitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1832,7 +1832,7 @@ Category *string
 
 Type of asset the entity represents on a monitor. Valid values are `runbook`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#category Monitor#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#category Monitor#category}
 
 ---
 
@@ -1846,7 +1846,7 @@ Name *string
 
 Name for the monitor asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -1860,7 +1860,7 @@ Url *string
 
 URL for the asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#url Monitor#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#url Monitor#url}
 
 ---
 
@@ -1874,7 +1874,7 @@ ResourceKey *string
 
 Identifier of the internal Datadog resource that this asset represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#resource_key Monitor#resource_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#resource_key Monitor#resource_key}
 
 ---
 
@@ -1888,7 +1888,7 @@ ResourceType *string
 
 Type of internal Datadog resource associated with a monitor asset. Valid values are `notebook`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#resource_type Monitor#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#resource_type Monitor#resource_type}
 
 ---
 
@@ -1971,7 +1971,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitor"
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.forceDelete">ForceDelete</a></code> | <code>interface{}</code> | A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor). |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>interface{}</code> | Whether or not to trigger one alert if any source breaches a threshold. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.groupRetentionDuration">GroupRetentionDuration</a></code> | <code>*string</code> | The time span after which groups with missing data are dropped from the monitor state. |
-| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#id Monitor#id}. |
+| <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#id Monitor#id}. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.includeTags">IncludeTags</a></code> | <code>interface{}</code> | A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.locked">Locked</a></code> | <code>interface{}</code> | A boolean indicating whether changes to this monitor should be restricted to the creator or admins. |
 | <code><a href="#@cdktn/provider-datadog.monitor.MonitorConfig.property.monitorThresholds">MonitorThresholds</a></code> | <code><a href="#@cdktn/provider-datadog.monitor.MonitorMonitorThresholds">MonitorMonitorThresholds</a></code> | monitor_thresholds block. |
@@ -2080,7 +2080,7 @@ A message to include with notifications for this monitor.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#message Monitor#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#message Monitor#message}
 
 ---
 
@@ -2094,7 +2094,7 @@ Name *string
 
 Name of Datadog monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -2112,7 +2112,7 @@ Note this is not the same query you see in the UI and the syntax is different de
 
 **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -2128,7 +2128,7 @@ The type of the monitor.
 
 The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#type Monitor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#type Monitor#type}
 
 ---
 
@@ -2142,7 +2142,7 @@ Assets interface{}
 
 assets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#assets Monitor#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#assets Monitor#assets}
 
 ---
 
@@ -2158,7 +2158,7 @@ Indicates whether the monitor is in a draft or published state.
 
 When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#draft_status Monitor#draft_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#draft_status Monitor#draft_status}
 
 ---
 
@@ -2174,7 +2174,7 @@ A boolean indicating whether or not to include a list of log values which trigge
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
 
 ---
 
@@ -2190,7 +2190,7 @@ Whether or not a list of samples which triggered the alert is included.
 
 This is only used by CI Test and Pipeline monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
 
 ---
 
@@ -2204,7 +2204,7 @@ EscalationMessage *string
 
 A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
 
 ---
 
@@ -2220,7 +2220,7 @@ EvaluationDelay *f64
 
 For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
 
 ---
 
@@ -2234,7 +2234,7 @@ ForceDelete interface{}
 
 A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#force_delete Monitor#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#force_delete Monitor#force_delete}
 
 ---
 
@@ -2250,7 +2250,7 @@ Whether or not to trigger one alert if any source breaches a threshold.
 
 This is only used by log monitors. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
 
 ---
 
@@ -2266,7 +2266,7 @@ The time span after which groups with missing data are dropped from the monitor 
 
 The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
 
 ---
 
@@ -2278,7 +2278,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#id Monitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#id Monitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2295,7 +2295,7 @@ IncludeTags interface{}
 
 A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#include_tags Monitor#include_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#include_tags Monitor#include_tags}
 
 ---
 
@@ -2311,7 +2311,7 @@ A boolean indicating whether changes to this monitor should be restricted to the
 
 Defaults to `false`. **Deprecated.** Use `restricted_roles`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#locked Monitor#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#locked Monitor#locked}
 
 ---
 
@@ -2325,7 +2325,7 @@ MonitorThresholds MonitorMonitorThresholds
 
 monitor_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
 
 ---
 
@@ -2339,7 +2339,7 @@ MonitorThresholdWindows MonitorMonitorThresholdWindows
 
 monitor_threshold_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
 
 ---
 
@@ -2355,7 +2355,7 @@ The time (in seconds) to skip evaluations for new groups.
 
 `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
 
 ---
 
@@ -2371,7 +2371,7 @@ NewHostDelay *f64
 
 See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
 
 ---
 
@@ -2387,7 +2387,7 @@ The number of minutes before a monitor will notify when data stops reporting.
 
 We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
 
 ---
 
@@ -2403,7 +2403,7 @@ Toggles the display of additional content sent in the monitor notification.
 
 Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
 
 ---
 
@@ -2417,7 +2417,7 @@ NotifyAudit interface{}
 
 A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
 
 ---
 
@@ -2433,7 +2433,7 @@ Controls what granularity a monitor alerts on.
 
 Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_by Monitor#notify_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#notify_by Monitor#notify_by}
 
 ---
 
@@ -2447,7 +2447,7 @@ NotifyNoData interface{}
 
 A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
 
 ---
 
@@ -2463,7 +2463,7 @@ Controls how groups or monitors are treated if an evaluation does not return any
 
 The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
 
 ---
 
@@ -2477,7 +2477,7 @@ Priority *string
 
 Integer from 1 (high) to 5 (low) indicating alert severity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#priority Monitor#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#priority Monitor#priority}
 
 ---
 
@@ -2493,7 +2493,7 @@ The number of minutes after the last notification before a monitor will re-notif
 
 It will only re-notify if it's not resolved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
 
 ---
 
@@ -2507,7 +2507,7 @@ RenotifyOccurrences *f64
 
 The number of re-notification messages that should be sent on the current status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
 
 ---
 
@@ -2521,7 +2521,7 @@ RenotifyStatuses *[]*string
 
 The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
 
 ---
 
@@ -2537,7 +2537,7 @@ A boolean indicating whether this monitor needs a full window of data before it'
 
 Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
 
 ---
 
@@ -2555,7 +2555,7 @@ Editing a monitor includes any updates to the monitor configuration, monitor del
 
 > **Note:** When the `TERRAFORM_MONITOR_EXPLICIT_RESTRICTED_ROLES` environment variable is set to `true`, this argument is treated as `Computed`. Terraform will automatically read the current restricted roles list from the Datadog API whenever the attribute is omitted. If `restricted_roles` is explicitly set in the configuration, that value always takes precedence over whatever is discovered during the read. This opt-in behaviour lets you migrate responsibility for monitor permissions to the `datadog_restriction_policy` resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
 
 ---
 
@@ -2569,7 +2569,7 @@ SchedulingOptions MonitorSchedulingOptions
 
 scheduling_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
 
 ---
 
@@ -2585,7 +2585,7 @@ A list of tags to associate with your monitor.
 
 This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#tags Monitor#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#tags Monitor#tags}
 
 ---
 
@@ -2601,7 +2601,7 @@ The number of hours of the monitor not reporting data before it automatically re
 
 The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
 
 ---
 
@@ -2615,7 +2615,7 @@ Validate interface{}
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#validate Monitor#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#validate Monitor#validate}
 
 ---
 
@@ -2629,7 +2629,7 @@ Variables MonitorVariables
 
 variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#variables Monitor#variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#variables Monitor#variables}
 
 ---
 
@@ -2673,7 +2673,7 @@ Critical *string
 
 The monitor `CRITICAL` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical Monitor#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#critical Monitor#critical}
 
 ---
 
@@ -2687,7 +2687,7 @@ CriticalRecovery *string
 
 The monitor `CRITICAL` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
 
 ---
 
@@ -2701,7 +2701,7 @@ Ok *string
 
 The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#ok Monitor#ok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#ok Monitor#ok}
 
 ---
 
@@ -2715,7 +2715,7 @@ Unknown *string
 
 The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#unknown Monitor#unknown}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#unknown Monitor#unknown}
 
 ---
 
@@ -2729,7 +2729,7 @@ Warning *string
 
 The monitor `WARNING` threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning Monitor#warning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#warning Monitor#warning}
 
 ---
 
@@ -2743,7 +2743,7 @@ WarningRecovery *string
 
 The monitor `WARNING` recovery threshold. Must be a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
 
 ---
 
@@ -2779,7 +2779,7 @@ RecoveryWindow *string
 
 Describes how long an anomalous metric must be normal before the alert recovers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
 
 ---
 
@@ -2793,7 +2793,7 @@ TriggerWindow *string
 
 Describes how long a metric must be anomalous before an alert triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
 
 ---
 
@@ -2829,7 +2829,7 @@ CustomSchedule MonitorSchedulingOptionsCustomSchedule
 
 custom_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
 
 ---
 
@@ -2843,7 +2843,7 @@ EvaluationWindow MonitorSchedulingOptionsEvaluationWindow
 
 evaluation_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
 
 ---
 
@@ -2877,7 +2877,7 @@ Recurrence MonitorSchedulingOptionsCustomScheduleRecurrence
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#recurrence Monitor#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#recurrence Monitor#recurrence}
 
 ---
 
@@ -2915,7 +2915,7 @@ Rrule *string
 
 Must be a valid `rrule`. See API docs for supported fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#rrule Monitor#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#rrule Monitor#rrule}
 
 ---
 
@@ -2929,7 +2929,7 @@ Timezone *string
 
 'tz database' format. Example: `America/New_York` or `UTC`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
@@ -2943,7 +2943,7 @@ Start *string
 
 Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#start Monitor#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#start Monitor#start}
 
 ---
 
@@ -2985,7 +2985,7 @@ The time of the day at which a one day cumulative evaluation window starts.
 
 Must be defined in UTC time in `HH:mm` format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#day_starts Monitor#day_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#day_starts Monitor#day_starts}
 
 ---
 
@@ -3001,7 +3001,7 @@ The minute of the hour at which a one hour cumulative evaluation window starts.
 
 Must be between 0 and 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
 
 ---
 
@@ -3017,7 +3017,7 @@ The day of the month at which a one month cumulative evaluation window starts.
 
 Must be a value of 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#month_starts Monitor#month_starts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#month_starts Monitor#month_starts}
 
 ---
 
@@ -3031,7 +3031,7 @@ Timezone *string
 
 The timezone for the cumulative evaluation window start time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#timezone Monitor#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#timezone Monitor#timezone}
 
 ---
 
@@ -3069,7 +3069,7 @@ CloudCostQuery interface{}
 
 cloud_cost_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
 
 ---
 
@@ -3083,7 +3083,7 @@ DataQualityQuery interface{}
 
 data_quality_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
 
 ---
 
@@ -3097,7 +3097,7 @@ EventQuery interface{}
 
 event_query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#event_query Monitor#event_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#event_query Monitor#event_query}
 
 ---
 
@@ -3139,7 +3139,7 @@ The aggregation methods available for cloud cost queries.
 
 Valid values are `avg`, `sum`, `max`, `min`, `last`, `area`, `l2norm`, `percentile`, `stddev`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregator Monitor#aggregator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#aggregator Monitor#aggregator}
 
 ---
 
@@ -3153,7 +3153,7 @@ DataSource *string
 
 The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3167,7 +3167,7 @@ Name *string
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3181,7 +3181,7 @@ Query *string
 
 The cloud cost query definition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#query Monitor#query}
 
 ---
 
@@ -3229,7 +3229,7 @@ DataSource *string
 
 The data source for data quality queries. Valid value is `data_quality_metrics`. Valid values are `data_quality_metrics`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3243,7 +3243,7 @@ Filter *string
 
 Filter expression used to match on data entities. Uses AAstra query syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#filter Monitor#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#filter Monitor#filter}
 
 ---
 
@@ -3259,7 +3259,7 @@ The measure to query.
 
 Common values include `bytes`, `cardinality`, `custom`, `freshness`, `max`, `mean`, `min`, `nullness`, `percent_negative`, `percent_zero`, `row_count`, `stddev`, `sum`, `uniqueness`. Additional values may be supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#measure Monitor#measure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#measure Monitor#measure}
 
 ---
 
@@ -3273,7 +3273,7 @@ Name *string
 
 The name of the query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3287,7 +3287,7 @@ GroupBy *[]*string
 
 Optional grouping fields for aggregation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -3301,7 +3301,7 @@ MonitorOptions MonitorVariablesDataQualityQueryMonitorOptions
 
 monitor_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
 
 ---
 
@@ -3315,7 +3315,7 @@ SchemaVersion *string
 
 Schema version for the data quality query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#schema_version Monitor#schema_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#schema_version Monitor#schema_version}
 
 ---
 
@@ -3329,7 +3329,7 @@ Scope *string
 
 Optional scoping expression to further filter metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#scope Monitor#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#scope Monitor#scope}
 
 ---
 
@@ -3371,7 +3371,7 @@ CrontabOverride *string
 
 Crontab expression to override the default schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
 
 ---
 
@@ -3385,7 +3385,7 @@ CustomSql *string
 
 Custom SQL query for the monitor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
 
 ---
 
@@ -3399,7 +3399,7 @@ CustomWhere *string
 
 Custom WHERE clause for the query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#custom_where Monitor#custom_where}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#custom_where Monitor#custom_where}
 
 ---
 
@@ -3413,7 +3413,7 @@ GroupByColumns *[]*string
 
 Columns to group results by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
 
 ---
 
@@ -3427,7 +3427,7 @@ ModelTypeOverride *string
 
 Override for the model type. Valid values are `freshness`, `percentage`, `any`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
 
 ---
 
@@ -3471,7 +3471,7 @@ Compute interface{}
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#compute Monitor#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#compute Monitor#compute}
 
 ---
 
@@ -3487,7 +3487,7 @@ The data source for event platform-based queries.
 
 Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#data_source Monitor#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#data_source Monitor#data_source}
 
 ---
 
@@ -3501,7 +3501,7 @@ Name *string
 
 The name of query for use in formulas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#name Monitor#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#name Monitor#name}
 
 ---
 
@@ -3515,7 +3515,7 @@ Search MonitorVariablesEventQuerySearch
 
 search block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#search Monitor#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#search Monitor#search}
 
 ---
 
@@ -3529,7 +3529,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#group_by Monitor#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#group_by Monitor#group_by}
 
 ---
 
@@ -3543,7 +3543,7 @@ Indexes *[]*string
 
 An array of index names to query in the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#indexes Monitor#indexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#indexes Monitor#indexes}
 
 ---
 
@@ -3583,7 +3583,7 @@ The aggregation methods for event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -3597,7 +3597,7 @@ Interval *f64
 
 A time interval in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#interval Monitor#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#interval Monitor#interval}
 
 ---
 
@@ -3611,7 +3611,7 @@ Metric *string
 
 The measurable attribute to compute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -3649,7 +3649,7 @@ Facet *string
 
 The event facet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#facet Monitor#facet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#facet Monitor#facet}
 
 ---
 
@@ -3663,7 +3663,7 @@ Limit *f64
 
 The number of groups to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#limit Monitor#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#limit Monitor#limit}
 
 ---
 
@@ -3677,7 +3677,7 @@ Sort MonitorVariablesEventQueryGroupBySort
 
 sort block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#sort Monitor#sort}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#sort Monitor#sort}
 
 ---
 
@@ -3717,7 +3717,7 @@ The aggregation methods for the event platform queries.
 
 Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#aggregation Monitor#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#aggregation Monitor#aggregation}
 
 ---
 
@@ -3731,7 +3731,7 @@ Metric *string
 
 The metric used for sorting group by results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#metric Monitor#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#metric Monitor#metric}
 
 ---
 
@@ -3745,7 +3745,7 @@ Order *string
 
 Direction of sort. Valid values are `asc`, `desc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#order Monitor#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#order Monitor#order}
 
 ---
 
@@ -3779,7 +3779,7 @@ Query *string
 
 The events search string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/resources/monitor#query Monitor#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/monitor#query Monitor#query}
 
 ---
 

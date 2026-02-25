@@ -4,7 +4,7 @@
 
 ### DataDatadogLogsIndexes <a name="DataDatadogLogsIndexes" id="@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/logs_indexes datadog_logs_indexes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexes.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogLogsIndexes to 
 
 The id of the existing DataDatadogLogsIndexes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/logs_indexes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,7 +621,7 @@ const dataDatadogLogsIndexesConfig: dataDatadogLogsIndexes.DataDatadogLogsIndexe
 | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}. |
 
 ---
 
@@ -703,7 +703,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.89.0/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2904,6 +2904,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesOutputReference.property.flexRetentionDays">flexRetentionDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesOutputReference.property.retentionDays">retentionDays</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexes">DataDatadogLogsIndexesLogsIndexes</a></code> | *No description.* |
 
 ---
@@ -3009,6 +3010,16 @@ public readonly retentionDays: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-datadog.dataDatadogLogsIndexes.DataDatadogLogsIndexesLogsIndexesOutputReference.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* string[]
 
 ---
 
