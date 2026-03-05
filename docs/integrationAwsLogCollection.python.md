@@ -4,7 +4,7 @@
 
 ### IntegrationAwsLogCollection <a name="IntegrationAwsLogCollection" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection datadog_integration_aws_log_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer"></a>
 
@@ -40,7 +40,7 @@ integrationAwsLogCollection.IntegrationAwsLogCollection(
 | <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Your AWS Account ID without dashes. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer.parameter.services">services</a></code> | <code>typing.List[str]</code> | A list of services to collect logs from. |
-| <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Your AWS Account ID without dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ A list of services to collect logs from.
 
 See the [api docs](https://docs.datadoghq.com/api/v1/aws-logs-integration/#get-list-of-aws-log-ready-services) for more details on which services are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -637,7 +637,7 @@ The construct id used in the generated config for the IntegrationAwsLogCollectio
 
 The id of the existing IntegrationAwsLogCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,7 +932,7 @@ integrationAwsLogCollection.IntegrationAwsLogCollectionConfig(
 | <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.accountId">account_id</a></code> | <code>str</code> | Your AWS Account ID without dashes. |
 | <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.services">services</a></code> | <code>typing.List[str]</code> | A list of services to collect logs from. |
-| <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}. |
+| <code><a href="#@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}. |
 
 ---
 
@@ -1016,7 +1016,7 @@ account_id: str
 
 Your AWS Account ID without dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#account_id IntegrationAwsLogCollection#account_id}
 
 ---
 
@@ -1032,7 +1032,7 @@ A list of services to collect logs from.
 
 See the [api docs](https://docs.datadoghq.com/api/v1/aws-logs-integration/#get-list-of-aws-log-ready-services) for more details on which services are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#services IntegrationAwsLogCollection#services}
 
 ---
 
@@ -1044,7 +1044,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_log_collection#id IntegrationAwsLogCollection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

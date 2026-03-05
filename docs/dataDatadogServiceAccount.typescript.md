@@ -4,7 +4,7 @@
 
 ### DataDatadogServiceAccount <a name="DataDatadogServiceAccount" id="@cdktn/provider-datadog.dataDatadogServiceAccount.DataDatadogServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_account datadog_service_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/service_account datadog_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogServiceAccount.DataDatadogServiceAccount.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataDatadogServiceAccount 
 
 The id of the existing DataDatadogServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -883,7 +883,7 @@ public readonly exactMatch: boolean | IResolvable;
 
 When true, `filter` string is exact matched against the user's `email`, followed by `name` attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_account#exact_match DataDatadogServiceAccount#exact_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/service_account#exact_match DataDatadogServiceAccount#exact_match}
 
 ---
 
@@ -897,7 +897,7 @@ public readonly filter: string;
 
 Filter all users and service accounts by name, email, or role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_account#filter DataDatadogServiceAccount#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/service_account#filter DataDatadogServiceAccount#filter}
 
 ---
 
@@ -911,7 +911,7 @@ public readonly filterStatus: string;
 
 Filter on status attribute. Comma separated list, with possible values `Active`, `Pending`, and `Disabled`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_account#filter_status DataDatadogServiceAccount#filter_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/service_account#filter_status DataDatadogServiceAccount#filter_status}
 
 ---
 
@@ -925,7 +925,7 @@ public readonly id: string;
 
 The service account's ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/service_account#id DataDatadogServiceAccount#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/service_account#id DataDatadogServiceAccount#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
