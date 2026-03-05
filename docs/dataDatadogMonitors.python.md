@@ -4,7 +4,7 @@
 
 ### DataDatadogMonitors <a name="DataDatadogMonitors" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors datadog_monitors}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors datadog_monitors}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer"></a>
 
@@ -39,7 +39,7 @@ dataDatadogMonitors.DataDatadogMonitors(
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#id DataDatadogMonitors#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#id DataDatadogMonitors#id}. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.monitorTagsFilter">monitor_tags_filter</a></code> | <code>typing.List[str]</code> | A list of monitor tags to limit the search. This filters on the tags set on the monitor itself. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.nameFilter">name_filter</a></code> | <code>str</code> | A monitor name to limit the search. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitors.Initializer.parameter.tagsFilter">tags_filter</a></code> | <code>typing.List[str]</code> | A list of tags to limit the search. This filters on the monitor scope. |
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#id DataDatadogMonitors#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#id DataDatadogMonitors#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -123,7 +123,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
 
 ---
 
@@ -133,7 +133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A monitor name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#name_filter DataDatadogMonitors#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#name_filter DataDatadogMonitors#name_filter}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tags to limit the search. This filters on the monitor scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#tags_filter DataDatadogMonitors#tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#tags_filter DataDatadogMonitors#tags_filter}
 
 ---
 
@@ -554,7 +554,7 @@ The construct id used in the generated config for the DataDatadogMonitors to imp
 
 The id of the existing DataDatadogMonitors that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ dataDatadogMonitors.DataDatadogMonitorsConfig(
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#id DataDatadogMonitors#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#id DataDatadogMonitors#id}. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.monitorTagsFilter">monitor_tags_filter</a></code> | <code>typing.List[str]</code> | A list of monitor tags to limit the search. This filters on the tags set on the monitor itself. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.nameFilter">name_filter</a></code> | <code>str</code> | A monitor name to limit the search. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitors.DataDatadogMonitorsConfig.property.tagsFilter">tags_filter</a></code> | <code>typing.List[str]</code> | A list of tags to limit the search. This filters on the monitor scope. |
@@ -944,7 +944,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#id DataDatadogMonitors#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#id DataDatadogMonitors#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +961,7 @@ monitor_tags_filter: typing.List[str]
 
 A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#monitor_tags_filter DataDatadogMonitors#monitor_tags_filter}
 
 ---
 
@@ -975,7 +975,7 @@ name_filter: str
 
 A monitor name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#name_filter DataDatadogMonitors#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#name_filter DataDatadogMonitors#name_filter}
 
 ---
 
@@ -989,7 +989,7 @@ tags_filter: typing.List[str]
 
 A list of tags to limit the search. This filters on the monitor scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/monitors#tags_filter DataDatadogMonitors#tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitors#tags_filter DataDatadogMonitors#tags_filter}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogReferenceTable <a name="DataDatadogReferenceTable" id="@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table datadog_reference_table}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table datadog_reference_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogReferenceTable.DataDatadogReferenceTable.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataDatadogReferenceTable 
 
 The id of the existing DataDatadogReferenceTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ Id *string
 
 The UUID of the reference table. Either id or table_name must be specified, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -894,7 +894,7 @@ Schema DataDatadogReferenceTableSchema
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
 
 ---
 
@@ -908,7 +908,7 @@ TableName *string
 
 The name of the reference table. Either id or table_name must be specified, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
 
 ---
 
@@ -1007,7 +1007,7 @@ Fields interface{}
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
 
 ---
 

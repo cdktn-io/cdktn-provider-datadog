@@ -1,3 +1,3 @@
 # `data_datadog_teams`
 
-Refer to the Terraform Registry for docs: [`data_datadog_teams`](https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/teams).
+Refer to the Terraform Registry for docs: [`data_datadog_teams`](https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/teams).

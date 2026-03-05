@@ -4,7 +4,7 @@
 
 ### DataDatadogLogsPipelinesOrder <a name="DataDatadogLogsPipelinesOrder" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_pipelines_order datadog_logs_pipelines_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogLogsPipelinesOrder.DataDatadogLogsPipelinesOrder.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogLogsPipelinesOr
 
 The id of the existing DataDatadogLogsPipelinesOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/data-sources/logs_pipelines_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/logs_pipelines_order#import import section} in the documentation of this resource for the id to use
 
 ---
 

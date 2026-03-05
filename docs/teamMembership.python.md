@@ -4,7 +4,7 @@
 
 ### TeamMembership <a name="TeamMembership" id="@cdktn/provider-datadog.teamMembership.TeamMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership datadog_team_membership}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership datadog_team_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamMembership.TeamMembership.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the team the team membership is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership#team_id TeamMembership#team_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership#user_id TeamMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership#user_id TeamMembership#user_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The user's role within the team. Valid values are `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership#role TeamMembership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership#role TeamMembership#role}
 
 ---
 
@@ -634,7 +634,7 @@ The construct id used in the generated config for the TeamMembership to import.
 
 The id of the existing TeamMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1024,7 +1024,7 @@ team_id: str
 
 ID of the team the team membership is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership#team_id TeamMembership#team_id}
 
 ---
 
@@ -1038,7 +1038,7 @@ user_id: str
 
 The ID of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership#user_id TeamMembership#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership#user_id TeamMembership#user_id}
 
 ---
 
@@ -1052,7 +1052,7 @@ role: str
 
 The user's role within the team. Valid values are `admin`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/team_membership#role TeamMembership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_membership#role TeamMembership#role}
 
 ---
 

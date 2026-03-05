@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface OnCallUserNotificationRuleConfig extends cdktn.TerraformMetaArg
   /**
   * Notification category to associate the rule with. Valid values are `high_urgency`, `low_urgency`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
   */
   readonly category: string;
   /**
   * ID of the notification channel to associate the notification rule with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
   */
   readonly channelId: string;
   /**
   * Number of minutes to elapse before this rule is evaluated.  `0` indicates immediate evaluation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
   */
   readonly delayMinutes: number;
   /**
   * ID of the user to associate the notification rule with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
   */
   readonly userId: string;
   /**
   * phone block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
   */
   readonly phone?: OnCallUserNotificationRulePhone;
 }
@@ -47,7 +47,7 @@ export interface OnCallUserNotificationRulePhone {
   /**
   * Specifies the method in which a phone is used in a notification rule. Valid values are `sms`, `voice`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
   */
   readonly method?: string;
 }
@@ -141,7 +141,7 @@ export class OnCallUserNotificationRulePhoneOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}
 */
 export class OnCallUserNotificationRule extends cdktn.TerraformResource {
 
@@ -157,7 +157,7 @@ export class OnCallUserNotificationRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OnCallUserNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallUserNotificationRule to import
-  * @param importFromId The id of the existing OnCallUserNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallUserNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallUserNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -169,7 +169,7 @@ export class OnCallUserNotificationRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.90.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +180,7 @@ export class OnCallUserNotificationRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_on_call_user_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.90.0',
+        providerVersion: '3.91.0',
         providerVersionConstraint: '~> 3.0'
       },
       provider: config.provider,
