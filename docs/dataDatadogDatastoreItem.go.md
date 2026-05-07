@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.NewDataDatadogDatastoreItem(scope Construct, id *string, config DataDatadogDatastoreItemConfig) DataDatadogDatastoreItem
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
 
 &datadatadogdatastoreitem.DataDatadogDatastoreItemConfig {
 	Connection: interface{},

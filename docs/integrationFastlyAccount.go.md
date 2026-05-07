@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyaccount"
 
 integrationfastlyaccount.NewIntegrationFastlyAccount(scope Construct, id *string, config IntegrationFastlyAccountConfig) IntegrationFastlyAccount
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ integrationfastlyaccount.IntegrationFastlyAccount_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyaccount"
 
 integrationfastlyaccount.IntegrationFastlyAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationfastlyaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationfastlyaccount"
 
 &integrationfastlyaccount.IntegrationFastlyAccountConfig {
 	Connection: interface{},

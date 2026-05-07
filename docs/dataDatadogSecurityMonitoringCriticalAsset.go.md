@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsecuritymonitoringcriticalasset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringcriticalasset"
 
 datadatadogsecuritymonitoringcriticalasset.NewDataDatadogSecurityMonitoringCriticalAsset(scope Construct, id *string, config DataDatadogSecurityMonitoringCriticalAssetConfig) DataDatadogSecurityMonitoringCriticalAsset
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsecuritymonitoringcriticalasset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringcriticalasset"
 
 datadatadogsecuritymonitoringcriticalasset.DataDatadogSecurityMonitoringCriticalAsset_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsecuritymonitoringcriticalasset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringcriticalasset"
 
 datadatadogsecuritymonitoringcriticalasset.DataDatadogSecurityMonitoringCriticalAsset_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogsecuritymonitoringcriticalasset.DataDatadogSecurityMonitoringCritical
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsecuritymonitoringcriticalasset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringcriticalasset"
 
 datadatadogsecuritymonitoringcriticalasset.DataDatadogSecurityMonitoringCriticalAsset_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogsecuritymonitoringcriticalasset.DataDatadogSecurityMonitoringCritical
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAsset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsecuritymonitoringcriticalasset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringcriticalasset"
 
 datadatadogsecuritymonitoringcriticalasset.DataDatadogSecurityMonitoringCriticalAsset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAsset.DataDatadogSecurityMonitoringCriticalAssetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsecuritymonitoringcriticalasset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsecuritymonitoringcriticalasset"
 
 &datadatadogsecuritymonitoringcriticalasset.DataDatadogSecurityMonitoringCriticalAssetConfig {
 	Connection: interface{},

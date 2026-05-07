@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
 
 logsintegrationpipeline.NewLogsIntegrationPipeline(scope Construct, id *string, config LogsIntegrationPipelineConfig) LogsIntegrationPipeline
 ```
@@ -414,7 +414,7 @@ func ResetIsEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
 
 &logsintegrationpipeline.LogsIntegrationPipelineConfig {
 	Connection: interface{},

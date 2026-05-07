@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.NewDataDatadogTeamNotificationRule(scope Construct, id *string, config DataDatadogTeamNotificationRuleConfig) DataDatadogTeamNotificationRule
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.DataDatadogTeamNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.DataDatadogTeamNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogteamnotificationrule.DataDatadogTeamNotificationRule_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.DataDatadogTeamNotificationRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogteamnotificationrule.DataDatadogTeamNotificationRule_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.DataDatadogTeamNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 &datadatadogteamnotificationrule.DataDatadogTeamNotificationRuleConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRuleEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 &datadatadogteamnotificationrule.DataDatadogTeamNotificationRuleEmail {
 
@@ -811,7 +811,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogtea
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRuleMsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 &datadatadogteamnotificationrule.DataDatadogTeamNotificationRuleMsTeams {
 
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogtea
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRulePagerduty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 &datadatadogteamnotificationrule.DataDatadogTeamNotificationRulePagerduty {
 
@@ -837,7 +837,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogtea
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRuleSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 &datadatadogteamnotificationrule.DataDatadogTeamNotificationRuleSlack {
 
@@ -852,7 +852,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogtea
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRuleEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.NewDataDatadogTeamNotificationRuleEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogTeamNotificationRuleEmailOutputReference
 ```
@@ -1112,7 +1112,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRuleMsTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.NewDataDatadogTeamNotificationRuleMsTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogTeamNotificationRuleMsTeamsOutputReference
 ```
@@ -1372,7 +1372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRulePagerdutyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.NewDataDatadogTeamNotificationRulePagerdutyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogTeamNotificationRulePagerdutyOutputReference
 ```
@@ -1632,7 +1632,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRule.DataDatadogTeamNotificationRuleSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogteamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamnotificationrule"
 
 datadatadogteamnotificationrule.NewDataDatadogTeamNotificationRuleSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogTeamNotificationRuleSlackOutputReference
 ```

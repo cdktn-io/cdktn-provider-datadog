@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawslogcollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawslogcollection"
 
 integrationawslogcollection.NewIntegrationAwsLogCollection(scope Construct, id *string, config IntegrationAwsLogCollectionConfig) IntegrationAwsLogCollection
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawslogcollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawslogcollection"
 
 integrationawslogcollection.IntegrationAwsLogCollection_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawslogcollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawslogcollection"
 
 integrationawslogcollection.IntegrationAwsLogCollection_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ integrationawslogcollection.IntegrationAwsLogCollection_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawslogcollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawslogcollection"
 
 integrationawslogcollection.IntegrationAwsLogCollection_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ integrationawslogcollection.IntegrationAwsLogCollection_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawslogcollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawslogcollection"
 
 integrationawslogcollection.IntegrationAwsLogCollection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAwsLogCollection.IntegrationAwsLogCollectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawslogcollection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawslogcollection"
 
 &integrationawslogcollection.IntegrationAwsLogCollectionConfig {
 	Connection: interface{},

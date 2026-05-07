@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.NewSyntheticsSuite(scope Construct, id *string, config SyntheticsSuiteConfig) SyntheticsSuite
 ```
@@ -454,7 +454,7 @@ func ResetTests()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuite.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.SyntheticsSuite_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuite.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.SyntheticsSuite_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ syntheticssuite.SyntheticsSuite_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuite.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.SyntheticsSuite_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ syntheticssuite.SyntheticsSuite_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuite.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.SyntheticsSuite_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 &syntheticssuite.SyntheticsSuiteConfig {
 	Connection: interface{},
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuiteOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 &syntheticssuite.SyntheticsSuiteOptions {
 	AlertingThreshold: *f64,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuiteTests.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 &syntheticssuite.SyntheticsSuiteTests {
 	PublicId: *string,
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuiteOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.NewSyntheticsSuiteOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsSuiteOptionsList
 ```
@@ -1292,7 +1292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuiteOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.NewSyntheticsSuiteOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsSuiteOptionsOutputReference
 ```
@@ -1581,7 +1581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuiteTestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.NewSyntheticsSuiteTestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsSuiteTestsList
 ```
@@ -1741,7 +1741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuiteTestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/syntheticssuite"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticssuite"
 
 syntheticssuite.NewSyntheticsSuiteTestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsSuiteTestsOutputReference
 ```

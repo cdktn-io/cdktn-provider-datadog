@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsAvailableLogsServices.DataDatadogIntegrationAwsAvailableLogsServices.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsavailablelogsservices"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsavailablelogsservices"
 
 datadatadogintegrationawsavailablelogsservices.NewDataDatadogIntegrationAwsAvailableLogsServices(scope Construct, id *string, config DataDatadogIntegrationAwsAvailableLogsServicesConfig) DataDatadogIntegrationAwsAvailableLogsServices
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsAvailableLogsServices.DataDatadogIntegrationAwsAvailableLogsServices.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsavailablelogsservices"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsavailablelogsservices"
 
 datadatadogintegrationawsavailablelogsservices.DataDatadogIntegrationAwsAvailableLogsServices_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsAvailableLogsServices.DataDatadogIntegrationAwsAvailableLogsServices.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsavailablelogsservices"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsavailablelogsservices"
 
 datadatadogintegrationawsavailablelogsservices.DataDatadogIntegrationAwsAvailableLogsServices_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogintegrationawsavailablelogsservices.DataDatadogIntegrationAwsAvailabl
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsAvailableLogsServices.DataDatadogIntegrationAwsAvailableLogsServices.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsavailablelogsservices"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsavailablelogsservices"
 
 datadatadogintegrationawsavailablelogsservices.DataDatadogIntegrationAwsAvailableLogsServices_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogintegrationawsavailablelogsservices.DataDatadogIntegrationAwsAvailabl
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsAvailableLogsServices.DataDatadogIntegrationAwsAvailableLogsServices.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsavailablelogsservices"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsavailablelogsservices"
 
 datadatadogintegrationawsavailablelogsservices.DataDatadogIntegrationAwsAvailableLogsServices_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsAvailableLogsServices.DataDatadogIntegrationAwsAvailableLogsServicesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogintegrationawsavailablelogsservices"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsavailablelogsservices"
 
 &datadatadogintegrationawsavailablelogsservices.DataDatadogIntegrationAwsAvailableLogsServicesConfig {
 	Connection: interface{},

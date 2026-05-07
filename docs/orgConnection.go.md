@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgConnection.OrgConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
 
 orgconnection.NewOrgConnection(scope Construct, id *string, config OrgConnectionConfig) OrgConnection
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.orgConnection.OrgConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
 
 orgconnection.OrgConnection_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.orgConnection.OrgConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
 
 orgconnection.OrgConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ orgconnection.OrgConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.orgConnection.OrgConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
 
 orgconnection.OrgConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ orgconnection.OrgConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.orgConnection.OrgConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
 
 orgconnection.OrgConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.orgConnection.OrgConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
 
 &orgconnection.OrgConnectionConfig {
 	Connection: interface{},

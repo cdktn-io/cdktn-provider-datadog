@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 datadatadogservicelevelobjectives.NewDataDatadogServiceLevelObjectives(scope Construct, id *string, config DataDatadogServiceLevelObjectivesConfig) DataDatadogServiceLevelObjectives
 ```
@@ -347,7 +347,7 @@ func ResetTagsQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectives_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectives_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectives_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectives_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectives_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectives.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectives_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 &datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectivesConfig {
 	Connection: interface{},
@@ -994,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesSlos.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 &datadatadogservicelevelobjectives.DataDatadogServiceLevelObjectivesSlos {
 
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogser
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesSlosList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 datadatadogservicelevelobjectives.NewDataDatadogServiceLevelObjectivesSlosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogServiceLevelObjectivesSlosList
 ```
@@ -1158,7 +1158,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogServiceLevelObjectives.DataDatadogServiceLevelObjectivesSlosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogservicelevelobjectives"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogservicelevelobjectives"
 
 datadatadogservicelevelobjectives.NewDataDatadogServiceLevelObjectivesSlosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogServiceLevelObjectivesSlosOutputReference
 ```

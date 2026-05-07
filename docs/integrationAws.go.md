@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationaws"
 
 integrationaws.NewIntegrationAws(scope Construct, id *string, config IntegrationAwsConfig) IntegrationAws
 ```
@@ -491,7 +491,7 @@ func ResetSecretAccessKey()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationaws"
 
 integrationaws.IntegrationAws_IsConstruct(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformElement(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ integrationaws.IntegrationAws_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationaws"
 
 integrationaws.IntegrationAws_IsTerraformResource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ integrationaws.IntegrationAws_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationAws.IntegrationAws.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationaws"
 
 integrationaws.IntegrationAws_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1077,7 +1077,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAws.IntegrationAwsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationaws"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationaws"
 
 &integrationaws.IntegrationAwsConfig {
 	Connection: interface{},
