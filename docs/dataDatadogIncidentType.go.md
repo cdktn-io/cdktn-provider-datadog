@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogincidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidenttype"
 
 datadatadogincidenttype.NewDataDatadogIncidentType(scope Construct, id *string, config DataDatadogIncidentTypeConfig) DataDatadogIncidentType
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogincidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidenttype"
 
 datadatadogincidenttype.DataDatadogIncidentType_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogincidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidenttype"
 
 datadatadogincidenttype.DataDatadogIncidentType_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogincidenttype.DataDatadogIncidentType_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogincidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidenttype"
 
 datadatadogincidenttype.DataDatadogIncidentType_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogincidenttype.DataDatadogIncidentType_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogincidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidenttype"
 
 datadatadogincidenttype.DataDatadogIncidentType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIncidentType.DataDatadogIncidentTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogincidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidenttype"
 
 &datadatadogincidenttype.DataDatadogIncidentTypeConfig {
 	Connection: interface{},

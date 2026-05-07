@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawstagfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawstagfilter"
 
 integrationawstagfilter.NewIntegrationAwsTagFilter(scope Construct, id *string, config IntegrationAwsTagFilterConfig) IntegrationAwsTagFilter
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawstagfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawstagfilter"
 
 integrationawstagfilter.IntegrationAwsTagFilter_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawstagfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawstagfilter"
 
 integrationawstagfilter.IntegrationAwsTagFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ integrationawstagfilter.IntegrationAwsTagFilter_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawstagfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawstagfilter"
 
 integrationawstagfilter.IntegrationAwsTagFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ integrationawstagfilter.IntegrationAwsTagFilter_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawstagfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawstagfilter"
 
 integrationawstagfilter.IntegrationAwsTagFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAwsTagFilter.IntegrationAwsTagFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationawstagfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawstagfilter"
 
 &integrationawstagfilter.IntegrationAwsTagFilterConfig {
 	Connection: interface{},

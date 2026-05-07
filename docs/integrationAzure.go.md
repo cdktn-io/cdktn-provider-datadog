@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 integrationazure.NewIntegrationAzure(scope Construct, id *string, config IntegrationAzureConfig) IntegrationAzure
 ```
@@ -490,7 +490,7 @@ func ResetUsageMetricsEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 integrationazure.IntegrationAzure_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 integrationazure.IntegrationAzure_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ integrationazure.IntegrationAzure_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 integrationazure.IntegrationAzure_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ integrationazure.IntegrationAzure_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 integrationazure.IntegrationAzure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1098,7 +1098,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 &integrationazure.IntegrationAzureConfig {
 	Connection: interface{},
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzureResourceProviderConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 &integrationazure.IntegrationAzureResourceProviderConfigs {
 	MetricsEnabled: interface{},
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzureResourceProviderConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 integrationazure.NewIntegrationAzureResourceProviderConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationAzureResourceProviderConfigsList
 ```
@@ -1640,7 +1640,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAzure.IntegrationAzureResourceProviderConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationazure"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationazure"
 
 integrationazure.NewIntegrationAzureResourceProviderConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationAzureResourceProviderConfigsOutputReference
 ```

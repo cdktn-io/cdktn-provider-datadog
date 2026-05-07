@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringsuppression"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringsuppression"
 
 securitymonitoringsuppression.NewSecurityMonitoringSuppression(scope Construct, id *string, config SecurityMonitoringSuppressionConfig) SecurityMonitoringSuppression
 ```
@@ -449,7 +449,7 @@ func ResetValidate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringsuppression"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringsuppression"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringsuppression"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ securitymonitoringsuppression.SecurityMonitoringSuppression_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppression.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringsuppression"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringsuppression"
 
 securitymonitoringsuppression.SecurityMonitoringSuppression_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -969,7 +969,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityMonitoringSuppression.SecurityMonitoringSuppressionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringsuppression"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringsuppression"
 
 &securitymonitoringsuppression.SecurityMonitoringSuppressionConfig {
 	Connection: interface{},

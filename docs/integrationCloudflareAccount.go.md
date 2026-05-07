@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationcloudflareaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationcloudflareaccount"
 
 integrationcloudflareaccount.NewIntegrationCloudflareAccount(scope Construct, id *string, config IntegrationCloudflareAccountConfig) IntegrationCloudflareAccount
 ```
@@ -414,7 +414,7 @@ func ResetResources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationcloudflareaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationcloudflareaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationcloudflareaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ integrationcloudflareaccount.IntegrationCloudflareAccount_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationcloudflareaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationcloudflareaccount"
 
 integrationcloudflareaccount.IntegrationCloudflareAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationCloudflareAccount.IntegrationCloudflareAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/integrationcloudflareaccount"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationcloudflareaccount"
 
 &integrationcloudflareaccount.IntegrationCloudflareAccountConfig {
 	Connection: interface{},

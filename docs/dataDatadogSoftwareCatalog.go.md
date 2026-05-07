@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.NewDataDatadogSoftwareCatalog(scope Construct, id *string, config DataDatadogSoftwareCatalogConfig) DataDatadogSoftwareCatalog
 ```
@@ -347,7 +347,7 @@ func ResetFilterRelationType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.DataDatadogSoftwareCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 &datadatadogsoftwarecatalog.DataDatadogSoftwareCatalogConfig {
 	Connection: interface{},
@@ -1004,7 +1004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 &datadatadogsoftwarecatalog.DataDatadogSoftwareCatalogEntities {
 
@@ -1019,7 +1019,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsof
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.NewDataDatadogSoftwareCatalogEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogSoftwareCatalogEntitiesList
 ```
@@ -1168,7 +1168,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSoftwareCatalog.DataDatadogSoftwareCatalogEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/datadatadogsoftwarecatalog"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsoftwarecatalog"
 
 datadatadogsoftwarecatalog.NewDataDatadogSoftwareCatalogEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogSoftwareCatalogEntitiesOutputReference
 ```

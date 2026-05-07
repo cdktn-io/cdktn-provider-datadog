@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/servicedefinitionyaml"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/servicedefinitionyaml"
 
 servicedefinitionyaml.NewServiceDefinitionYaml(scope Construct, id *string, config ServiceDefinitionYamlConfig) ServiceDefinitionYaml
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/servicedefinitionyaml"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/servicedefinitionyaml"
 
 servicedefinitionyaml.ServiceDefinitionYaml_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/servicedefinitionyaml"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/servicedefinitionyaml"
 
 servicedefinitionyaml.ServiceDefinitionYaml_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ servicedefinitionyaml.ServiceDefinitionYaml_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/servicedefinitionyaml"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/servicedefinitionyaml"
 
 servicedefinitionyaml.ServiceDefinitionYaml_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ servicedefinitionyaml.ServiceDefinitionYaml_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYaml.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/servicedefinitionyaml"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/servicedefinitionyaml"
 
 servicedefinitionyaml.ServiceDefinitionYaml_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.serviceDefinitionYaml.ServiceDefinitionYamlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/servicedefinitionyaml"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/servicedefinitionyaml"
 
 &servicedefinitionyaml.ServiceDefinitionYamlConfig {
 	Connection: interface{},

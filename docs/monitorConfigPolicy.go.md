@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 monitorconfigpolicy.NewMonitorConfigPolicy(scope Construct, id *string, config MonitorConfigPolicyConfig) MonitorConfigPolicy
 ```
@@ -427,7 +427,7 @@ func ResetTagPolicy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 monitorconfigpolicy.MonitorConfigPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 monitorconfigpolicy.MonitorConfigPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ monitorconfigpolicy.MonitorConfigPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 monitorconfigpolicy.MonitorConfigPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ monitorconfigpolicy.MonitorConfigPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 monitorconfigpolicy.MonitorConfigPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 &monitorconfigpolicy.MonitorConfigPolicyConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigp
 	Provisioners: *[]interface{},
 	PolicyType: *string,
 	Id: *string,
-	TagPolicy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13.monitorConfigPolicy.MonitorConfigPolicyTagPolicy,
+	TagPolicy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.monitorConfigPolicy.MonitorConfigPolicyTagPolicy,
 }
 ```
 
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 &monitorconfigpolicy.MonitorConfigPolicyTagPolicy {
 	TagKey: *string,
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorConfigPolicy.MonitorConfigPolicyTagPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/monitorconfigpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitorconfigpolicy"
 
 monitorconfigpolicy.NewMonitorConfigPolicyTagPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorConfigPolicyTagPolicyOutputReference
 ```

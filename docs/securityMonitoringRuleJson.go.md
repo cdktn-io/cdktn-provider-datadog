@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
 
 securitymonitoringrulejson.NewSecurityMonitoringRuleJson(scope Construct, id *string, config SecurityMonitoringRuleJsonConfig) SecurityMonitoringRuleJson
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJsonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v13/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
 
 &securitymonitoringrulejson.SecurityMonitoringRuleJsonConfig {
 	Connection: interface{},
