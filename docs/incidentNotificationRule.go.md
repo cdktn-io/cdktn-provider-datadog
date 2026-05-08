@@ -4,12 +4,12 @@
 
 ### IncidentNotificationRule <a name="IncidentNotificationRule" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 incidentnotificationrule.NewIncidentNotificationRule(scope Construct, id *string, config IncidentNotificationRuleConfig) IncidentNotificationRule
 ```
@@ -448,7 +448,7 @@ func ResetVisibility()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ incidentnotificationrule.IncidentNotificationRule_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ incidentnotificationrule.IncidentNotificationRule_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 incidentnotificationrule.IncidentNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the IncidentNotificationRule t
 
 The id of the existing IncidentNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 &incidentnotificationrule.IncidentNotificationRuleConditions {
 	Field: *string,
@@ -973,7 +973,7 @@ Field *string
 
 The incident field to evaluate. Common values include: state, severity, services, teams. Custom fields are also supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
 
 ---
 
@@ -987,7 +987,7 @@ Values *[]*string
 
 The value(s) to compare against. Multiple values are ORed together.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
 
 ---
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 &incidentnotificationrule.IncidentNotificationRuleConfig {
 	Connection: interface{},
@@ -1133,7 +1133,7 @@ IncidentType *string
 
 The ID of the incident type this notification rule is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
 
 ---
 
@@ -1147,7 +1147,7 @@ Trigger *string
 
 The trigger event for this notification rule. Valid values are: incident_created_trigger, incident_saved_trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
 
 ---
 
@@ -1161,7 +1161,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
 
 ---
 
@@ -1175,7 +1175,7 @@ Enabled interface{}
 
 Whether the notification rule is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
 
 ---
 
@@ -1189,7 +1189,7 @@ NotificationTemplate *string
 
 The ID of the notification template to use for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
 
 ---
 
@@ -1205,7 +1205,7 @@ List of incident fields that trigger re-notification when changed.
 
 Valid values are: status, severity, customer_impact, title, description, detected, root_cause, services, state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
 
 ---
 
@@ -1219,7 +1219,7 @@ Visibility *string
 
 The visibility of the notification rule. Valid values are: all, organization, private. Defaults to organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 incidentnotificationrule.NewIncidentNotificationRuleConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IncidentNotificationRuleConditionsList
 ```
@@ -1390,7 +1390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentNotificationRule.IncidentNotificationRuleConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationrule"
 
 incidentnotificationrule.NewIncidentNotificationRuleConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IncidentNotificationRuleConditionsOutputReference
 ```

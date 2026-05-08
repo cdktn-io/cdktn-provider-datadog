@@ -4,12 +4,12 @@
 
 ### AppKeyRegistration <a name="AppKeyRegistration" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_key_registration datadog_app_key_registration}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/app_key_registration datadog_app_key_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
 
 appkeyregistration.NewAppKeyRegistration(scope Construct, id *string, config AppKeyRegistrationConfig) AppKeyRegistration
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ appkeyregistration.AppKeyRegistration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ appkeyregistration.AppKeyRegistration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
 
 appkeyregistration.AppKeyRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the AppKeyRegistration to impo
 
 The id of the existing AppKeyRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_key_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/app_key_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.appKeyRegistration.AppKeyRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/appkeyregistration"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/appkeyregistration"
 
 &appkeyregistration.AppKeyRegistrationConfig {
 	Connection: interface{},
@@ -820,7 +820,7 @@ Id *string
 
 The Application Key ID to register.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/app_key_registration#id AppKeyRegistration#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/app_key_registration#id AppKeyRegistration#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

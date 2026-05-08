@@ -4,12 +4,12 @@
 
 ### ComplianceResourceEvaluationFilter <a name="ComplianceResourceEvaluationFilter" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter datadog_compliance_resource_evaluation_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.NewComplianceResourceEvaluationFilter(scope Construct, id *string, config ComplianceResourceEvaluationFilterConfig) ComplianceResourceEvaluationFilter
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
 
 complianceresourceevaluationfilter.ComplianceResourceEvaluationFilter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ComplianceResourceEvaluati
 
 The id of the existing ComplianceResourceEvaluationFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.complianceResourceEvaluationFilter.ComplianceResourceEvaluationFilterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/complianceresourceevaluationfilter"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/complianceresourceevaluationfilter"
 
 &complianceresourceevaluationfilter.ComplianceResourceEvaluationFilterConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ CloudProvider *string
 
 The cloud provider of the filter's targeted resource. Only `aws`, `gcp`, or `azure` are considered valid cloud providers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter#cloud_provider ComplianceResourceEvaluationFilter#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter#cloud_provider ComplianceResourceEvaluationFilter#cloud_provider}
 
 ---
 
@@ -899,7 +899,7 @@ Different cloud providers target different resource IDs:
 * `gcp`: project ID
 * `azure`: subscription ID
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter#resource_id ComplianceResourceEvaluationFilter#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter#resource_id ComplianceResourceEvaluationFilter#resource_id}
 
 ---
 
@@ -913,7 +913,7 @@ Tags *[]*string
 
 List of tags to filter misconfiguration detections. Each entry should follow the format: "key":"value".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/compliance_resource_evaluation_filter#tags ComplianceResourceEvaluationFilter#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/compliance_resource_evaluation_filter#tags ComplianceResourceEvaluationFilter#tags}
 
 ---
 

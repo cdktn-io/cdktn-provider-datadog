@@ -4,12 +4,12 @@
 
 ### DataDatadogPermissions <a name="DataDatadogPermissions" id="@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/permissions datadog_permissions}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/permissions datadog_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogpermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogpermissions"
 
 datadatadogpermissions.NewDataDatadogPermissions(scope Construct, id *string, config DataDatadogPermissionsConfig) DataDatadogPermissions
 ```
@@ -312,7 +312,7 @@ func ResetIncludeRestricted()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogpermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogpermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogpermissions.DataDatadogPermissions_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogpermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datadatadogpermissions.DataDatadogPermissions_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogpermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogpermissions"
 
 datadatadogpermissions.DataDatadogPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataDatadogPermissions to 
 
 The id of the existing DataDatadogPermissions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/permissions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/permissions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogpermissions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogpermissions"
 
 &datadatadogpermissions.DataDatadogPermissionsConfig {
 	Connection: interface{},
@@ -660,7 +660,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogper
 | <code><a href="#@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/permissions#id DataDatadogPermissions#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/permissions#id DataDatadogPermissions#id}. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogPermissions.DataDatadogPermissionsConfig.property.includeRestricted">IncludeRestricted</a></code> | <code>interface{}</code> | Whether to include restricted permissions. |
 
 ---
@@ -743,7 +743,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/permissions#id DataDatadogPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/permissions#id DataDatadogPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,7 +762,7 @@ Whether to include restricted permissions.
 
 Restricted permissions are granted by default to all users of a Datadog org, and cannot be manually granted or revoked. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/permissions#include_restricted DataDatadogPermissions#include_restricted}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/permissions#include_restricted DataDatadogPermissions#include_restricted}
 
 ---
 

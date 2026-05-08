@@ -4,12 +4,12 @@
 
 ### SyntheticsTest <a name="SyntheticsTest" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test datadog_synthetics_test}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test datadog_synthetics_test}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTest(scope Construct, id *string, config SyntheticsTestConfig) SyntheticsTest
 ```
@@ -744,7 +744,7 @@ func ResetVariablesFromScript()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsConstruct(x interface{}) *bool
 ```
@@ -776,7 +776,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsTerraformElement(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ syntheticstest.SyntheticsTest_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.SyntheticsTest_IsTerraformResource(x interface{}) *bool
 ```
@@ -804,7 +804,7 @@ syntheticstest.SyntheticsTest_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.SyntheticsTest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ The construct id used in the generated config for the SyntheticsTest to import.
 
 The id of the existing SyntheticsTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1682,7 +1682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStep.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStep {
 	Name: *string,
@@ -1692,15 +1692,15 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 	ExtractedValue: interface{},
 	ExtractedValuesFromScript: *string,
 	IsCritical: interface{},
-	RequestBasicauth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepRequestBasicauth,
-	RequestClientCertificate: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate,
-	RequestDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepRequestDefinition,
+	RequestBasicauth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepRequestBasicauth,
+	RequestClientCertificate: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate,
+	RequestDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepRequestDefinition,
 	RequestFile: interface{},
 	RequestHeaders: *map[string]*string,
 	RequestMetadata: *map[string]*string,
-	RequestProxy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepRequestProxy,
+	RequestProxy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepRequestProxy,
 	RequestQuery: *map[string]*string,
-	Retry: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepRetry,
+	Retry: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepRetry,
 	SubtestPublicId: *string,
 	Subtype: *string,
 	Value: *f64,
@@ -1743,7 +1743,7 @@ Name *string
 
 The name of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -1757,7 +1757,7 @@ AllowFailure interface{}
 
 Determines whether or not to continue with test if this step fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
 
 ---
 
@@ -1771,7 +1771,7 @@ Assertion interface{}
 
 assertion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
 
 ---
 
@@ -1785,7 +1785,7 @@ ExitIfSucceed interface{}
 
 Determines whether or not to exit the test if the step succeeds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
 
 ---
 
@@ -1799,7 +1799,7 @@ ExtractedValue interface{}
 
 extracted_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#extracted_value SyntheticsTest#extracted_value}
 
 ---
 
@@ -1813,7 +1813,7 @@ ExtractedValuesFromScript *string
 
 Generate variables using JavaScript.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#extracted_values_from_script SyntheticsTest#extracted_values_from_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#extracted_values_from_script SyntheticsTest#extracted_values_from_script}
 
 ---
 
@@ -1829,7 +1829,7 @@ Determines whether or not to consider the entire test as failed if this step fai
 
 Can be used only if `allow_failure` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
 
 ---
 
@@ -1843,7 +1843,7 @@ RequestBasicauth SyntheticsTestApiStepRequestBasicauth
 
 request_basicauth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
 
 ---
 
@@ -1857,7 +1857,7 @@ RequestClientCertificate SyntheticsTestApiStepRequestClientCertificate
 
 request_client_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
 
 ---
 
@@ -1871,7 +1871,7 @@ RequestDefinition SyntheticsTestApiStepRequestDefinition
 
 request_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
 
 ---
 
@@ -1885,7 +1885,7 @@ RequestFile interface{}
 
 request_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
 
 ---
 
@@ -1899,7 +1899,7 @@ RequestHeaders *map[string]*string
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
 
 ---
 
@@ -1913,7 +1913,7 @@ RequestMetadata *map[string]*string
 
 Metadata to include when performing the gRPC request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
 
 ---
 
@@ -1927,7 +1927,7 @@ RequestProxy SyntheticsTestApiStepRequestProxy
 
 request_proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
 
 ---
 
@@ -1941,7 +1941,7 @@ RequestQuery *map[string]*string
 
 Query arguments name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
 
 ---
 
@@ -1955,7 +1955,7 @@ Retry SyntheticsTestApiStepRetry
 
 retry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
 
 ---
 
@@ -1969,7 +1969,7 @@ SubtestPublicId *string
 
 Public ID of the test to be played as part of a `playSubTest` step type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
 
 ---
 
@@ -1985,7 +1985,7 @@ The subtype of the Synthetic multistep API test step.
 
 Valid values are `http`, `grpc`, `ssl`, `dns`, `tcp`, `udp`, `icmp`, `websocket`, `wait`, `playSubTest`. Defaults to `"http"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
 
 ---
 
@@ -1999,7 +1999,7 @@ Value *f64
 
 The time to wait in seconds. Minimum value: 0. Maximum value: 180.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertion {
 	Type: *string,
@@ -2016,9 +2016,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 	Operator: *string,
 	Property: *string,
 	Target: *string,
-	Targetjsonpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath,
-	Targetjsonschema: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonschema,
-	Targetxpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath,
+	Targetjsonpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath,
+	Targetjsonschema: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonschema,
+	Targetxpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath,
 	TimingsScope: *string,
 }
 ```
@@ -2051,7 +2051,7 @@ Type of assertion.
 
 **Note:** Only some combinations of `type` and `operator` are valid. For API tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). For Network Path tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-a-network-path-test). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `multiNetworkHop`, `jitter`, `bodyHash`, `javascript`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2065,7 +2065,7 @@ Code *string
 
 If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#code SyntheticsTest#code}
 
 ---
 
@@ -2081,7 +2081,7 @@ Assertion operator.
 
 **Note:** Only some combinations of `type` and `operator` are valid. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). Valid values are `contains`, `doesNotContain`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`, `matches`, `doesNotMatch`, `validates`, `isInMoreThan`, `isInLessThan`, `doesNotExist`, `isUndefined`, `validatesJSONPath`, `validatesJSONSchema`, `validatesXPath`, `md5`, `sha1`, `sha256`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -2097,7 +2097,7 @@ If assertion type is `header` or `grpcMetadata`, this is the header name.
 
 For other assertion types, this is an aggregation property: `avg`, `min`, `max`, or `stddev`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#property SyntheticsTest#property}
 
 ---
 
@@ -2111,7 +2111,7 @@ Target *string
 
 Expected value. **Note:** Depends on the assertion type. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#target SyntheticsTest#target}
 
 ---
 
@@ -2125,7 +2125,7 @@ Targetjsonpath SyntheticsTestApiStepAssertionTargetjsonpath
 
 targetjsonpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
 
 ---
 
@@ -2139,7 +2139,7 @@ Targetjsonschema SyntheticsTestApiStepAssertionTargetjsonschema
 
 targetjsonschema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
 
 ---
 
@@ -2153,7 +2153,7 @@ Targetxpath SyntheticsTestApiStepAssertionTargetxpath
 
 targetxpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
 
 ---
 
@@ -2167,7 +2167,7 @@ TimingsScope *string
 
 Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
 
 ---
 
@@ -2176,7 +2176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertionTargetjsonpath {
 	Jsonpath: *string,
@@ -2207,7 +2207,7 @@ Jsonpath *string
 
 The JSON path to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
 
 ---
 
@@ -2221,7 +2221,7 @@ Operator *string
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -2237,7 +2237,7 @@ The element from the list of results to assert on.
 
 Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `"firstElementMatches"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
 
 ---
 
@@ -2251,7 +2251,7 @@ Targetvalue *string
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -2260,7 +2260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonschema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertionTargetjsonschema {
 	Jsonschema: *string,
@@ -2287,7 +2287,7 @@ Jsonschema *string
 
 The JSON Schema to validate the body against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
 
 ---
 
@@ -2301,7 +2301,7 @@ Metaschema *string
 
 The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
 
 ---
 
@@ -2310,7 +2310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepAssertionTargetxpath {
 	Operator: *string,
@@ -2339,7 +2339,7 @@ Operator *string
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -2353,7 +2353,7 @@ Xpath *string
 
 The xpath to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
 
 ---
 
@@ -2367,7 +2367,7 @@ Targetvalue *string
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -2376,11 +2376,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepExtractedValue {
 	Name: *string,
-	Parser: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepExtractedValueParser,
+	Parser: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepExtractedValueParser,
 	Type: *string,
 	Field: *string,
 	Secure: interface{},
@@ -2391,7 +2391,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.parser">Parser</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser">SyntheticsTestApiStepExtractedValueParser</a></code> | parser block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.type">Type</a></code> | <code>*string</code> | Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValue.property.field">Field</a></code> | <code>*string</code> | When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract. |
@@ -2407,7 +2407,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}.
 
 ---
 
@@ -2421,7 +2421,7 @@ Parser SyntheticsTestApiStepExtractedValueParser
 
 parser block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#parser SyntheticsTest#parser}
 
 ---
 
@@ -2435,7 +2435,7 @@ Type *string
 
 Property of the Synthetics Test Response to use for the variable. Valid values are `grpc_message`, `grpc_metadata`, `http_body`, `http_header`, `http_status_code`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2449,7 +2449,7 @@ Field *string
 
 When type is `http_header` or `grpc_metadata`, name of the header or metadatum to extract.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#field SyntheticsTest#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#field SyntheticsTest#field}
 
 ---
 
@@ -2463,7 +2463,7 @@ Secure interface{}
 
 Determines whether or not the extracted value will be obfuscated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
 
 ---
 
@@ -2472,7 +2472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepExtractedValueParser {
 	Type: *string,
@@ -2499,7 +2499,7 @@ Type *string
 
 Type of parser for a Synthetics global variable from a synthetics test. Valid values are `raw`, `json_path`, `regex`, `x_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2513,7 +2513,7 @@ Value *string
 
 Regex or JSON path used for the parser. Not used with type `raw`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -2522,7 +2522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestBasicauth {
 	AccessKey: *string,
@@ -2579,7 +2579,7 @@ AccessKey *string
 
 Access key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
 
 ---
 
@@ -2593,7 +2593,7 @@ AccessTokenUrl *string
 
 Access token url for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
 
 ---
 
@@ -2607,7 +2607,7 @@ Audience *string
 
 Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
 
 ---
 
@@ -2621,7 +2621,7 @@ ClientId *string
 
 Client ID for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
 
 ---
 
@@ -2635,7 +2635,7 @@ ClientSecret *string
 
 Client secret for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
 
 ---
 
@@ -2649,7 +2649,7 @@ Domain *string
 
 Domain for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
 
 ---
 
@@ -2663,7 +2663,7 @@ Password *string
 
 Password for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#password SyntheticsTest#password}
 
 ---
 
@@ -2677,7 +2677,7 @@ Region *string
 
 Region for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#region SyntheticsTest#region}
 
 ---
 
@@ -2691,7 +2691,7 @@ Resource *string
 
 Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
 
 ---
 
@@ -2705,7 +2705,7 @@ Scope *string
 
 Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
 
 ---
 
@@ -2719,7 +2719,7 @@ SecretKey *string
 
 Secret key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
 
 ---
 
@@ -2733,7 +2733,7 @@ ServiceName *string
 
 Service name for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
 
 ---
 
@@ -2747,7 +2747,7 @@ SessionToken *string
 
 Session token for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
 
 ---
 
@@ -2761,7 +2761,7 @@ TokenApiAuthentication *string
 
 Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
 
 ---
 
@@ -2775,7 +2775,7 @@ Type *string
 
 Type of basic authentication to use when performing the test. Defaults to `"web"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -2789,7 +2789,7 @@ Username *string
 
 Username for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#username SyntheticsTest#username}
 
 ---
 
@@ -2803,7 +2803,7 @@ Workstation *string
 
 Workstation for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
 
 ---
 
@@ -2812,11 +2812,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificate {
-	Cert: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert,
-	Key: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey,
+	Cert: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert,
+	Key: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey,
 }
 ```
 
@@ -2839,7 +2839,7 @@ Cert SyntheticsTestApiStepRequestClientCertificateCert
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
 
 ---
 
@@ -2853,7 +2853,7 @@ Key SyntheticsTestApiStepRequestClientCertificateKey
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#key SyntheticsTest#key}
 
 ---
 
@@ -2862,7 +2862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificateCert {
 	Content: *string,
@@ -2889,7 +2889,7 @@ Content *string
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -2903,7 +2903,7 @@ Filename *string
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -2912,7 +2912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestClientCertificateKey {
 	Content: *string,
@@ -2939,7 +2939,7 @@ Content *string
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -2953,7 +2953,7 @@ Filename *string
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -2962,7 +2962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestDefinition {
 	AcceptSelfSigned: interface{},
@@ -3053,7 +3053,7 @@ AcceptSelfSigned interface{}
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
 
 ---
 
@@ -3067,7 +3067,7 @@ AllowInsecure interface{}
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
 
 ---
 
@@ -3081,7 +3081,7 @@ Body *string
 
 The request body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#body SyntheticsTest#body}
 
 ---
 
@@ -3095,7 +3095,7 @@ BodyType *string
 
 Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
 
 ---
 
@@ -3109,7 +3109,7 @@ CallType *string
 
 The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
 
 ---
 
@@ -3125,7 +3125,7 @@ By default, the client certificate is applied on the domain of the starting URL 
 
 If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
 
 ---
 
@@ -3139,7 +3139,7 @@ CheckCertificateRevocation interface{}
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
 
 ---
 
@@ -3153,7 +3153,7 @@ DestinationService *string
 
 For Network Path tests, an optional label displayed for the destination host in the Network Path visualization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
 
 ---
 
@@ -3167,7 +3167,7 @@ DisableAiaIntermediateFetching interface{}
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
 
 ---
 
@@ -3181,7 +3181,7 @@ DnsServer *string
 
 DNS server to use for DNS tests (`subtype = "dns"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
 
 ---
 
@@ -3195,7 +3195,7 @@ DnsServerPort *string
 
 DNS server port to use for DNS tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
 
 ---
 
@@ -3209,7 +3209,7 @@ E2EQueries *f64
 
 For Network Path tests, the number of packets sent to probe the destination to measure packet loss, latency, and jitter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
 
 ---
 
@@ -3223,7 +3223,7 @@ FollowRedirects interface{}
 
 Determines whether or not the API HTTP test should follow redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
 
 ---
 
@@ -3237,7 +3237,7 @@ Form *map[string]*string
 
 Form data to be sent when `body_type` is `multipart/form-data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#form SyntheticsTest#form}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#form SyntheticsTest#form}
 
 ---
 
@@ -3251,7 +3251,7 @@ Host *string
 
 Host name to perform the test with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#host SyntheticsTest#host}
 
 ---
 
@@ -3267,7 +3267,7 @@ HTTP version to use for an HTTP request in an API test or step.
 
 Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
 
 ---
 
@@ -3281,7 +3281,7 @@ IsMessageBase64Encoded interface{}
 
 For Websocket tests, whether the message is treated as a base64-encoded string in the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
 
 ---
 
@@ -3295,7 +3295,7 @@ MaxTtl *f64
 
 For Network Path tests, the maximum time-to-live (max number of hops) used in outgoing probe packets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
 
 ---
 
@@ -3309,7 +3309,7 @@ Message *string
 
 For gRPC, UDP, and Websocket tests, message to send with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#message SyntheticsTest#message}
 
 ---
 
@@ -3325,7 +3325,7 @@ Either the HTTP method/verb to use or a gRPC method available on the service set
 
 Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#method SyntheticsTest#method}
 
 ---
 
@@ -3339,7 +3339,7 @@ NoSavingResponseBody interface{}
 
 Determines whether or not to save the response body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
 
 ---
 
@@ -3353,7 +3353,7 @@ NumberOfPackets *f64
 
 Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
 
 ---
 
@@ -3367,7 +3367,7 @@ PersistCookies interface{}
 
 Persist cookies across redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
 
 ---
 
@@ -3381,7 +3381,7 @@ PlainProtoFile *string
 
 The content of a proto file as a string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
 
 ---
 
@@ -3395,7 +3395,7 @@ Port *string
 
 Port to use when performing the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#port SyntheticsTest#port}
 
 ---
 
@@ -3409,7 +3409,7 @@ ProtoJsonDescriptor *string
 
 A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
 
 ---
 
@@ -3423,7 +3423,7 @@ Servername *string
 
 For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
 
 ---
 
@@ -3437,7 +3437,7 @@ Service *string
 
 The gRPC service on which you want to perform the gRPC call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#service SyntheticsTest#service}
 
 ---
 
@@ -3453,7 +3453,7 @@ This will turn on a traceroute probe to discover all gateways along the path to 
 
 For ICMP tests (`subtype = "icmp"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
 
 ---
 
@@ -3467,7 +3467,7 @@ SourceService *string
 
 For Network Path tests, an optional label displayed for the source host in the Network Path visualization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
 
 ---
 
@@ -3481,7 +3481,7 @@ TcpMethod *string
 
 For TCP Network Path tests, the TCP traceroute strategy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
 
 ---
 
@@ -3495,7 +3495,7 @@ Timeout *f64
 
 Timeout in seconds for the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
 
 ---
 
@@ -3509,7 +3509,7 @@ TracerouteQueries *f64
 
 For Network Path tests, the number of traceroute path tracings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
 
 ---
 
@@ -3523,7 +3523,7 @@ Url *string
 
 The URL to send the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -3532,13 +3532,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestFile {
 	Name: *string,
 	Size: *f64,
 	Type: *string,
 	Content: *string,
+	Encoding: *string,
 	OriginalFileName: *string,
 }
 ```
@@ -3551,6 +3552,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile.property.size">Size</a></code> | <code>*f64</code> | Size of the file. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile.property.type">Type</a></code> | <code>*string</code> | Type of the file. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile.property.content">Content</a></code> | <code>*string</code> | Content of the file. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile.property.encoding">Encoding</a></code> | <code>*string</code> | Encoding of the file content. Must be `base64` when content contains base64-encoded data. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile.property.originalFileName">OriginalFileName</a></code> | <code>*string</code> | Original name of the file. |
 
 ---
@@ -3565,7 +3567,7 @@ Name *string
 
 Name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -3579,7 +3581,7 @@ Size *f64
 
 Size of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#size SyntheticsTest#size}
 
 ---
 
@@ -3593,7 +3595,7 @@ Type *string
 
 Type of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -3607,7 +3609,21 @@ Content *string
 
 Content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+
+---
+
+##### `Encoding`<sup>Optional</sup> <a name="Encoding" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFile.property.encoding"></a>
+
+```go
+Encoding *string
+```
+
+- *Type:* *string
+
+Encoding of the file content. Must be `base64` when content contains base64-encoded data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#encoding SyntheticsTest#encoding}
 
 ---
 
@@ -3621,7 +3637,7 @@ OriginalFileName *string
 
 Original name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
 
 ---
 
@@ -3630,7 +3646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRequestProxy {
 	Url: *string,
@@ -3657,7 +3673,7 @@ Url *string
 
 URL of the proxy to perform the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -3671,7 +3687,7 @@ Headers *map[string]*string
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
 
 ---
 
@@ -3680,7 +3696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestApiStepRetry {
 	Count: *f64,
@@ -3709,7 +3725,7 @@ Number of retries needed to consider a location as failed before sending a notif
 
 Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#count SyntheticsTest#count}
 
 ---
 
@@ -3723,7 +3739,7 @@ Interval *f64
 
 Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
 
 ---
 
@@ -3732,7 +3748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertion {
 	Type: *string,
@@ -3740,9 +3756,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 	Operator: *string,
 	Property: *string,
 	Target: *string,
-	Targetjsonpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestAssertionTargetjsonpath,
-	Targetjsonschema: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestAssertionTargetjsonschema,
-	Targetxpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestAssertionTargetxpath,
+	Targetjsonpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestAssertionTargetjsonpath,
+	Targetjsonschema: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestAssertionTargetjsonschema,
+	Targetxpath: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestAssertionTargetxpath,
 	TimingsScope: *string,
 }
 ```
@@ -3775,7 +3791,7 @@ Type of assertion.
 
 **Note:** Only some combinations of `type` and `operator` are valid. For API tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). For Network Path tests, refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-a-network-path-test). Valid values are `body`, `header`, `statusCode`, `certificate`, `responseTime`, `property`, `recordEvery`, `recordSome`, `tlsVersion`, `minTlsVersion`, `latency`, `packetLossPercentage`, `packetsReceived`, `networkHop`, `receivedMessage`, `grpcHealthcheckStatus`, `grpcMetadata`, `grpcProto`, `connection`, `multiNetworkHop`, `jitter`, `bodyHash`, `javascript`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -3789,7 +3805,7 @@ Code *string
 
 If assertion type is `javascript`, this is the JavaScript code that performs the assertions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#code SyntheticsTest#code}
 
 ---
 
@@ -3805,7 +3821,7 @@ Assertion operator.
 
 **Note:** Only some combinations of `type` and `operator` are valid. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test). Valid values are `contains`, `doesNotContain`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`, `matches`, `doesNotMatch`, `validates`, `isInMoreThan`, `isInLessThan`, `doesNotExist`, `isUndefined`, `validatesJSONPath`, `validatesJSONSchema`, `validatesXPath`, `md5`, `sha1`, `sha256`, `is`, `isNot`, `lessThan`, `lessThanOrEqual`, `moreThan`, `moreThanOrEqual`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -3821,7 +3837,7 @@ If assertion type is `header` or `grpcMetadata`, this is the header name.
 
 For other assertion types, this is an aggregation property: `avg`, `min`, `max`, or `stddev`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#property SyntheticsTest#property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#property SyntheticsTest#property}
 
 ---
 
@@ -3835,7 +3851,7 @@ Target *string
 
 Expected value. **Note:** Depends on the assertion type. Refer to `config.assertions` in the [Datadog API reference](https://docs.datadoghq.com/api/latest/synthetics/#create-an-api-test).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#target SyntheticsTest#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#target SyntheticsTest#target}
 
 ---
 
@@ -3849,7 +3865,7 @@ Targetjsonpath SyntheticsTestAssertionTargetjsonpath
 
 targetjsonpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetjsonpath SyntheticsTest#targetjsonpath}
 
 ---
 
@@ -3863,7 +3879,7 @@ Targetjsonschema SyntheticsTestAssertionTargetjsonschema
 
 targetjsonschema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetjsonschema SyntheticsTest#targetjsonschema}
 
 ---
 
@@ -3877,7 +3893,7 @@ Targetxpath SyntheticsTestAssertionTargetxpath
 
 targetxpath block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetxpath SyntheticsTest#targetxpath}
 
 ---
 
@@ -3891,7 +3907,7 @@ TimingsScope *string
 
 Timings scope for response time assertions. Valid values are `all`, `withoutDNS`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timings_scope SyntheticsTest#timings_scope}
 
 ---
 
@@ -3900,7 +3916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertionTargetjsonpath {
 	Jsonpath: *string,
@@ -3931,7 +3947,7 @@ Jsonpath *string
 
 The JSON path to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#jsonpath SyntheticsTest#jsonpath}
 
 ---
 
@@ -3945,7 +3961,7 @@ Operator *string
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -3961,7 +3977,7 @@ The element from the list of results to assert on.
 
 Select from `firstElementMatches` (the first element in the list), `everyElementMatches` (every element in the list), `atLeastOneElementMatches` (at least one element in the list), or `serializationMatches` (the serialized value of the list). Defaults to `"firstElementMatches"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#elementsoperator SyntheticsTest#elementsoperator}
 
 ---
 
@@ -3975,7 +3991,7 @@ Targetvalue *string
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -3984,7 +4000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonschema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertionTargetjsonschema {
 	Jsonschema: *string,
@@ -4011,7 +4027,7 @@ Jsonschema *string
 
 The JSON Schema to validate the body against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#jsonschema SyntheticsTest#jsonschema}
 
 ---
 
@@ -4025,7 +4041,7 @@ Metaschema *string
 
 The meta schema to use for the JSON Schema. Defaults to `"draft-07"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#metaschema SyntheticsTest#metaschema}
 
 ---
 
@@ -4034,7 +4050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpath.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestAssertionTargetxpath {
 	Operator: *string,
@@ -4063,7 +4079,7 @@ Operator *string
 
 The specific operator to use on the path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#operator SyntheticsTest#operator}
 
 ---
 
@@ -4077,7 +4093,7 @@ Xpath *string
 
 The xpath to assert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#xpath SyntheticsTest#xpath}
 
 ---
 
@@ -4091,7 +4107,7 @@ Targetvalue *string
 
 Expected matching value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#targetvalue SyntheticsTest#targetvalue}
 
 ---
 
@@ -4100,11 +4116,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStep.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStep {
 	Name: *string,
-	Params: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestBrowserStepParams,
+	Params: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestBrowserStepParams,
 	Type: *string,
 	AllowFailure: interface{},
 	AlwaysExecute: interface{},
@@ -4145,7 +4161,7 @@ Name *string
 
 Name of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -4159,7 +4175,7 @@ Params SyntheticsTestBrowserStepParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#params SyntheticsTest#params}
 
 ---
 
@@ -4173,9 +4189,9 @@ Type *string
 
 Type of the step.
 
-Valid values are `assertCurrentUrl`, `assertElementAttribute`, `assertElementContent`, `assertElementPresent`, `assertEmail`, `assertFileDownload`, `assertFromJavascript`, `assertPageContains`, `assertPageLacks`, `assertRequests`, `click`, `extractFromJavascript`, `extractFromEmailBody`, `extractVariable`, `goToEmailLink`, `goToUrl`, `goToUrlAndMeasureTti`, `hover`, `playSubTest`, `pressKey`, `refresh`, `runApiTest`, `scroll`, `selectOption`, `typeText`, `uploadFiles`, `wait`.
+Valid values are `assertCurrentUrl`, `assertElementAttribute`, `assertElementContent`, `assertElementPresent`, `assertEmail`, `assertFileDownload`, `assertFromJavascript`, `assertPageContains`, `assertPageLacks`, `assertRequests`, `click`, `drag`, `drop`, `extractFromJavascript`, `extractFromEmailBody`, `extractVariable`, `goToEmailLink`, `goToUrl`, `goToUrlAndMeasureTti`, `hover`, `playSubTest`, `pressKey`, `refresh`, `runApiTest`, `scroll`, `selectOption`, `typeText`, `uploadFiles`, `wait`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -4189,7 +4205,7 @@ AllowFailure interface{}
 
 Determines if the step should be allowed to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
 
 ---
 
@@ -4203,7 +4219,7 @@ AlwaysExecute interface{}
 
 Determines whether or not to always execute this step even if the previous step failed or was skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#always_execute SyntheticsTest#always_execute}
 
 ---
 
@@ -4217,7 +4233,7 @@ ExitIfSucceed interface{}
 
 Determines whether or not to exit the test if the step succeeds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#exit_if_succeed SyntheticsTest#exit_if_succeed}
 
 ---
 
@@ -4231,7 +4247,7 @@ ForceElementUpdate interface{}
 
 Force update of the "element" parameter for the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#force_element_update SyntheticsTest#force_element_update}
 
 ---
 
@@ -4247,7 +4263,7 @@ Determines whether or not to consider the entire test as failed if this step fai
 
 Can be used only if `allow_failure` is `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
 
 ---
 
@@ -4261,7 +4277,7 @@ LocalKey *string
 
 A unique identifier used to track steps after reordering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#local_key SyntheticsTest#local_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#local_key SyntheticsTest#local_key}
 
 ---
 
@@ -4275,7 +4291,7 @@ NoScreenshot interface{}
 
 Prevents saving screenshots of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
 
 ---
 
@@ -4289,7 +4305,7 @@ Timeout *f64
 
 Used to override the default timeout of a step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
 
 ---
 
@@ -4298,7 +4314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParams {
 	AppendToContent: interface{},
@@ -4308,19 +4324,20 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 	ClickWithJavascript: interface{},
 	Code: *string,
 	Delay: *f64,
+	DragDropOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions,
 	Element: *string,
-	ElementUserLocator: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator,
+	ElementUserLocator: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator,
 	Email: *string,
 	File: *string,
 	Files: *string,
 	Modifiers: *[]*string,
-	Pattern: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestBrowserStepParamsPattern,
+	Pattern: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestBrowserStepParamsPattern,
 	PlayingTabId: *string,
 	Request: *string,
 	Requests: *string,
 	SubtestPublicId: *string,
 	Value: *string,
-	Variable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestBrowserStepParamsVariable,
+	Variable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestBrowserStepParamsVariable,
 	WithClick: interface{},
 	X: *f64,
 	Y: *f64,
@@ -4338,6 +4355,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.clickWithJavascript">ClickWithJavascript</a></code> | <code>interface{}</code> | Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.code">Code</a></code> | <code>*string</code> | Javascript code to use for the step. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.delay">Delay</a></code> | <code>*f64</code> | Delay between each key stroke for a "type test" step. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.dragDropOptions">DragDropOptions</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions">SyntheticsTestBrowserStepParamsDragDropOptions</a></code> | drag_drop_options block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.element">Element</a></code> | <code>*string</code> | Element to use for the step, JSON encoded string. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.elementUserLocator">ElementUserLocator</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator">SyntheticsTestBrowserStepParamsElementUserLocator</a></code> | element_user_locator block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.email">Email</a></code> | <code>*string</code> | Details of the email for an "assert email" step, JSON encoded string. |
@@ -4369,7 +4387,7 @@ Whether to append the `value` to existing text input content for a "typeText" st
 
 By default, content is cleared before text input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#append_to_content SyntheticsTest#append_to_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#append_to_content SyntheticsTest#append_to_content}
 
 ---
 
@@ -4383,7 +4401,7 @@ Attribute *string
 
 Name of the attribute to use for an "assert attribute" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#attribute SyntheticsTest#attribute}
 
 ---
 
@@ -4399,7 +4417,7 @@ Check type to use for an assertion step.
 
 Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#check SyntheticsTest#check}
 
 ---
 
@@ -4413,7 +4431,7 @@ ClickType *string
 
 Type of click to use for a "click" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#click_type SyntheticsTest#click_type}
 
 ---
 
@@ -4427,7 +4445,7 @@ ClickWithJavascript interface{}
 
 Whether to use `element.click()` for a "click" step. This is a more reliable way to interact with elements but does not emulate a real user interaction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#click_with_javascript SyntheticsTest#click_with_javascript}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#click_with_javascript SyntheticsTest#click_with_javascript}
 
 ---
 
@@ -4441,7 +4459,7 @@ Code *string
 
 Javascript code to use for the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#code SyntheticsTest#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#code SyntheticsTest#code}
 
 ---
 
@@ -4455,7 +4473,21 @@ Delay *f64
 
 Delay between each key stroke for a "type test" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+
+---
+
+##### `DragDropOptions`<sup>Optional</sup> <a name="DragDropOptions" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParams.property.dragDropOptions"></a>
+
+```go
+DragDropOptions SyntheticsTestBrowserStepParamsDragDropOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions">SyntheticsTestBrowserStepParamsDragDropOptions</a>
+
+drag_drop_options block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#drag_drop_options SyntheticsTest#drag_drop_options}
 
 ---
 
@@ -4471,7 +4503,7 @@ Element to use for the step, JSON encoded string.
 
 Refer to the examples for a usage example showing the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#element SyntheticsTest#element}
 
 ---
 
@@ -4485,7 +4517,7 @@ ElementUserLocator SyntheticsTestBrowserStepParamsElementUserLocator
 
 element_user_locator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#element_user_locator SyntheticsTest#element_user_locator}
 
 ---
 
@@ -4499,7 +4531,7 @@ Email *string
 
 Details of the email for an "assert email" step, JSON encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#email SyntheticsTest#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#email SyntheticsTest#email}
 
 ---
 
@@ -4515,7 +4547,7 @@ JSON encoded string used for an "assert download" step.
 
 Refer to the examples for a usage example showing the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#file SyntheticsTest#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#file SyntheticsTest#file}
 
 ---
 
@@ -4531,7 +4563,7 @@ Details of the files for an "upload files" step, JSON encoded string.
 
 Refer to the examples for a usage example showing the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#files SyntheticsTest#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#files SyntheticsTest#files}
 
 ---
 
@@ -4545,7 +4577,7 @@ Modifiers *[]*string
 
 Modifier to use for a "press key" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#modifiers SyntheticsTest#modifiers}
 
 ---
 
@@ -4559,7 +4591,7 @@ Pattern SyntheticsTestBrowserStepParamsPattern
 
 pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
 
 ---
 
@@ -4573,7 +4605,7 @@ PlayingTabId *string
 
 ID of the tab to play the subtest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#playing_tab_id SyntheticsTest#playing_tab_id}
 
 ---
 
@@ -4587,7 +4619,7 @@ Request *string
 
 Request for an API step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request SyntheticsTest#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request SyntheticsTest#request}
 
 ---
 
@@ -4603,7 +4635,7 @@ Details of the requests for an "assert request" step, JSON encoded string.
 
 Refer to the examples for a usage example showing the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#requests SyntheticsTest#requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#requests SyntheticsTest#requests}
 
 ---
 
@@ -4617,7 +4649,7 @@ SubtestPublicId *string
 
 ID of the Synthetics test to use as subtest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
 
 ---
 
@@ -4631,7 +4663,7 @@ Value *string
 
 Value of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -4645,7 +4677,7 @@ Variable SyntheticsTestBrowserStepParamsVariable
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
 
 ---
 
@@ -4659,7 +4691,7 @@ WithClick interface{}
 
 For "file upload" steps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#with_click SyntheticsTest#with_click}
 
 ---
 
@@ -4673,7 +4705,7 @@ X *f64
 
 X coordinates for a "scroll step".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#x SyntheticsTest#x}
 
 ---
 
@@ -4687,7 +4719,107 @@ Y *f64
 
 Y coordinates for a "scroll step".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+
+---
+
+### SyntheticsTestBrowserStepParamsDragDropOptions <a name="SyntheticsTestBrowserStepParamsDragDropOptions" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
+
+&syntheticstest.SyntheticsTestBrowserStepParamsDragDropOptions {
+	Delay: *f64,
+	Offset: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions.property.delay">Delay</a></code> | <code>*f64</code> | Delay in milliseconds before performing the action (0–9999). |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions.property.offset">Offset</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset">SyntheticsTestBrowserStepParamsDragDropOptionsOffset</a></code> | offset block. |
+
+---
+
+##### `Delay`<sup>Optional</sup> <a name="Delay" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions.property.delay"></a>
+
+```go
+Delay *f64
+```
+
+- *Type:* *f64
+
+Delay in milliseconds before performing the action (0–9999).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+
+---
+
+##### `Offset`<sup>Optional</sup> <a name="Offset" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions.property.offset"></a>
+
+```go
+Offset SyntheticsTestBrowserStepParamsDragDropOptionsOffset
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset">SyntheticsTestBrowserStepParamsDragDropOptionsOffset</a>
+
+offset block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#offset SyntheticsTest#offset}
+
+---
+
+### SyntheticsTestBrowserStepParamsDragDropOptionsOffset <a name="SyntheticsTestBrowserStepParamsDragDropOptionsOffset" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
+
+&syntheticstest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset {
+	X: *f64,
+	Y: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset.property.x">X</a></code> | <code>*f64</code> | Horizontal offset in pixels. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset.property.y">Y</a></code> | <code>*f64</code> | Vertical offset in pixels. |
+
+---
+
+##### `X`<sup>Optional</sup> <a name="X" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset.property.x"></a>
+
+```go
+X *f64
+```
+
+- *Type:* *f64
+
+Horizontal offset in pixels.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+
+---
+
+##### `Y`<sup>Optional</sup> <a name="Y" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset.property.y"></a>
+
+```go
+Y *f64
+```
+
+- *Type:* *f64
+
+Vertical offset in pixels.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#y SyntheticsTest#y}
 
 ---
 
@@ -4696,10 +4828,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsElementUserLocator {
-	Value: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue,
+	Value: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue,
 	FailTestOnCannotLocate: interface{},
 }
 ```
@@ -4723,7 +4855,7 @@ Value SyntheticsTestBrowserStepParamsElementUserLocatorValue
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -4737,7 +4869,7 @@ FailTestOnCannotLocate interface{}
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}
 
 ---
 
@@ -4746,7 +4878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsElementUserLocatorValue {
 	Value: *string,
@@ -4758,7 +4890,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValue.property.type">Type</a></code> | <code>*string</code> | Defaults to `"css"`. |
 
 ---
@@ -4771,7 +4903,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}.
 
 ---
 
@@ -4785,7 +4917,7 @@ Type *string
 
 Defaults to `"css"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -4794,7 +4926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsPattern {
 	Type: *string,
@@ -4821,7 +4953,7 @@ Type *string
 
 Type of pattern to use for the step. Valid values are `regex`, `x_path`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -4835,7 +4967,7 @@ Value *string
 
 Pattern to use for the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -4844,7 +4976,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserStepParamsVariable {
 	Example: *string,
@@ -4873,7 +5005,7 @@ Example *string
 
 Example of the extracted variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -4887,7 +5019,7 @@ Name *string
 
 Name of the extracted variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -4901,7 +5033,7 @@ Secure interface{}
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
 
 ---
 
@@ -4910,7 +5042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestBrowserVariable {
 	Name: *string,
@@ -4945,7 +5077,7 @@ Name *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -4959,7 +5091,7 @@ Type *string
 
 Type of browser test variable. Valid values are `element`, `email`, `global`, `text`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -4973,7 +5105,7 @@ Example *string
 
 Example for the variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -4989,7 +5121,7 @@ ID of the global variable to use.
 
 This is actually only used (and required) in the case of using a variable of type `global`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#id SyntheticsTest#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5006,7 +5138,7 @@ Pattern *string
 
 Pattern of the variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
 
 ---
 
@@ -5022,7 +5154,7 @@ Determines whether or not the browser test variable is obfuscated.
 
 Can only be used with a browser variable of type `text`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
 
 ---
 
@@ -5031,7 +5163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestConfig {
 	Connection: interface{},
@@ -5055,16 +5187,16 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 	ForceDeleteDependencies: interface{},
 	Id: *string,
 	Message: *string,
-	MobileOptionsList: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileOptionsListStruct,
+	MobileOptionsList: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileOptionsListStruct,
 	MobileStep: interface{},
-	OptionsList: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestOptionsListStruct,
-	RequestBasicauth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestRequestBasicauth,
-	RequestClientCertificate: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestRequestClientCertificate,
-	RequestDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestRequestDefinition,
+	OptionsList: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestOptionsListStruct,
+	RequestBasicauth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestRequestBasicauth,
+	RequestClientCertificate: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestRequestClientCertificate,
+	RequestDefinition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestRequestDefinition,
 	RequestFile: interface{},
 	RequestHeaders: *map[string]*string,
 	RequestMetadata: *map[string]*string,
-	RequestProxy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestRequestProxy,
+	RequestProxy: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestRequestProxy,
 	RequestQuery: *map[string]*string,
 	SetCookie: *string,
 	Subtype: *string,
@@ -5096,7 +5228,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.configVariable">ConfigVariable</a></code> | <code>interface{}</code> | config_variable block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.deviceIds">DeviceIds</a></code> | <code>*[]*string</code> | Required if `type = "browser"`. Array with the different device IDs used to run the test. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.forceDeleteDependencies">ForceDeleteDependencies</a></code> | <code>interface{}</code> | A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors). |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#id SyntheticsTest#id}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.message">Message</a></code> | <code>*string</code> | A message to include with notifications for this synthetics test. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileOptionsList">MobileOptionsList</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct">SyntheticsTestMobileOptionsListStruct</a></code> | mobile_options_list block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfig.property.mobileStep">MobileStep</a></code> | <code>interface{}</code> | mobile_step block. |
@@ -5198,7 +5330,7 @@ Array of locations used to run the test.
 
 Refer to [the Datadog Synthetics location data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/synthetics_locations) to retrieve the list of locations or find the possible values listed in [this API response](https://app.datadoghq.com/api/v1/synthetics/locations?only_public=true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#locations SyntheticsTest#locations}
 
 ---
 
@@ -5212,7 +5344,7 @@ Name *string
 
 Name of Datadog synthetics test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -5226,7 +5358,7 @@ Status *string
 
 Define whether you want to start (`live`) or pause (`paused`) a Synthetic test. Valid values are `live`, `paused`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#status SyntheticsTest#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#status SyntheticsTest#status}
 
 ---
 
@@ -5240,7 +5372,7 @@ Type *string
 
 The type of Synthetics test. Valid values are `api`, `browser`, `mobile`, `network`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -5254,7 +5386,7 @@ ApiStep interface{}
 
 api_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#api_step SyntheticsTest#api_step}
 
 ---
 
@@ -5268,7 +5400,7 @@ Assertion interface{}
 
 assertion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#assertion SyntheticsTest#assertion}
 
 ---
 
@@ -5282,7 +5414,7 @@ BrowserStep interface{}
 
 browser_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#browser_step SyntheticsTest#browser_step}
 
 ---
 
@@ -5296,7 +5428,7 @@ BrowserVariable interface{}
 
 browser_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#browser_variable SyntheticsTest#browser_variable}
 
 ---
 
@@ -5310,7 +5442,7 @@ ConfigInitialApplicationArguments *map[string]*string
 
 Initial application arguments for the mobile test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#config_initial_application_arguments SyntheticsTest#config_initial_application_arguments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#config_initial_application_arguments SyntheticsTest#config_initial_application_arguments}
 
 ---
 
@@ -5324,7 +5456,7 @@ ConfigVariable interface{}
 
 config_variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#config_variable SyntheticsTest#config_variable}
 
 ---
 
@@ -5338,7 +5470,7 @@ DeviceIds *[]*string
 
 Required if `type = "browser"`. Array with the different device IDs used to run the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}
 
 ---
 
@@ -5352,7 +5484,7 @@ ForceDeleteDependencies interface{}
 
 A boolean indicating whether this synthetics test can be deleted even if it's referenced by other resources (for example, SLOs and composite monitors).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#force_delete_dependencies SyntheticsTest#force_delete_dependencies}
 
 ---
 
@@ -5364,7 +5496,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#id SyntheticsTest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#id SyntheticsTest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5383,7 +5515,7 @@ A message to include with notifications for this synthetics test.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#message SyntheticsTest#message}
 
 ---
 
@@ -5397,7 +5529,7 @@ MobileOptionsList SyntheticsTestMobileOptionsListStruct
 
 mobile_options_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#mobile_options_list SyntheticsTest#mobile_options_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#mobile_options_list SyntheticsTest#mobile_options_list}
 
 ---
 
@@ -5411,7 +5543,7 @@ MobileStep interface{}
 
 mobile_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#mobile_step SyntheticsTest#mobile_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#mobile_step SyntheticsTest#mobile_step}
 
 ---
 
@@ -5425,7 +5557,7 @@ OptionsList SyntheticsTestOptionsListStruct
 
 options_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#options_list SyntheticsTest#options_list}
 
 ---
 
@@ -5439,7 +5571,7 @@ RequestBasicauth SyntheticsTestRequestBasicauth
 
 request_basicauth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_basicauth SyntheticsTest#request_basicauth}
 
 ---
 
@@ -5453,7 +5585,7 @@ RequestClientCertificate SyntheticsTestRequestClientCertificate
 
 request_client_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_client_certificate SyntheticsTest#request_client_certificate}
 
 ---
 
@@ -5467,7 +5599,7 @@ RequestDefinition SyntheticsTestRequestDefinition
 
 request_definition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_definition SyntheticsTest#request_definition}
 
 ---
 
@@ -5481,7 +5613,7 @@ RequestFile interface{}
 
 request_file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_file SyntheticsTest#request_file}
 
 ---
 
@@ -5495,7 +5627,7 @@ RequestHeaders *map[string]*string
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_headers SyntheticsTest#request_headers}
 
 ---
 
@@ -5509,7 +5641,7 @@ RequestMetadata *map[string]*string
 
 Metadata to include when performing the gRPC request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_metadata SyntheticsTest#request_metadata}
 
 ---
 
@@ -5523,7 +5655,7 @@ RequestProxy SyntheticsTestRequestProxy
 
 request_proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_proxy SyntheticsTest#request_proxy}
 
 ---
 
@@ -5537,7 +5669,7 @@ RequestQuery *map[string]*string
 
 Query arguments name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#request_query SyntheticsTest#request_query}
 
 ---
 
@@ -5551,7 +5683,7 @@ SetCookie *string
 
 Cookies to be used for a browser test request, using the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie) syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#set_cookie SyntheticsTest#set_cookie}
 
 ---
 
@@ -5567,7 +5699,7 @@ The subtype for API or Network Path tests.
 
 For API tests, defaults to `http`. For Network Path tests, only `tcp`, `udp`, `icmp` are available. Valid values are `http`, `ssl`, `tcp`, `dns`, `multi`, `icmp`, `udp`, `websocket`, `grpc`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#subtype SyntheticsTest#subtype}
 
 ---
 
@@ -5583,7 +5715,7 @@ A list of tags to associate with your synthetics test.
 
 This can help you categorize and filter tests in the manage synthetics page of the UI. Default is an empty list (`[]`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#tags SyntheticsTest#tags}
 
 ---
 
@@ -5597,7 +5729,7 @@ VariablesFromScript *string
 
 Variables defined from JavaScript code for API HTTP tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#variables_from_script SyntheticsTest#variables_from_script}
 
 ---
 
@@ -5606,7 +5738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfigVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestConfigVariable {
 	Name: *string,
@@ -5641,7 +5773,7 @@ Name *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -5655,7 +5787,7 @@ Type *string
 
 Type of test configuration variable. Valid values are `global`, `text`, `email`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -5671,7 +5803,7 @@ Example for the variable.
 
 This value is not returned by the API when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -5685,7 +5817,7 @@ Id *string
 
 When type = `global`, ID of the global variable to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#id SyntheticsTest#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#id SyntheticsTest#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5704,7 +5836,7 @@ Pattern of the variable.
 
 This value is not returned by the API when `secure = true`. Avoid drift by only making updates to this value from within Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#pattern SyntheticsTest#pattern}
 
 ---
 
@@ -5718,7 +5850,7 @@ Secure interface{}
 
 Whether the value of this variable will be obfuscated in test results. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#secure SyntheticsTest#secure}
 
 ---
 
@@ -5727,7 +5859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListBindings {
 	Principals: *[]*string,
@@ -5739,7 +5871,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.property.principals">Principals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.property.principals">Principals</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindings.property.relation">Relation</a></code> | <code>*string</code> | Valid values are `editor`, `viewer`. |
 
 ---
@@ -5752,7 +5884,7 @@ Principals *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#principals SyntheticsTest#principals}.
 
 ---
 
@@ -5766,7 +5898,7 @@ Relation *string
 
 Valid values are `editor`, `viewer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#relation SyntheticsTest#relation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#relation SyntheticsTest#relation}
 
 ---
 
@@ -5775,7 +5907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListCi {
 	ExecutionRule: *string,
@@ -5800,7 +5932,7 @@ ExecutionRule *string
 
 Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
 
 ---
 
@@ -5809,7 +5941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListMobileApplication {
 	ApplicationId: *string,
@@ -5822,8 +5954,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.referenceId">ReferenceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.applicationId">ApplicationId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.referenceId">ReferenceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication.property.referenceType">ReferenceType</a></code> | <code>*string</code> | Valid values are `latest`, `version`. |
 
 ---
@@ -5836,7 +5968,7 @@ ApplicationId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}.
 
 ---
 
@@ -5848,7 +5980,7 @@ ReferenceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#reference_id SyntheticsTest#reference_id}.
 
 ---
 
@@ -5862,7 +5994,7 @@ ReferenceType *string
 
 Valid values are `latest`, `version`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#reference_type SyntheticsTest#reference_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#reference_type SyntheticsTest#reference_type}
 
 ---
 
@@ -5871,7 +6003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListMonitorOptions {
 	EscalationMessage: *string,
@@ -5902,7 +6034,7 @@ EscalationMessage *string
 
 A message to include with a re-notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
 
 ---
 
@@ -5918,7 +6050,7 @@ The name of the preset for the notification for the monitor.
 
 Valid values are `show_all`, `hide_all`, `hide_query`, `hide_handles`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
 
 ---
 
@@ -5934,7 +6066,7 @@ Specify a renotification frequency in minutes.
 
 Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
 
 ---
 
@@ -5948,7 +6080,7 @@ RenotifyOccurrences *f64
 
 The number of times a monitor renotifies. It can only be set if `renotify_interval` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
 
 ---
 
@@ -5957,7 +6089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListRetry {
 	Count: *f64,
@@ -5986,7 +6118,7 @@ Number of retries needed to consider a location as failed before sending a notif
 
 Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#count SyntheticsTest#count}
 
 ---
 
@@ -6000,7 +6132,7 @@ Interval *f64
 
 Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
 
 ---
 
@@ -6009,7 +6141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListScheduling {
 	Timeframes: interface{},
@@ -6036,7 +6168,7 @@ Timeframes interface{}
 
 timeframes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
 
 ---
 
@@ -6050,7 +6182,7 @@ Timezone *string
 
 Timezone in which the timeframe is based.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
 
 ---
 
@@ -6059,7 +6191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListSchedulingTimeframes {
 	Day: *f64,
@@ -6088,7 +6220,7 @@ Day *f64
 
 Number representing the day of the week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#day SyntheticsTest#day}
 
 ---
 
@@ -6102,7 +6234,7 @@ From *string
 
 The hour of the day on which scheduling starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#from SyntheticsTest#from}
 
 ---
 
@@ -6116,7 +6248,7 @@ To *string
 
 The hour of the day on which scheduling ends.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#to SyntheticsTest#to}
 
 ---
 
@@ -6125,25 +6257,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileOptionsListStruct {
 	DeviceIds: *[]*string,
-	MobileApplication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication,
+	MobileApplication: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication,
 	TickEvery: *f64,
 	AllowApplicationCrash: interface{},
 	Bindings: interface{},
-	Ci: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileOptionsListCi,
+	Ci: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileOptionsListCi,
 	DefaultStepTimeout: *f64,
 	DisableAutoAcceptAlert: interface{},
 	MinFailureDuration: *f64,
 	MonitorName: *string,
-	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions,
+	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions,
 	MonitorPriority: *f64,
 	NoScreenshot: interface{},
 	RestrictedRoles: *[]*string,
-	Retry: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileOptionsListRetry,
-	Scheduling: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileOptionsListScheduling,
+	Retry: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileOptionsListRetry,
+	Scheduling: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileOptionsListScheduling,
 	Verbosity: *f64,
 }
 ```
@@ -6152,23 +6284,23 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.deviceIds">DeviceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.deviceIds">DeviceIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.mobileApplication">MobileApplication</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplication">SyntheticsTestMobileOptionsListMobileApplication</a></code> | mobile_application block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.tickEvery">TickEvery</a></code> | <code>*f64</code> | How often the test should run (in seconds). Valid range is `300-604800` for mobile tests. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">AllowApplicationCrash</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.allowApplicationCrash">AllowApplicationCrash</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.bindings">Bindings</a></code> | <code>interface{}</code> | bindings block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.ci">Ci</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCi">SyntheticsTestMobileOptionsListCi</a></code> | ci block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.defaultStepTimeout">DefaultStepTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">DisableAutoAcceptAlert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.defaultStepTimeout">DefaultStepTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.disableAutoAcceptAlert">DisableAutoAcceptAlert</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.minFailureDuration">MinFailureDuration</a></code> | <code>*f64</code> | Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorName">MonitorName</a></code> | <code>*string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptions">SyntheticsTestMobileOptionsListMonitorOptions</a></code> | monitor_options block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorPriority">MonitorPriority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.monitorPriority">MonitorPriority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.noScreenshot">NoScreenshot</a></code> | <code>interface{}</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.restrictedRoles">RestrictedRoles</a></code> | <code>*[]*string</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.retry">Retry</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetry">SyntheticsTestMobileOptionsListRetry</a></code> | retry block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.scheduling">Scheduling</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListScheduling">SyntheticsTestMobileOptionsListScheduling</a></code> | scheduling block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.verbosity">Verbosity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStruct.property.verbosity">Verbosity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}. |
 
 ---
 
@@ -6180,7 +6312,7 @@ DeviceIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#device_ids SyntheticsTest#device_ids}.
 
 ---
 
@@ -6194,7 +6326,7 @@ MobileApplication SyntheticsTestMobileOptionsListMobileApplication
 
 mobile_application block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#mobile_application SyntheticsTest#mobile_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#mobile_application SyntheticsTest#mobile_application}
 
 ---
 
@@ -6208,7 +6340,7 @@ TickEvery *f64
 
 How often the test should run (in seconds). Valid range is `300-604800` for mobile tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
 
 ---
 
@@ -6220,7 +6352,7 @@ AllowApplicationCrash interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#allow_application_crash SyntheticsTest#allow_application_crash}.
 
 ---
 
@@ -6234,7 +6366,7 @@ Bindings interface{}
 
 bindings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#bindings SyntheticsTest#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#bindings SyntheticsTest#bindings}
 
 ---
 
@@ -6248,7 +6380,7 @@ Ci SyntheticsTestMobileOptionsListCi
 
 ci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
 
 ---
 
@@ -6260,7 +6392,7 @@ DefaultStepTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#default_step_timeout SyntheticsTest#default_step_timeout}.
 
 ---
 
@@ -6272,7 +6404,7 @@ DisableAutoAcceptAlert interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#disable_auto_accept_alert SyntheticsTest#disable_auto_accept_alert}.
 
 ---
 
@@ -6286,7 +6418,7 @@ MinFailureDuration *f64
 
 Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 
 ---
 
@@ -6300,7 +6432,7 @@ MonitorName *string
 
 The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
 
 ---
 
@@ -6314,7 +6446,7 @@ MonitorOptions SyntheticsTestMobileOptionsListMonitorOptions
 
 monitor_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
 
 ---
 
@@ -6326,7 +6458,7 @@ MonitorPriority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
 
 ---
 
@@ -6340,7 +6472,7 @@ NoScreenshot interface{}
 
 Prevents saving screenshots of the steps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
 
 ---
 
@@ -6356,7 +6488,7 @@ A list of role identifiers pulled from the Roles API to restrict read and write 
 
 **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
 
 ---
 
@@ -6370,7 +6502,7 @@ Retry SyntheticsTestMobileOptionsListRetry
 
 retry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
 
 ---
 
@@ -6384,7 +6516,7 @@ Scheduling SyntheticsTestMobileOptionsListScheduling
 
 scheduling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
 
 ---
 
@@ -6396,7 +6528,7 @@ Verbosity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#verbosity SyntheticsTest#verbosity}.
 
 ---
 
@@ -6405,11 +6537,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStep.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStep {
 	Name: *string,
-	Params: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileStepParams,
+	Params: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileStepParams,
 	Type: *string,
 	AllowFailure: interface{},
 	HasNewStepElement: interface{},
@@ -6446,7 +6578,7 @@ Name *string
 
 The name of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -6460,7 +6592,7 @@ Params SyntheticsTestMobileStepParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#params SyntheticsTest#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#params SyntheticsTest#params}
 
 ---
 
@@ -6476,7 +6608,7 @@ The type of the step.
 
 Valid values are `assertElementContent`, `assertScreenContains`, `assertScreenLacks`, `doubleTap`, `extractVariable`, `flick`, `openDeeplink`, `playSubTest`, `pressBack`, `restartApplication`, `rotate`, `scroll`, `scrollToElement`, `tap`, `toggleWiFi`, `typeText`, `wait`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -6490,7 +6622,7 @@ AllowFailure interface{}
 
 A boolean set to allow this step to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#allow_failure SyntheticsTest#allow_failure}
 
 ---
 
@@ -6504,7 +6636,7 @@ HasNewStepElement interface{}
 
 A boolean set to determine if the step has a new step element.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#has_new_step_element SyntheticsTest#has_new_step_element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#has_new_step_element SyntheticsTest#has_new_step_element}
 
 ---
 
@@ -6518,7 +6650,7 @@ IsCritical interface{}
 
 A boolean to use in addition to `allowFailure` to determine if the test should be marked as failed when the step fails.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#is_critical SyntheticsTest#is_critical}
 
 ---
 
@@ -6532,7 +6664,7 @@ NoScreenshot interface{}
 
 A boolean set to not take a screenshot for the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
 
 ---
 
@@ -6546,7 +6678,7 @@ PublicId *string
 
 The public ID of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#public_id SyntheticsTest#public_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#public_id SyntheticsTest#public_id}
 
 ---
 
@@ -6560,7 +6692,7 @@ Timeout *f64
 
 The time before declaring a step failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
 
 ---
 
@@ -6569,19 +6701,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStepParams {
 	Check: *string,
 	Delay: *f64,
 	Direction: *string,
-	Element: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileStepParamsElement,
+	Element: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileStepParamsElement,
 	Enable: interface{},
 	MaxScrolls: *f64,
 	Positions: interface{},
 	SubtestPublicId: *string,
 	Value: *string,
-	Variable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileStepParamsVariable,
+	Variable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileStepParamsVariable,
 	WithEnter: interface{},
 	X: *f64,
 	Y: *f64,
@@ -6596,13 +6728,13 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.delay">Delay</a></code> | <code>*f64</code> | Delay between each key stroke for a "type test" step. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.direction">Direction</a></code> | <code>*string</code> | Valid values are `up`, `down`, `left`, `right`. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.element">Element</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement">SyntheticsTestMobileStepParamsElement</a></code> | element block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.maxScrolls">MaxScrolls</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.enable">Enable</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.maxScrolls">MaxScrolls</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.positions">Positions</a></code> | <code>interface{}</code> | positions block. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.subtestPublicId">SubtestPublicId</a></code> | <code>*string</code> | ID of the Synthetics test to use as subtest. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.value">Value</a></code> | <code>*string</code> | Value of the step. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.variable">Variable</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable">SyntheticsTestMobileStepParamsVariable</a></code> | variable block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">WithEnter</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.withEnter">WithEnter</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.x">X</a></code> | <code>*f64</code> | X coordinates for a "scroll step". |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParams.property.y">Y</a></code> | <code>*f64</code> | Y coordinates for a "scroll step". |
 
@@ -6620,7 +6752,7 @@ Check type to use for an assertion step.
 
 Valid values are `equals`, `notEquals`, `contains`, `notContains`, `startsWith`, `notStartsWith`, `greater`, `lower`, `greaterEquals`, `lowerEquals`, `matchRegex`, `between`, `isEmpty`, `notIsEmpty`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#check SyntheticsTest#check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#check SyntheticsTest#check}
 
 ---
 
@@ -6634,7 +6766,7 @@ Delay *f64
 
 Delay between each key stroke for a "type test" step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#delay SyntheticsTest#delay}
 
 ---
 
@@ -6648,7 +6780,7 @@ Direction *string
 
 Valid values are `up`, `down`, `left`, `right`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#direction SyntheticsTest#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#direction SyntheticsTest#direction}
 
 ---
 
@@ -6662,7 +6794,7 @@ Element SyntheticsTestMobileStepParamsElement
 
 element block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#element SyntheticsTest#element}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#element SyntheticsTest#element}
 
 ---
 
@@ -6674,7 +6806,7 @@ Enable interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#enable SyntheticsTest#enable}.
 
 ---
 
@@ -6686,7 +6818,7 @@ MaxScrolls *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#max_scrolls SyntheticsTest#max_scrolls}.
 
 ---
 
@@ -6700,7 +6832,7 @@ Positions interface{}
 
 positions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#positions SyntheticsTest#positions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#positions SyntheticsTest#positions}
 
 ---
 
@@ -6714,7 +6846,7 @@ SubtestPublicId *string
 
 ID of the Synthetics test to use as subtest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#subtest_public_id SyntheticsTest#subtest_public_id}
 
 ---
 
@@ -6728,7 +6860,7 @@ Value *string
 
 Value of the step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}
 
 ---
 
@@ -6742,7 +6874,7 @@ Variable SyntheticsTestMobileStepParamsVariable
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#variable SyntheticsTest#variable}
 
 ---
 
@@ -6754,7 +6886,7 @@ WithEnter interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#with_enter SyntheticsTest#with_enter}.
 
 ---
 
@@ -6768,7 +6900,7 @@ X *f64
 
 X coordinates for a "scroll step".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#x SyntheticsTest#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#x SyntheticsTest#x}
 
 ---
 
@@ -6782,7 +6914,7 @@ Y *f64
 
 Y coordinates for a "scroll step".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#y SyntheticsTest#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#y SyntheticsTest#y}
 
 ---
 
@@ -6791,16 +6923,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStepParamsElement {
 	Context: *string,
 	ContextType: *string,
 	ElementDescription: *string,
 	MultiLocator: *map[string]*string,
-	RelativePosition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition,
+	RelativePosition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition,
 	TextContent: *string,
-	UserLocator: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator,
+	UserLocator: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator,
 	ViewName: *string,
 }
 ```
@@ -6809,14 +6941,14 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.context">Context</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#context SyntheticsTest#context}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.context">Context</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#context SyntheticsTest#context}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.contextType">ContextType</a></code> | <code>*string</code> | Valid values are `native`, `web`. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.elementDescription">ElementDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.multiLocator">MultiLocator</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.elementDescription">ElementDescription</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.multiLocator">MultiLocator</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.relativePosition">RelativePosition</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition">SyntheticsTestMobileStepParamsElementRelativePosition</a></code> | relative_position block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.textContent">TextContent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.textContent">TextContent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.userLocator">UserLocator</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator">SyntheticsTestMobileStepParamsElementUserLocator</a></code> | user_locator block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.viewName">ViewName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElement.property.viewName">ViewName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}. |
 
 ---
 
@@ -6828,7 +6960,7 @@ Context *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#context SyntheticsTest#context}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#context SyntheticsTest#context}.
 
 ---
 
@@ -6842,7 +6974,7 @@ ContextType *string
 
 Valid values are `native`, `web`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#context_type SyntheticsTest#context_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#context_type SyntheticsTest#context_type}
 
 ---
 
@@ -6854,7 +6986,7 @@ ElementDescription *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#element_description SyntheticsTest#element_description}.
 
 ---
 
@@ -6866,7 +6998,7 @@ MultiLocator *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#multi_locator SyntheticsTest#multi_locator}.
 
 ---
 
@@ -6880,7 +7012,7 @@ RelativePosition SyntheticsTestMobileStepParamsElementRelativePosition
 
 relative_position block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#relative_position SyntheticsTest#relative_position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#relative_position SyntheticsTest#relative_position}
 
 ---
 
@@ -6892,7 +7024,7 @@ TextContent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#text_content SyntheticsTest#text_content}.
 
 ---
 
@@ -6906,7 +7038,7 @@ UserLocator SyntheticsTestMobileStepParamsElementUserLocator
 
 user_locator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#user_locator SyntheticsTest#user_locator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#user_locator SyntheticsTest#user_locator}
 
 ---
 
@@ -6918,7 +7050,7 @@ ViewName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#view_name SyntheticsTest#view_name}.
 
 ---
 
@@ -6927,7 +7059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStepParamsElementRelativePosition {
 	X: *f64,
@@ -6939,8 +7071,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.x">X</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#x SyntheticsTest#x}. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.y">Y</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#y SyntheticsTest#y}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.x">X</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#x SyntheticsTest#x}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePosition.property.y">Y</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#y SyntheticsTest#y}. |
 
 ---
 
@@ -6952,7 +7084,7 @@ X *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
 
 ---
 
@@ -6964,7 +7096,7 @@ Y *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
 
 ---
 
@@ -6973,7 +7105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStepParamsElementUserLocator {
 	FailTestOnCannotLocate: interface{},
@@ -6985,7 +7117,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.failTestOnCannotLocate">FailTestOnCannotLocate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocator.property.values">Values</a></code> | <code>interface{}</code> | values block. |
 
 ---
@@ -6998,7 +7130,7 @@ FailTestOnCannotLocate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#fail_test_on_cannot_locate SyntheticsTest#fail_test_on_cannot_locate}.
 
 ---
 
@@ -7012,7 +7144,7 @@ Values interface{}
 
 values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#values SyntheticsTest#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#values SyntheticsTest#values}
 
 ---
 
@@ -7021,7 +7153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStepParamsElementUserLocatorValues {
 	Type: *string,
@@ -7034,7 +7166,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.property.type">Type</a></code> | <code>*string</code> | Valid values are `accessibility-id`, `id`, `ios-predicate-string`, `ios-class-chain`, `xpath`. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValues.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}. |
 
 ---
 
@@ -7048,7 +7180,7 @@ Type *string
 
 Valid values are `accessibility-id`, `id`, `ios-predicate-string`, `ios-class-chain`, `xpath`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -7060,7 +7192,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#value SyntheticsTest#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#value SyntheticsTest#value}.
 
 ---
 
@@ -7069,7 +7201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStepParamsPositions {
 	X: *f64,
@@ -7081,8 +7213,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.x">X</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#x SyntheticsTest#x}. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.y">Y</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#y SyntheticsTest#y}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.x">X</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#x SyntheticsTest#x}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositions.property.y">Y</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#y SyntheticsTest#y}. |
 
 ---
 
@@ -7094,7 +7226,7 @@ X *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#x SyntheticsTest#x}.
 
 ---
 
@@ -7106,7 +7238,7 @@ Y *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#y SyntheticsTest#y}.
 
 ---
 
@@ -7115,7 +7247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestMobileStepParamsVariable {
 	Name: *string,
@@ -7142,7 +7274,7 @@ Name *string
 
 Name of the extracted variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -7156,7 +7288,7 @@ Example *string
 
 Example of the extracted variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#example SyntheticsTest#example}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#example SyntheticsTest#example}
 
 ---
 
@@ -7165,7 +7297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListCi {
 	ExecutionRule: *string,
@@ -7190,7 +7322,7 @@ ExecutionRule *string
 
 Execution rule for a Synthetics test. Valid values are `blocking`, `non_blocking`, `skipped`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#execution_rule SyntheticsTest#execution_rule}
 
 ---
 
@@ -7199,7 +7331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListMonitorOptions {
 	EscalationMessage: *string,
@@ -7230,7 +7362,7 @@ EscalationMessage *string
 
 A message to include with a re-notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#escalation_message SyntheticsTest#escalation_message}
 
 ---
 
@@ -7246,7 +7378,7 @@ The name of the preset for the notification for the monitor.
 
 Valid values are `show_all`, `hide_all`, `hide_query`, `hide_handles`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#notification_preset_name SyntheticsTest#notification_preset_name}
 
 ---
 
@@ -7262,7 +7394,7 @@ Specify a renotification frequency in minutes.
 
 Values available by default are `0`, `10`, `20`, `30`, `40`, `50`, `60`, `90`, `120`, `180`, `240`, `300`, `360`, `720`, `1440`. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#renotify_interval SyntheticsTest#renotify_interval}
 
 ---
 
@@ -7276,7 +7408,7 @@ RenotifyOccurrences *f64
 
 The number of times a monitor renotifies. It can only be set if `renotify_interval` is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#renotify_occurrences SyntheticsTest#renotify_occurrences}
 
 ---
 
@@ -7285,7 +7417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListRetry {
 	Count: *f64,
@@ -7314,7 +7446,7 @@ Number of retries needed to consider a location as failed before sending a notif
 
 Maximum value: `3` for `api` tests, `2` for `browser` and `mobile` tests. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#count SyntheticsTest#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#count SyntheticsTest#count}
 
 ---
 
@@ -7328,7 +7460,7 @@ Interval *f64
 
 Interval between a failed test and the next retry in milliseconds. Maximum value: `5000`. Defaults to `300`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#interval SyntheticsTest#interval}
 
 ---
 
@@ -7337,7 +7469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListRumSettings {
 	IsEnabled: interface{},
@@ -7366,7 +7498,7 @@ IsEnabled interface{}
 
 Determines whether RUM data is collected during test runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#is_enabled SyntheticsTest#is_enabled}
 
 ---
 
@@ -7380,7 +7512,7 @@ ApplicationId *string
 
 RUM application ID used to collect RUM data for the browser test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#application_id SyntheticsTest#application_id}
 
 ---
 
@@ -7394,7 +7526,7 @@ ClientTokenId *f64
 
 RUM application API key ID used to collect RUM data for the browser test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#client_token_id SyntheticsTest#client_token_id}
 
 ---
 
@@ -7403,7 +7535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListScheduling.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListScheduling {
 	Timeframes: interface{},
@@ -7430,7 +7562,7 @@ Timeframes interface{}
 
 timeframes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timeframes SyntheticsTest#timeframes}
 
 ---
 
@@ -7444,7 +7576,7 @@ Timezone *string
 
 Timezone in which the timeframe is based.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timezone SyntheticsTest#timezone}
 
 ---
 
@@ -7453,7 +7585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListSchedulingTimeframes {
 	Day: *f64,
@@ -7482,7 +7614,7 @@ Day *f64
 
 Number representing the day of the week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#day SyntheticsTest#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#day SyntheticsTest#day}
 
 ---
 
@@ -7496,7 +7628,7 @@ From *string
 
 The hour of the day on which scheduling starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#from SyntheticsTest#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#from SyntheticsTest#from}
 
 ---
 
@@ -7510,7 +7642,7 @@ To *string
 
 The hour of the day on which scheduling ends.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#to SyntheticsTest#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#to SyntheticsTest#to}
 
 ---
 
@@ -7519,7 +7651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestOptionsListStruct {
 	TickEvery: *f64,
@@ -7527,7 +7659,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 	AllowInsecure: interface{},
 	BlockedRequestPatterns: *[]*string,
 	CheckCertificateRevocation: interface{},
-	Ci: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestOptionsListCi,
+	Ci: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestOptionsListCi,
 	DisableAiaIntermediateFetching: interface{},
 	DisableCors: interface{},
 	DisableCsp: interface{},
@@ -7538,13 +7670,13 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 	MinFailureDuration: *f64,
 	MinLocationFailed: *f64,
 	MonitorName: *string,
-	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestOptionsListMonitorOptions,
+	MonitorOptions: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestOptionsListMonitorOptions,
 	MonitorPriority: *f64,
 	NoScreenshot: interface{},
 	RestrictedRoles: *[]*string,
-	Retry: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestOptionsListRetry,
-	RumSettings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestOptionsListRumSettings,
-	Scheduling: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestOptionsListScheduling,
+	Retry: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestOptionsListRetry,
+	RumSettings: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestOptionsListRumSettings,
+	Scheduling: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestOptionsListScheduling,
 }
 ```
 
@@ -7569,7 +7701,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.minLocationFailed">MinLocationFailed</a></code> | <code>*f64</code> | Minimum number of locations in failure required to trigger an alert. Defaults to `1`. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorName">MonitorName</a></code> | <code>*string</code> | The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorOptions">MonitorOptions</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptions">SyntheticsTestOptionsListMonitorOptions</a></code> | monitor_options block. |
-| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">MonitorPriority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.monitorPriority">MonitorPriority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.noScreenshot">NoScreenshot</a></code> | <code>interface{}</code> | Prevents saving screenshots of the steps. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.restrictedRoles">RestrictedRoles</a></code> | <code>*[]*string</code> | A list of role identifiers pulled from the Roles API to restrict read and write access. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStruct.property.retry">Retry</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetry">SyntheticsTestOptionsListRetry</a></code> | retry block. |
@@ -7590,7 +7722,7 @@ How often the test should run (in seconds).
 
 Valid range is `30-604800` for API tests and `60-604800` for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#tick_every SyntheticsTest#tick_every}
 
 ---
 
@@ -7604,7 +7736,7 @@ AcceptSelfSigned interface{}
 
 For SSL tests, whether or not the test should allow self signed certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#accept_self_signed SyntheticsTest#accept_self_signed}
 
 ---
 
@@ -7618,7 +7750,7 @@ AllowInsecure interface{}
 
 Allows loading insecure content for a request in an API test or in a multistep API test step.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#allow_insecure SyntheticsTest#allow_insecure}
 
 ---
 
@@ -7632,7 +7764,7 @@ BlockedRequestPatterns *[]*string
 
 Blocked URL patterns. Requests made to URLs matching any of the patterns listed here will be blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#blocked_request_patterns SyntheticsTest#blocked_request_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#blocked_request_patterns SyntheticsTest#blocked_request_patterns}
 
 ---
 
@@ -7646,7 +7778,7 @@ CheckCertificateRevocation interface{}
 
 For SSL tests, whether or not the test should fail on revoked certificate in stapled OCSP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#check_certificate_revocation SyntheticsTest#check_certificate_revocation}
 
 ---
 
@@ -7660,7 +7792,7 @@ Ci SyntheticsTestOptionsListCi
 
 ci block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#ci SyntheticsTest#ci}
 
 ---
 
@@ -7674,7 +7806,7 @@ DisableAiaIntermediateFetching interface{}
 
 For SSL tests, whether or not the test should disable fetching intermediate certificates from AIA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#disable_aia_intermediate_fetching SyntheticsTest#disable_aia_intermediate_fetching}
 
 ---
 
@@ -7688,7 +7820,7 @@ DisableCors interface{}
 
 Disable Cross-Origin Resource Sharing for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#disable_cors SyntheticsTest#disable_cors}
 
 ---
 
@@ -7702,7 +7834,7 @@ DisableCsp interface{}
 
 Disable Content Security Policy for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#disable_csp SyntheticsTest#disable_csp}
 
 ---
 
@@ -7716,7 +7848,7 @@ FollowRedirects interface{}
 
 Determines whether or not the API HTTP test should follow redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#follow_redirects SyntheticsTest#follow_redirects}
 
 ---
 
@@ -7732,7 +7864,7 @@ HTTP version to use for an HTTP request in an API test or step.
 
 Valid values are `http1`, `http2`, `any`. Defaults to `"any"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
 
 ---
 
@@ -7746,7 +7878,7 @@ IgnoreServerCertificateError interface{}
 
 Ignore server certificate error for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#ignore_server_certificate_error SyntheticsTest#ignore_server_certificate_error}
 
 ---
 
@@ -7760,7 +7892,7 @@ InitialNavigationTimeout *f64
 
 Timeout before declaring the initial step as failed (in seconds) for browser tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#initial_navigation_timeout SyntheticsTest#initial_navigation_timeout}
 
 ---
 
@@ -7774,7 +7906,7 @@ MinFailureDuration *f64
 
 Minimum amount of time in failure required to trigger an alert (in seconds). Default is `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#min_failure_duration SyntheticsTest#min_failure_duration}
 
 ---
 
@@ -7788,7 +7920,7 @@ MinLocationFailed *f64
 
 Minimum number of locations in failure required to trigger an alert. Defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#min_location_failed SyntheticsTest#min_location_failed}
 
 ---
 
@@ -7802,7 +7934,7 @@ MonitorName *string
 
 The monitor name is used for the alert title as well as for all monitor dashboard widgets and SLOs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_name SyntheticsTest#monitor_name}
 
 ---
 
@@ -7816,7 +7948,7 @@ MonitorOptions SyntheticsTestOptionsListMonitorOptions
 
 monitor_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_options SyntheticsTest#monitor_options}
 
 ---
 
@@ -7828,7 +7960,7 @@ MonitorPriority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#monitor_priority SyntheticsTest#monitor_priority}.
 
 ---
 
@@ -7842,7 +7974,7 @@ NoScreenshot interface{}
 
 Prevents saving screenshots of the steps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#no_screenshot SyntheticsTest#no_screenshot}
 
 ---
 
@@ -7858,7 +7990,7 @@ A list of role identifiers pulled from the Roles API to restrict read and write 
 
 **Deprecated.** This field is no longer supported by the Datadog API. Please use `datadog_restriction_policy` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#restricted_roles SyntheticsTest#restricted_roles}
 
 ---
 
@@ -7872,7 +8004,7 @@ Retry SyntheticsTestOptionsListRetry
 
 retry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#retry SyntheticsTest#retry}
 
 ---
 
@@ -7886,7 +8018,7 @@ RumSettings SyntheticsTestOptionsListRumSettings
 
 rum_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#rum_settings SyntheticsTest#rum_settings}
 
 ---
 
@@ -7900,7 +8032,7 @@ Scheduling SyntheticsTestOptionsListScheduling
 
 scheduling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#scheduling SyntheticsTest#scheduling}
 
 ---
 
@@ -7909,7 +8041,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestBasicauth {
 	AccessKey: *string,
@@ -7966,7 +8098,7 @@ AccessKey *string
 
 Access key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#access_key SyntheticsTest#access_key}
 
 ---
 
@@ -7980,7 +8112,7 @@ AccessTokenUrl *string
 
 Access token url for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#access_token_url SyntheticsTest#access_token_url}
 
 ---
 
@@ -7994,7 +8126,7 @@ Audience *string
 
 Audience for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#audience SyntheticsTest#audience}
 
 ---
 
@@ -8008,7 +8140,7 @@ ClientId *string
 
 Client ID for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#client_id SyntheticsTest#client_id}
 
 ---
 
@@ -8022,7 +8154,7 @@ ClientSecret *string
 
 Client secret for `oauth-client` or `oauth-rop` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#client_secret SyntheticsTest#client_secret}
 
 ---
 
@@ -8036,7 +8168,7 @@ Domain *string
 
 Domain for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#domain SyntheticsTest#domain}
 
 ---
 
@@ -8050,7 +8182,7 @@ Password *string
 
 Password for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#password SyntheticsTest#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#password SyntheticsTest#password}
 
 ---
 
@@ -8064,7 +8196,7 @@ Region *string
 
 Region for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#region SyntheticsTest#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#region SyntheticsTest#region}
 
 ---
 
@@ -8078,7 +8210,7 @@ Resource *string
 
 Resource for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#resource SyntheticsTest#resource}
 
 ---
 
@@ -8092,7 +8224,7 @@ Scope *string
 
 Scope for `oauth-client` or `oauth-rop` authentication. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#scope SyntheticsTest#scope}
 
 ---
 
@@ -8106,7 +8238,7 @@ SecretKey *string
 
 Secret key for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#secret_key SyntheticsTest#secret_key}
 
 ---
 
@@ -8120,7 +8252,7 @@ ServiceName *string
 
 Service name for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#service_name SyntheticsTest#service_name}
 
 ---
 
@@ -8134,7 +8266,7 @@ SessionToken *string
 
 Session token for `SIGV4` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#session_token SyntheticsTest#session_token}
 
 ---
 
@@ -8148,7 +8280,7 @@ TokenApiAuthentication *string
 
 Token API Authentication for `oauth-client` or `oauth-rop` authentication. Valid values are `header`, `body`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#token_api_authentication SyntheticsTest#token_api_authentication}
 
 ---
 
@@ -8162,7 +8294,7 @@ Type *string
 
 Type of basic authentication to use when performing the test. Defaults to `"web"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -8176,7 +8308,7 @@ Username *string
 
 Username for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#username SyntheticsTest#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#username SyntheticsTest#username}
 
 ---
 
@@ -8190,7 +8322,7 @@ Workstation *string
 
 Workstation for `ntlm` authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#workstation SyntheticsTest#workstation}
 
 ---
 
@@ -8199,11 +8331,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificate {
-	Cert: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestRequestClientCertificateCert,
-	Key: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.syntheticsTest.SyntheticsTestRequestClientCertificateKey,
+	Cert: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestRequestClientCertificateCert,
+	Key: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.syntheticsTest.SyntheticsTestRequestClientCertificateKey,
 }
 ```
 
@@ -8226,7 +8358,7 @@ Cert SyntheticsTestRequestClientCertificateCert
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#cert SyntheticsTest#cert}
 
 ---
 
@@ -8240,7 +8372,7 @@ Key SyntheticsTestRequestClientCertificateKey
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#key SyntheticsTest#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#key SyntheticsTest#key}
 
 ---
 
@@ -8249,7 +8381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificateCert {
 	Content: *string,
@@ -8276,7 +8408,7 @@ Content *string
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -8290,7 +8422,7 @@ Filename *string
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -8299,7 +8431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestClientCertificateKey {
 	Content: *string,
@@ -8326,7 +8458,7 @@ Content *string
 
 Content of the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#content SyntheticsTest#content}
 
 ---
 
@@ -8340,7 +8472,7 @@ Filename *string
 
 File name for the certificate. Defaults to `"Provided in Terraform config"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#filename SyntheticsTest#filename}
 
 ---
 
@@ -8349,7 +8481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestDefinition {
 	Body: *string,
@@ -8430,7 +8562,7 @@ Body *string
 
 The request body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#body SyntheticsTest#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#body SyntheticsTest#body}
 
 ---
 
@@ -8444,7 +8576,7 @@ BodyType *string
 
 Type of the request body. Valid values are `text/plain`, `application/json`, `text/xml`, `text/html`, `application/x-www-form-urlencoded`, `graphql`, `application/octet-stream`, `multipart/form-data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#body_type SyntheticsTest#body_type}
 
 ---
 
@@ -8458,7 +8590,7 @@ CallType *string
 
 The type of gRPC call to perform. Valid values are `healthcheck`, `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#call_type SyntheticsTest#call_type}
 
 ---
 
@@ -8474,7 +8606,7 @@ By default, the client certificate is applied on the domain of the starting URL 
 
 If you want your client certificate to be applied on other domains instead, add them in `certificate_domains`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#certificate_domains SyntheticsTest#certificate_domains}
 
 ---
 
@@ -8488,7 +8620,7 @@ DestinationService *string
 
 For Network Path tests, an optional label displayed for the destination host in the Network Path visualization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#destination_service SyntheticsTest#destination_service}
 
 ---
 
@@ -8502,7 +8634,7 @@ DnsServer *string
 
 DNS server to use for DNS tests (`subtype = "dns"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#dns_server SyntheticsTest#dns_server}
 
 ---
 
@@ -8516,7 +8648,7 @@ DnsServerPort *string
 
 DNS server port to use for DNS tests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#dns_server_port SyntheticsTest#dns_server_port}
 
 ---
 
@@ -8530,7 +8662,7 @@ E2EQueries *f64
 
 For Network Path tests, the number of packets sent to probe the destination to measure packet loss, latency, and jitter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#e2e_queries SyntheticsTest#e2e_queries}
 
 ---
 
@@ -8544,7 +8676,7 @@ Form *map[string]*string
 
 Form data to be sent when `body_type` is `multipart/form-data`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#form SyntheticsTest#form}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#form SyntheticsTest#form}
 
 ---
 
@@ -8558,7 +8690,7 @@ Host *string
 
 Host name to perform the test with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#host SyntheticsTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#host SyntheticsTest#host}
 
 ---
 
@@ -8574,7 +8706,7 @@ HTTP version to use for an HTTP request in an API test or step.
 
 **Deprecated.** Use `http_version` in the `options_list` field instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#http_version SyntheticsTest#http_version}
 
 ---
 
@@ -8588,7 +8720,7 @@ IsMessageBase64Encoded interface{}
 
 For Websocket tests, whether the message is treated as a base64-encoded string in the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#is_message_base64_encoded SyntheticsTest#is_message_base64_encoded}
 
 ---
 
@@ -8602,7 +8734,7 @@ MaxTtl *f64
 
 For Network Path tests, the maximum time-to-live (max number of hops) used in outgoing probe packets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#max_ttl SyntheticsTest#max_ttl}
 
 ---
 
@@ -8616,7 +8748,7 @@ Message *string
 
 For gRPC, UDP, and Websocket tests, message to send with the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#message SyntheticsTest#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#message SyntheticsTest#message}
 
 ---
 
@@ -8632,7 +8764,7 @@ Either the HTTP method/verb to use or a gRPC method available on the service set
 
 Required if `subtype` is `HTTP` or if `subtype` is `grpc` and `callType` is `unary`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#method SyntheticsTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#method SyntheticsTest#method}
 
 ---
 
@@ -8646,7 +8778,7 @@ NoSavingResponseBody interface{}
 
 Determines whether or not to save the response body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#no_saving_response_body SyntheticsTest#no_saving_response_body}
 
 ---
 
@@ -8660,7 +8792,7 @@ NumberOfPackets *f64
 
 Number of pings to use per test for ICMP tests (`subtype = "icmp"`) between 0 and 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#number_of_packets SyntheticsTest#number_of_packets}
 
 ---
 
@@ -8674,7 +8806,7 @@ PersistCookies interface{}
 
 Persist cookies across redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#persist_cookies SyntheticsTest#persist_cookies}
 
 ---
 
@@ -8688,7 +8820,7 @@ PlainProtoFile *string
 
 The content of a proto file as a string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#plain_proto_file SyntheticsTest#plain_proto_file}
 
 ---
 
@@ -8702,7 +8834,7 @@ Port *string
 
 Port to use when performing the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#port SyntheticsTest#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#port SyntheticsTest#port}
 
 ---
 
@@ -8716,7 +8848,7 @@ ProtoJsonDescriptor *string
 
 A protobuf JSON descriptor. **Deprecated.** Use `plain_proto_file` instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#proto_json_descriptor SyntheticsTest#proto_json_descriptor}
 
 ---
 
@@ -8730,7 +8862,7 @@ Servername *string
 
 For SSL tests, it specifies on which server you want to initiate the TLS handshake, allowing the server to present one of multiple possible certificates on the same IP address and TCP port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#servername SyntheticsTest#servername}
 
 ---
 
@@ -8744,7 +8876,7 @@ Service *string
 
 The gRPC service on which you want to perform the gRPC call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#service SyntheticsTest#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#service SyntheticsTest#service}
 
 ---
 
@@ -8760,7 +8892,7 @@ This will turn on a traceroute probe to discover all gateways along the path to 
 
 For ICMP tests (`subtype = "icmp"`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#should_track_hops SyntheticsTest#should_track_hops}
 
 ---
 
@@ -8774,7 +8906,7 @@ SourceService *string
 
 For Network Path tests, an optional label displayed for the source host in the Network Path visualization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#source_service SyntheticsTest#source_service}
 
 ---
 
@@ -8788,7 +8920,7 @@ TcpMethod *string
 
 For TCP Network Path tests, the TCP traceroute strategy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#tcp_method SyntheticsTest#tcp_method}
 
 ---
 
@@ -8802,7 +8934,7 @@ Timeout *f64
 
 Timeout in seconds for the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#timeout SyntheticsTest#timeout}
 
 ---
 
@@ -8816,7 +8948,7 @@ TracerouteQueries *f64
 
 For Network Path tests, the number of traceroute path tracings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#traceroute_queries SyntheticsTest#traceroute_queries}
 
 ---
 
@@ -8830,7 +8962,7 @@ Url *string
 
 The URL to send the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -8839,13 +8971,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestFile {
 	Name: *string,
 	Size: *f64,
 	Type: *string,
 	Content: *string,
+	Encoding: *string,
 	OriginalFileName: *string,
 }
 ```
@@ -8858,6 +8991,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFile.property.size">Size</a></code> | <code>*f64</code> | Size of the file. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFile.property.type">Type</a></code> | <code>*string</code> | Type of the file. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFile.property.content">Content</a></code> | <code>*string</code> | Content of the file. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFile.property.encoding">Encoding</a></code> | <code>*string</code> | Encoding of the file content. Must be `base64` when content contains base64-encoded data. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFile.property.originalFileName">OriginalFileName</a></code> | <code>*string</code> | Original name of the file. |
 
 ---
@@ -8872,7 +9006,7 @@ Name *string
 
 Name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#name SyntheticsTest#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#name SyntheticsTest#name}
 
 ---
 
@@ -8886,7 +9020,7 @@ Size *f64
 
 Size of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#size SyntheticsTest#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#size SyntheticsTest#size}
 
 ---
 
@@ -8900,7 +9034,7 @@ Type *string
 
 Type of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#type SyntheticsTest#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#type SyntheticsTest#type}
 
 ---
 
@@ -8914,7 +9048,21 @@ Content *string
 
 Content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#content SyntheticsTest#content}
+
+---
+
+##### `Encoding`<sup>Optional</sup> <a name="Encoding" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFile.property.encoding"></a>
+
+```go
+Encoding *string
+```
+
+- *Type:* *string
+
+Encoding of the file content. Must be `base64` when content contains base64-encoded data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#encoding SyntheticsTest#encoding}
 
 ---
 
@@ -8928,7 +9076,7 @@ OriginalFileName *string
 
 Original name of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#original_file_name SyntheticsTest#original_file_name}
 
 ---
 
@@ -8937,7 +9085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 &syntheticstest.SyntheticsTestRequestProxy {
 	Url: *string,
@@ -8964,7 +9112,7 @@ Url *string
 
 URL of the proxy to perform the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#url SyntheticsTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#url SyntheticsTest#url}
 
 ---
 
@@ -8978,7 +9126,7 @@ Headers *map[string]*string
 
 Header name and value map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_test#headers SyntheticsTest#headers}
 
 ---
 
@@ -8989,7 +9137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepAssertionList
 ```
@@ -9149,7 +9297,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepAssertionOutputReference
 ```
@@ -9709,7 +9857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionTargetjsonpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepAssertionTargetjsonpathOutputReference
 ```
@@ -10060,7 +10208,7 @@ func InternalValue() SyntheticsTestApiStepAssertionTargetjsonpath
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionTargetjsonschemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepAssertionTargetjsonschemaOutputReference
 ```
@@ -10360,7 +10508,7 @@ func InternalValue() SyntheticsTestApiStepAssertionTargetjsonschema
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepAssertionTargetxpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepAssertionTargetxpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepAssertionTargetxpathOutputReference
 ```
@@ -10682,7 +10830,7 @@ func InternalValue() SyntheticsTestApiStepAssertionTargetxpath
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepExtractedValueList
 ```
@@ -10842,7 +10990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepExtractedValueOutputReference
 ```
@@ -11246,7 +11394,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepExtractedValueParserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepExtractedValueParserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepExtractedValueParserOutputReference
 ```
@@ -11546,7 +11694,7 @@ func InternalValue() SyntheticsTestApiStepExtractedValueParser
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepList
 ```
@@ -11706,7 +11854,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepOutputReference
 ```
@@ -12632,7 +12780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestBasicauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestBasicauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestBasicauthOutputReference
 ```
@@ -13374,7 +13522,7 @@ func InternalValue() SyntheticsTestApiStepRequestBasicauth
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateCertOutputReference
 ```
@@ -13681,7 +13829,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificateCert
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateKeyOutputReference
 ```
@@ -13988,7 +14136,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificateKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestClientCertificateOutputReference
 ```
@@ -14307,7 +14455,7 @@ func InternalValue() SyntheticsTestApiStepRequestClientCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestDefinitionOutputReference
 ```
@@ -15542,7 +15690,7 @@ func InternalValue() SyntheticsTestApiStepRequestDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestApiStepRequestFileList
 ```
@@ -15702,7 +15850,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestApiStepRequestFileOutputReference
 ```
@@ -15766,6 +15914,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.resetContent">ResetContent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.resetEncoding">ResetEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.resetOriginalFileName">ResetOriginalFileName</a></code> | *No description.* |
 
 ---
@@ -15926,6 +16075,12 @@ Returns a reversible string representation.
 func ResetContent()
 ```
 
+##### `ResetEncoding` <a name="ResetEncoding" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.resetEncoding"></a>
+
+```go
+func ResetEncoding()
+```
+
 ##### `ResetOriginalFileName` <a name="ResetOriginalFileName" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.resetOriginalFileName"></a>
 
 ```go
@@ -15941,11 +16096,13 @@ func ResetOriginalFileName()
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.bucketKey">BucketKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.contentInput">ContentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.encodingInput">EncodingInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.originalFileNameInput">OriginalFileNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.sizeInput">SizeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.content">Content</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.encoding">Encoding</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.originalFileName">OriginalFileName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
@@ -15998,6 +16155,16 @@ func ContentInput() *string
 
 ---
 
+##### `EncodingInput`<sup>Optional</sup> <a name="EncodingInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.encodingInput"></a>
+
+```go
+func EncodingInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.nameInput"></a>
 
 ```go
@@ -16042,6 +16209,16 @@ func TypeInput() *string
 
 ```go
 func Content() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Encoding`<sup>Required</sup> <a name="Encoding" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestFileOutputReference.property.encoding"></a>
+
+```go
+func Encoding() *string
 ```
 
 - *Type:* *string
@@ -16104,7 +16281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRequestProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRequestProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRequestProxyOutputReference
 ```
@@ -16404,7 +16581,7 @@ func InternalValue() SyntheticsTestApiStepRequestProxy
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestApiStepRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestApiStepRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestApiStepRetryOutputReference
 ```
@@ -16711,7 +16888,7 @@ func InternalValue() SyntheticsTestApiStepRetry
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestAssertionList
 ```
@@ -16871,7 +17048,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestAssertionOutputReference
 ```
@@ -17431,7 +17608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionTargetjsonpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestAssertionTargetjsonpathOutputReference
 ```
@@ -17782,7 +17959,7 @@ func InternalValue() SyntheticsTestAssertionTargetjsonpath
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetjsonschemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionTargetjsonschemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestAssertionTargetjsonschemaOutputReference
 ```
@@ -18082,7 +18259,7 @@ func InternalValue() SyntheticsTestAssertionTargetjsonschema
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestAssertionTargetxpathOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestAssertionTargetxpathOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestAssertionTargetxpathOutputReference
 ```
@@ -18404,7 +18581,7 @@ func InternalValue() SyntheticsTestAssertionTargetxpath
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestBrowserStepList
 ```
@@ -18564,7 +18741,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestBrowserStepOutputReference
 ```
@@ -19148,12 +19325,639 @@ func InternalValue() interface{}
 ---
 
 
+### SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference <a name="SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
+
+syntheticstest.NewSyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.resetX">ResetX</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.resetY">ResetY</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetX` <a name="ResetX" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.resetX"></a>
+
+```go
+func ResetX()
+```
+
+##### `ResetY` <a name="ResetY" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.resetY"></a>
+
+```go
+func ResetY()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.xInput">XInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.yInput">YInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.x">X</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.y">Y</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset">SyntheticsTestBrowserStepParamsDragDropOptionsOffset</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `XInput`<sup>Optional</sup> <a name="XInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.xInput"></a>
+
+```go
+func XInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `YInput`<sup>Optional</sup> <a name="YInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.yInput"></a>
+
+```go
+func YInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `X`<sup>Required</sup> <a name="X" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.x"></a>
+
+```go
+func X() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Y`<sup>Required</sup> <a name="Y" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.y"></a>
+
+```go
+func Y() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() SyntheticsTestBrowserStepParamsDragDropOptionsOffset
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset">SyntheticsTestBrowserStepParamsDragDropOptionsOffset</a>
+
+---
+
+
+### SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference <a name="SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
+
+syntheticstest.NewSyntheticsTestBrowserStepParamsDragDropOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.putOffset">PutOffset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.resetDelay">ResetDelay</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.resetOffset">ResetOffset</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutOffset` <a name="PutOffset" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.putOffset"></a>
+
+```go
+func PutOffset(value SyntheticsTestBrowserStepParamsDragDropOptionsOffset)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.putOffset.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset">SyntheticsTestBrowserStepParamsDragDropOptionsOffset</a>
+
+---
+
+##### `ResetDelay` <a name="ResetDelay" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.resetDelay"></a>
+
+```go
+func ResetDelay()
+```
+
+##### `ResetOffset` <a name="ResetOffset" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.resetOffset"></a>
+
+```go
+func ResetOffset()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.offset">Offset</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference">SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.delayInput">DelayInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.offsetInput">OffsetInput</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset">SyntheticsTestBrowserStepParamsDragDropOptionsOffset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.delay">Delay</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions">SyntheticsTestBrowserStepParamsDragDropOptions</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Offset`<sup>Required</sup> <a name="Offset" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.offset"></a>
+
+```go
+func Offset() SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference">SyntheticsTestBrowserStepParamsDragDropOptionsOffsetOutputReference</a>
+
+---
+
+##### `DelayInput`<sup>Optional</sup> <a name="DelayInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.delayInput"></a>
+
+```go
+func DelayInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `OffsetInput`<sup>Optional</sup> <a name="OffsetInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.offsetInput"></a>
+
+```go
+func OffsetInput() SyntheticsTestBrowserStepParamsDragDropOptionsOffset
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOffset">SyntheticsTestBrowserStepParamsDragDropOptionsOffset</a>
+
+---
+
+##### `Delay`<sup>Required</sup> <a name="Delay" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.delay"></a>
+
+```go
+func Delay() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() SyntheticsTestBrowserStepParamsDragDropOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions">SyntheticsTestBrowserStepParamsDragDropOptions</a>
+
+---
+
+
 ### SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference <a name="SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsElementUserLocatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference
 ```
@@ -19466,7 +20270,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsElementUserLocator
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsElementUserLocatorValueOutputReference
 ```
@@ -19766,7 +20570,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsElementUserLocatorValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsOutputReference
 ```
@@ -19811,6 +20615,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putDragDropOptions">PutDragDropOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putElementUserLocator">PutElementUserLocator</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putPattern">PutPattern</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putVariable">PutVariable</a></code> | *No description.* |
@@ -19821,6 +20626,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetClickWithJavascript">ResetClickWithJavascript</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetCode">ResetCode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetDelay">ResetDelay</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetDragDropOptions">ResetDragDropOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetElement">ResetElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetElementUserLocator">ResetElementUserLocator</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetEmail">ResetEmail</a></code> | *No description.* |
@@ -19990,6 +20796,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDragDropOptions` <a name="PutDragDropOptions" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putDragDropOptions"></a>
+
+```go
+func PutDragDropOptions(value SyntheticsTestBrowserStepParamsDragDropOptions)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putDragDropOptions.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions">SyntheticsTestBrowserStepParamsDragDropOptions</a>
+
+---
+
 ##### `PutElementUserLocator` <a name="PutElementUserLocator" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.putElementUserLocator"></a>
 
 ```go
@@ -20066,6 +20884,12 @@ func ResetCode()
 
 ```go
 func ResetDelay()
+```
+
+##### `ResetDragDropOptions` <a name="ResetDragDropOptions" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetDragDropOptions"></a>
+
+```go
+func ResetDragDropOptions()
 ```
 
 ##### `ResetElement` <a name="ResetElement" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.resetElement"></a>
@@ -20171,6 +20995,7 @@ func ResetY()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.dragDropOptions">DragDropOptions</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference">SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementUserLocator">ElementUserLocator</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference">SyntheticsTestBrowserStepParamsElementUserLocatorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.pattern">Pattern</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsPatternOutputReference">SyntheticsTestBrowserStepParamsPatternOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.variable">Variable</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference">SyntheticsTestBrowserStepParamsVariableOutputReference</a></code> | *No description.* |
@@ -20181,6 +21006,7 @@ func ResetY()
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.clickWithJavascriptInput">ClickWithJavascriptInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.codeInput">CodeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.delayInput">DelayInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.dragDropOptionsInput">DragDropOptionsInput</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions">SyntheticsTestBrowserStepParamsDragDropOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementInput">ElementInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.elementUserLocatorInput">ElementUserLocatorInput</a></code> | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsElementUserLocator">SyntheticsTestBrowserStepParamsElementUserLocator</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.emailInput">EmailInput</a></code> | <code>*string</code> | *No description.* |
@@ -20242,6 +21068,16 @@ func Fqn() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DragDropOptions`<sup>Required</sup> <a name="DragDropOptions" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.dragDropOptions"></a>
+
+```go
+func DragDropOptions() SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference">SyntheticsTestBrowserStepParamsDragDropOptionsOutputReference</a>
 
 ---
 
@@ -20342,6 +21178,16 @@ func DelayInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `DragDropOptionsInput`<sup>Optional</sup> <a name="DragDropOptionsInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsOutputReference.property.dragDropOptionsInput"></a>
+
+```go
+func DragDropOptionsInput() SyntheticsTestBrowserStepParamsDragDropOptions
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsDragDropOptions">SyntheticsTestBrowserStepParamsDragDropOptions</a>
 
 ---
 
@@ -20721,7 +21567,7 @@ func InternalValue() SyntheticsTestBrowserStepParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsPatternOutputReference
 ```
@@ -21028,7 +21874,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsPattern
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserStepParamsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserStepParamsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestBrowserStepParamsVariableOutputReference
 ```
@@ -21364,7 +22210,7 @@ func InternalValue() SyntheticsTestBrowserStepParamsVariable
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestBrowserVariableList
 ```
@@ -21524,7 +22370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestBrowserVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestBrowserVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestBrowserVariableOutputReference
 ```
@@ -21951,7 +22797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestConfigVariableList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestConfigVariableList
 ```
@@ -22111,7 +22957,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestConfigVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestConfigVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestConfigVariableOutputReference
 ```
@@ -22538,7 +23384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListBindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestMobileOptionsListBindingsList
 ```
@@ -22698,7 +23544,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestMobileOptionsListBindingsOutputReference
 ```
@@ -23023,7 +23869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListCiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListCiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListCiOutputReference
 ```
@@ -23294,7 +24140,7 @@ func InternalValue() SyntheticsTestMobileOptionsListCi
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMobileApplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListMobileApplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListMobileApplicationOutputReference
 ```
@@ -23609,7 +24455,7 @@ func InternalValue() SyntheticsTestMobileOptionsListMobileApplication
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListMonitorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListMonitorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListMonitorOptionsOutputReference
 ```
@@ -23974,7 +24820,7 @@ func InternalValue() SyntheticsTestMobileOptionsListMonitorOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListRetryOutputReference
 ```
@@ -24281,7 +25127,7 @@ func InternalValue() SyntheticsTestMobileOptionsListRetry
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListSchedulingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListSchedulingOutputReference
 ```
@@ -24587,7 +25433,7 @@ func InternalValue() SyntheticsTestMobileOptionsListScheduling
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListSchedulingTimeframesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestMobileOptionsListSchedulingTimeframesList
 ```
@@ -24747,7 +25593,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestMobileOptionsListSchedulingTimeframesOutputReference
 ```
@@ -25080,7 +25926,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileOptionsListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileOptionsListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileOptionsListStructOutputReference
 ```
@@ -25879,7 +26725,7 @@ func InternalValue() SyntheticsTestMobileOptionsListStruct
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestMobileStepList
 ```
@@ -26039,7 +26885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestMobileStepOutputReference
 ```
@@ -26559,7 +27405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsElementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileStepParamsElementOutputReference
 ```
@@ -27066,7 +27912,7 @@ func InternalValue() SyntheticsTestMobileStepParamsElement
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementRelativePositionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsElementRelativePositionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileStepParamsElementRelativePositionOutputReference
 ```
@@ -27373,7 +28219,7 @@ func InternalValue() SyntheticsTestMobileStepParamsElementRelativePosition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsElementUserLocatorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileStepParamsElementUserLocatorOutputReference
 ```
@@ -27693,7 +28539,7 @@ func InternalValue() SyntheticsTestMobileStepParamsElementUserLocator
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsElementUserLocatorValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestMobileStepParamsElementUserLocatorValuesList
 ```
@@ -27853,7 +28699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestMobileStepParamsElementUserLocatorValuesOutputReference
 ```
@@ -28178,7 +29024,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileStepParamsOutputReference
 ```
@@ -28843,7 +29689,7 @@ func InternalValue() SyntheticsTestMobileStepParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsPositionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestMobileStepParamsPositionsList
 ```
@@ -29003,7 +29849,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsPositionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsPositionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestMobileStepParamsPositionsOutputReference
 ```
@@ -29328,7 +30174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestMobileStepParamsVariableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestMobileStepParamsVariableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestMobileStepParamsVariableOutputReference
 ```
@@ -29628,7 +30474,7 @@ func InternalValue() SyntheticsTestMobileStepParamsVariable
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListCiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListCiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListCiOutputReference
 ```
@@ -29906,7 +30752,7 @@ func InternalValue() SyntheticsTestOptionsListCi
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListMonitorOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListMonitorOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListMonitorOptionsOutputReference
 ```
@@ -30271,7 +31117,7 @@ func InternalValue() SyntheticsTestOptionsListMonitorOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListRetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListRetryOutputReference
 ```
@@ -30578,7 +31424,7 @@ func InternalValue() SyntheticsTestOptionsListRetry
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListRumSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListRumSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListRumSettingsOutputReference
 ```
@@ -30907,7 +31753,7 @@ func InternalValue() SyntheticsTestOptionsListRumSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListSchedulingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListSchedulingOutputReference
 ```
@@ -31213,7 +32059,7 @@ func InternalValue() SyntheticsTestOptionsListScheduling
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListSchedulingTimeframesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestOptionsListSchedulingTimeframesList
 ```
@@ -31373,7 +32219,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListSchedulingTimeframesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListSchedulingTimeframesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestOptionsListSchedulingTimeframesOutputReference
 ```
@@ -31706,7 +32552,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestOptionsListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestOptionsListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestOptionsListStructOutputReference
 ```
@@ -32680,7 +33526,7 @@ func InternalValue() SyntheticsTestOptionsListStruct
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestBasicauthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestBasicauthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestBasicauthOutputReference
 ```
@@ -33422,7 +34268,7 @@ func InternalValue() SyntheticsTestRequestBasicauth
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateCertOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateCertOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateCertOutputReference
 ```
@@ -33729,7 +34575,7 @@ func InternalValue() SyntheticsTestRequestClientCertificateCert
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateKeyOutputReference
 ```
@@ -34036,7 +34882,7 @@ func InternalValue() SyntheticsTestRequestClientCertificateKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestClientCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestClientCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestClientCertificateOutputReference
 ```
@@ -34355,7 +35201,7 @@ func InternalValue() SyntheticsTestRequestClientCertificate
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestDefinitionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestDefinitionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestDefinitionOutputReference
 ```
@@ -35445,7 +36291,7 @@ func InternalValue() SyntheticsTestRequestDefinition
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SyntheticsTestRequestFileList
 ```
@@ -35605,7 +36451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SyntheticsTestRequestFileOutputReference
 ```
@@ -35669,6 +36515,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.resetContent">ResetContent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.resetEncoding">ResetEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.resetOriginalFileName">ResetOriginalFileName</a></code> | *No description.* |
 
 ---
@@ -35829,6 +36676,12 @@ Returns a reversible string representation.
 func ResetContent()
 ```
 
+##### `ResetEncoding` <a name="ResetEncoding" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.resetEncoding"></a>
+
+```go
+func ResetEncoding()
+```
+
 ##### `ResetOriginalFileName` <a name="ResetOriginalFileName" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.resetOriginalFileName"></a>
 
 ```go
@@ -35844,11 +36697,13 @@ func ResetOriginalFileName()
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.bucketKey">BucketKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.contentInput">ContentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.encodingInput">EncodingInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.originalFileNameInput">OriginalFileNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.sizeInput">SizeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.content">Content</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.encoding">Encoding</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.originalFileName">OriginalFileName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
@@ -35901,6 +36756,16 @@ func ContentInput() *string
 
 ---
 
+##### `EncodingInput`<sup>Optional</sup> <a name="EncodingInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.encodingInput"></a>
+
+```go
+func EncodingInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.nameInput"></a>
 
 ```go
@@ -35945,6 +36810,16 @@ func TypeInput() *string
 
 ```go
 func Content() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Encoding`<sup>Required</sup> <a name="Encoding" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestFileOutputReference.property.encoding"></a>
+
+```go
+func Encoding() *string
 ```
 
 - *Type:* *string
@@ -36007,7 +36882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsTest.SyntheticsTestRequestProxyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/syntheticstest"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/syntheticstest"
 
 syntheticstest.NewSyntheticsTestRequestProxyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SyntheticsTestRequestProxyOutputReference
 ```

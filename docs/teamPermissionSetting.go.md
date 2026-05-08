@@ -4,12 +4,12 @@
 
 ### TeamPermissionSetting <a name="TeamPermissionSetting" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teampermissionsetting"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teampermissionsetting"
 
 teampermissionsetting.NewTeamPermissionSetting(scope Construct, id *string, config TeamPermissionSettingConfig) TeamPermissionSetting
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teampermissionsetting"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teampermissionsetting"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ teampermissionsetting.TeamPermissionSetting_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teampermissionsetting"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ teampermissionsetting.TeamPermissionSetting_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teampermissionsetting"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teampermissionsetting"
 
 teampermissionsetting.TeamPermissionSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the TeamPermissionSetting to i
 
 The id of the existing TeamPermissionSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teampermissionsetting"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teampermissionsetting"
 
 &teampermissionsetting.TeamPermissionSettingConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ Action *string
 
 The identifier for the action. Valid values are `manage_membership`, `edit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
 
 ---
 
@@ -893,7 +893,7 @@ TeamId *string
 
 ID of the team the team permission setting is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
 
 ---
 
@@ -909,7 +909,7 @@ The action value.
 
 Valid values are dependent on the action. `manage_membership` action allows `admins`, `members`, `organization`, `user_access_manage` values. `edit` action allows `admins`, `members`, `teams_manage` values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
 
 ---
 

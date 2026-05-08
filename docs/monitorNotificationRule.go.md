@@ -4,12 +4,12 @@
 
 ### MonitorNotificationRule <a name="MonitorNotificationRule" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule datadog_monitor_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.NewMonitorNotificationRule(scope Construct, id *string, config MonitorNotificationRuleConfig) MonitorNotificationRule
 ```
@@ -447,7 +447,7 @@ func ResetRecipients()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ monitornotificationrule.MonitorNotificationRule_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ monitornotificationrule.MonitorNotificationRule_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.MonitorNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the MonitorNotificationRule to
 
 The id of the existing MonitorNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 &monitornotificationrule.MonitorNotificationRuleConditionalRecipients {
 	Conditions: interface{},
@@ -862,7 +862,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#conditions MonitorNotificationRule#conditions}
 
 ---
 
@@ -876,7 +876,7 @@ FallbackRecipients *[]*string
 
 If none of the `conditions` applied, `fallback_recipients` will get notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#fallback_recipients MonitorNotificationRule#fallback_recipients}
 
 ---
 
@@ -885,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipientsConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 &monitornotificationrule.MonitorNotificationRuleConditionalRecipientsConditions {
 	Recipients: *[]*string,
@@ -914,7 +914,7 @@ A list of recipients to notify.
 
 Uses the same format as the monitor message field. Must not start with an '@'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
 
 ---
 
@@ -930,7 +930,7 @@ Defines the condition under which the recipients are notified.
 
 Supported formats: Monitor status condition using `transition_type:<status>` (for example `transition_type:is_alert`) or a single tag `key:value pair` (for example `env:prod`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
 
 ---
 
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 &monitornotificationrule.MonitorNotificationRuleConfig {
 	Connection: interface{},
@@ -950,8 +950,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotific
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ConditionalRecipients: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients,
-	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.monitorNotificationRule.MonitorNotificationRuleFilter,
+	ConditionalRecipients: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitorNotificationRule.MonitorNotificationRuleConditionalRecipients,
+	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.monitorNotificationRule.MonitorNotificationRuleFilter,
 	Recipients: *[]*string,
 }
 ```
@@ -1054,7 +1054,7 @@ Name *string
 
 The name of the monitor notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#name MonitorNotificationRule#name}
 
 ---
 
@@ -1068,7 +1068,7 @@ ConditionalRecipients MonitorNotificationRuleConditionalRecipients
 
 conditional_recipients block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#conditional_recipients MonitorNotificationRule#conditional_recipients}
 
 ---
 
@@ -1082,7 +1082,7 @@ Filter MonitorNotificationRuleFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#filter MonitorNotificationRule#filter}
 
 ---
 
@@ -1096,7 +1096,7 @@ Recipients *[]*string
 
 List of recipients to notify. Cannot be used with `conditional_recipients`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#recipients MonitorNotificationRule#recipients}
 
 ---
 
@@ -1105,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 &monitornotificationrule.MonitorNotificationRuleFilter {
 	Scope: *string,
@@ -1132,7 +1132,7 @@ Scope *string
 
 A scope expression composed of `key:value` pairs (such as `env:prod`) with boolean operators (AND, OR, NOT) and parentheses for grouping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#scope MonitorNotificationRule#scope}
 
 ---
 
@@ -1146,7 +1146,7 @@ Tags *[]*string
 
 A list of tag key:value pairs (e.g. team:product). All tags must match (AND semantics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/monitor_notification_rule#tags MonitorNotificationRule#tags}
 
 ---
 
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipientsConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.NewMonitorNotificationRuleConditionalRecipientsConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorNotificationRuleConditionalRecipientsConditionsList
 ```
@@ -1317,7 +1317,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipientsConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.NewMonitorNotificationRuleConditionalRecipientsConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitorNotificationRuleConditionalRecipientsConditionsOutputReference
 ```
@@ -1628,7 +1628,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleConditionalRecipientsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.NewMonitorNotificationRuleConditionalRecipientsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorNotificationRuleConditionalRecipientsOutputReference
 ```
@@ -1948,7 +1948,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.monitorNotificationRule.MonitorNotificationRuleFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/monitornotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/monitornotificationrule"
 
 monitornotificationrule.NewMonitorNotificationRuleFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitorNotificationRuleFilterOutputReference
 ```

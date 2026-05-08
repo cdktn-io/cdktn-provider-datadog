@@ -4,7 +4,7 @@
 
 ### Dataset <a name="Dataset" id="@cdktn/provider-datadog.dataset.Dataset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset datadog_dataset}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset datadog_dataset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataset.Dataset.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the Dataset to import.
 
 The id of the existing Dataset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ public string Name { get; set; }
 
 The name of the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#name Dataset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#name Dataset#name}
 
 ---
 
@@ -937,7 +937,7 @@ An array of principals.
 
 A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role` and `team`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#principals Dataset#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#principals Dataset#principals}
 
 ---
 
@@ -951,7 +951,7 @@ public IResolvable|DatasetProductFilters[] ProductFilters { get; set; }
 
 product_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#product_filters Dataset#product_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#product_filters Dataset#product_filters}
 
 ---
 
@@ -973,7 +973,7 @@ new DatasetProductFilters {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.dataset.DatasetProductFilters.property.filters">Filters</a></code> | <code>string[]</code> | A list of tag-based filters used to restrict access to the product type. Each filter is formatted as `@tag.key:value`. |
-| <code><a href="#@cdktn/provider-datadog.dataset.DatasetProductFilters.property.product">Product</a></code> | <code>string</code> | The product type of the dataset. Supported types: `apm`, `rum`, `synthetics`, `metrics`, `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`. |
+| <code><a href="#@cdktn/provider-datadog.dataset.DatasetProductFilters.property.product">Product</a></code> | <code>string</code> | The product type of the dataset. |
 
 ---
 
@@ -987,7 +987,7 @@ public string[] Filters { get; set; }
 
 A list of tag-based filters used to restrict access to the product type. Each filter is formatted as `@tag.key:value`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#filters Dataset#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#filters Dataset#filters}
 
 ---
 
@@ -999,9 +999,11 @@ public string Product { get; set; }
 
 - *Type:* string
 
-The product type of the dataset. Supported types: `apm`, `rum`, `synthetics`, `metrics`, `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`.
+The product type of the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#product Dataset#product}
+Supported types: `apm`, `rum`, `synthetics`, `metrics` (Custom Metrics), `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#product Dataset#product}
 
 ---
 

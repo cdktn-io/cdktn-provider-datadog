@@ -4,12 +4,12 @@
 
 ### SecurityMonitoringRuleJson <a name="SecurityMonitoringRuleJson" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrulejson"
 
 securitymonitoringrulejson.NewSecurityMonitoringRuleJson(scope Construct, id *string, config SecurityMonitoringRuleJsonConfig) SecurityMonitoringRuleJson
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ securitymonitoringrulejson.SecurityMonitoringRuleJson_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrulejson"
 
 securitymonitoringrulejson.SecurityMonitoringRuleJson_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SecurityMonitoringRuleJson
 
 The id of the existing SecurityMonitoringRuleJson that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule_json#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule_json#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJsonConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/securitymonitoringrulejson"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonitoringrulejson"
 
 &securitymonitoringrulejson.SecurityMonitoringRuleJsonConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ Json *string
 
 The JSON definition of the Security Monitoring Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
 
 ---
 

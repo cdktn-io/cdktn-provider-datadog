@@ -4,12 +4,12 @@
 
 ### IntegrationOpsgenieServiceObject <a name="IntegrationOpsgenieServiceObject" id="@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object datadog_integration_opsgenie_service_object}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationopsgenieserviceobject"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.NewIntegrationOpsgenieServiceObject(scope Construct, id *string, config IntegrationOpsgenieServiceObjectConfig) IntegrationOpsgenieServiceObject
 ```
@@ -414,7 +414,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationopsgenieserviceobject"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationopsgenieserviceobject"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationopsgenieserviceobject"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationopsgenieserviceobject"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationopsgenieserviceobject"
 
 integrationopsgenieserviceobject.IntegrationOpsgenieServiceObject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the IntegrationOpsgenieService
 
 The id of the existing IntegrationOpsgenieServiceObject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationopsgenieserviceobject"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationopsgenieserviceobject"
 
 &integrationopsgenieserviceobject.IntegrationOpsgenieServiceObjectConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationops
 | <code><a href="#@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.opsgenieApiKey">OpsgenieApiKey</a></code> | <code>*string</code> | The Opsgenie API key for the Opsgenie service. |
 | <code><a href="#@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.region">Region</a></code> | <code>*string</code> | The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`. |
 | <code><a href="#@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.customUrl">CustomUrl</a></code> | <code>*string</code> | The custom url for a custom region. |
-| <code><a href="#@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}. |
+| <code><a href="#@cdktn/provider-datadog.integrationOpsgenieServiceObject.IntegrationOpsgenieServiceObjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}. |
 
 ---
 
@@ -930,7 +930,7 @@ Name *string
 
 The name for the Opsgenie service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object#name IntegrationOpsgenieServiceObject#name}
 
 ---
 
@@ -946,7 +946,7 @@ The Opsgenie API key for the Opsgenie service.
 
 Note: Since the Datadog API never returns Opsgenie API keys, it is impossible to detect [drifts](https://www.hashicorp.com/blog/detecting-and-managing-drift-with-terraform). The best way to solve a drift is to manually mark the Service Object resource with [terraform taint](https://www.terraform.io/docs/commands/taint.html) to have it destroyed and recreated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object#opsgenie_api_key IntegrationOpsgenieServiceObject#opsgenie_api_key}
 
 ---
 
@@ -960,7 +960,7 @@ Region *string
 
 The region for the Opsgenie service. Valid values are `us`, `eu`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object#region IntegrationOpsgenieServiceObject#region}
 
 ---
 
@@ -974,7 +974,7 @@ CustomUrl *string
 
 The custom url for a custom region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object#custom_url IntegrationOpsgenieServiceObject#custom_url}
 
 ---
 
@@ -986,7 +986,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_opsgenie_service_object#id IntegrationOpsgenieServiceObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

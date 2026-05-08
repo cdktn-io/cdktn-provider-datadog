@@ -4,12 +4,12 @@
 
 ### IncidentType <a name="IncidentType" id="@cdktn/provider-datadog.incidentType.IncidentType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type datadog_incident_type}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type datadog_incident_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentType.IncidentType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 
 incidenttype.NewIncidentType(scope Construct, id *string, config IncidentTypeConfig) IncidentType
 ```
@@ -414,7 +414,7 @@ func ResetIsDefault()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.incidentType.IncidentType.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 
 incidenttype.IncidentType_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.incidentType.IncidentType.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 
 incidenttype.IncidentType_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ incidenttype.IncidentType_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.incidentType.IncidentType.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 
 incidenttype.IncidentType_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ incidenttype.IncidentType_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.incidentType.IncidentType.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 
 incidenttype.IncidentType_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the IncidentType to import.
 
 The id of the existing IncidentType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentType.IncidentTypeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidenttype"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidenttype"
 
 &incidenttype.IncidentTypeConfig {
 	Connection: interface{},
@@ -893,7 +893,7 @@ Name *string
 
 Name of the incident type. Must be between 1 and 50 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type#name IncidentType#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type#name IncidentType#name}
 
 ---
 
@@ -907,7 +907,7 @@ Description *string
 
 Description of the incident type. The description can have a maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type#description IncidentType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type#description IncidentType#description}
 
 ---
 
@@ -921,7 +921,7 @@ IsDefault interface{}
 
 Whether this incident type is the default type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_type#is_default IncidentType#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_type#is_default IncidentType#is_default}
 
 ---
 

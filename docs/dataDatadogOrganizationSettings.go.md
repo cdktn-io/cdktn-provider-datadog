@@ -4,12 +4,12 @@
 
 ### DataDatadogOrganizationSettings <a name="DataDatadogOrganizationSettings" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings datadog_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings datadog_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettings(scope Construct, id *string, config DataDatadogOrganizationSettingsConfig) DataDatadogOrganizationSettings
 ```
@@ -318,7 +318,7 @@ func ResetSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.DataDatadogOrganizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.DataDatadogOrganizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatadogorganizationsettings.DataDatadogOrganizationSettings_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.DataDatadogOrganizationSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatadogorganizationsettings.DataDatadogOrganizationSettings_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.DataDatadogOrganizationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatadogOrganizationSet
 
 The id of the existing DataDatadogOrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 &datadatadogorganizationsettings.DataDatadogOrganizationSettingsConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ Settings interface{}
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
 
 ---
 
@@ -769,7 +769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 &datadatadogorganizationsettings.DataDatadogOrganizationSettingsSettings {
 	Saml: interface{},
@@ -800,7 +800,7 @@ Saml interface{}
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings#saml DataDatadogOrganizationSettings#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings#saml DataDatadogOrganizationSettings#saml}
 
 ---
 
@@ -814,7 +814,7 @@ SamlAutocreateUsersDomains interface{}
 
 saml_autocreate_users_domains block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings#saml_autocreate_users_domains DataDatadogOrganizationSettings#saml_autocreate_users_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings#saml_autocreate_users_domains DataDatadogOrganizationSettings#saml_autocreate_users_domains}
 
 ---
 
@@ -828,7 +828,7 @@ SamlIdpInitiatedLogin interface{}
 
 saml_idp_initiated_login block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings#saml_idp_initiated_login DataDatadogOrganizationSettings#saml_idp_initiated_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings#saml_idp_initiated_login DataDatadogOrganizationSettings#saml_idp_initiated_login}
 
 ---
 
@@ -842,7 +842,7 @@ SamlStrictMode interface{}
 
 saml_strict_mode block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/organization_settings#saml_strict_mode DataDatadogOrganizationSettings#saml_strict_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/organization_settings#saml_strict_mode DataDatadogOrganizationSettings#saml_strict_mode}
 
 ---
 
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 &datadatadogorganizationsettings.DataDatadogOrganizationSettingsSettingsSaml {
 
@@ -864,7 +864,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorg
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 &datadatadogorganizationsettings.DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomains {
 
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorg
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 &datadatadogorganizationsettings.DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLogin {
 
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorg
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlStrictMode.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 &datadatadogorganizationsettings.DataDatadogOrganizationSettingsSettingsSamlStrictMode {
 
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorg
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrganizationSettingsSettingsList
 ```
@@ -1065,7 +1065,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrganizationSettingsSettingsOutputReference
 ```
@@ -1566,7 +1566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsList
 ```
@@ -1726,7 +1726,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsOutputReference
 ```
@@ -2015,7 +2015,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginList
 ```
@@ -2175,7 +2175,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginOutputReference
 ```
@@ -2453,7 +2453,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrganizationSettingsSettingsSamlList
 ```
@@ -2613,7 +2613,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrganizationSettingsSettingsSamlOutputReference
 ```
@@ -2891,7 +2891,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlStrictModeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlStrictModeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogOrganizationSettingsSettingsSamlStrictModeList
 ```
@@ -3051,7 +3051,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrganizationSettings.DataDatadogOrganizationSettingsSettingsSamlStrictModeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogorganizationsettings"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogorganizationsettings"
 
 datadatadogorganizationsettings.NewDataDatadogOrganizationSettingsSettingsSamlStrictModeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogOrganizationSettingsSettingsSamlStrictModeOutputReference
 ```

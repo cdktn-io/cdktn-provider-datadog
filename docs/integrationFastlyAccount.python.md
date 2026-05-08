@@ -4,7 +4,7 @@
 
 ### IntegrationFastlyAccount <a name="IntegrationFastlyAccount" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account datadog_integration_fastly_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer"></a>
 
@@ -21,8 +21,10 @@ integrationFastlyAccount.IntegrationFastlyAccount(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  api_key: str,
-  name: str
+  name: str,
+  api_key: str = None,
+  api_key_wo: str = None,
+  api_key_wo_version: str = None
 )
 ```
 
@@ -37,8 +39,10 @@ integrationFastlyAccount.IntegrationFastlyAccount(
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | The API key for the Fastly account. |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the Fastly account. |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKey">api_key</a></code> | <code>str</code> | The API key for the Fastly account. Exactly one of `api_key` or `api_key_wo` must be set. |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKeyWo">api_key_wo</a></code> | <code>str</code> | Write-only API key for the Fastly account. |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKeyWoVersion">api_key_wo_version</a></code> | <code>str</code> | Version for `api_key_wo` rotation. Changing this triggers an update. String length must be at least 1. |
 
 ---
 
@@ -102,23 +106,45 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `api_key`<sup>Required</sup> <a name="api_key" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKey"></a>
-
-- *Type:* str
-
-The API key for the Fastly account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 The name of the Fastly account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+
+---
+
+##### `api_key`<sup>Optional</sup> <a name="api_key" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKey"></a>
+
+- *Type:* str
+
+The API key for the Fastly account. Exactly one of `api_key` or `api_key_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
+
+---
+
+##### `api_key_wo`<sup>Optional</sup> <a name="api_key_wo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKeyWo"></a>
+
+- *Type:* str
+
+Write-only API key for the Fastly account.
+
+Exactly one of `api_key` or `api_key_wo` must be set. Must be used with `api_key_wo_version`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#api_key_wo IntegrationFastlyAccount#api_key_wo}
+
+---
+
+##### `api_key_wo_version`<sup>Optional</sup> <a name="api_key_wo_version" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.Initializer.parameter.apiKeyWoVersion"></a>
+
+- *Type:* str
+
+Version for `api_key_wo` rotation. Changing this triggers an update. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#api_key_wo_version IntegrationFastlyAccount#api_key_wo_version}
 
 ---
 
@@ -150,6 +176,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.resetApiKey">reset_api_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.resetApiKeyWo">reset_api_key_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.resetApiKeyWoVersion">reset_api_key_wo_version</a></code> | *No description.* |
 
 ---
 
@@ -501,6 +530,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_api_key` <a name="reset_api_key" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.resetApiKey"></a>
+
+```python
+def reset_api_key() -> None
+```
+
+##### `reset_api_key_wo` <a name="reset_api_key_wo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.resetApiKeyWo"></a>
+
+```python
+def reset_api_key_wo() -> None
+```
+
+##### `reset_api_key_wo_version` <a name="reset_api_key_wo_version" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.resetApiKeyWoVersion"></a>
+
+```python
+def reset_api_key_wo_version() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -615,7 +662,7 @@ The construct id used in the generated config for the IntegrationFastlyAccount t
 
 The id of the existing IntegrationFastlyAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,8 +694,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyInput">api_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWoInput">api_key_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWoVersionInput">api_key_wo_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKey">api_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWo">api_key_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWoVersion">api_key_wo_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -815,6 +866,26 @@ api_key_input: str
 
 ---
 
+##### `api_key_wo_input`<sup>Optional</sup> <a name="api_key_wo_input" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWoInput"></a>
+
+```python
+api_key_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `api_key_wo_version_input`<sup>Optional</sup> <a name="api_key_wo_version_input" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWoVersionInput"></a>
+
+```python
+api_key_wo_version_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.nameInput"></a>
 
 ```python
@@ -829,6 +900,26 @@ name_input: str
 
 ```python
 api_key: str
+```
+
+- *Type:* str
+
+---
+
+##### `api_key_wo`<sup>Required</sup> <a name="api_key_wo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWo"></a>
+
+```python
+api_key_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `api_key_wo_version`<sup>Required</sup> <a name="api_key_wo_version" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccount.property.apiKeyWoVersion"></a>
+
+```python
+api_key_wo_version: str
 ```
 
 - *Type:* str
@@ -880,8 +971,10 @@ integrationFastlyAccount.IntegrationFastlyAccountConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  api_key: str,
-  name: str
+  name: str,
+  api_key: str = None,
+  api_key_wo: str = None,
+  api_key_wo_version: str = None
 )
 ```
 
@@ -896,8 +989,10 @@ integrationFastlyAccount.IntegrationFastlyAccountConfig(
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKey">api_key</a></code> | <code>str</code> | The API key for the Fastly account. |
 | <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.name">name</a></code> | <code>str</code> | The name of the Fastly account. |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKey">api_key</a></code> | <code>str</code> | The API key for the Fastly account. Exactly one of `api_key` or `api_key_wo` must be set. |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKeyWo">api_key_wo</a></code> | <code>str</code> | Write-only API key for the Fastly account. |
+| <code><a href="#@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKeyWoVersion">api_key_wo_version</a></code> | <code>str</code> | Version for `api_key_wo` rotation. Changing this triggers an update. String length must be at least 1. |
 
 ---
 
@@ -971,20 +1066,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `api_key`<sup>Required</sup> <a name="api_key" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKey"></a>
-
-```python
-api_key: str
-```
-
-- *Type:* str
-
-The API key for the Fastly account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.name"></a>
 
 ```python
@@ -995,7 +1076,51 @@ name: str
 
 The name of the Fastly account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#name IntegrationFastlyAccount#name}
+
+---
+
+##### `api_key`<sup>Optional</sup> <a name="api_key" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKey"></a>
+
+```python
+api_key: str
+```
+
+- *Type:* str
+
+The API key for the Fastly account. Exactly one of `api_key` or `api_key_wo` must be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#api_key IntegrationFastlyAccount#api_key}
+
+---
+
+##### `api_key_wo`<sup>Optional</sup> <a name="api_key_wo" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKeyWo"></a>
+
+```python
+api_key_wo: str
+```
+
+- *Type:* str
+
+Write-only API key for the Fastly account.
+
+Exactly one of `api_key` or `api_key_wo` must be set. Must be used with `api_key_wo_version`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#api_key_wo IntegrationFastlyAccount#api_key_wo}
+
+---
+
+##### `api_key_wo_version`<sup>Optional</sup> <a name="api_key_wo_version" id="@cdktn/provider-datadog.integrationFastlyAccount.IntegrationFastlyAccountConfig.property.apiKeyWoVersion"></a>
+
+```python
+api_key_wo_version: str
+```
+
+- *Type:* str
+
+Version for `api_key_wo` rotation. Changing this triggers an update. String length must be at least 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_fastly_account#api_key_wo_version IntegrationFastlyAccount#api_key_wo_version}
 
 ---
 

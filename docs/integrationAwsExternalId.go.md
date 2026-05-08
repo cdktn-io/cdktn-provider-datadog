@@ -4,12 +4,12 @@
 
 ### IntegrationAwsExternalId <a name="IntegrationAwsExternalId" id="@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_aws_external_id datadog_integration_aws_external_id}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationawsexternalid"
 
 integrationawsexternalid.NewIntegrationAwsExternalId(scope Construct, id *string, config IntegrationAwsExternalIdConfig) IntegrationAwsExternalId
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ integrationawsexternalid.IntegrationAwsExternalId_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ integrationawsexternalid.IntegrationAwsExternalId_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalId.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationawsexternalid"
 
 integrationawsexternalid.IntegrationAwsExternalId_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the IntegrationAwsExternalId t
 
 The id of the existing IntegrationAwsExternalId that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_aws_external_id#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationAwsExternalId.IntegrationAwsExternalIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationawsexternalid"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationawsexternalid"
 
 &integrationawsexternalid.IntegrationAwsExternalIdConfig {
 	Connection: interface{},

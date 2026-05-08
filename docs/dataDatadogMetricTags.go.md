@@ -4,12 +4,12 @@
 
 ### DataDatadogMetricTags <a name="DataDatadogMetricTags" id="@cdktn/provider-datadog.dataDatadogMetricTags.DataDatadogMetricTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags datadog_metric_tags}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_tags datadog_metric_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetricTags.DataDatadogMetricTags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrictags"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrictags"
 
 datadatadogmetrictags.NewDataDatadogMetricTags(scope Construct, id *string, config DataDatadogMetricTagsConfig) DataDatadogMetricTags
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogMetricTags.DataDatadogMetricTags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrictags"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrictags"
 
 datadatadogmetrictags.DataDatadogMetricTags_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogMetricTags.DataDatadogMetricTags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrictags"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrictags"
 
 datadatadogmetrictags.DataDatadogMetricTags_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogmetrictags.DataDatadogMetricTags_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogMetricTags.DataDatadogMetricTags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrictags"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrictags"
 
 datadatadogmetrictags.DataDatadogMetricTags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogmetrictags.DataDatadogMetricTags_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogMetricTags.DataDatadogMetricTags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrictags"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrictags"
 
 datadatadogmetrictags.DataDatadogMetricTags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogMetricTags to i
 
 The id of the existing DataDatadogMetricTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMetricTags.DataDatadogMetricTagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrictags"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrictags"
 
 &datadatadogmetrictags.DataDatadogMetricTagsConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ Metric *string
 
 The metric for which to fetch tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_tags#metric DataDatadogMetricTags#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_tags#metric DataDatadogMetricTags#metric}
 
 ---
 

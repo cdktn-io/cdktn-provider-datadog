@@ -4,7 +4,7 @@
 
 ### DataDatadogIntegrationAwsIamPermissionsStandard <a name="DataDatadogIntegrationAwsIamPermissionsStandard" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.Initializer"></a>
 
@@ -437,7 +437,7 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsI
 
 The id of the existing DataDatadogIntegrationAwsIamPermissionsStandard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/integration_aws_iam_permissions_standard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_iam_permissions_standard#import import section} in the documentation of this resource for the id to use
 
 ---
 

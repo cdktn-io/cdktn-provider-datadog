@@ -4,12 +4,12 @@
 
 ### DataDatadogMetrics <a name="DataDatadogMetrics" id="@cdktn/provider-datadog.dataDatadogMetrics.DataDatadogMetrics"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metrics datadog_metrics}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metrics datadog_metrics}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetrics.DataDatadogMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrics"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrics"
 
 datadatadogmetrics.NewDataDatadogMetrics(scope Construct, id *string, config DataDatadogMetricsConfig) DataDatadogMetrics
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogMetrics.DataDatadogMetrics.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrics"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrics"
 
 datadatadogmetrics.DataDatadogMetrics_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogMetrics.DataDatadogMetrics.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrics"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrics"
 
 datadatadogmetrics.DataDatadogMetrics_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogmetrics.DataDatadogMetrics_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogMetrics.DataDatadogMetrics.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrics"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrics"
 
 datadatadogmetrics.DataDatadogMetrics_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogmetrics.DataDatadogMetrics_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogMetrics.DataDatadogMetrics.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrics"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrics"
 
 datadatadogmetrics.DataDatadogMetrics_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogMetrics to impo
 
 The id of the existing DataDatadogMetrics that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metrics#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metrics#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMetrics.DataDatadogMetricsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetrics"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetrics"
 
 &datadatadogmetrics.DataDatadogMetricsConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ Query *string
 
 The search query to use when listing metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metrics#query DataDatadogMetrics#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metrics#query DataDatadogMetrics#query}
 
 ---
 

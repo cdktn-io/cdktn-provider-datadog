@@ -4,12 +4,12 @@
 
 ### OrgConnection <a name="OrgConnection" id="@cdktn/provider-datadog.orgConnection.OrgConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/org_connection datadog_org_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/org_connection datadog_org_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgConnection.OrgConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/orgconnection"
 
 orgconnection.NewOrgConnection(scope Construct, id *string, config OrgConnectionConfig) OrgConnection
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.orgConnection.OrgConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/orgconnection"
 
 orgconnection.OrgConnection_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.orgConnection.OrgConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/orgconnection"
 
 orgconnection.OrgConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ orgconnection.OrgConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.orgConnection.OrgConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/orgconnection"
 
 orgconnection.OrgConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ orgconnection.OrgConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.orgConnection.OrgConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/orgconnection"
 
 orgconnection.OrgConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the OrgConnection to import.
 
 The id of the existing OrgConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/org_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.orgConnection.OrgConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/orgconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/orgconnection"
 
 &orgconnection.OrgConnectionConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ ConnectionTypes *[]*string
 
 Set of connection types to enable for this connection (., metrics, logs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/org_connection#connection_types OrgConnection#connection_types}
 
 ---
 
@@ -924,7 +924,7 @@ SinkOrgId *string
 
 UUID of the sink (destination) organization. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/org_connection#sink_org_id OrgConnection#sink_org_id}
 
 ---
 

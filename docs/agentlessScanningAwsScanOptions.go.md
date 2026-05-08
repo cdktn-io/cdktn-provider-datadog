@@ -4,12 +4,12 @@
 
 ### AgentlessScanningAwsScanOptions <a name="AgentlessScanningAwsScanOptions" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/agentlessscanningawsscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.NewAgentlessScanningAwsScanOptions(scope Construct, id *string, config AgentlessScanningAwsScanOptionsConfig) AgentlessScanningAwsScanOptions
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/agentlessscanningawsscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/agentlessscanningawsscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/agentlessscanningawsscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/agentlessscanningawsscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanningawsscanoptions"
 
 agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the AgentlessScanningAwsScanOp
 
 The id of the existing AgentlessScanningAwsScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/agentlessscanningawsscanoptions"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/agentlessscanningawsscanoptions"
 
 &agentlessscanningawsscanoptions.AgentlessScanningAwsScanOptionsConfig {
 	Connection: interface{},
@@ -927,7 +927,7 @@ AwsAccountId *string
 
 The AWS account ID for which agentless scanning is configured. Must be a valid AWS account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
 
 ---
 
@@ -941,7 +941,7 @@ Lambda interface{}
 
 Indicates if scanning of Lambda functions is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
 
 ---
 
@@ -955,7 +955,7 @@ SensitiveData interface{}
 
 Indicates if scanning for sensitive data is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
 
 ---
 
@@ -969,7 +969,7 @@ VulnContainersOs interface{}
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
 
 ---
 
@@ -983,7 +983,7 @@ VulnHostOs interface{}
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
 
 ---
 

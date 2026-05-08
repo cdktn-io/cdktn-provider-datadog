@@ -4,12 +4,12 @@
 
 ### DataDatadogIncidentNotificationRule <a name="DataDatadogIncidentNotificationRule" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/incident_notification_rule datadog_incident_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 datadatadogincidentnotificationrule.NewDataDatadogIncidentNotificationRule(scope Construct, id *string, config DataDatadogIncidentNotificationRuleConfig) DataDatadogIncidentNotificationRule
 ```
@@ -318,7 +318,7 @@ func ResetConditions()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRule_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRule_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -407,7 +407,7 @@ The construct id used in the generated config for the DataDatadogIncidentNotific
 
 The id of the existing DataDatadogIncidentNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRuleConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 &datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRuleConditions {
 
@@ -741,7 +741,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoginc
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 &datadatadogincidentnotificationrule.DataDatadogIncidentNotificationRuleConfig {
 	Connection: interface{},
@@ -852,7 +852,7 @@ Id *string
 
 The ID of the incident notification rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/incident_notification_rule#id DataDatadogIncidentNotificationRule#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/incident_notification_rule#id DataDatadogIncidentNotificationRule#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -869,7 +869,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/incident_notification_rule#conditions DataDatadogIncidentNotificationRule#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/incident_notification_rule#conditions DataDatadogIncidentNotificationRule#conditions}
 
 ---
 
@@ -880,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRuleConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 datadatadogincidentnotificationrule.NewDataDatadogIncidentNotificationRuleConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogIncidentNotificationRuleConditionsList
 ```
@@ -1040,7 +1040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIncidentNotificationRule.DataDatadogIncidentNotificationRuleConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogincidentnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogincidentnotificationrule"
 
 datadatadogincidentnotificationrule.NewDataDatadogIncidentNotificationRuleConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogIncidentNotificationRuleConditionsOutputReference
 ```

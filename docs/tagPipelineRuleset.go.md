@@ -4,12 +4,12 @@
 
 ### TagPipelineRuleset <a name="TagPipelineRuleset" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset datadog_tag_pipeline_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRuleset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRuleset(scope Construct, id *string, config TagPipelineRulesetConfig) TagPipelineRuleset
 ```
@@ -427,7 +427,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRuleset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.TagPipelineRuleset_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRuleset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.TagPipelineRuleset_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ tagpipelineruleset.TagPipelineRuleset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRuleset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.TagPipelineRuleset_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ tagpipelineruleset.TagPipelineRuleset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRuleset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.TagPipelineRuleset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the TagPipelineRuleset to impo
 
 The id of the existing TagPipelineRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 &tagpipelineruleset.TagPipelineRulesetConfig {
 	Connection: interface{},
@@ -928,7 +928,7 @@ Name *string
 
 The name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
 
 ---
 
@@ -942,7 +942,7 @@ Enabled interface{}
 
 Whether the ruleset is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
 
 ---
 
@@ -956,7 +956,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#rules TagPipelineRuleset#rules}
 
 ---
 
@@ -965,14 +965,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 &tagpipelineruleset.TagPipelineRulesetRules {
 	Enabled: interface{},
 	Name: *string,
-	Mapping: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.tagPipelineRuleset.TagPipelineRulesetRulesMapping,
-	Query: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.tagPipelineRuleset.TagPipelineRulesetRulesQuery,
-	ReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTable,
+	Mapping: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagPipelineRuleset.TagPipelineRulesetRulesMapping,
+	Query: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagPipelineRuleset.TagPipelineRulesetRulesQuery,
+	ReferenceTable: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTable,
 }
 ```
 
@@ -998,7 +998,7 @@ Enabled interface{}
 
 Whether the rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#enabled TagPipelineRuleset#enabled}
 
 ---
 
@@ -1012,7 +1012,7 @@ Name *string
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#name TagPipelineRuleset#name}
 
 ---
 
@@ -1026,7 +1026,7 @@ Mapping TagPipelineRulesetRulesMapping
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#mapping TagPipelineRuleset#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#mapping TagPipelineRuleset#mapping}
 
 ---
 
@@ -1040,7 +1040,7 @@ Query TagPipelineRulesetRulesQuery
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
 
 ---
 
@@ -1054,7 +1054,7 @@ ReferenceTable TagPipelineRulesetRulesReferenceTable
 
 reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#reference_table TagPipelineRuleset#reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#reference_table TagPipelineRuleset#reference_table}
 
 ---
 
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 &tagpipelineruleset.TagPipelineRulesetRulesMapping {
 	DestinationKey: *string,
@@ -1094,7 +1094,7 @@ DestinationKey *string
 
 The destination key for the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#destination_key TagPipelineRuleset#destination_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#destination_key TagPipelineRuleset#destination_key}
 
 ---
 
@@ -1108,7 +1108,7 @@ IfNotExists interface{}
 
 Whether to apply the mapping only if the destination key doesn't exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
 
 ---
 
@@ -1124,7 +1124,7 @@ Behavior when the tag already exists.
 
 Valid values: `append` (append to the existing tag value), `replace` (replace existing tag value), `do_not_apply` (never apply if tag already exists). Valid values are `append`, `replace`, `do_not_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
 
 ---
 
@@ -1138,7 +1138,7 @@ SourceKeys *[]*string
 
 The source keys for the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
 
 ---
 
@@ -1147,10 +1147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 &tagpipelineruleset.TagPipelineRulesetRulesQuery {
-	Addition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.tagPipelineRuleset.TagPipelineRulesetRulesQueryAddition,
+	Addition: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.tagPipelineRuleset.TagPipelineRulesetRulesQueryAddition,
 	CaseInsensitivity: interface{},
 	IfNotExists: interface{},
 	IfTagExists: *string,
@@ -1180,7 +1180,7 @@ Addition TagPipelineRulesetRulesQueryAddition
 
 addition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#addition TagPipelineRuleset#addition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#addition TagPipelineRuleset#addition}
 
 ---
 
@@ -1194,7 +1194,7 @@ CaseInsensitivity interface{}
 
 Whether the query matching is case insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
 
 ---
 
@@ -1208,7 +1208,7 @@ IfNotExists interface{}
 
 Whether to apply the query only if the key doesn't exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
 
 ---
 
@@ -1224,7 +1224,7 @@ Behavior when the tag already exists.
 
 Valid values: `append` (append to the existing tag value), `replace` (replace existing tag value), `do_not_apply` (never apply if tag already exists). Valid values are `append`, `replace`, `do_not_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
 
 ---
 
@@ -1238,7 +1238,7 @@ Query *string
 
 The query string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#query TagPipelineRuleset#query}
 
 ---
 
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryAddition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 &tagpipelineruleset.TagPipelineRulesetRulesQueryAddition {
 	Key: *string,
@@ -1274,7 +1274,7 @@ Key *string
 
 The key to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#key TagPipelineRuleset#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#key TagPipelineRuleset#key}
 
 ---
 
@@ -1288,7 +1288,7 @@ Value *string
 
 The value to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#value TagPipelineRuleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#value TagPipelineRuleset#value}
 
 ---
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 &tagpipelineruleset.TagPipelineRulesetRulesReferenceTable {
 	CaseInsensitivity: interface{},
@@ -1332,7 +1332,7 @@ CaseInsensitivity interface{}
 
 Whether the reference table lookup is case insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#case_insensitivity TagPipelineRuleset#case_insensitivity}
 
 ---
 
@@ -1346,7 +1346,7 @@ FieldPairs interface{}
 
 field_pairs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#field_pairs TagPipelineRuleset#field_pairs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#field_pairs TagPipelineRuleset#field_pairs}
 
 ---
 
@@ -1360,7 +1360,7 @@ IfNotExists interface{}
 
 Whether to apply the reference table only if the key doesn't exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#if_not_exists TagPipelineRuleset#if_not_exists}
 
 ---
 
@@ -1376,7 +1376,7 @@ Behavior when the tag already exists.
 
 Valid values: `append` (append to the existing tag value), `replace` (replace existing tag value), `do_not_apply` (never apply if tag already exists). Valid values are `append`, `replace`, `do_not_apply`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#if_tag_exists TagPipelineRuleset#if_tag_exists}
 
 ---
 
@@ -1390,7 +1390,7 @@ SourceKeys *[]*string
 
 The source keys for the reference table lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#source_keys TagPipelineRuleset#source_keys}
 
 ---
 
@@ -1404,7 +1404,7 @@ TableName *string
 
 The name of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#table_name TagPipelineRuleset#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#table_name TagPipelineRuleset#table_name}
 
 ---
 
@@ -1413,7 +1413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 &tagpipelineruleset.TagPipelineRulesetRulesReferenceTableFieldPairs {
 	InputColumn: *string,
@@ -1440,7 +1440,7 @@ InputColumn *string
 
 The input column name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#input_column TagPipelineRuleset#input_column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#input_column TagPipelineRuleset#input_column}
 
 ---
 
@@ -1454,7 +1454,7 @@ OutputKey *string
 
 The output key name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/tag_pipeline_ruleset#output_key TagPipelineRuleset#output_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/tag_pipeline_ruleset#output_key TagPipelineRuleset#output_key}
 
 ---
 
@@ -1465,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TagPipelineRulesetRulesList
 ```
@@ -1625,7 +1625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagPipelineRulesetRulesMappingOutputReference
 ```
@@ -1990,7 +1990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TagPipelineRulesetRulesOutputReference
 ```
@@ -2438,7 +2438,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryAdditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesQueryAdditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagPipelineRulesetRulesQueryAdditionOutputReference
 ```
@@ -2745,7 +2745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagPipelineRulesetRulesQueryOutputReference
 ```
@@ -3152,7 +3152,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesReferenceTableFieldPairsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TagPipelineRulesetRulesReferenceTableFieldPairsList
 ```
@@ -3312,7 +3312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableFieldPairsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesReferenceTableFieldPairsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TagPipelineRulesetRulesReferenceTableFieldPairsOutputReference
 ```
@@ -3637,7 +3637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagPipelineRuleset.TagPipelineRulesetRulesReferenceTableOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/tagpipelineruleset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/tagpipelineruleset"
 
 tagpipelineruleset.NewTagPipelineRulesetRulesReferenceTableOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagPipelineRulesetRulesReferenceTableOutputReference
 ```

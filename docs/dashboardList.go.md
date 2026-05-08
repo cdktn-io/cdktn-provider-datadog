@@ -4,12 +4,12 @@
 
 ### DashboardList <a name="DashboardList" id="@cdktn/provider-datadog.dashboardList.DashboardList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list datadog_dashboard_list}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list datadog_dashboard_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dashboardList.DashboardList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 dashboardlist.NewDashboardList(scope Construct, id *string, config DashboardListConfig) DashboardList
 ```
@@ -420,7 +420,7 @@ func ResetDashItem()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dashboardList.DashboardList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 dashboardlist.DashboardList_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dashboardList.DashboardList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 dashboardlist.DashboardList_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ dashboardlist.DashboardList_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.dashboardList.DashboardList.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 dashboardlist.DashboardList_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ dashboardlist.DashboardList_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dashboardList.DashboardList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 dashboardlist.DashboardList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the DashboardList to import.
 
 The id of the existing DashboardList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dashboardList.DashboardListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 &dashboardlist.DashboardListConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ Name *string
 
 The name of the Dashboard List.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list#name DashboardList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list#name DashboardList#name}
 
 ---
 
@@ -889,7 +889,7 @@ DashItem interface{}
 
 dash_item block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list#dash_item DashboardList#dash_item}
 
 ---
 
@@ -898,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dashboardList.DashboardListDashItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 &dashboardlist.DashboardListDashItem {
 	DashId: *string,
@@ -925,7 +925,7 @@ DashId *string
 
 The ID of the dashboard to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list#dash_id DashboardList#dash_id}
 
 ---
 
@@ -939,7 +939,7 @@ Type *string
 
 The type of this dashboard. Valid values are `custom_timeboard`, `custom_screenboard`, `integration_screenboard`, `integration_timeboard`, `host_timeboard`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dashboard_list#type DashboardList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dashboard_list#type DashboardList#type}
 
 ---
 
@@ -950,7 +950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dashboardList.DashboardListDashItemList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 dashboardlist.NewDashboardListDashItemList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DashboardListDashItemList
 ```
@@ -1110,7 +1110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dashboardList.DashboardListDashItemOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dashboardlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dashboardlist"
 
 dashboardlist.NewDashboardListDashItemOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DashboardListDashItemOutputReference
 ```

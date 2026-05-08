@@ -4,12 +4,12 @@
 
 ### DataDatadogAppBuilderApp <a name="DataDatadogAppBuilderApp" id="@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/app_builder_app datadog_app_builder_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogappbuilderapp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogappbuilderapp"
 
 datadatadogappbuilderapp.NewDataDatadogAppBuilderApp(scope Construct, id *string, config DataDatadogAppBuilderAppConfig) DataDatadogAppBuilderApp
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogappbuilderapp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogappbuilderapp"
 
 datadatadogappbuilderapp.DataDatadogAppBuilderApp_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogappbuilderapp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogappbuilderapp"
 
 datadatadogappbuilderapp.DataDatadogAppBuilderApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogappbuilderapp.DataDatadogAppBuilderApp_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogappbuilderapp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogappbuilderapp"
 
 datadatadogappbuilderapp.DataDatadogAppBuilderApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogappbuilderapp.DataDatadogAppBuilderApp_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogappbuilderapp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogappbuilderapp"
 
 datadatadogappbuilderapp.DataDatadogAppBuilderApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogAppBuilderApp t
 
 The id of the existing DataDatadogAppBuilderApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/app_builder_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/app_builder_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogAppBuilderApp.DataDatadogAppBuilderAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogappbuilderapp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogappbuilderapp"
 
 &datadatadogappbuilderapp.DataDatadogAppBuilderAppConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ Id *string
 
 ID for the App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/app_builder_app#id DataDatadogAppBuilderApp#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/app_builder_app#id DataDatadogAppBuilderApp#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

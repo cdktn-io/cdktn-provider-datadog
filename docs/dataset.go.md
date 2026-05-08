@@ -4,12 +4,12 @@
 
 ### Dataset <a name="Dataset" id="@cdktn/provider-datadog.dataset.Dataset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset datadog_dataset}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset datadog_dataset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataset.Dataset.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 dataset.NewDataset(scope Construct, id *string, config DatasetConfig) Dataset
 ```
@@ -420,7 +420,7 @@ func ResetProductFilters()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataset.Dataset.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 dataset.Dataset_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataset.Dataset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 dataset.Dataset_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ dataset.Dataset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.dataset.Dataset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 dataset.Dataset_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ dataset.Dataset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataset.Dataset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 dataset.Dataset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the Dataset to import.
 
 The id of the existing Dataset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataset.DatasetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 &dataset.DatasetConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ Name *string
 
 The name of the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#name Dataset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#name Dataset#name}
 
 ---
 
@@ -937,7 +937,7 @@ An array of principals.
 
 A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role` and `team`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#principals Dataset#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#principals Dataset#principals}
 
 ---
 
@@ -951,7 +951,7 @@ ProductFilters interface{}
 
 product_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#product_filters Dataset#product_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#product_filters Dataset#product_filters}
 
 ---
 
@@ -960,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataset.DatasetProductFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 &dataset.DatasetProductFilters {
 	Filters: *[]*string,
@@ -973,7 +973,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.dataset.DatasetProductFilters.property.filters">Filters</a></code> | <code>*[]*string</code> | A list of tag-based filters used to restrict access to the product type. Each filter is formatted as `@tag.key:value`. |
-| <code><a href="#@cdktn/provider-datadog.dataset.DatasetProductFilters.property.product">Product</a></code> | <code>*string</code> | The product type of the dataset. Supported types: `apm`, `rum`, `synthetics`, `metrics`, `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`. |
+| <code><a href="#@cdktn/provider-datadog.dataset.DatasetProductFilters.property.product">Product</a></code> | <code>*string</code> | The product type of the dataset. |
 
 ---
 
@@ -987,7 +987,7 @@ Filters *[]*string
 
 A list of tag-based filters used to restrict access to the product type. Each filter is formatted as `@tag.key:value`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#filters Dataset#filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#filters Dataset#filters}
 
 ---
 
@@ -999,9 +999,11 @@ Product *string
 
 - *Type:* *string
 
-The product type of the dataset. Supported types: `apm`, `rum`, `synthetics`, `metrics`, `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`.
+The product type of the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/dataset#product Dataset#product}
+Supported types: `apm`, `rum`, `synthetics`, `metrics` (Custom Metrics), `logs`, `sd_repoinfo`, `error_tracking`, `cloud_cost`, and `ml_obs`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/dataset#product Dataset#product}
 
 ---
 
@@ -1012,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataset.DatasetProductFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 dataset.NewDatasetProductFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatasetProductFiltersList
 ```
@@ -1172,7 +1174,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataset.DatasetProductFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/dataset"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/dataset"
 
 dataset.NewDatasetProductFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatasetProductFiltersOutputReference
 ```

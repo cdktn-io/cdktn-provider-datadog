@@ -4,12 +4,12 @@
 
 ### Team <a name="Team" id="@cdktn/provider-datadog.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team datadog_team}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team datadog_team}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.team.Team.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/team"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/team"
 
 team.NewTeam(scope Construct, id *string, config TeamConfig) Team
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.team.Team.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/team"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/team"
 
 team.Team_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.team.Team.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/team"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/team"
 
 team.Team_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ team.Team_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.team.Team.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/team"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/team"
 
 team.Team_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ team.Team_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.team.Team.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/team"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/team"
 
 team.Team_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.team.TeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/team"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/team"
 
 &team.TeamConfig {
 	Connection: interface{},
@@ -912,7 +912,7 @@ Description *string
 
 Free-form markdown description/content for the team's homepage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -926,7 +926,7 @@ Handle *string
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team#handle Team#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team#handle Team#handle}
 
 ---
 
@@ -940,7 +940,7 @@ Name *string
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team#name Team#name}
 
 ---
 

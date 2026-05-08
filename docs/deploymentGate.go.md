@@ -4,12 +4,12 @@
 
 ### DeploymentGate <a name="DeploymentGate" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate datadog_deployment_gate}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate datadog_deployment_gate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.NewDeploymentGate(scope Construct, id *string, config DeploymentGateConfig) DeploymentGate
 ```
@@ -434,7 +434,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.DeploymentGate_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.DeploymentGate_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ deploymentgate.DeploymentGate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.DeploymentGate_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ deploymentgate.DeploymentGate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.DeploymentGate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the DeploymentGate to import.
 
 The id of the existing DeploymentGate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 &deploymentgate.DeploymentGateConfig {
 	Connection: interface{},
@@ -983,7 +983,7 @@ Env *string
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -997,7 +997,7 @@ Service *string
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -1013,7 +1013,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1027,7 +1027,7 @@ Identifier *string
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -1041,7 +1041,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -1050,13 +1050,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 &deploymentgate.DeploymentGateRule {
 	Name: *string,
 	Type: *string,
 	DryRun: interface{},
-	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.deploymentGate.DeploymentGateRuleOptions,
+	Options: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.deploymentGate.DeploymentGateRuleOptions,
 }
 ```
 
@@ -1081,7 +1081,7 @@ Name *string
 
 The rule name. Must be unique within the deployment gate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#name DeploymentGate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#name DeploymentGate#name}
 
 ---
 
@@ -1095,7 +1095,7 @@ Type *string
 
 The rule type (e.g., 'faulty_deployment_detection', 'monitor').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#type DeploymentGate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#type DeploymentGate#type}
 
 ---
 
@@ -1109,7 +1109,7 @@ DryRun interface{}
 
 Whether the rule is in dry run mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1123,7 +1123,7 @@ Options DeploymentGateRuleOptions
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#options DeploymentGate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#options DeploymentGate#options}
 
 ---
 
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 &deploymentgate.DeploymentGateRuleOptions {
 	Duration: *f64,
@@ -1161,7 +1161,7 @@ Duration *f64
 
 The duration for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
 
 ---
 
@@ -1175,7 +1175,7 @@ ExcludedResources *[]*string
 
 Resources to exclude from faulty deployment detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
 
 ---
 
@@ -1189,7 +1189,7 @@ Query *string
 
 The query for monitor rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/deployment_gate#query DeploymentGate#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/deployment_gate#query DeploymentGate#query}
 
 ---
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.NewDeploymentGateRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeploymentGateRuleList
 ```
@@ -1360,7 +1360,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.NewDeploymentGateRuleOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeploymentGateRuleOptionsOutputReference
 ```
@@ -1696,7 +1696,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGateRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/deploymentgate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/deploymentgate"
 
 deploymentgate.NewDeploymentGateRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeploymentGateRuleOutputReference
 ```

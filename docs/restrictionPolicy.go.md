@@ -4,12 +4,12 @@
 
 ### RestrictionPolicy <a name="RestrictionPolicy" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/restriction_policy datadog_restriction_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/restriction_policy datadog_restriction_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 restrictionpolicy.NewRestrictionPolicy(scope Construct, id *string, config RestrictionPolicyConfig) RestrictionPolicy
 ```
@@ -420,7 +420,7 @@ func ResetBindings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 restrictionpolicy.RestrictionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 restrictionpolicy.RestrictionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ restrictionpolicy.RestrictionPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 restrictionpolicy.RestrictionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ restrictionpolicy.RestrictionPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 restrictionpolicy.RestrictionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the RestrictionPolicy to impor
 
 The id of the existing RestrictionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/restriction_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicyBindings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 &restrictionpolicy.RestrictionPolicyBindings {
 	Principals: *[]*string,
@@ -793,7 +793,7 @@ An array of principals.
 
 A principal is a subject or group of subjects. Each principal is formatted as `type:id`. Supported types: `role`, `team`, `user`, and `org`. Org ID can be obtained using a `GET /api/v2/current_user` API request. Find it in the `data.relationships.org.data.id` field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/restriction_policy#principals RestrictionPolicy#principals}
 
 ---
 
@@ -807,7 +807,7 @@ Relation *string
 
 The role/level of access. See this page for more details https://docs.datadoghq.com/api/latest/restriction-policies/#supported-relations-for-resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/restriction_policy#relation RestrictionPolicy#relation}
 
 ---
 
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 &restrictionpolicy.RestrictionPolicyConfig {
 	Connection: interface{},
@@ -935,9 +935,8 @@ Resources to define `resource_type` :
 Restrictions :
 
 * Dashboards : support is in private beta. Reach out to your Datadog contact or support to enable this.
-* Monitors : Management of restriction policy through terraform is now available in Preview. Please request access via https://docs.datadoghq.com/help
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/restriction_policy#resource_id RestrictionPolicy#resource_id}
 
 ---
 
@@ -951,7 +950,7 @@ Bindings interface{}
 
 bindings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/restriction_policy#bindings RestrictionPolicy#bindings}
 
 ---
 
@@ -962,7 +961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 restrictionpolicy.NewRestrictionPolicyBindingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RestrictionPolicyBindingsList
 ```
@@ -1122,7 +1121,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.restrictionPolicy.RestrictionPolicyBindingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/restrictionpolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/restrictionpolicy"
 
 restrictionpolicy.NewRestrictionPolicyBindingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RestrictionPolicyBindingsOutputReference
 ```

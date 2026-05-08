@@ -4,12 +4,12 @@
 
 ### IncidentNotificationTemplate <a name="IncidentNotificationTemplate" id="@cdktn/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template datadog_incident_notification_template}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_template datadog_incident_notification_template}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationtemplate"
 
 incidentnotificationtemplate.NewIncidentNotificationTemplate(scope Construct, id *string, config IncidentNotificationTemplateConfig) IncidentNotificationTemplate
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ incidentnotificationtemplate.IncidentNotificationTemplate_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationtemplate"
 
 incidentnotificationtemplate.IncidentNotificationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the IncidentNotificationTempla
 
 The id of the existing IncidentNotificationTemplate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_template#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.incidentNotificationTemplate.IncidentNotificationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/incidentnotificationtemplate"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/incidentnotificationtemplate"
 
 &incidentnotificationtemplate.IncidentNotificationTemplateConfig {
 	Connection: interface{},
@@ -949,7 +949,7 @@ Category *string
 
 The category of the notification template. Valid values are `alert`, `incident`, `recovery`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_template#category IncidentNotificationTemplate#category}
 
 ---
 
@@ -963,7 +963,7 @@ Content *string
 
 The content body of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_template#content IncidentNotificationTemplate#content}
 
 ---
 
@@ -977,7 +977,7 @@ IncidentType *string
 
 The ID of the incident type this notification template is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_template#incident_type IncidentNotificationTemplate#incident_type}
 
 ---
 
@@ -991,7 +991,7 @@ Name *string
 
 The name of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_template#name IncidentNotificationTemplate#name}
 
 ---
 
@@ -1005,7 +1005,7 @@ Subject *string
 
 The subject line of the notification template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/incident_notification_template#subject IncidentNotificationTemplate#subject}
 
 ---
 

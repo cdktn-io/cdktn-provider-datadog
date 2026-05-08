@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links
+// https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_hierarchy_links
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface TeamHierarchyLinksConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the parent team the team hierarchy link is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links#parent_team_id TeamHierarchyLinks#parent_team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_hierarchy_links#parent_team_id TeamHierarchyLinks#parent_team_id}
   */
   readonly parentTeamId: string;
   /**
   * ID of the sub team the team hierarchy link is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links#sub_team_id TeamHierarchyLinks#sub_team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_hierarchy_links#sub_team_id TeamHierarchyLinks#sub_team_id}
   */
   readonly subTeamId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}
 */
 export class TeamHierarchyLinks extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class TeamHierarchyLinks extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TeamHierarchyLinks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamHierarchyLinks to import
-  * @param importFromId The id of the existing TeamHierarchyLinks that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamHierarchyLinks that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamHierarchyLinks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class TeamHierarchyLinks extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,8 +66,8 @@ export class TeamHierarchyLinks extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_team_hierarchy_links',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '3.91.0',
-        providerVersionConstraint: '~> 3.0'
+        providerVersion: '4.8.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

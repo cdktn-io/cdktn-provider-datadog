@@ -4,12 +4,12 @@
 
 ### AzureUcConfig <a name="AzureUcConfig" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config datadog_azure_uc_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config datadog_azure_uc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 azureucconfig.NewAzureUcConfig(scope Construct, id *string, config AzureUcConfigConfig) AzureUcConfig
 ```
@@ -426,7 +426,7 @@ func PutAmortizedBillConfig(value AzureUcConfigAmortizedBillConfig)
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 azureucconfig.AzureUcConfig_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 azureucconfig.AzureUcConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ azureucconfig.AzureUcConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 azureucconfig.AzureUcConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ azureucconfig.AzureUcConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 azureucconfig.AzureUcConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -515,7 +515,7 @@ The construct id used in the generated config for the AzureUcConfig to import.
 
 The id of the existing AzureUcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -891,7 +891,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 &azureucconfig.AzureUcConfigActualBillConfig {
 	ExportName: *string,
@@ -922,7 +922,7 @@ ExportName *string
 
 The name of the configured Azure Export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
 
 ---
 
@@ -936,7 +936,7 @@ ExportPath *string
 
 The path where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
 
 ---
 
@@ -950,7 +950,7 @@ StorageAccount *string
 
 The name of the storage account where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
 
 ---
 
@@ -964,7 +964,7 @@ StorageContainer *string
 
 The name of the storage container where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
 
 ---
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 &azureucconfig.AzureUcConfigAmortizedBillConfig {
 	ExportName: *string,
@@ -1004,7 +1004,7 @@ ExportName *string
 
 The name of the configured Azure Export.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
 
 ---
 
@@ -1018,7 +1018,7 @@ ExportPath *string
 
 The path where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
 
 ---
 
@@ -1032,7 +1032,7 @@ StorageAccount *string
 
 The name of the storage account where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
 
 ---
 
@@ -1046,7 +1046,7 @@ StorageContainer *string
 
 The name of the storage container where the Azure Export is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
 
 ---
 
@@ -1055,7 +1055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 &azureucconfig.AzureUcConfigConfig {
 	Connection: interface{},
@@ -1066,8 +1066,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	ActualBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.azureUcConfig.AzureUcConfigActualBillConfig,
-	AmortizedBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.azureUcConfig.AzureUcConfigAmortizedBillConfig,
+	ActualBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.azureUcConfig.AzureUcConfigActualBillConfig,
+	AmortizedBillConfig: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.azureUcConfig.AzureUcConfigAmortizedBillConfig,
 	ClientId: *string,
 	Scope: *string,
 }
@@ -1172,7 +1172,7 @@ AccountId *string
 
 The tenant ID of the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
 
 ---
 
@@ -1186,7 +1186,7 @@ ActualBillConfig AzureUcConfigActualBillConfig
 
 actual_bill_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
 
 ---
 
@@ -1200,7 +1200,7 @@ AmortizedBillConfig AzureUcConfigAmortizedBillConfig
 
 amortized_bill_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
 
 ---
 
@@ -1214,7 +1214,7 @@ ClientId *string
 
 The client ID of the Azure account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
 
 ---
 
@@ -1228,7 +1228,7 @@ Scope *string
 
 The scope of your observed subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
 
 ---
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigActualBillConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 azureucconfig.NewAzureUcConfigActualBillConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AzureUcConfigActualBillConfigOutputReference
 ```
@@ -1576,7 +1576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.azureUcConfig.AzureUcConfigAmortizedBillConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/azureucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/azureucconfig"
 
 azureucconfig.NewAzureUcConfigAmortizedBillConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AzureUcConfigAmortizedBillConfigOutputReference
 ```

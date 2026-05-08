@@ -4,12 +4,12 @@
 
 ### TeamNotificationRule <a name="TeamNotificationRule" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule datadog_team_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRule(scope Construct, id *string, config TeamNotificationRuleConfig) TeamNotificationRule
 ```
@@ -480,7 +480,7 @@ func ResetSlack()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ teamnotificationrule.TeamNotificationRule_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ teamnotificationrule.TeamNotificationRule_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.TeamNotificationRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -569,7 +569,7 @@ The construct id used in the generated config for the TeamNotificationRule to im
 
 The id of the existing TeamNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleConfig {
 	Connection: interface{},
@@ -901,10 +901,10 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificati
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	TeamId: *string,
-	Email: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.teamNotificationRule.TeamNotificationRuleEmail,
-	MsTeams: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.teamNotificationRule.TeamNotificationRuleMsTeams,
-	Pagerduty: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.teamNotificationRule.TeamNotificationRulePagerduty,
-	Slack: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.teamNotificationRule.TeamNotificationRuleSlack,
+	Email: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.teamNotificationRule.TeamNotificationRuleEmail,
+	MsTeams: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.teamNotificationRule.TeamNotificationRuleMsTeams,
+	Pagerduty: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.teamNotificationRule.TeamNotificationRulePagerduty,
+	Slack: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.teamNotificationRule.TeamNotificationRuleSlack,
 }
 ```
 
@@ -1007,7 +1007,7 @@ TeamId *string
 
 The ID of the team that this notification rule belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#team_id TeamNotificationRule#team_id}
 
 ---
 
@@ -1021,7 +1021,7 @@ Email TeamNotificationRuleEmail
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#email TeamNotificationRule#email}
 
 ---
 
@@ -1035,7 +1035,7 @@ MsTeams TeamNotificationRuleMsTeams
 
 ms_teams block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#ms_teams TeamNotificationRule#ms_teams}
 
 ---
 
@@ -1049,7 +1049,7 @@ Pagerduty TeamNotificationRulePagerduty
 
 pagerduty block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#pagerduty TeamNotificationRule#pagerduty}
 
 ---
 
@@ -1063,7 +1063,7 @@ Slack TeamNotificationRuleSlack
 
 slack block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#slack TeamNotificationRule#slack}
 
 ---
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleEmail {
 	Enabled: interface{},
@@ -1097,7 +1097,7 @@ Enabled interface{}
 
 Whether to send email notifications to team members when alerts are triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#enabled TeamNotificationRule#enabled}
 
 ---
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleMsTeams {
 	ConnectorName: *string,
@@ -1131,7 +1131,7 @@ ConnectorName *string
 
 MS Teams connector name used to route notifications to the appropriate channel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#connector_name TeamNotificationRule#connector_name}
 
 ---
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerduty.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRulePagerduty {
 	ServiceName: *string,
@@ -1165,7 +1165,7 @@ ServiceName *string
 
 PagerDuty service name to send incident notifications to. The service name can be found in your PagerDuty service settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#service_name TeamNotificationRule#service_name}
 
 ---
 
@@ -1174,7 +1174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 &teamnotificationrule.TeamNotificationRuleSlack {
 	Channel: *string,
@@ -1201,7 +1201,7 @@ Channel *string
 
 Slack channel name for notifications (for example, #alerts or #team-notifications).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#channel TeamNotificationRule#channel}
 
 ---
 
@@ -1215,7 +1215,7 @@ Workspace *string
 
 Slack workspace name where the channel is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_notification_rule#workspace TeamNotificationRule#workspace}
 
 ---
 
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRuleEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRuleEmailOutputReference
 ```
@@ -1504,7 +1504,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleMsTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRuleMsTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRuleMsTeamsOutputReference
 ```
@@ -1782,7 +1782,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRulePagerdutyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRulePagerdutyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRulePagerdutyOutputReference
 ```
@@ -2060,7 +2060,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamNotificationRule.TeamNotificationRuleSlackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamnotificationrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamnotificationrule"
 
 teamnotificationrule.NewTeamNotificationRuleSlackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamNotificationRuleSlackOutputReference
 ```
