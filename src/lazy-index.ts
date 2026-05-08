@@ -32,6 +32,7 @@ Object.defineProperty(exports, 'customAllocationRules', { get: function () { ret
 Object.defineProperty(exports, 'dashboard', { get: function () { return require('./dashboard'); } });
 Object.defineProperty(exports, 'dashboardJson', { get: function () { return require('./dashboard-json'); } });
 Object.defineProperty(exports, 'dashboardList', { get: function () { return require('./dashboard-list'); } });
+Object.defineProperty(exports, 'dashboardV2', { get: function () { return require('./dashboard-v2'); } });
 Object.defineProperty(exports, 'dataset', { get: function () { return require('./dataset'); } });
 Object.defineProperty(exports, 'datastore', { get: function () { return require('./datastore'); } });
 Object.defineProperty(exports, 'datastoreItem', { get: function () { return require('./datastore-item'); } });
@@ -43,13 +44,9 @@ Object.defineProperty(exports, 'gcpUcConfig', { get: function () { return requir
 Object.defineProperty(exports, 'incidentNotificationRule', { get: function () { return require('./incident-notification-rule'); } });
 Object.defineProperty(exports, 'incidentNotificationTemplate', { get: function () { return require('./incident-notification-template'); } });
 Object.defineProperty(exports, 'incidentType', { get: function () { return require('./incident-type'); } });
-Object.defineProperty(exports, 'integrationAws', { get: function () { return require('./integration-aws'); } });
 Object.defineProperty(exports, 'integrationAwsAccount', { get: function () { return require('./integration-aws-account'); } });
 Object.defineProperty(exports, 'integrationAwsEventBridge', { get: function () { return require('./integration-aws-event-bridge'); } });
 Object.defineProperty(exports, 'integrationAwsExternalId', { get: function () { return require('./integration-aws-external-id'); } });
-Object.defineProperty(exports, 'integrationAwsLambdaArn', { get: function () { return require('./integration-aws-lambda-arn'); } });
-Object.defineProperty(exports, 'integrationAwsLogCollection', { get: function () { return require('./integration-aws-log-collection'); } });
-Object.defineProperty(exports, 'integrationAwsTagFilter', { get: function () { return require('./integration-aws-tag-filter'); } });
 Object.defineProperty(exports, 'integrationAzure', { get: function () { return require('./integration-azure'); } });
 Object.defineProperty(exports, 'integrationCloudflareAccount', { get: function () { return require('./integration-cloudflare-account'); } });
 Object.defineProperty(exports, 'integrationConfluentAccount', { get: function () { return require('./integration-confluent-account'); } });
@@ -89,8 +86,13 @@ Object.defineProperty(exports, 'onCallUserNotificationChannel', { get: function 
 Object.defineProperty(exports, 'onCallUserNotificationRule', { get: function () { return require('./on-call-user-notification-rule'); } });
 Object.defineProperty(exports, 'openapiApi', { get: function () { return require('./openapi-api'); } });
 Object.defineProperty(exports, 'orgConnection', { get: function () { return require('./org-connection'); } });
+Object.defineProperty(exports, 'orgGroup', { get: function () { return require('./org-group'); } });
+Object.defineProperty(exports, 'orgGroupMembership', { get: function () { return require('./org-group-membership'); } });
+Object.defineProperty(exports, 'orgGroupPolicy', { get: function () { return require('./org-group-policy'); } });
+Object.defineProperty(exports, 'orgGroupPolicyOverride', { get: function () { return require('./org-group-policy-override'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
 Object.defineProperty(exports, 'powerpack', { get: function () { return require('./powerpack'); } });
+Object.defineProperty(exports, 'powerpackV2', { get: function () { return require('./powerpack-v2'); } });
 Object.defineProperty(exports, 'referenceTable', { get: function () { return require('./reference-table'); } });
 Object.defineProperty(exports, 'restrictionPolicy', { get: function () { return require('./restriction-policy'); } });
 Object.defineProperty(exports, 'role', { get: function () { return require('./role'); } });
@@ -98,6 +100,7 @@ Object.defineProperty(exports, 'rumApplication', { get: function () { return req
 Object.defineProperty(exports, 'rumMetric', { get: function () { return require('./rum-metric'); } });
 Object.defineProperty(exports, 'rumRetentionFilter', { get: function () { return require('./rum-retention-filter'); } });
 Object.defineProperty(exports, 'rumRetentionFiltersOrder', { get: function () { return require('./rum-retention-filters-order'); } });
+Object.defineProperty(exports, 'secureEmbedDashboard', { get: function () { return require('./secure-embed-dashboard'); } });
 Object.defineProperty(exports, 'securityMonitoringCriticalAsset', { get: function () { return require('./security-monitoring-critical-asset'); } });
 Object.defineProperty(exports, 'securityMonitoringDefaultRule', { get: function () { return require('./security-monitoring-default-rule'); } });
 Object.defineProperty(exports, 'securityMonitoringFilter', { get: function () { return require('./security-monitoring-filter'); } });
@@ -123,11 +126,13 @@ Object.defineProperty(exports, 'syntheticsTest', { get: function () { return req
 Object.defineProperty(exports, 'tagPipelineRuleset', { get: function () { return require('./tag-pipeline-ruleset'); } });
 Object.defineProperty(exports, 'tagPipelineRulesets', { get: function () { return require('./tag-pipeline-rulesets'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
+Object.defineProperty(exports, 'teamConnection', { get: function () { return require('./team-connection'); } });
 Object.defineProperty(exports, 'teamHierarchyLinks', { get: function () { return require('./team-hierarchy-links'); } });
 Object.defineProperty(exports, 'teamLink', { get: function () { return require('./team-link'); } });
 Object.defineProperty(exports, 'teamMembership', { get: function () { return require('./team-membership'); } });
 Object.defineProperty(exports, 'teamNotificationRule', { get: function () { return require('./team-notification-rule'); } });
 Object.defineProperty(exports, 'teamPermissionSetting', { get: function () { return require('./team-permission-setting'); } });
+Object.defineProperty(exports, 'teamSync', { get: function () { return require('./team-sync'); } });
 Object.defineProperty(exports, 'user', { get: function () { return require('./user'); } });
 Object.defineProperty(exports, 'userRole', { get: function () { return require('./user-role'); } });
 Object.defineProperty(exports, 'webhook', { get: function () { return require('./webhook'); } });
@@ -137,7 +142,6 @@ Object.defineProperty(exports, 'dataDatadogActionConnection', { get: function ()
 Object.defineProperty(exports, 'dataDatadogApiKey', { get: function () { return require('./data-datadog-api-key'); } });
 Object.defineProperty(exports, 'dataDatadogApmRetentionFiltersOrder', { get: function () { return require('./data-datadog-apm-retention-filters-order'); } });
 Object.defineProperty(exports, 'dataDatadogAppBuilderApp', { get: function () { return require('./data-datadog-app-builder-app'); } });
-Object.defineProperty(exports, 'dataDatadogApplicationKey', { get: function () { return require('./data-datadog-application-key'); } });
 Object.defineProperty(exports, 'dataDatadogAwsCurConfig', { get: function () { return require('./data-datadog-aws-cur-config'); } });
 Object.defineProperty(exports, 'dataDatadogAzureUcConfig', { get: function () { return require('./data-datadog-azure-uc-config'); } });
 Object.defineProperty(exports, 'dataDatadogCloudWorkloadSecurityAgentRules', { get: function () { return require('./data-datadog-cloud-workload-security-agent-rules'); } });
@@ -175,6 +179,10 @@ Object.defineProperty(exports, 'dataDatadogMetrics', { get: function () { return
 Object.defineProperty(exports, 'dataDatadogMonitor', { get: function () { return require('./data-datadog-monitor'); } });
 Object.defineProperty(exports, 'dataDatadogMonitorConfigPolicies', { get: function () { return require('./data-datadog-monitor-config-policies'); } });
 Object.defineProperty(exports, 'dataDatadogMonitors', { get: function () { return require('./data-datadog-monitors'); } });
+Object.defineProperty(exports, 'dataDatadogOrgGroupMemberships', { get: function () { return require('./data-datadog-org-group-memberships'); } });
+Object.defineProperty(exports, 'dataDatadogOrgGroupPolicies', { get: function () { return require('./data-datadog-org-group-policies'); } });
+Object.defineProperty(exports, 'dataDatadogOrgGroupPolicyOverrides', { get: function () { return require('./data-datadog-org-group-policy-overrides'); } });
+Object.defineProperty(exports, 'dataDatadogOrgGroups', { get: function () { return require('./data-datadog-org-groups'); } });
 Object.defineProperty(exports, 'dataDatadogOrganizationSettings', { get: function () { return require('./data-datadog-organization-settings'); } });
 Object.defineProperty(exports, 'dataDatadogPermissions', { get: function () { return require('./data-datadog-permissions'); } });
 Object.defineProperty(exports, 'dataDatadogPowerpack', { get: function () { return require('./data-datadog-powerpack'); } });

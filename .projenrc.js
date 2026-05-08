@@ -7,7 +7,7 @@ const { CdktnProviderProject } = require("@cdktn/provider-project");
 
 const project = new CdktnProviderProject({
   useCustomGithubRunner: true,
-  terraformProvider: "DataDog/datadog@~> 3.0",
+  terraformProvider: "DataDog/datadog@~> 4.0",
   cdktnVersion: "^0.23.0",
   constructsVersion: "^10.6.0",
   minNodeVersion: "20.16.0",
