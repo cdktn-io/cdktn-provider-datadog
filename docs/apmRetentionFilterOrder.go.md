@@ -4,12 +4,12 @@
 
 ### ApmRetentionFilterOrder <a name="ApmRetentionFilterOrder" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/apm_retention_filter_order datadog_apm_retention_filter_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/apmretentionfilterorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/apmretentionfilterorder"
 
 apmretentionfilterorder.NewApmRetentionFilterOrder(scope Construct, id *string, config ApmRetentionFilterOrderConfig) ApmRetentionFilterOrder
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/apmretentionfilterorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/apmretentionfilterorder"
 
 apmretentionfilterorder.ApmRetentionFilterOrder_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/apmretentionfilterorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/apmretentionfilterorder"
 
 apmretentionfilterorder.ApmRetentionFilterOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ apmretentionfilterorder.ApmRetentionFilterOrder_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/apmretentionfilterorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/apmretentionfilterorder"
 
 apmretentionfilterorder.ApmRetentionFilterOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ apmretentionfilterorder.ApmRetentionFilterOrder_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/apmretentionfilterorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/apmretentionfilterorder"
 
 apmretentionfilterorder.ApmRetentionFilterOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ApmRetentionFilterOrder to
 
 The id of the existing ApmRetentionFilterOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/apm_retention_filter_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/apm_retention_filter_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.apmRetentionFilterOrder.ApmRetentionFilterOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/apmretentionfilterorder"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/apmretentionfilterorder"
 
 &apmretentionfilterorder.ApmRetentionFilterOrderConfig {
 	Connection: interface{},
@@ -831,7 +831,7 @@ FilterIds *[]*string
 
 The filter IDs list. The order of filters IDs in this attribute defines the overall APM retention filters order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/apm_retention_filter_order#filter_ids ApmRetentionFilterOrder#filter_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/apm_retention_filter_order#filter_ids ApmRetentionFilterOrder#filter_ids}
 
 ---
 

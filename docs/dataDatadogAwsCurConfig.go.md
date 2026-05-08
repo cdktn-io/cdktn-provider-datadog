@@ -4,12 +4,12 @@
 
 ### DataDatadogAwsCurConfig <a name="DataDatadogAwsCurConfig" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/aws_cur_config datadog_aws_cur_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 datadatadogawscurconfig.NewDataDatadogAwsCurConfig(scope Construct, id *string, config DataDatadogAwsCurConfigConfig) DataDatadogAwsCurConfig
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 datadatadogawscurconfig.DataDatadogAwsCurConfig_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 datadatadogawscurconfig.DataDatadogAwsCurConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogawscurconfig.DataDatadogAwsCurConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 datadatadogawscurconfig.DataDatadogAwsCurConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogawscurconfig.DataDatadogAwsCurConfig_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 datadatadogawscurconfig.DataDatadogAwsCurConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogAwsCurConfig to
 
 The id of the existing DataDatadogAwsCurConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/aws_cur_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/aws_cur_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -719,7 +719,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 &datadatadogawscurconfig.DataDatadogAwsCurConfigAccountFilters {
 
@@ -732,7 +732,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogaws
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 &datadatadogawscurconfig.DataDatadogAwsCurConfigConfig {
 	Connection: interface{},
@@ -841,7 +841,7 @@ CloudAccountId *f64
 
 The Datadog cloud account ID for the AWS CUR configuration you want to retrieve information about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/aws_cur_config#cloud_account_id DataDatadogAwsCurConfig#cloud_account_id}
 
 ---
 
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogAwsCurConfig.DataDatadogAwsCurConfigAccountFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogawscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogawscurconfig"
 
 datadatadogawscurconfig.NewDataDatadogAwsCurConfigAccountFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataDatadogAwsCurConfigAccountFiltersOutputReference
 ```

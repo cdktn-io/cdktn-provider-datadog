@@ -4,12 +4,12 @@
 
 ### WorkflowAutomation <a name="WorkflowAutomation" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation datadog_workflow_automation}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation datadog_workflow_automation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/workflowautomation"
 
 workflowautomation.NewWorkflowAutomation(scope Construct, id *string, config WorkflowAutomationConfig) WorkflowAutomation
 ```
@@ -407,7 +407,7 @@ func ResetWebhookSecret()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ workflowautomation.WorkflowAutomation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workflowautomation.WorkflowAutomation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/workflowautomation"
 
 workflowautomation.WorkflowAutomation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the WorkflowAutomation to impo
 
 The id of the existing WorkflowAutomation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.workflowAutomation.WorkflowAutomationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/workflowautomation"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/workflowautomation"
 
 &workflowautomation.WorkflowAutomationConfig {
 	Connection: interface{},
@@ -958,7 +958,7 @@ Description *string
 
 Description of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation#description WorkflowAutomation#description}
 
 ---
 
@@ -972,7 +972,7 @@ Name *string
 
 Name of the workflow. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation#name WorkflowAutomation#name}
 
 ---
 
@@ -988,7 +988,7 @@ Set the workflow to published or unpublished.
 
 Workflows in an unpublished state are only executable through manual runs. Automatic triggers such as Schedule do not execute the workflow until it is published.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation#published WorkflowAutomation#published}
 
 ---
 
@@ -1002,7 +1002,7 @@ SpecJson *string
 
 The spec defines what the workflow does.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation#spec_json WorkflowAutomation#spec_json}
 
 ---
 
@@ -1016,7 +1016,7 @@ Tags *[]*string
 
 Tags of the workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation#tags WorkflowAutomation#tags}
 
 ---
 
@@ -1032,7 +1032,7 @@ If a webhook trigger is defined on this workflow, a webhookSecret is required an
 
 String length must be at least 16.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/workflow_automation#webhook_secret WorkflowAutomation#webhook_secret}
 
 ---
 

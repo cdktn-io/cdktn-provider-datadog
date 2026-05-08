@@ -4,12 +4,12 @@
 
 ### DomainAllowlist <a name="DomainAllowlist" id="@cdktn/provider-datadog.domainAllowlist.DomainAllowlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/domain_allowlist datadog_domain_allowlist}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/domain_allowlist datadog_domain_allowlist}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.domainAllowlist.DomainAllowlist.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/domainallowlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/domainallowlist"
 
 domainallowlist.NewDomainAllowlist(scope Construct, id *string, config DomainAllowlistConfig) DomainAllowlist
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.domainAllowlist.DomainAllowlist.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/domainallowlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/domainallowlist"
 
 domainallowlist.DomainAllowlist_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.domainAllowlist.DomainAllowlist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/domainallowlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/domainallowlist"
 
 domainallowlist.DomainAllowlist_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ domainallowlist.DomainAllowlist_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.domainAllowlist.DomainAllowlist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/domainallowlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/domainallowlist"
 
 domainallowlist.DomainAllowlist_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ domainallowlist.DomainAllowlist_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.domainAllowlist.DomainAllowlist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/domainallowlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/domainallowlist"
 
 domainallowlist.DomainAllowlist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DomainAllowlist to import.
 
 The id of the existing DomainAllowlist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/domain_allowlist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.domainAllowlist.DomainAllowlistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/domainallowlist"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/domainallowlist"
 
 &domainallowlist.DomainAllowlistConfig {
 	Connection: interface{},
@@ -855,7 +855,7 @@ Domains *[]*string
 
 The domains within the domain allowlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/domain_allowlist#domains DomainAllowlist#domains}
 
 ---
 
@@ -869,7 +869,7 @@ Enabled interface{}
 
 Whether the Email Domain Allowlist is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/domain_allowlist#enabled DomainAllowlist#enabled}
 
 ---
 

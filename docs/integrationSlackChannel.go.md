@@ -4,12 +4,12 @@
 
 ### IntegrationSlackChannel <a name="IntegrationSlackChannel" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel datadog_integration_slack_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 integrationslackchannel.NewIntegrationSlackChannel(scope Construct, id *string, config IntegrationSlackChannelConfig) IntegrationSlackChannel
 ```
@@ -420,7 +420,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ integrationslackchannel.IntegrationSlackChannel_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ integrationslackchannel.IntegrationSlackChannel_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 integrationslackchannel.IntegrationSlackChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -509,7 +509,7 @@ The construct id used in the generated config for the IntegrationSlackChannel to
 
 The id of the existing IntegrationSlackChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,7 +797,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 &integrationslackchannel.IntegrationSlackChannelConfig {
 	Connection: interface{},
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationsla
 	Provisioners: *[]interface{},
 	AccountName: *string,
 	ChannelName: *string,
-	Display: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.integrationSlackChannel.IntegrationSlackChannelDisplay,
+	Display: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.integrationSlackChannel.IntegrationSlackChannelDisplay,
 	Id: *string,
 }
 ```
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationsla
 | <code><a href="#@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.accountName">AccountName</a></code> | <code>*string</code> | Slack account name. |
 | <code><a href="#@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.channelName">ChannelName</a></code> | <code>*string</code> | Slack channel name. |
 | <code><a href="#@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.display">Display</a></code> | <code><a href="#@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay">IntegrationSlackChannelDisplay</a></code> | display block. |
-| <code><a href="#@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
+| <code><a href="#@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}. |
 
 ---
 
@@ -912,7 +912,7 @@ AccountName *string
 
 Slack account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#account_name IntegrationSlackChannel#account_name}
 
 ---
 
@@ -926,7 +926,7 @@ ChannelName *string
 
 Slack channel name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#channel_name IntegrationSlackChannel#channel_name}
 
 ---
 
@@ -940,7 +940,7 @@ Display IntegrationSlackChannelDisplay
 
 display block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#display IntegrationSlackChannel#display}
 
 ---
 
@@ -952,7 +952,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#id IntegrationSlackChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -964,7 +964,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 &integrationslackchannel.IntegrationSlackChannelDisplay {
 	Message: interface{},
@@ -997,7 +997,7 @@ Message interface{}
 
 Show the main body of the alert event. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#message IntegrationSlackChannel#message}
 
 ---
 
@@ -1011,7 +1011,7 @@ MuteButtons interface{}
 
 Show interactive buttons to mute the alerting monitor. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#mute_buttons IntegrationSlackChannel#mute_buttons}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#mute_buttons IntegrationSlackChannel#mute_buttons}
 
 ---
 
@@ -1037,7 +1037,7 @@ Snapshot interface{}
 
 Show the alert event's snapshot image. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#snapshot IntegrationSlackChannel#snapshot}
 
 ---
 
@@ -1051,7 +1051,7 @@ Tags interface{}
 
 Show the scopes on which the monitor alerted. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_slack_channel#tags IntegrationSlackChannel#tags}
 
 ---
 
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationSlackChannel.IntegrationSlackChannelDisplayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationslackchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationslackchannel"
 
 integrationslackchannel.NewIntegrationSlackChannelDisplayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IntegrationSlackChannelDisplayOutputReference
 ```

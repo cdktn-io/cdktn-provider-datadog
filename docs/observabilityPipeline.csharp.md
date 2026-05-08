@@ -4,7 +4,7 @@
 
 ### ObservabilityPipeline <a name="ObservabilityPipeline" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline datadog_observability_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipeline.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the ObservabilityPipeline to i
 
 The id of the existing ObservabilityPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ public string Name { get; set; }
 
 The pipeline name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -889,7 +889,7 @@ public IResolvable|ObservabilityPipelineConfigA[] Config { get; set; }
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#config ObservabilityPipeline#config}
 
 ---
 
@@ -931,7 +931,7 @@ public IResolvable|ObservabilityPipelineConfigDestination[] Destination { get; s
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
 
 ---
 
@@ -945,7 +945,7 @@ public string PipelineType { get; set; }
 
 The type of data being ingested. Defaults to `logs` if not specified. Valid values are `logs`, `metrics`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
 
 ---
 
@@ -959,7 +959,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroup[] ProcessorGroup { 
 
 processor_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
 
 ---
 
@@ -973,7 +973,7 @@ public IResolvable|ObservabilityPipelineConfigSource[] Source { get; set; }
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -987,9 +987,9 @@ public bool|IResolvable UseLegacySearchSyntax { get; set; }
 
 Set to `true` to continue using the legacy search syntax while migrating filter queries.
 
-After migrating all queries to the new syntax, set to `false`. The legacy syntax is deprecated and will eventually be removed. Requires Observability Pipelines Worker 2.11 or later. See https://docs.datadoghq.com/observability_pipelines/guide/upgrade_your_filter_queries_to_the_new_search_syntax/ for more information.
+After migrating all queries to the new syntax, set to `false`. The legacy syntax is deprecated and will eventually be removed. Requires Observability Pipelines Worker 2.11 or later. Only applies to `logs` pipelines. This field is ignored for `metrics` pipelines. See https://docs.datadoghq.com/observability_pipelines/guide/upgrade_your_filter_queries_to_the_new_search_syntax/ for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
 
 ---
 
@@ -1005,10 +1005,12 @@ new ObservabilityPipelineConfigDestination {
     string[] Inputs,
     IResolvable|ObservabilityPipelineConfigDestinationAmazonOpensearch[] AmazonOpensearch = null,
     IResolvable|ObservabilityPipelineConfigDestinationAmazonS3[] AmazonS3 = null,
+    IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Generic[] AmazonS3Generic = null,
     IResolvable|ObservabilityPipelineConfigDestinationAmazonSecurityLake[] AmazonSecurityLake = null,
     IResolvable|ObservabilityPipelineConfigDestinationAzureStorage[] AzureStorage = null,
     IResolvable|ObservabilityPipelineConfigDestinationCloudPrem[] CloudPrem = null,
     IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem[] CrowdstrikeNextGenSiem = null,
+    IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobus[] DatabricksZerobus = null,
     IResolvable|ObservabilityPipelineConfigDestinationDatadogLogs[] DatadogLogs = null,
     IResolvable|ObservabilityPipelineConfigDestinationDatadogMetrics[] DatadogMetrics = null,
     IResolvable|ObservabilityPipelineConfigDestinationElasticsearch[] Elasticsearch = null,
@@ -1037,10 +1039,12 @@ new ObservabilityPipelineConfigDestination {
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.inputs">Inputs</a></code> | <code>string[]</code> | A list of component IDs whose output is used as the `input` for this component. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.amazonOpensearch">AmazonOpensearch</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearch">ObservabilityPipelineConfigDestinationAmazonOpensearch</a>[]</code> | amazon_opensearch block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.amazonS3">AmazonS3</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3">ObservabilityPipelineConfigDestinationAmazonS3</a>[]</code> | amazon_s3 block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.amazonS3Generic">AmazonS3Generic</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>[]</code> | amazon_s3_generic block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.amazonSecurityLake">AmazonSecurityLake</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLake">ObservabilityPipelineConfigDestinationAmazonSecurityLake</a>[]</code> | amazon_security_lake block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.azureStorage">AzureStorage</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage">ObservabilityPipelineConfigDestinationAzureStorage</a>[]</code> | azure_storage block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.cloudPrem">CloudPrem</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPrem">ObservabilityPipelineConfigDestinationCloudPrem</a>[]</code> | cloud_prem block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.crowdstrikeNextGenSiem">CrowdstrikeNextGenSiem</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem</a>[]</code> | crowdstrike_next_gen_siem block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.databricksZerobus">DatabricksZerobus</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>[]</code> | databricks_zerobus block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.datadogLogs">DatadogLogs</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogs">ObservabilityPipelineConfigDestinationDatadogLogs</a>[]</code> | datadog_logs block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.datadogMetrics">DatadogMetrics</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogMetrics">ObservabilityPipelineConfigDestinationDatadogMetrics</a>[]</code> | datadog_metrics block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.elasticsearch">Elasticsearch</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch">ObservabilityPipelineConfigDestinationElasticsearch</a>[]</code> | elasticsearch block. |
@@ -1071,7 +1075,7 @@ public string Id { get; set; }
 
 The unique identifier for this destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1088,7 +1092,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the `input` for this component.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -1102,7 +1106,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonOpensearch[] Amaz
 
 amazon_opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
 
 ---
 
@@ -1116,7 +1120,21 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3[] AmazonS3 { g
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+
+---
+
+##### `AmazonS3Generic`<sup>Optional</sup> <a name="AmazonS3Generic" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.amazonS3Generic"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Generic[] AmazonS3Generic { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>[]
+
+amazon_s3_generic block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#amazon_s3_generic ObservabilityPipeline#amazon_s3_generic}
 
 ---
 
@@ -1130,7 +1148,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonSecurityLake[] Am
 
 amazon_security_lake block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
 
 ---
 
@@ -1144,7 +1162,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAzureStorage[] AzureSto
 
 azure_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
 
 ---
 
@@ -1158,7 +1176,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationCloudPrem[] CloudPrem {
 
 cloud_prem block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#cloud_prem ObservabilityPipeline#cloud_prem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#cloud_prem ObservabilityPipeline#cloud_prem}
 
 ---
 
@@ -1172,7 +1190,21 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem[
 
 crowdstrike_next_gen_siem block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
+
+---
+
+##### `DatabricksZerobus`<sup>Optional</sup> <a name="DatabricksZerobus" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestination.property.databricksZerobus"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobus[] DatabricksZerobus { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>[]
+
+databricks_zerobus block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#databricks_zerobus ObservabilityPipeline#databricks_zerobus}
 
 ---
 
@@ -1186,7 +1218,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogs[] DatadogLo
 
 datadog_logs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
 
 ---
 
@@ -1200,7 +1232,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogMetrics[] Datado
 
 datadog_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#datadog_metrics ObservabilityPipeline#datadog_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#datadog_metrics ObservabilityPipeline#datadog_metrics}
 
 ---
 
@@ -1214,7 +1246,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearch[] Elastic
 
 elasticsearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
 
 ---
 
@@ -1228,7 +1260,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleCloudStorage[] Go
 
 google_cloud_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
 
 ---
 
@@ -1242,7 +1274,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGooglePubsub[] GooglePu
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -1256,7 +1288,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleSecops[] GoogleSe
 
 google_secops block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#google_secops ObservabilityPipeline#google_secops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#google_secops ObservabilityPipeline#google_secops}
 
 ---
 
@@ -1270,7 +1302,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationHttpClient[] HttpClient
 
 http_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
 
 ---
 
@@ -1284,7 +1316,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationKafka[] Kafka { get; se
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
 
 ---
 
@@ -1298,7 +1330,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationMicrosoftSentinel[] Mic
 
 microsoft_sentinel block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
 
 ---
 
@@ -1312,7 +1344,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationNewRelic[] NewRelic { g
 
 new_relic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
 
 ---
 
@@ -1326,7 +1358,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationOpensearch[] Opensearch
 
 opensearch block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
 
 ---
 
@@ -1340,7 +1372,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationRsyslog[] Rsyslog { get
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -1354,7 +1386,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSentinelOne[] SentinelO
 
 sentinel_one block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
 
 ---
 
@@ -1368,7 +1400,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSocket[] Socket { get; 
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -1382,7 +1414,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSplunkHec[] SplunkHec {
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -1396,7 +1428,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSumoLogic[] SumoLogic {
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -1410,7 +1442,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSyslogNg[] SyslogNg { g
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -1448,7 +1480,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonOpensearchAuth[] 
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1462,7 +1494,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonOpensearchBuffer[
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -1476,7 +1508,7 @@ public string BulkIndex { get; set; }
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -1518,7 +1550,7 @@ public string Strategy { get; set; }
 
 The authentication strategy to use (e.g. aws or basic).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -1532,7 +1564,7 @@ public string AssumeRole { get; set; }
 
 ARN of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -1546,7 +1578,7 @@ public string AwsRegion { get; set; }
 
 AWS region override (if applicable).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#aws_region ObservabilityPipeline#aws_region}
 
 ---
 
@@ -1560,7 +1592,7 @@ public string ExternalId { get; set; }
 
 External ID for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -1574,7 +1606,7 @@ public string SessionName { get; set; }
 
 Session name for assumed role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -1610,7 +1642,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonOpensearchBufferD
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -1624,7 +1656,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonOpensearchBufferM
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -1660,7 +1692,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -1674,7 +1706,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -1712,7 +1744,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -1726,7 +1758,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -1740,7 +1772,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -1784,7 +1816,7 @@ public string Bucket { get; set; }
 
 S3 bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -1798,7 +1830,7 @@ public string KeyPrefix { get; set; }
 
 Prefix for object keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
 
 ---
 
@@ -1812,7 +1844,7 @@ public string Region { get; set; }
 
 AWS region of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -1826,7 +1858,7 @@ public string StorageClass { get; set; }
 
 S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -1840,7 +1872,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Auth[] Auth { g
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -1854,7 +1886,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Buffer[] Buffer
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -1892,7 +1924,7 @@ public string AssumeRole { get; set; }
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -1906,7 +1938,7 @@ public string ExternalId { get; set; }
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -1920,7 +1952,7 @@ public string SessionName { get; set; }
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -1956,7 +1988,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3BufferDisk[] Di
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -1970,7 +2002,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3BufferMemory[] 
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -2006,7 +2038,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2020,7 +2052,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2058,7 +2090,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -2072,7 +2104,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2086,7 +2118,353 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+
+---
+
+### ObservabilityPipelineConfigDestinationAmazonS3Generic <a name="ObservabilityPipelineConfigDestinationAmazonS3Generic" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3Generic {
+    string Bucket,
+    string Region,
+    string StorageClass,
+    IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericAuth[] Auth = null,
+    IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings[] BatchSettings = null,
+    IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericCompression[] Compression = null,
+    IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding[] Encoding = null,
+    string KeyPrefix = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.bucket">Bucket</a></code> | <code>string</code> | S3 bucket name. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.region">Region</a></code> | <code>string</code> | AWS region of the S3 bucket. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.storageClass">StorageClass</a></code> | <code>string</code> | S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.auth">Auth</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>[]</code> | auth block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.batchSettings">BatchSettings</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>[]</code> | batch_settings block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.compression">Compression</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>[]</code> | compression block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.encoding">Encoding</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>[]</code> | encoding block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.keyPrefix">KeyPrefix</a></code> | <code>string</code> | Optional prefix for object keys. |
+
+---
+
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.bucket"></a>
+
+```csharp
+public string Bucket { get; set; }
+```
+
+- *Type:* string
+
+S3 bucket name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+AWS region of the S3 bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+
+---
+
+##### `StorageClass`<sup>Required</sup> <a name="StorageClass" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.storageClass"></a>
+
+```csharp
+public string StorageClass { get; set; }
+```
+
+- *Type:* string
+
+S3 storage class. Valid values are `STANDARD`, `REDUCED_REDUNDANCY`, `INTELLIGENT_TIERING`, `STANDARD_IA`, `EXPRESS_ONEZONE`, `ONEZONE_IA`, `GLACIER`, `GLACIER_IR`, `DEEP_ARCHIVE`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+
+---
+
+##### `Auth`<sup>Optional</sup> <a name="Auth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.auth"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericAuth[] Auth { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>[]
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+
+---
+
+##### `BatchSettings`<sup>Optional</sup> <a name="BatchSettings" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.batchSettings"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings[] BatchSettings { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>[]
+
+batch_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#batch_settings ObservabilityPipeline#batch_settings}
+
+---
+
+##### `Compression`<sup>Optional</sup> <a name="Compression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.compression"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericCompression[] Compression { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>[]
+
+compression block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+
+---
+
+##### `Encoding`<sup>Optional</sup> <a name="Encoding" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.encoding"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding[] Encoding { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>[]
+
+encoding block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+
+---
+
+##### `KeyPrefix`<sup>Optional</sup> <a name="KeyPrefix" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic.property.keyPrefix"></a>
+
+```csharp
+public string KeyPrefix { get; set; }
+```
+
+- *Type:* string
+
+Optional prefix for object keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+
+---
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericAuth <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericAuth {
+    string AssumeRole = null,
+    string ExternalId = null,
+    string SessionName = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.property.assumeRole">AssumeRole</a></code> | <code>string</code> | The Amazon Resource Name (ARN) of the role to assume. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.property.externalId">ExternalId</a></code> | <code>string</code> | A unique identifier for cross-account role assumption. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.property.sessionName">SessionName</a></code> | <code>string</code> | A session identifier used for logging and tracing the assumed role session. |
+
+---
+
+##### `AssumeRole`<sup>Optional</sup> <a name="AssumeRole" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.property.assumeRole"></a>
+
+```csharp
+public string AssumeRole { get; set; }
+```
+
+- *Type:* string
+
+The Amazon Resource Name (ARN) of the role to assume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+
+---
+
+##### `ExternalId`<sup>Optional</sup> <a name="ExternalId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; set; }
+```
+
+- *Type:* string
+
+A unique identifier for cross-account role assumption.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+
+---
+
+##### `SessionName`<sup>Optional</sup> <a name="SessionName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth.property.sessionName"></a>
+
+```csharp
+public string SessionName { get; set; }
+```
+
+- *Type:* string
+
+A session identifier used for logging and tracing the assumed role session.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+
+---
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings {
+    double BatchSize = null,
+    double TimeoutSecs = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings.property.batchSize">BatchSize</a></code> | <code>double</code> | Maximum batch size in bytes. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings.property.timeoutSecs">TimeoutSecs</a></code> | <code>double</code> | Maximum number of seconds to wait before flushing the batch. |
+
+---
+
+##### `BatchSize`<sup>Optional</sup> <a name="BatchSize" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings.property.batchSize"></a>
+
+```csharp
+public double BatchSize { get; set; }
+```
+
+- *Type:* double
+
+Maximum batch size in bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#batch_size ObservabilityPipeline#batch_size}
+
+---
+
+##### `TimeoutSecs`<sup>Optional</sup> <a name="TimeoutSecs" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings.property.timeoutSecs"></a>
+
+```csharp
+public double TimeoutSecs { get; set; }
+```
+
+- *Type:* double
+
+Maximum number of seconds to wait before flushing the batch.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#timeout_secs ObservabilityPipeline#timeout_secs}
+
+---
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericCompression <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericCompression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericCompression {
+    string Algorithm,
+    double Level = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression.property.algorithm">Algorithm</a></code> | <code>string</code> | Compression algorithm. Valid values are `gzip`, `zstd`, `snappy`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression.property.level">Level</a></code> | <code>double</code> | Compression level. |
+
+---
+
+##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression.property.algorithm"></a>
+
+```csharp
+public string Algorithm { get; set; }
+```
+
+- *Type:* string
+
+Compression algorithm. Valid values are `gzip`, `zstd`, `snappy`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+
+---
+
+##### `Level`<sup>Optional</sup> <a name="Level" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression.property.level"></a>
+
+```csharp
+public double Level { get; set; }
+```
+
+- *Type:* double
+
+Compression level.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+
+---
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding {
+    string Type
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding.property.type">Type</a></code> | <code>string</code> | The encoding type. Valid values are `json`, `parquet`. |
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding.property.type"></a>
+
+```csharp
+public string Type { get; set; }
+```
+
+- *Type:* string
+
+The encoding type. Valid values are `json`, `parquet`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -2130,7 +2508,7 @@ public string Bucket { get; set; }
 
 Name of the Amazon S3 bucket in Security Lake (3-63 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -2144,7 +2522,7 @@ public string CustomSourceName { get; set; }
 
 Custom source name for the logs in Security Lake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#custom_source_name ObservabilityPipeline#custom_source_name}
 
 ---
 
@@ -2158,7 +2536,7 @@ public string Region { get; set; }
 
 AWS region of the Security Lake bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -2172,7 +2550,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonSecurityLakeAuth[
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -2186,7 +2564,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonSecurityLakeBuffe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -2200,7 +2578,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonSecurityLakeTls[]
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -2238,7 +2616,7 @@ public string AssumeRole { get; set; }
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -2252,7 +2630,7 @@ public string ExternalId { get; set; }
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -2266,7 +2644,7 @@ public string SessionName { get; set; }
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -2302,7 +2680,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonSecurityLakeBuffe
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -2316,7 +2694,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonSecurityLakeBuffe
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -2352,7 +2730,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2366,7 +2744,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2404,7 +2782,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -2418,7 +2796,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2432,7 +2810,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2472,7 +2850,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -2486,7 +2864,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -2500,7 +2878,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -2514,7 +2892,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -2528,7 +2906,8 @@ using Io.Cdktn.Providers.Datadog;
 new ObservabilityPipelineConfigDestinationAzureStorage {
     string ContainerName,
     string BlobPrefix = null,
-    IResolvable|ObservabilityPipelineConfigDestinationAzureStorageBuffer[] Buffer = null
+    IResolvable|ObservabilityPipelineConfigDestinationAzureStorageBuffer[] Buffer = null,
+    string ConnectionStringKey = null
 };
 ```
 
@@ -2539,6 +2918,7 @@ new ObservabilityPipelineConfigDestinationAzureStorage {
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage.property.containerName">ContainerName</a></code> | <code>string</code> | The name of the Azure Blob Storage container to store logs in. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage.property.blobPrefix">BlobPrefix</a></code> | <code>string</code> | Optional prefix for blobs written to the container. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage.property.buffer">Buffer</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBuffer">ObservabilityPipelineConfigDestinationAzureStorageBuffer</a>[]</code> | buffer block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage.property.connectionStringKey">ConnectionStringKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Azure Storage connection string. |
 
 ---
 
@@ -2552,7 +2932,7 @@ public string ContainerName { get; set; }
 
 The name of the Azure Blob Storage container to store logs in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#container_name ObservabilityPipeline#container_name}
 
 ---
 
@@ -2566,7 +2946,7 @@ public string BlobPrefix { get; set; }
 
 Optional prefix for blobs written to the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#blob_prefix ObservabilityPipeline#blob_prefix}
 
 ---
 
@@ -2580,7 +2960,21 @@ public IResolvable|ObservabilityPipelineConfigDestinationAzureStorageBuffer[] Bu
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+
+---
+
+##### `ConnectionStringKey`<sup>Optional</sup> <a name="ConnectionStringKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage.property.connectionStringKey"></a>
+
+```csharp
+public string ConnectionStringKey { get; set; }
+```
+
+- *Type:* string
+
+Name of the environment variable or secret that holds the Azure Storage connection string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#connection_string_key ObservabilityPipeline#connection_string_key}
 
 ---
 
@@ -2616,7 +3010,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAzureStorageBufferDisk[
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -2630,7 +3024,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationAzureStorageBufferMemor
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -2666,7 +3060,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2680,7 +3074,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2718,7 +3112,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -2732,7 +3126,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2746,7 +3140,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -2780,7 +3174,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -2824,7 +3218,7 @@ public string Encoding { get; set; }
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -2838,7 +3232,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemB
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -2852,7 +3246,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemC
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -2866,7 +3260,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -2880,7 +3274,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemT
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -2894,7 +3288,7 @@ public string TokenKey { get; set; }
 
 Name of the environment variable or secret that holds the authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -2930,7 +3324,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemB
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -2944,7 +3338,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemB
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -2980,7 +3374,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -2994,7 +3388,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3032,7 +3426,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -3046,7 +3440,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3060,7 +3454,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3096,7 +3490,7 @@ public string Algorithm { get; set; }
 
 Compression algorithm for log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -3110,7 +3504,7 @@ public double Level { get; set; }
 
 Compression level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -3150,7 +3544,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -3164,7 +3558,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -3178,7 +3572,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -3192,7 +3586,139 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+
+---
+
+### ObservabilityPipelineConfigDestinationDatabricksZerobus <a name="ObservabilityPipelineConfigDestinationDatabricksZerobus" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationDatabricksZerobus {
+    string IngestionEndpoint,
+    string TableName,
+    string UnityCatalogEndpoint,
+    IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobusAuth[] Auth = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.ingestionEndpoint">IngestionEndpoint</a></code> | <code>string</code> | The Databricks Zerobus ingestion endpoint URL. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.tableName">TableName</a></code> | <code>string</code> | The name of the Databricks table to ingest logs into. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.unityCatalogEndpoint">UnityCatalogEndpoint</a></code> | <code>string</code> | The Databricks Unity Catalog endpoint URL. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.auth">Auth</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>[]</code> | auth block. |
+
+---
+
+##### `IngestionEndpoint`<sup>Required</sup> <a name="IngestionEndpoint" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.ingestionEndpoint"></a>
+
+```csharp
+public string IngestionEndpoint { get; set; }
+```
+
+- *Type:* string
+
+The Databricks Zerobus ingestion endpoint URL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ingestion_endpoint ObservabilityPipeline#ingestion_endpoint}
+
+---
+
+##### `TableName`<sup>Required</sup> <a name="TableName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.tableName"></a>
+
+```csharp
+public string TableName { get; set; }
+```
+
+- *Type:* string
+
+The name of the Databricks table to ingest logs into.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#table_name ObservabilityPipeline#table_name}
+
+---
+
+##### `UnityCatalogEndpoint`<sup>Required</sup> <a name="UnityCatalogEndpoint" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.unityCatalogEndpoint"></a>
+
+```csharp
+public string UnityCatalogEndpoint { get; set; }
+```
+
+- *Type:* string
+
+The Databricks Unity Catalog endpoint URL.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#unity_catalog_endpoint ObservabilityPipeline#unity_catalog_endpoint}
+
+---
+
+##### `Auth`<sup>Optional</sup> <a name="Auth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus.property.auth"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobusAuth[] Auth { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>[]
+
+auth block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+
+---
+
+### ObservabilityPipelineConfigDestinationDatabricksZerobusAuth <a name="ObservabilityPipelineConfigDestinationDatabricksZerobusAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationDatabricksZerobusAuth {
+    string ClientId,
+    string ClientSecretKey = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth.property.clientId">ClientId</a></code> | <code>string</code> | The OAuth client ID used to authenticate with Databricks. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth.property.clientSecretKey">ClientSecretKey</a></code> | <code>string</code> | The name of the secret or environment variable holding the OAuth client secret. Defaults to `DESTINATION_DATABRICKS_ZEROBUS_OAUTH_CLIENT_SECRET`. |
+
+---
+
+##### `ClientId`<sup>Required</sup> <a name="ClientId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth.property.clientId"></a>
+
+```csharp
+public string ClientId { get; set; }
+```
+
+- *Type:* string
+
+The OAuth client ID used to authenticate with Databricks.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+
+---
+
+##### `ClientSecretKey`<sup>Optional</sup> <a name="ClientSecretKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth.property.clientSecretKey"></a>
+
+```csharp
+public string ClientSecretKey { get; set; }
+```
+
+- *Type:* string
+
+The name of the secret or environment variable holding the OAuth client secret. Defaults to `DESTINATION_DATABRICKS_ZEROBUS_OAUTH_CLIENT_SECRET`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
 
 ---
 
@@ -3228,7 +3754,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogsBuffer[] Buf
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -3242,7 +3768,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogsRoutes[] Rou
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#routes ObservabilityPipeline#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#routes ObservabilityPipeline#routes}
 
 ---
 
@@ -3278,7 +3804,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogsBufferDisk[]
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -3292,7 +3818,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogsBufferMemory
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -3328,7 +3854,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3342,7 +3868,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3380,7 +3906,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -3394,7 +3920,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3408,7 +3934,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3450,7 +3976,7 @@ public string ApiKeyKey { get; set; }
 
 Name of the environment variable or secret that stores the Datadog API key used by this route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#api_key_key ObservabilityPipeline#api_key_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#api_key_key ObservabilityPipeline#api_key_key}
 
 ---
 
@@ -3464,7 +3990,7 @@ public string Include { get; set; }
 
 A Datadog search query that determines which logs are forwarded using this route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -3478,7 +4004,7 @@ public string RouteId { get; set; }
 
 Unique identifier for this route within the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#route_id ObservabilityPipeline#route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#route_id ObservabilityPipeline#route_id}
 
 ---
 
@@ -3492,7 +4018,7 @@ public string Site { get; set; }
 
 Datadog site where matching logs are sent (for example, `us1`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#site ObservabilityPipeline#site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#site ObservabilityPipeline#site}
 
 ---
 
@@ -3506,7 +4032,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogsRoutesBuffer
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -3542,7 +4068,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogsRoutesBuffer
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -3556,7 +4082,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationDatadogLogsRoutesBuffer
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -3592,7 +4118,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3606,7 +4132,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3644,7 +4170,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -3658,7 +4184,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3672,7 +4198,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -3701,8 +4227,13 @@ new ObservabilityPipelineConfigDestinationElasticsearch {
     IResolvable|ObservabilityPipelineConfigDestinationElasticsearchAuth[] Auth = null,
     IResolvable|ObservabilityPipelineConfigDestinationElasticsearchBuffer[] Buffer = null,
     string BulkIndex = null,
+    IResolvable|ObservabilityPipelineConfigDestinationElasticsearchCompression[] Compression = null,
     IResolvable|ObservabilityPipelineConfigDestinationElasticsearchDataStream[] DataStream = null,
-    string EndpointUrlKey = null
+    string EndpointUrlKey = null,
+    string IdKey = null,
+    string Pipeline = null,
+    bool|IResolvable RequestRetryPartial = null,
+    IResolvable|ObservabilityPipelineConfigDestinationElasticsearchTls[] Tls = null
 };
 ```
 
@@ -3710,12 +4241,17 @@ new ObservabilityPipelineConfigDestinationElasticsearch {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.apiVersion">ApiVersion</a></code> | <code>string</code> | The Elasticsearch API version to use. Set to `auto` to auto-detect. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.apiVersion">ApiVersion</a></code> | <code>string</code> | The Elasticsearch API version to use. Set to `auto` to auto-detect. Valid values are `auto`, `v6`, `v7`, `v8`. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.auth">Auth</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth">ObservabilityPipelineConfigDestinationElasticsearchAuth</a>[]</code> | auth block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.buffer">Buffer</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBuffer">ObservabilityPipelineConfigDestinationElasticsearchBuffer</a>[]</code> | buffer block. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.bulkIndex">BulkIndex</a></code> | <code>string</code> | The index or datastream to write logs to in Elasticsearch. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.bulkIndex">BulkIndex</a></code> | <code>string</code> | The name of the index to write events to in Elasticsearch. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.compression">Compression</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>[]</code> | compression block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.dataStream">DataStream</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream">ObservabilityPipelineConfigDestinationElasticsearchDataStream</a>[]</code> | data_stream block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.endpointUrlKey">EndpointUrlKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Elasticsearch endpoint URL. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.idKey">IdKey</a></code> | <code>string</code> | The name of the field used as the document ID in Elasticsearch. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.pipeline">Pipeline</a></code> | <code>string</code> | The name of an Elasticsearch ingest pipeline to apply to events before indexing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.requestRetryPartial">RequestRetryPartial</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When `true`, retries failed partial bulk requests when some events in a batch fail while others succeed. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.tls">Tls</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>[]</code> | tls block. |
 
 ---
 
@@ -3727,9 +4263,9 @@ public string ApiVersion { get; set; }
 
 - *Type:* string
 
-The Elasticsearch API version to use. Set to `auto` to auto-detect.
+The Elasticsearch API version to use. Set to `auto` to auto-detect. Valid values are `auto`, `v6`, `v7`, `v8`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#api_version ObservabilityPipeline#api_version}
 
 ---
 
@@ -3743,7 +4279,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchAuth[] Aut
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -3757,7 +4293,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchBuffer[] B
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -3769,9 +4305,23 @@ public string BulkIndex { get; set; }
 
 - *Type:* string
 
-The index or datastream to write logs to in Elasticsearch.
+The name of the index to write events to in Elasticsearch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+
+---
+
+##### `Compression`<sup>Optional</sup> <a name="Compression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.compression"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchCompression[] Compression { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>[]
+
+compression block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -3785,7 +4335,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchDataStream
 
 data_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
 
 ---
 
@@ -3799,7 +4349,63 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the Elasticsearch endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+
+---
+
+##### `IdKey`<sup>Optional</sup> <a name="IdKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.idKey"></a>
+
+```csharp
+public string IdKey { get; set; }
+```
+
+- *Type:* string
+
+The name of the field used as the document ID in Elasticsearch.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#id_key ObservabilityPipeline#id_key}
+
+---
+
+##### `Pipeline`<sup>Optional</sup> <a name="Pipeline" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.pipeline"></a>
+
+```csharp
+public string Pipeline { get; set; }
+```
+
+- *Type:* string
+
+The name of an Elasticsearch ingest pipeline to apply to events before indexing.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#pipeline ObservabilityPipeline#pipeline}
+
+---
+
+##### `RequestRetryPartial`<sup>Optional</sup> <a name="RequestRetryPartial" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.requestRetryPartial"></a>
+
+```csharp
+public bool|IResolvable RequestRetryPartial { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+When `true`, retries failed partial bulk requests when some events in a batch fail while others succeed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#request_retry_partial ObservabilityPipeline#request_retry_partial}
+
+---
+
+##### `Tls`<sup>Optional</sup> <a name="Tls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch.property.tls"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchTls[] Tls { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>[]
+
+tls block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -3821,9 +4427,9 @@ new ObservabilityPipelineConfigDestinationElasticsearchAuth {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth.property.strategy">Strategy</a></code> | <code>string</code> | The authentication strategy. Use `basic` for username/password. Valid values are `basic`, `aws`. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth.property.passwordKey">PasswordKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Elasticsearch password (used when strategy is `basic`). |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth.property.usernameKey">UsernameKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Elasticsearch username (used when strategy is `basic`). |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth.property.strategy">Strategy</a></code> | <code>string</code> | The authentication strategy to use. Valid values are `basic`, `aws`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth.property.passwordKey">PasswordKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Elasticsearch password (used when `strategy` is `basic`). |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth.property.usernameKey">UsernameKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Elasticsearch username (used when `strategy` is `basic`). |
 
 ---
 
@@ -3835,9 +4441,9 @@ public string Strategy { get; set; }
 
 - *Type:* string
 
-The authentication strategy. Use `basic` for username/password. Valid values are `basic`, `aws`.
+The authentication strategy to use. Valid values are `basic`, `aws`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -3849,9 +4455,9 @@ public string PasswordKey { get; set; }
 
 - *Type:* string
 
-Name of the environment variable or secret that holds the Elasticsearch password (used when strategy is `basic`).
+Name of the environment variable or secret that holds the Elasticsearch password (used when `strategy` is `basic`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -3863,9 +4469,9 @@ public string UsernameKey { get; set; }
 
 - *Type:* string
 
-Name of the environment variable or secret that holds the Elasticsearch username (used when strategy is `basic`).
+Name of the environment variable or secret that holds the Elasticsearch username (used when `strategy` is `basic`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -3901,7 +4507,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchBufferDisk
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -3915,7 +4521,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchBufferMemo
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -3951,7 +4557,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -3965,7 +4571,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4003,7 +4609,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -4017,7 +4623,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4031,7 +4637,57 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+
+---
+
+### ObservabilityPipelineConfigDestinationElasticsearchCompression <a name="ObservabilityPipelineConfigDestinationElasticsearchCompression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationElasticsearchCompression {
+    string Algorithm,
+    double Level = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression.property.algorithm">Algorithm</a></code> | <code>string</code> | The compression algorithm applied when sending data to Elasticsearch. Valid values are `none`, `gzip`, `zlib`, `zstd`, `snappy`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression.property.level">Level</a></code> | <code>double</code> | The compression level. Only applicable for `gzip`, `zlib`, and `zstd` algorithms. |
+
+---
+
+##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression.property.algorithm"></a>
+
+```csharp
+public string Algorithm { get; set; }
+```
+
+- *Type:* string
+
+The compression algorithm applied when sending data to Elasticsearch. Valid values are `none`, `gzip`, `zlib`, `zstd`, `snappy`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+
+---
+
+##### `Level`<sup>Optional</sup> <a name="Level" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression.property.level"></a>
+
+```csharp
+public double Level { get; set; }
+```
+
+- *Type:* double
+
+The compression level. Only applicable for `gzip`, `zlib`, and `zstd` algorithms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#level ObservabilityPipeline#level}
 
 ---
 
@@ -4043,9 +4699,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using Io.Cdktn.Providers.Datadog;
 
 new ObservabilityPipelineConfigDestinationElasticsearchDataStream {
+    bool|IResolvable AutoRouting = null,
     string Dataset = null,
     string Dtype = null,
-    string Namespace = null
+    string Namespace = null,
+    bool|IResolvable SyncFields = null
 };
 ```
 
@@ -4053,9 +4711,25 @@ new ObservabilityPipelineConfigDestinationElasticsearchDataStream {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.dataset">Dataset</a></code> | <code>string</code> | The data stream dataset for your logs. This groups logs by their source or application. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.dtype">Dtype</a></code> | <code>string</code> | The data stream type for your logs. This determines how logs are categorized within the data stream. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.namespace">Namespace</a></code> | <code>string</code> | The data stream namespace for your logs. This separates logs into different environments or domains. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.autoRouting">AutoRouting</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When `true`, automatically routes events to the appropriate data stream based on the event content. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.dataset">Dataset</a></code> | <code>string</code> | The data stream dataset. This groups events by their source or application. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.dtype">Dtype</a></code> | <code>string</code> | The data stream type. This determines how events are categorized within the data stream. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.namespace">Namespace</a></code> | <code>string</code> | The data stream namespace. This separates events into different environments or domains. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.syncFields">SyncFields</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When `true`, synchronizes data stream fields with the Elasticsearch index mapping. |
+
+---
+
+##### `AutoRouting`<sup>Optional</sup> <a name="AutoRouting" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.autoRouting"></a>
+
+```csharp
+public bool|IResolvable AutoRouting { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+When `true`, automatically routes events to the appropriate data stream based on the event content.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auto_routing ObservabilityPipeline#auto_routing}
 
 ---
 
@@ -4067,9 +4741,9 @@ public string Dataset { get; set; }
 
 - *Type:* string
 
-The data stream dataset for your logs. This groups logs by their source or application.
+The data stream dataset. This groups events by their source or application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
 
 ---
 
@@ -4081,9 +4755,9 @@ public string Dtype { get; set; }
 
 - *Type:* string
 
-The data stream type for your logs. This determines how logs are categorized within the data stream.
+The data stream type. This determines how events are categorized within the data stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
 
 ---
 
@@ -4095,9 +4769,105 @@ public string Namespace { get; set; }
 
 - *Type:* string
 
-The data stream namespace for your logs. This separates logs into different environments or domains.
+The data stream namespace. This separates events into different environments or domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
+
+---
+
+##### `SyncFields`<sup>Optional</sup> <a name="SyncFields" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream.property.syncFields"></a>
+
+```csharp
+public bool|IResolvable SyncFields { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+When `true`, synchronizes data stream fields with the Elasticsearch index mapping.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sync_fields ObservabilityPipeline#sync_fields}
+
+---
+
+### ObservabilityPipelineConfigDestinationElasticsearchTls <a name="ObservabilityPipelineConfigDestinationElasticsearchTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationElasticsearchTls {
+    string CrtFile,
+    string CaFile = null,
+    string KeyFile = null,
+    string KeyPassKey = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.crtFile">CrtFile</a></code> | <code>string</code> | Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.caFile">CaFile</a></code> | <code>string</code> | Path to the Certificate Authority (CA) file used to validate the server's TLS certificate. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.keyFile">KeyFile</a></code> | <code>string</code> | Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.keyPassKey">KeyPassKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the passphrase for the private key file. |
+
+---
+
+##### `CrtFile`<sup>Required</sup> <a name="CrtFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+
+---
+
+##### `CaFile`<sup>Optional</sup> <a name="CaFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.caFile"></a>
+
+```csharp
+public string CaFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+
+---
+
+##### `KeyFile`<sup>Optional</sup> <a name="KeyFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; set; }
+```
+
+- *Type:* string
+
+Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+
+---
+
+##### `KeyPassKey`<sup>Optional</sup> <a name="KeyPassKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls.property.keyPassKey"></a>
+
+```csharp
+public string KeyPassKey { get; set; }
+```
+
+- *Type:* string
+
+Name of the environment variable or secret that holds the passphrase for the private key file.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -4143,7 +4913,7 @@ public string Bucket { get; set; }
 
 Name of the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bucket ObservabilityPipeline#bucket}
 
 ---
 
@@ -4157,7 +4927,7 @@ public string StorageClass { get; set; }
 
 Storage class used for objects stored in GCS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#storage_class ObservabilityPipeline#storage_class}
 
 ---
 
@@ -4171,7 +4941,7 @@ public string Acl { get; set; }
 
 Access control list setting for objects written to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#acl ObservabilityPipeline#acl}
 
 ---
 
@@ -4185,7 +4955,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleCloudStorageAuth[
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -4199,7 +4969,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleCloudStorageBuffe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -4213,7 +4983,7 @@ public string KeyPrefix { get; set; }
 
 Optional prefix for object keys within the GCS bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_prefix ObservabilityPipeline#key_prefix}
 
 ---
 
@@ -4227,7 +4997,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleCloudStorageMetad
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
 
 ---
 
@@ -4261,7 +5031,7 @@ public string CredentialsFile { get; set; }
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -4297,7 +5067,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleCloudStorageBuffe
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -4311,7 +5081,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleCloudStorageBuffe
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -4347,7 +5117,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4361,7 +5131,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4399,7 +5169,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -4413,7 +5183,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4427,7 +5197,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4463,7 +5233,7 @@ public string Name { get; set; }
 
 The metadata key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -4477,7 +5247,7 @@ public string Value { get; set; }
 
 The metadata value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -4523,7 +5293,7 @@ public string Encoding { get; set; }
 
 Encoding format for log events. Valid values: `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -4537,7 +5307,7 @@ public string Project { get; set; }
 
 The Google Cloud project ID that owns the Pub/Sub topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
 
 ---
 
@@ -4551,7 +5321,7 @@ public string Topic { get; set; }
 
 The Pub/Sub topic name to publish logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
 
 ---
 
@@ -4565,7 +5335,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGooglePubsubAuth[] Auth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -4579,7 +5349,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGooglePubsubBuffer[] Bu
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -4593,7 +5363,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the Google Cloud Pub/Sub endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -4607,7 +5377,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGooglePubsubTls[] Tls {
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -4641,7 +5411,7 @@ public string CredentialsFile { get; set; }
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -4677,7 +5447,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGooglePubsubBufferDisk[
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -4691,7 +5461,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGooglePubsubBufferMemor
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -4727,7 +5497,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4741,7 +5511,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4779,7 +5549,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -4793,7 +5563,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -4807,7 +5577,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -4847,7 +5617,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -4861,7 +5631,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -4875,7 +5645,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -4889,7 +5659,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -4933,7 +5703,7 @@ public string CustomerId { get; set; }
 
 The Google SecOps customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#customer_id ObservabilityPipeline#customer_id}
 
 ---
 
@@ -4947,7 +5717,7 @@ public string Encoding { get; set; }
 
 The encoding format for the logs sent to Google SecOps. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -4961,7 +5731,7 @@ public string LogType { get; set; }
 
 The log type metadata associated with the Google SecOps destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#log_type ObservabilityPipeline#log_type}
 
 ---
 
@@ -4975,7 +5745,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleSecopsAuth[] Auth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -4989,7 +5759,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleSecopsBuffer[] Bu
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -5003,7 +5773,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the Google Chronicle endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -5037,7 +5807,7 @@ public string CredentialsFile { get; set; }
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -5073,7 +5843,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleSecopsBufferDisk[
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -5087,7 +5857,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationGoogleSecopsBufferMemor
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -5123,7 +5893,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5137,7 +5907,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5175,7 +5945,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -5189,7 +5959,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -5203,7 +5973,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -5251,7 +6021,7 @@ public string Encoding { get; set; }
 
 Encoding format for events. Valid values are `json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -5265,7 +6035,7 @@ public string AuthStrategy { get; set; }
 
 HTTP authentication strategy. Valid values are `none`, `basic`, `bearer`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -5279,7 +6049,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationHttpClientCompression[]
 
 compression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -5293,7 +6063,7 @@ public string PasswordKey { get; set; }
 
 Name of the environment variable or secret that holds the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -5307,7 +6077,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationHttpClientTls[] Tls { g
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -5321,7 +6091,7 @@ public string TokenKey { get; set; }
 
 Name of the environment variable or secret that holds the authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -5335,7 +6105,7 @@ public string UriKey { get; set; }
 
 Name of the environment variable or secret that holds the request URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#uri_key ObservabilityPipeline#uri_key}
 
 ---
 
@@ -5349,7 +6119,7 @@ public string UsernameKey { get; set; }
 
 Name of the environment variable or secret that holds the username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -5383,7 +6153,7 @@ public string Algorithm { get; set; }
 
 Compression algorithm. Valid values are `gzip`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#algorithm ObservabilityPipeline#algorithm}
 
 ---
 
@@ -5423,7 +6193,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -5437,7 +6207,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -5451,7 +6221,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -5465,7 +6235,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -5523,7 +6293,7 @@ public string Encoding { get; set; }
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -5537,7 +6307,7 @@ public string Topic { get; set; }
 
 The Kafka topic name to publish logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#topic ObservabilityPipeline#topic}
 
 ---
 
@@ -5551,7 +6321,7 @@ public string BootstrapServersKey { get; set; }
 
 Name of the environment variable or secret that holds the Kafka bootstrap servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
 
 ---
 
@@ -5565,7 +6335,7 @@ public string Compression { get; set; }
 
 Compression codec for Kafka messages. Valid values are `none`, `gzip`, `snappy`, `lz4`, `zstd`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -5579,7 +6349,7 @@ public string HeadersKey { get; set; }
 
 The field name to use for Kafka message headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#headers_key ObservabilityPipeline#headers_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#headers_key ObservabilityPipeline#headers_key}
 
 ---
 
@@ -5593,7 +6363,7 @@ public string KeyField { get; set; }
 
 The field name to use as the Kafka message key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -5607,7 +6377,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationKafkaLibrdkafkaOption[]
 
 librdkafka_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
 
 ---
 
@@ -5621,7 +6391,7 @@ public double MessageTimeoutMs { get; set; }
 
 Maximum time in milliseconds to wait for message delivery confirmation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#message_timeout_ms ObservabilityPipeline#message_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#message_timeout_ms ObservabilityPipeline#message_timeout_ms}
 
 ---
 
@@ -5635,7 +6405,7 @@ public double RateLimitDurationSecs { get; set; }
 
 Duration in seconds for the rate limit window.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rate_limit_duration_secs ObservabilityPipeline#rate_limit_duration_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rate_limit_duration_secs ObservabilityPipeline#rate_limit_duration_secs}
 
 ---
 
@@ -5649,7 +6419,7 @@ public double RateLimitNum { get; set; }
 
 Maximum number of messages allowed per rate limit duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rate_limit_num ObservabilityPipeline#rate_limit_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rate_limit_num ObservabilityPipeline#rate_limit_num}
 
 ---
 
@@ -5663,7 +6433,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationKafkaSasl[] Sasl { get;
 
 sasl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
 
 ---
 
@@ -5677,7 +6447,7 @@ public double SocketTimeoutMs { get; set; }
 
 Socket timeout in milliseconds for network requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#socket_timeout_ms ObservabilityPipeline#socket_timeout_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#socket_timeout_ms ObservabilityPipeline#socket_timeout_ms}
 
 ---
 
@@ -5691,7 +6461,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationKafkaTls[] Tls { get; s
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -5727,7 +6497,7 @@ public string Name { get; set; }
 
 The name of the librdkafka configuration option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -5741,7 +6511,7 @@ public string Value { get; set; }
 
 The value of the librdkafka configuration option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -5779,7 +6549,7 @@ public string Mechanism { get; set; }
 
 SASL authentication mechanism. Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
 
 ---
 
@@ -5793,7 +6563,7 @@ public string PasswordKey { get; set; }
 
 Name of the environment variable or secret that holds the SASL password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -5807,7 +6577,7 @@ public string UsernameKey { get; set; }
 
 Name of the environment variable or secret that holds the SASL username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -5847,7 +6617,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -5861,7 +6631,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -5875,7 +6645,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -5889,7 +6659,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -5935,7 +6705,7 @@ public string ClientId { get; set; }
 
 Azure AD client ID used for authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#client_id ObservabilityPipeline#client_id}
 
 ---
 
@@ -5949,7 +6719,7 @@ public string DcrImmutableId { get; set; }
 
 The immutable ID of the Data Collection Rule (DCR).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dcr_immutable_id ObservabilityPipeline#dcr_immutable_id}
 
 ---
 
@@ -5963,7 +6733,7 @@ public string Table { get; set; }
 
 The name of the Log Analytics table where logs will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 
 ---
 
@@ -5977,7 +6747,7 @@ public string TenantId { get; set; }
 
 Azure AD tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tenant_id ObservabilityPipeline#tenant_id}
 
 ---
 
@@ -5991,7 +6761,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationMicrosoftSentinelBuffer
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -6005,7 +6775,7 @@ public string ClientSecretKey { get; set; }
 
 Name of the environment variable or secret that holds the Azure AD client secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#client_secret_key ObservabilityPipeline#client_secret_key}
 
 ---
 
@@ -6019,7 +6789,7 @@ public string DceUriKey { get; set; }
 
 Name of the environment variable or secret that holds the Data Collection Endpoint (DCE) URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dce_uri_key ObservabilityPipeline#dce_uri_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dce_uri_key ObservabilityPipeline#dce_uri_key}
 
 ---
 
@@ -6055,7 +6825,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationMicrosoftSentinelBuffer
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -6069,7 +6839,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationMicrosoftSentinelBuffer
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -6105,7 +6875,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6119,7 +6889,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6157,7 +6927,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -6171,7 +6941,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6185,7 +6955,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6225,7 +6995,7 @@ public string Region { get; set; }
 
 The New Relic region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -6239,7 +7009,7 @@ public string AccountIdKey { get; set; }
 
 Name of the environment variable or secret that holds the New Relic account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#account_id_key ObservabilityPipeline#account_id_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#account_id_key ObservabilityPipeline#account_id_key}
 
 ---
 
@@ -6253,7 +7023,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationNewRelicBuffer[] Buffer
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -6267,7 +7037,7 @@ public string LicenseKeyKey { get; set; }
 
 Name of the environment variable or secret that holds the New Relic license key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#license_key_key ObservabilityPipeline#license_key_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#license_key_key ObservabilityPipeline#license_key_key}
 
 ---
 
@@ -6303,7 +7073,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationNewRelicBufferDisk[] Di
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -6317,7 +7087,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationNewRelicBufferMemory[] 
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -6353,7 +7123,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6367,7 +7137,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6405,7 +7175,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -6419,7 +7189,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6433,7 +7203,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6471,7 +7241,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationOpensearchBuffer[] Buff
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -6485,7 +7255,7 @@ public string BulkIndex { get; set; }
 
 The index or datastream to write logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bulk_index ObservabilityPipeline#bulk_index}
 
 ---
 
@@ -6499,7 +7269,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationOpensearchDataStream[] 
 
 data_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#data_stream ObservabilityPipeline#data_stream}
 
 ---
 
@@ -6535,7 +7305,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationOpensearchBufferDisk[] 
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -6549,7 +7319,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationOpensearchBufferMemory[
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -6585,7 +7355,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6599,7 +7369,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6637,7 +7407,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -6651,7 +7421,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6665,7 +7435,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6703,7 +7473,7 @@ public string Dataset { get; set; }
 
 The data stream dataset for your logs. This groups logs by their source or application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dataset ObservabilityPipeline#dataset}
 
 ---
 
@@ -6717,7 +7487,7 @@ public string Dtype { get; set; }
 
 The data stream type for your logs. This determines how logs are categorized within the data stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dtype ObservabilityPipeline#dtype}
 
 ---
 
@@ -6731,7 +7501,7 @@ public string Namespace { get; set; }
 
 The data stream namespace for your logs. This separates logs into different environments or domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#namespace ObservabilityPipeline#namespace}
 
 ---
 
@@ -6771,7 +7541,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationRsyslogBuffer[] Buffer 
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -6785,7 +7555,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the rsyslog endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -6799,7 +7569,7 @@ public double Keepalive { get; set; }
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -6813,7 +7583,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationRsyslogTls[] Tls { get;
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -6849,7 +7619,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationRsyslogBufferDisk[] Dis
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -6863,7 +7633,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationRsyslogBufferMemory[] M
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -6899,7 +7669,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6913,7 +7683,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -6951,7 +7721,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -6965,7 +7735,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -6979,7 +7749,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7019,7 +7789,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7033,7 +7803,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7047,7 +7817,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7061,7 +7831,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -7099,7 +7869,7 @@ public string Region { get; set; }
 
 The SentinelOne region to send logs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -7113,7 +7883,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSentinelOneBuffer[] Buf
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -7127,7 +7897,7 @@ public string TokenKey { get; set; }
 
 Name of the environment variable or secret that holds the SentinelOne API token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -7163,7 +7933,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSentinelOneBufferDisk[]
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -7177,7 +7947,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSentinelOneBufferMemory
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -7213,7 +7983,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7227,7 +7997,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7265,7 +8035,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -7279,7 +8049,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7293,7 +8063,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7337,7 +8107,7 @@ public string Encoding { get; set; }
 
 Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -7351,7 +8121,7 @@ public string Mode { get; set; }
 
 The protocol used to send logs. Valid values are `tcp`, `udp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -7365,7 +8135,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the socket address (host:port).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -7379,7 +8149,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSocketBuffer[] Buffer {
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -7393,7 +8163,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSocketFraming[] Framing
 
 framing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
 
 ---
 
@@ -7407,7 +8177,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSocketTls[] Tls { get; 
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -7443,7 +8213,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSocketBufferDisk[] Disk
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -7457,7 +8227,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSocketBufferMemory[] Me
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -7493,7 +8263,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7507,7 +8277,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7545,7 +8315,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -7559,7 +8329,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7573,7 +8343,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -7609,7 +8379,7 @@ public string Method { get; set; }
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -7623,7 +8393,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSocketFramingCharacterD
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -7657,7 +8427,7 @@ public string Delimiter { get; set; }
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -7697,7 +8467,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -7711,7 +8481,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -7725,7 +8495,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -7739,7 +8509,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -7756,8 +8526,10 @@ new ObservabilityPipelineConfigDestinationSplunkHec {
     IResolvable|ObservabilityPipelineConfigDestinationSplunkHecBuffer[] Buffer = null,
     string EndpointUrlKey = null,
     string Index = null,
+    string[] IndexedFields = null,
     string Sourcetype = null,
-    string TokenKey = null
+    string TokenKey = null,
+    string TokenStrategy = null
 };
 ```
 
@@ -7765,13 +8537,15 @@ new ObservabilityPipelineConfigDestinationSplunkHec {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.encoding">Encoding</a></code> | <code>string</code> | Encoding format for log events. Valid values: `json`, `raw_message`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.encoding">Encoding</a></code> | <code>string</code> | Encoding format for log events. Valid values are `json`, `raw_message`. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.autoExtractTimestamp">AutoExtractTimestamp</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If `true`, Splunk tries to extract timestamps from incoming log events. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.buffer">Buffer</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBuffer">ObservabilityPipelineConfigDestinationSplunkHecBuffer</a>[]</code> | buffer block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.endpointUrlKey">EndpointUrlKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Splunk HEC endpoint URL. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.index">Index</a></code> | <code>string</code> | Optional name of the Splunk index where logs are written. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.indexedFields">IndexedFields</a></code> | <code>string[]</code> | List of log field names to send as indexed fields to Splunk HEC. Available only when `encoding` is `json`. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.sourcetype">Sourcetype</a></code> | <code>string</code> | The Splunk sourcetype to assign to log events. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.tokenKey">TokenKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the Splunk HEC token. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.tokenStrategy">TokenStrategy</a></code> | <code>string</code> | Controls how the Splunk HEC token is supplied. |
 
 ---
 
@@ -7783,9 +8557,9 @@ public string Encoding { get; set; }
 
 - *Type:* string
 
-Encoding format for log events. Valid values: `json`, `raw_message`.
+Encoding format for log events. Valid values are `json`, `raw_message`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -7799,7 +8573,7 @@ public bool|IResolvable AutoExtractTimestamp { get; set; }
 
 If `true`, Splunk tries to extract timestamps from incoming log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
 
 ---
 
@@ -7813,7 +8587,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSplunkHecBuffer[] Buffe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -7827,7 +8601,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the Splunk HEC endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -7841,7 +8615,21 @@ public string Index { get; set; }
 
 Optional name of the Splunk index where logs are written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+
+---
+
+##### `IndexedFields`<sup>Optional</sup> <a name="IndexedFields" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.indexedFields"></a>
+
+```csharp
+public string[] IndexedFields { get; set; }
+```
+
+- *Type:* string[]
+
+List of log field names to send as indexed fields to Splunk HEC. Available only when `encoding` is `json`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#indexed_fields ObservabilityPipeline#indexed_fields}
 
 ---
 
@@ -7855,7 +8643,7 @@ public string Sourcetype { get; set; }
 
 The Splunk sourcetype to assign to log events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
 
 ---
 
@@ -7869,7 +8657,23 @@ public string TokenKey { get; set; }
 
 Name of the environment variable or secret that holds the Splunk HEC token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+
+---
+
+##### `TokenStrategy`<sup>Optional</sup> <a name="TokenStrategy" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec.property.tokenStrategy"></a>
+
+```csharp
+public string TokenStrategy { get; set; }
+```
+
+- *Type:* string
+
+Controls how the Splunk HEC token is supplied.
+
+Use `custom` to provide a token via `token_key`, or `from_source` to forward the token received from an upstream Splunk HEC source. Valid values are `custom`, `from_source`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#token_strategy ObservabilityPipeline#token_strategy}
 
 ---
 
@@ -7905,7 +8709,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSplunkHecBufferDisk[] D
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -7919,7 +8723,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSplunkHecBufferMemory[]
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -7955,7 +8759,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -7969,7 +8773,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8007,7 +8811,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -8021,7 +8825,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8035,7 +8839,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8081,7 +8885,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSumoLogicBuffer[] Buffe
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -8095,7 +8899,7 @@ public string Encoding { get; set; }
 
 The output encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -8109,7 +8913,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the Sumo Logic endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -8123,7 +8927,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFi
 
 header_custom_field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#header_custom_field ObservabilityPipeline#header_custom_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#header_custom_field ObservabilityPipeline#header_custom_field}
 
 ---
 
@@ -8137,7 +8941,7 @@ public string HeaderHostName { get; set; }
 
 Optional override for the host name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
 
 ---
 
@@ -8151,7 +8955,7 @@ public string HeaderSourceCategory { get; set; }
 
 Optional override for the source category header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
 
 ---
 
@@ -8165,7 +8969,7 @@ public string HeaderSourceName { get; set; }
 
 Optional override for the source name header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
 
 ---
 
@@ -8201,7 +9005,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSumoLogicBufferDisk[] D
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -8215,7 +9019,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSumoLogicBufferMemory[]
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -8251,7 +9055,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8265,7 +9069,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8303,7 +9107,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -8317,7 +9121,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8331,7 +9135,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8367,7 +9171,7 @@ public string Name { get; set; }
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -8381,7 +9185,7 @@ public string Value { get; set; }
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -8421,7 +9225,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSyslogNgBuffer[] Buffer
 
 buffer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
 
 ---
 
@@ -8435,7 +9239,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the syslog-ng endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -8449,7 +9253,7 @@ public double Keepalive { get; set; }
 
 Optional socket keepalive duration in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
 
 ---
 
@@ -8463,7 +9267,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSyslogNgTls[] Tls { get
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -8499,7 +9303,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSyslogNgBufferDisk[] Di
 
 disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
 
 ---
 
@@ -8513,7 +9317,7 @@ public IResolvable|ObservabilityPipelineConfigDestinationSyslogNgBufferMemory[] 
 
 memory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
 
 ---
 
@@ -8549,7 +9353,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the disk buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8563,7 +9367,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8601,7 +9405,7 @@ public double MaxEvents { get; set; }
 
 Maximum events for the memory buffer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
 
 ---
 
@@ -8615,7 +9419,7 @@ public double MaxSize { get; set; }
 
 Maximum size of the memory buffer (in bytes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
 
 ---
 
@@ -8629,7 +9433,7 @@ public string WhenFull { get; set; }
 
 Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
 
 ---
 
@@ -8669,7 +9473,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -8683,7 +9487,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -8697,7 +9501,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -8711,7 +9515,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -8755,7 +9559,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether this processor group is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -8769,7 +9573,7 @@ public string Id { get; set; }
 
 The unique ID of the processor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8786,7 +9590,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor group targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -8800,7 +9604,7 @@ public string[] Inputs { get; set; }
 
 A list of component IDs whose output is used as the input for this processor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
 
 ---
 
@@ -8814,7 +9618,7 @@ public string DisplayName { get; set; }
 
 A human-friendly name of the processor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
 
 ---
 
@@ -8828,7 +9632,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessor[] Processo
 
 processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#processor ObservabilityPipeline#processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#processor ObservabilityPipeline#processor}
 
 ---
 
@@ -8912,7 +9716,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether this processor is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -8926,7 +9730,7 @@ public string Id { get; set; }
 
 The unique identifier for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8943,7 +9747,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this processor targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -8957,7 +9761,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars[
 
 add_env_vars block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
 
 ---
 
@@ -8971,7 +9775,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorAddFields[]
 
 add_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
 
 ---
 
@@ -8985,7 +9789,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorAddHostname
 
 add_hostname block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#add_hostname ObservabilityPipeline#add_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#add_hostname ObservabilityPipeline#add_hostname}
 
 ---
 
@@ -8999,7 +9803,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorCustomProce
 
 custom_processor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
 
 ---
 
@@ -9013,7 +9817,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags
 
 datadog_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
 
 ---
 
@@ -9027,7 +9831,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorDedupe[] De
 
 dedupe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
 
 ---
 
@@ -9041,7 +9845,7 @@ public string DisplayName { get; set; }
 
 A human-friendly name for this processor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
 
 ---
 
@@ -9055,7 +9859,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 
 enrichment_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
 
 ---
 
@@ -9069,7 +9873,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorFilter[] Fi
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
 
 ---
 
@@ -9083,7 +9887,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorGenerateDat
 
 generate_datadog_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
 
 ---
 
@@ -9097,7 +9901,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorMetricTags[
 
 metric_tags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#metric_tags ObservabilityPipeline#metric_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#metric_tags ObservabilityPipeline#metric_tags}
 
 ---
 
@@ -9111,7 +9915,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper[
 
 ocsf_mapper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
 
 ---
 
@@ -9125,7 +9929,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorParseGrok[]
 
 parse_grok block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
 
 ---
 
@@ -9139,7 +9943,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorParseJson[]
 
 parse_json block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
 
 ---
 
@@ -9153,7 +9957,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorParseXml[] 
 
 parse_xml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#parse_xml ObservabilityPipeline#parse_xml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#parse_xml ObservabilityPipeline#parse_xml}
 
 ---
 
@@ -9167,7 +9971,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorQuota[] Quo
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
 
 ---
 
@@ -9181,7 +9985,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorReduce[] Re
 
 reduce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
 
 ---
 
@@ -9195,7 +9999,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorRemoveField
 
 remove_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
 
 ---
 
@@ -9209,7 +10013,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorRenameField
 
 rename_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
 
 ---
 
@@ -9223,7 +10027,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSample[] Sa
 
 sample block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
 
 ---
 
@@ -9237,7 +10041,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 sensitive_data_scanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
 
 ---
 
@@ -9251,7 +10055,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSplitArray[
 
 split_array block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#split_array ObservabilityPipeline#split_array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#split_array ObservabilityPipeline#split_array}
 
 ---
 
@@ -9265,7 +10069,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorThrottle[] 
 
 throttle block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
 
 ---
 
@@ -9299,7 +10103,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsV
 
 variable block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
 
 ---
 
@@ -9335,7 +10139,7 @@ public string Field { get; set; }
 
 The target field in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -9349,7 +10153,7 @@ public string Name { get; set; }
 
 The name of the environment variable to read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -9383,7 +10187,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFi
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -9419,7 +10223,7 @@ public string Name { get; set; }
 
 The field name to add.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -9433,7 +10237,7 @@ public string Value { get; set; }
 
 The value to assign to the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -9480,7 +10284,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorCustomProce
 
 remap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
 
 ---
 
@@ -9522,7 +10326,7 @@ public bool|IResolvable DropOnError { get; set; }
 
 Whether to drop events that cause errors during transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
 
 ---
 
@@ -9536,7 +10340,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether this remap rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
 
 ---
 
@@ -9550,7 +10354,7 @@ public string Include { get; set; }
 
 A Datadog search query used to filter events for this specific remap rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -9564,7 +10368,7 @@ public string Name { get; set; }
 
 A descriptive name for this remap rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -9578,7 +10382,7 @@ public string Source { get; set; }
 
 The VRL script source code that defines the transformation logic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -9601,7 +10405,7 @@ new ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.action">Action</a></code> | <code>string</code> | Valid values are `include`, `exclude`. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.keys">Keys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.keys">Keys</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags.property.mode">Mode</a></code> | <code>string</code> | Valid values are `filter`. |
 
 ---
@@ -9616,7 +10420,7 @@ public string Action { get; set; }
 
 Valid values are `include`, `exclude`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
 
 ---
 
@@ -9628,7 +10432,7 @@ public string[] Keys { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}.
 
 ---
 
@@ -9642,7 +10446,7 @@ public string Mode { get; set; }
 
 Valid values are `filter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -9678,7 +10482,7 @@ public string[] Fields { get; set; }
 
 A list of log field paths to check for duplicates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -9692,7 +10496,7 @@ public string Mode { get; set; }
 
 The deduplication mode to apply to the fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -9732,7 +10536,7 @@ public string Target { get; set; }
 
 Path where enrichment results should be stored in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
 
 ---
 
@@ -9746,7 +10550,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
 
 ---
 
@@ -9760,7 +10564,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 
 geoip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
 
 ---
 
@@ -9774,7 +10578,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 
 reference_table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#reference_table ObservabilityPipeline#reference_table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#reference_table ObservabilityPipeline#reference_table}
 
 ---
 
@@ -9812,7 +10616,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 
 encoding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
 
 ---
 
@@ -9826,7 +10630,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
 
 ---
 
@@ -9840,7 +10644,7 @@ public string Path { get; set; }
 
 Path to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -9878,7 +10682,7 @@ public string Delimiter { get; set; }
 
 The `encoding` `delimiter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -9892,7 +10696,7 @@ public string Type { get; set; }
 
 File encoding format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
 
 ---
 
@@ -9906,7 +10710,7 @@ public bool|IResolvable IncludesHeaders { get; set; }
 
 The `encoding` `includes_headers`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
 
 ---
 
@@ -9920,7 +10724,7 @@ using Io.Cdktn.Providers.Datadog;
 new ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey {
     string Column = null,
     string Comparison = null,
-    string Field = null
+    IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField[] Field = null
 };
 ```
 
@@ -9930,7 +10734,7 @@ new ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey.property.column">Column</a></code> | <code>string</code> | The `items` `column`. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey.property.comparison">Comparison</a></code> | <code>string</code> | The comparison method (e.g. equals). |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey.property.field">Field</a></code> | <code>string</code> | The `items` `field`. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey.property.field">Field</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>[]</code> | field block. |
 
 ---
 
@@ -9944,7 +10748,7 @@ public string Column { get; set; }
 
 The `items` `column`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
 
 ---
 
@@ -9958,21 +10762,103 @@ public string Comparison { get; set; }
 
 The comparison method (e.g. equals).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
 
 ---
 
 ##### `Field`<sup>Optional</sup> <a name="Field" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey.property.field"></a>
 
 ```csharp
-public string Field { get; set; }
+public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField[] Field { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>[]
+
+field block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+
+---
+
+### ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField <a name="ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField {
+    string Event = null,
+    string Secret = null,
+    string StringPath = null,
+    string Vrl = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.event">Event</a></code> | <code>string</code> | The path to the field in the log event to use as the lookup key. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.secret">Secret</a></code> | <code>string</code> | The name of the secret containing the lookup key value. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.stringPath">StringPath</a></code> | <code>string</code> | A plain field path in the log event (for example, `log.user.id`). |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.vrl">Vrl</a></code> | <code>string</code> | A VRL expression that returns the value to use as the lookup key. |
+
+---
+
+##### `Event`<sup>Optional</sup> <a name="Event" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.event"></a>
+
+```csharp
+public string Event { get; set; }
 ```
 
 - *Type:* string
 
-The `items` `field`.
+The path to the field in the log event to use as the lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#event ObservabilityPipeline#event}
+
+---
+
+##### `Secret`<sup>Optional</sup> <a name="Secret" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.secret"></a>
+
+```csharp
+public string Secret { get; set; }
+```
+
+- *Type:* string
+
+The name of the secret containing the lookup key value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#secret ObservabilityPipeline#secret}
+
+---
+
+##### `StringPath`<sup>Optional</sup> <a name="StringPath" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.stringPath"></a>
+
+```csharp
+public string StringPath { get; set; }
+```
+
+- *Type:* string
+
+A plain field path in the log event (for example, `log.user.id`).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#string_path ObservabilityPipeline#string_path}
+
+---
+
+##### `Vrl`<sup>Optional</sup> <a name="Vrl" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField.property.vrl"></a>
+
+```csharp
+public string Vrl { get; set; }
+```
+
+- *Type:* string
+
+A VRL expression that returns the value to use as the lookup key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#vrl ObservabilityPipeline#vrl}
 
 ---
 
@@ -10010,7 +10896,7 @@ public string KeyField { get; set; }
 
 Path to the IP field in the log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -10024,7 +10910,7 @@ public string Locale { get; set; }
 
 Locale used to resolve geographical names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
 
 ---
 
@@ -10038,7 +10924,7 @@ public string Path { get; set; }
 
 Path to the GeoIP database file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -10078,7 +10964,7 @@ public string KeyField { get; set; }
 
 Path to the field in the log event to match against the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
 
 ---
 
@@ -10092,7 +10978,7 @@ public string TableId { get; set; }
 
 The unique identifier of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
 
 ---
 
@@ -10106,7 +10992,7 @@ public string AppKeyKey { get; set; }
 
 Name of the environment variable or secret that holds the Datadog application key for the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#app_key_key ObservabilityPipeline#app_key_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#app_key_key ObservabilityPipeline#app_key_key}
 
 ---
 
@@ -10120,7 +11006,7 @@ public string[] Columns { get; set; }
 
 List of column names to include from the reference table. If not provided, all columns are included.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
 
 ---
 
@@ -10167,7 +11053,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorGenerateDat
 
 metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
 
 ---
 
@@ -10209,7 +11095,7 @@ public string Include { get; set; }
 
 Datadog filter query to match logs for metric generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -10223,7 +11109,7 @@ public string MetricType { get; set; }
 
 Type of metric to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
 
 ---
 
@@ -10237,7 +11123,7 @@ public string Name { get; set; }
 
 Name of the custom metric to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -10251,7 +11137,7 @@ public string[] GroupBy { get; set; }
 
 Optional fields used to group the metric series.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -10265,7 +11151,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorGenerateDat
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -10301,7 +11187,7 @@ public string Strategy { get; set; }
 
 Metric value strategy: `increment_by_one` or `increment_by_field`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -10315,7 +11201,7 @@ public string Field { get; set; }
 
 Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -10349,7 +11235,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsR
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -10389,7 +11275,7 @@ public string Action { get; set; }
 
 The action to take on tags with matching keys. Valid values are `include`, `exclude`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
 
 ---
 
@@ -10403,7 +11289,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which metrics this rule targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -10417,7 +11303,7 @@ public string[] Keys { get; set; }
 
 A list of tag keys to include or exclude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
 
 ---
 
@@ -10431,7 +11317,7 @@ public string Mode { get; set; }
 
 The processing mode for tag filtering. Valid values are `filter`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -10443,6 +11329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using Io.Cdktn.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper {
+    bool|IResolvable KeepUnmatched = null,
     IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping[] Mapping = null
 };
 ```
@@ -10451,7 +11338,22 @@ new ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper.property.keepUnmatched">KeepUnmatched</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether to keep an event that does not match any of the mapping filters. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper.property.mapping">Mapping</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping">ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping</a>[]</code> | mapping block. |
+
+---
+
+##### `KeepUnmatched`<sup>Optional</sup> <a name="KeepUnmatched" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper.property.keepUnmatched"></a>
+
+```csharp
+public bool|IResolvable KeepUnmatched { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Whether to keep an event that does not match any of the mapping filters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keep_unmatched ObservabilityPipeline#keep_unmatched}
 
 ---
 
@@ -10465,7 +11367,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
 
 ---
 
@@ -10503,7 +11405,7 @@ public string Include { get; set; }
 
 Search query for selecting which logs the mapping applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -10517,7 +11419,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 
 custom_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#custom_mapping ObservabilityPipeline#custom_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#custom_mapping ObservabilityPipeline#custom_mapping}
 
 ---
 
@@ -10531,7 +11433,7 @@ public string LibraryMapping { get; set; }
 
 Predefined library mapping for log transformation. Use this or custom_mapping, not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
 
 ---
 
@@ -10569,7 +11471,7 @@ public double Version { get; set; }
 
 The version of the custom mapping configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
 
 ---
 
@@ -10583,7 +11485,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 
 mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
 
 ---
 
@@ -10597,7 +11499,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
 
 ---
 
@@ -10641,7 +11543,7 @@ public string Dest { get; set; }
 
 The destination OCSF field path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#dest ObservabilityPipeline#dest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#dest ObservabilityPipeline#dest}
 
 ---
 
@@ -10655,7 +11557,7 @@ public string Default { get; set; }
 
 The default value to use if the source field is missing or empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
 
 ---
 
@@ -10669,7 +11571,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 
 lookup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#lookup ObservabilityPipeline#lookup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#lookup ObservabilityPipeline#lookup}
 
 ---
 
@@ -10683,7 +11585,7 @@ public string Source { get; set; }
 
 The source field path from the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -10697,7 +11599,7 @@ public string[] Sources { get; set; }
 
 Multiple source field paths for combined mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
 
 ---
 
@@ -10711,7 +11613,7 @@ public string Value { get; set; }
 
 A static value to use for the destination field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -10747,7 +11649,7 @@ public string Default { get; set; }
 
 The default value to use if no lookup match is found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
 
 ---
 
@@ -10761,7 +11663,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 
 table block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
 
 ---
 
@@ -10805,7 +11707,7 @@ public string Contains { get; set; }
 
 The substring to match in the source value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#contains ObservabilityPipeline#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#contains ObservabilityPipeline#contains}
 
 ---
 
@@ -10819,7 +11721,7 @@ public string EqualsSource { get; set; }
 
 The source field to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#equals_source ObservabilityPipeline#equals_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#equals_source ObservabilityPipeline#equals_source}
 
 ---
 
@@ -10833,7 +11735,7 @@ public string EqualTo { get; set; }
 
 The exact value to match in the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#equals ObservabilityPipeline#equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#equals ObservabilityPipeline#equals}
 
 ---
 
@@ -10847,7 +11749,7 @@ public string Matches { get; set; }
 
 A regex pattern to match in the source value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#matches ObservabilityPipeline#matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#matches ObservabilityPipeline#matches}
 
 ---
 
@@ -10861,7 +11763,7 @@ public string NotMatches { get; set; }
 
 A regex pattern that must not match the source value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#not_matches ObservabilityPipeline#not_matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#not_matches ObservabilityPipeline#not_matches}
 
 ---
 
@@ -10875,7 +11777,7 @@ public string Value { get; set; }
 
 The value to use when a match is found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -10913,7 +11815,7 @@ public string Class { get; set; }
 
 The OCSF event class name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#class ObservabilityPipeline#class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#class ObservabilityPipeline#class}
 
 ---
 
@@ -10927,7 +11829,7 @@ public string Version { get; set; }
 
 The OCSF schema version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
 
 ---
 
@@ -10941,7 +11843,7 @@ public string[] Profiles { get; set; }
 
 A list of OCSF profiles to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#profiles ObservabilityPipeline#profiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#profiles ObservabilityPipeline#profiles}
 
 ---
 
@@ -10977,7 +11879,7 @@ public bool|IResolvable DisableLibraryRules { get; set; }
 
 If set to `true`, disables the default Grok rules provided by Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
 
 ---
 
@@ -10991,7 +11893,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRu
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -11013,7 +11915,7 @@ new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule.property.source">Source</a></code> | <code>string</code> | The name of the field in the log event to apply the Grok rules to. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule.property.source">Source</a></code> | <code>string</code> | The value of the source field in log events which should be processed by the Grok rules. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule.property.matchRule">MatchRule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule">ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule</a>[]</code> | match_rule block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule.property.supportRule">SupportRule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule">ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule</a>[]</code> | support_rule block. |
 
@@ -11027,9 +11929,9 @@ public string Source { get; set; }
 
 - *Type:* string
 
-The name of the field in the log event to apply the Grok rules to.
+The value of the source field in log events which should be processed by the Grok rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -11043,7 +11945,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRu
 
 match_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
 
 ---
 
@@ -11057,7 +11959,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRu
 
 support_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
 
 ---
 
@@ -11093,7 +11995,7 @@ public string Name { get; set; }
 
 The name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -11107,7 +12009,7 @@ public string Rule { get; set; }
 
 The definition of the Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -11143,7 +12045,7 @@ public string Name { get; set; }
 
 The name of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -11157,7 +12059,7 @@ public string Rule { get; set; }
 
 The definition of the helper Grok rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -11191,7 +12093,7 @@ public string Field { get; set; }
 
 The field to parse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -11239,7 +12141,7 @@ public string Field { get; set; }
 
 The path to the log field on which you want to parse XML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -11253,7 +12155,7 @@ public bool|IResolvable AlwaysUseTextKey { get; set; }
 
 Whether to always store text inside an object using the text key even when no attributes exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#always_use_text_key ObservabilityPipeline#always_use_text_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#always_use_text_key ObservabilityPipeline#always_use_text_key}
 
 ---
 
@@ -11269,7 +12171,7 @@ The prefix to use for XML attributes in the parsed output.
 
 If the field is left empty, the original attribute key is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#attr_prefix ObservabilityPipeline#attr_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#attr_prefix ObservabilityPipeline#attr_prefix}
 
 ---
 
@@ -11283,7 +12185,7 @@ public bool|IResolvable IncludeAttr { get; set; }
 
 Whether to include XML attributes in the parsed output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include_attr ObservabilityPipeline#include_attr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include_attr ObservabilityPipeline#include_attr}
 
 ---
 
@@ -11297,7 +12199,7 @@ public bool|IResolvable ParseBool { get; set; }
 
 Whether to parse boolean values from strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#parse_bool ObservabilityPipeline#parse_bool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#parse_bool ObservabilityPipeline#parse_bool}
 
 ---
 
@@ -11311,7 +12213,7 @@ public bool|IResolvable ParseNull { get; set; }
 
 Whether to parse null values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#parse_null ObservabilityPipeline#parse_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#parse_null ObservabilityPipeline#parse_null}
 
 ---
 
@@ -11325,7 +12227,7 @@ public bool|IResolvable ParseNumber { get; set; }
 
 Whether to parse numeric values from strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#parse_number ObservabilityPipeline#parse_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#parse_number ObservabilityPipeline#parse_number}
 
 ---
 
@@ -11339,7 +12241,7 @@ public string TextKey { get; set; }
 
 The key name to use for the text node when XML attributes are appended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#text_key ObservabilityPipeline#text_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#text_key ObservabilityPipeline#text_key}
 
 ---
 
@@ -11387,7 +12289,7 @@ public string Name { get; set; }
 
 The name of the quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -11401,7 +12303,7 @@ public bool|IResolvable DropEvents { get; set; }
 
 Whether to drop events exceeding the limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
 
 ---
 
@@ -11415,7 +12317,7 @@ public bool|IResolvable IgnoreWhenMissingPartitions { get; set; }
 
 Whether to ignore when partition fields are missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
 
 ---
 
@@ -11429,7 +12331,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit[
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -11443,7 +12345,7 @@ public string OverflowAction { get; set; }
 
 The action to take when the quota is exceeded: `drop`, `no_action`, or `overflow_routing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
 
 ---
 
@@ -11457,7 +12359,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverri
 
 override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#override ObservabilityPipeline#override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#override ObservabilityPipeline#override}
 
 ---
 
@@ -11471,7 +12373,7 @@ public string[] PartitionFields { get; set; }
 
 List of partition fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
 
 ---
 
@@ -11485,7 +12387,7 @@ public string TooManyBucketsAction { get; set; }
 
 The action to take when the max number of buckets is exceeded: `drop`, `no_action`, or `overflow_routing`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#too_many_buckets_action ObservabilityPipeline#too_many_buckets_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#too_many_buckets_action ObservabilityPipeline#too_many_buckets_action}
 
 ---
 
@@ -11521,7 +12423,7 @@ public string Enforce { get; set; }
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -11535,7 +12437,7 @@ public double Limit { get; set; }
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -11571,7 +12473,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverri
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -11585,7 +12487,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverri
 
 limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -11621,7 +12523,7 @@ public string Name { get; set; }
 
 The field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -11635,7 +12537,7 @@ public string Value { get; set; }
 
 The field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -11671,7 +12573,7 @@ public string Enforce { get; set; }
 
 Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
 
 ---
 
@@ -11685,7 +12587,7 @@ public double Limit { get; set; }
 
 The daily quota limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
 
 ---
 
@@ -11721,7 +12623,7 @@ public string[] GroupBy { get; set; }
 
 A list of fields used to group log events for merging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -11735,7 +12637,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorReduceMerge
 
 merge_strategy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#merge_strategy ObservabilityPipeline#merge_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#merge_strategy ObservabilityPipeline#merge_strategy}
 
 ---
 
@@ -11771,7 +12673,7 @@ public string Path { get; set; }
 
 The field path in the log event.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
 
 ---
 
@@ -11785,7 +12687,7 @@ public string Strategy { get; set; }
 
 The merge strategy to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
 
 ---
 
@@ -11819,7 +12721,7 @@ public string[] Fields { get; set; }
 
 List of fields to remove from the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -11853,7 +12755,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorRenameField
 
 field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -11891,7 +12793,7 @@ public string Destination { get; set; }
 
 Destination field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
 
 ---
 
@@ -11905,7 +12807,7 @@ public bool|IResolvable PreserveSource { get; set; }
 
 Whether to keep the original field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
 
 ---
 
@@ -11919,7 +12821,7 @@ public string Source { get; set; }
 
 Source field to rename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
 
 ---
 
@@ -11955,7 +12857,7 @@ public double Percentage { get; set; }
 
 The percentage of logs to sample.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
 
 ---
 
@@ -11969,7 +12871,7 @@ public string[] GroupBy { get; set; }
 
 Optional list of fields to group events by. Each group is sampled independently.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -12003,7 +12905,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -12016,11 +12918,11 @@ using Io.Cdktn.Providers.Datadog;
 
 new ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule {
     string Name,
-    string[] Tags,
     IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions[] KeywordOptions = null,
     IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch[] OnMatch = null,
     IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern[] Pattern = null,
-    IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope[] Scope = null
+    IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope[] Scope = null,
+    string[] Tags = null
 };
 ```
 
@@ -12029,11 +12931,11 @@ new ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.name">Name</a></code> | <code>string</code> | A name identifying the rule. |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.tags">Tags</a></code> | <code>string[]</code> | Tags assigned to this rule for filtering and classification. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.keywordOptions">KeywordOptions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions">ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions</a>[]</code> | keyword_options block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.onMatch">OnMatch</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch">ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch</a>[]</code> | on_match block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.pattern">Pattern</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern">ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern</a>[]</code> | pattern block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.scope">Scope</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope">ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope</a>[]</code> | scope block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.tags">Tags</a></code> | <code>string[]</code> | Tags assigned to this rule for filtering and classification. |
 
 ---
 
@@ -12047,21 +12949,7 @@ public string Name { get; set; }
 
 A name identifying the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
-
----
-
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.tags"></a>
-
-```csharp
-public string[] Tags { get; set; }
-```
-
-- *Type:* string[]
-
-Tags assigned to this rule for filtering and classification.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -12075,7 +12963,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 keyword_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
 
 ---
 
@@ -12089,7 +12977,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 on_match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
 
 ---
 
@@ -12103,7 +12991,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
 
 ---
 
@@ -12117,7 +13005,21 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule.property.tags"></a>
+
+```csharp
+public string[] Tags { get; set; }
+```
+
+- *Type:* string[]
+
+Tags assigned to this rule for filtering and classification.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
 
 ---
 
@@ -12153,7 +13055,7 @@ public string[] Keywords { get; set; }
 
 A list of keywords to match near the sensitive pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
 
 ---
 
@@ -12167,7 +13069,7 @@ public double Proximity { get; set; }
 
 Maximum number of tokens between a keyword and a sensitive value match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
 
 ---
 
@@ -12205,7 +13107,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
 
 ---
 
@@ -12219,7 +13121,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 partial_redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
 
 ---
 
@@ -12233,7 +13135,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 redact block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
 
 ---
 
@@ -12282,7 +13184,7 @@ public double Characters { get; set; }
 
 Number of characters to keep.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
 
 ---
 
@@ -12296,7 +13198,7 @@ public string Direction { get; set; }
 
 Direction from which to keep characters: `first` or `last`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
 
 ---
 
@@ -12330,7 +13232,7 @@ public string Replace { get; set; }
 
 Replacement string for redacted values (e.g., `***`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
 
 ---
 
@@ -12366,7 +13268,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 custom block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
 
 ---
 
@@ -12380,7 +13282,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 library block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
 
 ---
 
@@ -12416,7 +13318,7 @@ public string Description { get; set; }
 
 Human-readable description providing context about a sensitive data scanner rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
 
 ---
 
@@ -12430,7 +13332,7 @@ public string Rule { get; set; }
 
 A regular expression used to detect sensitive values. Must be a valid regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
 
 ---
 
@@ -12468,7 +13370,7 @@ public string Description { get; set; }
 
 Human-readable description providing context about a sensitive data scanner rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
 
 ---
 
@@ -12482,7 +13384,7 @@ public string Id { get; set; }
 
 Identifier for a predefined pattern from the sensitive data scanner pattern library.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12499,7 +13401,7 @@ public bool|IResolvable UseRecommendedKeywords { get; set; }
 
 Whether to augment the pattern with recommended keywords (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
 
 ---
 
@@ -12537,7 +13439,7 @@ public bool|IResolvable All { get; set; }
 
 Scan all fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
 
 ---
 
@@ -12551,7 +13453,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 exclude block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
 
 ---
 
@@ -12565,7 +13467,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDa
 
 include block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -12599,7 +13501,7 @@ public string[] Fields { get; set; }
 
 The fields to exclude from scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -12633,7 +13535,7 @@ public string[] Fields { get; set; }
 
 The fields to include in scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
 
 ---
 
@@ -12667,7 +13569,7 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayA
 
 array block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
 
 ---
 
@@ -12703,7 +13605,7 @@ public string Field { get; set; }
 
 The path to the array field to split.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
 
 ---
 
@@ -12717,7 +13619,7 @@ public string Include { get; set; }
 
 A Datadog search query used to determine which logs this array split operation targets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
 
 ---
 
@@ -12755,7 +13657,7 @@ public double Threshold { get; set; }
 
 The number of events to allow before throttling is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
 
 ---
 
@@ -12769,7 +13671,7 @@ public double Window { get; set; }
 
 The time window in seconds over which the threshold applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
 
 ---
 
@@ -12783,7 +13685,7 @@ public string[] GroupBy { get; set; }
 
 Optional list of fields used to group events before applying throttling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
 
 ---
 
@@ -12851,7 +13753,7 @@ public string Id { get; set; }
 
 The unique identifier for this source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -12868,7 +13770,7 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonDataFirehose[] AmazonD
 
 amazon_data_firehose block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
 
 ---
 
@@ -12882,7 +13784,7 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonS3[] AmazonS3 { get; s
 
 amazon_s3 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
 
 ---
 
@@ -12896,7 +13798,7 @@ public IResolvable|ObservabilityPipelineConfigSourceDatadogAgent[] DatadogAgent 
 
 datadog_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
 
 ---
 
@@ -12910,7 +13812,7 @@ public IResolvable|ObservabilityPipelineConfigSourceFluentBit[] FluentBit { get;
 
 fluent_bit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
 
 ---
 
@@ -12924,7 +13826,7 @@ public IResolvable|ObservabilityPipelineConfigSourceFluentd[] Fluentd { get; set
 
 fluentd block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
 
 ---
 
@@ -12938,7 +13840,7 @@ public IResolvable|ObservabilityPipelineConfigSourceGooglePubsub[] GooglePubsub 
 
 google_pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
 
 ---
 
@@ -12952,7 +13854,7 @@ public IResolvable|ObservabilityPipelineConfigSourceHttpClient[] HttpClient { ge
 
 http_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
 
 ---
 
@@ -12966,7 +13868,7 @@ public IResolvable|ObservabilityPipelineConfigSourceHttpServer[] HttpServer { ge
 
 http_server block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
 
 ---
 
@@ -12980,7 +13882,7 @@ public IResolvable|ObservabilityPipelineConfigSourceKafka[] Kafka { get; set; }
 
 kafka block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
 
 ---
 
@@ -12994,7 +13896,7 @@ public IResolvable|ObservabilityPipelineConfigSourceLogstash[] Logstash { get; s
 
 logstash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
 
 ---
 
@@ -13008,7 +13910,7 @@ public IResolvable|ObservabilityPipelineConfigSourceOpentelemetry[] Opentelemetr
 
 opentelemetry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
 
 ---
 
@@ -13022,7 +13924,7 @@ public IResolvable|ObservabilityPipelineConfigSourceRsyslog[] Rsyslog { get; set
 
 rsyslog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
 
 ---
 
@@ -13036,7 +13938,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSocket[] Socket { get; set; 
 
 socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
 
 ---
 
@@ -13050,7 +13952,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSplunkHec[] SplunkHec { get;
 
 splunk_hec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
 
 ---
 
@@ -13064,7 +13966,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSplunkTcp[] SplunkTcp { get;
 
 splunk_tcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
 
 ---
 
@@ -13078,7 +13980,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSumoLogic[] SumoLogic { get;
 
 sumo_logic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
 
 ---
 
@@ -13092,7 +13994,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSyslogNg[] SyslogNg { get; s
 
 syslog_ng block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
 
 ---
 
@@ -13130,7 +14032,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -13144,7 +14046,7 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonDataFirehoseAuth[] Aut
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -13158,7 +14060,7 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonDataFirehoseTls[] Tls 
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -13196,7 +14098,7 @@ public string AssumeRole { get; set; }
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -13210,7 +14112,7 @@ public string ExternalId { get; set; }
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -13224,7 +14126,7 @@ public string SessionName { get; set; }
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -13264,7 +14166,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -13278,7 +14180,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -13292,7 +14194,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -13306,7 +14208,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -13320,6 +14222,7 @@ using Io.Cdktn.Providers.Datadog;
 new ObservabilityPipelineConfigSourceAmazonS3 {
     string Region,
     IResolvable|ObservabilityPipelineConfigSourceAmazonS3Auth[] Auth = null,
+    string Compression = null,
     IResolvable|ObservabilityPipelineConfigSourceAmazonS3Tls[] Tls = null,
     string UrlKey = null
 };
@@ -13331,6 +14234,7 @@ new ObservabilityPipelineConfigSourceAmazonS3 {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3.property.region">Region</a></code> | <code>string</code> | AWS region where the S3 bucket resides. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3.property.auth">Auth</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3Auth">ObservabilityPipelineConfigSourceAmazonS3Auth</a>[]</code> | auth block. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3.property.compression">Compression</a></code> | <code>string</code> | Compression format for objects retrieved from the S3 bucket. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3.property.tls">Tls</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3Tls">ObservabilityPipelineConfigSourceAmazonS3Tls</a>[]</code> | tls block. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3.property.urlKey">UrlKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the S3 bucket URL. |
 
@@ -13346,7 +14250,7 @@ public string Region { get; set; }
 
 AWS region where the S3 bucket resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
 
 ---
 
@@ -13360,7 +14264,23 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonS3Auth[] Auth { get; s
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+
+---
+
+##### `Compression`<sup>Optional</sup> <a name="Compression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3.property.compression"></a>
+
+```csharp
+public string Compression { get; set; }
+```
+
+- *Type:* string
+
+Compression format for objects retrieved from the S3 bucket.
+
+Use `auto` to detect compression from the object's Content-Encoding header or file extension. Valid values are `auto`, `none`, `gzip`, `zstd`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
 
 ---
 
@@ -13374,7 +14294,7 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonS3Tls[] Tls { get; set
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -13388,7 +14308,7 @@ public string UrlKey { get; set; }
 
 Name of the environment variable or secret that holds the S3 bucket URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
 
 ---
 
@@ -13426,7 +14346,7 @@ public string AssumeRole { get; set; }
 
 The Amazon Resource Name (ARN) of the role to assume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
 
 ---
 
@@ -13440,7 +14360,7 @@ public string ExternalId { get; set; }
 
 A unique identifier for cross-account role assumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
 
 ---
 
@@ -13454,7 +14374,7 @@ public string SessionName { get; set; }
 
 A session identifier used for logging and tracing the assumed role session.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
 
 ---
 
@@ -13494,7 +14414,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -13508,7 +14428,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -13522,7 +14442,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -13536,7 +14456,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -13548,6 +14468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 using Io.Cdktn.Providers.Datadog;
 
 new ObservabilityPipelineConfigSourceDatadogAgent {
+    string AddressKey = null,
     IResolvable|ObservabilityPipelineConfigSourceDatadogAgentTls[] Tls = null
 };
 ```
@@ -13556,7 +14477,22 @@ new ObservabilityPipelineConfigSourceDatadogAgent {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgent.property.addressKey">AddressKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the listen address for the Datadog Agent source. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgent.property.tls">Tls</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentTls">ObservabilityPipelineConfigSourceDatadogAgentTls</a>[]</code> | tls block. |
+
+---
+
+##### `AddressKey`<sup>Optional</sup> <a name="AddressKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgent.property.addressKey"></a>
+
+```csharp
+public string AddressKey { get; set; }
+```
+
+- *Type:* string
+
+Name of the environment variable or secret that holds the listen address for the Datadog Agent source.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -13570,7 +14506,7 @@ public IResolvable|ObservabilityPipelineConfigSourceDatadogAgentTls[] Tls { get;
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -13610,7 +14546,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -13624,7 +14560,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -13638,7 +14574,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -13652,7 +14588,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -13688,7 +14624,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -13702,7 +14638,7 @@ public IResolvable|ObservabilityPipelineConfigSourceFluentBitTls[] Tls { get; se
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -13742,7 +14678,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -13756,7 +14692,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -13770,7 +14706,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -13784,7 +14720,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -13820,7 +14756,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -13834,7 +14770,7 @@ public IResolvable|ObservabilityPipelineConfigSourceFluentdTls[] Tls { get; set;
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -13874,7 +14810,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -13888,7 +14824,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -13902,7 +14838,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -13916,7 +14852,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -13958,7 +14894,7 @@ public string Decoding { get; set; }
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -13972,7 +14908,7 @@ public string Project { get; set; }
 
 The Google Cloud project ID that owns the Pub/Sub subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
 
 ---
 
@@ -13986,7 +14922,7 @@ public string Subscription { get; set; }
 
 The Pub/Sub subscription name from which messages are consumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
 
 ---
 
@@ -14000,7 +14936,7 @@ public IResolvable|ObservabilityPipelineConfigSourceGooglePubsubAuth[] Auth { ge
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
 
 ---
 
@@ -14014,7 +14950,7 @@ public IResolvable|ObservabilityPipelineConfigSourceGooglePubsubTls[] Tls { get;
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -14048,7 +14984,7 @@ public string CredentialsFile { get; set; }
 
 Path to the Google Cloud service account key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
 
 ---
 
@@ -14088,7 +15024,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -14102,7 +15038,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -14116,7 +15052,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -14130,7 +15066,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -14182,7 +15118,7 @@ public string Decoding { get; set; }
 
 The decoding format used to interpret incoming logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -14196,7 +15132,7 @@ public string AuthStrategy { get; set; }
 
 Optional authentication strategy for HTTP requests. Valid values are `none`, `basic`, `bearer`, `custom`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -14210,7 +15146,7 @@ public string CustomKey { get; set; }
 
 Name of the environment variable or secret that holds a custom header value (used with custom auth strategies).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
 
 ---
 
@@ -14224,7 +15160,7 @@ public string EndpointUrlKey { get; set; }
 
 Name of the environment variable or secret that holds the HTTP endpoint URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
 
 ---
 
@@ -14238,7 +15174,7 @@ public string PasswordKey { get; set; }
 
 Name of the environment variable or secret that holds the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -14252,7 +15188,7 @@ public double ScrapeIntervalSecs { get; set; }
 
 The interval (in seconds) between HTTP scrape requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
 
 ---
 
@@ -14266,7 +15202,7 @@ public double ScrapeTimeoutSecs { get; set; }
 
 The timeout (in seconds) for each scrape request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
 
 ---
 
@@ -14280,7 +15216,7 @@ public IResolvable|ObservabilityPipelineConfigSourceHttpClientTls[] Tls { get; s
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -14294,7 +15230,7 @@ public string TokenKey { get; set; }
 
 Name of the environment variable or secret that holds the authentication token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
 
 ---
 
@@ -14308,7 +15244,7 @@ public string UsernameKey { get; set; }
 
 Name of the environment variable or secret that holds the username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -14348,7 +15284,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -14362,7 +15298,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -14376,7 +15312,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -14390,7 +15326,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -14434,7 +15370,7 @@ public string AuthStrategy { get; set; }
 
 HTTP authentication method. Valid values are `none`, `plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
 
 ---
 
@@ -14448,7 +15384,7 @@ public string Decoding { get; set; }
 
 The decoding format used to interpret incoming logs. Valid values are `json`, `gelf`, `syslog`, `bytes`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
 
 ---
 
@@ -14462,7 +15398,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -14476,7 +15412,7 @@ public string PasswordKey { get; set; }
 
 Name of the environment variable or secret that holds the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -14490,7 +15426,7 @@ public IResolvable|ObservabilityPipelineConfigSourceHttpServerTls[] Tls { get; s
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -14504,7 +15440,7 @@ public string UsernameKey { get; set; }
 
 Name of the environment variable or secret that holds the username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -14544,7 +15480,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -14558,7 +15494,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -14572,7 +15508,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -14586,7 +15522,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -14630,7 +15566,7 @@ public string GroupId { get; set; }
 
 The Kafka consumer group ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
 
 ---
 
@@ -14644,7 +15580,7 @@ public string[] Topics { get; set; }
 
 A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
 
 ---
 
@@ -14658,7 +15594,7 @@ public string BootstrapServersKey { get; set; }
 
 Name of the environment variable or secret that holds the Kafka bootstrap servers connection string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
 
 ---
 
@@ -14672,7 +15608,7 @@ public IResolvable|ObservabilityPipelineConfigSourceKafkaLibrdkafkaOption[] Libr
 
 librdkafka_option block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
 
 ---
 
@@ -14686,7 +15622,7 @@ public IResolvable|ObservabilityPipelineConfigSourceKafkaSasl[] Sasl { get; set;
 
 sasl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
 
 ---
 
@@ -14700,7 +15636,7 @@ public IResolvable|ObservabilityPipelineConfigSourceKafkaTls[] Tls { get; set; }
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -14736,7 +15672,7 @@ public string Name { get; set; }
 
 The name of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
 
 ---
 
@@ -14750,7 +15686,7 @@ public string Value { get; set; }
 
 The value of the librdkafka option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
 
 ---
 
@@ -14788,7 +15724,7 @@ public string Mechanism { get; set; }
 
 SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
 
 ---
 
@@ -14802,7 +15738,7 @@ public string PasswordKey { get; set; }
 
 Name of the environment variable or secret that holds the SASL password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
 
 ---
 
@@ -14816,7 +15752,7 @@ public string UsernameKey { get; set; }
 
 Name of the environment variable or secret that holds the SASL username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
 
 ---
 
@@ -14856,7 +15792,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -14870,7 +15806,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -14884,7 +15820,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -14898,7 +15834,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -14934,7 +15870,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -14948,7 +15884,7 @@ public IResolvable|ObservabilityPipelineConfigSourceLogstashTls[] Tls { get; set
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -14988,7 +15924,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -15002,7 +15938,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -15016,7 +15952,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -15030,7 +15966,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -15068,7 +16004,7 @@ public string GrpcAddressKey { get; set; }
 
 Environment variable name containing the gRPC server address for receiving OTLP data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
 
 ---
 
@@ -15082,7 +16018,7 @@ public string HttpAddressKey { get; set; }
 
 Environment variable name containing the HTTP server address for receiving OTLP data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
 
 ---
 
@@ -15096,7 +16032,7 @@ public IResolvable|ObservabilityPipelineConfigSourceOpentelemetryTls[] Tls { get
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -15136,7 +16072,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -15150,7 +16086,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -15164,7 +16100,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -15178,7 +16114,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -15216,7 +16152,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -15230,7 +16166,7 @@ public string Mode { get; set; }
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -15244,7 +16180,7 @@ public IResolvable|ObservabilityPipelineConfigSourceRsyslogTls[] Tls { get; set;
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -15284,7 +16220,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -15298,7 +16234,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -15312,7 +16248,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -15326,7 +16262,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -15366,7 +16302,7 @@ public string Mode { get; set; }
 
 The protocol used to receive logs. Valid values are `tcp`, `udp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -15380,7 +16316,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address for the socket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -15394,7 +16330,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSocketFraming[] Framing { ge
 
 framing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
 
 ---
 
@@ -15408,7 +16344,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSocketTls[] Tls { get; set; 
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -15444,7 +16380,7 @@ public string Method { get; set; }
 
 The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
 
 ---
 
@@ -15458,7 +16394,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSocketFramingCharacterDelimi
 
 character_delimited block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
 
 ---
 
@@ -15492,7 +16428,7 @@ public string Delimiter { get; set; }
 
 A single ASCII character used as a delimiter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
 
 ---
 
@@ -15532,7 +16468,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -15546,7 +16482,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -15560,7 +16496,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -15574,7 +16510,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -15587,6 +16523,7 @@ using Io.Cdktn.Providers.Datadog;
 
 new ObservabilityPipelineConfigSourceSplunkHec {
     string AddressKey = null,
+    bool|IResolvable StoreHecToken = null,
     IResolvable|ObservabilityPipelineConfigSourceSplunkHecTls[] Tls = null
 };
 ```
@@ -15596,6 +16533,7 @@ new ObservabilityPipelineConfigSourceSplunkHec {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHec.property.addressKey">AddressKey</a></code> | <code>string</code> | Name of the environment variable or secret that holds the listen address for the HEC API. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHec.property.storeHecToken">StoreHecToken</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When `true`, the Splunk HEC token from the incoming request is stored in the event, allowing downstream components to forward it to other Splunk HEC destinations. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHec.property.tls">Tls</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecTls">ObservabilityPipelineConfigSourceSplunkHecTls</a>[]</code> | tls block. |
 
 ---
@@ -15610,7 +16548,21 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address for the HEC API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+
+---
+
+##### `StoreHecToken`<sup>Optional</sup> <a name="StoreHecToken" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHec.property.storeHecToken"></a>
+
+```csharp
+public bool|IResolvable StoreHecToken { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+When `true`, the Splunk HEC token from the incoming request is stored in the event, allowing downstream components to forward it to other Splunk HEC destinations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#store_hec_token ObservabilityPipeline#store_hec_token}
 
 ---
 
@@ -15624,7 +16576,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSplunkHecTls[] Tls { get; se
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -15664,7 +16616,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -15678,7 +16630,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -15692,7 +16644,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -15706,7 +16658,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -15742,7 +16694,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address for the Splunk TCP receiver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -15756,7 +16708,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSplunkTcpTls[] Tls { get; se
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -15796,7 +16748,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -15810,7 +16762,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -15824,7 +16776,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -15838,7 +16790,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -15872,7 +16824,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -15910,7 +16862,7 @@ public string AddressKey { get; set; }
 
 Name of the environment variable or secret that holds the listen address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
 
 ---
 
@@ -15924,7 +16876,7 @@ public string Mode { get; set; }
 
 Protocol used by the syslog source to receive messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
 
 ---
 
@@ -15938,7 +16890,7 @@ public IResolvable|ObservabilityPipelineConfigSourceSyslogNgTls[] Tls { get; set
 
 tls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
 
 ---
 
@@ -15978,7 +16930,7 @@ public string CrtFile { get; set; }
 
 Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
 
 ---
 
@@ -15992,7 +16944,7 @@ public string CaFile { get; set; }
 
 Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
 
 ---
 
@@ -16006,7 +16958,7 @@ public string KeyFile { get; set; }
 
 Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
 
 ---
 
@@ -16020,7 +16972,7 @@ public string KeyPassKey { get; set; }
 
 Name of the environment variable or secret that holds the passphrase for the private key file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
 
 ---
 
@@ -21272,6 +22224,2622 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Buffer Internal
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Buffer">ObservabilityPipelineConfigDestinationAmazonS3Buffer</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericAuth[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resetAssumeRole">ResetAssumeRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resetExternalId">ResetExternalId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resetSessionName">ResetSessionName</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAssumeRole` <a name="ResetAssumeRole" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resetAssumeRole"></a>
+
+```csharp
+private void ResetAssumeRole()
+```
+
+##### `ResetExternalId` <a name="ResetExternalId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resetExternalId"></a>
+
+```csharp
+private void ResetExternalId()
+```
+
+##### `ResetSessionName` <a name="ResetSessionName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.resetSessionName"></a>
+
+```csharp
+private void ResetSessionName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.assumeRoleInput">AssumeRoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.externalIdInput">ExternalIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.sessionNameInput">SessionNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.assumeRole">AssumeRole</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.externalId">ExternalId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.sessionName">SessionName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AssumeRoleInput`<sup>Optional</sup> <a name="AssumeRoleInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.assumeRoleInput"></a>
+
+```csharp
+public string AssumeRoleInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalIdInput`<sup>Optional</sup> <a name="ExternalIdInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.externalIdInput"></a>
+
+```csharp
+public string ExternalIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SessionNameInput`<sup>Optional</sup> <a name="SessionNameInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.sessionNameInput"></a>
+
+```csharp
+public string SessionNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AssumeRole`<sup>Required</sup> <a name="AssumeRole" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.assumeRole"></a>
+
+```csharp
+public string AssumeRole { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExternalId`<sup>Required</sup> <a name="ExternalId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.externalId"></a>
+
+```csharp
+public string ExternalId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SessionName`<sup>Required</sup> <a name="SessionName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.sessionName"></a>
+
+```csharp
+public string SessionName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericAuth InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.resetBatchSize">ResetBatchSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.resetTimeoutSecs">ResetTimeoutSecs</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBatchSize` <a name="ResetBatchSize" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.resetBatchSize"></a>
+
+```csharp
+private void ResetBatchSize()
+```
+
+##### `ResetTimeoutSecs` <a name="ResetTimeoutSecs" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.resetTimeoutSecs"></a>
+
+```csharp
+private void ResetTimeoutSecs()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.batchSizeInput">BatchSizeInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.timeoutSecsInput">TimeoutSecsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.batchSize">BatchSize</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.timeoutSecs">TimeoutSecs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BatchSizeInput`<sup>Optional</sup> <a name="BatchSizeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.batchSizeInput"></a>
+
+```csharp
+public double BatchSizeInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `TimeoutSecsInput`<sup>Optional</sup> <a name="TimeoutSecsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.timeoutSecsInput"></a>
+
+```csharp
+public double TimeoutSecsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `BatchSize`<sup>Required</sup> <a name="BatchSize" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.batchSize"></a>
+
+```csharp
+public double BatchSize { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `TimeoutSecs`<sup>Required</sup> <a name="TimeoutSecs" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.timeoutSecs"></a>
+
+```csharp
+public double TimeoutSecs { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericCompression[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.resetLevel">ResetLevel</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetLevel` <a name="ResetLevel" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.resetLevel"></a>
+
+```csharp
+private void ResetLevel()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.algorithmInput">AlgorithmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.levelInput">LevelInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.algorithm">Algorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.level">Level</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AlgorithmInput`<sup>Optional</sup> <a name="AlgorithmInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.algorithmInput"></a>
+
+```csharp
+public string AlgorithmInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LevelInput`<sup>Optional</sup> <a name="LevelInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.levelInput"></a>
+
+```csharp
+public double LevelInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.algorithm"></a>
+
+```csharp
+public string Algorithm { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.level"></a>
+
+```csharp
+public double Level { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericCompression InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.typeInput"></a>
+
+```csharp
+public string TypeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.type"></a>
+
+```csharp
+public string Type { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericList <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Generic[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference <a name="ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putAuth">PutAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putBatchSettings">PutBatchSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putCompression">PutCompression</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putEncoding">PutEncoding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetAuth">ResetAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetBatchSettings">ResetBatchSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetCompression">ResetCompression</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetEncoding">ResetEncoding</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetKeyPrefix">ResetKeyPrefix</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuth` <a name="PutAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putAuth"></a>
+
+```csharp
+private void PutAuth(IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericAuth[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putAuth.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>[]
+
+---
+
+##### `PutBatchSettings` <a name="PutBatchSettings" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putBatchSettings"></a>
+
+```csharp
+private void PutBatchSettings(IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putBatchSettings.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>[]
+
+---
+
+##### `PutCompression` <a name="PutCompression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putCompression"></a>
+
+```csharp
+private void PutCompression(IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericCompression[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putCompression.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>[]
+
+---
+
+##### `PutEncoding` <a name="PutEncoding" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putEncoding"></a>
+
+```csharp
+private void PutEncoding(IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.putEncoding.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>[]
+
+---
+
+##### `ResetAuth` <a name="ResetAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetAuth"></a>
+
+```csharp
+private void ResetAuth()
+```
+
+##### `ResetBatchSettings` <a name="ResetBatchSettings" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetBatchSettings"></a>
+
+```csharp
+private void ResetBatchSettings()
+```
+
+##### `ResetCompression` <a name="ResetCompression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetCompression"></a>
+
+```csharp
+private void ResetCompression()
+```
+
+##### `ResetEncoding` <a name="ResetEncoding" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetEncoding"></a>
+
+```csharp
+private void ResetEncoding()
+```
+
+##### `ResetKeyPrefix` <a name="ResetKeyPrefix" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.resetKeyPrefix"></a>
+
+```csharp
+private void ResetKeyPrefix()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList">ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.batchSettings">BatchSettings</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.compression">Compression</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList">ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.encoding">Encoding</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList">ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.authInput">AuthInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.batchSettingsInput">BatchSettingsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.compressionInput">CompressionInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.encodingInput">EncodingInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.keyPrefixInput">KeyPrefixInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.storageClassInput">StorageClassInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.keyPrefix">KeyPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.storageClass">StorageClass</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Auth`<sup>Required</sup> <a name="Auth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.auth"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList Auth { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList">ObservabilityPipelineConfigDestinationAmazonS3GenericAuthList</a>
+
+---
+
+##### `BatchSettings`<sup>Required</sup> <a name="BatchSettings" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.batchSettings"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList BatchSettings { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettingsList</a>
+
+---
+
+##### `Compression`<sup>Required</sup> <a name="Compression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.compression"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList Compression { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList">ObservabilityPipelineConfigDestinationAmazonS3GenericCompressionList</a>
+
+---
+
+##### `Encoding`<sup>Required</sup> <a name="Encoding" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.encoding"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList Encoding { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList">ObservabilityPipelineConfigDestinationAmazonS3GenericEncodingList</a>
+
+---
+
+##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.authInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericAuth[] AuthInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericAuth">ObservabilityPipelineConfigDestinationAmazonS3GenericAuth</a>[]
+
+---
+
+##### `BatchSettingsInput`<sup>Optional</sup> <a name="BatchSettingsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.batchSettingsInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings[] BatchSettingsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings">ObservabilityPipelineConfigDestinationAmazonS3GenericBatchSettings</a>[]
+
+---
+
+##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.bucketInput"></a>
+
+```csharp
+public string BucketInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CompressionInput`<sup>Optional</sup> <a name="CompressionInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.compressionInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericCompression[] CompressionInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericCompression">ObservabilityPipelineConfigDestinationAmazonS3GenericCompression</a>[]
+
+---
+
+##### `EncodingInput`<sup>Optional</sup> <a name="EncodingInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.encodingInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding[] EncodingInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding">ObservabilityPipelineConfigDestinationAmazonS3GenericEncoding</a>[]
+
+---
+
+##### `KeyPrefixInput`<sup>Optional</sup> <a name="KeyPrefixInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.keyPrefixInput"></a>
+
+```csharp
+public string KeyPrefixInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StorageClassInput`<sup>Optional</sup> <a name="StorageClassInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.storageClassInput"></a>
+
+```csharp
+public string StorageClassInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Bucket`<sup>Required</sup> <a name="Bucket" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.bucket"></a>
+
+```csharp
+public string Bucket { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyPrefix`<sup>Required</sup> <a name="KeyPrefix" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.keyPrefix"></a>
+
+```csharp
+public string KeyPrefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StorageClass`<sup>Required</sup> <a name="StorageClass" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.storageClass"></a>
+
+```csharp
+public string StorageClass { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Generic InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>
 
 ---
 
@@ -26795,6 +30363,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.putBuffer">PutBuffer</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.resetBlobPrefix">ResetBlobPrefix</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.resetBuffer">ResetBuffer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.resetConnectionStringKey">ResetConnectionStringKey</a></code> | *No description.* |
 
 ---
 
@@ -26972,6 +30541,12 @@ private void ResetBlobPrefix()
 private void ResetBuffer()
 ```
 
+##### `ResetConnectionStringKey` <a name="ResetConnectionStringKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.resetConnectionStringKey"></a>
+
+```csharp
+private void ResetConnectionStringKey()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -26982,8 +30557,10 @@ private void ResetBuffer()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.buffer">Buffer</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBufferList">ObservabilityPipelineConfigDestinationAzureStorageBufferList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.blobPrefixInput">BlobPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.bufferInput">BufferInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageBuffer">ObservabilityPipelineConfigDestinationAzureStorageBuffer</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.connectionStringKeyInput">ConnectionStringKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.containerNameInput">ContainerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.blobPrefix">BlobPrefix</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.connectionStringKey">ConnectionStringKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.containerName">ContainerName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage">ObservabilityPipelineConfigDestinationAzureStorage</a></code> | *No description.* |
 
@@ -27043,6 +30620,16 @@ public IResolvable|ObservabilityPipelineConfigDestinationAzureStorageBuffer[] Bu
 
 ---
 
+##### `ConnectionStringKeyInput`<sup>Optional</sup> <a name="ConnectionStringKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.connectionStringKeyInput"></a>
+
+```csharp
+public string ConnectionStringKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ContainerNameInput`<sup>Optional</sup> <a name="ContainerNameInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.containerNameInput"></a>
 
 ```csharp
@@ -27057,6 +30644,16 @@ public string ContainerNameInput { get; }
 
 ```csharp
 public string BlobPrefix { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ConnectionStringKey`<sup>Required</sup> <a name="ConnectionStringKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageOutputReference.property.connectionStringKey"></a>
+
+```csharp
+public string ConnectionStringKey { get; }
 ```
 
 - *Type:* string
@@ -30693,6 +34290,1019 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemT
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTls">ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemTls</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList <a name="ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobusAuth[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference <a name="ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.resetClientSecretKey">ResetClientSecretKey</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetClientSecretKey` <a name="ResetClientSecretKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.resetClientSecretKey"></a>
+
+```csharp
+private void ResetClientSecretKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientIdInput">ClientIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientSecretKeyInput">ClientSecretKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientId">ClientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientSecretKey">ClientSecretKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientIdInput"></a>
+
+```csharp
+public string ClientIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ClientSecretKeyInput`<sup>Optional</sup> <a name="ClientSecretKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientSecretKeyInput"></a>
+
+```csharp
+public string ClientSecretKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ClientId`<sup>Required</sup> <a name="ClientId" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientId"></a>
+
+```csharp
+public string ClientId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ClientSecretKey`<sup>Required</sup> <a name="ClientSecretKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.clientSecretKey"></a>
+
+```csharp
+public string ClientSecretKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobusAuth InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationDatabricksZerobusList <a name="ObservabilityPipelineConfigDestinationDatabricksZerobusList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationDatabricksZerobusList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobus[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference <a name="ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.putAuth">PutAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.resetAuth">ResetAuth</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutAuth` <a name="PutAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.putAuth"></a>
+
+```csharp
+private void PutAuth(IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobusAuth[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.putAuth.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>[]
+
+---
+
+##### `ResetAuth` <a name="ResetAuth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.resetAuth"></a>
+
+```csharp
+private void ResetAuth()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList">ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.authInput">AuthInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.ingestionEndpointInput">IngestionEndpointInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.tableNameInput">TableNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.unityCatalogEndpointInput">UnityCatalogEndpointInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.ingestionEndpoint">IngestionEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.tableName">TableName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.unityCatalogEndpoint">UnityCatalogEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Auth`<sup>Required</sup> <a name="Auth" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.auth"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList Auth { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList">ObservabilityPipelineConfigDestinationDatabricksZerobusAuthList</a>
+
+---
+
+##### `AuthInput`<sup>Optional</sup> <a name="AuthInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.authInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobusAuth[] AuthInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusAuth">ObservabilityPipelineConfigDestinationDatabricksZerobusAuth</a>[]
+
+---
+
+##### `IngestionEndpointInput`<sup>Optional</sup> <a name="IngestionEndpointInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.ingestionEndpointInput"></a>
+
+```csharp
+public string IngestionEndpointInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TableNameInput`<sup>Optional</sup> <a name="TableNameInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.tableNameInput"></a>
+
+```csharp
+public string TableNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UnityCatalogEndpointInput`<sup>Optional</sup> <a name="UnityCatalogEndpointInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.unityCatalogEndpointInput"></a>
+
+```csharp
+public string UnityCatalogEndpointInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IngestionEndpoint`<sup>Required</sup> <a name="IngestionEndpoint" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.ingestionEndpoint"></a>
+
+```csharp
+public string IngestionEndpoint { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TableName`<sup>Required</sup> <a name="TableName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.tableName"></a>
+
+```csharp
+public string TableName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UnityCatalogEndpoint`<sup>Required</sup> <a name="UnityCatalogEndpoint" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.unityCatalogEndpoint"></a>
+
+```csharp
+public string UnityCatalogEndpoint { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobus InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>
 
 ---
 
@@ -37229,6 +41839,484 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchBuffer Int
 ---
 
 
+### ObservabilityPipelineConfigDestinationElasticsearchCompressionList <a name="ObservabilityPipelineConfigDestinationElasticsearchCompressionList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationElasticsearchCompressionList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchCompression[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference <a name="ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.resetLevel">ResetLevel</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetLevel` <a name="ResetLevel" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.resetLevel"></a>
+
+```csharp
+private void ResetLevel()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.algorithmInput">AlgorithmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.levelInput">LevelInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.algorithm">Algorithm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.level">Level</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AlgorithmInput`<sup>Optional</sup> <a name="AlgorithmInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.algorithmInput"></a>
+
+```csharp
+public string AlgorithmInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LevelInput`<sup>Optional</sup> <a name="LevelInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.levelInput"></a>
+
+```csharp
+public double LevelInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.algorithm"></a>
+
+```csharp
+public string Algorithm { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Level`<sup>Required</sup> <a name="Level" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.level"></a>
+
+```csharp
+public double Level { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchCompression InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>
+
+---
+
+
 ### ObservabilityPipelineConfigDestinationElasticsearchDataStreamList <a name="ObservabilityPipelineConfigDestinationElasticsearchDataStreamList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamList.Initializer"></a>
@@ -37457,9 +42545,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetAutoRouting">ResetAutoRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetDataset">ResetDataset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetDtype">ResetDtype</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetSyncFields">ResetSyncFields</a></code> | *No description.* |
 
 ---
 
@@ -37613,6 +42703,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetAutoRouting` <a name="ResetAutoRouting" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetAutoRouting"></a>
+
+```csharp
+private void ResetAutoRouting()
+```
+
 ##### `ResetDataset` <a name="ResetDataset" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetDataset"></a>
 
 ```csharp
@@ -37631,6 +42727,12 @@ private void ResetDtype()
 private void ResetNamespace()
 ```
 
+##### `ResetSyncFields` <a name="ResetSyncFields" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.resetSyncFields"></a>
+
+```csharp
+private void ResetSyncFields()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -37638,12 +42740,16 @@ private void ResetNamespace()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.autoRoutingInput">AutoRoutingInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.datasetInput">DatasetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.dtypeInput">DtypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.syncFieldsInput">SyncFieldsInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.autoRouting">AutoRouting</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.dataset">Dataset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.dtype">Dtype</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.syncFields">SyncFields</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream">ObservabilityPipelineConfigDestinationElasticsearchDataStream</a></code> | *No description.* |
 
 ---
@@ -37669,6 +42775,16 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `AutoRoutingInput`<sup>Optional</sup> <a name="AutoRoutingInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.autoRoutingInput"></a>
+
+```csharp
+public bool|IResolvable AutoRoutingInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -37702,6 +42818,26 @@ public string NamespaceInput { get; }
 
 ---
 
+##### `SyncFieldsInput`<sup>Optional</sup> <a name="SyncFieldsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.syncFieldsInput"></a>
+
+```csharp
+public bool|IResolvable SyncFieldsInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `AutoRouting`<sup>Required</sup> <a name="AutoRouting" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.autoRouting"></a>
+
+```csharp
+public bool|IResolvable AutoRouting { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `Dataset`<sup>Required</sup> <a name="Dataset" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.dataset"></a>
 
 ```csharp
@@ -37729,6 +42865,16 @@ public string Namespace { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `SyncFields`<sup>Required</sup> <a name="SyncFields" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamOutputReference.property.syncFields"></a>
+
+```csharp
+public bool|IResolvable SyncFields { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -37973,13 +43119,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putAuth">PutAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putBuffer">PutBuffer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putCompression">PutCompression</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putDataStream">PutDataStream</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putTls">PutTls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetApiVersion">ResetApiVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetAuth">ResetAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetBuffer">ResetBuffer</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetBulkIndex">ResetBulkIndex</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetCompression">ResetCompression</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetDataStream">ResetDataStream</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetEndpointUrlKey">ResetEndpointUrlKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetIdKey">ResetIdKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetPipeline">ResetPipeline</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetRequestRetryPartial">ResetRequestRetryPartial</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetTls">ResetTls</a></code> | *No description.* |
 
 ---
 
@@ -38157,6 +43310,18 @@ private void PutBuffer(IResolvable|ObservabilityPipelineConfigDestinationElastic
 
 ---
 
+##### `PutCompression` <a name="PutCompression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putCompression"></a>
+
+```csharp
+private void PutCompression(IResolvable|ObservabilityPipelineConfigDestinationElasticsearchCompression[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putCompression.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>[]
+
+---
+
 ##### `PutDataStream` <a name="PutDataStream" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putDataStream"></a>
 
 ```csharp
@@ -38166,6 +43331,18 @@ private void PutDataStream(IResolvable|ObservabilityPipelineConfigDestinationEla
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putDataStream.parameter.value"></a>
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream">ObservabilityPipelineConfigDestinationElasticsearchDataStream</a>[]
+
+---
+
+##### `PutTls` <a name="PutTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putTls"></a>
+
+```csharp
+private void PutTls(IResolvable|ObservabilityPipelineConfigDestinationElasticsearchTls[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.putTls.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>[]
 
 ---
 
@@ -38193,6 +43370,12 @@ private void ResetBuffer()
 private void ResetBulkIndex()
 ```
 
+##### `ResetCompression` <a name="ResetCompression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetCompression"></a>
+
+```csharp
+private void ResetCompression()
+```
+
 ##### `ResetDataStream` <a name="ResetDataStream" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetDataStream"></a>
 
 ```csharp
@@ -38205,6 +43388,30 @@ private void ResetDataStream()
 private void ResetEndpointUrlKey()
 ```
 
+##### `ResetIdKey` <a name="ResetIdKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetIdKey"></a>
+
+```csharp
+private void ResetIdKey()
+```
+
+##### `ResetPipeline` <a name="ResetPipeline" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetPipeline"></a>
+
+```csharp
+private void ResetPipeline()
+```
+
+##### `ResetRequestRetryPartial` <a name="ResetRequestRetryPartial" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetRequestRetryPartial"></a>
+
+```csharp
+private void ResetRequestRetryPartial()
+```
+
+##### `ResetTls` <a name="ResetTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.resetTls"></a>
+
+```csharp
+private void ResetTls()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -38214,16 +43421,26 @@ private void ResetEndpointUrlKey()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuthList">ObservabilityPipelineConfigDestinationElasticsearchAuthList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.buffer">Buffer</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBufferList">ObservabilityPipelineConfigDestinationElasticsearchBufferList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.compression">Compression</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList">ObservabilityPipelineConfigDestinationElasticsearchCompressionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.dataStream">DataStream</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamList">ObservabilityPipelineConfigDestinationElasticsearchDataStreamList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList">ObservabilityPipelineConfigDestinationElasticsearchTlsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.apiVersionInput">ApiVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.authInput">AuthInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchAuth">ObservabilityPipelineConfigDestinationElasticsearchAuth</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.bufferInput">BufferInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchBuffer">ObservabilityPipelineConfigDestinationElasticsearchBuffer</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.bulkIndexInput">BulkIndexInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.compressionInput">CompressionInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.dataStreamInput">DataStreamInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStream">ObservabilityPipelineConfigDestinationElasticsearchDataStream</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.endpointUrlKeyInput">EndpointUrlKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.idKeyInput">IdKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.pipelineInput">PipelineInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.requestRetryPartialInput">RequestRetryPartialInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.tlsInput">TlsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.apiVersion">ApiVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.bulkIndex">BulkIndex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.endpointUrlKey">EndpointUrlKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.idKey">IdKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.pipeline">Pipeline</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.requestRetryPartial">RequestRetryPartial</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch">ObservabilityPipelineConfigDestinationElasticsearch</a></code> | *No description.* |
 
 ---
@@ -38272,6 +43489,16 @@ public ObservabilityPipelineConfigDestinationElasticsearchBufferList Buffer { ge
 
 ---
 
+##### `Compression`<sup>Required</sup> <a name="Compression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.compression"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationElasticsearchCompressionList Compression { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompressionList">ObservabilityPipelineConfigDestinationElasticsearchCompressionList</a>
+
+---
+
 ##### `DataStream`<sup>Required</sup> <a name="DataStream" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.dataStream"></a>
 
 ```csharp
@@ -38279,6 +43506,16 @@ public ObservabilityPipelineConfigDestinationElasticsearchDataStreamList DataStr
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchDataStreamList">ObservabilityPipelineConfigDestinationElasticsearchDataStreamList</a>
+
+---
+
+##### `Tls`<sup>Required</sup> <a name="Tls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.tls"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationElasticsearchTlsList Tls { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList">ObservabilityPipelineConfigDestinationElasticsearchTlsList</a>
 
 ---
 
@@ -38322,6 +43559,16 @@ public string BulkIndexInput { get; }
 
 ---
 
+##### `CompressionInput`<sup>Optional</sup> <a name="CompressionInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.compressionInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchCompression[] CompressionInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchCompression">ObservabilityPipelineConfigDestinationElasticsearchCompression</a>[]
+
+---
+
 ##### `DataStreamInput`<sup>Optional</sup> <a name="DataStreamInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.dataStreamInput"></a>
 
 ```csharp
@@ -38339,6 +43586,46 @@ public string EndpointUrlKeyInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `IdKeyInput`<sup>Optional</sup> <a name="IdKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.idKeyInput"></a>
+
+```csharp
+public string IdKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PipelineInput`<sup>Optional</sup> <a name="PipelineInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.pipelineInput"></a>
+
+```csharp
+public string PipelineInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RequestRetryPartialInput`<sup>Optional</sup> <a name="RequestRetryPartialInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.requestRetryPartialInput"></a>
+
+```csharp
+public bool|IResolvable RequestRetryPartialInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.tlsInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchTls[] TlsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>[]
 
 ---
 
@@ -38372,6 +43659,36 @@ public string EndpointUrlKey { get; }
 
 ---
 
+##### `IdKey`<sup>Required</sup> <a name="IdKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.idKey"></a>
+
+```csharp
+public string IdKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Pipeline`<sup>Required</sup> <a name="Pipeline" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.pipeline"></a>
+
+```csharp
+public string Pipeline { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RequestRetryPartial`<sup>Required</sup> <a name="RequestRetryPartial" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.requestRetryPartial"></a>
+
+```csharp
+public bool|IResolvable RequestRetryPartial { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchOutputReference.property.internalValue"></a>
 
 ```csharp
@@ -38379,6 +43696,542 @@ public IResolvable|ObservabilityPipelineConfigDestinationElasticsearch InternalV
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch">ObservabilityPipelineConfigDestinationElasticsearch</a>
+
+---
+
+
+### ObservabilityPipelineConfigDestinationElasticsearchTlsList <a name="ObservabilityPipelineConfigDestinationElasticsearchTlsList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationElasticsearchTlsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchTls[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference <a name="ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resetCaFile">ResetCaFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resetKeyFile">ResetKeyFile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resetKeyPassKey">ResetKeyPassKey</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCaFile` <a name="ResetCaFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resetCaFile"></a>
+
+```csharp
+private void ResetCaFile()
+```
+
+##### `ResetKeyFile` <a name="ResetKeyFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resetKeyFile"></a>
+
+```csharp
+private void ResetKeyFile()
+```
+
+##### `ResetKeyPassKey` <a name="ResetKeyPassKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.resetKeyPassKey"></a>
+
+```csharp
+private void ResetKeyPassKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.caFileInput">CaFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.crtFileInput">CrtFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyFileInput">KeyFileInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyPassKeyInput">KeyPassKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.crtFile">CrtFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyPassKey">KeyPassKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFileInput`<sup>Optional</sup> <a name="CaFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.caFileInput"></a>
+
+```csharp
+public string CaFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFileInput`<sup>Optional</sup> <a name="CrtFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.crtFileInput"></a>
+
+```csharp
+public string CrtFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFileInput`<sup>Optional</sup> <a name="KeyFileInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyFileInput"></a>
+
+```csharp
+public string KeyFileInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyPassKeyInput`<sup>Optional</sup> <a name="KeyPassKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyPassKeyInput"></a>
+
+```csharp
+public string KeyPassKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CaFile`<sup>Required</sup> <a name="CaFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.caFile"></a>
+
+```csharp
+public string CaFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CrtFile`<sup>Required</sup> <a name="CrtFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.crtFile"></a>
+
+```csharp
+public string CrtFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyFile`<sup>Required</sup> <a name="KeyFile" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyFile"></a>
+
+```csharp
+public string KeyFile { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeyPassKey`<sup>Required</sup> <a name="KeyPassKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.keyPassKey"></a>
+
+```csharp
+public string KeyPassKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTlsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationElasticsearchTls InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchTls">ObservabilityPipelineConfigDestinationElasticsearchTls</a>
 
 ---
 
@@ -58160,10 +64013,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAmazonOpensearch">PutAmazonOpensearch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAmazonS3">PutAmazonS3</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAmazonS3Generic">PutAmazonS3Generic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAmazonSecurityLake">PutAmazonSecurityLake</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAzureStorage">PutAzureStorage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putCloudPrem">PutCloudPrem</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putCrowdstrikeNextGenSiem">PutCrowdstrikeNextGenSiem</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putDatabricksZerobus">PutDatabricksZerobus</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putDatadogLogs">PutDatadogLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putDatadogMetrics">PutDatadogMetrics</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putElasticsearch">PutElasticsearch</a></code> | *No description.* |
@@ -58183,10 +64038,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putSyslogNg">PutSyslogNg</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetAmazonOpensearch">ResetAmazonOpensearch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetAmazonS3">ResetAmazonS3</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetAmazonS3Generic">ResetAmazonS3Generic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetAmazonSecurityLake">ResetAmazonSecurityLake</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetAzureStorage">ResetAzureStorage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetCloudPrem">ResetCloudPrem</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetCrowdstrikeNextGenSiem">ResetCrowdstrikeNextGenSiem</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetDatabricksZerobus">ResetDatabricksZerobus</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetDatadogLogs">ResetDatadogLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetDatadogMetrics">ResetDatadogMetrics</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetElasticsearch">ResetElasticsearch</a></code> | *No description.* |
@@ -58381,6 +64238,18 @@ private void PutAmazonS3(IResolvable|ObservabilityPipelineConfigDestinationAmazo
 
 ---
 
+##### `PutAmazonS3Generic` <a name="PutAmazonS3Generic" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAmazonS3Generic"></a>
+
+```csharp
+private void PutAmazonS3Generic(IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Generic[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAmazonS3Generic.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>[]
+
+---
+
 ##### `PutAmazonSecurityLake` <a name="PutAmazonSecurityLake" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putAmazonSecurityLake"></a>
 
 ```csharp
@@ -58426,6 +64295,18 @@ private void PutCrowdstrikeNextGenSiem(IResolvable|ObservabilityPipelineConfigDe
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putCrowdstrikeNextGenSiem.parameter.value"></a>
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem</a>[]
+
+---
+
+##### `PutDatabricksZerobus` <a name="PutDatabricksZerobus" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putDatabricksZerobus"></a>
+
+```csharp
+private void PutDatabricksZerobus(IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobus[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.putDatabricksZerobus.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>[]
 
 ---
 
@@ -58645,6 +64526,12 @@ private void ResetAmazonOpensearch()
 private void ResetAmazonS3()
 ```
 
+##### `ResetAmazonS3Generic` <a name="ResetAmazonS3Generic" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetAmazonS3Generic"></a>
+
+```csharp
+private void ResetAmazonS3Generic()
+```
+
 ##### `ResetAmazonSecurityLake` <a name="ResetAmazonSecurityLake" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetAmazonSecurityLake"></a>
 
 ```csharp
@@ -58667,6 +64554,12 @@ private void ResetCloudPrem()
 
 ```csharp
 private void ResetCrowdstrikeNextGenSiem()
+```
+
+##### `ResetDatabricksZerobus` <a name="ResetDatabricksZerobus" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetDatabricksZerobus"></a>
+
+```csharp
+private void ResetDatabricksZerobus()
 ```
 
 ##### `ResetDatadogLogs` <a name="ResetDatadogLogs" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.resetDatadogLogs"></a>
@@ -58780,10 +64673,12 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonOpensearch">AmazonOpensearch</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearchList">ObservabilityPipelineConfigDestinationAmazonOpensearchList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonS3">AmazonS3</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3List">ObservabilityPipelineConfigDestinationAmazonS3List</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonS3Generic">AmazonS3Generic</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList">ObservabilityPipelineConfigDestinationAmazonS3GenericList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonSecurityLake">AmazonSecurityLake</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLakeList">ObservabilityPipelineConfigDestinationAmazonSecurityLakeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.azureStorage">AzureStorage</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorageList">ObservabilityPipelineConfigDestinationAzureStorageList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.cloudPrem">CloudPrem</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPremList">ObservabilityPipelineConfigDestinationCloudPremList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.crowdstrikeNextGenSiem">CrowdstrikeNextGenSiem</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList">ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.databricksZerobus">DatabricksZerobus</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList">ObservabilityPipelineConfigDestinationDatabricksZerobusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.datadogLogs">DatadogLogs</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogsList">ObservabilityPipelineConfigDestinationDatadogLogsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.datadogMetrics">DatadogMetrics</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogMetricsList">ObservabilityPipelineConfigDestinationDatadogMetricsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.elasticsearch">Elasticsearch</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearchList">ObservabilityPipelineConfigDestinationElasticsearchList</a></code> | *No description.* |
@@ -58802,11 +64697,13 @@ private void ResetSyslogNg()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.sumoLogic">SumoLogic</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSumoLogicList">ObservabilityPipelineConfigDestinationSumoLogicList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.syslogNg">SyslogNg</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSyslogNgList">ObservabilityPipelineConfigDestinationSyslogNgList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonOpensearchInput">AmazonOpensearchInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonOpensearch">ObservabilityPipelineConfigDestinationAmazonOpensearch</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonS3GenericInput">AmazonS3GenericInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonS3Input">AmazonS3Input</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3">ObservabilityPipelineConfigDestinationAmazonS3</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonSecurityLakeInput">AmazonSecurityLakeInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonSecurityLake">ObservabilityPipelineConfigDestinationAmazonSecurityLake</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.azureStorageInput">AzureStorageInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAzureStorage">ObservabilityPipelineConfigDestinationAzureStorage</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.cloudPremInput">CloudPremInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCloudPrem">ObservabilityPipelineConfigDestinationCloudPrem</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.crowdstrikeNextGenSiemInput">CrowdstrikeNextGenSiemInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.databricksZerobusInput">DatabricksZerobusInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.datadogLogsInput">DatadogLogsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogLogs">ObservabilityPipelineConfigDestinationDatadogLogs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.datadogMetricsInput">DatadogMetricsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatadogMetrics">ObservabilityPipelineConfigDestinationDatadogMetrics</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.elasticsearchInput">ElasticsearchInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationElasticsearch">ObservabilityPipelineConfigDestinationElasticsearch</a>[]</code> | *No description.* |
@@ -58876,6 +64773,16 @@ public ObservabilityPipelineConfigDestinationAmazonS3List AmazonS3 { get; }
 
 ---
 
+##### `AmazonS3Generic`<sup>Required</sup> <a name="AmazonS3Generic" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonS3Generic"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationAmazonS3GenericList AmazonS3Generic { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3GenericList">ObservabilityPipelineConfigDestinationAmazonS3GenericList</a>
+
+---
+
 ##### `AmazonSecurityLake`<sup>Required</sup> <a name="AmazonSecurityLake" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonSecurityLake"></a>
 
 ```csharp
@@ -58913,6 +64820,16 @@ public ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList Crowdstr
 ```
 
 - *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList">ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiemList</a>
+
+---
+
+##### `DatabricksZerobus`<sup>Required</sup> <a name="DatabricksZerobus" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.databricksZerobus"></a>
+
+```csharp
+public ObservabilityPipelineConfigDestinationDatabricksZerobusList DatabricksZerobus { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobusList">ObservabilityPipelineConfigDestinationDatabricksZerobusList</a>
 
 ---
 
@@ -59096,6 +65013,16 @@ public IResolvable|ObservabilityPipelineConfigDestinationAmazonOpensearch[] Amaz
 
 ---
 
+##### `AmazonS3GenericInput`<sup>Optional</sup> <a name="AmazonS3GenericInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonS3GenericInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationAmazonS3Generic[] AmazonS3GenericInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationAmazonS3Generic">ObservabilityPipelineConfigDestinationAmazonS3Generic</a>[]
+
+---
+
 ##### `AmazonS3Input`<sup>Optional</sup> <a name="AmazonS3Input" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.amazonS3Input"></a>
 
 ```csharp
@@ -59143,6 +65070,16 @@ public IResolvable|ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem[
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem">ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem</a>[]
+
+---
+
+##### `DatabricksZerobusInput`<sup>Optional</sup> <a name="DatabricksZerobusInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationOutputReference.property.databricksZerobusInput"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigDestinationDatabricksZerobus[] DatabricksZerobusInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationDatabricksZerobus">ObservabilityPipelineConfigDestinationDatabricksZerobus</a>[]
 
 ---
 
@@ -69367,8 +75304,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetBuffer">ResetBuffer</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetEndpointUrlKey">ResetEndpointUrlKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetIndex">ResetIndex</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetIndexedFields">ResetIndexedFields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetSourcetype">ResetSourcetype</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetTokenKey">ResetTokenKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetTokenStrategy">ResetTokenStrategy</a></code> | *No description.* |
 
 ---
 
@@ -69558,6 +75497,12 @@ private void ResetEndpointUrlKey()
 private void ResetIndex()
 ```
 
+##### `ResetIndexedFields` <a name="ResetIndexedFields" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetIndexedFields"></a>
+
+```csharp
+private void ResetIndexedFields()
+```
+
 ##### `ResetSourcetype` <a name="ResetSourcetype" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetSourcetype"></a>
 
 ```csharp
@@ -69568,6 +75513,12 @@ private void ResetSourcetype()
 
 ```csharp
 private void ResetTokenKey()
+```
+
+##### `ResetTokenStrategy` <a name="ResetTokenStrategy" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.resetTokenStrategy"></a>
+
+```csharp
+private void ResetTokenStrategy()
 ```
 
 
@@ -69582,15 +75533,19 @@ private void ResetTokenKey()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.bufferInput">BufferInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecBuffer">ObservabilityPipelineConfigDestinationSplunkHecBuffer</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.encodingInput">EncodingInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.endpointUrlKeyInput">EndpointUrlKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.indexedFieldsInput">IndexedFieldsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.indexInput">IndexInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.sourcetypeInput">SourcetypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.tokenKeyInput">TokenKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.tokenStrategyInput">TokenStrategyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.autoExtractTimestamp">AutoExtractTimestamp</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.encoding">Encoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.endpointUrlKey">EndpointUrlKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.index">Index</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.indexedFields">IndexedFields</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.sourcetype">Sourcetype</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.tokenKey">TokenKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.tokenStrategy">TokenStrategy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHec">ObservabilityPipelineConfigDestinationSplunkHec</a></code> | *No description.* |
 
 ---
@@ -69669,6 +75624,16 @@ public string EndpointUrlKeyInput { get; }
 
 ---
 
+##### `IndexedFieldsInput`<sup>Optional</sup> <a name="IndexedFieldsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.indexedFieldsInput"></a>
+
+```csharp
+public string[] IndexedFieldsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `IndexInput`<sup>Optional</sup> <a name="IndexInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.indexInput"></a>
 
 ```csharp
@@ -69693,6 +75658,16 @@ public string SourcetypeInput { get; }
 
 ```csharp
 public string TokenKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TokenStrategyInput`<sup>Optional</sup> <a name="TokenStrategyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.tokenStrategyInput"></a>
+
+```csharp
+public string TokenStrategyInput { get; }
 ```
 
 - *Type:* string
@@ -69739,6 +75714,16 @@ public string Index { get; }
 
 ---
 
+##### `IndexedFields`<sup>Required</sup> <a name="IndexedFields" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.indexedFields"></a>
+
+```csharp
+public string[] IndexedFields { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `Sourcetype`<sup>Required</sup> <a name="Sourcetype" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.sourcetype"></a>
 
 ```csharp
@@ -69753,6 +75738,16 @@ public string Sourcetype { get; }
 
 ```csharp
 public string TokenKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TokenStrategy`<sup>Required</sup> <a name="TokenStrategy" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigDestinationSplunkHecOutputReference.property.tokenStrategy"></a>
+
+```csharp
+public string TokenStrategy { get; }
 ```
 
 - *Type:* string
@@ -80399,6 +86394,549 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentT
 ---
 
 
+### ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList <a name="ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.get"></a>
+
+```csharp
+private ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>[]
+
+---
+
+
+### ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference <a name="ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetEvent">ResetEvent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetSecret">ResetSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetStringPath">ResetStringPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetVrl">ResetVrl</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetEvent` <a name="ResetEvent" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetEvent"></a>
+
+```csharp
+private void ResetEvent()
+```
+
+##### `ResetSecret` <a name="ResetSecret" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetSecret"></a>
+
+```csharp
+private void ResetSecret()
+```
+
+##### `ResetStringPath` <a name="ResetStringPath" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetStringPath"></a>
+
+```csharp
+private void ResetStringPath()
+```
+
+##### `ResetVrl` <a name="ResetVrl" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.resetVrl"></a>
+
+```csharp
+private void ResetVrl()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.eventInput">EventInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.secretInput">SecretInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.stringPathInput">StringPathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.vrlInput">VrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.event">Event</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.secret">Secret</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.stringPath">StringPath</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.vrl">Vrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EventInput`<sup>Optional</sup> <a name="EventInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.eventInput"></a>
+
+```csharp
+public string EventInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SecretInput`<sup>Optional</sup> <a name="SecretInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.secretInput"></a>
+
+```csharp
+public string SecretInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StringPathInput`<sup>Optional</sup> <a name="StringPathInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.stringPathInput"></a>
+
+```csharp
+public string StringPathInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `VrlInput`<sup>Optional</sup> <a name="VrlInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.vrlInput"></a>
+
+```csharp
+public string VrlInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Event`<sup>Required</sup> <a name="Event" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.event"></a>
+
+```csharp
+public string Event { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Secret`<sup>Required</sup> <a name="Secret" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.secret"></a>
+
+```csharp
+public string Secret { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StringPath`<sup>Required</sup> <a name="StringPath" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.stringPath"></a>
+
+```csharp
+public string StringPath { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Vrl`<sup>Required</sup> <a name="Vrl" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.vrl"></a>
+
+```csharp
+public string Vrl { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>
+
+---
+
+
 ### ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyList <a name="ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyList" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyList.Initializer"></a>
@@ -80627,6 +87165,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.putField">PutField</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.resetColumn">ResetColumn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.resetComparison">ResetComparison</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.resetField">ResetField</a></code> | *No description.* |
@@ -80783,6 +87322,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutField` <a name="PutField" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.putField"></a>
+
+```csharp
+private void PutField(IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.putField.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>[]
+
+---
+
 ##### `ResetColumn` <a name="ResetColumn" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.resetColumn"></a>
 
 ```csharp
@@ -80808,12 +87359,12 @@ private void ResetField()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.field">Field</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.columnInput">ColumnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.comparisonInput">ComparisonInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.fieldInput">FieldInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.fieldInput">FieldInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.column">Column</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.comparison">Comparison</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.field">Field</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey</a></code> | *No description.* |
 
 ---
@@ -80842,6 +87393,16 @@ public string Fqn { get; }
 
 ---
 
+##### `Field`<sup>Required</sup> <a name="Field" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.field"></a>
+
+```csharp
+public ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList Field { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldList</a>
+
+---
+
 ##### `ColumnInput`<sup>Optional</sup> <a name="ColumnInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.columnInput"></a>
 
 ```csharp
@@ -80865,10 +87426,10 @@ public string ComparisonInput { get; }
 ##### `FieldInput`<sup>Optional</sup> <a name="FieldInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.fieldInput"></a>
 
 ```csharp
-public string FieldInput { get; }
+public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField[] FieldInput { get; }
 ```
 
-- *Type:* string
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField">ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField</a>[]
 
 ---
 
@@ -80886,16 +87447,6 @@ public string Column { get; }
 
 ```csharp
 public string Comparison { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Field`<sup>Required</sup> <a name="Field" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyOutputReference.property.field"></a>
-
-```csharp
-public string Field { get; }
 ```
 
 - *Type:* string
@@ -89641,6 +96192,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.putMapping">PutMapping</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.resetKeepUnmatched">ResetKeepUnmatched</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.resetMapping">ResetMapping</a></code> | *No description.* |
 
 ---
@@ -89807,6 +96359,12 @@ private void PutMapping(IResolvable|ObservabilityPipelineConfigProcessorGroupPro
 
 ---
 
+##### `ResetKeepUnmatched` <a name="ResetKeepUnmatched" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.resetKeepUnmatched"></a>
+
+```csharp
+private void ResetKeepUnmatched()
+```
+
 ##### `ResetMapping` <a name="ResetMapping" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.resetMapping"></a>
 
 ```csharp
@@ -89821,7 +96379,9 @@ private void ResetMapping()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.mapping">Mapping</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingList">ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.keepUnmatchedInput">KeepUnmatchedInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.mappingInput">MappingInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping">ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.keepUnmatched">KeepUnmatched</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper">ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper</a></code> | *No description.* |
 
 ---
@@ -89860,6 +96420,16 @@ public ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingList M
 
 ---
 
+##### `KeepUnmatchedInput`<sup>Optional</sup> <a name="KeepUnmatchedInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.keepUnmatchedInput"></a>
+
+```csharp
+public bool|IResolvable KeepUnmatchedInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `MappingInput`<sup>Optional</sup> <a name="MappingInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.mappingInput"></a>
 
 ```csharp
@@ -89867,6 +96437,16 @@ public IResolvable|ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperM
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping">ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping</a>[]
+
+---
+
+##### `KeepUnmatched`<sup>Required</sup> <a name="KeepUnmatched" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperOutputReference.property.keepUnmatched"></a>
+
+```csharp
+public bool|IResolvable KeepUnmatched { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -102805,6 +109385,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference.resetOnMatch">ResetOnMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference.resetPattern">ResetPattern</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference.resetScope">ResetScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
 
@@ -103028,6 +109609,12 @@ private void ResetPattern()
 
 ```csharp
 private void ResetScope()
+```
+
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOutputReference.resetTags"></a>
+
+```csharp
+private void ResetTags()
 ```
 
 
@@ -109945,6 +116532,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.putAuth">PutAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.putTls">PutTls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.resetAuth">ResetAuth</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.resetCompression">ResetCompression</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.resetTls">ResetTls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.resetUrlKey">ResetUrlKey</a></code> | *No description.* |
 
@@ -110130,6 +116718,12 @@ private void PutTls(IResolvable|ObservabilityPipelineConfigSourceAmazonS3Tls[] V
 private void ResetAuth()
 ```
 
+##### `ResetCompression` <a name="ResetCompression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.resetCompression"></a>
+
+```csharp
+private void ResetCompression()
+```
+
 ##### `ResetTls` <a name="ResetTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.resetTls"></a>
 
 ```csharp
@@ -110152,9 +116746,11 @@ private void ResetUrlKey()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.auth">Auth</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3AuthList">ObservabilityPipelineConfigSourceAmazonS3AuthList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3TlsList">ObservabilityPipelineConfigSourceAmazonS3TlsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.authInput">AuthInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3Auth">ObservabilityPipelineConfigSourceAmazonS3Auth</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.compressionInput">CompressionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.tlsInput">TlsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3Tls">ObservabilityPipelineConfigSourceAmazonS3Tls</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.urlKeyInput">UrlKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.compression">Compression</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.urlKey">UrlKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3">ObservabilityPipelineConfigSourceAmazonS3</a></code> | *No description.* |
@@ -110215,6 +116811,16 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonS3Auth[] AuthInput { g
 
 ---
 
+##### `CompressionInput`<sup>Optional</sup> <a name="CompressionInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.compressionInput"></a>
+
+```csharp
+public string CompressionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.regionInput"></a>
 
 ```csharp
@@ -110239,6 +116845,16 @@ public IResolvable|ObservabilityPipelineConfigSourceAmazonS3Tls[] TlsInput { get
 
 ```csharp
 public string UrlKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Compression`<sup>Required</sup> <a name="Compression" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceAmazonS3OutputReference.property.compression"></a>
+
+```csharp
+public string Compression { get; }
 ```
 
 - *Type:* string
@@ -111041,6 +117657,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.putTls">PutTls</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.resetAddressKey">ResetAddressKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.resetTls">ResetTls</a></code> | *No description.* |
 
 ---
@@ -111207,6 +117824,12 @@ private void PutTls(IResolvable|ObservabilityPipelineConfigSourceDatadogAgentTls
 
 ---
 
+##### `ResetAddressKey` <a name="ResetAddressKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.resetAddressKey"></a>
+
+```csharp
+private void ResetAddressKey()
+```
+
 ##### `ResetTls` <a name="ResetTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.resetTls"></a>
 
 ```csharp
@@ -111221,7 +117844,9 @@ private void ResetTls()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentTlsList">ObservabilityPipelineConfigSourceDatadogAgentTlsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.addressKeyInput">AddressKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.tlsInput">TlsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentTls">ObservabilityPipelineConfigSourceDatadogAgentTls</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.addressKey">AddressKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgent">ObservabilityPipelineConfigSourceDatadogAgent</a></code> | *No description.* |
 
 ---
@@ -111260,6 +117885,16 @@ public ObservabilityPipelineConfigSourceDatadogAgentTlsList Tls { get; }
 
 ---
 
+##### `AddressKeyInput`<sup>Optional</sup> <a name="AddressKeyInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.addressKeyInput"></a>
+
+```csharp
+public string AddressKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.tlsInput"></a>
 
 ```csharp
@@ -111267,6 +117902,16 @@ public IResolvable|ObservabilityPipelineConfigSourceDatadogAgentTls[] TlsInput {
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentTls">ObservabilityPipelineConfigSourceDatadogAgentTls</a>[]
+
+---
+
+##### `AddressKey`<sup>Required</sup> <a name="AddressKey" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceDatadogAgentOutputReference.property.addressKey"></a>
+
+```csharp
+public string AddressKey { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -126573,6 +133218,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.putTls">PutTls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.resetAddressKey">ResetAddressKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.resetStoreHecToken">ResetStoreHecToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.resetTls">ResetTls</a></code> | *No description.* |
 
 ---
@@ -126745,6 +133391,12 @@ private void PutTls(IResolvable|ObservabilityPipelineConfigSourceSplunkHecTls[] 
 private void ResetAddressKey()
 ```
 
+##### `ResetStoreHecToken` <a name="ResetStoreHecToken" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.resetStoreHecToken"></a>
+
+```csharp
+private void ResetStoreHecToken()
+```
+
 ##### `ResetTls` <a name="ResetTls" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.resetTls"></a>
 
 ```csharp
@@ -126760,8 +133412,10 @@ private void ResetTls()
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.tls">Tls</a></code> | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecTlsList">ObservabilityPipelineConfigSourceSplunkHecTlsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.addressKeyInput">AddressKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.storeHecTokenInput">StoreHecTokenInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.tlsInput">TlsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecTls">ObservabilityPipelineConfigSourceSplunkHecTls</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.addressKey">AddressKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.storeHecToken">StoreHecToken</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHec">ObservabilityPipelineConfigSourceSplunkHec</a></code> | *No description.* |
 
 ---
@@ -126810,6 +133464,16 @@ public string AddressKeyInput { get; }
 
 ---
 
+##### `StoreHecTokenInput`<sup>Optional</sup> <a name="StoreHecTokenInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.storeHecTokenInput"></a>
+
+```csharp
+public bool|IResolvable StoreHecTokenInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `TlsInput`<sup>Optional</sup> <a name="TlsInput" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.tlsInput"></a>
 
 ```csharp
@@ -126827,6 +133491,16 @@ public string AddressKey { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `StoreHecToken`<sup>Required</sup> <a name="StoreHecToken" id="@cdktn/provider-datadog.observabilityPipeline.ObservabilityPipelineConfigSourceSplunkHecOutputReference.property.storeHecToken"></a>
+
+```csharp
+public bool|IResolvable StoreHecToken { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 

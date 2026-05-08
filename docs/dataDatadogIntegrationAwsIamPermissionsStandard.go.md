@@ -4,12 +4,12 @@
 
 ### DataDatadogIntegrationAwsIamPermissionsStandard <a name="DataDatadogIntegrationAwsIamPermissionsStandard" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_iam_permissions_standard datadog_integration_aws_iam_permissions_standard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.NewDataDatadogIntegrationAwsIamPermissionsStandard(scope Construct, id *string, config DataDatadogIntegrationAwsIamPermissionsStandardConfig) DataDatadogIntegrationAwsIamPermissionsStandard
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPerm
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPerm
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandard.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsstandard"
 
 datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandard_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsI
 
 The id of the existing DataDatadogIntegrationAwsIamPermissionsStandard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/integration_aws_iam_permissions_standard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_iam_permissions_standard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsStandard.DataDatadogIntegrationAwsIamPermissionsStandardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogintegrationawsiampermissionsstandard"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogintegrationawsiampermissionsstandard"
 
 &datadatadogintegrationawsiampermissionsstandard.DataDatadogIntegrationAwsIamPermissionsStandardConfig {
 	Connection: interface{},

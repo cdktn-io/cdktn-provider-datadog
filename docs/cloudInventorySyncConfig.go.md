@@ -4,12 +4,12 @@
 
 ### CloudInventorySyncConfig <a name="CloudInventorySyncConfig" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.NewCloudInventorySyncConfig(scope Construct, id *string, config CloudInventorySyncConfigConfig) CloudInventorySyncConfig
 ```
@@ -460,7 +460,7 @@ func ResetGcp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.CloudInventorySyncConfig_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.CloudInventorySyncConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ cloudinventorysyncconfig.CloudInventorySyncConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.CloudInventorySyncConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ cloudinventorysyncconfig.CloudInventorySyncConfig_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.CloudInventorySyncConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -549,7 +549,7 @@ The construct id used in the generated config for the CloudInventorySyncConfig t
 
 The id of the existing CloudInventorySyncConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfigAws.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 &cloudinventorysyncconfig.CloudInventorySyncConfigAws {
 	AwsAccountId: *string,
@@ -879,7 +879,7 @@ AwsAccountId *string
 
 AWS Account ID of the account holding the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#aws_account_id CloudInventorySyncConfig#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#aws_account_id CloudInventorySyncConfig#aws_account_id}
 
 ---
 
@@ -893,7 +893,7 @@ DestinationBucketName *string
 
 Name of the S3 bucket holding the inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
 
 ---
 
@@ -907,7 +907,7 @@ DestinationBucketRegion *string
 
 AWS Region of the bucket holding the inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#destination_bucket_region CloudInventorySyncConfig#destination_bucket_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#destination_bucket_region CloudInventorySyncConfig#destination_bucket_region}
 
 ---
 
@@ -921,7 +921,7 @@ DestinationPrefix *string
 
 Prefix path within the bucket for inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#destination_prefix CloudInventorySyncConfig#destination_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#destination_prefix CloudInventorySyncConfig#destination_prefix}
 
 ---
 
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfigAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 &cloudinventorysyncconfig.CloudInventorySyncConfigAzure {
 	ClientId: *string,
@@ -965,7 +965,7 @@ ClientId *string
 
 Azure Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#client_id CloudInventorySyncConfig#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#client_id CloudInventorySyncConfig#client_id}
 
 ---
 
@@ -979,7 +979,7 @@ Container *string
 
 Azure Storage Container name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#container CloudInventorySyncConfig#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#container CloudInventorySyncConfig#container}
 
 ---
 
@@ -993,7 +993,7 @@ ResourceGroup *string
 
 Azure Resource Group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#resource_group CloudInventorySyncConfig#resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#resource_group CloudInventorySyncConfig#resource_group}
 
 ---
 
@@ -1007,7 +1007,7 @@ StorageAccount *string
 
 Azure Storage Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#storage_account CloudInventorySyncConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#storage_account CloudInventorySyncConfig#storage_account}
 
 ---
 
@@ -1021,7 +1021,7 @@ SubscriptionId *string
 
 Azure Subscription ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#subscription_id CloudInventorySyncConfig#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#subscription_id CloudInventorySyncConfig#subscription_id}
 
 ---
 
@@ -1035,7 +1035,7 @@ TenantId *string
 
 Azure Tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#tenant_id CloudInventorySyncConfig#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#tenant_id CloudInventorySyncConfig#tenant_id}
 
 ---
 
@@ -1044,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 &cloudinventorysyncconfig.CloudInventorySyncConfigConfig {
 	Connection: interface{},
@@ -1055,9 +1055,9 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventory
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	CloudProvider: *string,
-	Aws: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.cloudInventorySyncConfig.CloudInventorySyncConfigAws,
-	Azure: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.cloudInventorySyncConfig.CloudInventorySyncConfigAzure,
-	Gcp: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.cloudInventorySyncConfig.CloudInventorySyncConfigGcp,
+	Aws: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.cloudInventorySyncConfig.CloudInventorySyncConfigAws,
+	Azure: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.cloudInventorySyncConfig.CloudInventorySyncConfigAzure,
+	Gcp: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.cloudInventorySyncConfig.CloudInventorySyncConfigGcp,
 }
 ```
 
@@ -1159,7 +1159,7 @@ CloudProvider *string
 
 The cloud provider type. Valid values are `aws`, `azure`, `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
 
 ---
 
@@ -1173,7 +1173,7 @@ Aws CloudInventorySyncConfigAws
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
 
 ---
 
@@ -1187,7 +1187,7 @@ Azure CloudInventorySyncConfigAzure
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
 
 ---
 
@@ -1201,7 +1201,7 @@ Gcp CloudInventorySyncConfigGcp
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
 
 ---
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfigGcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 &cloudinventorysyncconfig.CloudInventorySyncConfigGcp {
 	DestinationBucketName: *string,
@@ -1241,7 +1241,7 @@ DestinationBucketName *string
 
 Name of the GCS bucket holding the inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
 
 ---
 
@@ -1255,7 +1255,7 @@ ProjectId *string
 
 GCP Project ID of the project holding the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#project_id CloudInventorySyncConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#project_id CloudInventorySyncConfig#project_id}
 
 ---
 
@@ -1269,7 +1269,7 @@ ServiceAccountEmail *string
 
 Service account email used for reading the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#service_account_email CloudInventorySyncConfig#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#service_account_email CloudInventorySyncConfig#service_account_email}
 
 ---
 
@@ -1283,7 +1283,7 @@ SourceBucketName *string
 
 Name of the source bucket the inventory report is generated for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/cloud_inventory_sync_config#source_bucket_name CloudInventorySyncConfig#source_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/cloud_inventory_sync_config#source_bucket_name CloudInventorySyncConfig#source_bucket_name}
 
 ---
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfigAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.NewCloudInventorySyncConfigAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudInventorySyncConfigAwsOutputReference
 ```
@@ -1659,7 +1659,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfigAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.NewCloudInventorySyncConfigAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudInventorySyncConfigAzureOutputReference
 ```
@@ -2082,7 +2082,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfigGcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/cloudinventorysyncconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/cloudinventorysyncconfig"
 
 cloudinventorysyncconfig.NewCloudInventorySyncConfigGcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudInventorySyncConfigGcpOutputReference
 ```

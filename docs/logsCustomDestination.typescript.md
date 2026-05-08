@@ -4,7 +4,7 @@
 
 ### LogsCustomDestination <a name="LogsCustomDestination" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestination.Initializer"></a>
 
@@ -604,7 +604,7 @@ The construct id used in the generated config for the LogsCustomDestination to i
 
 The id of the existing LogsCustomDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1144,7 +1144,7 @@ public readonly name: string;
 
 The custom destination name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
 
 ---
 
@@ -1158,7 +1158,7 @@ public readonly elasticsearchDestination: IResolvable | LogsCustomDestinationEla
 
 elasticsearch_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
 
 ---
 
@@ -1172,7 +1172,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether logs matching this custom destination should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
 
 ---
 
@@ -1186,7 +1186,7 @@ public readonly forwardTags: boolean | IResolvable;
 
 Whether tags from the forwarded logs should be forwarded or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
 
 ---
 
@@ -1200,7 +1200,7 @@ public readonly forwardTagsRestrictionList: string[];
 
 List of [tag keys](https://docs.datadoghq.com/getting_started/tagging/#define-tags) to be filtered. 				An empty list represents no restriction is in place and either all or no tags will be 				forwarded depending on `forward_tags_restriction_list_type` parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
 
 ---
 
@@ -1218,7 +1218,7 @@ If `ALLOW_LIST`, then only tags whose keys on the forwarded logs match the ones 
 				are forwarded.
 				`BLOCK_LIST` works the opposite way. It does not forward the tags matching the ones on the list. Valid values are `ALLOW_LIST`, `BLOCK_LIST`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly httpDestination: IResolvable | LogsCustomDestinationHttpDestinat
 
 http_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly microsoftSentinelDestination: IResolvable | LogsCustomDestinatio
 
 microsoft_sentinel_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#microsoft_sentinel_destination LogsCustomDestination#microsoft_sentinel_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#microsoft_sentinel_destination LogsCustomDestination#microsoft_sentinel_destination}
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly query: string;
 
 The custom destination query filter. Logs matching this query are forwarded to the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly splunkDestination: IResolvable | LogsCustomDestinationSplunkDest
 
 splunk_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
 
 ---
 
@@ -1311,7 +1311,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 
@@ -1325,7 +1325,7 @@ public readonly indexName: string;
 
 Name of the Elasticsearch index (must follow [Elasticsearch's criteria](https://www.elastic.co/guide/en/elasticsearch/reference/8.11/indices-create-index.html#indices-create-api-path-params)).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
 
 ---
 
@@ -1339,7 +1339,7 @@ public readonly basicAuth: IResolvable | LogsCustomDestinationElasticsearchDesti
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
 
 ---
 
@@ -1361,7 +1361,7 @@ You can customize the index rotation naming pattern by choosing one of these opt
 							If this field is missing or is blank, it means that the index name will always be the same
 							(that is, no rotation).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly password: string;
 
 The password of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
 
 ---
 
@@ -1408,7 +1408,7 @@ public readonly username: string;
 
 The username of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
 
 ---
 
@@ -1444,7 +1444,7 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
 
 ---
 
@@ -1458,7 +1458,7 @@ public readonly basicAuth: IResolvable | LogsCustomDestinationHttpDestinationBas
 
 basic_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
 
 ---
 
@@ -1472,7 +1472,7 @@ public readonly customHeaderAuth: IResolvable | LogsCustomDestinationHttpDestina
 
 custom_header_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
 
 ---
 
@@ -1505,7 +1505,7 @@ public readonly password: string;
 
 The password of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
 
 ---
 
@@ -1519,7 +1519,7 @@ public readonly username: string;
 
 The username of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
 
 ---
 
@@ -1552,7 +1552,7 @@ public readonly headerName: string;
 
 The header name of the authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
 
 ---
 
@@ -1566,7 +1566,7 @@ public readonly headerValue: string;
 
 The header value of the authentication. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
 
 ---
 
@@ -1602,7 +1602,7 @@ public readonly clientId: string;
 
 Client ID from the Datadog Azure Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#client_id LogsCustomDestination#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#client_id LogsCustomDestination#client_id}
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly dataCollectionEndpoint: string;
 
 Azure Data Collection Endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#data_collection_endpoint LogsCustomDestination#data_collection_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#data_collection_endpoint LogsCustomDestination#data_collection_endpoint}
 
 ---
 
@@ -1630,7 +1630,7 @@ public readonly dataCollectionRuleId: string;
 
 Azure Data Collection Rule ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#data_collection_rule_id LogsCustomDestination#data_collection_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#data_collection_rule_id LogsCustomDestination#data_collection_rule_id}
 
 ---
 
@@ -1644,7 +1644,7 @@ public readonly streamName: string;
 
 Azure stream name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#stream_name LogsCustomDestination#stream_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#stream_name LogsCustomDestination#stream_name}
 
 ---
 
@@ -1658,7 +1658,7 @@ public readonly tenantId: string;
 
 Tenant ID from the Datadog Azure Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#tenant_id LogsCustomDestination#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#tenant_id LogsCustomDestination#tenant_id}
 
 ---
 
@@ -1678,6 +1678,7 @@ const logsCustomDestinationSplunkDestination: logsCustomDestination.LogsCustomDe
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination.property.accessToken">accessToken</a></code> | <code>string</code> | Access token of the Splunk HTTP Event Collector. This field is not returned by the API. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination.property.endpoint">endpoint</a></code> | <code>string</code> | The destination for which logs will be forwarded to. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination.property.sourcetype">sourcetype</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>[]</code> | sourcetype block. |
 
 ---
 
@@ -1691,7 +1692,7 @@ public readonly accessToken: string;
 
 Access token of the Splunk HTTP Event Collector. This field is not returned by the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
 
 ---
 
@@ -1707,7 +1708,53 @@ The destination for which logs will be forwarded to.
 
 Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+
+---
+
+##### `sourcetype`<sup>Optional</sup> <a name="sourcetype" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination.property.sourcetype"></a>
+
+```typescript
+public readonly sourcetype: IResolvable | LogsCustomDestinationSplunkDestinationSourcetype[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>[]
+
+sourcetype block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#sourcetype LogsCustomDestination#sourcetype}
+
+---
+
+### LogsCustomDestinationSplunkDestinationSourcetype <a name="LogsCustomDestinationSplunkDestinationSourcetype" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype.Initializer"></a>
+
+```typescript
+import { logsCustomDestination } from '@cdktn/provider-datadog'
+
+const logsCustomDestinationSplunkDestinationSourcetype: logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype.property.value">value</a></code> | <code>string</code> | The source type string. Set to `null` to omit the sourcetype from forwarded events. |
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+The source type string. Set to `null` to omit the sourcetype from forwarded events.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#value LogsCustomDestination#value}
 
 ---
 
@@ -4966,6 +5013,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.putSourcetype">putSourcetype</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.resetSourcetype">resetSourcetype</a></code> | *No description.* |
 
 ---
 
@@ -5119,6 +5168,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putSourcetype` <a name="putSourcetype" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.putSourcetype"></a>
+
+```typescript
+public putSourcetype(value: IResolvable | LogsCustomDestinationSplunkDestinationSourcetype[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.putSourcetype.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>[]
+
+---
+
+##### `resetSourcetype` <a name="resetSourcetype" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.resetSourcetype"></a>
+
+```typescript
+public resetSourcetype(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5126,8 +5193,10 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.sourcetype">sourcetype</a></code> | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList">LogsCustomDestinationSplunkDestinationSourcetypeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.accessTokenInput">accessTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.endpointInput">endpointInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.sourcetypeInput">sourcetypeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.accessToken">accessToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination">LogsCustomDestinationSplunkDestination</a></code> | *No description.* |
@@ -5158,6 +5227,16 @@ public readonly fqn: string;
 
 ---
 
+##### `sourcetype`<sup>Required</sup> <a name="sourcetype" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.sourcetype"></a>
+
+```typescript
+public readonly sourcetype: LogsCustomDestinationSplunkDestinationSourcetypeList;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList">LogsCustomDestinationSplunkDestinationSourcetypeList</a>
+
+---
+
 ##### `accessTokenInput`<sup>Optional</sup> <a name="accessTokenInput" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.accessTokenInput"></a>
 
 ```typescript
@@ -5175,6 +5254,16 @@ public readonly endpointInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `sourcetypeInput`<sup>Optional</sup> <a name="sourcetypeInput" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationOutputReference.property.sourcetypeInput"></a>
+
+```typescript
+public readonly sourcetypeInput: IResolvable | LogsCustomDestinationSplunkDestinationSourcetype[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>[]
 
 ---
 
@@ -5205,6 +5294,462 @@ public readonly internalValue: IResolvable | LogsCustomDestinationSplunkDestinat
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestination">LogsCustomDestinationSplunkDestination</a>
+
+---
+
+
+### LogsCustomDestinationSplunkDestinationSourcetypeList <a name="LogsCustomDestinationSplunkDestinationSourcetypeList" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer"></a>
+
+```typescript
+import { logsCustomDestination } from '@cdktn/provider-datadog'
+
+new logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.get"></a>
+
+```typescript
+public get(index: number): LogsCustomDestinationSplunkDestinationSourcetypeOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | LogsCustomDestinationSplunkDestinationSourcetype[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>[]
+
+---
+
+
+### LogsCustomDestinationSplunkDestinationSourcetypeOutputReference <a name="LogsCustomDestinationSplunkDestinationSourcetypeOutputReference" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer"></a>
+
+```typescript
+import { logsCustomDestination } from '@cdktn/provider-datadog'
+
+new logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.resetValue">resetValue</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetValue` <a name="resetValue" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.resetValue"></a>
+
+```typescript
+public resetValue(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetypeOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | LogsCustomDestinationSplunkDestinationSourcetype;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.logsCustomDestination.LogsCustomDestinationSplunkDestinationSourcetype">LogsCustomDestinationSplunkDestinationSourcetype</a>
 
 ---
 

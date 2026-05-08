@@ -4,14 +4,14 @@
 
 ### DataDatadogSensitiveDataScannerStandardPattern <a name="DataDatadogSensitiveDataScannerStandardPattern" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern datadog_sensitive_data_scanner_standard_pattern}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Datadog;
 
-new DataDatadogSensitiveDataScannerStandardPattern(Construct Scope, string Id, DataDatadogSensitiveDataScannerStandardPatternConfig Config);
+new DataDatadogSensitiveDataScannerStandardPattern(Construct Scope, string Id, DataDatadogSensitiveDataScannerStandardPatternConfig Config = null);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.Initializer.parameter.config"></a>
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig">DataDatadogSensitiveDataScannerStandardPatternConfig</a>
 
@@ -68,7 +68,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.resetFilter">ResetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.resetStandardPatternId">ResetStandardPatternId</a></code> | *No description.* |
 
 ---
 
@@ -285,10 +287,22 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `ResetFilter` <a name="ResetFilter" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.resetFilter"></a>
+
+```csharp
+private void ResetFilter()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.resetId"></a>
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetStandardPatternId` <a name="ResetStandardPatternId" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.resetStandardPatternId"></a>
+
+```csharp
+private void ResetStandardPatternId()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -394,7 +408,7 @@ The construct id used in the generated config for the DataDatadogSensitiveDataSc
 
 The id of the existing DataDatadogSensitiveDataScannerStandardPattern that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -429,8 +443,10 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.filterInput">FilterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.standardPatternIdInput">StandardPatternIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.filter">Filter</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.standardPatternId">StandardPatternId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -626,6 +642,16 @@ public string IdInput { get; }
 
 ---
 
+##### `StandardPatternIdInput`<sup>Optional</sup> <a name="StandardPatternIdInput" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.standardPatternIdInput"></a>
+
+```csharp
+public string StandardPatternIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Filter`<sup>Required</sup> <a name="Filter" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.filter"></a>
 
 ```csharp
@@ -640,6 +666,16 @@ public string Filter { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `StandardPatternId`<sup>Required</sup> <a name="StandardPatternId" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPattern.property.standardPatternId"></a>
+
+```csharp
+public string StandardPatternId { get; }
 ```
 
 - *Type:* string
@@ -681,8 +717,9 @@ new DataDatadogSensitiveDataScannerStandardPatternConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    string Filter,
-    string Id = null
+    string Filter = null,
+    string Id = null,
+    string StandardPatternId = null
 };
 ```
 
@@ -698,7 +735,8 @@ new DataDatadogSensitiveDataScannerStandardPatternConfig {
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.filter">Filter</a></code> | <code>string</code> | Filter all the Datadog standard patterns by name. |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern#id DataDatadogSensitiveDataScannerStandardPattern#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern#id DataDatadogSensitiveDataScannerStandardPattern#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.standardPatternId">StandardPatternId</a></code> | <code>string</code> | Stable ID of the Datadog standard pattern to retrieve. |
 
 ---
 
@@ -772,7 +810,7 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `Filter`<sup>Required</sup> <a name="Filter" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.filter"></a>
+##### `Filter`<sup>Optional</sup> <a name="Filter" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.filter"></a>
 
 ```csharp
 public string Filter { get; set; }
@@ -782,7 +820,7 @@ public string Filter { get; set; }
 
 Filter all the Datadog standard patterns by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern#filter DataDatadogSensitiveDataScannerStandardPattern#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern#filter DataDatadogSensitiveDataScannerStandardPattern#filter}
 
 ---
 
@@ -794,10 +832,26 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/sensitive_data_scanner_standard_pattern#id DataDatadogSensitiveDataScannerStandardPattern#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern#id DataDatadogSensitiveDataScannerStandardPattern#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `StandardPatternId`<sup>Optional</sup> <a name="StandardPatternId" id="@cdktn/provider-datadog.dataDatadogSensitiveDataScannerStandardPattern.DataDatadogSensitiveDataScannerStandardPatternConfig.property.standardPatternId"></a>
+
+```csharp
+public string StandardPatternId { get; set; }
+```
+
+- *Type:* string
+
+Stable ID of the Datadog standard pattern to retrieve.
+
+This can be set directly to avoid Terraform configs breaking when Datadog renames a standard pattern.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/sensitive_data_scanner_standard_pattern#standard_pattern_id DataDatadogSensitiveDataScannerStandardPattern#standard_pattern_id}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataDatadogTeamHierarchyLinks <a name="DataDatadogTeamHierarchyLinks" id="@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_hierarchy_links datadog_team_hierarchy_links}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamhierarchylinks"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteamhierarchylinks"
 
 datadatadogteamhierarchylinks.NewDataDatadogTeamHierarchyLinks(scope Construct, id *string, config DataDatadogTeamHierarchyLinksConfig) DataDatadogTeamHierarchyLinks
 ```
@@ -319,7 +319,7 @@ func ResetLinkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamhierarchylinks"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteamhierarchylinks"
 
 datadatadogteamhierarchylinks.DataDatadogTeamHierarchyLinks_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamhierarchylinks"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteamhierarchylinks"
 
 datadatadogteamhierarchylinks.DataDatadogTeamHierarchyLinks_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadogteamhierarchylinks.DataDatadogTeamHierarchyLinks_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamhierarchylinks"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteamhierarchylinks"
 
 datadatadogteamhierarchylinks.DataDatadogTeamHierarchyLinks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datadatadogteamhierarchylinks.DataDatadogTeamHierarchyLinks_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamhierarchylinks"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteamhierarchylinks"
 
 datadatadogteamhierarchylinks.DataDatadogTeamHierarchyLinks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataDatadogTeamHierarchyLi
 
 The id of the existing DataDatadogTeamHierarchyLinks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogTeamHierarchyLinks.DataDatadogTeamHierarchyLinksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteamhierarchylinks"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteamhierarchylinks"
 
 &datadatadogteamhierarchylinks.DataDatadogTeamHierarchyLinksConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ FilterParentTeam *string
 
 Filter by parent team ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_hierarchy_links#filter_parent_team DataDatadogTeamHierarchyLinks#filter_parent_team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_hierarchy_links#filter_parent_team DataDatadogTeamHierarchyLinks#filter_parent_team}
 
 ---
 
@@ -812,7 +812,7 @@ FilterSubTeam *string
 
 Filter by sub team ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_hierarchy_links#filter_sub_team DataDatadogTeamHierarchyLinks#filter_sub_team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_hierarchy_links#filter_sub_team DataDatadogTeamHierarchyLinks#filter_sub_team}
 
 ---
 
@@ -826,7 +826,7 @@ LinkId *string
 
 The team hierarchy link’s identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team_hierarchy_links#link_id DataDatadogTeamHierarchyLinks#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team_hierarchy_links#link_id DataDatadogTeamHierarchyLinks#link_id}
 
 ---
 

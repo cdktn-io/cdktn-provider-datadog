@@ -4,12 +4,12 @@
 
 ### ActionConnection <a name="ActionConnection" id="@cdktn/provider-datadog.actionConnection.ActionConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection datadog_action_connection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection datadog_action_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnection(scope Construct, id *string, config ActionConnectionConfig) ActionConnection
 ```
@@ -440,7 +440,7 @@ func ResetHttp()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.actionConnection.ActionConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.ActionConnection_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.actionConnection.ActionConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.ActionConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ actionconnection.ActionConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.actionConnection.ActionConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.ActionConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ actionconnection.ActionConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.actionConnection.ActionConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.ActionConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the ActionConnection to import
 
 The id of the existing ActionConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,10 +806,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAws.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionAws {
-	AssumeRole: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.actionConnection.ActionConnectionAwsAssumeRole,
+	AssumeRole: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.actionConnection.ActionConnectionAwsAssumeRole,
 }
 ```
 
@@ -831,7 +831,7 @@ AssumeRole ActionConnectionAwsAssumeRole
 
 assume_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
 
 ---
 
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionAwsAssumeRole {
 	AccountId: *string,
@@ -867,7 +867,7 @@ AccountId *string
 
 AWS account that the connection is created for. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#account_id ActionConnection#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#account_id ActionConnection#account_id}
 
 ---
 
@@ -881,7 +881,7 @@ Role *string
 
 Role to assume. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#role ActionConnection#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#role ActionConnection#role}
 
 ---
 
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionConfig {
 	Connection: interface{},
@@ -901,8 +901,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnecti
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Aws: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.actionConnection.ActionConnectionAws,
-	Http: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.actionConnection.ActionConnectionHttp,
+	Aws: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.actionConnection.ActionConnectionAws,
+	Http: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.actionConnection.ActionConnectionHttp,
 }
 ```
 
@@ -1003,7 +1003,7 @@ Name *string
 
 Name of the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1017,7 +1017,7 @@ Aws ActionConnectionAws
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#aws ActionConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#aws ActionConnection#aws}
 
 ---
 
@@ -1031,7 +1031,7 @@ Http ActionConnectionHttp
 
 http block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#http ActionConnection#http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#http ActionConnection#http}
 
 ---
 
@@ -1040,11 +1040,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionHttp {
 	BaseUrl: *string,
-	TokenAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.actionConnection.ActionConnectionHttpTokenAuth,
+	TokenAuth: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.actionConnection.ActionConnectionHttpTokenAuth,
 }
 ```
 
@@ -1067,7 +1067,7 @@ BaseUrl *string
 
 Base HTTP url for the integration. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#base_url ActionConnection#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#base_url ActionConnection#base_url}
 
 ---
 
@@ -1081,7 +1081,7 @@ TokenAuth ActionConnectionHttpTokenAuth
 
 token_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
 
 ---
 
@@ -1090,10 +1090,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionHttpTokenAuth {
-	Body: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.actionConnection.ActionConnectionHttpTokenAuthBody,
+	Body: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.actionConnection.ActionConnectionHttpTokenAuthBody,
 	Header: interface{},
 	Token: interface{},
 	UrlParameter: interface{},
@@ -1121,7 +1121,7 @@ Body ActionConnectionHttpTokenAuthBody
 
 body block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#body ActionConnection#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#body ActionConnection#body}
 
 ---
 
@@ -1135,7 +1135,7 @@ Header interface{}
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#header ActionConnection#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#header ActionConnection#header}
 
 ---
 
@@ -1149,7 +1149,7 @@ Token interface{}
 
 token block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#token ActionConnection#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#token ActionConnection#token}
 
 ---
 
@@ -1163,7 +1163,7 @@ UrlParameter interface{}
 
 url_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
 
 ---
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBody.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionHttpTokenAuthBody {
 	Content: *string,
@@ -1199,7 +1199,7 @@ Content *string
 
 Serialized body content. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#content ActionConnection#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#content ActionConnection#content}
 
 ---
 
@@ -1213,7 +1213,7 @@ ContentType *string
 
 Content type of the body. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#content_type ActionConnection#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#content_type ActionConnection#content_type}
 
 ---
 
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionHttpTokenAuthHeader {
 	Name: *string,
@@ -1249,7 +1249,7 @@ Name *string
 
 Header name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1263,7 +1263,7 @@ Value *string
 
 String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionHttpTokenAuthToken {
 	Name: *string,
@@ -1301,7 +1301,7 @@ Name *string
 
 Token name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1315,7 +1315,7 @@ Type *string
 
 Token type Valid values are `SECRET`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#type ActionConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#type ActionConnection#type}
 
 ---
 
@@ -1329,7 +1329,7 @@ Value *string
 
 Token value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1338,7 +1338,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 &actionconnection.ActionConnectionHttpTokenAuthUrlParameter {
 	Name: *string,
@@ -1365,7 +1365,7 @@ Name *string
 
 URL parameter name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#name ActionConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#name ActionConnection#name}
 
 ---
 
@@ -1379,7 +1379,7 @@ Value *string
 
 URL parameter value. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/action_connection#value ActionConnection#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/action_connection#value ActionConnection#value}
 
 ---
 
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsAssumeRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionAwsAssumeRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionConnectionAwsAssumeRoleOutputReference
 ```
@@ -1719,7 +1719,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionConnectionAwsOutputReference
 ```
@@ -2010,7 +2010,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionConnectionHttpOutputReference
 ```
@@ -2330,7 +2330,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthBodyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthBodyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionConnectionHttpTokenAuthBodyOutputReference
 ```
@@ -2637,7 +2637,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeaderList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthHeaderList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ActionConnectionHttpTokenAuthHeaderList
 ```
@@ -2797,7 +2797,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ActionConnectionHttpTokenAuthHeaderOutputReference
 ```
@@ -3122,7 +3122,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionConnectionHttpTokenAuthOutputReference
 ```
@@ -3539,7 +3539,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthTokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthTokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ActionConnectionHttpTokenAuthTokenList
 ```
@@ -3699,7 +3699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ActionConnectionHttpTokenAuthTokenOutputReference
 ```
@@ -4053,7 +4053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthUrlParameterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ActionConnectionHttpTokenAuthUrlParameterList
 ```
@@ -4213,7 +4213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.actionConnection.ActionConnectionHttpTokenAuthUrlParameterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/actionconnection"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/actionconnection"
 
 actionconnection.NewActionConnectionHttpTokenAuthUrlParameterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ActionConnectionHttpTokenAuthUrlParameterOutputReference
 ```

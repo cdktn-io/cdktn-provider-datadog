@@ -4,12 +4,12 @@
 
 ### DataDatadogSyntheticsLocations <a name="DataDatadogSyntheticsLocations" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/synthetics_locations datadog_synthetics_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticslocations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.NewDataDatadogSyntheticsLocations(scope Construct, id *string, config DataDatadogSyntheticsLocationsConfig) DataDatadogSyntheticsLocations
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticslocations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticslocations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticslocations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticslocations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticslocations"
 
 datadatadogsyntheticslocations.DataDatadogSyntheticsLocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogSyntheticsLocat
 
 The id of the existing DataDatadogSyntheticsLocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/synthetics_locations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSyntheticsLocations.DataDatadogSyntheticsLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticslocations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticslocations"
 
 &datadatadogsyntheticslocations.DataDatadogSyntheticsLocationsConfig {
 	Connection: interface{},

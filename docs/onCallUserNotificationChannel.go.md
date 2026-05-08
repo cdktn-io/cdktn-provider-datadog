@@ -4,12 +4,12 @@
 
 ### OnCallUserNotificationChannel <a name="OnCallUserNotificationChannel" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 oncallusernotificationchannel.NewOnCallUserNotificationChannel(scope Construct, id *string, config OnCallUserNotificationChannelConfig) OnCallUserNotificationChannel
 ```
@@ -440,7 +440,7 @@ func ResetPhone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 oncallusernotificationchannel.OnCallUserNotificationChannel_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 oncallusernotificationchannel.OnCallUserNotificationChannel_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ oncallusernotificationchannel.OnCallUserNotificationChannel_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 oncallusernotificationchannel.OnCallUserNotificationChannel_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ oncallusernotificationchannel.OnCallUserNotificationChannel_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 oncallusernotificationchannel.OnCallUserNotificationChannel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the OnCallUserNotificationChan
 
 The id of the existing OnCallUserNotificationChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 &oncallusernotificationchannel.OnCallUserNotificationChannelConfig {
 	Connection: interface{},
@@ -817,8 +817,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernoti
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	UserId: *string,
-	Email: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.onCallUserNotificationChannel.OnCallUserNotificationChannelEmail,
-	Phone: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.onCallUserNotificationChannel.OnCallUserNotificationChannelPhone,
+	Email: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.onCallUserNotificationChannel.OnCallUserNotificationChannelEmail,
+	Phone: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.onCallUserNotificationChannel.OnCallUserNotificationChannelPhone,
 }
 ```
 
@@ -919,7 +919,7 @@ UserId *string
 
 ID of the user to associate the notification channel with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
 
 ---
 
@@ -933,7 +933,7 @@ Email OnCallUserNotificationChannelEmail
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
 
 ---
 
@@ -947,7 +947,7 @@ Phone OnCallUserNotificationChannelPhone
 
 phone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
 
 ---
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannelEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 &oncallusernotificationchannel.OnCallUserNotificationChannelEmail {
 	Address: *string,
@@ -983,7 +983,7 @@ Address *string
 
 The e-mail address to be notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#address OnCallUserNotificationChannel#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel#address OnCallUserNotificationChannel#address}
 
 ---
 
@@ -997,7 +997,7 @@ Formats *[]*string
 
 Preferred content formats for notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#formats OnCallUserNotificationChannel#formats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel#formats OnCallUserNotificationChannel#formats}
 
 ---
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannelPhone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 &oncallusernotificationchannel.OnCallUserNotificationChannelPhone {
 	Number: *string,
@@ -1031,7 +1031,7 @@ Number *string
 
 The E-164 formatted phone number (for example, +3371234567).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/on_call_user_notification_channel#number OnCallUserNotificationChannel#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/on_call_user_notification_channel#number OnCallUserNotificationChannel#number}
 
 ---
 
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannelEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 oncallusernotificationchannel.NewOnCallUserNotificationChannelEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallUserNotificationChannelEmailOutputReference
 ```
@@ -1349,7 +1349,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannelPhoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/oncallusernotificationchannel"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/oncallusernotificationchannel"
 
 oncallusernotificationchannel.NewOnCallUserNotificationChannelPhoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OnCallUserNotificationChannelPhoneOutputReference
 ```

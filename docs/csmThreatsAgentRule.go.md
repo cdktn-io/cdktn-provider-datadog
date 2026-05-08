@@ -4,12 +4,12 @@
 
 ### CsmThreatsAgentRule <a name="CsmThreatsAgentRule" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule datadog_csm_threats_agent_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.NewCsmThreatsAgentRule(scope Construct, id *string, config CsmThreatsAgentRuleConfig) CsmThreatsAgentRule
 ```
@@ -455,7 +455,7 @@ func ResetSilent()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.CsmThreatsAgentRule_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.CsmThreatsAgentRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ csmthreatsagentrule.CsmThreatsAgentRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.CsmThreatsAgentRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ csmthreatsagentrule.CsmThreatsAgentRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.CsmThreatsAgentRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the CsmThreatsAgentRule to imp
 
 The id of the existing CsmThreatsAgentRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -931,11 +931,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 &csmthreatsagentrule.CsmThreatsAgentRuleActions {
-	Hash: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHash,
-	Set: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet,
+	Hash: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHash,
+	Set: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet,
 }
 ```
 
@@ -958,7 +958,7 @@ Hash CsmThreatsAgentRuleActionsHash
 
 hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#hash CsmThreatsAgentRule#hash}
 
 ---
 
@@ -972,7 +972,7 @@ Set CsmThreatsAgentRuleActionsSet
 
 set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#set CsmThreatsAgentRule#set}
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHash.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 &csmthreatsagentrule.CsmThreatsAgentRuleActionsHash {
 	Field: *string,
@@ -1006,7 +1006,7 @@ Field *string
 
 The field to hash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
 
 ---
 
@@ -1015,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 &csmthreatsagentrule.CsmThreatsAgentRuleActionsSet {
 	Append: interface{},
@@ -1058,7 +1058,7 @@ Append interface{}
 
 Whether to append to the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#append CsmThreatsAgentRule#append}
 
 ---
 
@@ -1072,7 +1072,7 @@ DefaultValue *string
 
 The default value to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#default_value CsmThreatsAgentRule#default_value}
 
 ---
 
@@ -1086,7 +1086,7 @@ Expression *string
 
 The expression to use for the set action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -1100,7 +1100,7 @@ Field *string
 
 The field to get the value from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#field CsmThreatsAgentRule#field}
 
 ---
 
@@ -1114,7 +1114,7 @@ Inherited interface{}
 
 Whether the set action is inherited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#inherited CsmThreatsAgentRule#inherited}
 
 ---
 
@@ -1128,7 +1128,7 @@ Name *string
 
 The name of the set action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -1142,7 +1142,7 @@ Scope *string
 
 The scope of the set action (process, container, cgroup, or empty).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#scope CsmThreatsAgentRule#scope}
 
 ---
 
@@ -1156,7 +1156,7 @@ Size *f64
 
 The maximum size of the set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#size CsmThreatsAgentRule#size}
 
 ---
 
@@ -1170,7 +1170,7 @@ Ttl *f64
 
 The time to live for the set in nanoseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#ttl CsmThreatsAgentRule#ttl}
 
 ---
 
@@ -1184,7 +1184,7 @@ Value *string
 
 The value to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#value CsmThreatsAgentRule#value}
 
 ---
 
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 &csmthreatsagentrule.CsmThreatsAgentRuleConfig {
 	Connection: interface{},
@@ -1316,7 +1316,7 @@ Expression *string
 
 The SECL expression of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#expression CsmThreatsAgentRule#expression}
 
 ---
 
@@ -1330,7 +1330,7 @@ Name *string
 
 The name of the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#name CsmThreatsAgentRule#name}
 
 ---
 
@@ -1344,7 +1344,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#actions CsmThreatsAgentRule#actions}
 
 ---
 
@@ -1358,7 +1358,7 @@ Description *string
 
 A description for the Agent rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#description CsmThreatsAgentRule#description}
 
 ---
 
@@ -1372,7 +1372,7 @@ Enabled interface{}
 
 Indicates whether the Agent rule is enabled. Must not be used without policy_id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#enabled CsmThreatsAgentRule#enabled}
 
 ---
 
@@ -1386,7 +1386,7 @@ PolicyId *string
 
 The ID of the agent policy in which the rule is saved.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#policy_id CsmThreatsAgentRule#policy_id}
 
 ---
 
@@ -1400,7 +1400,7 @@ ProductTags *[]*string
 
 The list of product tags associated with the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#product_tags CsmThreatsAgentRule#product_tags}
 
 ---
 
@@ -1414,7 +1414,7 @@ Silent interface{}
 
 Indicates whether the Agent rule is silent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_agent_rule#silent CsmThreatsAgentRule#silent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_agent_rule#silent CsmThreatsAgentRule#silent}
 
 ---
 
@@ -1425,7 +1425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.NewCsmThreatsAgentRuleActionsHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CsmThreatsAgentRuleActionsHashOutputReference
 ```
@@ -1703,7 +1703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.NewCsmThreatsAgentRuleActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CsmThreatsAgentRuleActionsList
 ```
@@ -1863,7 +1863,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.NewCsmThreatsAgentRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CsmThreatsAgentRuleActionsOutputReference
 ```
@@ -2214,7 +2214,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsAgentRule.CsmThreatsAgentRuleActionsSetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatsagentrule"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatsagentrule"
 
 csmthreatsagentrule.NewCsmThreatsAgentRuleActionsSetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CsmThreatsAgentRuleActionsSetOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataDatadogMonitor <a name="DataDatadogMonitor" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor datadog_monitor}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/monitor datadog_monitor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitor(scope Construct, id *string, config DataDatadogMonitorConfig) DataDatadogMonitor
 ```
@@ -326,7 +326,7 @@ func ResetTagsFilter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.DataDatadogMonitor_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.DataDatadogMonitor_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datadatadogmonitor.DataDatadogMonitor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.DataDatadogMonitor_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datadatadogmonitor.DataDatadogMonitor_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.DataDatadogMonitor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataDatadogMonitor to impo
 
 The id of the existing DataDatadogMonitor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/monitor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -450,7 +450,6 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.groupbySimpleMonitor">GroupbySimpleMonitor</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.groupRetentionDuration">GroupRetentionDuration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.includeTags">IncludeTags</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.locked">Locked</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.message">Message</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.monitorThresholds">MonitorThresholds</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsList">DataDatadogMonitorMonitorThresholdsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.monitorThresholdWindows">MonitorThresholdWindows</a></code> | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindowsList">DataDatadogMonitorMonitorThresholdWindowsList</a></code> | *No description.* |
@@ -670,16 +669,6 @@ func GroupRetentionDuration() *string
 
 ```go
 func IncludeTags() IResolvable
-```
-
-- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
-
----
-
-##### `Locked`<sup>Required</sup> <a name="Locked" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitor.property.locked"></a>
-
-```go
-func Locked() IResolvable
 ```
 
 - *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
@@ -1011,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 &datadatadogmonitor.DataDatadogMonitorConfig {
 	Connection: interface{},
@@ -1039,7 +1028,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmon
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor#id DataDatadogMonitor#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/monitor#id DataDatadogMonitor#id}. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.monitorTagsFilter">MonitorTagsFilter</a></code> | <code>*[]*string</code> | A list of monitor tags to limit the search. This filters on the tags set on the monitor itself. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.nameFilter">NameFilter</a></code> | <code>*string</code> | A monitor name to limit the search. |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorConfig.property.tagsFilter">TagsFilter</a></code> | <code>*[]*string</code> | A list of tags to limit the search. This filters on the monitor scope. |
@@ -1124,7 +1113,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor#id DataDatadogMonitor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/monitor#id DataDatadogMonitor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1141,7 +1130,7 @@ MonitorTagsFilter *[]*string
 
 A list of monitor tags to limit the search. This filters on the tags set on the monitor itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/monitor#monitor_tags_filter DataDatadogMonitor#monitor_tags_filter}
 
 ---
 
@@ -1155,7 +1144,7 @@ NameFilter *string
 
 A monitor name to limit the search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/monitor#name_filter DataDatadogMonitor#name_filter}
 
 ---
 
@@ -1169,7 +1158,7 @@ TagsFilter *[]*string
 
 A list of tags to limit the search. This filters on the monitor scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/monitor#tags_filter DataDatadogMonitor#tags_filter}
 
 ---
 
@@ -1178,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 &datadatadogmonitor.DataDatadogMonitorMonitorThresholds {
 
@@ -1191,7 +1180,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmon
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 &datadatadogmonitor.DataDatadogMonitorMonitorThresholdWindows {
 
@@ -1204,7 +1193,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmon
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 &datadatadogmonitor.DataDatadogMonitorSchedulingOptions {
 
@@ -1217,7 +1206,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmon
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 &datadatadogmonitor.DataDatadogMonitorSchedulingOptionsCustomSchedule {
 
@@ -1230,7 +1219,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmon
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 &datadatadogmonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence {
 
@@ -1243,7 +1232,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmon
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 &datadatadogmonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindow {
 
@@ -1258,7 +1247,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmon
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorMonitorThresholdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorMonitorThresholdsList
 ```
@@ -1407,7 +1396,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorMonitorThresholdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorMonitorThresholdsOutputReference
 ```
@@ -1740,7 +1729,7 @@ func InternalValue() DataDatadogMonitorMonitorThresholds
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindowsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorMonitorThresholdWindowsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorMonitorThresholdWindowsList
 ```
@@ -1889,7 +1878,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorMonitorThresholdWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorMonitorThresholdWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorMonitorThresholdWindowsOutputReference
 ```
@@ -2178,7 +2167,7 @@ func InternalValue() DataDatadogMonitorMonitorThresholdWindows
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsCustomScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorSchedulingOptionsCustomScheduleList
 ```
@@ -2327,7 +2316,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorSchedulingOptionsCustomScheduleOutputReference
 ```
@@ -2605,7 +2594,7 @@ func InternalValue() DataDatadogMonitorSchedulingOptionsCustomSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceList
 ```
@@ -2754,7 +2743,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference
 ```
@@ -3054,7 +3043,7 @@ func InternalValue() DataDatadogMonitorSchedulingOptionsCustomScheduleRecurrence
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsEvaluationWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorSchedulingOptionsEvaluationWindowList
 ```
@@ -3203,7 +3192,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorSchedulingOptionsEvaluationWindowOutputReference
 ```
@@ -3514,7 +3503,7 @@ func InternalValue() DataDatadogMonitorSchedulingOptionsEvaluationWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMonitorSchedulingOptionsList
 ```
@@ -3663,7 +3652,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMonitor.DataDatadogMonitorSchedulingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmonitor"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmonitor"
 
 datadatadogmonitor.NewDataDatadogMonitorSchedulingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMonitorSchedulingOptionsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataDatadogDatastoreItem <a name="DataDatadogDatastoreItem" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/datastore_item datadog_datastore_item}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/datastore_item datadog_datastore_item}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.NewDataDatadogDatastoreItem(scope Construct, id *string, config DataDatadogDatastoreItemConfig) DataDatadogDatastoreItem
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogdatastoreitem.DataDatadogDatastoreItem_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogdatastoreitem"
 
 datadatadogdatastoreitem.DataDatadogDatastoreItem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogDatastoreItem t
 
 The id of the existing DataDatadogDatastoreItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/datastore_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/datastore_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogDatastoreItem.DataDatadogDatastoreItemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogdatastoreitem"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogdatastoreitem"
 
 &datadatadogdatastoreitem.DataDatadogDatastoreItemConfig {
 	Connection: interface{},
@@ -797,7 +797,7 @@ DatastoreId *string
 
 The unique identifier of the datastore containing the item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/datastore_item#datastore_id DataDatadogDatastoreItem#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/datastore_item#datastore_id DataDatadogDatastoreItem#datastore_id}
 
 ---
 
@@ -811,7 +811,7 @@ ItemKey *string
 
 The primary key value that identifies the item to retrieve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/datastore_item#item_key DataDatadogDatastoreItem#item_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/datastore_item#item_key DataDatadogDatastoreItem#item_key}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### IntegrationGcp <a name="IntegrationGcp" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp datadog_integration_gcp}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp datadog_integration_gcp}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 integrationgcp.NewIntegrationGcp(scope Construct, id *string, config IntegrationGcpConfig) IntegrationGcp
 ```
@@ -469,7 +469,7 @@ func ResetResourceCollectionEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 integrationgcp.IntegrationGcp_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 integrationgcp.IntegrationGcp_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ integrationgcp.IntegrationGcp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 integrationgcp.IntegrationGcp_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ integrationgcp.IntegrationGcp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 integrationgcp.IntegrationGcp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -558,7 +558,7 @@ The construct id used in the generated config for the IntegrationGcp to import.
 
 The id of the existing IntegrationGcp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1055,7 +1055,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 &integrationgcp.IntegrationGcpConfig {
 	Connection: interface{},
@@ -1188,7 +1188,7 @@ ClientEmail *string
 
 Your email found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
 
 ---
 
@@ -1202,7 +1202,7 @@ ClientId *string
 
 Your ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
 
 ---
 
@@ -1216,7 +1216,7 @@ PrivateKey *string
 
 Your private key name found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
 
 ---
 
@@ -1230,7 +1230,7 @@ PrivateKeyId *string
 
 Your private key ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
 
 ---
 
@@ -1244,7 +1244,7 @@ ProjectId *string
 
 Your Google Cloud project ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
 
 ---
 
@@ -1258,7 +1258,7 @@ Automute interface{}
 
 Silence monitors for expected GCE instance shutdowns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
 
 ---
 
@@ -1274,7 +1274,7 @@ List of filters to limit the Cloud Run revisions that are pulled into Datadog by
 
 Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
 
 ---
 
@@ -1290,7 +1290,7 @@ Whether Datadog collects cloud security posture management resources from your G
 
 If enabled, requires `resource_collection_enabled` to also be enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
 
 ---
 
@@ -1306,7 +1306,7 @@ List of filters to limit the VM instances that are pulled into Datadog by using 
 
 Only VM instance resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
 
 ---
 
@@ -1320,7 +1320,7 @@ IsResourceChangeCollectionEnabled interface{}
 
 When enabled, Datadog scans for all resource change data in your Google Cloud environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
 
 ---
 
@@ -1336,7 +1336,7 @@ When enabled, Datadog will attempt to collect Security Command Center Findings.
 
 Note: This requires additional permissions on the service account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
 
 ---
 
@@ -1350,7 +1350,7 @@ MonitoredResourceConfigs interface{}
 
 Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
 
 ---
 
@@ -1364,7 +1364,7 @@ ResourceCollectionEnabled interface{}
 
 When enabled, Datadog scans for all resources in your GCP environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
 
 ---
 
@@ -1373,7 +1373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 &integrationgcp.IntegrationGcpMonitoredResourceConfigs {
 	Filters: *[]*string,
@@ -1385,8 +1385,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.filters">Filters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}. |
-| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#type IntegrationGcp#type}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.filters">Filters</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#type IntegrationGcp#type}. |
 
 ---
 
@@ -1398,7 +1398,7 @@ Filters *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}.
 
 ---
 
@@ -1410,7 +1410,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/integration_gcp#type IntegrationGcp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#type IntegrationGcp#type}.
 
 ---
 
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 integrationgcp.NewIntegrationGcpMonitoredResourceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IntegrationGcpMonitoredResourceConfigsList
 ```
@@ -1581,7 +1581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/integrationgcp"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/integrationgcp"
 
 integrationgcp.NewIntegrationGcpMonitoredResourceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IntegrationGcpMonitoredResourceConfigsOutputReference
 ```

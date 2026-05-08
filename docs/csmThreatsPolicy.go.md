@@ -4,12 +4,12 @@
 
 ### CsmThreatsPolicy <a name="CsmThreatsPolicy" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
 
 csmthreatspolicy.NewCsmThreatsPolicy(scope Construct, id *string, config CsmThreatsPolicyConfig) CsmThreatsPolicy
 ```
@@ -428,7 +428,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ csmthreatspolicy.CsmThreatsPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ csmthreatspolicy.CsmThreatsPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
 
 csmthreatspolicy.CsmThreatsPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -517,7 +517,7 @@ The construct id used in the generated config for the CsmThreatsPolicy to import
 
 The id of the existing CsmThreatsPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/csmthreatspolicy"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/csmthreatspolicy"
 
 &csmthreatspolicy.CsmThreatsPolicyConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ Name *string
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
 
 ---
 
@@ -969,7 +969,7 @@ Description *string
 
 A description for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
 
 ---
 
@@ -983,7 +983,7 @@ Enabled interface{}
 
 Indicates whether the policy is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
 
 ---
 
@@ -997,7 +997,7 @@ HostTagsLists interface{}
 
 Host tags that define where the policy is deployed. Inner values are ANDed, outer arrays are ORed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
 
 ---
 
@@ -1011,7 +1011,7 @@ Tags *[]*string
 
 Host tags that define where the policy is deployed. Deprecated, use host_tags_lists instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
 
 ---
 

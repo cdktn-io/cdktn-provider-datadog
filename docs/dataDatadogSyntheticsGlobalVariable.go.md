@@ -4,12 +4,12 @@
 
 ### DataDatadogSyntheticsGlobalVariable <a name="DataDatadogSyntheticsGlobalVariable" id="@cdktn/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/synthetics_global_variable datadog_synthetics_global_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticsglobalvariable"
 
 datadatadogsyntheticsglobalvariable.NewDataDatadogSyntheticsGlobalVariable(scope Construct, id *string, config DataDatadogSyntheticsGlobalVariableConfig) DataDatadogSyntheticsGlobalVariable
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticsglobalvariable"
 
 datadatadogsyntheticsglobalvariable.DataDatadogSyntheticsGlobalVariable_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticsglobalvariable"
 
 datadatadogsyntheticsglobalvariable.DataDatadogSyntheticsGlobalVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogsyntheticsglobalvariable.DataDatadogSyntheticsGlobalVariable_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticsglobalvariable"
 
 datadatadogsyntheticsglobalvariable.DataDatadogSyntheticsGlobalVariable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogsyntheticsglobalvariable.DataDatadogSyntheticsGlobalVariable_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticsglobalvariable"
 
 datadatadogsyntheticsglobalvariable.DataDatadogSyntheticsGlobalVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogSyntheticsGloba
 
 The id of the existing DataDatadogSyntheticsGlobalVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/synthetics_global_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogSyntheticsGlobalVariable.DataDatadogSyntheticsGlobalVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogsyntheticsglobalvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogsyntheticsglobalvariable"
 
 &datadatadogsyntheticsglobalvariable.DataDatadogSyntheticsGlobalVariableConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ The synthetics global variable name to search for.
 
 Must only match one global variable. Must be all uppercase with underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/synthetics_global_variable#name DataDatadogSyntheticsGlobalVariable#name}
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataDatadogTeam <a name="DataDatadogTeam" id="@cdktn/provider-datadog.dataDatadogTeam.DataDatadogTeam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team datadog_team}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team datadog_team}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeam.DataDatadogTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteam"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteam"
 
 datadatadogteam.NewDataDatadogTeam(scope Construct, id *string, config DataDatadogTeamConfig) DataDatadogTeam
 ```
@@ -312,7 +312,7 @@ func ResetTeamId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogTeam.DataDatadogTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteam"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteam"
 
 datadatadogteam.DataDatadogTeam_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogTeam.DataDatadogTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteam"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteam"
 
 datadatadogteam.DataDatadogTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogteam.DataDatadogTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogTeam.DataDatadogTeam.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteam"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteam"
 
 datadatadogteam.DataDatadogTeam_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datadatadogteam.DataDatadogTeam_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogTeam.DataDatadogTeam.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteam"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteam"
 
 datadatadogteam.DataDatadogTeam_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataDatadogTeam to import.
 
 The id of the existing DataDatadogTeam that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogTeam.DataDatadogTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogteam"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogteam"
 
 &datadatadogteam.DataDatadogTeamConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ FilterKeyword *string
 
 Search query. Can be team name, team handle, or email of team member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team#filter_keyword DataDatadogTeam#filter_keyword}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team#filter_keyword DataDatadogTeam#filter_keyword}
 
 ---
 
@@ -825,7 +825,7 @@ TeamId *string
 
 The team's identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/team#team_id DataDatadogTeam#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/team#team_id DataDatadogTeam#team_id}
 
 ---
 

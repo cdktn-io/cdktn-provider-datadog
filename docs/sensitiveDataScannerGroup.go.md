@@ -4,12 +4,12 @@
 
 ### SensitiveDataScannerGroup <a name="SensitiveDataScannerGroup" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group datadog_sensitive_data_scanner_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.NewSensitiveDataScannerGroup(scope Construct, id *string, config SensitiveDataScannerGroupConfig) SensitiveDataScannerGroup
 ```
@@ -447,7 +447,7 @@ func ResetSamplings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.SensitiveDataScannerGroup_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.SensitiveDataScannerGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ sensitivedatascannergroup.SensitiveDataScannerGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.SensitiveDataScannerGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ sensitivedatascannergroup.SensitiveDataScannerGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.SensitiveDataScannerGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the SensitiveDataScannerGroup 
 
 The id of the existing SensitiveDataScannerGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 &sensitivedatascannergroup.SensitiveDataScannerGroupConfig {
 	Connection: interface{},
@@ -900,7 +900,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatas
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter,
 	IsEnabled: interface{},
 	Name: *string,
 	ProductList: *[]*string,
@@ -926,7 +926,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatas
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Datadog scanning group. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.productList">ProductList</a></code> | <code>*[]*string</code> | List of products the scanning group applies. Valid values are `logs`, `rum`, `events`, `apm`. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.description">Description</a></code> | <code>*string</code> | Description of the Datadog scanning group. |
-| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
+| <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}. |
 | <code><a href="#@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupConfig.property.samplings">Samplings</a></code> | <code>interface{}</code> | samplings block. |
 
 ---
@@ -1011,7 +1011,7 @@ Filter SensitiveDataScannerGroupFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#filter SensitiveDataScannerGroup#filter}
 
 ---
 
@@ -1027,7 +1027,7 @@ Whether or not the scanning group is enabled.
 
 If the group doesn't contain any rule or if all the rules in it are disabled, the group is force-disabled by our backend
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#is_enabled SensitiveDataScannerGroup#is_enabled}
 
 ---
 
@@ -1041,7 +1041,7 @@ Name *string
 
 Name of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#name SensitiveDataScannerGroup#name}
 
 ---
 
@@ -1055,7 +1055,7 @@ ProductList *[]*string
 
 List of products the scanning group applies. Valid values are `logs`, `rum`, `events`, `apm`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#product_list SensitiveDataScannerGroup#product_list}
 
 ---
 
@@ -1069,7 +1069,7 @@ Description *string
 
 Description of the Datadog scanning group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#description SensitiveDataScannerGroup#description}
 
 ---
 
@@ -1081,7 +1081,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#id SensitiveDataScannerGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1098,7 +1098,7 @@ Samplings interface{}
 
 samplings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#samplings SensitiveDataScannerGroup#samplings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#samplings SensitiveDataScannerGroup#samplings}
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 &sensitivedatascannergroup.SensitiveDataScannerGroupFilter {
 	Query: *string,
@@ -1132,7 +1132,7 @@ Query *string
 
 Query to filter the events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#query SensitiveDataScannerGroup#query}
 
 ---
 
@@ -1141,7 +1141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 &sensitivedatascannergroup.SensitiveDataScannerGroupSamplings {
 	Product: *string,
@@ -1168,7 +1168,7 @@ Product *string
 
 Product that the sampling rate applies to. Valid values are `logs`, `rum`, `events`, `apm`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#product SensitiveDataScannerGroup#product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#product SensitiveDataScannerGroup#product}
 
 ---
 
@@ -1182,7 +1182,7 @@ Rate *f64
 
 Percentage rate at which data for the product type is scanned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/sensitive_data_scanner_group#rate SensitiveDataScannerGroup#rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/sensitive_data_scanner_group#rate SensitiveDataScannerGroup#rate}
 
 ---
 
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.NewSensitiveDataScannerGroupFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SensitiveDataScannerGroupFilterOutputReference
 ```
@@ -1464,7 +1464,7 @@ func InternalValue() SensitiveDataScannerGroupFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.NewSensitiveDataScannerGroupSamplingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SensitiveDataScannerGroupSamplingsList
 ```
@@ -1624,7 +1624,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.sensitiveDataScannerGroup.SensitiveDataScannerGroupSamplingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/sensitivedatascannergroup"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/sensitivedatascannergroup"
 
 sensitivedatascannergroup.NewSensitiveDataScannerGroupSamplingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SensitiveDataScannerGroupSamplingsOutputReference
 ```

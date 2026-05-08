@@ -4,12 +4,12 @@
 
 ### DataDatadogMetricMetadata <a name="DataDatadogMetricMetadata" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.NewDataDatadogMetricMetadata(scope Construct, id *string, config DataDatadogMetricMetadataConfig) DataDatadogMetricMetadata
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogmetricmetadata.DataDatadogMetricMetadata_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
 
 datadatadogmetricmetadata.DataDatadogMetricMetadata_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogMetricMetadata 
 
 The id of the existing DataDatadogMetricMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricmetadata"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricmetadata"
 
 &datadatadogmetricmetadata.DataDatadogMetricMetadataConfig {
 	Connection: interface{},
@@ -784,7 +784,7 @@ MetricName *string
 
 The metric for which to fetch metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
 
 ---
 

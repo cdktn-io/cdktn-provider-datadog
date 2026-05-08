@@ -4,12 +4,12 @@
 
 ### TeamLink <a name="TeamLink" id="@cdktn/provider-datadog.teamLink.TeamLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_link datadog_team_link}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_link datadog_team_link}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamLink.TeamLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
 
 teamlink.NewTeamLink(scope Construct, id *string, config TeamLinkConfig) TeamLink
 ```
@@ -407,7 +407,7 @@ func ResetPosition()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.teamLink.TeamLink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
 
 teamlink.TeamLink_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.teamLink.TeamLink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
 
 teamlink.TeamLink_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ teamlink.TeamLink_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.teamLink.TeamLink.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
 
 teamlink.TeamLink_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ teamlink.TeamLink_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.teamLink.TeamLink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
 
 teamlink.TeamLink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the TeamLink to import.
 
 The id of the existing TeamLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.teamLink.TeamLinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/teamlink"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/teamlink"
 
 &teamlink.TeamLinkConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ Label *string
 
 The link's label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_link#label TeamLink#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_link#label TeamLink#label}
 
 ---
 
@@ -924,7 +924,7 @@ TeamId *string
 
 ID of the team the link is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_link#team_id TeamLink#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_link#team_id TeamLink#team_id}
 
 ---
 
@@ -938,7 +938,7 @@ Url *string
 
 The URL for the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_link#url TeamLink#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_link#url TeamLink#url}
 
 ---
 
@@ -952,7 +952,7 @@ Position *f64
 
 The link's position, used to sort links for the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/team_link#position TeamLink#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_link#position TeamLink#position}
 
 ---
 

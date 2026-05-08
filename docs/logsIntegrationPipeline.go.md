@@ -4,12 +4,12 @@
 
 ### LogsIntegrationPipeline <a name="LogsIntegrationPipeline" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_integration_pipeline datadog_logs_integration_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsintegrationpipeline"
 
 logsintegrationpipeline.NewLogsIntegrationPipeline(scope Construct, id *string, config LogsIntegrationPipelineConfig) LogsIntegrationPipeline
 ```
@@ -414,7 +414,7 @@ func ResetIsEnabled()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ logsintegrationpipeline.LogsIntegrationPipeline_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsintegrationpipeline"
 
 logsintegrationpipeline.LogsIntegrationPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the LogsIntegrationPipeline to
 
 The id of the existing LogsIntegrationPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_integration_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_integration_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegrationpipeline"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/logsintegrationpipeline"
 
 &logsintegrationpipeline.LogsIntegrationPipelineConfig {
 	Connection: interface{},
@@ -773,7 +773,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/logsintegratio
 | <code><a href="#@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}. |
+| <code><a href="#@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}. |
 | <code><a href="#@cdktn/provider-datadog.logsIntegrationPipeline.LogsIntegrationPipelineConfig.property.isEnabled">IsEnabled</a></code> | <code>interface{}</code> | Boolean value to enable your pipeline. |
 
 ---
@@ -856,7 +856,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_integration_pipeline#id LogsIntegrationPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -873,7 +873,7 @@ IsEnabled interface{}
 
 Boolean value to enable your pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_integration_pipeline#is_enabled LogsIntegrationPipeline#is_enabled}
 
 ---
 

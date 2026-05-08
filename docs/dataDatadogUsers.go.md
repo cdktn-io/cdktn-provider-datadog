@@ -4,12 +4,12 @@
 
 ### DataDatadogUsers <a name="DataDatadogUsers" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/users datadog_users}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/users datadog_users}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 datadatadogusers.NewDataDatadogUsers(scope Construct, id *string, config DataDatadogUsersConfig) DataDatadogUsers
 ```
@@ -312,7 +312,7 @@ func ResetFilterStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadogusers.DataDatadogUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datadatadogusers.DataDatadogUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 datadatadogusers.DataDatadogUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataDatadogUsers to import
 
 The id of the existing DataDatadogUsers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/users#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 &datadatadogusers.DataDatadogUsersConfig {
 	Connection: interface{},
@@ -756,7 +756,7 @@ Filter *string
 
 Filter all users by the given string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/users#filter DataDatadogUsers#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/users#filter DataDatadogUsers#filter}
 
 ---
 
@@ -770,7 +770,7 @@ FilterStatus *string
 
 Filter on status attribute. Comma-separated list with possible values of Active, Pending, and Disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/users#filter_status DataDatadogUsers#filter_status}
 
 ---
 
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsersUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 &datadatadogusers.DataDatadogUsersUsers {
 
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoguse
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 datadatadogusers.NewDataDatadogUsersUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogUsersUsersList
 ```
@@ -943,7 +943,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogUsers.DataDatadogUsersUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogusers"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogusers"
 
 datadatadogusers.NewDataDatadogUsersUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogUsersUsersOutputReference
 ```

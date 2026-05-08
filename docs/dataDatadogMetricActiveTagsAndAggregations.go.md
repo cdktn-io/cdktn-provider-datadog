@@ -4,12 +4,12 @@
 
 ### DataDatadogMetricActiveTagsAndAggregations <a name="DataDatadogMetricActiveTagsAndAggregations" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_active_tags_and_aggregations datadog_metric_active_tags_and_aggregations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.NewDataDatadogMetricActiveTagsAndAggregations(scope Construct, id *string, config DataDatadogMetricActiveTagsAndAggregationsConfig) DataDatadogMetricActiveTagsAndAggregations
 ```
@@ -305,7 +305,7 @@ func ResetWindow()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggrega
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggrega
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogMetricActiveTag
 
 The id of the existing DataDatadogMetricActiveTagsAndAggregations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_active_tags_and_aggregations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_active_tags_and_aggregations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 &datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregations {
 
@@ -662,7 +662,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmet
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 &datadatadogmetricactivetagsandaggregations.DataDatadogMetricActiveTagsAndAggregationsConfig {
 	Connection: interface{},
@@ -773,7 +773,7 @@ Metric *string
 
 The metric for which to fetch tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_active_tags_and_aggregations#metric DataDatadogMetricActiveTagsAndAggregations#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_active_tags_and_aggregations#metric DataDatadogMetricActiveTagsAndAggregations#metric}
 
 ---
 
@@ -787,7 +787,7 @@ Window *f64
 
 The number of seconds to look back from now.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/metric_active_tags_and_aggregations#window DataDatadogMetricActiveTagsAndAggregations#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/metric_active_tags_and_aggregations#window DataDatadogMetricActiveTagsAndAggregations#window}
 
 ---
 
@@ -798,7 +798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.NewDataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsList
 ```
@@ -947,7 +947,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetricActiveTagsAndAggregations.DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadogmetricactivetagsandaggregations"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadogmetricactivetagsandaggregations"
 
 datadatadogmetricactivetagsandaggregations.NewDataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataDatadogMetricActiveTagsAndAggregationsActiveAggregationsOutputReference
 ```

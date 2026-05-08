@@ -4,12 +4,12 @@
 
 ### ReferenceTable <a name="ReferenceTable" id="@cdktn/provider-datadog.referenceTable.ReferenceTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table datadog_reference_table}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table datadog_reference_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTable(scope Construct, id *string, config ReferenceTableConfig) ReferenceTable
 ```
@@ -454,7 +454,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.referenceTable.ReferenceTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.ReferenceTable_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.referenceTable.ReferenceTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.ReferenceTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ referencetable.ReferenceTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.referenceTable.ReferenceTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.ReferenceTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ referencetable.ReferenceTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.referenceTable.ReferenceTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.ReferenceTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ReferenceTable to import.
 
 The id of the existing ReferenceTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,7 +941,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableConfig {
 	Connection: interface{},
@@ -954,8 +954,8 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable
 	Source: *string,
 	TableName: *string,
 	Description: *string,
-	FileMetadata: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.referenceTable.ReferenceTableFileMetadata,
-	Schema: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.referenceTable.ReferenceTableSchema,
+	FileMetadata: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.referenceTable.ReferenceTableFileMetadata,
+	Schema: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.referenceTable.ReferenceTableSchema,
 	Tags: *[]*string,
 }
 ```
@@ -1060,7 +1060,7 @@ Source *string
 
 The source type for the reference table. Valid values are `S3`, `GCS`, `AZURE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#source ReferenceTable#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#source ReferenceTable#source}
 
 ---
 
@@ -1074,7 +1074,7 @@ TableName *string
 
 The name of the reference table. This must be unique within your organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
 
 ---
 
@@ -1088,7 +1088,7 @@ Description *string
 
 The description of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#description ReferenceTable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#description ReferenceTable#description}
 
 ---
 
@@ -1102,7 +1102,7 @@ FileMetadata ReferenceTableFileMetadata
 
 file_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
 
 ---
 
@@ -1116,7 +1116,7 @@ Schema ReferenceTableSchema
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#schema ReferenceTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#schema ReferenceTable#schema}
 
 ---
 
@@ -1130,7 +1130,7 @@ Tags *[]*string
 
 A list of tags to associate with the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#tags ReferenceTable#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#tags ReferenceTable#tags}
 
 ---
 
@@ -1139,11 +1139,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableFileMetadata {
 	SyncEnabled: interface{},
-	AccessDetails: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.referenceTable.ReferenceTableFileMetadataAccessDetails,
+	AccessDetails: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.referenceTable.ReferenceTableFileMetadataAccessDetails,
 }
 ```
 
@@ -1166,7 +1166,7 @@ SyncEnabled interface{}
 
 Whether this table should automatically sync with the cloud storage source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#sync_enabled ReferenceTable#sync_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#sync_enabled ReferenceTable#sync_enabled}
 
 ---
 
@@ -1180,7 +1180,7 @@ AccessDetails ReferenceTableFileMetadataAccessDetails
 
 access_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#access_details ReferenceTable#access_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#access_details ReferenceTable#access_details}
 
 ---
 
@@ -1189,12 +1189,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableFileMetadataAccessDetails {
-	AwsDetail: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetail,
-	AzureDetail: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetail,
-	GcpDetail: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetail,
+	AwsDetail: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetail,
+	AzureDetail: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetail,
+	GcpDetail: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetail,
 }
 ```
 
@@ -1218,7 +1218,7 @@ AwsDetail ReferenceTableFileMetadataAccessDetailsAwsDetail
 
 aws_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#aws_detail ReferenceTable#aws_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#aws_detail ReferenceTable#aws_detail}
 
 ---
 
@@ -1232,7 +1232,7 @@ AzureDetail ReferenceTableFileMetadataAccessDetailsAzureDetail
 
 azure_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#azure_detail ReferenceTable#azure_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#azure_detail ReferenceTable#azure_detail}
 
 ---
 
@@ -1246,7 +1246,7 @@ GcpDetail ReferenceTableFileMetadataAccessDetailsGcpDetail
 
 gcp_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#gcp_detail ReferenceTable#gcp_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#gcp_detail ReferenceTable#gcp_detail}
 
 ---
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableFileMetadataAccessDetailsAwsDetail {
 	AwsAccountId: *string,
@@ -1284,7 +1284,7 @@ AwsAccountId *string
 
 The ID of the AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#aws_account_id ReferenceTable#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#aws_account_id ReferenceTable#aws_account_id}
 
 ---
 
@@ -1298,7 +1298,7 @@ AwsBucketName *string
 
 The name of the AWS S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#aws_bucket_name ReferenceTable#aws_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#aws_bucket_name ReferenceTable#aws_bucket_name}
 
 ---
 
@@ -1312,7 +1312,7 @@ FilePath *string
 
 The relative file path from the AWS S3 bucket root to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
 
 ---
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableFileMetadataAccessDetailsAzureDetail {
 	AzureClientId: *string,
@@ -1354,7 +1354,7 @@ AzureClientId *string
 
 The Azure client ID (application ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#azure_client_id ReferenceTable#azure_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#azure_client_id ReferenceTable#azure_client_id}
 
 ---
 
@@ -1368,7 +1368,7 @@ AzureContainerName *string
 
 The name of the Azure container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#azure_container_name ReferenceTable#azure_container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#azure_container_name ReferenceTable#azure_container_name}
 
 ---
 
@@ -1382,7 +1382,7 @@ AzureStorageAccountName *string
 
 The name of the Azure storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#azure_storage_account_name ReferenceTable#azure_storage_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#azure_storage_account_name ReferenceTable#azure_storage_account_name}
 
 ---
 
@@ -1396,7 +1396,7 @@ AzureTenantId *string
 
 The ID of the Azure tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#azure_tenant_id ReferenceTable#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#azure_tenant_id ReferenceTable#azure_tenant_id}
 
 ---
 
@@ -1410,7 +1410,7 @@ FilePath *string
 
 The relative file path from the Azure container root to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
 
 ---
 
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableFileMetadataAccessDetailsGcpDetail {
 	FilePath: *string,
@@ -1450,7 +1450,7 @@ FilePath *string
 
 The relative file path from the GCS bucket root to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
 
 ---
 
@@ -1464,7 +1464,7 @@ GcpBucketName *string
 
 The name of the GCP bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#gcp_bucket_name ReferenceTable#gcp_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#gcp_bucket_name ReferenceTable#gcp_bucket_name}
 
 ---
 
@@ -1478,7 +1478,7 @@ GcpProjectId *string
 
 The ID of the GCP project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#gcp_project_id ReferenceTable#gcp_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#gcp_project_id ReferenceTable#gcp_project_id}
 
 ---
 
@@ -1492,7 +1492,7 @@ GcpServiceAccountEmail *string
 
 The email of the GCP service account used to access the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#gcp_service_account_email ReferenceTable#gcp_service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#gcp_service_account_email ReferenceTable#gcp_service_account_email}
 
 ---
 
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableSchema {
 	PrimaryKeys: *[]*string,
@@ -1528,7 +1528,7 @@ PrimaryKeys *[]*string
 
 List of field names that serve as primary keys for the table. Currently only one primary key is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
 
 ---
 
@@ -1542,7 +1542,7 @@ Fields interface{}
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#fields ReferenceTable#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#fields ReferenceTable#fields}
 
 ---
 
@@ -1551,7 +1551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 &referencetable.ReferenceTableSchemaFields {
 	Name: *string,
@@ -1578,7 +1578,7 @@ Name *string
 
 The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#name ReferenceTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#name ReferenceTable#name}
 
 ---
 
@@ -1592,7 +1592,7 @@ Type *string
 
 The data type of the field. Must be one of: STRING, INT32. Valid values are `STRING`, `INT32`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/reference_table#type ReferenceTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/reference_table#type ReferenceTable#type}
 
 ---
 
@@ -1603,7 +1603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReferenceTableFileMetadataAccessDetailsAwsDetailOutputReference
 ```
@@ -1939,7 +1939,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReferenceTableFileMetadataAccessDetailsAzureDetailOutputReference
 ```
@@ -2333,7 +2333,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReferenceTableFileMetadataAccessDetailsGcpDetailOutputReference
 ```
@@ -2698,7 +2698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataAccessDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableFileMetadataAccessDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReferenceTableFileMetadataAccessDetailsOutputReference
 ```
@@ -3073,7 +3073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableFileMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableFileMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReferenceTableFileMetadataOutputReference
 ```
@@ -3419,7 +3419,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableSchemaFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReferenceTableSchemaFieldsList
 ```
@@ -3579,7 +3579,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableSchemaFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ReferenceTableSchemaFieldsOutputReference
 ```
@@ -3890,7 +3890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTableSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/referencetable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/referencetable"
 
 referencetable.NewReferenceTableSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ReferenceTableSchemaOutputReference
 ```

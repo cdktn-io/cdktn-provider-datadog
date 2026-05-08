@@ -4,12 +4,12 @@
 
 ### DataDatadogGcpUcConfig <a name="DataDatadogGcpUcConfig" id="@cdktn/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/gcp_uc_config datadog_gcp_uc_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoggcpucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoggcpucconfig"
 
 datadatadoggcpucconfig.NewDataDatadogGcpUcConfig(scope Construct, id *string, config DataDatadogGcpUcConfigConfig) DataDatadogGcpUcConfig
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoggcpucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoggcpucconfig"
 
 datadatadoggcpucconfig.DataDatadogGcpUcConfig_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoggcpucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoggcpucconfig"
 
 datadatadoggcpucconfig.DataDatadogGcpUcConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datadatadoggcpucconfig.DataDatadogGcpUcConfig_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoggcpucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoggcpucconfig"
 
 datadatadoggcpucconfig.DataDatadogGcpUcConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datadatadoggcpucconfig.DataDatadogGcpUcConfig_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoggcpucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoggcpucconfig"
 
 datadatadoggcpucconfig.DataDatadogGcpUcConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogGcpUcConfig to 
 
 The id of the existing DataDatadogGcpUcConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/gcp_uc_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,7 +730,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.dataDatadogGcpUcConfig.DataDatadogGcpUcConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/datadatadoggcpucconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/datadatadoggcpucconfig"
 
 &datadatadoggcpucconfig.DataDatadogGcpUcConfigConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ CloudAccountId *f64
 
 The Datadog cloud account ID for the GCP Usage Cost configuration you want to retrieve information about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/data-sources/gcp_uc_config#cloud_account_id DataDatadogGcpUcConfig#cloud_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/gcp_uc_config#cloud_account_id DataDatadogGcpUcConfig#cloud_account_id}
 
 ---
 

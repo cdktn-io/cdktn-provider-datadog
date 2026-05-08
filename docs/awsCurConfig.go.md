@@ -4,12 +4,12 @@
 
 ### AwsCurConfig <a name="AwsCurConfig" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config datadog_aws_cur_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config datadog_aws_cur_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 awscurconfig.NewAwsCurConfig(scope Construct, id *string, config AwsCurConfigConfig) AwsCurConfig
 ```
@@ -427,7 +427,7 @@ func ResetBucketRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 awscurconfig.AwsCurConfig_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 awscurconfig.AwsCurConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ awscurconfig.AwsCurConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 awscurconfig.AwsCurConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ awscurconfig.AwsCurConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 awscurconfig.AwsCurConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the AwsCurConfig to import.
 
 The id of the existing AwsCurConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -914,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfigAccountFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 &awscurconfig.AwsCurConfigAccountFilters {
 	ExcludedAccounts: *[]*string,
@@ -945,7 +945,7 @@ List of AWS account IDs to exclude from cost analysis.
 
 Only used when `include_new_accounts` is `true`. Cannot be used together with `included_accounts`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#excluded_accounts AwsCurConfig#excluded_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#excluded_accounts AwsCurConfig#excluded_accounts}
 
 ---
 
@@ -961,7 +961,7 @@ List of AWS account IDs to include in cost analysis.
 
 Only used when `include_new_accounts` is `false`. Cannot be used together with `excluded_accounts`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#included_accounts AwsCurConfig#included_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#included_accounts AwsCurConfig#included_accounts}
 
 ---
 
@@ -977,7 +977,7 @@ Whether to automatically include new member accounts in your cost analysis.
 
 When `true`, use `excluded_accounts` to specify accounts to exclude. When `false`, use `included_accounts` to specify only the accounts to include.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#include_new_accounts AwsCurConfig#include_new_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#include_new_accounts AwsCurConfig#include_new_accounts}
 
 ---
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 &awscurconfig.AwsCurConfigConfig {
 	Connection: interface{},
@@ -1000,7 +1000,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
 	BucketName: *string,
 	ReportName: *string,
 	ReportPrefix: *string,
-	AccountFilters: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.awsCurConfig.AwsCurConfigAccountFilters,
+	AccountFilters: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.awsCurConfig.AwsCurConfigAccountFilters,
 	BucketRegion: *string,
 }
 ```
@@ -1105,7 +1105,7 @@ AccountId *string
 
 The AWS account ID of your billing/payer account. For AWS Organizations, this is typically the management account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#account_id AwsCurConfig#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#account_id AwsCurConfig#account_id}
 
 ---
 
@@ -1121,7 +1121,7 @@ The S3 bucket name where your AWS Cost and Usage Report files are stored.
 
 This bucket must have appropriate IAM permissions for Datadog access and should be in the same AWS account as the CUR report.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#bucket_name AwsCurConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#bucket_name AwsCurConfig#bucket_name}
 
 ---
 
@@ -1137,7 +1137,7 @@ The exact name of your AWS Cost and Usage Report as configured in AWS Billing pr
 
 This must match the report name exactly as it appears in your AWS billing settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#report_name AwsCurConfig#report_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#report_name AwsCurConfig#report_name}
 
 ---
 
@@ -1151,7 +1151,7 @@ ReportPrefix *string
 
 The S3 key prefix where your Cost and Usage Report files are stored within the bucket (e.g., 'cur-reports/', 'billing/cur/').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#report_prefix AwsCurConfig#report_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#report_prefix AwsCurConfig#report_prefix}
 
 ---
 
@@ -1165,7 +1165,7 @@ AccountFilters AwsCurConfigAccountFilters
 
 account_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#account_filters AwsCurConfig#account_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#account_filters AwsCurConfig#account_filters}
 
 ---
 
@@ -1179,7 +1179,7 @@ BucketRegion *string
 
 The AWS region where the S3 bucket containing your Cost and Usage Report is located (e.g., us-east-1, eu-west-1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/aws_cur_config#bucket_region AwsCurConfig#bucket_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/aws_cur_config#bucket_region AwsCurConfig#bucket_region}
 
 ---
 
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.awsCurConfig.AwsCurConfigAccountFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/awscurconfig"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/awscurconfig"
 
 awscurconfig.NewAwsCurConfigAccountFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AwsCurConfigAccountFiltersOutputReference
 ```

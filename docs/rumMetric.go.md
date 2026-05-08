@@ -4,12 +4,12 @@
 
 ### RumMetric <a name="RumMetric" id="@cdktn/provider-datadog.rumMetric.RumMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric datadog_rum_metric}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric datadog_rum_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumMetric.RumMetric.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.NewRumMetric(scope Construct, id *string, config RumMetricConfig) RumMetric
 ```
@@ -480,7 +480,7 @@ func ResetUniqueness()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.rumMetric.RumMetric.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.RumMetric_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.rumMetric.RumMetric.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.RumMetric_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ rummetric.RumMetric_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.rumMetric.RumMetric.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.RumMetric_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ rummetric.RumMetric_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.rumMetric.RumMetric.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.RumMetric_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -569,7 +569,7 @@ The construct id used in the generated config for the RumMetric to import.
 
 The id of the existing RumMetric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumMetric.RumMetricCompute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 &rummetric.RumMetricCompute {
 	AggregationType: *string,
@@ -941,7 +941,7 @@ AggregationType *string
 
 The type of aggregation to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#aggregation_type RumMetric#aggregation_type}
 
 ---
 
@@ -955,7 +955,7 @@ IncludePercentiles interface{}
 
 Toggle to include or exclude percentile aggregations for distribution metrics. Only present when `aggregation_type` is `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#include_percentiles RumMetric#include_percentiles}
 
 ---
 
@@ -969,7 +969,7 @@ Path *string
 
 The path to the value the RUM-based metric will aggregate on. Only present when `aggregation_type` is `distribution`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#path RumMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#path RumMetric#path}
 
 ---
 
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumMetric.RumMetricConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 &rummetric.RumMetricConfig {
 	Connection: interface{},
@@ -990,10 +990,10 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
 	Provisioners: *[]interface{},
 	EventType: *string,
 	Name: *string,
-	Compute: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.rumMetric.RumMetricCompute,
-	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.rumMetric.RumMetricFilter,
+	Compute: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.rumMetric.RumMetricCompute,
+	Filter: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.rumMetric.RumMetricFilter,
 	GroupBy: interface{},
-	Uniqueness: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14.rumMetric.RumMetricUniqueness,
+	Uniqueness: github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15.rumMetric.RumMetricUniqueness,
 }
 ```
 
@@ -1097,7 +1097,7 @@ EventType *string
 
 The type of RUM events to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#event_type RumMetric#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#event_type RumMetric#event_type}
 
 ---
 
@@ -1111,7 +1111,7 @@ Name *string
 
 The name of the RUM-based metric. This field can't be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#name RumMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#name RumMetric#name}
 
 ---
 
@@ -1125,7 +1125,7 @@ Compute RumMetricCompute
 
 compute block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#compute RumMetric#compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#compute RumMetric#compute}
 
 ---
 
@@ -1139,7 +1139,7 @@ Filter RumMetricFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#filter RumMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#filter RumMetric#filter}
 
 ---
 
@@ -1153,7 +1153,7 @@ GroupBy interface{}
 
 group_by block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#group_by RumMetric#group_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#group_by RumMetric#group_by}
 
 ---
 
@@ -1167,7 +1167,7 @@ Uniqueness RumMetricUniqueness
 
 uniqueness block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#uniqueness RumMetric#uniqueness}
 
 ---
 
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumMetric.RumMetricFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 &rummetric.RumMetricFilter {
 	Query: *string,
@@ -1201,7 +1201,7 @@ Query *string
 
 The search query. Follows RUM search syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#query RumMetric#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#query RumMetric#query}
 
 ---
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumMetric.RumMetricGroupBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 &rummetric.RumMetricGroupBy {
 	Path: *string,
@@ -1237,7 +1237,7 @@ Path *string
 
 The path to the value the RUM-based metric will be aggregated over.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#path RumMetric#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#path RumMetric#path}
 
 ---
 
@@ -1251,7 +1251,7 @@ TagName *string
 
 Name of the tag that gets created. By default, `path` is used as the tag name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#tag_name RumMetric#tag_name}
 
 ---
 
@@ -1260,7 +1260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.rumMetric.RumMetricUniqueness.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 &rummetric.RumMetricUniqueness {
 	When: *string,
@@ -1285,7 +1285,7 @@ When *string
 
 When to count updatable events. `match` when the event is first seen, or `end` when the event is complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/rum_metric#when RumMetric#when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/rum_metric#when RumMetric#when}
 
 ---
 
@@ -1296,7 +1296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumMetric.RumMetricComputeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.NewRumMetricComputeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RumMetricComputeOutputReference
 ```
@@ -1625,7 +1625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumMetric.RumMetricFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.NewRumMetricFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RumMetricFilterOutputReference
 ```
@@ -1903,7 +1903,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumMetric.RumMetricGroupByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.NewRumMetricGroupByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RumMetricGroupByList
 ```
@@ -2063,7 +2063,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumMetric.RumMetricGroupByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.NewRumMetricGroupByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RumMetricGroupByOutputReference
 ```
@@ -2388,7 +2388,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumMetric.RumMetricUniquenessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/rummetric"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/rummetric"
 
 rummetric.NewRumMetricUniquenessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RumMetricUniquenessOutputReference
 ```

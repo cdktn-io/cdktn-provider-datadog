@@ -4,12 +4,12 @@
 
 ### WebhookCustomVariable <a name="WebhookCustomVariable" id="@cdktn/provider-datadog.webhookCustomVariable.WebhookCustomVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable datadog_webhook_custom_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.webhookCustomVariable.WebhookCustomVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/webhookcustomvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/webhookcustomvariable"
 
 webhookcustomvariable.NewWebhookCustomVariable(scope Construct, id *string, config WebhookCustomVariableConfig) WebhookCustomVariable
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-datadog.webhookCustomVariable.WebhookCustomVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/webhookcustomvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-datadog.webhookCustomVariable.WebhookCustomVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/webhookcustomvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ webhookcustomvariable.WebhookCustomVariable_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-datadog.webhookCustomVariable.WebhookCustomVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/webhookcustomvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ webhookcustomvariable.WebhookCustomVariable_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-datadog.webhookCustomVariable.WebhookCustomVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/webhookcustomvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/webhookcustomvariable"
 
 webhookcustomvariable.WebhookCustomVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -489,7 +489,7 @@ The construct id used in the generated config for the WebhookCustomVariable to i
 
 The id of the existing WebhookCustomVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-datadog.webhookCustomVariable.WebhookCustomVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v14/webhookcustomvariable"
+import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/webhookcustomvariable"
 
 &webhookcustomvariable.WebhookCustomVariableConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ IsSecret interface{}
 
 Whether the custom variable is secret or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable#is_secret WebhookCustomVariable#is_secret}
 
 ---
 
@@ -893,7 +893,7 @@ Name *string
 
 The name of the variable. It corresponds with `<CUSTOM_VARIABLE_NAME>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable#name WebhookCustomVariable#name}
 
 ---
 
@@ -907,7 +907,7 @@ Value *string
 
 The value of the custom variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/3.91.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/webhook_custom_variable#value WebhookCustomVariable#value}
 
 ---
 
