@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options
+// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,43 @@ export interface AgentlessScanningAwsScanOptionsConfig extends cdktn.TerraformMe
   /**
   * The AWS account ID for which agentless scanning is configured. Must be a valid AWS account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
   */
   readonly awsAccountId: string;
   /**
+  * Indicates if host compliance scanning is enabled. Defaults to `false`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#compliance_host AgentlessScanningAwsScanOptions#compliance_host}
+  */
+  readonly complianceHost?: boolean | cdktn.IResolvable;
+  /**
   * Indicates if scanning of Lambda functions is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
   */
   readonly lambda: boolean | cdktn.IResolvable;
   /**
   * Indicates if scanning for sensitive data is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
   */
   readonly sensitiveData: boolean | cdktn.IResolvable;
   /**
   * Indicates if scanning for vulnerabilities in containers is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
   */
   readonly vulnContainersOs: boolean | cdktn.IResolvable;
   /**
   * Indicates if scanning for vulnerabilities in hosts is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
   */
   readonly vulnHostOs: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}
 */
 export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
 
@@ -61,7 +67,7 @@ export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AgentlessScanningAwsScanOptions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentlessScanningAwsScanOptions to import
-  * @param importFromId The id of the existing AgentlessScanningAwsScanOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentlessScanningAwsScanOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentlessScanningAwsScanOptions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +79,7 @@ export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +90,7 @@ export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_agentless_scanning_aws_scan_options',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -96,6 +102,7 @@ export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._awsAccountId = config.awsAccountId;
+    this._complianceHost = config.complianceHost;
     this._lambda = config.lambda;
     this._sensitiveData = config.sensitiveData;
     this._vulnContainersOs = config.vulnContainersOs;
@@ -117,6 +124,22 @@ export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get awsAccountIdInput() {
     return this._awsAccountId;
+  }
+
+  // compliance_host - computed: true, optional: true, required: false
+  private _complianceHost?: boolean | cdktn.IResolvable; 
+  public get complianceHost() {
+    return this.getBooleanAttribute('compliance_host');
+  }
+  public set complianceHost(value: boolean | cdktn.IResolvable) {
+    this._complianceHost = value;
+  }
+  public resetComplianceHost() {
+    this._complianceHost = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get complianceHostInput() {
+    return this._complianceHost;
   }
 
   // id - computed: true, optional: false, required: false
@@ -183,6 +206,7 @@ export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       aws_account_id: cdktn.stringToTerraform(this._awsAccountId),
+      compliance_host: cdktn.booleanToTerraform(this._complianceHost),
       lambda: cdktn.booleanToTerraform(this._lambda),
       sensitive_data: cdktn.booleanToTerraform(this._sensitiveData),
       vuln_containers_os: cdktn.booleanToTerraform(this._vulnContainersOs),
@@ -197,6 +221,12 @@ export class AgentlessScanningAwsScanOptions extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      compliance_host: {
+        value: cdktn.booleanToHclTerraform(this._complianceHost),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       lambda: {
         value: cdktn.booleanToHclTerraform(this._lambda),

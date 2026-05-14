@@ -1,3 +1,3 @@
 # `datadog_integration_gcp_sts`
 
-Refer to the Terraform Registry for docs: [`datadog_integration_gcp_sts`](https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp_sts).
+Refer to the Terraform Registry for docs: [`datadog_integration_gcp_sts`](https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp_sts).

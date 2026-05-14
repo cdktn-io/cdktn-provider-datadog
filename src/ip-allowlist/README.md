@@ -1,3 +1,3 @@
 # `datadog_ip_allowlist`
 
-Refer to the Terraform Registry for docs: [`datadog_ip_allowlist`](https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/ip_allowlist).
+Refer to the Terraform Registry for docs: [`datadog_ip_allowlist`](https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/ip_allowlist).

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore
+// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface DatastoreConfig extends cdktn.TerraformMetaArguments {
   /**
   * A human-readable description about the datastore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore#description Datastore#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore#description Datastore#description}
   */
   readonly description?: string;
   /**
   * The display name for the new datastore.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore#name Datastore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore#name Datastore#name}
   */
   readonly name: string;
   /**
   * The organization access level for the datastore. For example, 'contributor'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore#org_access Datastore#org_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore#org_access Datastore#org_access}
   */
   readonly orgAccess?: string;
   /**
   * The name of the primary key column for this datastore. Primary column names:   - Must abide by both [PostgreSQL naming conventions](https://www.postgresql.org/docs/7.0/syntax525.htm)   - Cannot exceed 63 characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore#primary_column_name Datastore#primary_column_name}
   */
   readonly primaryColumnName: string;
   /**
   * Can be set to `uuid` to automatically generate primary keys when new items are added. Default value is `none`, which requires you to supply a primary key for each new item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore#primary_key_generation_strategy Datastore#primary_key_generation_strategy}
   */
   readonly primaryKeyGenerationStrategy?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore datadog_datastore}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore datadog_datastore}
 */
 export class Datastore extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class Datastore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Datastore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Datastore to import
-  * @param importFromId The id of the existing Datastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Datastore that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Datastore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class Datastore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore datadog_datastore} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore datadog_datastore} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class Datastore extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_datastore',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

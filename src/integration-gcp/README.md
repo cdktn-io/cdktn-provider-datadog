@@ -1,3 +1,3 @@
 # `datadog_integration_gcp`
 
-Refer to the Terraform Registry for docs: [`datadog_integration_gcp`](https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp).
+Refer to the Terraform Registry for docs: [`datadog_integration_gcp`](https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp).

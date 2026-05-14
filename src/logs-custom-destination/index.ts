@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination
+// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface LogsCustomDestinationConfig extends cdktn.TerraformMetaArgument
   /**
   * Whether logs matching this custom destination should be forwarded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#enabled LogsCustomDestination#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Whether tags from the forwarded logs should be forwarded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#forward_tags LogsCustomDestination#forward_tags}
   */
   readonly forwardTags?: boolean | cdktn.IResolvable;
   /**
@@ -29,7 +29,7 @@ export interface LogsCustomDestinationConfig extends cdktn.TerraformMetaArgument
   * 				An empty list represents no restriction is in place and either all or no tags will be
   * 				forwarded depending on `forward_tags_restriction_list_type` parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#forward_tags_restriction_list LogsCustomDestination#forward_tags_restriction_list}
   */
   readonly forwardTagsRestrictionList?: string[];
   /**
@@ -38,43 +38,43 @@ export interface LogsCustomDestinationConfig extends cdktn.TerraformMetaArgument
   * 				are forwarded.
   * 				`BLOCK_LIST` works the opposite way. It does not forward the tags matching the ones on the list. Valid values are `ALLOW_LIST`, `BLOCK_LIST`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#forward_tags_restriction_list_type LogsCustomDestination#forward_tags_restriction_list_type}
   */
   readonly forwardTagsRestrictionListType?: string;
   /**
   * The custom destination name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#name LogsCustomDestination#name}
   */
   readonly name: string;
   /**
   * The custom destination query filter. Logs matching this query are forwarded to the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#query LogsCustomDestination#query}
   */
   readonly query?: string;
   /**
   * elasticsearch_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#elasticsearch_destination LogsCustomDestination#elasticsearch_destination}
   */
   readonly elasticsearchDestination?: LogsCustomDestinationElasticsearchDestination[] | cdktn.IResolvable;
   /**
   * http_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#http_destination LogsCustomDestination#http_destination}
   */
   readonly httpDestination?: LogsCustomDestinationHttpDestination[] | cdktn.IResolvable;
   /**
   * microsoft_sentinel_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#microsoft_sentinel_destination LogsCustomDestination#microsoft_sentinel_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#microsoft_sentinel_destination LogsCustomDestination#microsoft_sentinel_destination}
   */
   readonly microsoftSentinelDestination?: LogsCustomDestinationMicrosoftSentinelDestination[] | cdktn.IResolvable;
   /**
   * splunk_destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#splunk_destination LogsCustomDestination#splunk_destination}
   */
   readonly splunkDestination?: LogsCustomDestinationSplunkDestination[] | cdktn.IResolvable;
 }
@@ -82,13 +82,13 @@ export interface LogsCustomDestinationElasticsearchDestinationBasicAuth {
   /**
   * The password of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
   */
   readonly password: string;
   /**
   * The username of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
   */
   readonly username: string;
 }
@@ -229,13 +229,13 @@ export interface LogsCustomDestinationElasticsearchDestination {
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * Name of the Elasticsearch index (must follow [Elasticsearch's criteria](https://www.elastic.co/guide/en/elasticsearch/reference/8.11/indices-create-index.html#indices-create-api-path-params)).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#index_name LogsCustomDestination#index_name}
   */
   readonly indexName: string;
   /**
@@ -249,13 +249,13 @@ export interface LogsCustomDestinationElasticsearchDestination {
   * 							If this field is missing or is blank, it means that the index name will always be the same
   * 							(that is, no rotation).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#index_rotation LogsCustomDestination#index_rotation}
   */
   readonly indexRotation?: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
   */
   readonly basicAuth?: LogsCustomDestinationElasticsearchDestinationBasicAuth[] | cdktn.IResolvable;
 }
@@ -454,13 +454,13 @@ export interface LogsCustomDestinationHttpDestinationBasicAuth {
   /**
   * The password of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#password LogsCustomDestination#password}
   */
   readonly password: string;
   /**
   * The username of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#username LogsCustomDestination#username}
   */
   readonly username: string;
 }
@@ -601,13 +601,13 @@ export interface LogsCustomDestinationHttpDestinationCustomHeaderAuth {
   /**
   * The header name of the authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#header_name LogsCustomDestination#header_name}
   */
   readonly headerName: string;
   /**
   * The header value of the authentication. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#header_value LogsCustomDestination#header_value}
   */
   readonly headerValue: string;
 }
@@ -748,19 +748,19 @@ export interface LogsCustomDestinationHttpDestination {
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * basic_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#basic_auth LogsCustomDestination#basic_auth}
   */
   readonly basicAuth?: LogsCustomDestinationHttpDestinationBasicAuth[] | cdktn.IResolvable;
   /**
   * custom_header_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#custom_header_auth LogsCustomDestination#custom_header_auth}
   */
   readonly customHeaderAuth?: LogsCustomDestinationHttpDestinationCustomHeaderAuth[] | cdktn.IResolvable;
 }
@@ -933,31 +933,31 @@ export interface LogsCustomDestinationMicrosoftSentinelDestination {
   /**
   * Client ID from the Datadog Azure Integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#client_id LogsCustomDestination#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#client_id LogsCustomDestination#client_id}
   */
   readonly clientId: string;
   /**
   * Azure Data Collection Endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#data_collection_endpoint LogsCustomDestination#data_collection_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#data_collection_endpoint LogsCustomDestination#data_collection_endpoint}
   */
   readonly dataCollectionEndpoint: string;
   /**
   *  Azure Data Collection Rule ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#data_collection_rule_id LogsCustomDestination#data_collection_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#data_collection_rule_id LogsCustomDestination#data_collection_rule_id}
   */
   readonly dataCollectionRuleId: string;
   /**
   * Azure stream name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#stream_name LogsCustomDestination#stream_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#stream_name LogsCustomDestination#stream_name}
   */
   readonly streamName: string;
   /**
   * Tenant ID from the Datadog Azure Integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#tenant_id LogsCustomDestination#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#tenant_id LogsCustomDestination#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -1176,7 +1176,7 @@ export interface LogsCustomDestinationSplunkDestinationSourcetype {
   /**
   * The source type string. Set to `null` to omit the sourcetype from forwarded events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#value LogsCustomDestination#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#value LogsCustomDestination#value}
   */
   readonly value?: string;
 }
@@ -1294,19 +1294,19 @@ export interface LogsCustomDestinationSplunkDestination {
   /**
   * Access token of the Splunk HTTP Event Collector. This field is not returned by the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#access_token LogsCustomDestination#access_token}
   */
   readonly accessToken: string;
   /**
   * The destination for which logs will be forwarded to. Must have HTTPS scheme. Forwarding back to Datadog is not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#endpoint LogsCustomDestination#endpoint}
   */
   readonly endpoint: string;
   /**
   * sourcetype block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#sourcetype LogsCustomDestination#sourcetype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#sourcetype LogsCustomDestination#sourcetype}
   */
   readonly sourcetype?: LogsCustomDestinationSplunkDestinationSourcetype[] | cdktn.IResolvable;
 }
@@ -1474,7 +1474,7 @@ export class LogsCustomDestinationSplunkDestinationList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination datadog_logs_custom_destination}
 */
 export class LogsCustomDestination extends cdktn.TerraformResource {
 
@@ -1490,7 +1490,7 @@ export class LogsCustomDestination extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogsCustomDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsCustomDestination to import
-  * @param importFromId The id of the existing LogsCustomDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsCustomDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsCustomDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1502,7 +1502,7 @@ export class LogsCustomDestination extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/logs_custom_destination datadog_logs_custom_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1513,7 +1513,7 @@ export class LogsCustomDestination extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_logs_custom_destination',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
