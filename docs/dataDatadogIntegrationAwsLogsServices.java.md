@@ -4,7 +4,7 @@
 
 ### DataDatadogIntegrationAwsLogsServices <a name="DataDatadogIntegrationAwsLogsServices" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_logs_services datadog_integration_aws_logs_services}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer"></a>
 
@@ -34,7 +34,7 @@ DataDatadogIntegrationAwsLogsServices.Builder.create(Construct scope, java.lang.
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServices.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -457,7 +457,7 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsL
 
 The id of the existing DataDatadogIntegrationAwsLogsServices that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_logs_services#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_logs_services#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -705,7 +705,7 @@ DataDatadogIntegrationAwsLogsServicesConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogIntegrationAwsLogsServices.DataDatadogIntegrationAwsLogsServicesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}. |
 
 ---
 
@@ -787,7 +787,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_logs_services#id DataDatadogIntegrationAwsLogsServices#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

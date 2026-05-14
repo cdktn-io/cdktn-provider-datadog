@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringFilter <a name="SecurityMonitoringFilter" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SecurityMonitoringFilter t
 
 The id of the existing SecurityMonitoringFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,7 +901,7 @@ import "github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v15/securitymonito
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.query">Query</a></code> | <code>*string</code> | The query of the security filter. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.exclusionFilter">ExclusionFilter</a></code> | <code>interface{}</code> | exclusion_filter block. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.filteredDataType">FilteredDataType</a></code> | <code>*string</code> | The filtered data type. Valid values are `logs`. Defaults to `"logs"`. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}. |
 
 ---
 
@@ -985,7 +985,7 @@ IsEnabled interface{}
 
 Whether the security filter is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
 
 ---
 
@@ -999,7 +999,7 @@ Name *string
 
 The name of the security filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
 
 ---
 
@@ -1013,7 +1013,7 @@ Query *string
 
 The query of the security filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
 
 ---
 
@@ -1027,7 +1027,7 @@ ExclusionFilter interface{}
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
 
 ---
 
@@ -1041,7 +1041,7 @@ FilteredDataType *string
 
 The filtered data type. Valid values are `logs`. Defaults to `"logs"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
 
 ---
 
@@ -1053,7 +1053,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1092,7 +1092,7 @@ Name *string
 
 Exclusion filter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
 
 ---
 
@@ -1106,7 +1106,7 @@ Query *string
 
 Exclusion filter query. Logs that match this query are excluded from the security filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
 
 ---
 

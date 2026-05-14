@@ -4,7 +4,7 @@
 
 ### AgentlessScanningGcpScanOptions <a name="AgentlessScanningGcpScanOptions" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options datadog_agentless_scanning_gcp_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer"></a>
 
@@ -23,7 +23,8 @@ agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   gcp_project_id: str,
   vuln_containers_os: bool | IResolvable,
-  vuln_host_os: bool | IResolvable
+  vuln_host_os: bool | IResolvable,
+  compliance_host: bool | IResolvable = None
 )
 ```
 
@@ -41,6 +42,7 @@ agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions(
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.gcpProjectId">gcp_project_id</a></code> | <code>str</code> | The GCP project ID for which agentless scanning is configured. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.vulnContainersOs">vuln_containers_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in containers is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.vulnHostOs">vuln_host_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in hosts is enabled. |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.complianceHost">compliance_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if host compliance scanning is enabled. Defaults to `false`. |
 
 ---
 
@@ -112,7 +114,7 @@ The GCP project ID for which agentless scanning is configured.
 
 Must be a valid GCP project ID: 6–30 characters, start with a lowercase letter, and include only lowercase letters, digits, or hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
 
 ---
 
@@ -122,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
 
 ---
 
@@ -132,7 +134,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
+
+---
+
+##### `compliance_host`<sup>Optional</sup> <a name="compliance_host" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.Initializer.parameter.complianceHost"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates if host compliance scanning is enabled. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
 
 ---
 
@@ -164,6 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.resetComplianceHost">reset_compliance_host</a></code> | *No description.* |
 
 ---
 
@@ -515,6 +528,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_compliance_host` <a name="reset_compliance_host" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.resetComplianceHost"></a>
+
+```python
+def reset_compliance_host() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -629,7 +648,7 @@ The construct id used in the generated config for the AgentlessScanningGcpScanOp
 
 The id of the existing AgentlessScanningGcpScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -660,9 +679,11 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.complianceHostInput">compliance_host_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.gcpProjectIdInput">gcp_project_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.vulnContainersOsInput">vuln_containers_os_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.vulnHostOsInput">vuln_host_os_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.complianceHost">compliance_host</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.gcpProjectId">gcp_project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.vulnContainersOs">vuln_containers_os</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.vulnHostOs">vuln_host_os</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -821,6 +842,16 @@ id: str
 
 ---
 
+##### `compliance_host_input`<sup>Optional</sup> <a name="compliance_host_input" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.complianceHostInput"></a>
+
+```python
+compliance_host_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `gcp_project_id_input`<sup>Optional</sup> <a name="gcp_project_id_input" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.gcpProjectIdInput"></a>
 
 ```python
@@ -845,6 +876,16 @@ vuln_containers_os_input: bool | IResolvable
 
 ```python
 vuln_host_os_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `compliance_host`<sup>Required</sup> <a name="compliance_host" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptions.property.complianceHost"></a>
+
+```python
+compliance_host: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -918,7 +959,8 @@ agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   gcp_project_id: str,
   vuln_containers_os: bool | IResolvable,
-  vuln_host_os: bool | IResolvable
+  vuln_host_os: bool | IResolvable,
+  compliance_host: bool | IResolvable = None
 )
 ```
 
@@ -936,6 +978,7 @@ agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig(
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.gcpProjectId">gcp_project_id</a></code> | <code>str</code> | The GCP project ID for which agentless scanning is configured. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.vulnContainersOs">vuln_containers_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in containers is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.vulnHostOs">vuln_host_os</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in hosts is enabled. |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.complianceHost">compliance_host</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if host compliance scanning is enabled. Defaults to `false`. |
 
 ---
 
@@ -1021,7 +1064,7 @@ The GCP project ID for which agentless scanning is configured.
 
 Must be a valid GCP project ID: 6–30 characters, start with a lowercase letter, and include only lowercase letters, digits, or hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#gcp_project_id AgentlessScanningGcpScanOptions#gcp_project_id}
 
 ---
 
@@ -1035,7 +1078,7 @@ vuln_containers_os: bool | IResolvable
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_containers_os AgentlessScanningGcpScanOptions#vuln_containers_os}
 
 ---
 
@@ -1049,7 +1092,21 @@ vuln_host_os: bool | IResolvable
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#vuln_host_os AgentlessScanningGcpScanOptions#vuln_host_os}
+
+---
+
+##### `compliance_host`<sup>Optional</sup> <a name="compliance_host" id="@cdktn/provider-datadog.agentlessScanningGcpScanOptions.AgentlessScanningGcpScanOptionsConfig.property.complianceHost"></a>
+
+```python
+compliance_host: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates if host compliance scanning is enabled. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_gcp_scan_options#compliance_host AgentlessScanningGcpScanOptions#compliance_host}
 
 ---
 

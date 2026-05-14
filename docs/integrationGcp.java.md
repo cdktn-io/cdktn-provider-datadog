@@ -4,7 +4,7 @@
 
 ### IntegrationGcp <a name="IntegrationGcp" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp datadog_integration_gcp}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp datadog_integration_gcp}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.integrationGcp.IntegrationGcp.Initializer"></a>
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 Your email found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your private key name found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your private key ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Your Google Cloud project ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Silence monitors for expected GCE instance shutdowns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
 
 ---
 
@@ -190,7 +190,7 @@ List of filters to limit the Cloud Run revisions that are pulled into Datadog by
 
 Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
 
 ---
 
@@ -202,7 +202,7 @@ Whether Datadog collects cloud security posture management resources from your G
 
 If enabled, requires `resource_collection_enabled` to also be enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
 
 ---
 
@@ -214,7 +214,7 @@ List of filters to limit the VM instances that are pulled into Datadog by using 
 
 Only VM instance resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When enabled, Datadog scans for all resource change data in your Google Cloud environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
 
 ---
 
@@ -236,7 +236,7 @@ When enabled, Datadog will attempt to collect Security Command Center Findings.
 
 Note: This requires additional permissions on the service account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 When enabled, Datadog scans for all resources in your GCP environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
 
 ---
 
@@ -774,7 +774,7 @@ The construct id used in the generated config for the IntegrationGcp to import.
 
 The id of the existing IntegrationGcp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1404,7 +1404,7 @@ public java.lang.String getClientEmail();
 
 Your email found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#client_email IntegrationGcp#client_email}
 
 ---
 
@@ -1418,7 +1418,7 @@ public java.lang.String getClientId();
 
 Your ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#client_id IntegrationGcp#client_id}
 
 ---
 
@@ -1432,7 +1432,7 @@ public java.lang.String getPrivateKey();
 
 Your private key name found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#private_key IntegrationGcp#private_key}
 
 ---
 
@@ -1446,7 +1446,7 @@ public java.lang.String getPrivateKeyId();
 
 Your private key ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#private_key_id IntegrationGcp#private_key_id}
 
 ---
 
@@ -1460,7 +1460,7 @@ public java.lang.String getProjectId();
 
 Your Google Cloud project ID found in your JSON service account key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#project_id IntegrationGcp#project_id}
 
 ---
 
@@ -1474,7 +1474,7 @@ public java.lang.Boolean|IResolvable getAutomute();
 
 Silence monitors for expected GCE instance shutdowns. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#automute IntegrationGcp#automute}
 
 ---
 
@@ -1490,7 +1490,7 @@ List of filters to limit the Cloud Run revisions that are pulled into Datadog by
 
 Only Cloud Run revision resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#cloud_run_revision_filters IntegrationGcp#cloud_run_revision_filters}
 
 ---
 
@@ -1506,7 +1506,7 @@ Whether Datadog collects cloud security posture management resources from your G
 
 If enabled, requires `resource_collection_enabled` to also be enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#cspm_resource_collection_enabled IntegrationGcp#cspm_resource_collection_enabled}
 
 ---
 
@@ -1522,7 +1522,7 @@ List of filters to limit the VM instances that are pulled into Datadog by using 
 
 Only VM instance resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#host_filters IntegrationGcp#host_filters}
 
 ---
 
@@ -1536,7 +1536,7 @@ public java.lang.Boolean|IResolvable getIsResourceChangeCollectionEnabled();
 
 When enabled, Datadog scans for all resource change data in your Google Cloud environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#is_resource_change_collection_enabled IntegrationGcp#is_resource_change_collection_enabled}
 
 ---
 
@@ -1552,7 +1552,7 @@ When enabled, Datadog will attempt to collect Security Command Center Findings.
 
 Note: This requires additional permissions on the service account. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#is_security_command_center_enabled IntegrationGcp#is_security_command_center_enabled}
 
 ---
 
@@ -1566,7 +1566,7 @@ public IResolvable|java.util.List<IntegrationGcpMonitoredResourceConfigs> getMon
 
 Configurations for GCP monitored resources. Only monitored resources that apply to specified filters are imported into Datadog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#monitored_resource_configs IntegrationGcp#monitored_resource_configs}
 
 ---
 
@@ -1580,7 +1580,7 @@ public java.lang.Boolean|IResolvable getResourceCollectionEnabled();
 
 When enabled, Datadog scans for all resources in your GCP environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#resource_collection_enabled IntegrationGcp#resource_collection_enabled}
 
 ---
 
@@ -1601,8 +1601,8 @@ IntegrationGcpMonitoredResourceConfigs.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.filters">filters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}. |
-| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#type IntegrationGcp#type}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.filters">filters</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}. |
+| <code><a href="#@cdktn/provider-datadog.integrationGcp.IntegrationGcpMonitoredResourceConfigs.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#type IntegrationGcp#type}. |
 
 ---
 
@@ -1614,7 +1614,7 @@ public java.util.List<java.lang.String> getFilters();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#filters IntegrationGcp#filters}.
 
 ---
 
@@ -1626,7 +1626,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_gcp#type IntegrationGcp#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_gcp#type IntegrationGcp#type}.
 
 ---
 

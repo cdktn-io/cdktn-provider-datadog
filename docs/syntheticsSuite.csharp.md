@@ -4,7 +4,7 @@
 
 ### SyntheticsSuite <a name="SyntheticsSuite" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite datadog_synthetics_suite}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite datadog_synthetics_suite}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.syntheticsSuite.SyntheticsSuite.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the SyntheticsSuite to import.
 
 The id of the existing SyntheticsSuite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -981,7 +981,7 @@ public string Name { get; set; }
 
 Name of the Synthetics suite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#name SyntheticsSuite#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#name SyntheticsSuite#name}
 
 ---
 
@@ -995,7 +995,7 @@ public string Message { get; set; }
 
 Message of the Synthetics suite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#message SyntheticsSuite#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#message SyntheticsSuite#message}
 
 ---
 
@@ -1009,7 +1009,7 @@ public IResolvable|SyntheticsSuiteOptions[] Options { get; set; }
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#options SyntheticsSuite#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#options SyntheticsSuite#options}
 
 ---
 
@@ -1023,7 +1023,7 @@ public string[] Tags { get; set; }
 
 A set of tags to associate with your synthetics suite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#tags SyntheticsSuite#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#tags SyntheticsSuite#tags}
 
 ---
 
@@ -1037,7 +1037,7 @@ public IResolvable|SyntheticsSuiteTests[] Tests { get; set; }
 
 tests block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#tests SyntheticsSuite#tests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#tests SyntheticsSuite#tests}
 
 ---
 
@@ -1071,7 +1071,7 @@ public double AlertingThreshold { get; set; }
 
 Alerting threshold for the suite. Value must be between 0.000000 and 1.000000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#alerting_threshold SyntheticsSuite#alerting_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#alerting_threshold SyntheticsSuite#alerting_threshold}
 
 ---
 
@@ -1107,7 +1107,7 @@ public string PublicId { get; set; }
 
 Public ID of the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#public_id SyntheticsSuite#public_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#public_id SyntheticsSuite#public_id}
 
 ---
 
@@ -1121,7 +1121,7 @@ public string AlertingCriticality { get; set; }
 
 Alerting criticality for the test. Valid values are `ignore`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/synthetics_suite#alerting_criticality SyntheticsSuite#alerting_criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/synthetics_suite#alerting_criticality SyntheticsSuite#alerting_criticality}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DatastoreItem <a name="DatastoreItem" id="@cdktn/provider-datadog.datastoreItem.DatastoreItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore_item datadog_datastore_item}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item datadog_datastore_item}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.datastoreItem.DatastoreItem.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DatastoreItem to import.
 
 The id of the existing DatastoreItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ public readonly datastoreId: string;
 
 The unique identifier of the datastore containing this item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore_item#datastore_id DatastoreItem#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#datastore_id DatastoreItem#datastore_id}
 
 ---
 
@@ -882,7 +882,7 @@ public readonly itemKey: string;
 
 The primary key value that identifies this item. Cannot exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore_item#item_key DatastoreItem#item_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#item_key DatastoreItem#item_key}
 
 ---
 
@@ -896,7 +896,7 @@ public readonly value: {[ key: string ]: string};
 
 The data content (as key-value pairs) of the datastore item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/datastore_item#value DatastoreItem#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#value DatastoreItem#value}
 
 ---
 

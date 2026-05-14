@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [actionConnection](./actionConnection.python.md)
 - [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.python.md)
+- [agentlessScanningAzureScanOptions](./agentlessScanningAzureScanOptions.python.md)
 - [agentlessScanningGcpScanOptions](./agentlessScanningGcpScanOptions.python.md)
 - [apiKey](./apiKey.python.md)
 - [apmRetentionFilter](./apmRetentionFilter.python.md)

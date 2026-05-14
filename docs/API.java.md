@@ -6,6 +6,7 @@ The following submodules are available:
 
 - [actionConnection](./actionConnection.java.md)
 - [agentlessScanningAwsScanOptions](./agentlessScanningAwsScanOptions.java.md)
+- [agentlessScanningAzureScanOptions](./agentlessScanningAzureScanOptions.java.md)
 - [agentlessScanningGcpScanOptions](./agentlessScanningGcpScanOptions.java.md)
 - [apiKey](./apiKey.java.md)
 - [apmRetentionFilter](./apmRetentionFilter.java.md)

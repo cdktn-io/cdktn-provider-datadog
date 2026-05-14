@@ -4,7 +4,7 @@
 
 ### AgentlessScanningAwsScanOptions <a name="AgentlessScanningAwsScanOptions" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options datadog_agentless_scanning_aws_scan_options}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.resetComplianceHost">resetComplianceHost</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +387,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetComplianceHost` <a name="resetComplianceHost" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.resetComplianceHost"></a>
+
+```typescript
+public resetComplianceHost(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +496,7 @@ The construct id used in the generated config for the AgentlessScanningAwsScanOp
 
 The id of the existing AgentlessScanningAwsScanOptions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -521,11 +528,13 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.awsAccountIdInput">awsAccountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.complianceHostInput">complianceHostInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.lambdaInput">lambdaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.sensitiveDataInput">sensitiveDataInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.vulnContainersOsInput">vulnContainersOsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.vulnHostOsInput">vulnHostOsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.awsAccountId">awsAccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.complianceHost">complianceHost</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.lambda">lambda</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.sensitiveData">sensitiveData</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.vulnContainersOs">vulnContainersOs</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -695,6 +704,16 @@ public readonly awsAccountIdInput: string;
 
 ---
 
+##### `complianceHostInput`<sup>Optional</sup> <a name="complianceHostInput" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.complianceHostInput"></a>
+
+```typescript
+public readonly complianceHostInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `lambdaInput`<sup>Optional</sup> <a name="lambdaInput" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.lambdaInput"></a>
 
 ```typescript
@@ -742,6 +761,16 @@ public readonly awsAccountId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `complianceHost`<sup>Required</sup> <a name="complianceHost" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptions.property.complianceHost"></a>
+
+```typescript
+public readonly complianceHost: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -831,6 +860,7 @@ const agentlessScanningAwsScanOptionsConfig: agentlessScanningAwsScanOptions.Age
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptionsConfig.property.sensitiveData">sensitiveData</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if scanning for sensitive data is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptionsConfig.property.vulnContainersOs">vulnContainersOs</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in containers is enabled. |
 | <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptionsConfig.property.vulnHostOs">vulnHostOs</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if scanning for vulnerabilities in hosts is enabled. |
+| <code><a href="#@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptionsConfig.property.complianceHost">complianceHost</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates if host compliance scanning is enabled. Defaults to `false`. |
 
 ---
 
@@ -914,7 +944,7 @@ public readonly awsAccountId: string;
 
 The AWS account ID for which agentless scanning is configured. Must be a valid AWS account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#aws_account_id AgentlessScanningAwsScanOptions#aws_account_id}
 
 ---
 
@@ -928,7 +958,7 @@ public readonly lambda: boolean | IResolvable;
 
 Indicates if scanning of Lambda functions is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#lambda AgentlessScanningAwsScanOptions#lambda}
 
 ---
 
@@ -942,7 +972,7 @@ public readonly sensitiveData: boolean | IResolvable;
 
 Indicates if scanning for sensitive data is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#sensitive_data AgentlessScanningAwsScanOptions#sensitive_data}
 
 ---
 
@@ -956,7 +986,7 @@ public readonly vulnContainersOs: boolean | IResolvable;
 
 Indicates if scanning for vulnerabilities in containers is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#vuln_containers_os AgentlessScanningAwsScanOptions#vuln_containers_os}
 
 ---
 
@@ -970,7 +1000,21 @@ public readonly vulnHostOs: boolean | IResolvable;
 
 Indicates if scanning for vulnerabilities in hosts is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#vuln_host_os AgentlessScanningAwsScanOptions#vuln_host_os}
+
+---
+
+##### `complianceHost`<sup>Optional</sup> <a name="complianceHost" id="@cdktn/provider-datadog.agentlessScanningAwsScanOptions.AgentlessScanningAwsScanOptionsConfig.property.complianceHost"></a>
+
+```typescript
+public readonly complianceHost: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Indicates if host compliance scanning is enabled. Defaults to `false`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_aws_scan_options#compliance_host AgentlessScanningAwsScanOptions#compliance_host}
 
 ---
 
