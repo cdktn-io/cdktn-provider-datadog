@@ -4,7 +4,7 @@
 
 ### TeamPermissionSetting <a name="TeamPermissionSetting" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting datadog_team_permission_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamPermissionSetting.TeamPermissionSetting.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The identifier for the action. Valid values are `manage_membership`, `edit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 ID of the team the team permission setting is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
 
 ---
 
@@ -132,7 +132,7 @@ The action value.
 
 Valid values are dependent on the action. `manage_membership` action allows `admins`, `members`, `organization`, `user_access_manage` values. `edit` action allows `admins`, `members`, `teams_manage` values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
 
 ---
 
@@ -629,7 +629,7 @@ The construct id used in the generated config for the TeamPermissionSetting to i
 
 The id of the existing TeamPermissionSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1019,7 +1019,7 @@ action: str
 
 The identifier for the action. Valid values are `manage_membership`, `edit`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting#action TeamPermissionSetting#action}
 
 ---
 
@@ -1033,7 +1033,7 @@ team_id: str
 
 ID of the team the team permission setting is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting#team_id TeamPermissionSetting#team_id}
 
 ---
 
@@ -1049,7 +1049,7 @@ The action value.
 
 Valid values are dependent on the action. `manage_membership` action allows `admins`, `members`, `organization`, `user_access_manage` values. `edit` action allows `admins`, `members`, `teams_manage` values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_permission_setting#value TeamPermissionSetting#value}
 
 ---
 

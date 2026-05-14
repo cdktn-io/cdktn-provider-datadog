@@ -4,7 +4,7 @@
 
 ### SecureEmbedDashboard <a name="SecureEmbedDashboard" id="@cdktn/provider-datadog.secureEmbedDashboard.SecureEmbedDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.secureEmbedDashboard.SecureEmbedDashboard.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the SecureEmbedDashboard to im
 
 The id of the existing SecureEmbedDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly dashboardId: string;
 
 The ID of the dashboard to create a secure embed for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#dashboard_id SecureEmbedDashboard#dashboard_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#dashboard_id SecureEmbedDashboard#dashboard_id}
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly title: string;
 
 Title of the secure embed share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#title SecureEmbedDashboard#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#title SecureEmbedDashboard#title}
 
 ---
 
@@ -1099,7 +1099,7 @@ public readonly globalTimeLiveSpan: string;
 
 The live span for the global time, e.g. `1h`, `4h`, `1d`, `2d`, `1w`. Defaults to `"1h"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#global_time_live_span SecureEmbedDashboard#global_time_live_span}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#global_time_live_span SecureEmbedDashboard#global_time_live_span}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly globalTimeSelectable: boolean | IResolvable;
 
 Whether viewers can change the global time range. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#global_time_selectable SecureEmbedDashboard#global_time_selectable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#global_time_selectable SecureEmbedDashboard#global_time_selectable}
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly selectableTemplateVars: IResolvable | SecureEmbedDashboardSelect
 
 selectable_template_vars block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#selectable_template_vars SecureEmbedDashboard#selectable_template_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#selectable_template_vars SecureEmbedDashboard#selectable_template_vars}
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly status: string;
 
 Status of the secure embed. Valid values are `active` and `paused`. Defaults to `"active"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#status SecureEmbedDashboard#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#status SecureEmbedDashboard#status}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly viewingPreferencesHighDensity: boolean | IResolvable;
 
 Whether to display the dashboard in high density mode. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#viewing_preferences_high_density SecureEmbedDashboard#viewing_preferences_high_density}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#viewing_preferences_high_density SecureEmbedDashboard#viewing_preferences_high_density}
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly viewingPreferencesTheme: string;
 
 Display theme for the embedded dashboard. Valid values are `system`, `dark`, `light`. Defaults to `"system"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#viewing_preferences_theme SecureEmbedDashboard#viewing_preferences_theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#viewing_preferences_theme SecureEmbedDashboard#viewing_preferences_theme}
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly name: string;
 
 The name of the template variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#name SecureEmbedDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#name SecureEmbedDashboard#name}
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly defaultValues: string[];
 
 The default values for this template variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#default_values SecureEmbedDashboard#default_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#default_values SecureEmbedDashboard#default_values}
 
 ---
 
@@ -1233,7 +1233,7 @@ public readonly prefix: string;
 
 The tag prefix for this template variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#prefix SecureEmbedDashboard#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#prefix SecureEmbedDashboard#prefix}
 
 ---
 
@@ -1247,7 +1247,7 @@ public readonly type: string;
 
 The type of the template variable. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#type SecureEmbedDashboard#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#type SecureEmbedDashboard#type}
 
 ---
 
@@ -1261,7 +1261,7 @@ public readonly visibleTags: string[];
 
 The visible tag values for this template variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/secure_embed_dashboard#visible_tags SecureEmbedDashboard#visible_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#visible_tags SecureEmbedDashboard#visible_tags}
 
 ---
 

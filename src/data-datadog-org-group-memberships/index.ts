@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships
+// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogOrgGroupMembershipsConfig extends cdktn.TerraformMet
   /**
   * Filter memberships to those within the given org group. At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
   */
   readonly orgGroupId?: string;
   /**
   * Filter memberships to those for the given organization. At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
   */
   readonly orgUuid?: string;
 }
@@ -122,7 +122,7 @@ export class DataDatadogOrgGroupMembershipsMembershipsList extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships datadog_org_group_memberships}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships datadog_org_group_memberships}
 */
 export class DataDatadogOrgGroupMemberships extends cdktn.TerraformDataSource {
 
@@ -138,7 +138,7 @@ export class DataDatadogOrgGroupMemberships extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogOrgGroupMemberships resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogOrgGroupMemberships to import
-  * @param importFromId The id of the existing DataDatadogOrgGroupMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogOrgGroupMemberships that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogOrgGroupMemberships to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -150,7 +150,7 @@ export class DataDatadogOrgGroupMemberships extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/data-sources/org_group_memberships datadog_org_group_memberships} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships datadog_org_group_memberships} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +161,7 @@ export class DataDatadogOrgGroupMemberships extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_org_group_memberships',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.8.0',
+        providerVersion: '4.9.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

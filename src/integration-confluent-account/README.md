@@ -1,3 +1,3 @@
 # `datadog_integration_confluent_account`
 
-Refer to the Terraform Registry for docs: [`datadog_integration_confluent_account`](https://registry.terraform.io/providers/datadog/datadog/4.8.0/docs/resources/integration_confluent_account).
+Refer to the Terraform Registry for docs: [`datadog_integration_confluent_account`](https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/integration_confluent_account).
