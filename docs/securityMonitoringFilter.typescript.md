@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringFilter <a name="SecurityMonitoringFilter" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.putExclusionFilter">putExclusionFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.resetExclusionFilter">resetExclusionFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.resetFilteredDataType">resetFilteredDataType</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -414,12 +413,6 @@ public resetExclusionFilter(): void
 public resetFilteredDataType(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -523,7 +516,7 @@ The construct id used in the generated config for the SecurityMonitoringFilter t
 
 The id of the existing SecurityMonitoringFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,15 +547,14 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.exclusionFilter">exclusionFilter</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilterList">SecurityMonitoringFilterExclusionFilterList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.version">version</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.exclusionFilterInput">exclusionFilterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.filteredDataTypeInput">filteredDataTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.isEnabledInput">isEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.queryInput">queryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.filteredDataType">filteredDataType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.isEnabled">isEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.query">query</a></code> | <code>string</code> | *No description.* |
@@ -721,6 +713,16 @@ public readonly exclusionFilter: SecurityMonitoringFilterExclusionFilterList;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.version"></a>
 
 ```typescript
@@ -745,16 +747,6 @@ public readonly exclusionFilterInput: IResolvable | SecurityMonitoringFilterExcl
 
 ```typescript
 public readonly filteredDataTypeInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
 ```
 
 - *Type:* string
@@ -795,16 +787,6 @@ public readonly queryInput: string;
 
 ```typescript
 public readonly filteredDataType: string;
-```
-
-- *Type:* string
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilter.property.id"></a>
-
-```typescript
-public readonly id: string;
 ```
 
 - *Type:* string
@@ -887,7 +869,6 @@ const securityMonitoringFilterConfig: securityMonitoringFilter.SecurityMonitorin
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.query">query</a></code> | <code>string</code> | The query of the security filter. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.exclusionFilter">exclusionFilter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterExclusionFilter">SecurityMonitoringFilterExclusionFilter</a>[]</code> | exclusion_filter block. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.filteredDataType">filteredDataType</a></code> | <code>string</code> | The filtered data type. Valid values are `logs`. Defaults to `"logs"`. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}. |
 
 ---
 
@@ -971,7 +952,7 @@ public readonly isEnabled: boolean | IResolvable;
 
 Whether the security filter is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
 
 ---
 
@@ -985,7 +966,7 @@ public readonly name: string;
 
 The name of the security filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
 
 ---
 
@@ -999,7 +980,7 @@ public readonly query: string;
 
 The query of the security filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
 
 ---
 
@@ -1013,7 +994,7 @@ public readonly exclusionFilter: IResolvable | SecurityMonitoringFilterExclusion
 
 exclusion_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
 
 ---
 
@@ -1027,22 +1008,7 @@ public readonly filteredDataType: string;
 
 The filtered data type. Valid values are `logs`. Defaults to `"logs"`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-datadog.securityMonitoringFilter.SecurityMonitoringFilterConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
 
 ---
 
@@ -1075,7 +1041,7 @@ public readonly name: string;
 
 Exclusion filter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
 
 ---
 
@@ -1089,7 +1055,7 @@ public readonly query: string;
 
 Exclusion filter query. Logs that match this query are excluded from the security filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
 
 ---
 

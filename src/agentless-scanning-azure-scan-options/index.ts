@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface AgentlessScanningAzureScanOptionsConfig extends cdktn.Terraform
   /**
   * The Azure subscription ID for which agentless scanning is configured. Must be a valid Azure subscription ID (UUID format).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options#azure_subscription_id AgentlessScanningAzureScanOptions#azure_subscription_id}
   */
   readonly azureSubscriptionId: string;
   /**
   * Indicates whether host compliance scanning is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options#compliance_host AgentlessScanningAzureScanOptions#compliance_host}
   */
   readonly complianceHost?: boolean | cdktn.IResolvable;
   /**
   * Indicates if scanning for vulnerabilities in containers is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options#vuln_containers_os AgentlessScanningAzureScanOptions#vuln_containers_os}
   */
   readonly vulnContainersOs: boolean | cdktn.IResolvable;
   /**
   * Indicates if scanning for vulnerabilities in hosts is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options#vuln_host_os AgentlessScanningAzureScanOptions#vuln_host_os}
   */
   readonly vulnHostOs: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options}
 */
 export class AgentlessScanningAzureScanOptions extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class AgentlessScanningAzureScanOptions extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AgentlessScanningAzureScanOptions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AgentlessScanningAzureScanOptions to import
-  * @param importFromId The id of the existing AgentlessScanningAzureScanOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AgentlessScanningAzureScanOptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AgentlessScanningAzureScanOptions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class AgentlessScanningAzureScanOptions extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/agentless_scanning_azure_scan_options datadog_agentless_scanning_azure_scan_options} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class AgentlessScanningAzureScanOptions extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_agentless_scanning_azure_scan_options',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

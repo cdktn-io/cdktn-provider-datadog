@@ -131,6 +131,7 @@ The following submodules are available:
 - [integrationCloudflareAccount](./integrationCloudflareAccount.typescript.md)
 - [integrationConfluentAccount](./integrationConfluentAccount.typescript.md)
 - [integrationConfluentResource](./integrationConfluentResource.typescript.md)
+- [integrationDatabricksAccount](./integrationDatabricksAccount.typescript.md)
 - [integrationFastlyAccount](./integrationFastlyAccount.typescript.md)
 - [integrationFastlyService](./integrationFastlyService.typescript.md)
 - [integrationGcp](./integrationGcp.typescript.md)

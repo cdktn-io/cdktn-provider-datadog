@@ -4,7 +4,7 @@
 
 ### OnCallUserNotificationRule <a name="OnCallUserNotificationRule" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule datadog_on_call_user_notification_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationRule.OnCallUserNotificationRule.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the OnCallUserNotificationRule
 
 The id of the existing OnCallUserNotificationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,7 +934,7 @@ public readonly category: string;
 
 Notification category to associate the rule with. Valid values are `high_urgency`, `low_urgency`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule#category OnCallUserNotificationRule#category}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly channelId: string;
 
 ID of the notification channel to associate the notification rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule#channel_id OnCallUserNotificationRule#channel_id}
 
 ---
 
@@ -962,7 +962,7 @@ public readonly delayMinutes: number;
 
 Number of minutes to elapse before this rule is evaluated.  `0` indicates immediate evaluation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule#delay_minutes OnCallUserNotificationRule#delay_minutes}
 
 ---
 
@@ -976,7 +976,7 @@ public readonly userId: string;
 
 ID of the user to associate the notification rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule#user_id OnCallUserNotificationRule#user_id}
 
 ---
 
@@ -990,7 +990,7 @@ public readonly phone: OnCallUserNotificationRulePhone;
 
 phone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule#phone OnCallUserNotificationRule#phone}
 
 ---
 
@@ -1022,7 +1022,7 @@ public readonly method: string;
 
 Specifies the method in which a phone is used in a notification rule. Valid values are `sms`, `voice`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_user_notification_rule#method OnCallUserNotificationRule#method}
 
 ---
 

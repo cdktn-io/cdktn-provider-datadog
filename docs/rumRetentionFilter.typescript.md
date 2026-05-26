@@ -4,7 +4,7 @@
 
 ### RumRetentionFilter <a name="RumRetentionFilter" id="@cdktn/provider-datadog.rumRetentionFilter.RumRetentionFilter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter datadog_rum_retention_filter}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter datadog_rum_retention_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.rumRetentionFilter.RumRetentionFilter.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the RumRetentionFilter to impo
 
 The id of the existing RumRetentionFilter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ public readonly applicationId: string;
 
 RUM application ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter#application_id RumRetentionFilter#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter#application_id RumRetentionFilter#application_id}
 
 ---
 
@@ -965,7 +965,7 @@ public readonly eventType: string;
 
 The type of RUM events to filter on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter#event_type RumRetentionFilter#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter#event_type RumRetentionFilter#event_type}
 
 ---
 
@@ -979,7 +979,7 @@ public readonly name: string;
 
 The name of a RUM retention filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter#name RumRetentionFilter#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter#name RumRetentionFilter#name}
 
 ---
 
@@ -993,7 +993,7 @@ public readonly sampleRate: number;
 
 The sample rate for a RUM retention filter, between 0.1 and 100. Supports one decimal place (for example, 50.5).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter#sample_rate RumRetentionFilter#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter#sample_rate RumRetentionFilter#sample_rate}
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the retention filter is to be enabled. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter#enabled RumRetentionFilter#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter#enabled RumRetentionFilter#enabled}
 
 ---
 
@@ -1021,7 +1021,7 @@ public readonly query: string;
 
 The Query string for a RUM retention filter. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/rum_retention_filter#query RumRetentionFilter#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/rum_retention_filter#query RumRetentionFilter#query}
 
 ---
 

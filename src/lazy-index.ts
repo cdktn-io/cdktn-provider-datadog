@@ -52,6 +52,7 @@ Object.defineProperty(exports, 'integrationAzure', { get: function () { return r
 Object.defineProperty(exports, 'integrationCloudflareAccount', { get: function () { return require('./integration-cloudflare-account'); } });
 Object.defineProperty(exports, 'integrationConfluentAccount', { get: function () { return require('./integration-confluent-account'); } });
 Object.defineProperty(exports, 'integrationConfluentResource', { get: function () { return require('./integration-confluent-resource'); } });
+Object.defineProperty(exports, 'integrationDatabricksAccount', { get: function () { return require('./integration-databricks-account'); } });
 Object.defineProperty(exports, 'integrationFastlyAccount', { get: function () { return require('./integration-fastly-account'); } });
 Object.defineProperty(exports, 'integrationFastlyService', { get: function () { return require('./integration-fastly-service'); } });
 Object.defineProperty(exports, 'integrationGcp', { get: function () { return require('./integration-gcp'); } });

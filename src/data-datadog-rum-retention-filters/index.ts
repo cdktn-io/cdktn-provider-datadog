@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/rum_retention_filters
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/rum_retention_filters
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogRumRetentionFiltersConfig extends cdktn.TerraformMet
   /**
   * RUM application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/rum_retention_filters#application_id DataDatadogRumRetentionFilters#application_id}
   */
   readonly applicationId: string;
 }
@@ -109,7 +109,7 @@ export class DataDatadogRumRetentionFiltersRetentionFiltersList extends cdktn.Co
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -121,7 +121,7 @@ export class DataDatadogRumRetentionFiltersRetentionFiltersList extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters}
 */
 export class DataDatadogRumRetentionFilters extends cdktn.TerraformDataSource {
 
@@ -137,7 +137,7 @@ export class DataDatadogRumRetentionFilters extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogRumRetentionFilters resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogRumRetentionFilters to import
-  * @param importFromId The id of the existing DataDatadogRumRetentionFilters that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/rum_retention_filters#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogRumRetentionFilters that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/rum_retention_filters#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogRumRetentionFilters to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -149,7 +149,7 @@ export class DataDatadogRumRetentionFilters extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/rum_retention_filters datadog_rum_retention_filters} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -160,7 +160,7 @@ export class DataDatadogRumRetentionFilters extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_rum_retention_filters',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

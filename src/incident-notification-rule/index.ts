@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface IncidentNotificationRuleConfig extends cdktn.TerraformMetaArgum
   /**
   * Whether the notification rule is enabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#enabled IncidentNotificationRule#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The notification handles (targets) for this rule. Examples: @team-email@company.com, @slack-channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#handles IncidentNotificationRule#handles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#handles IncidentNotificationRule#handles}
   */
   readonly handles: string[];
   /**
   * The ID of the incident type this notification rule is associated with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#incident_type IncidentNotificationRule#incident_type}
   */
   readonly incidentType: string;
   /**
   * The ID of the notification template to use for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#notification_template IncidentNotificationRule#notification_template}
   */
   readonly notificationTemplate?: string;
   /**
   * List of incident fields that trigger re-notification when changed. Valid values are: status, severity, customer_impact, title, description, detected, root_cause, services, state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#renotify_on IncidentNotificationRule#renotify_on}
   */
   readonly renotifyOn?: string[];
   /**
   * The trigger event for this notification rule. Valid values are: incident_created_trigger, incident_saved_trigger.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#trigger IncidentNotificationRule#trigger}
   */
   readonly trigger: string;
   /**
   * The visibility of the notification rule. Valid values are: all, organization, private. Defaults to organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#visibility IncidentNotificationRule#visibility}
   */
   readonly visibility?: string;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#conditions IncidentNotificationRule#conditions}
   */
   readonly conditions?: IncidentNotificationRuleConditions[] | cdktn.IResolvable;
 }
@@ -65,13 +65,13 @@ export interface IncidentNotificationRuleConditions {
   /**
   * The incident field to evaluate. Common values include: state, severity, services, teams. Custom fields are also supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#field IncidentNotificationRule#field}
   */
   readonly field: string;
   /**
   * The value(s) to compare against. Multiple values are ORed together.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#values IncidentNotificationRule#values}
   */
   readonly values: string[];
 }
@@ -198,7 +198,7 @@ export class IncidentNotificationRuleConditionsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -210,7 +210,7 @@ export class IncidentNotificationRuleConditionsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule datadog_incident_notification_rule}
 */
 export class IncidentNotificationRule extends cdktn.TerraformResource {
 
@@ -226,7 +226,7 @@ export class IncidentNotificationRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IncidentNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IncidentNotificationRule to import
-  * @param importFromId The id of the existing IncidentNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IncidentNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IncidentNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -238,7 +238,7 @@ export class IncidentNotificationRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/incident_notification_rule datadog_incident_notification_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +249,7 @@ export class IncidentNotificationRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_incident_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
