@@ -4,7 +4,7 @@
 
 ### OnCallTeamRoutingRules <a name="OnCallTeamRoutingRules" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRules.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the OnCallTeamRoutingRules to 
 
 The id of the existing OnCallTeamRoutingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ public readonly id: string;
 
 ID of the team to associate the routing rules with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +871,7 @@ public readonly rule: IResolvable | OnCallTeamRoutingRulesRule[];
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
 
 ---
 
@@ -907,7 +907,7 @@ public readonly action: IResolvable | OnCallTeamRoutingRulesRuleAction[];
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
 
 ---
 
@@ -921,7 +921,7 @@ public readonly escalationPolicy: string;
 
 ID of the policy to be applied when this routing rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
 
 ---
 
@@ -935,7 +935,7 @@ public readonly query: string;
 
 Defines the query or condition that triggers this routing rule. Defaults to `""`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
 
 ---
 
@@ -949,7 +949,7 @@ public readonly timeRestrictions: OnCallTeamRoutingRulesRuleTimeRestrictions;
 
 time_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
 
 ---
 
@@ -965,7 +965,7 @@ Defines the urgency for pages created via this rule.
 
 Only valid if `escalation_policy` is set. Valid values are `high`, `low`, `dynamic`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
 
 ---
 
@@ -985,6 +985,7 @@ const onCallTeamRoutingRulesRuleAction: onCallTeamRoutingRules.OnCallTeamRouting
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.sendSlackMessage">sendSlackMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage">OnCallTeamRoutingRulesRuleActionSendSlackMessage</a></code> | send_slack_message block. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.sendTeamsMessage">sendTeamsMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage">OnCallTeamRoutingRulesRuleActionSendTeamsMessage</a></code> | send_teams_message block. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.triggerWorkflowAutomation">triggerWorkflowAutomation</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a></code> | trigger_workflow_automation block. |
 
 ---
 
@@ -998,7 +999,7 @@ public readonly sendSlackMessage: OnCallTeamRoutingRulesRuleActionSendSlackMessa
 
 send_slack_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
 
 ---
 
@@ -1012,7 +1013,21 @@ public readonly sendTeamsMessage: OnCallTeamRoutingRulesRuleActionSendTeamsMessa
 
 send_teams_message block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
+
+---
+
+##### `triggerWorkflowAutomation`<sup>Optional</sup> <a name="triggerWorkflowAutomation" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction.property.triggerWorkflowAutomation"></a>
+
+```typescript
+public readonly triggerWorkflowAutomation: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a>
+
+trigger_workflow_automation block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#trigger_workflow_automation OnCallTeamRoutingRules#trigger_workflow_automation}
 
 ---
 
@@ -1045,7 +1060,7 @@ public readonly channel: string;
 
 Slack channel ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
 
 ---
 
@@ -1059,7 +1074,7 @@ public readonly workspace: string;
 
 Slack workspace ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
 
 ---
 
@@ -1093,7 +1108,7 @@ public readonly channel: string;
 
 Teams channel ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
 
 ---
 
@@ -1107,7 +1122,7 @@ public readonly team: string;
 
 Teams team ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
 
 ---
 
@@ -1121,7 +1136,39 @@ public readonly tenant: string;
 
 Teams tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
+
+---
+
+### OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation <a name="OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation.Initializer"></a>
+
+```typescript
+import { onCallTeamRoutingRules } from '@cdktn/provider-datadog'
+
+const onCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation: onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation.property.handle">handle</a></code> | <code>string</code> | The handle of the Workflow Automation to trigger. |
+
+---
+
+##### `handle`<sup>Optional</sup> <a name="handle" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation.property.handle"></a>
+
+```typescript
+public readonly handle: string;
+```
+
+- *Type:* string
+
+The handle of the Workflow Automation to trigger.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#handle OnCallTeamRoutingRules#handle}
 
 ---
 
@@ -1154,7 +1201,7 @@ public readonly restriction: IResolvable | OnCallTeamRoutingRulesRuleTimeRestric
 
 restriction block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
 
 ---
 
@@ -1168,7 +1215,7 @@ public readonly timeZone: string;
 
 Specifies the time zone applicable to the restrictions, e.g. `America/New_York`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
 
 ---
 
@@ -1203,7 +1250,7 @@ public readonly endDay: string;
 
 The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
 
 ---
 
@@ -1217,7 +1264,7 @@ public readonly endTime: string;
 
 The time of day when the restriction ends (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
 
 ---
 
@@ -1231,7 +1278,7 @@ public readonly startDay: string;
 
 The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
 
 ---
 
@@ -1245,7 +1292,7 @@ public readonly startTime: string;
 
 The time of day when the restriction begins (hh:mm:ss).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
 
 ---
 
@@ -1481,8 +1528,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putSendSlackMessage">putSendSlackMessage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putSendTeamsMessage">putSendTeamsMessage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putTriggerWorkflowAutomation">putTriggerWorkflowAutomation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetSendSlackMessage">resetSendSlackMessage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetSendTeamsMessage">resetSendTeamsMessage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetTriggerWorkflowAutomation">resetTriggerWorkflowAutomation</a></code> | *No description.* |
 
 ---
 
@@ -1660,6 +1709,18 @@ public putSendTeamsMessage(value: OnCallTeamRoutingRulesRuleActionSendTeamsMessa
 
 ---
 
+##### `putTriggerWorkflowAutomation` <a name="putTriggerWorkflowAutomation" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putTriggerWorkflowAutomation"></a>
+
+```typescript
+public putTriggerWorkflowAutomation(value: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.putTriggerWorkflowAutomation.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a>
+
+---
+
 ##### `resetSendSlackMessage` <a name="resetSendSlackMessage" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetSendSlackMessage"></a>
 
 ```typescript
@@ -1672,6 +1733,12 @@ public resetSendSlackMessage(): void
 public resetSendTeamsMessage(): void
 ```
 
+##### `resetTriggerWorkflowAutomation` <a name="resetTriggerWorkflowAutomation" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.resetTriggerWorkflowAutomation"></a>
+
+```typescript
+public resetTriggerWorkflowAutomation(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1681,8 +1748,10 @@ public resetSendTeamsMessage(): void
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendSlackMessage">sendSlackMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference">OnCallTeamRoutingRulesRuleActionSendSlackMessageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendTeamsMessage">sendTeamsMessage</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference">OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.triggerWorkflowAutomation">triggerWorkflowAutomation</a></code> | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendSlackMessageInput">sendSlackMessageInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendSlackMessage">OnCallTeamRoutingRulesRuleActionSendSlackMessage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendTeamsMessageInput">sendTeamsMessageInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage">OnCallTeamRoutingRulesRuleActionSendTeamsMessage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.triggerWorkflowAutomationInput">triggerWorkflowAutomationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleAction">OnCallTeamRoutingRulesRuleAction</a></code> | *No description.* |
 
 ---
@@ -1731,6 +1800,16 @@ public readonly sendTeamsMessage: OnCallTeamRoutingRulesRuleActionSendTeamsMessa
 
 ---
 
+##### `triggerWorkflowAutomation`<sup>Required</sup> <a name="triggerWorkflowAutomation" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.triggerWorkflowAutomation"></a>
+
+```typescript
+public readonly triggerWorkflowAutomation: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference</a>
+
+---
+
 ##### `sendSlackMessageInput`<sup>Optional</sup> <a name="sendSlackMessageInput" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.sendSlackMessageInput"></a>
 
 ```typescript
@@ -1748,6 +1827,16 @@ public readonly sendTeamsMessageInput: IResolvable | OnCallTeamRoutingRulesRuleA
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage">OnCallTeamRoutingRulesRuleActionSendTeamsMessage</a>
+
+---
+
+##### `triggerWorkflowAutomationInput`<sup>Optional</sup> <a name="triggerWorkflowAutomationInput" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionOutputReference.property.triggerWorkflowAutomationInput"></a>
+
+```typescript
+public readonly triggerWorkflowAutomationInput: IResolvable | OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a>
 
 ---
 
@@ -2401,6 +2490,284 @@ public readonly internalValue: IResolvable | OnCallTeamRoutingRulesRuleActionSen
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionSendTeamsMessage">OnCallTeamRoutingRulesRuleActionSendTeamsMessage</a>
+
+---
+
+
+### OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference <a name="OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.Initializer"></a>
+
+```typescript
+import { onCallTeamRoutingRules } from '@cdktn/provider-datadog'
+
+new onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.resetHandle">resetHandle</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetHandle` <a name="resetHandle" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.resetHandle"></a>
+
+```typescript
+public resetHandle(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.handleInput">handleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.handle">handle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `handleInput`<sup>Optional</sup> <a name="handleInput" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.handleInput"></a>
+
+```typescript
+public readonly handleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `handle`<sup>Required</sup> <a name="handle" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.handle"></a>
+
+```typescript
+public readonly handle: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-datadog.onCallTeamRoutingRules.OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation">OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation</a>
 
 ---
 

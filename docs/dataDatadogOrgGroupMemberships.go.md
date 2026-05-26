@@ -4,7 +4,7 @@
 
 ### DataDatadogOrgGroupMemberships <a name="DataDatadogOrgGroupMemberships" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships datadog_org_group_memberships}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_group_memberships datadog_org_group_memberships}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupMemberships.DataDatadogOrgGroupMemberships.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataDatadogOrgGroupMembers
 
 The id of the existing DataDatadogOrgGroupMemberships that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_group_memberships#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,7 +758,7 @@ Filter memberships to those within the given org group.
 
 At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_group_memberships#org_group_id DataDatadogOrgGroupMemberships#org_group_id}
 
 ---
 
@@ -774,7 +774,7 @@ Filter memberships to those for the given organization.
 
 At least one filter (`org_group_id` or `org_uuid`) is required. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_group_memberships#org_uuid DataDatadogOrgGroupMemberships#org_uuid}
 
 ---
 

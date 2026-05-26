@@ -131,6 +131,7 @@ The following submodules are available:
 - [integrationCloudflareAccount](./integrationCloudflareAccount.go.md)
 - [integrationConfluentAccount](./integrationConfluentAccount.go.md)
 - [integrationConfluentResource](./integrationConfluentResource.go.md)
+- [integrationDatabricksAccount](./integrationDatabricksAccount.go.md)
 - [integrationFastlyAccount](./integrationFastlyAccount.go.md)
 - [integrationFastlyService](./integrationFastlyService.go.md)
 - [integrationGcp](./integrationGcp.go.md)

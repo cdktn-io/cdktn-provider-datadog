@@ -4,7 +4,7 @@
 
 ### DeploymentGate <a name="DeploymentGate" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate datadog_deployment_gate}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate datadog_deployment_gate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.deploymentGate.DeploymentGate.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -134,7 +134,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -637,7 +637,7 @@ The construct id used in the generated config for the DeploymentGate to import.
 
 The id of the existing DeploymentGate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getEnv();
 
 The target environment (example: dev).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#env DeploymentGate#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#env DeploymentGate#env}
 
 ---
 
@@ -1111,7 +1111,7 @@ public java.lang.String getService();
 
 The service name (example: transaction-backend).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#service DeploymentGate#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#service DeploymentGate#service}
 
 ---
 
@@ -1127,7 +1127,7 @@ Enable Dry Run to test gate behavior without impacting deployments.
 
 The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getIdentifier();
 
 Unique name for multiple gates on the same service/environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
 
 ---
 
@@ -1155,7 +1155,7 @@ public IResolvable|java.util.List<DeploymentGateRule> getRule();
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
 
 ---
 
@@ -1195,7 +1195,7 @@ public java.lang.String getName();
 
 The rule name. Must be unique within the deployment gate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#name DeploymentGate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#name DeploymentGate#name}
 
 ---
 
@@ -1209,7 +1209,7 @@ public java.lang.String getType();
 
 The rule type (e.g., 'faulty_deployment_detection', 'monitor').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#type DeploymentGate#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#type DeploymentGate#type}
 
 ---
 
@@ -1223,7 +1223,7 @@ public java.lang.Boolean|IResolvable getDryRun();
 
 Whether the rule is in dry run mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
 
 ---
 
@@ -1237,7 +1237,7 @@ public DeploymentGateRuleOptions getOptions();
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#options DeploymentGate#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#options DeploymentGate#options}
 
 ---
 
@@ -1275,7 +1275,7 @@ public java.lang.Number getDuration();
 
 The duration for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
 
 ---
 
@@ -1289,7 +1289,7 @@ public java.util.List<java.lang.String> getExcludedResources();
 
 Resources to exclude from faulty deployment detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
 
 ---
 
@@ -1303,7 +1303,7 @@ public java.lang.String getQuery();
 
 The query for monitor rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/deployment_gate#query DeploymentGate#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/deployment_gate#query DeploymentGate#query}
 
 ---
 

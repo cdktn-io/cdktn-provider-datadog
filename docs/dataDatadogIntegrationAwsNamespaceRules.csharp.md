@@ -4,7 +4,7 @@
 
 ### DataDatadogIntegrationAwsNamespaceRules <a name="DataDatadogIntegrationAwsNamespaceRules" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/integration_aws_namespace_rules datadog_integration_aws_namespace_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsNamespaceRules.DataDatadogIntegrationAwsNamespaceRules.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsN
 
 The id of the existing DataDatadogIntegrationAwsNamespaceRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/integration_aws_namespace_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/integration_aws_namespace_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 

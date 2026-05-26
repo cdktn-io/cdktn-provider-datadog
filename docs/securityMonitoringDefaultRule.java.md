@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringDefaultRule <a name="SecurityMonitoringDefaultRule" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer"></a>
 
@@ -25,8 +25,7 @@ SecurityMonitoringDefaultRule.Builder.create(Construct scope, java.lang.String i
 //  .customTags(java.util.List<java.lang.String>)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .filter(IResolvable|java.util.List<SecurityMonitoringDefaultRuleFilter>)
-//  .id(java.lang.String)
-//  .options(SecurityMonitoringDefaultRuleOptions)
+//  .options(IResolvable|java.util.List<SecurityMonitoringDefaultRuleOptions>)
 //  .query(IResolvable|java.util.List<SecurityMonitoringDefaultRuleQuery>)
     .build();
 ```
@@ -48,8 +47,7 @@ SecurityMonitoringDefaultRule.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.customTags">customTags</a></code> | <code>java.util.List<java.lang.String></code> | Custom tags for generated signals. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable the rule. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilter">SecurityMonitoringDefaultRuleFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.options">options</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | options block. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.options">options</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>></code> | options block. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.query">query</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery">SecurityMonitoringDefaultRuleQuery</a>></code> | query block. |
 
 ---
@@ -120,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 case block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
 
 ---
 
@@ -130,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Custom Message (will override default message) for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
 
 ---
 
@@ -140,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name (will override default name) of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
 
 ---
 
@@ -150,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Custom tags for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
 
 ---
 
@@ -160,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Enable the rule. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
 
 ---
 
@@ -170,28 +168,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
 
 ---
 
 ##### `options`<sup>Optional</sup> <a name="options" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer.parameter.options"></a>
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>>
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
 
 ---
 
@@ -201,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -243,7 +230,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetCustomTags">resetCustomTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetFilter">resetFilter</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetOptions">resetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetQuery">resetQuery</a></code> | *No description.* |
 
@@ -587,12 +573,12 @@ public void putFilter(IResolvable|java.util.List<SecurityMonitoringDefaultRuleFi
 ##### `putOptions` <a name="putOptions" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.putOptions"></a>
 
 ```java
-public void putOptions(SecurityMonitoringDefaultRuleOptions value)
+public void putOptions(IResolvable|java.util.List<SecurityMonitoringDefaultRuleOptions> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.putOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>>
 
 ---
 
@@ -642,12 +628,6 @@ public void resetEnabled()
 
 ```java
 public void resetFilter()
-```
-
-##### `resetId` <a name="resetId" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetId"></a>
-
-```java
-public void resetId()
 ```
 
 ##### `resetOptions` <a name="resetOptions" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetOptions"></a>
@@ -765,7 +745,7 @@ The construct id used in the generated config for the SecurityMonitoringDefaultR
 
 The id of the existing SecurityMonitoringDefaultRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,7 +777,8 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.case">case</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleCaseList">SecurityMonitoringDefaultRuleCaseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilterList">SecurityMonitoringDefaultRuleFilterList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.options">options</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference">SecurityMonitoringDefaultRuleOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.options">options</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList">SecurityMonitoringDefaultRuleOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.query">query</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryList">SecurityMonitoringDefaultRuleQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.caseInput">caseInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleCase">SecurityMonitoringDefaultRuleCase</a>></code> | *No description.* |
@@ -806,14 +787,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customTagsInput">customTagsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.filterInput">filterInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilter">SecurityMonitoringDefaultRuleFilter</a>></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.optionsInput">optionsInput</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.optionsInput">optionsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.queryInput">queryInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery">SecurityMonitoringDefaultRuleQuery</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customMessage">customMessage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customName">customName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customTags">customTags</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -979,13 +958,23 @@ public SecurityMonitoringDefaultRuleFilterList getFilter();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `options`<sup>Required</sup> <a name="options" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.options"></a>
 
 ```java
-public SecurityMonitoringDefaultRuleOptionsOutputReference getOptions();
+public SecurityMonitoringDefaultRuleOptionsList getOptions();
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference">SecurityMonitoringDefaultRuleOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList">SecurityMonitoringDefaultRuleOptionsList</a>
 
 ---
 
@@ -1069,23 +1058,13 @@ public IResolvable|java.util.List<SecurityMonitoringDefaultRuleFilter> getFilter
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `optionsInput`<sup>Optional</sup> <a name="optionsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.optionsInput"></a>
 
 ```java
-public SecurityMonitoringDefaultRuleOptions getOptionsInput();
+public IResolvable|java.util.List<SecurityMonitoringDefaultRuleOptions> getOptionsInput();
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>>
 
 ---
 
@@ -1136,16 +1115,6 @@ public java.lang.Boolean|IResolvable getEnabled();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -1203,7 +1172,7 @@ public java.lang.String getStatus();
 
 Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
 
 ---
 
@@ -1217,7 +1186,7 @@ public java.lang.String getCustomStatus();
 
 Status of the rule case to override. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
 
 ---
 
@@ -1231,7 +1200,7 @@ public java.util.List<java.lang.String> getNotifications();
 
 Notification targets for each rule case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
 
 ---
 
@@ -1256,8 +1225,7 @@ SecurityMonitoringDefaultRuleConfig.builder()
 //  .customTags(java.util.List<java.lang.String>)
 //  .enabled(java.lang.Boolean|IResolvable)
 //  .filter(IResolvable|java.util.List<SecurityMonitoringDefaultRuleFilter>)
-//  .id(java.lang.String)
-//  .options(SecurityMonitoringDefaultRuleOptions)
+//  .options(IResolvable|java.util.List<SecurityMonitoringDefaultRuleOptions>)
 //  .query(IResolvable|java.util.List<SecurityMonitoringDefaultRuleQuery>)
     .build();
 ```
@@ -1279,8 +1247,7 @@ SecurityMonitoringDefaultRuleConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.customTags">customTags</a></code> | <code>java.util.List<java.lang.String></code> | Custom tags for generated signals. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable the rule. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilter">SecurityMonitoringDefaultRuleFilter</a>></code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options">options</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | options block. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options">options</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>></code> | options block. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.query">query</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery">SecurityMonitoringDefaultRuleQuery</a>></code> | query block. |
 
 ---
@@ -1365,7 +1332,7 @@ public IResolvable|java.util.List<SecurityMonitoringDefaultRuleCase> getCase();
 
 case block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
 
 ---
 
@@ -1379,7 +1346,7 @@ public java.lang.String getCustomMessage();
 
 Custom Message (will override default message) for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
 
 ---
 
@@ -1393,7 +1360,7 @@ public java.lang.String getCustomName();
 
 The name (will override default name) of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
 
 ---
 
@@ -1407,7 +1374,7 @@ public java.util.List<java.lang.String> getCustomTags();
 
 Custom tags for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
 
 ---
 
@@ -1421,7 +1388,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Enable the rule. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
 
 ---
 
@@ -1435,36 +1402,21 @@ public IResolvable|java.util.List<SecurityMonitoringDefaultRuleFilter> getFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
 
 ---
 
 ##### `options`<sup>Optional</sup> <a name="options" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options"></a>
 
 ```java
-public SecurityMonitoringDefaultRuleOptions getOptions();
+public IResolvable|java.util.List<SecurityMonitoringDefaultRuleOptions> getOptions();
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>>
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
 
 ---
 
@@ -1478,7 +1430,7 @@ public IResolvable|java.util.List<SecurityMonitoringDefaultRuleQuery> getQuery()
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -1514,7 +1466,7 @@ public java.lang.String getAction();
 
 The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
 
 ---
 
@@ -1528,7 +1480,7 @@ public java.lang.String getQuery();
 
 Query for selecting logs to apply the filtering action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -1564,7 +1516,7 @@ If true, signals in non-production environments have a lower severity than what 
 
 The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
 
 ---
 
@@ -1577,16 +1529,7 @@ import io.cdktn.providers.datadog.security_monitoring_default_rule.SecurityMonit
 
 SecurityMonitoringDefaultRuleQuery.builder()
 //  .agentRule(IResolvable|java.util.List<SecurityMonitoringDefaultRuleQueryAgentRule>)
-//  .aggregation(java.lang.String)
 //  .customQueryExtension(java.lang.String)
-//  .dataSource(java.lang.String)
-//  .distinctFields(java.util.List<java.lang.String>)
-//  .groupByFields(java.util.List<java.lang.String>)
-//  .hasOptionalGroupByFields(java.lang.Boolean|IResolvable)
-//  .metric(java.lang.String)
-//  .metrics(java.util.List<java.lang.String>)
-//  .name(java.lang.String)
-//  .query(java.lang.String)
     .build();
 ```
 
@@ -1595,16 +1538,7 @@ SecurityMonitoringDefaultRuleQuery.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.agentRule">agentRule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>></code> | agent_rule block. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.aggregation">aggregation</a></code> | <code>java.lang.String</code> | The aggregation type. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.customQueryExtension">customQueryExtension</a></code> | <code>java.lang.String</code> | Query extension to append to the logs query. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`, `security_signals`. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.distinctFields">distinctFields</a></code> | <code>java.util.List<java.lang.String></code> | Field for which the cardinality is measured. Sent as an array. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.groupByFields">groupByFields</a></code> | <code>java.util.List<java.lang.String></code> | Fields to group by. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.hasOptionalGroupByFields">hasOptionalGroupByFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When false, events without a group-by value are ignored by the rule. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metric">metric</a></code> | <code>java.lang.String</code> | The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.name">name</a></code> | <code>java.lang.String</code> | Name of the query. Not compatible with `new_value` aggregations. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.query">query</a></code> | <code>java.lang.String</code> | Query to run on logs. |
 
 ---
 
@@ -1618,23 +1552,7 @@ public IResolvable|java.util.List<SecurityMonitoringDefaultRuleQueryAgentRule> g
 
 agent_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
-
----
-
-##### `aggregation`<sup>Optional</sup> <a name="aggregation" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.aggregation"></a>
-
-```java
-public java.lang.String getAggregation();
-```
-
-- *Type:* java.lang.String
-
-The aggregation type.
-
-For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#aggregation SecurityMonitoringDefaultRule#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
 
 ---
 
@@ -1648,125 +1566,7 @@ public java.lang.String getCustomQueryExtension();
 
 Query extension to append to the logs query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
-
----
-
-##### `dataSource`<sup>Optional</sup> <a name="dataSource" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.dataSource"></a>
-
-```java
-public java.lang.String getDataSource();
-```
-
-- *Type:* java.lang.String
-
-Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`, `security_signals`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#data_source SecurityMonitoringDefaultRule#data_source}
-
----
-
-##### `distinctFields`<sup>Optional</sup> <a name="distinctFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.distinctFields"></a>
-
-```java
-public java.util.List<java.lang.String> getDistinctFields();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Field for which the cardinality is measured. Sent as an array.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#distinct_fields SecurityMonitoringDefaultRule#distinct_fields}
-
----
-
-##### `groupByFields`<sup>Optional</sup> <a name="groupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.groupByFields"></a>
-
-```java
-public java.util.List<java.lang.String> getGroupByFields();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Fields to group by.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#group_by_fields SecurityMonitoringDefaultRule#group_by_fields}
-
----
-
-##### `hasOptionalGroupByFields`<sup>Optional</sup> <a name="hasOptionalGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.hasOptionalGroupByFields"></a>
-
-```java
-public java.lang.Boolean|IResolvable getHasOptionalGroupByFields();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
-When false, events without a group-by value are ignored by the rule.
-
-When true, events with missing group-by fields are processed with `N/A`, replacing the missing values.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#has_optional_group_by_fields SecurityMonitoringDefaultRule#has_optional_group_by_fields}
-
----
-
-##### `metric`<sup>Optional</sup> <a name="metric" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metric"></a>
-
-```java
-public java.lang.String getMetric();
-```
-
-- *Type:* java.lang.String
-
-The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations.
-
-**Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#metric SecurityMonitoringDefaultRule#metric}
-
----
-
-##### `metrics`<sup>Optional</sup> <a name="metrics" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metrics"></a>
-
-```java
-public java.util.List<java.lang.String> getMetrics();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations.
-
-The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#metrics SecurityMonitoringDefaultRule#metrics}
-
----
-
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.name"></a>
-
-```java
-public java.lang.String getName();
-```
-
-- *Type:* java.lang.String
-
-Name of the query. Not compatible with `new_value` aggregations.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#name SecurityMonitoringDefaultRule#name}
-
----
-
-##### `query`<sup>Optional</sup> <a name="query" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.query"></a>
-
-```java
-public java.lang.String getQuery();
-```
-
-- *Type:* java.lang.String
-
-Query to run on logs.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
 
 ---
 
@@ -1802,7 +1602,7 @@ public java.lang.String getAgentRuleId();
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
 
 ---
 
@@ -1816,7 +1616,7 @@ public java.lang.String getExpression();
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
 
 ---
 
@@ -2800,6 +2600,166 @@ public IResolvable|SecurityMonitoringDefaultRuleFilter getInternalValue();
 ---
 
 
+### SecurityMonitoringDefaultRuleOptionsList <a name="SecurityMonitoringDefaultRuleOptionsList" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.datadog.security_monitoring_default_rule.SecurityMonitoringDefaultRuleOptionsList;
+
+new SecurityMonitoringDefaultRuleOptionsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.get"></a>
+
+```java
+public SecurityMonitoringDefaultRuleOptionsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<SecurityMonitoringDefaultRuleOptions> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>>
+
+---
+
+
 ### SecurityMonitoringDefaultRuleOptionsOutputReference <a name="SecurityMonitoringDefaultRuleOptionsOutputReference" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer"></a>
@@ -2807,13 +2767,15 @@ public IResolvable|SecurityMonitoringDefaultRuleFilter getInternalValue();
 ```java
 import io.cdktn.providers.datadog.security_monitoring_default_rule.SecurityMonitoringDefaultRuleOptionsOutputReference;
 
-new SecurityMonitoringDefaultRuleOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+new SecurityMonitoringDefaultRuleOptionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2830,6 +2792,22 @@ The parent resource.
 - *Type:* java.lang.String
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -3019,7 +2997,7 @@ public void resetDecreaseCriticalityBasedOnEnv()
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.decreaseCriticalityBasedOnEnvInput">decreaseCriticalityBasedOnEnvInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.decreaseCriticalityBasedOnEnv">decreaseCriticalityBasedOnEnv</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | *No description.* |
 
 ---
 
@@ -3070,10 +3048,10 @@ public java.lang.Boolean|IResolvable getDecreaseCriticalityBasedOnEnv();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.internalValue"></a>
 
 ```java
-public SecurityMonitoringDefaultRuleOptions getInternalValue();
+public IResolvable|SecurityMonitoringDefaultRuleOptions getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
 
 ---
 
@@ -3779,16 +3757,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.putAgentRule">putAgentRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetAgentRule">resetAgentRule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetAggregation">resetAggregation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetCustomQueryExtension">resetCustomQueryExtension</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDataSource">resetDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDistinctFields">resetDistinctFields</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetGroupByFields">resetGroupByFields</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetHasOptionalGroupByFields">resetHasOptionalGroupByFields</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetric">resetMetric</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetrics">resetMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetName">resetName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetQuery">resetQuery</a></code> | *No description.* |
 
 ---
 
@@ -3960,64 +3929,10 @@ public void putAgentRule(IResolvable|java.util.List<SecurityMonitoringDefaultRul
 public void resetAgentRule()
 ```
 
-##### `resetAggregation` <a name="resetAggregation" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetAggregation"></a>
-
-```java
-public void resetAggregation()
-```
-
 ##### `resetCustomQueryExtension` <a name="resetCustomQueryExtension" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetCustomQueryExtension"></a>
 
 ```java
 public void resetCustomQueryExtension()
-```
-
-##### `resetDataSource` <a name="resetDataSource" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDataSource"></a>
-
-```java
-public void resetDataSource()
-```
-
-##### `resetDistinctFields` <a name="resetDistinctFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDistinctFields"></a>
-
-```java
-public void resetDistinctFields()
-```
-
-##### `resetGroupByFields` <a name="resetGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetGroupByFields"></a>
-
-```java
-public void resetGroupByFields()
-```
-
-##### `resetHasOptionalGroupByFields` <a name="resetHasOptionalGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetHasOptionalGroupByFields"></a>
-
-```java
-public void resetHasOptionalGroupByFields()
-```
-
-##### `resetMetric` <a name="resetMetric" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetric"></a>
-
-```java
-public void resetMetric()
-```
-
-##### `resetMetrics` <a name="resetMetrics" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetrics"></a>
-
-```java
-public void resetMetrics()
-```
-
-##### `resetName` <a name="resetName" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetName"></a>
-
-```java
-public void resetName()
-```
-
-##### `resetQuery` <a name="resetQuery" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetQuery"></a>
-
-```java
-public void resetQuery()
 ```
 
 
@@ -4028,27 +3943,18 @@ public void resetQuery()
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRule">agentRule</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRuleList">SecurityMonitoringDefaultRuleQueryAgentRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput">agentRuleInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregationInput">aggregationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput">customQueryExtensionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSourceInput">dataSourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFieldsInput">distinctFieldsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFieldsInput">groupByFieldsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFieldsInput">hasOptionalGroupByFieldsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricInput">metricInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricsInput">metricsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.queryInput">queryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregation">aggregation</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension">customQueryExtension</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFields">distinctFields</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFields">groupByFields</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields">hasOptionalGroupByFields</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields">hasOptionalGroupByFields</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metric">metric</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metrics">metrics</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.query">query</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput">agentRuleInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput">customQueryExtensionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension">customQueryExtension</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery">SecurityMonitoringDefaultRuleQuery</a></code> | *No description.* |
 
 ---
@@ -4087,130 +3993,10 @@ public SecurityMonitoringDefaultRuleQueryAgentRuleList getAgentRule();
 
 ---
 
-##### `agentRuleInput`<sup>Optional</sup> <a name="agentRuleInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput"></a>
-
-```java
-public IResolvable|java.util.List<SecurityMonitoringDefaultRuleQueryAgentRule> getAgentRuleInput();
-```
-
-- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>>
-
----
-
-##### `aggregationInput`<sup>Optional</sup> <a name="aggregationInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregationInput"></a>
-
-```java
-public java.lang.String getAggregationInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `customQueryExtensionInput`<sup>Optional</sup> <a name="customQueryExtensionInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput"></a>
-
-```java
-public java.lang.String getCustomQueryExtensionInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `dataSourceInput`<sup>Optional</sup> <a name="dataSourceInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSourceInput"></a>
-
-```java
-public java.lang.String getDataSourceInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `distinctFieldsInput`<sup>Optional</sup> <a name="distinctFieldsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFieldsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getDistinctFieldsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `groupByFieldsInput`<sup>Optional</sup> <a name="groupByFieldsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFieldsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getGroupByFieldsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `hasOptionalGroupByFieldsInput`<sup>Optional</sup> <a name="hasOptionalGroupByFieldsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFieldsInput"></a>
-
-```java
-public java.lang.Boolean|IResolvable getHasOptionalGroupByFieldsInput();
-```
-
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
-
----
-
-##### `metricInput`<sup>Optional</sup> <a name="metricInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricInput"></a>
-
-```java
-public java.lang.String getMetricInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `metricsInput`<sup>Optional</sup> <a name="metricsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricsInput"></a>
-
-```java
-public java.util.List<java.lang.String> getMetricsInput();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
----
-
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.nameInput"></a>
-
-```java
-public java.lang.String getNameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `queryInput`<sup>Optional</sup> <a name="queryInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.queryInput"></a>
-
-```java
-public java.lang.String getQueryInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `aggregation`<sup>Required</sup> <a name="aggregation" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregation"></a>
 
 ```java
 public java.lang.String getAggregation();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `customQueryExtension`<sup>Required</sup> <a name="customQueryExtension" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension"></a>
-
-```java
-public java.lang.String getCustomQueryExtension();
 ```
 
 - *Type:* java.lang.String
@@ -4250,10 +4036,10 @@ public java.util.List<java.lang.String> getGroupByFields();
 ##### `hasOptionalGroupByFields`<sup>Required</sup> <a name="hasOptionalGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields"></a>
 
 ```java
-public java.lang.Boolean|IResolvable getHasOptionalGroupByFields();
+public IResolvable getHasOptionalGroupByFields();
 ```
 
-- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -4291,6 +4077,36 @@ public java.lang.String getName();
 
 ```java
 public java.lang.String getQuery();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `agentRuleInput`<sup>Optional</sup> <a name="agentRuleInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput"></a>
+
+```java
+public IResolvable|java.util.List<SecurityMonitoringDefaultRuleQueryAgentRule> getAgentRuleInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>>
+
+---
+
+##### `customQueryExtensionInput`<sup>Optional</sup> <a name="customQueryExtensionInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput"></a>
+
+```java
+public java.lang.String getCustomQueryExtensionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `customQueryExtension`<sup>Required</sup> <a name="customQueryExtension" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension"></a>
+
+```java
+public java.lang.String getCustomQueryExtension();
 ```
 
 - *Type:* java.lang.String

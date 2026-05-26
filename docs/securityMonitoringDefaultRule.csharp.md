@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringDefaultRule <a name="SecurityMonitoringDefaultRule" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule datadog_security_monitoring_default_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.Initializer"></a>
 
@@ -84,7 +84,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetCustomTags">ResetCustomTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetFilter">ResetFilter</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetOptions">ResetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetQuery">ResetQuery</a></code> | *No description.* |
 
@@ -426,12 +425,12 @@ private void PutFilter(IResolvable|SecurityMonitoringDefaultRuleFilter[] Value)
 ##### `PutOptions` <a name="PutOptions" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.putOptions"></a>
 
 ```csharp
-private void PutOptions(SecurityMonitoringDefaultRuleOptions Value)
+private void PutOptions(IResolvable|SecurityMonitoringDefaultRuleOptions[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.putOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>[]
 
 ---
 
@@ -481,12 +480,6 @@ private void ResetEnabled()
 
 ```csharp
 private void ResetFilter()
-```
-
-##### `ResetId` <a name="ResetId" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetId"></a>
-
-```csharp
-private void ResetId()
 ```
 
 ##### `ResetOptions` <a name="ResetOptions" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.resetOptions"></a>
@@ -604,7 +597,7 @@ The construct id used in the generated config for the SecurityMonitoringDefaultR
 
 The id of the existing SecurityMonitoringDefaultRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -636,7 +629,8 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.case">Case</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleCaseList">SecurityMonitoringDefaultRuleCaseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilterList">SecurityMonitoringDefaultRuleFilterList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.options">Options</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference">SecurityMonitoringDefaultRuleOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.options">Options</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList">SecurityMonitoringDefaultRuleOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.query">Query</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryList">SecurityMonitoringDefaultRuleQueryList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.type">Type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.caseInput">CaseInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleCase">SecurityMonitoringDefaultRuleCase</a>[]</code> | *No description.* |
@@ -645,14 +639,12 @@ Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customTagsInput">CustomTagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.enabledInput">EnabledInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.filterInput">FilterInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilter">SecurityMonitoringDefaultRuleFilter</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.optionsInput">OptionsInput</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.optionsInput">OptionsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.queryInput">QueryInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery">SecurityMonitoringDefaultRuleQuery</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customMessage">CustomMessage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customName">CustomName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.customTags">CustomTags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id">Id</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -818,13 +810,23 @@ public SecurityMonitoringDefaultRuleFilterList Filter { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Options`<sup>Required</sup> <a name="Options" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.options"></a>
 
 ```csharp
-public SecurityMonitoringDefaultRuleOptionsOutputReference Options { get; }
+public SecurityMonitoringDefaultRuleOptionsList Options { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference">SecurityMonitoringDefaultRuleOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList">SecurityMonitoringDefaultRuleOptionsList</a>
 
 ---
 
@@ -908,23 +910,13 @@ public IResolvable|SecurityMonitoringDefaultRuleFilter[] FilterInput { get; }
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `OptionsInput`<sup>Optional</sup> <a name="OptionsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.optionsInput"></a>
 
 ```csharp
-public SecurityMonitoringDefaultRuleOptions OptionsInput { get; }
+public IResolvable|SecurityMonitoringDefaultRuleOptions[] OptionsInput { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>[]
 
 ---
 
@@ -975,16 +967,6 @@ public bool|IResolvable Enabled { get; }
 ```
 
 - *Type:* bool|Io.Cdktn.IResolvable
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRule.property.id"></a>
-
-```csharp
-public string Id { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -1042,7 +1024,7 @@ public string Status { get; set; }
 
 Status of the rule case to match. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#status SecurityMonitoringDefaultRule#status}
 
 ---
 
@@ -1056,7 +1038,7 @@ public string CustomStatus { get; set; }
 
 Status of the rule case to override. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_status SecurityMonitoringDefaultRule#custom_status}
 
 ---
 
@@ -1070,7 +1052,7 @@ public string[] Notifications { get; set; }
 
 Notification targets for each rule case.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#notifications SecurityMonitoringDefaultRule#notifications}
 
 ---
 
@@ -1095,8 +1077,7 @@ new SecurityMonitoringDefaultRuleConfig {
     string[] CustomTags = null,
     bool|IResolvable Enabled = null,
     IResolvable|SecurityMonitoringDefaultRuleFilter[] Filter = null,
-    string Id = null,
-    SecurityMonitoringDefaultRuleOptions Options = null,
+    IResolvable|SecurityMonitoringDefaultRuleOptions[] Options = null,
     IResolvable|SecurityMonitoringDefaultRuleQuery[] Query = null
 };
 ```
@@ -1118,8 +1099,7 @@ new SecurityMonitoringDefaultRuleConfig {
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.customTags">CustomTags</a></code> | <code>string[]</code> | Custom tags for generated signals. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Enable the rule. Defaults to `true`. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.filter">Filter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleFilter">SecurityMonitoringDefaultRuleFilter</a>[]</code> | filter block. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options">Options</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | options block. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options">Options</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>[]</code> | options block. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.query">Query</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery">SecurityMonitoringDefaultRuleQuery</a>[]</code> | query block. |
 
 ---
@@ -1204,7 +1184,7 @@ public IResolvable|SecurityMonitoringDefaultRuleCase[] Case { get; set; }
 
 case block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#case SecurityMonitoringDefaultRule#case}
 
 ---
 
@@ -1218,7 +1198,7 @@ public string CustomMessage { get; set; }
 
 Custom Message (will override default message) for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_message SecurityMonitoringDefaultRule#custom_message}
 
 ---
 
@@ -1232,7 +1212,7 @@ public string CustomName { get; set; }
 
 The name (will override default name) of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_name SecurityMonitoringDefaultRule#custom_name}
 
 ---
 
@@ -1246,7 +1226,7 @@ public string[] CustomTags { get; set; }
 
 Custom tags for generated signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_tags SecurityMonitoringDefaultRule#custom_tags}
 
 ---
 
@@ -1260,7 +1240,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Enable the rule. Defaults to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#enabled SecurityMonitoringDefaultRule#enabled}
 
 ---
 
@@ -1274,36 +1254,21 @@ public IResolvable|SecurityMonitoringDefaultRuleFilter[] Filter { get; set; }
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#id SecurityMonitoringDefaultRule#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#filter SecurityMonitoringDefaultRule#filter}
 
 ---
 
 ##### `Options`<sup>Optional</sup> <a name="Options" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleConfig.property.options"></a>
 
 ```csharp
-public SecurityMonitoringDefaultRuleOptions Options { get; set; }
+public IResolvable|SecurityMonitoringDefaultRuleOptions[] Options { get; set; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>[]
 
 options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#options SecurityMonitoringDefaultRule#options}
 
 ---
 
@@ -1317,7 +1282,7 @@ public IResolvable|SecurityMonitoringDefaultRuleQuery[] Query { get; set; }
 
 query block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -1353,7 +1318,7 @@ public string Action { get; set; }
 
 The type of filtering action. Allowed enum values: require, suppress Valid values are `require`, `suppress`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#action SecurityMonitoringDefaultRule#action}
 
 ---
 
@@ -1367,7 +1332,7 @@ public string Query { get; set; }
 
 Query for selecting logs to apply the filtering action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
 
 ---
 
@@ -1403,7 +1368,7 @@ If true, signals in non-production environments have a lower severity than what 
 
 The decrement is applied when the environment tag of the signal starts with `staging`, `test`, or `dev`. Only available when the rule type is `log_detection`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#decrease_criticality_based_on_env SecurityMonitoringDefaultRule#decrease_criticality_based_on_env}
 
 ---
 
@@ -1416,16 +1381,7 @@ using Io.Cdktn.Providers.Datadog;
 
 new SecurityMonitoringDefaultRuleQuery {
     IResolvable|SecurityMonitoringDefaultRuleQueryAgentRule[] AgentRule = null,
-    string Aggregation = null,
-    string CustomQueryExtension = null,
-    string DataSource = null,
-    string[] DistinctFields = null,
-    string[] GroupByFields = null,
-    bool|IResolvable HasOptionalGroupByFields = null,
-    string Metric = null,
-    string[] Metrics = null,
-    string Name = null,
-    string Query = null
+    string CustomQueryExtension = null
 };
 ```
 
@@ -1434,16 +1390,7 @@ new SecurityMonitoringDefaultRuleQuery {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.agentRule">AgentRule</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>[]</code> | agent_rule block. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.aggregation">Aggregation</a></code> | <code>string</code> | The aggregation type. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.customQueryExtension">CustomQueryExtension</a></code> | <code>string</code> | Query extension to append to the logs query. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.dataSource">DataSource</a></code> | <code>string</code> | Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`, `security_signals`. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.distinctFields">DistinctFields</a></code> | <code>string[]</code> | Field for which the cardinality is measured. Sent as an array. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.groupByFields">GroupByFields</a></code> | <code>string[]</code> | Fields to group by. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.hasOptionalGroupByFields">HasOptionalGroupByFields</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | When false, events without a group-by value are ignored by the rule. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metric">Metric</a></code> | <code>string</code> | The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metrics">Metrics</a></code> | <code>string[]</code> | Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.name">Name</a></code> | <code>string</code> | Name of the query. Not compatible with `new_value` aggregations. |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.query">Query</a></code> | <code>string</code> | Query to run on logs. |
 
 ---
 
@@ -1457,23 +1404,7 @@ public IResolvable|SecurityMonitoringDefaultRuleQueryAgentRule[] AgentRule { get
 
 agent_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
-
----
-
-##### `Aggregation`<sup>Optional</sup> <a name="Aggregation" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.aggregation"></a>
-
-```csharp
-public string Aggregation { get; set; }
-```
-
-- *Type:* string
-
-The aggregation type.
-
-For Signal Correlation rules, it must be event_count. Valid values are `count`, `cardinality`, `sum`, `max`, `new_value`, `geo_data`, `event_count`, `none`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#aggregation SecurityMonitoringDefaultRule#aggregation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#agent_rule SecurityMonitoringDefaultRule#agent_rule}
 
 ---
 
@@ -1487,125 +1418,7 @@ public string CustomQueryExtension { get; set; }
 
 Query extension to append to the logs query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
-
----
-
-##### `DataSource`<sup>Optional</sup> <a name="DataSource" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.dataSource"></a>
-
-```csharp
-public string DataSource { get; set; }
-```
-
-- *Type:* string
-
-Source of events. Valid values are `logs`, `audit`, `app_sec_spans`, `spans`, `security_runtime`, `network`, `events`, `security_signals`.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#data_source SecurityMonitoringDefaultRule#data_source}
-
----
-
-##### `DistinctFields`<sup>Optional</sup> <a name="DistinctFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.distinctFields"></a>
-
-```csharp
-public string[] DistinctFields { get; set; }
-```
-
-- *Type:* string[]
-
-Field for which the cardinality is measured. Sent as an array.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#distinct_fields SecurityMonitoringDefaultRule#distinct_fields}
-
----
-
-##### `GroupByFields`<sup>Optional</sup> <a name="GroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.groupByFields"></a>
-
-```csharp
-public string[] GroupByFields { get; set; }
-```
-
-- *Type:* string[]
-
-Fields to group by.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#group_by_fields SecurityMonitoringDefaultRule#group_by_fields}
-
----
-
-##### `HasOptionalGroupByFields`<sup>Optional</sup> <a name="HasOptionalGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.hasOptionalGroupByFields"></a>
-
-```csharp
-public bool|IResolvable HasOptionalGroupByFields { get; set; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
-When false, events without a group-by value are ignored by the rule.
-
-When true, events with missing group-by fields are processed with `N/A`, replacing the missing values.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#has_optional_group_by_fields SecurityMonitoringDefaultRule#has_optional_group_by_fields}
-
----
-
-##### `Metric`<sup>Optional</sup> <a name="Metric" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metric"></a>
-
-```csharp
-public string Metric { get; set; }
-```
-
-- *Type:* string
-
-The target field to aggregate over when using the `sum`, `max`, or `geo_data` aggregations.
-
-**Deprecated.** Configure `metrics` instead. This attribute will be removed in the next major version of the provider.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#metric SecurityMonitoringDefaultRule#metric}
-
----
-
-##### `Metrics`<sup>Optional</sup> <a name="Metrics" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.metrics"></a>
-
-```csharp
-public string[] Metrics { get; set; }
-```
-
-- *Type:* string[]
-
-Group of target fields to aggregate over when using the `sum`, `max`, `geo_data`, or `new_value` aggregations.
-
-The `sum`, `max`, and `geo_data` aggregations only accept one value in this list, whereas the `new_value` aggregation accepts up to five values.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#metrics SecurityMonitoringDefaultRule#metrics}
-
----
-
-##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.name"></a>
-
-```csharp
-public string Name { get; set; }
-```
-
-- *Type:* string
-
-Name of the query. Not compatible with `new_value` aggregations.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#name SecurityMonitoringDefaultRule#name}
-
----
-
-##### `Query`<sup>Optional</sup> <a name="Query" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery.property.query"></a>
-
-```csharp
-public string Query { get; set; }
-```
-
-- *Type:* string
-
-Query to run on logs.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#query SecurityMonitoringDefaultRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#custom_query_extension SecurityMonitoringDefaultRule#custom_query_extension}
 
 ---
 
@@ -1641,7 +1454,7 @@ public string AgentRuleId { get; set; }
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#agent_rule_id SecurityMonitoringDefaultRule#agent_rule_id}
 
 ---
 
@@ -1655,7 +1468,7 @@ public string Expression { get; set; }
 
 **Deprecated**. It won't be applied anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_default_rule#expression SecurityMonitoringDefaultRule#expression}
 
 ---
 
@@ -2639,6 +2452,166 @@ public IResolvable|SecurityMonitoringDefaultRuleFilter InternalValue { get; }
 ---
 
 
+### SecurityMonitoringDefaultRuleOptionsList <a name="SecurityMonitoringDefaultRuleOptionsList" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Datadog;
+
+new SecurityMonitoringDefaultRuleOptionsList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.get"></a>
+
+```csharp
+private SecurityMonitoringDefaultRuleOptionsOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsList.property.internalValue"></a>
+
+```csharp
+public IResolvable|SecurityMonitoringDefaultRuleOptions[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>[]
+
+---
+
+
 ### SecurityMonitoringDefaultRuleOptionsOutputReference <a name="SecurityMonitoringDefaultRuleOptionsOutputReference" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer"></a>
@@ -2646,13 +2619,15 @@ public IResolvable|SecurityMonitoringDefaultRuleFilter InternalValue { get; }
 ```csharp
 using Io.Cdktn.Providers.Datadog;
 
-new SecurityMonitoringDefaultRuleOptionsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+new SecurityMonitoringDefaultRuleOptionsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2669,6 +2644,22 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2858,7 +2849,7 @@ private void ResetDecreaseCriticalityBasedOnEnv()
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.decreaseCriticalityBasedOnEnvInput">DecreaseCriticalityBasedOnEnvInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.decreaseCriticalityBasedOnEnv">DecreaseCriticalityBasedOnEnv</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a></code> | *No description.* |
 
 ---
 
@@ -2909,10 +2900,10 @@ public bool|IResolvable DecreaseCriticalityBasedOnEnv { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptionsOutputReference.property.internalValue"></a>
 
 ```csharp
-public SecurityMonitoringDefaultRuleOptions InternalValue { get; }
+public IResolvable|SecurityMonitoringDefaultRuleOptions InternalValue { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleOptions">SecurityMonitoringDefaultRuleOptions</a>
 
 ---
 
@@ -3618,16 +3609,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.putAgentRule">PutAgentRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetAgentRule">ResetAgentRule</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetAggregation">ResetAggregation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetCustomQueryExtension">ResetCustomQueryExtension</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDataSource">ResetDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDistinctFields">ResetDistinctFields</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetGroupByFields">ResetGroupByFields</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetHasOptionalGroupByFields">ResetHasOptionalGroupByFields</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetric">ResetMetric</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetrics">ResetMetrics</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetName">ResetName</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetQuery">ResetQuery</a></code> | *No description.* |
 
 ---
 
@@ -3799,64 +3781,10 @@ private void PutAgentRule(IResolvable|SecurityMonitoringDefaultRuleQueryAgentRul
 private void ResetAgentRule()
 ```
 
-##### `ResetAggregation` <a name="ResetAggregation" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetAggregation"></a>
-
-```csharp
-private void ResetAggregation()
-```
-
 ##### `ResetCustomQueryExtension` <a name="ResetCustomQueryExtension" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetCustomQueryExtension"></a>
 
 ```csharp
 private void ResetCustomQueryExtension()
-```
-
-##### `ResetDataSource` <a name="ResetDataSource" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDataSource"></a>
-
-```csharp
-private void ResetDataSource()
-```
-
-##### `ResetDistinctFields` <a name="ResetDistinctFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetDistinctFields"></a>
-
-```csharp
-private void ResetDistinctFields()
-```
-
-##### `ResetGroupByFields` <a name="ResetGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetGroupByFields"></a>
-
-```csharp
-private void ResetGroupByFields()
-```
-
-##### `ResetHasOptionalGroupByFields` <a name="ResetHasOptionalGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetHasOptionalGroupByFields"></a>
-
-```csharp
-private void ResetHasOptionalGroupByFields()
-```
-
-##### `ResetMetric` <a name="ResetMetric" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetric"></a>
-
-```csharp
-private void ResetMetric()
-```
-
-##### `ResetMetrics` <a name="ResetMetrics" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetMetrics"></a>
-
-```csharp
-private void ResetMetrics()
-```
-
-##### `ResetName` <a name="ResetName" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetName"></a>
-
-```csharp
-private void ResetName()
-```
-
-##### `ResetQuery` <a name="ResetQuery" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.resetQuery"></a>
-
-```csharp
-private void ResetQuery()
 ```
 
 
@@ -3867,27 +3795,18 @@ private void ResetQuery()
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRule">AgentRule</a></code> | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRuleList">SecurityMonitoringDefaultRuleQueryAgentRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput">AgentRuleInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregationInput">AggregationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput">CustomQueryExtensionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSourceInput">DataSourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFieldsInput">DistinctFieldsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFieldsInput">GroupByFieldsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFieldsInput">HasOptionalGroupByFieldsInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricInput">MetricInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricsInput">MetricsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.queryInput">QueryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregation">Aggregation</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension">CustomQueryExtension</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSource">DataSource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFields">DistinctFields</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFields">GroupByFields</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields">HasOptionalGroupByFields</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields">HasOptionalGroupByFields</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metric">Metric</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metrics">Metrics</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.query">Query</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput">AgentRuleInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput">CustomQueryExtensionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension">CustomQueryExtension</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQuery">SecurityMonitoringDefaultRuleQuery</a></code> | *No description.* |
 
 ---
@@ -3926,130 +3845,10 @@ public SecurityMonitoringDefaultRuleQueryAgentRuleList AgentRule { get; }
 
 ---
 
-##### `AgentRuleInput`<sup>Optional</sup> <a name="AgentRuleInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput"></a>
-
-```csharp
-public IResolvable|SecurityMonitoringDefaultRuleQueryAgentRule[] AgentRuleInput { get; }
-```
-
-- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>[]
-
----
-
-##### `AggregationInput`<sup>Optional</sup> <a name="AggregationInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregationInput"></a>
-
-```csharp
-public string AggregationInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `CustomQueryExtensionInput`<sup>Optional</sup> <a name="CustomQueryExtensionInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput"></a>
-
-```csharp
-public string CustomQueryExtensionInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `DataSourceInput`<sup>Optional</sup> <a name="DataSourceInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.dataSourceInput"></a>
-
-```csharp
-public string DataSourceInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `DistinctFieldsInput`<sup>Optional</sup> <a name="DistinctFieldsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.distinctFieldsInput"></a>
-
-```csharp
-public string[] DistinctFieldsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `GroupByFieldsInput`<sup>Optional</sup> <a name="GroupByFieldsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.groupByFieldsInput"></a>
-
-```csharp
-public string[] GroupByFieldsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `HasOptionalGroupByFieldsInput`<sup>Optional</sup> <a name="HasOptionalGroupByFieldsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFieldsInput"></a>
-
-```csharp
-public bool|IResolvable HasOptionalGroupByFieldsInput { get; }
-```
-
-- *Type:* bool|Io.Cdktn.IResolvable
-
----
-
-##### `MetricInput`<sup>Optional</sup> <a name="MetricInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricInput"></a>
-
-```csharp
-public string MetricInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `MetricsInput`<sup>Optional</sup> <a name="MetricsInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.metricsInput"></a>
-
-```csharp
-public string[] MetricsInput { get; }
-```
-
-- *Type:* string[]
-
----
-
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.nameInput"></a>
-
-```csharp
-public string NameInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `QueryInput`<sup>Optional</sup> <a name="QueryInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.queryInput"></a>
-
-```csharp
-public string QueryInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Aggregation`<sup>Required</sup> <a name="Aggregation" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.aggregation"></a>
 
 ```csharp
 public string Aggregation { get; }
-```
-
-- *Type:* string
-
----
-
-##### `CustomQueryExtension`<sup>Required</sup> <a name="CustomQueryExtension" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension"></a>
-
-```csharp
-public string CustomQueryExtension { get; }
 ```
 
 - *Type:* string
@@ -4089,10 +3888,10 @@ public string[] GroupByFields { get; }
 ##### `HasOptionalGroupByFields`<sup>Required</sup> <a name="HasOptionalGroupByFields" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.hasOptionalGroupByFields"></a>
 
 ```csharp
-public bool|IResolvable HasOptionalGroupByFields { get; }
+public IResolvable HasOptionalGroupByFields { get; }
 ```
 
-- *Type:* bool|Io.Cdktn.IResolvable
+- *Type:* Io.Cdktn.IResolvable
 
 ---
 
@@ -4130,6 +3929,36 @@ public string Name { get; }
 
 ```csharp
 public string Query { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AgentRuleInput`<sup>Optional</sup> <a name="AgentRuleInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.agentRuleInput"></a>
+
+```csharp
+public IResolvable|SecurityMonitoringDefaultRuleQueryAgentRule[] AgentRuleInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryAgentRule">SecurityMonitoringDefaultRuleQueryAgentRule</a>[]
+
+---
+
+##### `CustomQueryExtensionInput`<sup>Optional</sup> <a name="CustomQueryExtensionInput" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtensionInput"></a>
+
+```csharp
+public string CustomQueryExtensionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CustomQueryExtension`<sup>Required</sup> <a name="CustomQueryExtension" id="@cdktn/provider-datadog.securityMonitoringDefaultRule.SecurityMonitoringDefaultRuleQueryOutputReference.property.customQueryExtension"></a>
+
+```csharp
+public string CustomQueryExtension { get; }
 ```
 
 - *Type:* string

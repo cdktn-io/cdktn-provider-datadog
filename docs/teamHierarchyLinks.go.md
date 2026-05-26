@@ -4,7 +4,7 @@
 
 ### TeamHierarchyLinks <a name="TeamHierarchyLinks" id="@cdktn/provider-datadog.teamHierarchyLinks.TeamHierarchyLinks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/team_hierarchy_links datadog_team_hierarchy_links}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.teamHierarchyLinks.TeamHierarchyLinks.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the TeamHierarchyLinks to impo
 
 The id of the existing TeamHierarchyLinks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/team_hierarchy_links#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ ParentTeamId *string
 
 ID of the parent team the team hierarchy link is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_hierarchy_links#parent_team_id TeamHierarchyLinks#parent_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/team_hierarchy_links#parent_team_id TeamHierarchyLinks#parent_team_id}
 
 ---
 
@@ -891,7 +891,7 @@ SubTeamId *string
 
 ID of the sub team the team hierarchy link is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/team_hierarchy_links#sub_team_id TeamHierarchyLinks#sub_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/team_hierarchy_links#sub_team_id TeamHierarchyLinks#sub_team_id}
 
 ---
 
