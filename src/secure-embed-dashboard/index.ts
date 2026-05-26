@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface SecureEmbedDashboardConfig extends cdktn.TerraformMetaArguments
   /**
   * The ID of the dashboard to create a secure embed for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#dashboard_id SecureEmbedDashboard#dashboard_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#dashboard_id SecureEmbedDashboard#dashboard_id}
   */
   readonly dashboardId: string;
   /**
   * The live span for the global time, e.g. `1h`, `4h`, `1d`, `2d`, `1w`. Defaults to `"1h"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#global_time_live_span SecureEmbedDashboard#global_time_live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#global_time_live_span SecureEmbedDashboard#global_time_live_span}
   */
   readonly globalTimeLiveSpan?: string;
   /**
   * Whether viewers can change the global time range. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#global_time_selectable SecureEmbedDashboard#global_time_selectable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#global_time_selectable SecureEmbedDashboard#global_time_selectable}
   */
   readonly globalTimeSelectable?: boolean | cdktn.IResolvable;
   /**
   * Status of the secure embed. Valid values are `active` and `paused`. Defaults to `"active"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#status SecureEmbedDashboard#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#status SecureEmbedDashboard#status}
   */
   readonly status?: string;
   /**
   * Title of the secure embed share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#title SecureEmbedDashboard#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#title SecureEmbedDashboard#title}
   */
   readonly title: string;
   /**
   * Whether to display the dashboard in high density mode. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#viewing_preferences_high_density SecureEmbedDashboard#viewing_preferences_high_density}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#viewing_preferences_high_density SecureEmbedDashboard#viewing_preferences_high_density}
   */
   readonly viewingPreferencesHighDensity?: boolean | cdktn.IResolvable;
   /**
   * Display theme for the embedded dashboard. Valid values are `system`, `dark`, `light`. Defaults to `"system"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#viewing_preferences_theme SecureEmbedDashboard#viewing_preferences_theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#viewing_preferences_theme SecureEmbedDashboard#viewing_preferences_theme}
   */
   readonly viewingPreferencesTheme?: string;
   /**
   * selectable_template_vars block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#selectable_template_vars SecureEmbedDashboard#selectable_template_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#selectable_template_vars SecureEmbedDashboard#selectable_template_vars}
   */
   readonly selectableTemplateVars?: SecureEmbedDashboardSelectableTemplateVars[] | cdktn.IResolvable;
 }
@@ -65,31 +65,31 @@ export interface SecureEmbedDashboardSelectableTemplateVars {
   /**
   * The default values for this template variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#default_values SecureEmbedDashboard#default_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#default_values SecureEmbedDashboard#default_values}
   */
   readonly defaultValues?: string[];
   /**
   * The name of the template variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#name SecureEmbedDashboard#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#name SecureEmbedDashboard#name}
   */
   readonly name: string;
   /**
   * The tag prefix for this template variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#prefix SecureEmbedDashboard#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#prefix SecureEmbedDashboard#prefix}
   */
   readonly prefix?: string;
   /**
   * The type of the template variable. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#type SecureEmbedDashboard#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#type SecureEmbedDashboard#type}
   */
   readonly type?: string;
   /**
   * The visible tag values for this template variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#visible_tags SecureEmbedDashboard#visible_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#visible_tags SecureEmbedDashboard#visible_tags}
   */
   readonly visibleTags?: string[];
 }
@@ -306,7 +306,7 @@ export class SecureEmbedDashboardSelectableTemplateVarsList extends cdktn.Comple
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -318,7 +318,7 @@ export class SecureEmbedDashboardSelectableTemplateVarsList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard}
 */
 export class SecureEmbedDashboard extends cdktn.TerraformResource {
 
@@ -334,7 +334,7 @@ export class SecureEmbedDashboard extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecureEmbedDashboard resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecureEmbedDashboard to import
-  * @param importFromId The id of the existing SecureEmbedDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecureEmbedDashboard that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecureEmbedDashboard to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -346,7 +346,7 @@ export class SecureEmbedDashboard extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/secure_embed_dashboard datadog_secure_embed_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +357,7 @@ export class SecureEmbedDashboard extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_secure_embed_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

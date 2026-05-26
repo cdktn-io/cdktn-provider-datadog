@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,31 @@ export interface SecurityMonitoringFilterConfig extends cdktn.TerraformMetaArgum
   /**
   * The filtered data type. Valid values are `logs`. Defaults to `"logs"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#filtered_data_type SecurityMonitoringFilter#filtered_data_type}
   */
   readonly filteredDataType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#id SecurityMonitoringFilter#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Whether the security filter is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#is_enabled SecurityMonitoringFilter#is_enabled}
   */
   readonly isEnabled: boolean | cdktn.IResolvable;
   /**
   * The name of the security filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * The query of the security filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;
   /**
   * exclusion_filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#exclusion_filter SecurityMonitoringFilter#exclusion_filter}
   */
   readonly exclusionFilter?: SecurityMonitoringFilterExclusionFilter[] | cdktn.IResolvable;
 }
@@ -54,13 +47,13 @@ export interface SecurityMonitoringFilterExclusionFilter {
   /**
   * Exclusion filter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#name SecurityMonitoringFilter#name}
   */
   readonly name: string;
   /**
   * Exclusion filter query. Logs that match this query are excluded from the security filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#query SecurityMonitoringFilter#query}
   */
   readonly query: string;
 }
@@ -187,7 +180,7 @@ export class SecurityMonitoringFilterExclusionFilterList extends cdktn.ComplexLi
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -199,7 +192,7 @@ export class SecurityMonitoringFilterExclusionFilterList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter}
 */
 export class SecurityMonitoringFilter extends cdktn.TerraformResource {
 
@@ -215,7 +208,7 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecurityMonitoringFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityMonitoringFilter to import
-  * @param importFromId The id of the existing SecurityMonitoringFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecurityMonitoringFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityMonitoringFilter to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -227,7 +220,7 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/security_monitoring_filter datadog_security_monitoring_filter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -238,7 +231,7 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_security_monitoring_filter',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -250,7 +243,6 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._filteredDataType = config.filteredDataType;
-    this._id = config.id;
     this._isEnabled = config.isEnabled;
     this._name = config.name;
     this._query = config.query;
@@ -261,7 +253,7 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // filtered_data_type - computed: false, optional: true, required: false
+  // filtered_data_type - computed: true, optional: true, required: false
   private _filteredDataType?: string; 
   public get filteredDataType() {
     return this.getStringAttribute('filtered_data_type');
@@ -277,20 +269,9 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
     return this._filteredDataType;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // is_enabled - computed: false, optional: false, required: true
@@ -360,7 +341,6 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       filtered_data_type: cdktn.stringToTerraform(this._filteredDataType),
-      id: cdktn.stringToTerraform(this._id),
       is_enabled: cdktn.booleanToTerraform(this._isEnabled),
       name: cdktn.stringToTerraform(this._name),
       query: cdktn.stringToTerraform(this._query),
@@ -372,12 +352,6 @@ export class SecurityMonitoringFilter extends cdktn.TerraformResource {
     const attrs = {
       filtered_data_type: {
         value: cdktn.stringToHclTerraform(this._filteredDataType),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_groups
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -93,7 +93,7 @@ export class DataDatadogOrgGroupsGroupsList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -105,7 +105,7 @@ export class DataDatadogOrgGroupsGroupsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_groups datadog_org_groups}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_groups datadog_org_groups}
 */
 export class DataDatadogOrgGroups extends cdktn.TerraformDataSource {
 
@@ -121,7 +121,7 @@ export class DataDatadogOrgGroups extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogOrgGroups resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogOrgGroups to import
-  * @param importFromId The id of the existing DataDatadogOrgGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_groups#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogOrgGroups that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_groups#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogOrgGroups to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -133,7 +133,7 @@ export class DataDatadogOrgGroups extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/data-sources/org_groups datadog_org_groups} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/org_groups datadog_org_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -144,7 +144,7 @@ export class DataDatadogOrgGroups extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_org_groups',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

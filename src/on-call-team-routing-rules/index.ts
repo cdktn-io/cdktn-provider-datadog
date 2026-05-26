@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface OnCallTeamRoutingRulesConfig extends cdktn.TerraformMetaArgumen
   /**
   * ID of the team to associate the routing rules with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#id OnCallTeamRoutingRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,7 +24,7 @@ export interface OnCallTeamRoutingRulesConfig extends cdktn.TerraformMetaArgumen
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#rule OnCallTeamRoutingRules#rule}
   */
   readonly rule?: OnCallTeamRoutingRulesRule[] | cdktn.IResolvable;
 }
@@ -32,13 +32,13 @@ export interface OnCallTeamRoutingRulesRuleActionSendSlackMessage {
   /**
   * Slack channel ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
   */
   readonly channel?: string;
   /**
   * Slack workspace ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#workspace OnCallTeamRoutingRules#workspace}
   */
   readonly workspace?: string;
 }
@@ -163,19 +163,19 @@ export interface OnCallTeamRoutingRulesRuleActionSendTeamsMessage {
   /**
   * Teams channel ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#channel OnCallTeamRoutingRules#channel}
   */
   readonly channel?: string;
   /**
   * Teams team ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#team OnCallTeamRoutingRules#team}
   */
   readonly team?: string;
   /**
   * Teams tenant ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#tenant OnCallTeamRoutingRules#tenant}
   */
   readonly tenant?: string;
 }
@@ -325,19 +325,121 @@ export class OnCallTeamRoutingRulesRuleActionSendTeamsMessageOutputReference ext
     return this._tenant;
   }
 }
+export interface OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation {
+  /**
+  * The handle of the Workflow Automation to trigger.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#handle OnCallTeamRoutingRules#handle}
+  */
+  readonly handle?: string;
+}
+
+export function onCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationToTerraform(struct?: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    handle: cdktn.stringToTerraform(struct!.handle),
+  }
+}
+
+
+export function onCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationToHclTerraform(struct?: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    handle: {
+      value: cdktn.stringToHclTerraform(struct!.handle),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._handle !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.handle = this._handle;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._handle = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._handle = value.handle;
+    }
+  }
+
+  // handle - computed: false, optional: true, required: false
+  private _handle?: string; 
+  public get handle() {
+    return this.getStringAttribute('handle');
+  }
+  public set handle(value: string) {
+    this._handle = value;
+  }
+  public resetHandle() {
+    this._handle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get handleInput() {
+    return this._handle;
+  }
+}
 export interface OnCallTeamRoutingRulesRuleAction {
   /**
   * send_slack_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#send_slack_message OnCallTeamRoutingRules#send_slack_message}
   */
   readonly sendSlackMessage?: OnCallTeamRoutingRulesRuleActionSendSlackMessage;
   /**
   * send_teams_message block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#send_teams_message OnCallTeamRoutingRules#send_teams_message}
   */
   readonly sendTeamsMessage?: OnCallTeamRoutingRulesRuleActionSendTeamsMessage;
+  /**
+  * trigger_workflow_automation block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#trigger_workflow_automation OnCallTeamRoutingRules#trigger_workflow_automation}
+  */
+  readonly triggerWorkflowAutomation?: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation;
 }
 
 export function onCallTeamRoutingRulesRuleActionToTerraform(struct?: OnCallTeamRoutingRulesRuleAction | cdktn.IResolvable): any {
@@ -348,6 +450,7 @@ export function onCallTeamRoutingRulesRuleActionToTerraform(struct?: OnCallTeamR
   return {
     send_slack_message: onCallTeamRoutingRulesRuleActionSendSlackMessageToTerraform(struct!.sendSlackMessage),
     send_teams_message: onCallTeamRoutingRulesRuleActionSendTeamsMessageToTerraform(struct!.sendTeamsMessage),
+    trigger_workflow_automation: onCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationToTerraform(struct!.triggerWorkflowAutomation),
   }
 }
 
@@ -369,6 +472,12 @@ export function onCallTeamRoutingRulesRuleActionToHclTerraform(struct?: OnCallTe
       isBlock: true,
       type: "struct",
       storageClassType: "OnCallTeamRoutingRulesRuleActionSendTeamsMessage",
+    },
+    trigger_workflow_automation: {
+      value: onCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationToHclTerraform(struct!.triggerWorkflowAutomation),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation",
     },
   };
 
@@ -404,6 +513,10 @@ export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.sendTeamsMessage = this._sendTeamsMessage?.internalValue;
     }
+    if (this._triggerWorkflowAutomation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.triggerWorkflowAutomation = this._triggerWorkflowAutomation?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -413,6 +526,7 @@ export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktn.Compl
       this.resolvableValue = undefined;
       this._sendSlackMessage.internalValue = undefined;
       this._sendTeamsMessage.internalValue = undefined;
+      this._triggerWorkflowAutomation.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -423,6 +537,7 @@ export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktn.Compl
       this.resolvableValue = undefined;
       this._sendSlackMessage.internalValue = value.sendSlackMessage;
       this._sendTeamsMessage.internalValue = value.sendTeamsMessage;
+      this._triggerWorkflowAutomation.internalValue = value.triggerWorkflowAutomation;
     }
   }
 
@@ -457,6 +572,22 @@ export class OnCallTeamRoutingRulesRuleActionOutputReference extends cdktn.Compl
   public get sendTeamsMessageInput() {
     return this._sendTeamsMessage.internalValue;
   }
+
+  // trigger_workflow_automation - computed: false, optional: true, required: false
+  private _triggerWorkflowAutomation = new OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomationOutputReference(this, "trigger_workflow_automation");
+  public get triggerWorkflowAutomation() {
+    return this._triggerWorkflowAutomation;
+  }
+  public putTriggerWorkflowAutomation(value: OnCallTeamRoutingRulesRuleActionTriggerWorkflowAutomation) {
+    this._triggerWorkflowAutomation.internalValue = value;
+  }
+  public resetTriggerWorkflowAutomation() {
+    this._triggerWorkflowAutomation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerWorkflowAutomationInput() {
+    return this._triggerWorkflowAutomation.internalValue;
+  }
 }
 
 export class OnCallTeamRoutingRulesRuleActionList extends cdktn.ComplexList {
@@ -468,7 +599,7 @@ export class OnCallTeamRoutingRulesRuleActionList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -482,25 +613,25 @@ export interface OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction {
   /**
   * The weekday when the restriction period ends. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#end_day OnCallTeamRoutingRules#end_day}
   */
   readonly endDay?: string;
   /**
   * The time of day when the restriction ends (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#end_time OnCallTeamRoutingRules#end_time}
   */
   readonly endTime?: string;
   /**
   * The weekday when the restriction period starts. Valid values are `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#start_day OnCallTeamRoutingRules#start_day}
   */
   readonly startDay?: string;
   /**
   * The time of day when the restriction begins (hh:mm:ss).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#start_time OnCallTeamRoutingRules#start_time}
   */
   readonly startTime?: string;
 }
@@ -691,7 +822,7 @@ export class OnCallTeamRoutingRulesRuleTimeRestrictionsRestrictionList extends c
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -705,13 +836,13 @@ export interface OnCallTeamRoutingRulesRuleTimeRestrictions {
   /**
   * Specifies the time zone applicable to the restrictions, e.g. `America/New_York`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#time_zone OnCallTeamRoutingRules#time_zone}
   */
   readonly timeZone?: string;
   /**
   * restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#restriction OnCallTeamRoutingRules#restriction}
   */
   readonly restriction?: OnCallTeamRoutingRulesRuleTimeRestrictionsRestriction[] | cdktn.IResolvable;
 }
@@ -836,31 +967,31 @@ export interface OnCallTeamRoutingRulesRule {
   /**
   * ID of the policy to be applied when this routing rule matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#escalation_policy OnCallTeamRoutingRules#escalation_policy}
   */
   readonly escalationPolicy?: string;
   /**
   * Defines the query or condition that triggers this routing rule. Defaults to `""`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#query OnCallTeamRoutingRules#query}
   */
   readonly query?: string;
   /**
   * Defines the urgency for pages created via this rule. Only valid if `escalation_policy` is set. Valid values are `high`, `low`, `dynamic`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#urgency OnCallTeamRoutingRules#urgency}
   */
   readonly urgency?: string;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#action OnCallTeamRoutingRules#action}
   */
   readonly action?: OnCallTeamRoutingRulesRuleAction[] | cdktn.IResolvable;
   /**
   * time_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#time_restrictions OnCallTeamRoutingRules#time_restrictions}
   */
   readonly timeRestrictions?: OnCallTeamRoutingRulesRuleTimeRestrictions;
 }
@@ -1085,7 +1216,7 @@ export class OnCallTeamRoutingRulesRuleList extends cdktn.ComplexList {
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -1097,7 +1228,7 @@ export class OnCallTeamRoutingRulesRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules}
 */
 export class OnCallTeamRoutingRules extends cdktn.TerraformResource {
 
@@ -1113,7 +1244,7 @@ export class OnCallTeamRoutingRules extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OnCallTeamRoutingRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OnCallTeamRoutingRules to import
-  * @param importFromId The id of the existing OnCallTeamRoutingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OnCallTeamRoutingRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OnCallTeamRoutingRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1125,7 +1256,7 @@ export class OnCallTeamRoutingRules extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/on_call_team_routing_rules datadog_on_call_team_routing_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1136,7 +1267,7 @@ export class OnCallTeamRoutingRules extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_on_call_team_routing_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

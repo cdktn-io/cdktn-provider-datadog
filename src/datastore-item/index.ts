@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item
+// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/datastore_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface DatastoreItemConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique identifier of the datastore containing this item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#datastore_id DatastoreItem#datastore_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/datastore_item#datastore_id DatastoreItem#datastore_id}
   */
   readonly datastoreId: string;
   /**
   * The primary key value that identifies this item. Cannot exceed 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#item_key DatastoreItem#item_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/datastore_item#item_key DatastoreItem#item_key}
   */
   readonly itemKey: string;
   /**
   * The data content (as key-value pairs) of the datastore item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#value DatastoreItem#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/datastore_item#value DatastoreItem#value}
   */
   readonly value: { [key: string]: string };
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item datadog_datastore_item}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/datastore_item datadog_datastore_item}
 */
 export class DatastoreItem extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class DatastoreItem extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DatastoreItem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatastoreItem to import
-  * @param importFromId The id of the existing DatastoreItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatastoreItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/datastore_item#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatastoreItem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class DatastoreItem extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.9.0/docs/resources/datastore_item datadog_datastore_item} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/datastore_item datadog_datastore_item} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class DatastoreItem extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_datastore_item',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.9.0',
+        providerVersion: '4.10.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
