@@ -4,7 +4,7 @@
 
 ### DataDatadogDashboard <a name="DataDatadogDashboard" id="@cdktn/provider-datadog.dataDatadogDashboard.DataDatadogDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/dashboard datadog_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/dashboard datadog_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogDashboard.DataDatadogDashboard.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogDashboard to im
 
 The id of the existing DataDatadogDashboard that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/dashboard#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/dashboard#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -665,7 +665,7 @@ new DataDatadogDashboardConfig {
 | <code><a href="#@cdktn/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.name">Name</a></code> | <code>string</code> | The dashboard name to search for. Must only match one dashboard. |
-| <code><a href="#@cdktn/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}. |
+| <code><a href="#@cdktn/provider-datadog.dataDatadogDashboard.DataDatadogDashboardConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}. |
 
 ---
 
@@ -749,7 +749,7 @@ public string Name { get; set; }
 
 The dashboard name to search for. Must only match one dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/dashboard#name DataDatadogDashboard#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/dashboard#name DataDatadogDashboard#name}
 
 ---
 
@@ -761,7 +761,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/dashboard#id DataDatadogDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
