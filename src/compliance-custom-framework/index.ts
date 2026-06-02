@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework
+// https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface ComplianceCustomFrameworkConfig extends cdktn.TerraformMetaArgu
   /**
   * The framework handle. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
   */
   readonly handle: string;
   /**
   * The URL of the icon representing the framework
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
   */
   readonly iconUrl?: string;
   /**
   * The framework name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
   */
   readonly name: string;
   /**
   * The framework version. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
   */
   readonly version: string;
   /**
   * requirements block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
   */
   readonly requirements?: ComplianceCustomFrameworkRequirements[] | cdktn.IResolvable;
 }
@@ -47,13 +47,13 @@ export interface ComplianceCustomFrameworkRequirementsControls {
   /**
   * The name of the control. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
   */
   readonly name: string;
   /**
   * The set of rules IDs for the control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
   */
   readonly rulesId: string[];
 }
@@ -194,13 +194,13 @@ export interface ComplianceCustomFrameworkRequirements {
   /**
   * The name of the requirement. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
   */
   readonly name: string;
   /**
   * controls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
   */
   readonly controls?: ComplianceCustomFrameworkRequirementsControls[] | cdktn.IResolvable;
 }
@@ -342,7 +342,7 @@ export class ComplianceCustomFrameworkRequirementsList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}
 */
 export class ComplianceCustomFramework extends cdktn.TerraformResource {
 
@@ -358,7 +358,7 @@ export class ComplianceCustomFramework extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComplianceCustomFramework resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComplianceCustomFramework to import
-  * @param importFromId The id of the existing ComplianceCustomFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComplianceCustomFramework that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComplianceCustomFramework to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -370,7 +370,7 @@ export class ComplianceCustomFramework extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -381,7 +381,7 @@ export class ComplianceCustomFramework extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_compliance_custom_framework',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
