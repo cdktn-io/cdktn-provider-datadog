@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_tags
+// https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_tags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogMetricTagsConfig extends cdktn.TerraformMetaArgument
   /**
   * The metric for which to fetch tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_tags#metric DataDatadogMetricTags#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_tags#metric DataDatadogMetricTags#metric}
   */
   readonly metric: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_tags datadog_metric_tags}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_tags datadog_metric_tags}
 */
 export class DataDatadogMetricTags extends cdktn.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataDatadogMetricTags extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogMetricTags resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogMetricTags to import
-  * @param importFromId The id of the existing DataDatadogMetricTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_tags#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogMetricTags that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_tags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogMetricTags to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,7 +49,7 @@ export class DataDatadogMetricTags extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_tags datadog_metric_tags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class DataDatadogMetricTags extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_metric_tags',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.10.0',
+        providerVersion: '4.11.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

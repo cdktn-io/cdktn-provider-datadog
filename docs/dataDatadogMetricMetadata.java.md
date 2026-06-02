@@ -4,7 +4,7 @@
 
 ### DataDatadogMetricMetadata <a name="DataDatadogMetricMetadata" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_metadata datadog_metric_metadata}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogMetricMetadata.DataDatadogMetricMetadata.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 The metric for which to fetch metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
 
 ---
 
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataDatadogMetricMetadata 
 
 The id of the existing DataDatadogMetricMetadata that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_metadata#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_metadata#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ public java.lang.String getMetricName();
 
 The metric for which to fetch metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/metric_metadata#metric_name DataDatadogMetricMetadata#metric_name}
 
 ---
 

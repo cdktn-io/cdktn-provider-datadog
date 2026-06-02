@@ -4,7 +4,7 @@
 
 ### ReferenceTable <a name="ReferenceTable" id="@cdktn/provider-datadog.referenceTable.ReferenceTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table datadog_reference_table}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table datadog_reference_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.referenceTable.ReferenceTable.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The source type for the reference table. Valid values are `S3`, `GCS`, `AZURE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#source ReferenceTable#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#source ReferenceTable#source}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the reference table. This must be unique within your organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The description of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#description ReferenceTable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#description ReferenceTable#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 file_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#schema ReferenceTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#schema ReferenceTable#schema}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A list of tags to associate with the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#tags ReferenceTable#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#tags ReferenceTable#tags}
 
 ---
 
@@ -667,7 +667,7 @@ The construct id used in the generated config for the ReferenceTable to import.
 
 The id of the existing ReferenceTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.String getSource();
 
 The source type for the reference table. Valid values are `S3`, `GCS`, `AZURE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#source ReferenceTable#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#source ReferenceTable#source}
 
 ---
 
@@ -1198,7 +1198,7 @@ public java.lang.String getTableName();
 
 The name of the reference table. This must be unique within your organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#table_name ReferenceTable#table_name}
 
 ---
 
@@ -1212,7 +1212,7 @@ public java.lang.String getDescription();
 
 The description of the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#description ReferenceTable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#description ReferenceTable#description}
 
 ---
 
@@ -1226,7 +1226,7 @@ public ReferenceTableFileMetadata getFileMetadata();
 
 file_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#file_metadata ReferenceTable#file_metadata}
 
 ---
 
@@ -1240,7 +1240,7 @@ public ReferenceTableSchema getSchema();
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#schema ReferenceTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#schema ReferenceTable#schema}
 
 ---
 
@@ -1254,7 +1254,7 @@ public java.util.List<java.lang.String> getTags();
 
 A list of tags to associate with the reference table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#tags ReferenceTable#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#tags ReferenceTable#tags}
 
 ---
 
@@ -1290,7 +1290,7 @@ public java.lang.Boolean|IResolvable getSyncEnabled();
 
 Whether this table should automatically sync with the cloud storage source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#sync_enabled ReferenceTable#sync_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#sync_enabled ReferenceTable#sync_enabled}
 
 ---
 
@@ -1304,7 +1304,7 @@ public ReferenceTableFileMetadataAccessDetails getAccessDetails();
 
 access_details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#access_details ReferenceTable#access_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#access_details ReferenceTable#access_details}
 
 ---
 
@@ -1342,7 +1342,7 @@ public ReferenceTableFileMetadataAccessDetailsAwsDetail getAwsDetail();
 
 aws_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#aws_detail ReferenceTable#aws_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#aws_detail ReferenceTable#aws_detail}
 
 ---
 
@@ -1356,7 +1356,7 @@ public ReferenceTableFileMetadataAccessDetailsAzureDetail getAzureDetail();
 
 azure_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#azure_detail ReferenceTable#azure_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#azure_detail ReferenceTable#azure_detail}
 
 ---
 
@@ -1370,7 +1370,7 @@ public ReferenceTableFileMetadataAccessDetailsGcpDetail getGcpDetail();
 
 gcp_detail block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#gcp_detail ReferenceTable#gcp_detail}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#gcp_detail ReferenceTable#gcp_detail}
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.String getAwsAccountId();
 
 The ID of the AWS account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#aws_account_id ReferenceTable#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#aws_account_id ReferenceTable#aws_account_id}
 
 ---
 
@@ -1422,7 +1422,7 @@ public java.lang.String getAwsBucketName();
 
 The name of the AWS S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#aws_bucket_name ReferenceTable#aws_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#aws_bucket_name ReferenceTable#aws_bucket_name}
 
 ---
 
@@ -1436,7 +1436,7 @@ public java.lang.String getFilePath();
 
 The relative file path from the AWS S3 bucket root to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
 
 ---
 
@@ -1478,7 +1478,7 @@ public java.lang.String getAzureClientId();
 
 The Azure client ID (application ID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#azure_client_id ReferenceTable#azure_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#azure_client_id ReferenceTable#azure_client_id}
 
 ---
 
@@ -1492,7 +1492,7 @@ public java.lang.String getAzureContainerName();
 
 The name of the Azure container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#azure_container_name ReferenceTable#azure_container_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#azure_container_name ReferenceTable#azure_container_name}
 
 ---
 
@@ -1506,7 +1506,7 @@ public java.lang.String getAzureStorageAccountName();
 
 The name of the Azure storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#azure_storage_account_name ReferenceTable#azure_storage_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#azure_storage_account_name ReferenceTable#azure_storage_account_name}
 
 ---
 
@@ -1520,7 +1520,7 @@ public java.lang.String getAzureTenantId();
 
 The ID of the Azure tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#azure_tenant_id ReferenceTable#azure_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#azure_tenant_id ReferenceTable#azure_tenant_id}
 
 ---
 
@@ -1534,7 +1534,7 @@ public java.lang.String getFilePath();
 
 The relative file path from the Azure container root to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
 
 ---
 
@@ -1574,7 +1574,7 @@ public java.lang.String getFilePath();
 
 The relative file path from the GCS bucket root to the CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#file_path ReferenceTable#file_path}
 
 ---
 
@@ -1588,7 +1588,7 @@ public java.lang.String getGcpBucketName();
 
 The name of the GCP bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#gcp_bucket_name ReferenceTable#gcp_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#gcp_bucket_name ReferenceTable#gcp_bucket_name}
 
 ---
 
@@ -1602,7 +1602,7 @@ public java.lang.String getGcpProjectId();
 
 The ID of the GCP project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#gcp_project_id ReferenceTable#gcp_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#gcp_project_id ReferenceTable#gcp_project_id}
 
 ---
 
@@ -1616,7 +1616,7 @@ public java.lang.String getGcpServiceAccountEmail();
 
 The email of the GCP service account used to access the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#gcp_service_account_email ReferenceTable#gcp_service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#gcp_service_account_email ReferenceTable#gcp_service_account_email}
 
 ---
 
@@ -1652,7 +1652,7 @@ public java.util.List<java.lang.String> getPrimaryKeys();
 
 List of field names that serve as primary keys for the table. Currently only one primary key is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#primary_keys ReferenceTable#primary_keys}
 
 ---
 
@@ -1666,7 +1666,7 @@ public IResolvable|java.util.List<ReferenceTableSchemaFields> getFields();
 
 fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#fields ReferenceTable#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#fields ReferenceTable#fields}
 
 ---
 
@@ -1702,7 +1702,7 @@ public java.lang.String getName();
 
 The name of the field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#name ReferenceTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#name ReferenceTable#name}
 
 ---
 
@@ -1716,7 +1716,7 @@ public java.lang.String getType();
 
 The data type of the field. Must be one of: STRING, INT32. Valid values are `STRING`, `INT32`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/reference_table#type ReferenceTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/reference_table#type ReferenceTable#type}
 
 ---
 

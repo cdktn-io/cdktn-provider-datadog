@@ -4,7 +4,7 @@
 
 ### DowntimeSchedule <a name="DowntimeSchedule" id="@cdktn/provider-datadog.downtimeSchedule.DowntimeSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule datadog_downtime_schedule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule datadog_downtime_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.downtimeSchedule.DowntimeSchedule.Initializer"></a>
 
@@ -584,7 +584,7 @@ The construct id used in the generated config for the DowntimeSchedule to import
 
 The id of the existing DowntimeSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1118,7 +1118,7 @@ Scope *string
 
 The scope to which the downtime applies. Must follow the [common search syntax](https://docs.datadoghq.com/logs/explorer/search_syntax/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#scope DowntimeSchedule#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#scope DowntimeSchedule#scope}
 
 ---
 
@@ -1134,7 +1134,7 @@ The timezone in which to display the downtime's start and end times in Datadog a
 
 This is not used as an offset for scheduling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#display_timezone DowntimeSchedule#display_timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#display_timezone DowntimeSchedule#display_timezone}
 
 ---
 
@@ -1150,7 +1150,7 @@ A message to include with notifications for this downtime.
 
 Email notifications can be sent to specific users by using the same `@username` notation as events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#message DowntimeSchedule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#message DowntimeSchedule#message}
 
 ---
 
@@ -1164,7 +1164,7 @@ MonitorIdentifier DowntimeScheduleMonitorIdentifier
 
 monitor_identifier block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#monitor_identifier DowntimeSchedule#monitor_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#monitor_identifier DowntimeSchedule#monitor_identifier}
 
 ---
 
@@ -1178,7 +1178,7 @@ MuteFirstRecoveryNotification interface{}
 
 If the first recovery notification during a downtime should be muted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#mute_first_recovery_notification DowntimeSchedule#mute_first_recovery_notification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#mute_first_recovery_notification DowntimeSchedule#mute_first_recovery_notification}
 
 ---
 
@@ -1192,7 +1192,7 @@ NotifyEndStates *[]*string
 
 States that will trigger a monitor notification when the `notify_end_types` action occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#notify_end_states DowntimeSchedule#notify_end_states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#notify_end_states DowntimeSchedule#notify_end_states}
 
 ---
 
@@ -1206,7 +1206,7 @@ NotifyEndTypes *[]*string
 
 Actions that will trigger a monitor notification if the downtime is in the `notify_end_types` state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#notify_end_types DowntimeSchedule#notify_end_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#notify_end_types DowntimeSchedule#notify_end_types}
 
 ---
 
@@ -1220,7 +1220,7 @@ OneTimeSchedule DowntimeScheduleOneTimeSchedule
 
 one_time_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#one_time_schedule DowntimeSchedule#one_time_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#one_time_schedule DowntimeSchedule#one_time_schedule}
 
 ---
 
@@ -1234,7 +1234,7 @@ RecurringSchedule DowntimeScheduleRecurringSchedule
 
 recurring_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#recurring_schedule DowntimeSchedule#recurring_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#recurring_schedule DowntimeSchedule#recurring_schedule}
 
 ---
 
@@ -1270,7 +1270,7 @@ MonitorId *f64
 
 ID of the monitor to prevent notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#monitor_id DowntimeSchedule#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#monitor_id DowntimeSchedule#monitor_id}
 
 ---
 
@@ -1286,7 +1286,7 @@ A list of monitor tags.
 
 For example, tags that are applied directly to monitors, not tags that are used in monitor queries (which are filtered by the scope parameter), to which the downtime applies. The resulting downtime applies to monitors that match **all** provided monitor tags. Setting `monitor_tags` to `[*]` configures the downtime to mute all monitors for the given scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#monitor_tags DowntimeSchedule#monitor_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#monitor_tags DowntimeSchedule#monitor_tags}
 
 ---
 
@@ -1324,7 +1324,7 @@ ISO-8601 Datetime to end the downtime.
 
 Must include a UTC offset of zero. If not provided, the downtime never ends.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#end DowntimeSchedule#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#end DowntimeSchedule#end}
 
 ---
 
@@ -1340,7 +1340,7 @@ ISO-8601 Datetime to start the downtime.
 
 Must include a UTC offset of zero. If not provided, the downtime starts the moment it is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
 
 ---
 
@@ -1376,7 +1376,7 @@ Recurrence interface{}
 
 recurrence block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#recurrence DowntimeSchedule#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#recurrence DowntimeSchedule#recurrence}
 
 ---
 
@@ -1390,7 +1390,7 @@ Timezone *string
 
 The timezone in which to schedule the downtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#timezone DowntimeSchedule#timezone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#timezone DowntimeSchedule#timezone}
 
 ---
 
@@ -1430,7 +1430,7 @@ The length of the downtime.
 
 Must begin with an integer and end with one of 'm', 'h', d', or 'w'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#duration DowntimeSchedule#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#duration DowntimeSchedule#duration}
 
 ---
 
@@ -1446,7 +1446,7 @@ The `RRULE` standard for defining recurring events.
 
 For example, to have a recurring event on the first day of each month, set the type to `rrule` and set the `FREQ` to `MONTHLY` and `BYMONTHDAY` to `1`. Most common `rrule` options from the [iCalendar Spec](https://tools.ietf.org/html/rfc5545) are supported.  **Note**: Attributes specifying the duration in `RRULE` are not supported (for example, `DTSTART`, `DTEND`, `DURATION`). More examples available in this [downtime guide](https://docs.datadoghq.com/monitors/guide/suppress-alert-with-downtimes/?tab=api).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#rrule DowntimeSchedule#rrule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#rrule DowntimeSchedule#rrule}
 
 ---
 
@@ -1462,7 +1462,7 @@ ISO-8601 Datetime to start the downtime.
 
 Must not include a UTC offset. If not provided, the downtime starts the moment it is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.10.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/downtime_schedule#start DowntimeSchedule#start}
 
 ---
 
