@@ -193,6 +193,7 @@ The following submodules are available:
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.python.md)
 - [sensitiveDataScannerGroupOrder](./sensitiveDataScannerGroupOrder.python.md)
 - [sensitiveDataScannerRule](./sensitiveDataScannerRule.python.md)
+- [serviceAccessToken](./serviceAccessToken.python.md)
 - [serviceAccount](./serviceAccount.python.md)
 - [serviceAccountApplicationKey](./serviceAccountApplicationKey.python.md)
 - [serviceDefinitionYaml](./serviceDefinitionYaml.python.md)

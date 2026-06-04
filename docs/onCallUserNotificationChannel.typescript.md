@@ -4,7 +4,7 @@
 
 ### OnCallUserNotificationChannel <a name="OnCallUserNotificationChannel" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel datadog_on_call_user_notification_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.onCallUserNotificationChannel.OnCallUserNotificationChannel.Initializer"></a>
 
@@ -529,7 +529,7 @@ The construct id used in the generated config for the OnCallUserNotificationChan
 
 The id of the existing OnCallUserNotificationChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ public readonly userId: string;
 
 ID of the user to associate the notification channel with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel#user_id OnCallUserNotificationChannel#user_id}
 
 ---
 
@@ -922,7 +922,7 @@ public readonly email: OnCallUserNotificationChannelEmail;
 
 email block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel#email OnCallUserNotificationChannel#email}
 
 ---
 
@@ -936,7 +936,7 @@ public readonly phone: OnCallUserNotificationChannelPhone;
 
 phone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel#phone OnCallUserNotificationChannel#phone}
 
 ---
 
@@ -969,7 +969,7 @@ public readonly address: string;
 
 The e-mail address to be notified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel#address OnCallUserNotificationChannel#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel#address OnCallUserNotificationChannel#address}
 
 ---
 
@@ -983,7 +983,7 @@ public readonly formats: string[];
 
 Preferred content formats for notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel#formats OnCallUserNotificationChannel#formats}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel#formats OnCallUserNotificationChannel#formats}
 
 ---
 
@@ -1015,7 +1015,7 @@ public readonly number: string;
 
 The E-164 formatted phone number (for example, +3371234567).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/on_call_user_notification_channel#number OnCallUserNotificationChannel#number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/on_call_user_notification_channel#number OnCallUserNotificationChannel#number}
 
 ---
 

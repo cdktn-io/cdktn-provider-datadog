@@ -193,6 +193,7 @@ The following submodules are available:
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.java.md)
 - [sensitiveDataScannerGroupOrder](./sensitiveDataScannerGroupOrder.java.md)
 - [sensitiveDataScannerRule](./sensitiveDataScannerRule.java.md)
+- [serviceAccessToken](./serviceAccessToken.java.md)
 - [serviceAccount](./serviceAccount.java.md)
 - [serviceAccountApplicationKey](./serviceAccountApplicationKey.java.md)
 - [serviceDefinitionYaml](./serviceDefinitionYaml.java.md)

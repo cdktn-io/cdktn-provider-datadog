@@ -193,6 +193,7 @@ The following submodules are available:
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.go.md)
 - [sensitiveDataScannerGroupOrder](./sensitiveDataScannerGroupOrder.go.md)
 - [sensitiveDataScannerRule](./sensitiveDataScannerRule.go.md)
+- [serviceAccessToken](./serviceAccessToken.go.md)
 - [serviceAccount](./serviceAccount.go.md)
 - [serviceAccountApplicationKey](./serviceAccountApplicationKey.go.md)
 - [serviceDefinitionYaml](./serviceDefinitionYaml.go.md)

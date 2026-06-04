@@ -113,6 +113,7 @@ export * as securityNotificationRule from './security-notification-rule/index';
 export * as sensitiveDataScannerGroup from './sensitive-data-scanner-group/index';
 export * as sensitiveDataScannerGroupOrder from './sensitive-data-scanner-group-order/index';
 export * as sensitiveDataScannerRule from './sensitive-data-scanner-rule/index';
+export * as serviceAccessToken from './service-access-token/index';
 export * as serviceAccount from './service-account/index';
 export * as serviceAccountApplicationKey from './service-account-application-key/index';
 export * as serviceDefinitionYaml from './service-definition-yaml/index';

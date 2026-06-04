@@ -113,6 +113,7 @@ Object.defineProperty(exports, 'securityNotificationRule', { get: function () { 
 Object.defineProperty(exports, 'sensitiveDataScannerGroup', { get: function () { return require('./sensitive-data-scanner-group'); } });
 Object.defineProperty(exports, 'sensitiveDataScannerGroupOrder', { get: function () { return require('./sensitive-data-scanner-group-order'); } });
 Object.defineProperty(exports, 'sensitiveDataScannerRule', { get: function () { return require('./sensitive-data-scanner-rule'); } });
+Object.defineProperty(exports, 'serviceAccessToken', { get: function () { return require('./service-access-token'); } });
 Object.defineProperty(exports, 'serviceAccount', { get: function () { return require('./service-account'); } });
 Object.defineProperty(exports, 'serviceAccountApplicationKey', { get: function () { return require('./service-account-application-key'); } });
 Object.defineProperty(exports, 'serviceDefinitionYaml', { get: function () { return require('./service-definition-yaml'); } });

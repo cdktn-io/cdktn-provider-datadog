@@ -4,7 +4,7 @@
 
 ### DataDatadogIntegrationAwsIamPermissionsResourceCollection <a name="DataDatadogIntegrationAwsIamPermissionsResourceCollection" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/integration_aws_iam_permissions_resource_collection datadog_integration_aws_iam_permissions_resource_collection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogIntegrationAwsIamPermissionsResourceCollection.DataDatadogIntegrationAwsIamPermissionsResourceCollection.Initializer"></a>
 
@@ -437,7 +437,7 @@ The construct id used in the generated config for the DataDatadogIntegrationAwsI
 
 The id of the existing DataDatadogIntegrationAwsIamPermissionsResourceCollection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/data-sources/integration_aws_iam_permissions_resource_collection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/integration_aws_iam_permissions_resource_collection#import import section} in the documentation of this resource for the id to use
 
 ---
 

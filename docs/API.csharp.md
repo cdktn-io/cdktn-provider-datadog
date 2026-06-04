@@ -193,6 +193,7 @@ The following submodules are available:
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.csharp.md)
 - [sensitiveDataScannerGroupOrder](./sensitiveDataScannerGroupOrder.csharp.md)
 - [sensitiveDataScannerRule](./sensitiveDataScannerRule.csharp.md)
+- [serviceAccessToken](./serviceAccessToken.csharp.md)
 - [serviceAccount](./serviceAccount.csharp.md)
 - [serviceAccountApplicationKey](./serviceAccountApplicationKey.csharp.md)
 - [serviceDefinitionYaml](./serviceDefinitionYaml.csharp.md)
