@@ -4,7 +4,7 @@
 
 ### OrgGroup <a name="OrgGroup" id="@cdktn/provider-datadog.orgGroup.OrgGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/org_group datadog_org_group}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group datadog_org_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgGroup.OrgGroup.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the org group. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/org_group#name OrgGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group#name OrgGroup#name}
 
 ---
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the OrgGroup to import.
 
 The id of the existing OrgGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/org_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -967,7 +967,7 @@ name: str
 
 The name of the org group. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.11.0/docs/resources/org_group#name OrgGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group#name OrgGroup#name}
 
 ---
 

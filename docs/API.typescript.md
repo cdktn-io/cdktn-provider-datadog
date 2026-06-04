@@ -193,6 +193,7 @@ The following submodules are available:
 - [sensitiveDataScannerGroup](./sensitiveDataScannerGroup.typescript.md)
 - [sensitiveDataScannerGroupOrder](./sensitiveDataScannerGroupOrder.typescript.md)
 - [sensitiveDataScannerRule](./sensitiveDataScannerRule.typescript.md)
+- [serviceAccessToken](./serviceAccessToken.typescript.md)
 - [serviceAccount](./serviceAccount.typescript.md)
 - [serviceAccountApplicationKey](./serviceAccountApplicationKey.typescript.md)
 - [serviceDefinitionYaml](./serviceDefinitionYaml.typescript.md)
