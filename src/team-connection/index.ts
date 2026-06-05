@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection
+// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface TeamConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * The source of the connection (e.g. github).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#source TeamConnection#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#source TeamConnection#source}
   */
   readonly source?: string;
   /**
   * connected_team block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#connected_team TeamConnection#connected_team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#connected_team TeamConnection#connected_team}
   */
   readonly connectedTeam: TeamConnectionConnectedTeam;
   /**
   * team block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#team TeamConnection#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#team TeamConnection#team}
   */
   readonly team: TeamConnectionTeam;
 }
@@ -35,7 +35,7 @@ export interface TeamConnectionConnectedTeam {
   /**
   * The ID of the external connected team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#id TeamConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#id TeamConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,7 +44,7 @@ export interface TeamConnectionConnectedTeam {
   /**
   * The resource type of the external connected team. Valid values are `github_team`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#type TeamConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#type TeamConnection#type}
   */
   readonly type: string;
 }
@@ -163,7 +163,7 @@ export interface TeamConnectionTeam {
   /**
   * The ID of the Datadog team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#id TeamConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#id TeamConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -172,7 +172,7 @@ export interface TeamConnectionTeam {
   /**
   * The resource type of the Datadog team. Valid values are `team`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#type TeamConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#type TeamConnection#type}
   */
   readonly type: string;
 }
@@ -289,7 +289,7 @@ export class TeamConnectionTeamOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection datadog_team_connection}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection datadog_team_connection}
 */
 export class TeamConnection extends cdktn.TerraformResource {
 
@@ -305,7 +305,7 @@ export class TeamConnection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TeamConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamConnection to import
-  * @param importFromId The id of the existing TeamConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -317,7 +317,7 @@ export class TeamConnection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/team_connection datadog_team_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/team_connection datadog_team_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -328,7 +328,7 @@ export class TeamConnection extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_team_connection',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

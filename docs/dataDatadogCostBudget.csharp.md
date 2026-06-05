@@ -4,7 +4,7 @@
 
 ### DataDatadogCostBudget <a name="DataDatadogCostBudget" id="@cdktn/provider-datadog.dataDatadogCostBudget.DataDatadogCostBudget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget datadog_cost_budget}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget datadog_cost_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogCostBudget.DataDatadogCostBudget.Initializer"></a>
 
@@ -427,7 +427,7 @@ The construct id used in the generated config for the DataDatadogCostBudget to i
 
 The id of the existing DataDatadogCostBudget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ public IResolvable|DataDatadogCostBudgetBudgetLineChildTagFilters[] ChildTagFilt
 
 child_tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#child_tag_filters DataDatadogCostBudget#child_tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#child_tag_filters DataDatadogCostBudget#child_tag_filters}
 
 ---
 
@@ -769,7 +769,7 @@ public IResolvable|DataDatadogCostBudgetBudgetLineParentTagFilters[] ParentTagFi
 
 parent_tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#parent_tag_filters DataDatadogCostBudget#parent_tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#parent_tag_filters DataDatadogCostBudget#parent_tag_filters}
 
 ---
 
@@ -783,7 +783,7 @@ public IResolvable|DataDatadogCostBudgetBudgetLineTagFilters[] TagFilters { get;
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
 
 ---
 
@@ -944,7 +944,7 @@ public string Id { get; set; }
 
 The ID of the budget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#id DataDatadogCostBudget#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#id DataDatadogCostBudget#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -961,7 +961,7 @@ public IResolvable|DataDatadogCostBudgetBudgetLine[] BudgetLine { get; set; }
 
 budget_line block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#budget_line DataDatadogCostBudget#budget_line}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#budget_line DataDatadogCostBudget#budget_line}
 
 ---
 
@@ -975,7 +975,7 @@ public IResolvable|DataDatadogCostBudgetEntries[] Entries { get; set; }
 
 entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#entries DataDatadogCostBudget#entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#entries DataDatadogCostBudget#entries}
 
 ---
 
@@ -1009,7 +1009,7 @@ public IResolvable|DataDatadogCostBudgetEntriesTagFilters[] TagFilters { get; se
 
 tag_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
 
 ---
 

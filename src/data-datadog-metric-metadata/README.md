@@ -1,3 +1,3 @@
 # `data_datadog_metric_metadata`
 
-Refer to the Terraform Registry for docs: [`data_datadog_metric_metadata`](https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/metric_metadata).
+Refer to the Terraform Registry for docs: [`data_datadog_metric_metadata`](https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/metric_metadata).

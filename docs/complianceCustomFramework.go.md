@@ -4,7 +4,7 @@
 
 ### ComplianceCustomFramework <a name="ComplianceCustomFramework" id="@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFramework"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework datadog_compliance_custom_framework}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.complianceCustomFramework.ComplianceCustomFramework.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ComplianceCustomFramework 
 
 The id of the existing ComplianceCustomFramework that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,7 +954,7 @@ Handle *string
 
 The framework handle. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#handle ComplianceCustomFramework#handle}
 
 ---
 
@@ -968,7 +968,7 @@ Name *string
 
 The framework name. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -982,7 +982,7 @@ Version *string
 
 The framework version. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#version ComplianceCustomFramework#version}
 
 ---
 
@@ -996,7 +996,7 @@ IconUrl *string
 
 The URL of the icon representing the framework.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#icon_url ComplianceCustomFramework#icon_url}
 
 ---
 
@@ -1010,7 +1010,7 @@ Requirements interface{}
 
 requirements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#requirements ComplianceCustomFramework#requirements}
 
 ---
 
@@ -1046,7 +1046,7 @@ Name *string
 
 The name of the requirement. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -1060,7 +1060,7 @@ Controls interface{}
 
 controls block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#controls ComplianceCustomFramework#controls}
 
 ---
 
@@ -1096,7 +1096,7 @@ Name *string
 
 The name of the control. String length must be at least 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#name ComplianceCustomFramework#name}
 
 ---
 
@@ -1110,7 +1110,7 @@ RulesId *[]*string
 
 The set of rules IDs for the control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/compliance_custom_framework#rules_id ComplianceCustomFramework#rules_id}
 
 ---
 
