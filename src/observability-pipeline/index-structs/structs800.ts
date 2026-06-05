@@ -16,19 +16,19 @@ export interface ObservabilityPipelineConfigSourceAmazonDataFirehoseAuth {
   /**
   * The Amazon Resource Name (ARN) of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * A unique identifier for cross-account role assumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * A session identifier used for logging and tracing the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
 }
@@ -204,25 +204,25 @@ export interface ObservabilityPipelineConfigSourceAmazonDataFirehoseTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -424,19 +424,19 @@ export interface ObservabilityPipelineConfigSourceAmazonDataFirehose {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigSourceAmazonDataFirehoseAuth[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceAmazonDataFirehoseTls[] | cdktn.IResolvable;
 }
@@ -612,19 +612,19 @@ export interface ObservabilityPipelineConfigSourceAmazonS3Auth {
   /**
   * The Amazon Resource Name (ARN) of the role to assume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#assume_role ObservabilityPipeline#assume_role}
   */
   readonly assumeRole?: string;
   /**
   * A unique identifier for cross-account role assumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#external_id ObservabilityPipeline#external_id}
   */
   readonly externalId?: string;
   /**
   * A session identifier used for logging and tracing the assumed role session.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#session_name ObservabilityPipeline#session_name}
   */
   readonly sessionName?: string;
 }
@@ -800,25 +800,25 @@ export interface ObservabilityPipelineConfigSourceAmazonS3Tls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -1020,31 +1020,31 @@ export interface ObservabilityPipelineConfigSourceAmazonS3 {
   /**
   * Compression format for objects retrieved from the S3 bucket. Use `auto` to detect compression from the object's Content-Encoding header or file extension. Valid values are `auto`, `none`, `gzip`, `zstd`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: string;
   /**
   * AWS region where the S3 bucket resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
   */
   readonly region: string;
   /**
   * Name of the environment variable or secret that holds the S3 bucket URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#url_key ObservabilityPipeline#url_key}
   */
   readonly urlKey?: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigSourceAmazonS3Auth[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceAmazonS3Tls[] | cdktn.IResolvable;
 }
@@ -1275,25 +1275,25 @@ export interface ObservabilityPipelineConfigSourceDatadogAgentTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -1495,13 +1495,13 @@ export interface ObservabilityPipelineConfigSourceDatadogAgent {
   /**
   * Name of the environment variable or secret that holds the listen address for the Datadog Agent source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceDatadogAgentTls[] | cdktn.IResolvable;
 }
@@ -1648,31 +1648,31 @@ export interface ObservabilityPipelineConfigSourceFluentBitTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -1903,13 +1903,13 @@ export interface ObservabilityPipelineConfigSourceFluentBit {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceFluentBitTls[] | cdktn.IResolvable;
 }
@@ -2056,31 +2056,31 @@ export interface ObservabilityPipelineConfigSourceFluentdTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -2311,13 +2311,13 @@ export interface ObservabilityPipelineConfigSourceFluentd {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceFluentdTls[] | cdktn.IResolvable;
 }
@@ -2464,7 +2464,7 @@ export interface ObservabilityPipelineConfigSourceGooglePubsubAuth {
   /**
   * Path to the Google Cloud service account key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#credentials_file ObservabilityPipeline#credentials_file}
   */
   readonly credentialsFile: string;
 }
@@ -2579,25 +2579,25 @@ export interface ObservabilityPipelineConfigSourceGooglePubsubTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -2799,31 +2799,31 @@ export interface ObservabilityPipelineConfigSourceGooglePubsub {
   /**
   * The decoding format used to interpret incoming logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
   */
   readonly decoding: string;
   /**
   * The Google Cloud project ID that owns the Pub/Sub subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#project ObservabilityPipeline#project}
   */
   readonly project: string;
   /**
   * The Pub/Sub subscription name from which messages are consumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#subscription ObservabilityPipeline#subscription}
   */
   readonly subscription: string;
   /**
   * auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#auth ObservabilityPipeline#auth}
   */
   readonly auth?: ObservabilityPipelineConfigSourceGooglePubsubAuth[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceGooglePubsubTls[] | cdktn.IResolvable;
 }
@@ -3048,25 +3048,25 @@ export interface ObservabilityPipelineConfigSourceHttpClientTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -3268,61 +3268,61 @@ export interface ObservabilityPipelineConfigSourceHttpClient {
   /**
   * Optional authentication strategy for HTTP requests. Valid values are `none`, `basic`, `bearer`, `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
   */
   readonly authStrategy?: string;
   /**
   * Name of the environment variable or secret that holds a custom header value (used with custom auth strategies).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#custom_key ObservabilityPipeline#custom_key}
   */
   readonly customKey?: string;
   /**
   * The decoding format used to interpret incoming logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
   */
   readonly decoding: string;
   /**
   * Name of the environment variable or secret that holds the HTTP endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Name of the environment variable or secret that holds the password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * The interval (in seconds) between HTTP scrape requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#scrape_interval_secs ObservabilityPipeline#scrape_interval_secs}
   */
   readonly scrapeIntervalSecs?: number;
   /**
   * The timeout (in seconds) for each scrape request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#scrape_timeout_secs ObservabilityPipeline#scrape_timeout_secs}
   */
   readonly scrapeTimeoutSecs?: number;
   /**
   * Name of the environment variable or secret that holds the authentication token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey?: string;
   /**
   * Name of the environment variable or secret that holds the username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceHttpClientTls[] | cdktn.IResolvable;
 }
@@ -3698,31 +3698,31 @@ export interface ObservabilityPipelineConfigSourceHttpServerTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -3953,13 +3953,13 @@ export interface ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAdd
   /**
   * The metadata field name to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
   */
   readonly key: string;
   /**
   * The metadata field value to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -4100,13 +4100,13 @@ export interface ObservabilityPipelineConfigSourceHttpServerValidTokenPathToToke
   /**
   * The name of the HTTP header that carries the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#header ObservabilityPipeline#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#header ObservabilityPipeline#header}
   */
   readonly header?: string;
   /**
   * Built-in token location on the incoming HTTP request. One of `path`, `address`. Valid values are `path`, `address`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#location ObservabilityPipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#location ObservabilityPipeline#location}
   */
   readonly location?: string;
 }
@@ -4253,25 +4253,25 @@ export interface ObservabilityPipelineConfigSourceHttpServerValidToken {
   /**
   * Whether this token is currently accepted. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the environment variable or secret that holds the expected token value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey: string;
   /**
   * field_to_add block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
   */
   readonly fieldToAdd?: ObservabilityPipelineConfigSourceHttpServerValidTokenFieldToAdd[] | cdktn.IResolvable;
   /**
   * path_to_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#path_to_token ObservabilityPipeline#path_to_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#path_to_token ObservabilityPipeline#path_to_token}
   */
   readonly pathToToken?: ObservabilityPipelineConfigSourceHttpServerValidTokenPathToToken[] | cdktn.IResolvable;
 }
@@ -4473,43 +4473,43 @@ export interface ObservabilityPipelineConfigSourceHttpServer {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * HTTP authentication method. Valid values are `none`, `plain`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#auth_strategy ObservabilityPipeline#auth_strategy}
   */
   readonly authStrategy: string;
   /**
   * The decoding format used to interpret incoming logs. Valid values are `json`, `gelf`, `syslog`, `bytes`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#decoding ObservabilityPipeline#decoding}
   */
   readonly decoding: string;
   /**
   * Name of the environment variable or secret that holds the password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * Name of the environment variable or secret that holds the username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceHttpServerTls[] | cdktn.IResolvable;
   /**
   * valid_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
   */
   readonly validToken?: ObservabilityPipelineConfigSourceHttpServerValidToken[] | cdktn.IResolvable;
 }
@@ -4795,13 +4795,13 @@ export interface ObservabilityPipelineConfigSourceKafkaLibrdkafkaOption {
   /**
   * The name of the librdkafka option.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The value of the librdkafka option.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -4942,19 +4942,19 @@ export interface ObservabilityPipelineConfigSourceKafkaSasl {
   /**
   * SASL mechanism to use (e.g., PLAIN, SCRAM-SHA-256, SCRAM-SHA-512). Valid values are `PLAIN`, `SCRAM-SHA-256`, `SCRAM-SHA-512`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mechanism ObservabilityPipeline#mechanism}
   */
   readonly mechanism: string;
   /**
   * Name of the environment variable or secret that holds the SASL password.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#password_key ObservabilityPipeline#password_key}
   */
   readonly passwordKey?: string;
   /**
   * Name of the environment variable or secret that holds the SASL username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#username_key ObservabilityPipeline#username_key}
   */
   readonly usernameKey?: string;
 }
@@ -5127,25 +5127,25 @@ export interface ObservabilityPipelineConfigSourceKafkaTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -5347,37 +5347,37 @@ export interface ObservabilityPipelineConfigSourceKafka {
   /**
   * Name of the environment variable or secret that holds the Kafka bootstrap servers connection string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#bootstrap_servers_key ObservabilityPipeline#bootstrap_servers_key}
   */
   readonly bootstrapServersKey?: string;
   /**
   * The Kafka consumer group ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#group_id ObservabilityPipeline#group_id}
   */
   readonly groupId: string;
   /**
   * A list of Kafka topic names to subscribe to. The source ingests messages from each topic specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#topics ObservabilityPipeline#topics}
   */
   readonly topics: string[];
   /**
   * librdkafka_option block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#librdkafka_option ObservabilityPipeline#librdkafka_option}
   */
   readonly librdkafkaOption?: ObservabilityPipelineConfigSourceKafkaLibrdkafkaOption[] | cdktn.IResolvable;
   /**
   * sasl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sasl ObservabilityPipeline#sasl}
   */
   readonly sasl?: ObservabilityPipelineConfigSourceKafkaSasl[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceKafkaTls[] | cdktn.IResolvable;
 }
@@ -5634,31 +5634,31 @@ export interface ObservabilityPipelineConfigSourceLogstashTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -5889,13 +5889,13 @@ export interface ObservabilityPipelineConfigSourceLogstash {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceLogstashTls[] | cdktn.IResolvable;
 }
@@ -6042,31 +6042,31 @@ export interface ObservabilityPipelineConfigSourceOpentelemetryTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -6297,19 +6297,19 @@ export interface ObservabilityPipelineConfigSourceOpentelemetry {
   /**
   * Environment variable name containing the gRPC server address for receiving OTLP data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#grpc_address_key ObservabilityPipeline#grpc_address_key}
   */
   readonly grpcAddressKey?: string;
   /**
   * Environment variable name containing the HTTP server address for receiving OTLP data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#http_address_key ObservabilityPipeline#http_address_key}
   */
   readonly httpAddressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceOpentelemetryTls[] | cdktn.IResolvable;
 }
@@ -6485,31 +6485,31 @@ export interface ObservabilityPipelineConfigSourceRsyslogTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -6740,19 +6740,19 @@ export interface ObservabilityPipelineConfigSourceRsyslog {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * Protocol used by the syslog source to receive messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceRsyslogTls[] | cdktn.IResolvable;
 }
@@ -6928,7 +6928,7 @@ export interface ObservabilityPipelineConfigSourceSocketFramingCharacterDelimite
   /**
   * A single ASCII character used as a delimiter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
   */
   readonly delimiter: string;
 }
@@ -7043,13 +7043,13 @@ export interface ObservabilityPipelineConfigSourceSocketFraming {
   /**
   * The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`, `octet_counting`, `chunked_gelf`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
   */
   readonly method: string;
   /**
   * character_delimited block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
   */
   readonly characterDelimited?: ObservabilityPipelineConfigSourceSocketFramingCharacterDelimited[] | cdktn.IResolvable;
 }
@@ -7193,31 +7193,31 @@ export interface ObservabilityPipelineConfigSourceSocketTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -7448,25 +7448,25 @@ export interface ObservabilityPipelineConfigSourceSocket {
   /**
   * Name of the environment variable or secret that holds the listen address for the socket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * The protocol used to receive logs. Valid values are `tcp`, `udp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
   /**
   * framing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
   */
   readonly framing?: ObservabilityPipelineConfigSourceSocketFraming[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSocketTls[] | cdktn.IResolvable;
 }
@@ -7668,31 +7668,31 @@ export interface ObservabilityPipelineConfigSourceSplunkHecTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -7923,13 +7923,13 @@ export interface ObservabilityPipelineConfigSourceSplunkHecValidTokenFieldToAdd 
   /**
   * The metadata field name to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
   */
   readonly key: string;
   /**
   * The metadata field value to add to incoming events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -8070,19 +8070,19 @@ export interface ObservabilityPipelineConfigSourceSplunkHecValidToken {
   /**
   * Whether this token is currently accepted. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the environment variable or secret that holds the expected HEC token value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey: string;
   /**
   * field_to_add block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field_to_add ObservabilityPipeline#field_to_add}
   */
   readonly fieldToAdd?: ObservabilityPipelineConfigSourceSplunkHecValidTokenFieldToAdd[] | cdktn.IResolvable;
 }
@@ -8255,25 +8255,25 @@ export interface ObservabilityPipelineConfigSourceSplunkHec {
   /**
   * Name of the environment variable or secret that holds the listen address for the HEC API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * When `true`, the Splunk HEC token from the incoming request is stored in the event, allowing downstream components to forward it to other Splunk HEC destinations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#store_hec_token ObservabilityPipeline#store_hec_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#store_hec_token ObservabilityPipeline#store_hec_token}
   */
   readonly storeHecToken?: boolean | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSplunkHecTls[] | cdktn.IResolvable;
   /**
   * valid_token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#valid_token ObservabilityPipeline#valid_token}
   */
   readonly validToken?: ObservabilityPipelineConfigSourceSplunkHecValidToken[] | cdktn.IResolvable;
 }
@@ -8478,31 +8478,31 @@ export interface ObservabilityPipelineConfigSourceSplunkTcpTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -8733,13 +8733,13 @@ export interface ObservabilityPipelineConfigSourceSplunkTcp {
   /**
   * Name of the environment variable or secret that holds the listen address for the Splunk TCP receiver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSplunkTcpTls[] | cdktn.IResolvable;
 }
@@ -8886,7 +8886,7 @@ export interface ObservabilityPipelineConfigSourceSumoLogic {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
 }
@@ -9004,31 +9004,31 @@ export interface ObservabilityPipelineConfigSourceSyslogNgTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate connecting clients' TLS certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS server certificate file used to identify the pipeline component to connecting clients.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
   /**
   * When `true`, requires client connections to present a valid certificate, enabling mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#verify_certificate ObservabilityPipeline#verify_certificate}
   */
   readonly verifyCertificate?: boolean | cdktn.IResolvable;
 }
@@ -9259,19 +9259,19 @@ export interface ObservabilityPipelineConfigSourceSyslogNg {
   /**
   * Name of the environment variable or secret that holds the listen address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * Protocol used by the syslog source to receive messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode?: string;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigSourceSyslogNgTls[] | cdktn.IResolvable;
 }
@@ -9447,7 +9447,7 @@ export interface ObservabilityPipelineConfigSource {
   /**
   * The unique identifier for this source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -9456,103 +9456,103 @@ export interface ObservabilityPipelineConfigSource {
   /**
   * amazon_data_firehose block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#amazon_data_firehose ObservabilityPipeline#amazon_data_firehose}
   */
   readonly amazonDataFirehose?: ObservabilityPipelineConfigSourceAmazonDataFirehose[] | cdktn.IResolvable;
   /**
   * amazon_s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
   */
   readonly amazonS3?: ObservabilityPipelineConfigSourceAmazonS3[] | cdktn.IResolvable;
   /**
   * datadog_agent block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#datadog_agent ObservabilityPipeline#datadog_agent}
   */
   readonly datadogAgent?: ObservabilityPipelineConfigSourceDatadogAgent[] | cdktn.IResolvable;
   /**
   * fluent_bit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#fluent_bit ObservabilityPipeline#fluent_bit}
   */
   readonly fluentBit?: ObservabilityPipelineConfigSourceFluentBit[] | cdktn.IResolvable;
   /**
   * fluentd block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#fluentd ObservabilityPipeline#fluentd}
   */
   readonly fluentd?: ObservabilityPipelineConfigSourceFluentd[] | cdktn.IResolvable;
   /**
   * google_pubsub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
   */
   readonly googlePubsub?: ObservabilityPipelineConfigSourceGooglePubsub[] | cdktn.IResolvable;
   /**
   * http_client block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
   */
   readonly httpClient?: ObservabilityPipelineConfigSourceHttpClient[] | cdktn.IResolvable;
   /**
   * http_server block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#http_server ObservabilityPipeline#http_server}
   */
   readonly httpServer?: ObservabilityPipelineConfigSourceHttpServer[] | cdktn.IResolvable;
   /**
   * kafka block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
   */
   readonly kafka?: ObservabilityPipelineConfigSourceKafka[] | cdktn.IResolvable;
   /**
   * logstash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#logstash ObservabilityPipeline#logstash}
   */
   readonly logstash?: ObservabilityPipelineConfigSourceLogstash[] | cdktn.IResolvable;
   /**
   * opentelemetry block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#opentelemetry ObservabilityPipeline#opentelemetry}
   */
   readonly opentelemetry?: ObservabilityPipelineConfigSourceOpentelemetry[] | cdktn.IResolvable;
   /**
   * rsyslog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
   */
   readonly rsyslog?: ObservabilityPipelineConfigSourceRsyslog[] | cdktn.IResolvable;
   /**
   * socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
   */
   readonly socket?: ObservabilityPipelineConfigSourceSocket[] | cdktn.IResolvable;
   /**
   * splunk_hec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
   */
   readonly splunkHec?: ObservabilityPipelineConfigSourceSplunkHec[] | cdktn.IResolvable;
   /**
   * splunk_tcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#splunk_tcp ObservabilityPipeline#splunk_tcp}
   */
   readonly splunkTcp?: ObservabilityPipelineConfigSourceSplunkTcp[] | cdktn.IResolvable;
   /**
   * sumo_logic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
   */
   readonly sumoLogic?: ObservabilityPipelineConfigSourceSumoLogic[] | cdktn.IResolvable;
   /**
   * syslog_ng block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
   */
   readonly syslogNg?: ObservabilityPipelineConfigSourceSyslogNg[] | cdktn.IResolvable;
 }
@@ -10160,31 +10160,31 @@ export interface ObservabilityPipelineConfigA {
   /**
   * The type of data being ingested. Defaults to `logs` if not specified. Valid values are `logs`, `metrics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#pipeline_type ObservabilityPipeline#pipeline_type}
   */
   readonly pipelineType?: string;
   /**
   * Set to `true` to continue using the legacy search syntax while migrating filter queries. After migrating all queries to the new syntax, set to `false`. The legacy syntax is deprecated and will eventually be removed. Requires Observability Pipelines Worker 2.11 or later. Only applies to `logs` pipelines. This field is ignored for `metrics` pipelines. See https://docs.datadoghq.com/observability_pipelines/guide/upgrade_your_filter_queries_to_the_new_search_syntax/ for more information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#use_legacy_search_syntax ObservabilityPipeline#use_legacy_search_syntax}
   */
   readonly useLegacySearchSyntax?: boolean | cdktn.IResolvable;
   /**
   * destination block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
   */
   readonly destination?: ObservabilityPipelineConfigDestination[] | cdktn.IResolvable;
   /**
   * processor_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#processor_group ObservabilityPipeline#processor_group}
   */
   readonly processorGroup?: ObservabilityPipelineConfigProcessorGroup[] | cdktn.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source?: ObservabilityPipelineConfigSource[] | cdktn.IResolvable;
 }

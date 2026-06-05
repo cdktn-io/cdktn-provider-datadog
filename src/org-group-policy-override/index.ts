@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override
+// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface OrgGroupPolicyOverrideConfig extends cdktn.TerraformMetaArgumen
   /**
   * The UUID of the org group that owns the policy. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override#org_group_id OrgGroupPolicyOverride#org_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override#org_group_id OrgGroupPolicyOverride#org_group_id}
   */
   readonly orgGroupId: string;
   /**
   * The short site name of the organization (e.g., `us1`, `eu1`, `us1-fed`). Part of the override's server-side identity; changing it replaces the resource. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override#org_site OrgGroupPolicyOverride#org_site}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override#org_site OrgGroupPolicyOverride#org_site}
   */
   readonly orgSite: string;
   /**
   * The UUID of the organization being exempted from the policy. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override#org_uuid OrgGroupPolicyOverride#org_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override#org_uuid OrgGroupPolicyOverride#org_uuid}
   */
   readonly orgUuid: string;
   /**
   * The UUID of the org group policy the override applies to. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override#policy_id OrgGroupPolicyOverride#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override#policy_id OrgGroupPolicyOverride#policy_id}
   */
   readonly policyId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override datadog_org_group_policy_override}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override datadog_org_group_policy_override}
 */
 export class OrgGroupPolicyOverride extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class OrgGroupPolicyOverride extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OrgGroupPolicyOverride resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrgGroupPolicyOverride to import
-  * @param importFromId The id of the existing OrgGroupPolicyOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrgGroupPolicyOverride that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrgGroupPolicyOverride to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class OrgGroupPolicyOverride extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_policy_override datadog_org_group_policy_override} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy_override datadog_org_group_policy_override} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class OrgGroupPolicyOverride extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_org_group_policy_override',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

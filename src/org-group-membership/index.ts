@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_membership
+// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface OrgGroupMembershipConfig extends cdktn.TerraformMetaArguments {
   /**
   * The UUID of the org group to assign the organization to. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
   */
   readonly orgGroupId: string;
   /**
   * The UUID of the organization. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
   */
   readonly orgUuid: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_membership datadog_org_group_membership}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership datadog_org_group_membership}
 */
 export class OrgGroupMembership extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class OrgGroupMembership extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OrgGroupMembership resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrgGroupMembership to import
-  * @param importFromId The id of the existing OrgGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrgGroupMembership that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrgGroupMembership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class OrgGroupMembership extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/org_group_membership datadog_org_group_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership datadog_org_group_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class OrgGroupMembership extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_org_group_membership',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.0',
+        providerVersion: '4.12.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
