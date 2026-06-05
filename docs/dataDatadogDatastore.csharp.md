@@ -4,7 +4,7 @@
 
 ### DataDatadogDatastore <a name="DataDatadogDatastore" id="@cdktn/provider-datadog.dataDatadogDatastore.DataDatadogDatastore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/datastore datadog_datastore}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/datastore datadog_datastore}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogDatastore.DataDatadogDatastore.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogDatastore to im
 
 The id of the existing DataDatadogDatastore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/datastore#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,7 +813,7 @@ public string DatastoreId { get; set; }
 
 The unique identifier of the datastore to retrieve. If not specified, returns a single datastore from the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/data-sources/datastore#datastore_id DataDatadogDatastore#datastore_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/datastore#datastore_id DataDatadogDatastore#datastore_id}
 
 ---
 

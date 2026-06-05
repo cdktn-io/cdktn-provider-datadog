@@ -4,7 +4,7 @@
 
 ### CsmThreatsPolicy <a name="CsmThreatsPolicy" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy datadog_csm_threats_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.csmThreatsPolicy.CsmThreatsPolicy.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 A description for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Indicates whether the policy is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Host tags that define where the policy is deployed. Inner values are ANDed, outer arrays are ORed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Host tags that define where the policy is deployed. Deprecated, use host_tags_lists instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
 
 ---
 
@@ -679,7 +679,7 @@ The construct id used in the generated config for the CsmThreatsPolicy to import
 
 The id of the existing CsmThreatsPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1117,7 +1117,7 @@ name: str
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#name CsmThreatsPolicy#name}
 
 ---
 
@@ -1131,7 +1131,7 @@ description: str
 
 A description for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#description CsmThreatsPolicy#description}
 
 ---
 
@@ -1145,7 +1145,7 @@ enabled: bool | IResolvable
 
 Indicates whether the policy is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#enabled CsmThreatsPolicy#enabled}
 
 ---
 
@@ -1159,7 +1159,7 @@ host_tags_lists: IResolvable | typing.List[typing.List[str]]
 
 Host tags that define where the policy is deployed. Inner values are ANDed, outer arrays are ORed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#host_tags_lists CsmThreatsPolicy#host_tags_lists}
 
 ---
 
@@ -1173,7 +1173,7 @@ tags: typing.List[str]
 
 Host tags that define where the policy is deployed. Deprecated, use host_tags_lists instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/csm_threats_policy#tags CsmThreatsPolicy#tags}
 
 ---
 

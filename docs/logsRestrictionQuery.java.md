@@ -4,7 +4,7 @@
 
 ### LogsRestrictionQuery <a name="LogsRestrictionQuery" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/logs_restriction_query datadog_logs_restriction_query}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_restriction_query datadog_logs_restriction_query}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.logsRestrictionQuery.LogsRestrictionQuery.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The query that defines the restriction. Only the content matching the query can be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 An array of role IDs that have access to this restriction query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
 
 ---
 
@@ -572,7 +572,7 @@ The construct id used in the generated config for the LogsRestrictionQuery to im
 
 The id of the existing LogsRestrictionQuery that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/logs_restriction_query#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_restriction_query#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -960,7 +960,7 @@ public java.lang.String getRestrictionQuery();
 
 The query that defines the restriction. Only the content matching the query can be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_restriction_query#restriction_query LogsRestrictionQuery#restriction_query}
 
 ---
 
@@ -974,7 +974,7 @@ public java.util.List<java.lang.String> getRoleIds();
 
 An array of role IDs that have access to this restriction query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.0/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_restriction_query#role_ids LogsRestrictionQuery#role_ids}
 
 ---
 
