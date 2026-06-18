@@ -4,7 +4,7 @@
 
 ### DataDatadogTeamNotificationRules <a name="DataDatadogTeamNotificationRules" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRules.DataDatadogTeamNotificationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rules datadog_team_notification_rules}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rules datadog_team_notification_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogTeamNotificationRules.DataDatadogTeamNotificationRules.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The team ID to fetch notification rules for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rules#team_id DataDatadogTeamNotificationRules#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rules#team_id DataDatadogTeamNotificationRules#team_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 notification_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rules#notification_rules DataDatadogTeamNotificationRules#notification_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rules#notification_rules DataDatadogTeamNotificationRules#notification_rules}
 
 ---
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the DataDatadogTeamNotificatio
 
 The id of the existing DataDatadogTeamNotificationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,7 +867,7 @@ team_id: str
 
 The team ID to fetch notification rules for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rules#team_id DataDatadogTeamNotificationRules#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rules#team_id DataDatadogTeamNotificationRules#team_id}
 
 ---
 
@@ -881,7 +881,7 @@ notification_rules: IResolvable | typing.List[DataDatadogTeamNotificationRulesNo
 
 notification_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rules#notification_rules DataDatadogTeamNotificationRules#notification_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rules#notification_rules DataDatadogTeamNotificationRules#notification_rules}
 
 ---
 

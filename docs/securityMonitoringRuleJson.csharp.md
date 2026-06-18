@@ -4,7 +4,7 @@
 
 ### SecurityMonitoringRuleJson <a name="SecurityMonitoringRuleJson" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_rule_json datadog_security_monitoring_rule_json}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.securityMonitoringRuleJson.SecurityMonitoringRuleJson.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SecurityMonitoringRuleJson
 
 The id of the existing SecurityMonitoringRuleJson that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_rule_json#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_rule_json#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ public string Json { get; set; }
 
 The JSON definition of the Security Monitoring Rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/security_monitoring_rule_json#json SecurityMonitoringRuleJson#json}
 
 ---
 

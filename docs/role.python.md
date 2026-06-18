@@ -4,7 +4,7 @@
 
 ### Role <a name="Role" id="@cdktn/provider-datadog.role.Role"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role datadog_role}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role datadog_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.role.Role.Initializer"></a>
 
@@ -42,7 +42,7 @@ role.Role(
 | <code><a href="#@cdktn/provider-datadog.role.Role.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.role.Role.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktn/provider-datadog.role.Role.Initializer.parameter.defaultPermissionsOptOut">default_permissions_opt_out</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set. |
-| <code><a href="#@cdktn/provider-datadog.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktn/provider-datadog.role.Role.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktn/provider-datadog.role.Role.Initializer.parameter.permission">permission</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.role.RolePermission">RolePermission</a>]</code> | permission block. |
 | <code><a href="#@cdktn/provider-datadog.role.Role.Initializer.parameter.validate">validate</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#name Role#name}
 
 ---
 
@@ -126,7 +126,7 @@ If set to `true`, the role does not have default (restricted) permissions unless
 
 The `include_restricted` attribute for the `datadog_permissions` data source must be set to `true` to manage default permissions in Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#permission Role#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#permission Role#permission}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#validate Role#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#validate Role#validate}
 
 ---
 
@@ -697,7 +697,7 @@ The construct id used in the generated config for the Role to import.
 
 The id of the existing Role that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1049,7 +1049,7 @@ role.RoleConfig(
 | <code><a href="#@cdktn/provider-datadog.role.RoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-datadog.role.RoleConfig.property.name">name</a></code> | <code>str</code> | Name of the role. |
 | <code><a href="#@cdktn/provider-datadog.role.RoleConfig.property.defaultPermissionsOptOut">default_permissions_opt_out</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to `true`, the role does not have default (restricted) permissions unless they are explicitly set. |
-| <code><a href="#@cdktn/provider-datadog.role.RoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#id Role#id}. |
+| <code><a href="#@cdktn/provider-datadog.role.RoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#id Role#id}. |
 | <code><a href="#@cdktn/provider-datadog.role.RoleConfig.property.permission">permission</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-datadog.role.RolePermission">RolePermission</a>]</code> | permission block. |
 | <code><a href="#@cdktn/provider-datadog.role.RoleConfig.property.validate">validate</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to `false`, skip the validation call done during plan. |
 
@@ -1135,7 +1135,7 @@ name: str
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#name Role#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#name Role#name}
 
 ---
 
@@ -1151,7 +1151,7 @@ If set to `true`, the role does not have default (restricted) permissions unless
 
 The `include_restricted` attribute for the `datadog_permissions` data source must be set to `true` to manage default permissions in Terraform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#default_permissions_opt_out Role#default_permissions_opt_out}
 
 ---
 
@@ -1163,7 +1163,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#id Role#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#id Role#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1180,7 +1180,7 @@ permission: IResolvable | typing.List[RolePermission]
 
 permission block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#permission Role#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#permission Role#permission}
 
 ---
 
@@ -1194,7 +1194,7 @@ validate: bool | IResolvable
 
 If set to `false`, skip the validation call done during plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#validate Role#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#validate Role#validate}
 
 ---
 
@@ -1228,7 +1228,7 @@ id: str
 
 ID of the permission to assign.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/role#id Role#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/role#id Role#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

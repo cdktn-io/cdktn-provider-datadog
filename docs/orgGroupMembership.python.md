@@ -4,7 +4,7 @@
 
 ### OrgGroupMembership <a name="OrgGroupMembership" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership datadog_org_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_membership datadog_org_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.orgGroupMembership.OrgGroupMembership.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The UUID of the org group to assign the organization to. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The UUID of the organization. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the OrgGroupMembership to impo
 
 The id of the existing OrgGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1003,7 +1003,7 @@ org_group_id: str
 
 The UUID of the org group to assign the organization to. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_membership#org_group_id OrgGroupMembership#org_group_id}
 
 ---
 
@@ -1017,7 +1017,7 @@ org_uuid: str
 
 The UUID of the organization. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_membership#org_uuid OrgGroupMembership#org_uuid}
 
 ---
 
