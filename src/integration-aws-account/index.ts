@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +15,55 @@ export interface IntegrationAwsAccountConfig extends cdktn.TerraformMetaArgument
   /**
   * Tags to apply to all metrics in the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#account_tags IntegrationAwsAccount#account_tags}
   */
   readonly accountTags?: string[];
   /**
   * Your AWS Account ID without dashes. Invalid aws_account_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#aws_account_id IntegrationAwsAccount#aws_account_id}
   */
   readonly awsAccountId: string;
   /**
   * AWS Account partition. Valid values are `aws`, `aws-cn`, `aws-us-gov`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#aws_partition IntegrationAwsAccount#aws_partition}
   */
   readonly awsPartition: string;
   /**
   * auth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#auth_config IntegrationAwsAccount#auth_config}
   */
   readonly authConfig?: IntegrationAwsAccountAuthConfig;
   /**
   * aws_regions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#aws_regions IntegrationAwsAccount#aws_regions}
   */
   readonly awsRegions?: IntegrationAwsAccountAwsRegions;
   /**
   * logs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#logs_config IntegrationAwsAccount#logs_config}
   */
   readonly logsConfig?: IntegrationAwsAccountLogsConfig;
   /**
   * metrics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#metrics_config IntegrationAwsAccount#metrics_config}
   */
   readonly metricsConfig?: IntegrationAwsAccountMetricsConfig;
   /**
   * resources_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#resources_config IntegrationAwsAccount#resources_config}
   */
   readonly resourcesConfig?: IntegrationAwsAccountResourcesConfig;
   /**
   * traces_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#traces_config IntegrationAwsAccount#traces_config}
   */
   readonly tracesConfig?: IntegrationAwsAccountTracesConfig;
 }
@@ -71,13 +71,13 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigKeys {
   /**
   * AWS Access Key ID. Invalid access_key_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#access_key_id IntegrationAwsAccount#access_key_id}
   */
   readonly accessKeyId?: string;
   /**
   * AWS Secret Access Key. This value is write-only; changes made outside of Terraform will not be drift-detected. Secret_access_key must be non-empty and not contain whitespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#secret_access_key IntegrationAwsAccount#secret_access_key}
   */
   readonly secretAccessKey?: string;
 }
@@ -85,7 +85,7 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigKeys {
 export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_key_id: cdktn.stringToTerraform(struct!.accessKeyId),
@@ -97,7 +97,7 @@ export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToTerraform(stru
 export function integrationAwsAccountAuthConfigAwsAuthConfigKeysToHclTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_key_id: {
@@ -202,13 +202,13 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigRole {
   /**
   * AWS IAM External ID for associated role. If omitted, one will be generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#external_id IntegrationAwsAccount#external_id}
   */
   readonly externalId?: string;
   /**
   * AWS IAM Role name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#role_name IntegrationAwsAccount#role_name}
   */
   readonly roleName?: string;
 }
@@ -216,7 +216,7 @@ export interface IntegrationAwsAccountAuthConfigAwsAuthConfigRole {
 export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     external_id: cdktn.stringToTerraform(struct!.externalId),
@@ -228,7 +228,7 @@ export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToTerraform(stru
 export function integrationAwsAccountAuthConfigAwsAuthConfigRoleToHclTerraform(struct?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     external_id: {
@@ -333,13 +333,13 @@ export interface IntegrationAwsAccountAuthConfig {
   /**
   * aws_auth_config_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#aws_auth_config_keys IntegrationAwsAccount#aws_auth_config_keys}
   */
   readonly awsAuthConfigKeys?: IntegrationAwsAccountAuthConfigAwsAuthConfigKeys;
   /**
   * aws_auth_config_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#aws_auth_config_role IntegrationAwsAccount#aws_auth_config_role}
   */
   readonly awsAuthConfigRole?: IntegrationAwsAccountAuthConfigAwsAuthConfigRole;
 }
@@ -347,7 +347,7 @@ export interface IntegrationAwsAccountAuthConfig {
 export function integrationAwsAccountAuthConfigToTerraform(struct?: IntegrationAwsAccountAuthConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aws_auth_config_keys: integrationAwsAccountAuthConfigAwsAuthConfigKeysToTerraform(struct!.awsAuthConfigKeys),
@@ -359,7 +359,7 @@ export function integrationAwsAccountAuthConfigToTerraform(struct?: IntegrationA
 export function integrationAwsAccountAuthConfigToHclTerraform(struct?: IntegrationAwsAccountAuthConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aws_auth_config_keys: {
@@ -464,13 +464,13 @@ export interface IntegrationAwsAccountAwsRegions {
   /**
   * Include all regions. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
   */
   readonly includeAll?: boolean | cdktn.IResolvable;
   /**
   * Include only these regions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
@@ -478,7 +478,7 @@ export interface IntegrationAwsAccountAwsRegions {
 export function integrationAwsAccountAwsRegionsToTerraform(struct?: IntegrationAwsAccountAwsRegions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_all: cdktn.booleanToTerraform(struct!.includeAll),
@@ -490,7 +490,7 @@ export function integrationAwsAccountAwsRegionsToTerraform(struct?: IntegrationA
 export function integrationAwsAccountAwsRegionsToHclTerraform(struct?: IntegrationAwsAccountAwsRegions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_all: {
@@ -595,13 +595,13 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTa
   /**
   * The AWS service for which the tag filters defined in `tags` will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#source IntegrationAwsAccount#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#source IntegrationAwsAccount#source}
   */
   readonly source: string;
   /**
   * The AWS resource tags to filter on for the service specified by `source`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
   */
   readonly tags: string[];
 }
@@ -609,7 +609,7 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTa
 export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source: cdktn.stringToTerraform(struct!.source),
@@ -621,7 +621,7 @@ export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTag
 export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source: {
@@ -742,7 +742,7 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig {
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
   */
   readonly tagFilters?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFilters[] | cdktn.IResolvable;
 }
@@ -750,7 +750,7 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig {
 export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     tag_filters: cdktn.listMapper(integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigTagFiltersToTerraform, true)(struct!.tagFilters),
@@ -761,7 +761,7 @@ export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToT
 export function integrationAwsAccountLogsConfigLambdaForwarderLogSourceConfigToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     tag_filters: {
@@ -838,19 +838,19 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarder {
   /**
   * List of Datadog Lambda Log Forwarder ARNs in your AWS account. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#lambdas IntegrationAwsAccount#lambdas}
   */
   readonly lambdas?: string[];
   /**
   * List of service IDs set to enable automatic log collection. Use [`datadog_integration_aws_available_logs_services` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_logs_services) or [the AWS Logs Integration API](https://docs.datadoghq.com/api/latest/aws-logs-integration/?#get-list-of-aws-log-ready-services) to get allowed values. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#sources IntegrationAwsAccount#sources}
   */
   readonly sources?: string[];
   /**
   * log_source_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#log_source_config IntegrationAwsAccount#log_source_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#log_source_config IntegrationAwsAccount#log_source_config}
   */
   readonly logSourceConfig?: IntegrationAwsAccountLogsConfigLambdaForwarderLogSourceConfig;
 }
@@ -858,7 +858,7 @@ export interface IntegrationAwsAccountLogsConfigLambdaForwarder {
 export function integrationAwsAccountLogsConfigLambdaForwarderToTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     lambdas: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.lambdas),
@@ -871,7 +871,7 @@ export function integrationAwsAccountLogsConfigLambdaForwarderToTerraform(struct
 export function integrationAwsAccountLogsConfigLambdaForwarderToHclTerraform(struct?: IntegrationAwsAccountLogsConfigLambdaForwarder | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     lambdas: {
@@ -1004,7 +1004,7 @@ export interface IntegrationAwsAccountLogsConfig {
   /**
   * lambda_forwarder block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#lambda_forwarder IntegrationAwsAccount#lambda_forwarder}
   */
   readonly lambdaForwarder?: IntegrationAwsAccountLogsConfigLambdaForwarder;
 }
@@ -1012,7 +1012,7 @@ export interface IntegrationAwsAccountLogsConfig {
 export function integrationAwsAccountLogsConfigToTerraform(struct?: IntegrationAwsAccountLogsConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     lambda_forwarder: integrationAwsAccountLogsConfigLambdaForwarderToTerraform(struct!.lambdaForwarder),
@@ -1023,7 +1023,7 @@ export function integrationAwsAccountLogsConfigToTerraform(struct?: IntegrationA
 export function integrationAwsAccountLogsConfigToHclTerraform(struct?: IntegrationAwsAccountLogsConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     lambda_forwarder: {
@@ -1100,13 +1100,13 @@ export interface IntegrationAwsAccountMetricsConfigNamespaceFilters {
   /**
   * Exclude only these namespaces from metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values. Defaults to `["AWS/SQS", "AWS/ElasticMapReduce", "AWS/Usage"]`. `AWS/SQS`, `AWS/ElasticMapReduce`, and `AWS/Usage` are excluded by default to reduce your AWS CloudWatch costs from `GetMetricData` API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#exclude_only IntegrationAwsAccount#exclude_only}
   */
   readonly excludeOnly?: string[];
   /**
   * Include only these namespaces for metrics collection. Use [`datadog_integration_aws_available_namespaces` data source](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/data-sources/integration_aws_available_namespaces) to get allowed values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
@@ -1114,7 +1114,7 @@ export interface IntegrationAwsAccountMetricsConfigNamespaceFilters {
 export function integrationAwsAccountMetricsConfigNamespaceFiltersToTerraform(struct?: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exclude_only: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludeOnly),
@@ -1126,7 +1126,7 @@ export function integrationAwsAccountMetricsConfigNamespaceFiltersToTerraform(st
 export function integrationAwsAccountMetricsConfigNamespaceFiltersToHclTerraform(struct?: IntegrationAwsAccountMetricsConfigNamespaceFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exclude_only: {
@@ -1231,13 +1231,13 @@ export interface IntegrationAwsAccountMetricsConfigTagFilters {
   /**
   * The AWS service for which the tag filters defined in `tags` will be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#namespace IntegrationAwsAccount#namespace}
   */
   readonly namespace: string;
   /**
   * The AWS resource tags to filter on for the service specified by `namespace`. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#tags IntegrationAwsAccount#tags}
   */
   readonly tags?: string[];
 }
@@ -1245,7 +1245,7 @@ export interface IntegrationAwsAccountMetricsConfigTagFilters {
 export function integrationAwsAccountMetricsConfigTagFiltersToTerraform(struct?: IntegrationAwsAccountMetricsConfigTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     namespace: cdktn.stringToTerraform(struct!.namespace),
@@ -1257,7 +1257,7 @@ export function integrationAwsAccountMetricsConfigTagFiltersToTerraform(struct?:
 export function integrationAwsAccountMetricsConfigTagFiltersToHclTerraform(struct?: IntegrationAwsAccountMetricsConfigTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     namespace: {
@@ -1381,37 +1381,37 @@ export interface IntegrationAwsAccountMetricsConfig {
   /**
   * Enable EC2 automute for AWS metrics Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#automute_enabled IntegrationAwsAccount#automute_enabled}
   */
   readonly automuteEnabled?: boolean | cdktn.IResolvable;
   /**
   * Enable CloudWatch alarms collection Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#collect_cloudwatch_alarms IntegrationAwsAccount#collect_cloudwatch_alarms}
   */
   readonly collectCloudwatchAlarms?: boolean | cdktn.IResolvable;
   /**
   * Enable custom metrics collection Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#collect_custom_metrics IntegrationAwsAccount#collect_custom_metrics}
   */
   readonly collectCustomMetrics?: boolean | cdktn.IResolvable;
   /**
   * Enable AWS metrics collection Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#enabled IntegrationAwsAccount#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * namespace_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#namespace_filters IntegrationAwsAccount#namespace_filters}
   */
   readonly namespaceFilters?: IntegrationAwsAccountMetricsConfigNamespaceFilters;
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#tag_filters IntegrationAwsAccount#tag_filters}
   */
   readonly tagFilters?: IntegrationAwsAccountMetricsConfigTagFilters[] | cdktn.IResolvable;
 }
@@ -1419,7 +1419,7 @@ export interface IntegrationAwsAccountMetricsConfig {
 export function integrationAwsAccountMetricsConfigToTerraform(struct?: IntegrationAwsAccountMetricsConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     automute_enabled: cdktn.booleanToTerraform(struct!.automuteEnabled),
@@ -1435,7 +1435,7 @@ export function integrationAwsAccountMetricsConfigToTerraform(struct?: Integrati
 export function integrationAwsAccountMetricsConfigToHclTerraform(struct?: IntegrationAwsAccountMetricsConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     automute_enabled: {
@@ -1652,13 +1652,13 @@ export interface IntegrationAwsAccountResourcesConfig {
   /**
   * Enable Cloud Security Management to scan AWS resources for vulnerabilities, misconfigurations, identity risks, and compliance violations. Requires `extended_collection` to be set to `true`. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#cloud_security_posture_management_collection IntegrationAwsAccount#cloud_security_posture_management_collection}
   */
   readonly cloudSecurityPostureManagementCollection?: boolean | cdktn.IResolvable;
   /**
   * Whether Datadog collects additional attributes and configuration information about the resources in your AWS account. Required for `cloud_security_posture_management_collection`. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#extended_collection IntegrationAwsAccount#extended_collection}
   */
   readonly extendedCollection?: boolean | cdktn.IResolvable;
 }
@@ -1666,7 +1666,7 @@ export interface IntegrationAwsAccountResourcesConfig {
 export function integrationAwsAccountResourcesConfigToTerraform(struct?: IntegrationAwsAccountResourcesConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloud_security_posture_management_collection: cdktn.booleanToTerraform(struct!.cloudSecurityPostureManagementCollection),
@@ -1678,7 +1678,7 @@ export function integrationAwsAccountResourcesConfigToTerraform(struct?: Integra
 export function integrationAwsAccountResourcesConfigToHclTerraform(struct?: IntegrationAwsAccountResourcesConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloud_security_posture_management_collection: {
@@ -1783,13 +1783,13 @@ export interface IntegrationAwsAccountTracesConfigXrayServices {
   /**
   * Include all services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#include_all IntegrationAwsAccount#include_all}
   */
   readonly includeAll?: boolean | cdktn.IResolvable;
   /**
   * Include only these services. Defaults to `[]`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#include_only IntegrationAwsAccount#include_only}
   */
   readonly includeOnly?: string[];
 }
@@ -1797,7 +1797,7 @@ export interface IntegrationAwsAccountTracesConfigXrayServices {
 export function integrationAwsAccountTracesConfigXrayServicesToTerraform(struct?: IntegrationAwsAccountTracesConfigXrayServices | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_all: cdktn.booleanToTerraform(struct!.includeAll),
@@ -1809,7 +1809,7 @@ export function integrationAwsAccountTracesConfigXrayServicesToTerraform(struct?
 export function integrationAwsAccountTracesConfigXrayServicesToHclTerraform(struct?: IntegrationAwsAccountTracesConfigXrayServices | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_all: {
@@ -1914,7 +1914,7 @@ export interface IntegrationAwsAccountTracesConfig {
   /**
   * xray_services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#xray_services IntegrationAwsAccount#xray_services}
   */
   readonly xrayServices?: IntegrationAwsAccountTracesConfigXrayServices;
 }
@@ -1922,7 +1922,7 @@ export interface IntegrationAwsAccountTracesConfig {
 export function integrationAwsAccountTracesConfigToTerraform(struct?: IntegrationAwsAccountTracesConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     xray_services: integrationAwsAccountTracesConfigXrayServicesToTerraform(struct!.xrayServices),
@@ -1933,7 +1933,7 @@ export function integrationAwsAccountTracesConfigToTerraform(struct?: Integratio
 export function integrationAwsAccountTracesConfigToHclTerraform(struct?: IntegrationAwsAccountTracesConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     xray_services: {
@@ -2008,7 +2008,7 @@ export class IntegrationAwsAccountTracesConfigOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account datadog_integration_aws_account}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account datadog_integration_aws_account}
 */
 export class IntegrationAwsAccount extends cdktn.TerraformResource {
 
@@ -2024,7 +2024,7 @@ export class IntegrationAwsAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IntegrationAwsAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IntegrationAwsAccount to import
-  * @param importFromId The id of the existing IntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IntegrationAwsAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IntegrationAwsAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2036,7 +2036,7 @@ export class IntegrationAwsAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/integration_aws_account datadog_integration_aws_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/integration_aws_account datadog_integration_aws_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2047,7 +2047,7 @@ export class IntegrationAwsAccount extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_integration_aws_account',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

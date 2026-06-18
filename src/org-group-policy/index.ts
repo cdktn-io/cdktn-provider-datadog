@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface OrgGroupPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The policy content as a JSON-encoded string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy#content OrgGroupPolicy#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy#content OrgGroupPolicy#content}
   */
   readonly content: string;
   /**
   * The enforcement tier of the policy. `OVERRIDE_ALLOWED` means the policy is set but member orgs may mutate it. `GROUP_MANAGED` means the policy is strictly controlled and mutations are blocked for affected orgs. `DELEGATE` means each member org controls its own value. Valid values are `OVERRIDE_ALLOWED`, `GROUP_MANAGED`, `DELEGATE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy#enforcement_tier OrgGroupPolicy#enforcement_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy#enforcement_tier OrgGroupPolicy#enforcement_tier}
   */
   readonly enforcementTier?: string;
   /**
   * The UUID of the org group this policy belongs to. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy#org_group_id OrgGroupPolicy#org_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy#org_group_id OrgGroupPolicy#org_group_id}
   */
   readonly orgGroupId: string;
   /**
   * The name of the policy. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy#policy_name OrgGroupPolicy#policy_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy#policy_name OrgGroupPolicy#policy_name}
   */
   readonly policyName: string;
   /**
   * The type of the policy. Valid values are `org_config`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy#policy_type OrgGroupPolicy#policy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy#policy_type OrgGroupPolicy#policy_type}
   */
   readonly policyType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy datadog_org_group_policy}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy datadog_org_group_policy}
 */
 export class OrgGroupPolicy extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class OrgGroupPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OrgGroupPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrgGroupPolicy to import
-  * @param importFromId The id of the existing OrgGroupPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrgGroupPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrgGroupPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class OrgGroupPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/org_group_policy datadog_org_group_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/org_group_policy datadog_org_group_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class OrgGroupPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_org_group_policy',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

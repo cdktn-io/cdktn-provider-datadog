@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/security_monitoring_critical_assets
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_assets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -19,7 +19,7 @@ export interface DataDatadogSecurityMonitoringCriticalAssetsCriticalAssets {
 export function dataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsToTerraform(struct?: DataDatadogSecurityMonitoringCriticalAssetsCriticalAssets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -29,7 +29,7 @@ export function dataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsToTerra
 export function dataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsToHclTerraform(struct?: DataDatadogSecurityMonitoringCriticalAssetsCriticalAssets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -115,7 +115,7 @@ export class DataDatadogSecurityMonitoringCriticalAssetsCriticalAssetsList exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/security_monitoring_critical_assets datadog_security_monitoring_critical_assets}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_assets datadog_security_monitoring_critical_assets}
 */
 export class DataDatadogSecurityMonitoringCriticalAssets extends cdktn.TerraformDataSource {
 
@@ -131,7 +131,7 @@ export class DataDatadogSecurityMonitoringCriticalAssets extends cdktn.Terraform
   * Generates CDKTN code for importing a DataDatadogSecurityMonitoringCriticalAssets resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogSecurityMonitoringCriticalAssets to import
-  * @param importFromId The id of the existing DataDatadogSecurityMonitoringCriticalAssets that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/security_monitoring_critical_assets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogSecurityMonitoringCriticalAssets that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_assets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogSecurityMonitoringCriticalAssets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -143,7 +143,7 @@ export class DataDatadogSecurityMonitoringCriticalAssets extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/security_monitoring_critical_assets datadog_security_monitoring_critical_assets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_assets datadog_security_monitoring_critical_assets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -154,7 +154,7 @@ export class DataDatadogSecurityMonitoringCriticalAssets extends cdktn.Terraform
       terraformResourceType: 'datadog_security_monitoring_critical_assets',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

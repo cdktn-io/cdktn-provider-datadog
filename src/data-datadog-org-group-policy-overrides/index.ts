@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policy_overrides
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policy_overrides
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataDatadogOrgGroupPolicyOverridesConfig extends cdktn.Terrafor
   /**
   * The UUID of the org group whose overrides to list. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policy_overrides#org_group_id DataDatadogOrgGroupPolicyOverrides#org_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policy_overrides#org_group_id DataDatadogOrgGroupPolicyOverrides#org_group_id}
   */
   readonly orgGroupId: string;
   /**
   * Filter overrides to those for the given organization. Applied client-side after the List call because the API does not accept an `org_uuid` filter on this endpoint. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policy_overrides#org_uuid DataDatadogOrgGroupPolicyOverrides#org_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policy_overrides#org_uuid DataDatadogOrgGroupPolicyOverrides#org_uuid}
   */
   readonly orgUuid?: string;
   /**
   * Filter overrides to those on the given policy. Must be a valid UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policy_overrides#policy_id DataDatadogOrgGroupPolicyOverrides#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policy_overrides#policy_id DataDatadogOrgGroupPolicyOverrides#policy_id}
   */
   readonly policyId?: string;
 }
@@ -37,7 +37,7 @@ export interface DataDatadogOrgGroupPolicyOverridesOverrides {
 export function dataDatadogOrgGroupPolicyOverridesOverridesToTerraform(struct?: DataDatadogOrgGroupPolicyOverridesOverrides): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -47,7 +47,7 @@ export function dataDatadogOrgGroupPolicyOverridesOverridesToTerraform(struct?: 
 export function dataDatadogOrgGroupPolicyOverridesOverridesToHclTerraform(struct?: DataDatadogOrgGroupPolicyOverridesOverrides): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -133,7 +133,7 @@ export class DataDatadogOrgGroupPolicyOverridesOverridesList extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides}
 */
 export class DataDatadogOrgGroupPolicyOverrides extends cdktn.TerraformDataSource {
 
@@ -149,7 +149,7 @@ export class DataDatadogOrgGroupPolicyOverrides extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataDatadogOrgGroupPolicyOverrides resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogOrgGroupPolicyOverrides to import
-  * @param importFromId The id of the existing DataDatadogOrgGroupPolicyOverrides that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policy_overrides#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogOrgGroupPolicyOverrides that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policy_overrides#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogOrgGroupPolicyOverrides to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -161,7 +161,7 @@ export class DataDatadogOrgGroupPolicyOverrides extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policy_overrides datadog_org_group_policy_overrides} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +172,7 @@ export class DataDatadogOrgGroupPolicyOverrides extends cdktn.TerraformDataSourc
       terraformResourceType: 'datadog_org_group_policy_overrides',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

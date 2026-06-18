@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataDatadogTeamNotificationRuleConfig extends cdktn.TerraformMe
   /**
   * The notification rule ID to fetch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rule#rule_id DataDatadogTeamNotificationRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rule#rule_id DataDatadogTeamNotificationRule#rule_id}
   */
   readonly ruleId: string;
   /**
   * The team ID to fetch the notification rule for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rule#team_id DataDatadogTeamNotificationRule#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rule#team_id DataDatadogTeamNotificationRule#team_id}
   */
   readonly teamId: string;
 }
@@ -31,7 +31,7 @@ export interface DataDatadogTeamNotificationRuleEmail {
 export function dataDatadogTeamNotificationRuleEmailToTerraform(struct?: DataDatadogTeamNotificationRuleEmail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataDatadogTeamNotificationRuleEmailToTerraform(struct?: DataDat
 export function dataDatadogTeamNotificationRuleEmailToHclTerraform(struct?: DataDatadogTeamNotificationRuleEmail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -95,7 +95,7 @@ export interface DataDatadogTeamNotificationRuleMsTeams {
 export function dataDatadogTeamNotificationRuleMsTeamsToTerraform(struct?: DataDatadogTeamNotificationRuleMsTeams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -105,7 +105,7 @@ export function dataDatadogTeamNotificationRuleMsTeamsToTerraform(struct?: DataD
 export function dataDatadogTeamNotificationRuleMsTeamsToHclTerraform(struct?: DataDatadogTeamNotificationRuleMsTeams | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -159,7 +159,7 @@ export interface DataDatadogTeamNotificationRulePagerduty {
 export function dataDatadogTeamNotificationRulePagerdutyToTerraform(struct?: DataDatadogTeamNotificationRulePagerduty | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -169,7 +169,7 @@ export function dataDatadogTeamNotificationRulePagerdutyToTerraform(struct?: Dat
 export function dataDatadogTeamNotificationRulePagerdutyToHclTerraform(struct?: DataDatadogTeamNotificationRulePagerduty | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -223,7 +223,7 @@ export interface DataDatadogTeamNotificationRuleSlack {
 export function dataDatadogTeamNotificationRuleSlackToTerraform(struct?: DataDatadogTeamNotificationRuleSlack | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -233,7 +233,7 @@ export function dataDatadogTeamNotificationRuleSlackToTerraform(struct?: DataDat
 export function dataDatadogTeamNotificationRuleSlackToHclTerraform(struct?: DataDatadogTeamNotificationRuleSlack | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -288,7 +288,7 @@ export class DataDatadogTeamNotificationRuleSlackOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rule datadog_team_notification_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rule datadog_team_notification_rule}
 */
 export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
 
@@ -304,7 +304,7 @@ export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogTeamNotificationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogTeamNotificationRule to import
-  * @param importFromId The id of the existing DataDatadogTeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogTeamNotificationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogTeamNotificationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -316,7 +316,7 @@ export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/team_notification_rule datadog_team_notification_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/team_notification_rule datadog_team_notification_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -327,7 +327,7 @@ export class DataDatadogTeamNotificationRule extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_team_notification_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

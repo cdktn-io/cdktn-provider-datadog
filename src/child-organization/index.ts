@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/child_organization
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/child_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface ChildOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/child_organization#id ChildOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/child_organization#id ChildOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface ChildOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name for Child Organization after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/child_organization#name ChildOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/child_organization#name ChildOrganization#name}
   */
   readonly name: string;
 }
@@ -32,7 +32,7 @@ export interface ChildOrganizationApiKey {
 export function childOrganizationApiKeyToTerraform(struct?: ChildOrganizationApiKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function childOrganizationApiKeyToTerraform(struct?: ChildOrganizationApi
 export function childOrganizationApiKeyToHclTerraform(struct?: ChildOrganizationApiKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -112,7 +112,7 @@ export interface ChildOrganizationApplicationKey {
 export function childOrganizationApplicationKeyToTerraform(struct?: ChildOrganizationApplicationKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -122,7 +122,7 @@ export function childOrganizationApplicationKeyToTerraform(struct?: ChildOrganiz
 export function childOrganizationApplicationKeyToHclTerraform(struct?: ChildOrganizationApplicationKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -197,7 +197,7 @@ export interface ChildOrganizationSettingsSaml {
 export function childOrganizationSettingsSamlToTerraform(struct?: ChildOrganizationSettingsSaml): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -207,7 +207,7 @@ export function childOrganizationSettingsSamlToTerraform(struct?: ChildOrganizat
 export function childOrganizationSettingsSamlToHclTerraform(struct?: ChildOrganizationSettingsSaml): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -272,7 +272,7 @@ export interface ChildOrganizationSettingsSamlAutocreateUsersDomains {
 export function childOrganizationSettingsSamlAutocreateUsersDomainsToTerraform(struct?: ChildOrganizationSettingsSamlAutocreateUsersDomains): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -282,7 +282,7 @@ export function childOrganizationSettingsSamlAutocreateUsersDomainsToTerraform(s
 export function childOrganizationSettingsSamlAutocreateUsersDomainsToHclTerraform(struct?: ChildOrganizationSettingsSamlAutocreateUsersDomains): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -352,7 +352,7 @@ export interface ChildOrganizationSettingsSamlIdpInitiatedLogin {
 export function childOrganizationSettingsSamlIdpInitiatedLoginToTerraform(struct?: ChildOrganizationSettingsSamlIdpInitiatedLogin): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -362,7 +362,7 @@ export function childOrganizationSettingsSamlIdpInitiatedLoginToTerraform(struct
 export function childOrganizationSettingsSamlIdpInitiatedLoginToHclTerraform(struct?: ChildOrganizationSettingsSamlIdpInitiatedLogin): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -427,7 +427,7 @@ export interface ChildOrganizationSettingsSamlStrictMode {
 export function childOrganizationSettingsSamlStrictModeToTerraform(struct?: ChildOrganizationSettingsSamlStrictMode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -437,7 +437,7 @@ export function childOrganizationSettingsSamlStrictModeToTerraform(struct?: Chil
 export function childOrganizationSettingsSamlStrictModeToHclTerraform(struct?: ChildOrganizationSettingsSamlStrictMode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -502,7 +502,7 @@ export interface ChildOrganizationSettings {
 export function childOrganizationSettingsToTerraform(struct?: ChildOrganizationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -512,7 +512,7 @@ export function childOrganizationSettingsToTerraform(struct?: ChildOrganizationS
 export function childOrganizationSettingsToHclTerraform(struct?: ChildOrganizationSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -626,7 +626,7 @@ export interface ChildOrganizationUser {
 export function childOrganizationUserToTerraform(struct?: ChildOrganizationUser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -636,7 +636,7 @@ export function childOrganizationUserToTerraform(struct?: ChildOrganizationUser)
 export function childOrganizationUserToHclTerraform(struct?: ChildOrganizationUser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -707,7 +707,7 @@ export class ChildOrganizationUserList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/child_organization datadog_child_organization}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/child_organization datadog_child_organization}
 */
 export class ChildOrganization extends cdktn.TerraformResource {
 
@@ -723,7 +723,7 @@ export class ChildOrganization extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChildOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChildOrganization to import
-  * @param importFromId The id of the existing ChildOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/child_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChildOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/child_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChildOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -735,7 +735,7 @@ export class ChildOrganization extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/child_organization datadog_child_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/child_organization datadog_child_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -746,7 +746,7 @@ export class ChildOrganization extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_child_organization',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

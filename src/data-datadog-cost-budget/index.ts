@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogCostBudgetConfig extends cdktn.TerraformMetaArgument
   /**
   * The ID of the budget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#id DataDatadogCostBudget#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#id DataDatadogCostBudget#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataDatadogCostBudgetConfig extends cdktn.TerraformMetaArgument
   /**
   * budget_line block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#budget_line DataDatadogCostBudget#budget_line}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#budget_line DataDatadogCostBudget#budget_line}
   */
   readonly budgetLine?: DataDatadogCostBudgetBudgetLine[] | cdktn.IResolvable;
   /**
   * entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#entries DataDatadogCostBudget#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#entries DataDatadogCostBudget#entries}
   */
   readonly entries?: DataDatadogCostBudgetEntries[] | cdktn.IResolvable;
 }
@@ -40,7 +40,7 @@ export interface DataDatadogCostBudgetBudgetLineChildTagFilters {
 export function dataDatadogCostBudgetBudgetLineChildTagFiltersToTerraform(struct?: DataDatadogCostBudgetBudgetLineChildTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataDatadogCostBudgetBudgetLineChildTagFiltersToTerraform(struct
 export function dataDatadogCostBudgetBudgetLineChildTagFiltersToHclTerraform(struct?: DataDatadogCostBudgetBudgetLineChildTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -131,7 +131,7 @@ export interface DataDatadogCostBudgetBudgetLineParentTagFilters {
 export function dataDatadogCostBudgetBudgetLineParentTagFiltersToTerraform(struct?: DataDatadogCostBudgetBudgetLineParentTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -141,7 +141,7 @@ export function dataDatadogCostBudgetBudgetLineParentTagFiltersToTerraform(struc
 export function dataDatadogCostBudgetBudgetLineParentTagFiltersToHclTerraform(struct?: DataDatadogCostBudgetBudgetLineParentTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -222,7 +222,7 @@ export interface DataDatadogCostBudgetBudgetLineTagFilters {
 export function dataDatadogCostBudgetBudgetLineTagFiltersToTerraform(struct?: DataDatadogCostBudgetBudgetLineTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -232,7 +232,7 @@ export function dataDatadogCostBudgetBudgetLineTagFiltersToTerraform(struct?: Da
 export function dataDatadogCostBudgetBudgetLineTagFiltersToHclTerraform(struct?: DataDatadogCostBudgetBudgetLineTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -311,19 +311,19 @@ export interface DataDatadogCostBudgetBudgetLine {
   /**
   * child_tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#child_tag_filters DataDatadogCostBudget#child_tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#child_tag_filters DataDatadogCostBudget#child_tag_filters}
   */
   readonly childTagFilters?: DataDatadogCostBudgetBudgetLineChildTagFilters[] | cdktn.IResolvable;
   /**
   * parent_tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#parent_tag_filters DataDatadogCostBudget#parent_tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#parent_tag_filters DataDatadogCostBudget#parent_tag_filters}
   */
   readonly parentTagFilters?: DataDatadogCostBudgetBudgetLineParentTagFilters[] | cdktn.IResolvable;
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
   */
   readonly tagFilters?: DataDatadogCostBudgetBudgetLineTagFilters[] | cdktn.IResolvable;
 }
@@ -331,7 +331,7 @@ export interface DataDatadogCostBudgetBudgetLine {
 export function dataDatadogCostBudgetBudgetLineToTerraform(struct?: DataDatadogCostBudgetBudgetLine | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     child_tag_filters: cdktn.listMapper(dataDatadogCostBudgetBudgetLineChildTagFiltersToTerraform, true)(struct!.childTagFilters),
@@ -344,7 +344,7 @@ export function dataDatadogCostBudgetBudgetLineToTerraform(struct?: DataDatadogC
 export function dataDatadogCostBudgetBudgetLineToHclTerraform(struct?: DataDatadogCostBudgetBudgetLine | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     child_tag_filters: {
@@ -507,7 +507,7 @@ export interface DataDatadogCostBudgetEntriesTagFilters {
 export function dataDatadogCostBudgetEntriesTagFiltersToTerraform(struct?: DataDatadogCostBudgetEntriesTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -517,7 +517,7 @@ export function dataDatadogCostBudgetEntriesTagFiltersToTerraform(struct?: DataD
 export function dataDatadogCostBudgetEntriesTagFiltersToHclTerraform(struct?: DataDatadogCostBudgetEntriesTagFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -596,7 +596,7 @@ export interface DataDatadogCostBudgetEntries {
   /**
   * tag_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#tag_filters DataDatadogCostBudget#tag_filters}
   */
   readonly tagFilters?: DataDatadogCostBudgetEntriesTagFilters[] | cdktn.IResolvable;
 }
@@ -604,7 +604,7 @@ export interface DataDatadogCostBudgetEntries {
 export function dataDatadogCostBudgetEntriesToTerraform(struct?: DataDatadogCostBudgetEntries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     tag_filters: cdktn.listMapper(dataDatadogCostBudgetEntriesTagFiltersToTerraform, true)(struct!.tagFilters),
@@ -615,7 +615,7 @@ export function dataDatadogCostBudgetEntriesToTerraform(struct?: DataDatadogCost
 export function dataDatadogCostBudgetEntriesToHclTerraform(struct?: DataDatadogCostBudgetEntries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     tag_filters: {
@@ -722,7 +722,7 @@ export class DataDatadogCostBudgetEntriesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget datadog_cost_budget}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget datadog_cost_budget}
 */
 export class DataDatadogCostBudget extends cdktn.TerraformDataSource {
 
@@ -738,7 +738,7 @@ export class DataDatadogCostBudget extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogCostBudget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCostBudget to import
-  * @param importFromId The id of the existing DataDatadogCostBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCostBudget that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCostBudget to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -750,7 +750,7 @@ export class DataDatadogCostBudget extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/cost_budget datadog_cost_budget} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/cost_budget datadog_cost_budget} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -761,7 +761,7 @@ export class DataDatadogCostBudget extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_cost_budget',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

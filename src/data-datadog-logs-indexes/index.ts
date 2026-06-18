@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/logs_indexes
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/logs_indexes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataDatadogLogsIndexesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/logs_indexes#id DataDatadogLogsIndexes#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataDatadogLogsIndexesLogsIndexesDailyLimitReset {
 export function dataDatadogLogsIndexesLogsIndexesDailyLimitResetToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesDailyLimitReset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -36,7 +36,7 @@ export function dataDatadogLogsIndexesLogsIndexesDailyLimitResetToTerraform(stru
 export function dataDatadogLogsIndexesLogsIndexesDailyLimitResetToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesDailyLimitReset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -106,7 +106,7 @@ export interface DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter {
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -116,7 +116,7 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToTerrafor
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilterFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -191,7 +191,7 @@ export interface DataDatadogLogsIndexesLogsIndexesExclusionFilter {
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -201,7 +201,7 @@ export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToTerraform(stru
 export function dataDatadogLogsIndexesLogsIndexesExclusionFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesExclusionFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -277,7 +277,7 @@ export interface DataDatadogLogsIndexesLogsIndexesFilter {
 export function dataDatadogLogsIndexesLogsIndexesFilterToTerraform(struct?: DataDatadogLogsIndexesLogsIndexesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -287,7 +287,7 @@ export function dataDatadogLogsIndexesLogsIndexesFilterToTerraform(struct?: Data
 export function dataDatadogLogsIndexesLogsIndexesFilterToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -352,7 +352,7 @@ export interface DataDatadogLogsIndexesLogsIndexes {
 export function dataDatadogLogsIndexesLogsIndexesToTerraform(struct?: DataDatadogLogsIndexesLogsIndexes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -362,7 +362,7 @@ export function dataDatadogLogsIndexesLogsIndexesToTerraform(struct?: DataDatado
 export function dataDatadogLogsIndexesLogsIndexesToHclTerraform(struct?: DataDatadogLogsIndexesLogsIndexes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -466,7 +466,7 @@ export class DataDatadogLogsIndexesLogsIndexesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/logs_indexes datadog_logs_indexes}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/logs_indexes datadog_logs_indexes}
 */
 export class DataDatadogLogsIndexes extends cdktn.TerraformDataSource {
 
@@ -482,7 +482,7 @@ export class DataDatadogLogsIndexes extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogLogsIndexes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogLogsIndexes to import
-  * @param importFromId The id of the existing DataDatadogLogsIndexes that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/logs_indexes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogLogsIndexes that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/logs_indexes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogLogsIndexes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -494,7 +494,7 @@ export class DataDatadogLogsIndexes extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/logs_indexes datadog_logs_indexes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -505,7 +505,7 @@ export class DataDatadogLogsIndexes extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_logs_indexes',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

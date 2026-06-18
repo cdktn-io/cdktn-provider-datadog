@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataDatadogCustomAllocationRuleConfig extends cdktn.TerraformMe
   /**
   * The ID of the custom allocation rule to retrieve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#rule_id DataDatadogCustomAllocationRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#rule_id DataDatadogCustomAllocationRule#rule_id}
   */
   readonly ruleId?: number;
   /**
   * costs_to_allocate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#costs_to_allocate DataDatadogCustomAllocationRule#costs_to_allocate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#costs_to_allocate DataDatadogCustomAllocationRule#costs_to_allocate}
   */
   readonly costsToAllocate?: DataDatadogCustomAllocationRuleCostsToAllocate[] | cdktn.IResolvable;
   /**
   * strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#strategy DataDatadogCustomAllocationRule#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#strategy DataDatadogCustomAllocationRule#strategy}
   */
   readonly strategy?: DataDatadogCustomAllocationRuleStrategy;
 }
@@ -37,7 +37,7 @@ export interface DataDatadogCustomAllocationRuleCostsToAllocate {
 export function dataDatadogCustomAllocationRuleCostsToAllocateToTerraform(struct?: DataDatadogCustomAllocationRuleCostsToAllocate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -47,7 +47,7 @@ export function dataDatadogCustomAllocationRuleCostsToAllocateToTerraform(struct
 export function dataDatadogCustomAllocationRuleCostsToAllocateToHclTerraform(struct?: DataDatadogCustomAllocationRuleCostsToAllocate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -138,7 +138,7 @@ export interface DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTags
 export function dataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform(struct?: DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -148,7 +148,7 @@ export function dataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsT
 export function dataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsToHclTerraform(struct?: DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -227,7 +227,7 @@ export interface DataDatadogCustomAllocationRuleStrategyAllocatedBy {
   /**
   * allocated_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#allocated_tags DataDatadogCustomAllocationRule#allocated_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#allocated_tags DataDatadogCustomAllocationRule#allocated_tags}
   */
   readonly allocatedTags?: DataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktn.IResolvable;
 }
@@ -235,7 +235,7 @@ export interface DataDatadogCustomAllocationRuleStrategyAllocatedBy {
 export function dataDatadogCustomAllocationRuleStrategyAllocatedByToTerraform(struct?: DataDatadogCustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allocated_tags: cdktn.listMapper(dataDatadogCustomAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform, true)(struct!.allocatedTags),
@@ -246,7 +246,7 @@ export function dataDatadogCustomAllocationRuleStrategyAllocatedByToTerraform(st
 export function dataDatadogCustomAllocationRuleStrategyAllocatedByToHclTerraform(struct?: DataDatadogCustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allocated_tags: {
@@ -352,7 +352,7 @@ export interface DataDatadogCustomAllocationRuleStrategyAllocatedByFilters {
 export function dataDatadogCustomAllocationRuleStrategyAllocatedByFiltersToTerraform(struct?: DataDatadogCustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -362,7 +362,7 @@ export function dataDatadogCustomAllocationRuleStrategyAllocatedByFiltersToTerra
 export function dataDatadogCustomAllocationRuleStrategyAllocatedByFiltersToHclTerraform(struct?: DataDatadogCustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -453,7 +453,7 @@ export interface DataDatadogCustomAllocationRuleStrategyBasedOnCosts {
 export function dataDatadogCustomAllocationRuleStrategyBasedOnCostsToTerraform(struct?: DataDatadogCustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -463,7 +463,7 @@ export function dataDatadogCustomAllocationRuleStrategyBasedOnCostsToTerraform(s
 export function dataDatadogCustomAllocationRuleStrategyBasedOnCostsToHclTerraform(struct?: DataDatadogCustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -554,7 +554,7 @@ export interface DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries {
 export function dataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct?: DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -564,7 +564,7 @@ export function dataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesToTerraf
 export function dataDatadogCustomAllocationRuleStrategyBasedOnTimeseriesToHclTerraform(struct?: DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -613,7 +613,7 @@ export interface DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFilters
 export function dataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform(struct?: DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -623,7 +623,7 @@ export function dataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFiltersT
 export function dataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerraform(struct?: DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -712,31 +712,31 @@ export interface DataDatadogCustomAllocationRuleStrategy {
   /**
   * allocated_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#allocated_by DataDatadogCustomAllocationRule#allocated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#allocated_by DataDatadogCustomAllocationRule#allocated_by}
   */
   readonly allocatedBy?: DataDatadogCustomAllocationRuleStrategyAllocatedBy[] | cdktn.IResolvable;
   /**
   * allocated_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#allocated_by_filters DataDatadogCustomAllocationRule#allocated_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#allocated_by_filters DataDatadogCustomAllocationRule#allocated_by_filters}
   */
   readonly allocatedByFilters?: DataDatadogCustomAllocationRuleStrategyAllocatedByFilters[] | cdktn.IResolvable;
   /**
   * based_on_costs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#based_on_costs DataDatadogCustomAllocationRule#based_on_costs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#based_on_costs DataDatadogCustomAllocationRule#based_on_costs}
   */
   readonly basedOnCosts?: DataDatadogCustomAllocationRuleStrategyBasedOnCosts[] | cdktn.IResolvable;
   /**
   * based_on_timeseries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#based_on_timeseries DataDatadogCustomAllocationRule#based_on_timeseries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#based_on_timeseries DataDatadogCustomAllocationRule#based_on_timeseries}
   */
   readonly basedOnTimeseries?: DataDatadogCustomAllocationRuleStrategyBasedOnTimeseries;
   /**
   * evaluate_grouped_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#evaluate_grouped_by_filters DataDatadogCustomAllocationRule#evaluate_grouped_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#evaluate_grouped_by_filters DataDatadogCustomAllocationRule#evaluate_grouped_by_filters}
   */
   readonly evaluateGroupedByFilters?: DataDatadogCustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktn.IResolvable;
 }
@@ -744,7 +744,7 @@ export interface DataDatadogCustomAllocationRuleStrategy {
 export function dataDatadogCustomAllocationRuleStrategyToTerraform(struct?: DataDatadogCustomAllocationRuleStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allocated_by: cdktn.listMapper(dataDatadogCustomAllocationRuleStrategyAllocatedByToTerraform, true)(struct!.allocatedBy),
@@ -759,7 +759,7 @@ export function dataDatadogCustomAllocationRuleStrategyToTerraform(struct?: Data
 export function dataDatadogCustomAllocationRuleStrategyToHclTerraform(struct?: DataDatadogCustomAllocationRuleStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allocated_by: {
@@ -963,7 +963,7 @@ export class DataDatadogCustomAllocationRuleStrategyOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule}
 */
 export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
 
@@ -979,7 +979,7 @@ export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogCustomAllocationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCustomAllocationRule to import
-  * @param importFromId The id of the existing DataDatadogCustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCustomAllocationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -991,7 +991,7 @@ export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/custom_allocation_rule datadog_custom_allocation_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1002,7 +1002,7 @@ export class DataDatadogCustomAllocationRule extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_custom_allocation_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

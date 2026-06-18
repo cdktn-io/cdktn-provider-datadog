@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface CloudInventorySyncConfigConfig extends cdktn.TerraformMetaArgum
   /**
   * The cloud provider type. Valid values are `aws`, `azure`, `gcp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
   */
   readonly cloudProvider: string;
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
   */
   readonly aws?: CloudInventorySyncConfigAws;
   /**
   * azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
   */
   readonly azure?: CloudInventorySyncConfigAzure;
   /**
   * gcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
   */
   readonly gcp?: CloudInventorySyncConfigGcp;
 }
@@ -41,25 +41,25 @@ export interface CloudInventorySyncConfigAws {
   /**
   * AWS Account ID of the account holding the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#aws_account_id CloudInventorySyncConfig#aws_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#aws_account_id CloudInventorySyncConfig#aws_account_id}
   */
   readonly awsAccountId?: string;
   /**
   * Name of the S3 bucket holding the inventory files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
   */
   readonly destinationBucketName?: string;
   /**
   * AWS Region of the bucket holding the inventory files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_bucket_region CloudInventorySyncConfig#destination_bucket_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_bucket_region CloudInventorySyncConfig#destination_bucket_region}
   */
   readonly destinationBucketRegion?: string;
   /**
   * Prefix path within the bucket for inventory files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_prefix CloudInventorySyncConfig#destination_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_prefix CloudInventorySyncConfig#destination_prefix}
   */
   readonly destinationPrefix?: string;
 }
@@ -67,7 +67,7 @@ export interface CloudInventorySyncConfigAws {
 export function cloudInventorySyncConfigAwsToTerraform(struct?: CloudInventorySyncConfigAws | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aws_account_id: cdktn.stringToTerraform(struct!.awsAccountId),
@@ -81,7 +81,7 @@ export function cloudInventorySyncConfigAwsToTerraform(struct?: CloudInventorySy
 export function cloudInventorySyncConfigAwsToHclTerraform(struct?: CloudInventorySyncConfigAws | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aws_account_id: {
@@ -242,37 +242,37 @@ export interface CloudInventorySyncConfigAzure {
   /**
   * Azure Client ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#client_id CloudInventorySyncConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#client_id CloudInventorySyncConfig#client_id}
   */
   readonly clientId?: string;
   /**
   * Azure Storage Container name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#container CloudInventorySyncConfig#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#container CloudInventorySyncConfig#container}
   */
   readonly container?: string;
   /**
   * Azure Resource Group name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#resource_group CloudInventorySyncConfig#resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#resource_group CloudInventorySyncConfig#resource_group}
   */
   readonly resourceGroup?: string;
   /**
   * Azure Storage Account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#storage_account CloudInventorySyncConfig#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#storage_account CloudInventorySyncConfig#storage_account}
   */
   readonly storageAccount?: string;
   /**
   * Azure Subscription ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#subscription_id CloudInventorySyncConfig#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#subscription_id CloudInventorySyncConfig#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
   * Azure Tenant ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#tenant_id CloudInventorySyncConfig#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#tenant_id CloudInventorySyncConfig#tenant_id}
   */
   readonly tenantId?: string;
 }
@@ -280,7 +280,7 @@ export interface CloudInventorySyncConfigAzure {
 export function cloudInventorySyncConfigAzureToTerraform(struct?: CloudInventorySyncConfigAzure | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_id: cdktn.stringToTerraform(struct!.clientId),
@@ -296,7 +296,7 @@ export function cloudInventorySyncConfigAzureToTerraform(struct?: CloudInventory
 export function cloudInventorySyncConfigAzureToHclTerraform(struct?: CloudInventorySyncConfigAzure | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_id: {
@@ -513,25 +513,25 @@ export interface CloudInventorySyncConfigGcp {
   /**
   * Name of the GCS bucket holding the inventory files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
   */
   readonly destinationBucketName?: string;
   /**
   * GCP Project ID of the project holding the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#project_id CloudInventorySyncConfig#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#project_id CloudInventorySyncConfig#project_id}
   */
   readonly projectId?: string;
   /**
   * Service account email used for reading the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#service_account_email CloudInventorySyncConfig#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#service_account_email CloudInventorySyncConfig#service_account_email}
   */
   readonly serviceAccountEmail?: string;
   /**
   * Name of the source bucket the inventory report is generated for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#source_bucket_name CloudInventorySyncConfig#source_bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#source_bucket_name CloudInventorySyncConfig#source_bucket_name}
   */
   readonly sourceBucketName?: string;
 }
@@ -539,7 +539,7 @@ export interface CloudInventorySyncConfigGcp {
 export function cloudInventorySyncConfigGcpToTerraform(struct?: CloudInventorySyncConfigGcp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination_bucket_name: cdktn.stringToTerraform(struct!.destinationBucketName),
@@ -553,7 +553,7 @@ export function cloudInventorySyncConfigGcpToTerraform(struct?: CloudInventorySy
 export function cloudInventorySyncConfigGcpToHclTerraform(struct?: CloudInventorySyncConfigGcp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination_bucket_name: {
@@ -712,7 +712,7 @@ export class CloudInventorySyncConfigGcpOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}
 */
 export class CloudInventorySyncConfig extends cdktn.TerraformResource {
 
@@ -728,7 +728,7 @@ export class CloudInventorySyncConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudInventorySyncConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudInventorySyncConfig to import
-  * @param importFromId The id of the existing CloudInventorySyncConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudInventorySyncConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudInventorySyncConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -740,7 +740,7 @@ export class CloudInventorySyncConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -751,7 +751,7 @@ export class CloudInventorySyncConfig extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_cloud_inventory_sync_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/csm_threats_agent_rules
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/csm_threats_agent_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogCsmThreatsAgentRulesConfig extends cdktn.TerraformMe
   /**
   * Listing only the rules in the policy with this field as the ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/csm_threats_agent_rules#policy_id DataDatadogCsmThreatsAgentRules#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/csm_threats_agent_rules#policy_id DataDatadogCsmThreatsAgentRules#policy_id}
   */
   readonly policyId?: string;
 }
@@ -25,7 +25,7 @@ export interface DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash {
 export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsHashToTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -35,7 +35,7 @@ export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsHashToTerraform(
 export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsHashToHclTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActionsHash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -79,7 +79,7 @@ export interface DataDatadogCsmThreatsAgentRulesAgentRulesActionsSet {
 export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsSetToTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActionsSet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -89,7 +89,7 @@ export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsSetToTerraform(s
 export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsSetToHclTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActionsSet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -178,7 +178,7 @@ export interface DataDatadogCsmThreatsAgentRulesAgentRulesActions {
 export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsToTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -188,7 +188,7 @@ export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsToTerraform(stru
 export function dataDatadogCsmThreatsAgentRulesAgentRulesActionsToHclTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRulesActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -260,7 +260,7 @@ export interface DataDatadogCsmThreatsAgentRulesAgentRules {
 export function dataDatadogCsmThreatsAgentRulesAgentRulesToTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -270,7 +270,7 @@ export function dataDatadogCsmThreatsAgentRulesAgentRulesToTerraform(struct?: Da
 export function dataDatadogCsmThreatsAgentRulesAgentRulesToHclTerraform(struct?: DataDatadogCsmThreatsAgentRulesAgentRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -362,7 +362,7 @@ export class DataDatadogCsmThreatsAgentRulesAgentRulesList extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules}
 */
 export class DataDatadogCsmThreatsAgentRules extends cdktn.TerraformDataSource {
 
@@ -378,7 +378,7 @@ export class DataDatadogCsmThreatsAgentRules extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogCsmThreatsAgentRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogCsmThreatsAgentRules to import
-  * @param importFromId The id of the existing DataDatadogCsmThreatsAgentRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/csm_threats_agent_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogCsmThreatsAgentRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/csm_threats_agent_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogCsmThreatsAgentRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -390,7 +390,7 @@ export class DataDatadogCsmThreatsAgentRules extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/csm_threats_agent_rules datadog_csm_threats_agent_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -401,7 +401,7 @@ export class DataDatadogCsmThreatsAgentRules extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_csm_threats_agent_rules',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

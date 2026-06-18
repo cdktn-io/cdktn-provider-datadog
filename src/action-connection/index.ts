@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ActionConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name of the connection
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name: string;
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#aws ActionConnection#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#aws ActionConnection#aws}
   */
   readonly aws?: ActionConnectionAws;
   /**
   * http block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#http ActionConnection#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#http ActionConnection#http}
   */
   readonly http?: ActionConnectionHttp;
 }
@@ -35,13 +35,13 @@ export interface ActionConnectionAwsAssumeRole {
   /**
   * AWS account that the connection is created for. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#account_id ActionConnection#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#account_id ActionConnection#account_id}
   */
   readonly accountId?: string;
   /**
   * Role to assume. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#role ActionConnection#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#role ActionConnection#role}
   */
   readonly role?: string;
 }
@@ -49,7 +49,7 @@ export interface ActionConnectionAwsAssumeRole {
 export function actionConnectionAwsAssumeRoleToTerraform(struct?: ActionConnectionAwsAssumeRole | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account_id: cdktn.stringToTerraform(struct!.accountId),
@@ -61,7 +61,7 @@ export function actionConnectionAwsAssumeRoleToTerraform(struct?: ActionConnecti
 export function actionConnectionAwsAssumeRoleToHclTerraform(struct?: ActionConnectionAwsAssumeRole | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account_id: {
@@ -176,7 +176,7 @@ export interface ActionConnectionAws {
   /**
   * assume_role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#assume_role ActionConnection#assume_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#assume_role ActionConnection#assume_role}
   */
   readonly assumeRole?: ActionConnectionAwsAssumeRole;
 }
@@ -184,7 +184,7 @@ export interface ActionConnectionAws {
 export function actionConnectionAwsToTerraform(struct?: ActionConnectionAws | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     assume_role: actionConnectionAwsAssumeRoleToTerraform(struct!.assumeRole),
@@ -195,7 +195,7 @@ export function actionConnectionAwsToTerraform(struct?: ActionConnectionAws | cd
 export function actionConnectionAwsToHclTerraform(struct?: ActionConnectionAws | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     assume_role: {
@@ -272,13 +272,13 @@ export interface ActionConnectionHttpTokenAuthBody {
   /**
   * Serialized body content. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#content ActionConnection#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#content ActionConnection#content}
   */
   readonly content?: string;
   /**
   * Content type of the body. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#content_type ActionConnection#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#content_type ActionConnection#content_type}
   */
   readonly contentType?: string;
 }
@@ -286,7 +286,7 @@ export interface ActionConnectionHttpTokenAuthBody {
 export function actionConnectionHttpTokenAuthBodyToTerraform(struct?: ActionConnectionHttpTokenAuthBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -298,7 +298,7 @@ export function actionConnectionHttpTokenAuthBodyToTerraform(struct?: ActionConn
 export function actionConnectionHttpTokenAuthBodyToHclTerraform(struct?: ActionConnectionHttpTokenAuthBody | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -403,13 +403,13 @@ export interface ActionConnectionHttpTokenAuthHeader {
   /**
   * Header name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name?: string;
   /**
   *  String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#value ActionConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#value ActionConnection#value}
   */
   readonly value?: string;
 }
@@ -417,7 +417,7 @@ export interface ActionConnectionHttpTokenAuthHeader {
 export function actionConnectionHttpTokenAuthHeaderToTerraform(struct?: ActionConnectionHttpTokenAuthHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -429,7 +429,7 @@ export function actionConnectionHttpTokenAuthHeaderToTerraform(struct?: ActionCo
 export function actionConnectionHttpTokenAuthHeaderToHclTerraform(struct?: ActionConnectionHttpTokenAuthHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -556,19 +556,19 @@ export interface ActionConnectionHttpTokenAuthToken {
   /**
   * Token name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name?: string;
   /**
   * Token type Valid values are `SECRET`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#type ActionConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#type ActionConnection#type}
   */
   readonly type?: string;
   /**
   * Token value. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#value ActionConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#value ActionConnection#value}
   */
   readonly value?: string;
 }
@@ -576,7 +576,7 @@ export interface ActionConnectionHttpTokenAuthToken {
 export function actionConnectionHttpTokenAuthTokenToTerraform(struct?: ActionConnectionHttpTokenAuthToken | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -589,7 +589,7 @@ export function actionConnectionHttpTokenAuthTokenToTerraform(struct?: ActionCon
 export function actionConnectionHttpTokenAuthTokenToHclTerraform(struct?: ActionConnectionHttpTokenAuthToken | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -744,13 +744,13 @@ export interface ActionConnectionHttpTokenAuthUrlParameter {
   /**
   * URL parameter name. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#name ActionConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#name ActionConnection#name}
   */
   readonly name?: string;
   /**
   * URL parameter value. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#value ActionConnection#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#value ActionConnection#value}
   */
   readonly value?: string;
 }
@@ -758,7 +758,7 @@ export interface ActionConnectionHttpTokenAuthUrlParameter {
 export function actionConnectionHttpTokenAuthUrlParameterToTerraform(struct?: ActionConnectionHttpTokenAuthUrlParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -770,7 +770,7 @@ export function actionConnectionHttpTokenAuthUrlParameterToTerraform(struct?: Ac
 export function actionConnectionHttpTokenAuthUrlParameterToHclTerraform(struct?: ActionConnectionHttpTokenAuthUrlParameter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -897,25 +897,25 @@ export interface ActionConnectionHttpTokenAuth {
   /**
   * body block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#body ActionConnection#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#body ActionConnection#body}
   */
   readonly body?: ActionConnectionHttpTokenAuthBody;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#header ActionConnection#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#header ActionConnection#header}
   */
   readonly header?: ActionConnectionHttpTokenAuthHeader[] | cdktn.IResolvable;
   /**
   * token block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#token ActionConnection#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#token ActionConnection#token}
   */
   readonly token?: ActionConnectionHttpTokenAuthToken[] | cdktn.IResolvable;
   /**
   * url_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#url_parameter ActionConnection#url_parameter}
   */
   readonly urlParameter?: ActionConnectionHttpTokenAuthUrlParameter[] | cdktn.IResolvable;
 }
@@ -923,7 +923,7 @@ export interface ActionConnectionHttpTokenAuth {
 export function actionConnectionHttpTokenAuthToTerraform(struct?: ActionConnectionHttpTokenAuth | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     body: actionConnectionHttpTokenAuthBodyToTerraform(struct!.body),
@@ -937,7 +937,7 @@ export function actionConnectionHttpTokenAuthToTerraform(struct?: ActionConnecti
 export function actionConnectionHttpTokenAuthToHclTerraform(struct?: ActionConnectionHttpTokenAuth | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     body: {
@@ -1098,13 +1098,13 @@ export interface ActionConnectionHttp {
   /**
   * Base HTTP url for the integration. String length must be at least 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#base_url ActionConnection#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#base_url ActionConnection#base_url}
   */
   readonly baseUrl?: string;
   /**
   * token_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#token_auth ActionConnection#token_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#token_auth ActionConnection#token_auth}
   */
   readonly tokenAuth?: ActionConnectionHttpTokenAuth;
 }
@@ -1112,7 +1112,7 @@ export interface ActionConnectionHttp {
 export function actionConnectionHttpToTerraform(struct?: ActionConnectionHttp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base_url: cdktn.stringToTerraform(struct!.baseUrl),
@@ -1124,7 +1124,7 @@ export function actionConnectionHttpToTerraform(struct?: ActionConnectionHttp | 
 export function actionConnectionHttpToHclTerraform(struct?: ActionConnectionHttp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base_url: {
@@ -1227,7 +1227,7 @@ export class ActionConnectionHttpOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection datadog_action_connection}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection datadog_action_connection}
 */
 export class ActionConnection extends cdktn.TerraformResource {
 
@@ -1243,7 +1243,7 @@ export class ActionConnection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ActionConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionConnection to import
-  * @param importFromId The id of the existing ActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1255,7 +1255,7 @@ export class ActionConnection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/action_connection datadog_action_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/action_connection datadog_action_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1266,7 +1266,7 @@ export class ActionConnection extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_action_connection',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

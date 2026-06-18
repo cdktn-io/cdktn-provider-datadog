@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DeploymentGateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Enable Dry Run to test gate behavior without impacting deployments. The evaluation of a dry run gate always responds with a pass status, but the in-app result is the real status based on rules evaluation. This is particularly useful when performing an initial evaluation of the gate behavior without impacting the deployment pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
   */
   readonly dryRun?: boolean | cdktn.IResolvable;
   /**
   * The target environment (example: dev).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#env DeploymentGate#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#env DeploymentGate#env}
   */
   readonly env: string;
   /**
   * Unique name for multiple gates on the same service/environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#identifier DeploymentGate#identifier}
   */
   readonly identifier?: string;
   /**
   * The service name (example: transaction-backend).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#service DeploymentGate#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#service DeploymentGate#service}
   */
   readonly service: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#rule DeploymentGate#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#rule DeploymentGate#rule}
   */
   readonly rule?: DeploymentGateRule[] | cdktn.IResolvable;
 }
@@ -47,19 +47,19 @@ export interface DeploymentGateRuleOptions {
   /**
   * The duration for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#duration DeploymentGate#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#duration DeploymentGate#duration}
   */
   readonly duration?: number;
   /**
   * Resources to exclude from faulty deployment detection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#excluded_resources DeploymentGate#excluded_resources}
   */
   readonly excludedResources?: string[];
   /**
   * The query for monitor rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#query DeploymentGate#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#query DeploymentGate#query}
   */
   readonly query?: string;
 }
@@ -67,7 +67,7 @@ export interface DeploymentGateRuleOptions {
 export function deploymentGateRuleOptionsToTerraform(struct?: DeploymentGateRuleOptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.numberToTerraform(struct!.duration),
@@ -80,7 +80,7 @@ export function deploymentGateRuleOptionsToTerraform(struct?: DeploymentGateRule
 export function deploymentGateRuleOptionsToHclTerraform(struct?: DeploymentGateRuleOptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -213,25 +213,25 @@ export interface DeploymentGateRule {
   /**
   * Whether the rule is in dry run mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#dry_run DeploymentGate#dry_run}
   */
   readonly dryRun?: boolean | cdktn.IResolvable;
   /**
   * The rule name. Must be unique within the deployment gate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#name DeploymentGate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#name DeploymentGate#name}
   */
   readonly name: string;
   /**
   * The rule type (e.g., 'faulty_deployment_detection', 'monitor').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#type DeploymentGate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#type DeploymentGate#type}
   */
   readonly type: string;
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#options DeploymentGate#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#options DeploymentGate#options}
   */
   readonly options?: DeploymentGateRuleOptions;
 }
@@ -239,7 +239,7 @@ export interface DeploymentGateRule {
 export function deploymentGateRuleToTerraform(struct?: DeploymentGateRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dry_run: cdktn.booleanToTerraform(struct!.dryRun),
@@ -253,7 +253,7 @@ export function deploymentGateRuleToTerraform(struct?: DeploymentGateRule | cdkt
 export function deploymentGateRuleToHclTerraform(struct?: DeploymentGateRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dry_run: {
@@ -433,7 +433,7 @@ export class DeploymentGateRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate datadog_deployment_gate}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate datadog_deployment_gate}
 */
 export class DeploymentGate extends cdktn.TerraformResource {
 
@@ -449,7 +449,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DeploymentGate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DeploymentGate to import
-  * @param importFromId The id of the existing DeploymentGate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DeploymentGate that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DeploymentGate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -461,7 +461,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/deployment_gate datadog_deployment_gate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/deployment_gate datadog_deployment_gate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -472,7 +472,7 @@ export class DeploymentGate extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_deployment_gate',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

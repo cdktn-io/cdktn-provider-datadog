@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface SyntheticsSuiteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Message of the Synthetics suite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#message SyntheticsSuite#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#message SyntheticsSuite#message}
   */
   readonly message?: string;
   /**
   * Name of the Synthetics suite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#name SyntheticsSuite#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#name SyntheticsSuite#name}
   */
   readonly name: string;
   /**
   * A set of tags to associate with your synthetics suite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#tags SyntheticsSuite#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#tags SyntheticsSuite#tags}
   */
   readonly tags?: string[];
   /**
   * options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#options SyntheticsSuite#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#options SyntheticsSuite#options}
   */
   readonly options?: SyntheticsSuiteOptions[] | cdktn.IResolvable;
   /**
   * tests block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#tests SyntheticsSuite#tests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#tests SyntheticsSuite#tests}
   */
   readonly tests?: SyntheticsSuiteTests[] | cdktn.IResolvable;
 }
@@ -47,7 +47,7 @@ export interface SyntheticsSuiteOptions {
   /**
   * Alerting threshold for the suite. Value must be between 0.000000 and 1.000000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#alerting_threshold SyntheticsSuite#alerting_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#alerting_threshold SyntheticsSuite#alerting_threshold}
   */
   readonly alertingThreshold: number;
 }
@@ -55,7 +55,7 @@ export interface SyntheticsSuiteOptions {
 export function syntheticsSuiteOptionsToTerraform(struct?: SyntheticsSuiteOptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alerting_threshold: cdktn.numberToTerraform(struct!.alertingThreshold),
@@ -66,7 +66,7 @@ export function syntheticsSuiteOptionsToTerraform(struct?: SyntheticsSuiteOption
 export function syntheticsSuiteOptionsToHclTerraform(struct?: SyntheticsSuiteOptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alerting_threshold: {
@@ -162,13 +162,13 @@ export interface SyntheticsSuiteTests {
   /**
   * Alerting criticality for the test. Valid values are `ignore`, `critical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#alerting_criticality SyntheticsSuite#alerting_criticality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#alerting_criticality SyntheticsSuite#alerting_criticality}
   */
   readonly alertingCriticality?: string;
   /**
   * Public ID of the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#public_id SyntheticsSuite#public_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#public_id SyntheticsSuite#public_id}
   */
   readonly publicId: string;
 }
@@ -176,7 +176,7 @@ export interface SyntheticsSuiteTests {
 export function syntheticsSuiteTestsToTerraform(struct?: SyntheticsSuiteTests | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alerting_criticality: cdktn.stringToTerraform(struct!.alertingCriticality),
@@ -188,7 +188,7 @@ export function syntheticsSuiteTestsToTerraform(struct?: SyntheticsSuiteTests | 
 export function syntheticsSuiteTestsToHclTerraform(struct?: SyntheticsSuiteTests | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alerting_criticality: {
@@ -310,7 +310,7 @@ export class SyntheticsSuiteTestsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite datadog_synthetics_suite}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite datadog_synthetics_suite}
 */
 export class SyntheticsSuite extends cdktn.TerraformResource {
 
@@ -326,7 +326,7 @@ export class SyntheticsSuite extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SyntheticsSuite resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SyntheticsSuite to import
-  * @param importFromId The id of the existing SyntheticsSuite that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SyntheticsSuite that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SyntheticsSuite to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -338,7 +338,7 @@ export class SyntheticsSuite extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/synthetics_suite datadog_synthetics_suite} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/synthetics_suite datadog_synthetics_suite} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -349,7 +349,7 @@ export class SyntheticsSuite extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_synthetics_suite',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
