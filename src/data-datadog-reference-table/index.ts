@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogReferenceTableConfig extends cdktn.TerraformMetaArgu
   /**
   * The UUID of the reference table. Either id or table_name must be specified, but not both.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table#id DataDatadogReferenceTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataDatadogReferenceTableConfig extends cdktn.TerraformMetaArgu
   /**
   * The name of the reference table. Either id or table_name must be specified, but not both.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table#table_name DataDatadogReferenceTable#table_name}
   */
   readonly tableName?: string;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table#schema DataDatadogReferenceTable#schema}
   */
   readonly schema?: DataDatadogReferenceTableSchema;
 }
@@ -40,7 +40,7 @@ export interface DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail {
 export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToTer
 export function dataDatadogReferenceTableFileMetadataAccessDetailsAwsDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAwsDetail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -114,7 +114,7 @@ export interface DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail {
 export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -124,7 +124,7 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToT
 export function dataDatadogReferenceTableFileMetadataAccessDetailsAzureDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsAzureDetail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -198,7 +198,7 @@ export interface DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail {
 export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -208,7 +208,7 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToTer
 export function dataDatadogReferenceTableFileMetadataAccessDetailsGcpDetailToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetailsGcpDetail | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -277,7 +277,7 @@ export interface DataDatadogReferenceTableFileMetadataAccessDetails {
 export function dataDatadogReferenceTableFileMetadataAccessDetailsToTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetails | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -287,7 +287,7 @@ export function dataDatadogReferenceTableFileMetadataAccessDetailsToTerraform(st
 export function dataDatadogReferenceTableFileMetadataAccessDetailsToHclTerraform(struct?: DataDatadogReferenceTableFileMetadataAccessDetails | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -354,7 +354,7 @@ export interface DataDatadogReferenceTableFileMetadata {
 export function dataDatadogReferenceTableFileMetadataToTerraform(struct?: DataDatadogReferenceTableFileMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -364,7 +364,7 @@ export function dataDatadogReferenceTableFileMetadataToTerraform(struct?: DataDa
 export function dataDatadogReferenceTableFileMetadataToHclTerraform(struct?: DataDatadogReferenceTableFileMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -439,7 +439,7 @@ export interface DataDatadogReferenceTableSchemaFields {
 export function dataDatadogReferenceTableSchemaFieldsToTerraform(struct?: DataDatadogReferenceTableSchemaFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -449,7 +449,7 @@ export function dataDatadogReferenceTableSchemaFieldsToTerraform(struct?: DataDa
 export function dataDatadogReferenceTableSchemaFieldsToHclTerraform(struct?: DataDatadogReferenceTableSchemaFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -528,7 +528,7 @@ export interface DataDatadogReferenceTableSchema {
   /**
   * fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table#fields DataDatadogReferenceTable#fields}
   */
   readonly fields?: DataDatadogReferenceTableSchemaFields[] | cdktn.IResolvable;
 }
@@ -536,7 +536,7 @@ export interface DataDatadogReferenceTableSchema {
 export function dataDatadogReferenceTableSchemaToTerraform(struct?: DataDatadogReferenceTableSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(dataDatadogReferenceTableSchemaFieldsToTerraform, true)(struct!.fields),
@@ -547,7 +547,7 @@ export function dataDatadogReferenceTableSchemaToTerraform(struct?: DataDatadogR
 export function dataDatadogReferenceTableSchemaToHclTerraform(struct?: DataDatadogReferenceTableSchema | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -627,7 +627,7 @@ export class DataDatadogReferenceTableSchemaOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table datadog_reference_table}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table datadog_reference_table}
 */
 export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
 
@@ -643,7 +643,7 @@ export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogReferenceTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogReferenceTable to import
-  * @param importFromId The id of the existing DataDatadogReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogReferenceTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogReferenceTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -655,7 +655,7 @@ export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table datadog_reference_table} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table datadog_reference_table} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -666,7 +666,7 @@ export class DataDatadogReferenceTable extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_reference_table',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

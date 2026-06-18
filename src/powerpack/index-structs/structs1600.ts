@@ -20,19 +20,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -40,7 +40,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -53,7 +53,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryTo
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -173,19 +173,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQu
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -193,7 +193,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQu
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -206,7 +206,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQue
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -323,19 +323,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -343,7 +343,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy {
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -356,7 +356,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerra
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -511,19 +511,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -531,7 +531,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute 
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -544,7 +544,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeTo
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -696,31 +696,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -728,7 +728,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestApmQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -743,7 +743,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestApmQueryToTerraform(st
 export function powerpackWidgetTimeseriesDefinitionRequestApmQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestApmQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestApmQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -919,19 +919,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -939,7 +939,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuer
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -952,7 +952,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1072,19 +1072,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -1092,7 +1092,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySort
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1105,7 +1105,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQ
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1222,19 +1222,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery;
 }
@@ -1242,7 +1242,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy {
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -1255,7 +1255,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTer
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -1410,19 +1410,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -1430,7 +1430,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComput
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1443,7 +1443,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1595,31 +1595,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -1627,7 +1627,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestAuditQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -1642,7 +1642,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryToTerraform(
 export function powerpackWidgetTimeseriesDefinitionRequestAuditQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestAuditQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestAuditQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -1818,55 +1818,55 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFor
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#comparator Powerpack#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#comparator Powerpack#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#hide_value Powerpack#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
   */
   readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#image_url Powerpack#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#image_url Powerpack#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#timeframe Powerpack#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#timeframe Powerpack#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#value Powerpack#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#value Powerpack#value}
   */
   readonly value: number;
 }
@@ -1874,7 +1874,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFor
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -1893,7 +1893,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalForm
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -2207,13 +2207,13 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit {
   /**
   * The number of results to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#count Powerpack#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#count Powerpack#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
@@ -2221,7 +2221,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit {
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaLimitToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -2233,7 +2233,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaLimitToTerrafor
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaLimitToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -2328,13 +2328,13 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUn
   /**
   * per unit name. If you want to represent megabytes/s, you set 'unit_name' = 'megabyte' and 'per_unit_name = 'second'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#per_unit_name Powerpack#per_unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#per_unit_name Powerpack#per_unit_name}
   */
   readonly perUnitName?: string;
   /**
   * Unit name. It should be in singular form ('megabyte' and not 'megabytes')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit_name Powerpack#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
   */
   readonly unitName: string;
 }
@@ -2342,7 +2342,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUn
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     per_unit_name: cdktn.stringToTerraform(struct!.perUnitName),
@@ -2354,7 +2354,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUni
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     per_unit_name: {
@@ -2446,7 +2446,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUn
   /**
   * Unit label
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label: string;
 }
@@ -2454,7 +2454,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUn
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     label: cdktn.stringToTerraform(struct!.label),
@@ -2465,7 +2465,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUni
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     label: {
@@ -2529,13 +2529,13 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUn
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#canonical Powerpack#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#canonical Powerpack#canonical}
   */
   readonly canonical?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom Powerpack#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom Powerpack#custom}
   */
   readonly custom?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom;
 }
@@ -2543,7 +2543,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUn
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canonical: powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct!.canonical),
@@ -2555,7 +2555,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUni
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canonical: {
@@ -2648,7 +2648,7 @@ export class PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOu
 }
 export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit_name Powerpack#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
   */
   readonly unitName: string;
 }
@@ -2656,7 +2656,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUn
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit_name: cdktn.stringToTerraform(struct!.unitName),
@@ -2667,7 +2667,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUni
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit_name: {
@@ -2731,13 +2731,13 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat {
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit Powerpack#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit Powerpack#unit}
   */
   readonly unit: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit_scale Powerpack#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit_scale Powerpack#unit_scale}
   */
   readonly unitScale?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale;
 }
@@ -2745,7 +2745,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat {
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitToTerraform(struct!.unit),
@@ -2757,7 +2757,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatToT
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -2849,13 +2849,13 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle {
   /**
   * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette?: string;
   /**
   * Index specifying which color to use within the palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette_index Powerpack#palette_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette_index Powerpack#palette_index}
   */
   readonly paletteIndex?: number;
 }
@@ -2863,7 +2863,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle {
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaStyleToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     palette: cdktn.stringToTerraform(struct!.palette),
@@ -2875,7 +2875,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaStyleToTerrafor
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaStyleToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     palette: {
@@ -2970,43 +2970,43 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormula {
   /**
   * An expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#alias Powerpack#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#alias Powerpack#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cell_display_mode Powerpack#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cell_display_mode Powerpack#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#formula_expression Powerpack#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#formula_expression Powerpack#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
   */
   readonly conditionalFormats?: PowerpackWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: PowerpackWidgetTimeseriesDefinitionRequestFormulaLimit;
   /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#number_format Powerpack#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#number_format Powerpack#number_format}
   */
   readonly numberFormat?: PowerpackWidgetTimeseriesDefinitionRequestFormulaNumberFormat;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#style Powerpack#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#style Powerpack#style}
   */
   readonly style?: PowerpackWidgetTimeseriesDefinitionRequestFormulaStyle;
 }
@@ -3014,7 +3014,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestFormula {
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
@@ -3031,7 +3031,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestFormulaToTerraform(str
 export function powerpackWidgetTimeseriesDefinitionRequestFormulaToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias: {
@@ -3295,19 +3295,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -3315,7 +3315,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery 
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -3328,7 +3328,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryTo
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -3448,19 +3448,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQu
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -3468,7 +3468,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQu
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -3481,7 +3481,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQue
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -3598,19 +3598,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -3618,7 +3618,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy {
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -3631,7 +3631,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByToTerra
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -3786,19 +3786,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -3806,7 +3806,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute 
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -3819,7 +3819,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeTo
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -3971,31 +3971,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -4003,7 +4003,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestLogQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -4018,7 +4018,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestLogQueryToTerraform(st
 export function powerpackWidgetTimeseriesDefinitionRequestLogQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestLogQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -4194,13 +4194,13 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestMetadata {
   /**
   * The expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#alias_name Powerpack#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#alias_name Powerpack#alias_name}
   */
   readonly aliasName?: string;
   /**
   * The expression name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#expression Powerpack#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#expression Powerpack#expression}
   */
   readonly expression: string;
 }
@@ -4208,7 +4208,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestMetadata {
 export function powerpackWidgetTimeseriesDefinitionRequestMetadataToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias_name: cdktn.stringToTerraform(struct!.aliasName),
@@ -4220,7 +4220,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestMetadataToTerraform(st
 export function powerpackWidgetTimeseriesDefinitionRequestMetadataToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias_name: {
@@ -4344,19 +4344,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQu
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -4364,7 +4364,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQu
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -4377,7 +4377,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQue
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -4497,19 +4497,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySo
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -4517,7 +4517,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySo
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -4530,7 +4530,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySor
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -4647,19 +4647,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery;
 }
@@ -4667,7 +4667,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy {
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -4680,7 +4680,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToT
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -4835,19 +4835,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComp
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -4855,7 +4855,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComp
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -4868,7 +4868,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompu
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -5020,31 +5020,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -5052,7 +5052,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -5067,7 +5067,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryToTerrafor
 export function powerpackWidgetTimeseriesDefinitionRequestNetworkQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -5243,25 +5243,25 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#filter_by Powerpack#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_by Powerpack#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_by Powerpack#search_by}
   */
   readonly searchBy?: string;
 }
@@ -5269,7 +5269,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestProcessQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestProcessQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestProcessQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
@@ -5283,7 +5283,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestProcessQueryToTerrafor
 export function powerpackWidgetTimeseriesDefinitionRequestProcessQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestProcessQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter_by: {
@@ -5431,67 +5431,67 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencySta
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#env Powerpack#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#env Powerpack#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#is_upstream Powerpack#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#is_upstream Powerpack#is_upstream}
   */
   readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#operation_name Powerpack#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#resource_name Powerpack#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#stat Powerpack#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#stat Powerpack#stat}
   */
   readonly stat: string;
 }
@@ -5499,7 +5499,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencySta
 export function powerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -5520,7 +5520,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStat
 export function powerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -5846,67 +5846,67 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStats
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#env Powerpack#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#env Powerpack#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#operation_name Powerpack#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#resource_name Powerpack#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#stat Powerpack#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#stat Powerpack#stat}
   */
   readonly stat: string;
 }
@@ -5914,7 +5914,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStats
 export function powerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -5935,7 +5935,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQ
 export function powerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -6267,31 +6267,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The cloud cost query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
 }
@@ -6299,7 +6299,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -6314,7 +6314,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryToT
 export function powerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -6484,19 +6484,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComput
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
 }
@@ -6504,7 +6504,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComput
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6517,7 +6517,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -6669,19 +6669,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
@@ -6689,7 +6689,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6702,7 +6702,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -6822,19 +6822,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -6842,7 +6842,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -6855,7 +6855,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -7007,19 +7007,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
   /**
   * The aggregation method for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
@@ -7027,7 +7027,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -7040,7 +7040,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -7160,19 +7160,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
   /**
   * List of event facets to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#fields Powerpack#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#fields Powerpack#fields}
   */
   readonly fields: string[];
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort;
 }
@@ -7180,7 +7180,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupB
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -7193,7 +7193,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -7313,7 +7313,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
 }
@@ -7321,7 +7321,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -7332,7 +7332,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchT
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -7396,55 +7396,55 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`, `llm_observability`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#indexes Powerpack#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#indexes Powerpack#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Storage location (private beta).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#storage Powerpack#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#storage Powerpack#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute Powerpack#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute Powerpack#compute}
   */
   readonly compute: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * group_by_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by_fields Powerpack#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by_fields Powerpack#group_by_fields}
   */
   readonly groupByFields?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search Powerpack#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search Powerpack#search}
   */
   readonly search?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuerySearch;
 }
@@ -7452,7 +7452,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -7471,7 +7471,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryToTerra
 export function powerpackWidgetTimeseriesDefinitionRequestQueryEventQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -7753,37 +7753,37 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
   /**
   * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#semantic_mode Powerpack#semantic_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#semantic_mode Powerpack#semantic_mode}
   */
   readonly semanticMode?: string;
 }
@@ -7791,7 +7791,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -7807,7 +7807,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryToTerr
 export function powerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -8008,61 +8008,61 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#is_normalized_cpu Powerpack#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#is_normalized_cpu Powerpack#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#tag_filters Powerpack#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#tag_filters Powerpack#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#text_filter Powerpack#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#text_filter Powerpack#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -8070,7 +8070,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -8090,7 +8090,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryToTer
 export function powerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -8400,49 +8400,49 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery {
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_mode Powerpack#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_mode Powerpack#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#measure Powerpack#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#measure Powerpack#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#slo_id Powerpack#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#slo_id Powerpack#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#slo_query_type Powerpack#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#slo_query_type Powerpack#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
@@ -8450,7 +8450,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestQuerySloQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
@@ -8468,7 +8468,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQuerySloQueryToTerrafo
 export function powerpackWidgetTimeseriesDefinitionRequestQuerySloQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_query_filters: {
@@ -8722,43 +8722,43 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: PowerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: PowerpackWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
   */
   readonly cloudCostQuery?: PowerpackWidgetTimeseriesDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#event_query Powerpack#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#event_query Powerpack#event_query}
   */
   readonly eventQuery?: PowerpackWidgetTimeseriesDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric_query Powerpack#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric_query Powerpack#metric_query}
   */
   readonly metricQuery?: PowerpackWidgetTimeseriesDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetTimeseriesDefinitionRequestQueryProcessQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#slo_query Powerpack#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#slo_query Powerpack#slo_query}
   */
   readonly sloQuery?: PowerpackWidgetTimeseriesDefinitionRequestQuerySloQuery;
 }
@@ -8766,7 +8766,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     apm_dependency_stats_query: powerpackWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
@@ -8783,7 +8783,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestQueryToTerraform(struc
 export function powerpackWidgetTimeseriesDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     apm_dependency_stats_query: {
@@ -9050,19 +9050,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -9070,7 +9070,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery 
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -9083,7 +9083,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryTo
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -9203,19 +9203,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQu
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -9223,7 +9223,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQu
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -9236,7 +9236,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQue
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -9353,19 +9353,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -9373,7 +9373,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy {
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -9386,7 +9386,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByToTerra
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -9541,19 +9541,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute 
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -9561,7 +9561,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute 
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -9574,7 +9574,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeTo
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -9726,31 +9726,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -9758,7 +9758,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestRumQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -9773,7 +9773,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestRumQueryToTerraform(st
 export function powerpackWidgetTimeseriesDefinitionRequestRumQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestRumQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -9949,19 +9949,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQ
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -9969,7 +9969,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQ
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -9982,7 +9982,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQu
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -10102,19 +10102,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByS
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -10122,7 +10122,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByS
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -10135,7 +10135,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySo
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -10252,19 +10252,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy 
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -10272,7 +10272,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy 
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -10285,7 +10285,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByTo
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -10440,19 +10440,19 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCom
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -10460,7 +10460,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCom
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -10473,7 +10473,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComp
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -10625,31 +10625,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -10657,7 +10657,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery {
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -10672,7 +10672,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryToTerrafo
 export function powerpackWidgetTimeseriesDefinitionRequestSecurityQueryToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -10848,31 +10848,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestStyle {
   /**
   * If true, the value is displayed as a label relative to the data point.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#has_value_labels Powerpack#has_value_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#has_value_labels Powerpack#has_value_labels}
   */
   readonly hasValueLabels?: boolean | cdktn.IResolvable;
   /**
   * The type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#line_type Powerpack#line_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#line_type Powerpack#line_type}
   */
   readonly lineType?: string;
   /**
   * The width of line displayed. Valid values are `normal`, `thick`, `thin`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#line_width Powerpack#line_width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#line_width Powerpack#line_width}
   */
   readonly lineWidth?: string;
   /**
   * How to order series in timeseries visualizations. Valid values are `tags`, `values`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order_by Powerpack#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order_by Powerpack#order_by}
   */
   readonly orderBy?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette?: string;
 }
@@ -10880,7 +10880,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequestStyle {
 export function powerpackWidgetTimeseriesDefinitionRequestStyleToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference | PowerpackWidgetTimeseriesDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     has_value_labels: cdktn.booleanToTerraform(struct!.hasValueLabels),
@@ -10895,7 +10895,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestStyleToTerraform(struc
 export function powerpackWidgetTimeseriesDefinitionRequestStyleToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequestStyleOutputReference | PowerpackWidgetTimeseriesDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     has_value_labels: {
@@ -11074,85 +11074,85 @@ export interface PowerpackWidgetTimeseriesDefinitionRequest {
   /**
   * How to display the marker lines. Valid values are `area`, `bars`, `line`, `overlay`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#display_type Powerpack#display_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#display_type Powerpack#display_type}
   */
   readonly displayType?: string;
   /**
   * A Boolean indicating whether the request uses the right or left Y-Axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#on_right_yaxis Powerpack#on_right_yaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#on_right_yaxis Powerpack#on_right_yaxis}
   */
   readonly onRightYaxis?: boolean | cdktn.IResolvable;
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#q Powerpack#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#q Powerpack#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#apm_query Powerpack#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
   */
   readonly apmQuery?: PowerpackWidgetTimeseriesDefinitionRequestApmQuery;
   /**
   * audit_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#audit_query Powerpack#audit_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#audit_query Powerpack#audit_query}
   */
   readonly auditQuery?: PowerpackWidgetTimeseriesDefinitionRequestAuditQuery;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#formula Powerpack#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#formula Powerpack#formula}
   */
   readonly formula?: PowerpackWidgetTimeseriesDefinitionRequestFormula[] | cdktn.IResolvable;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#log_query Powerpack#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#log_query Powerpack#log_query}
   */
   readonly logQuery?: PowerpackWidgetTimeseriesDefinitionRequestLogQuery;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metadata Powerpack#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metadata Powerpack#metadata}
   */
   readonly metadata?: PowerpackWidgetTimeseriesDefinitionRequestMetadata[] | cdktn.IResolvable;
   /**
   * network_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#network_query Powerpack#network_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#network_query Powerpack#network_query}
   */
   readonly networkQuery?: PowerpackWidgetTimeseriesDefinitionRequestNetworkQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetTimeseriesDefinitionRequestProcessQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query?: PowerpackWidgetTimeseriesDefinitionRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#rum_query Powerpack#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
   */
   readonly rumQuery?: PowerpackWidgetTimeseriesDefinitionRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#security_query Powerpack#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#security_query Powerpack#security_query}
   */
   readonly securityQuery?: PowerpackWidgetTimeseriesDefinitionRequestSecurityQuery;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#style Powerpack#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#style Powerpack#style}
   */
   readonly style?: PowerpackWidgetTimeseriesDefinitionRequestStyle;
 }
@@ -11160,7 +11160,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRequest {
 export function powerpackWidgetTimeseriesDefinitionRequestToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_type: cdktn.stringToTerraform(struct!.displayType),
@@ -11184,7 +11184,7 @@ export function powerpackWidgetTimeseriesDefinitionRequestToTerraform(struct?: P
 export function powerpackWidgetTimeseriesDefinitionRequestToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_type: {
@@ -11647,31 +11647,31 @@ export interface PowerpackWidgetTimeseriesDefinitionRightYaxis {
   /**
   * Always include zero or fit the axis to the data range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#include_zero Powerpack#include_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
   */
   readonly includeZero?: boolean | cdktn.IResolvable;
   /**
   * The label of the axis to display on the graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#max Powerpack#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#max Powerpack#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#min Powerpack#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#min Powerpack#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#scale Powerpack#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#scale Powerpack#scale}
   */
   readonly scale?: string;
 }
@@ -11679,7 +11679,7 @@ export interface PowerpackWidgetTimeseriesDefinitionRightYaxis {
 export function powerpackWidgetTimeseriesDefinitionRightYaxisToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRightYaxisOutputReference | PowerpackWidgetTimeseriesDefinitionRightYaxis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_zero: cdktn.booleanToTerraform(struct!.includeZero),
@@ -11694,7 +11694,7 @@ export function powerpackWidgetTimeseriesDefinitionRightYaxisToTerraform(struct?
 export function powerpackWidgetTimeseriesDefinitionRightYaxisToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionRightYaxisOutputReference | PowerpackWidgetTimeseriesDefinitionRightYaxis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_zero: {
@@ -11873,31 +11873,31 @@ export interface PowerpackWidgetTimeseriesDefinitionYaxis {
   /**
   * Always include zero or fit the axis to the data range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#include_zero Powerpack#include_zero}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#include_zero Powerpack#include_zero}
   */
   readonly includeZero?: boolean | cdktn.IResolvable;
   /**
   * The label of the axis to display on the graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * Specify the maximum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#max Powerpack#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#max Powerpack#max}
   */
   readonly max?: string;
   /**
   * Specify the minimum value to show on the Y-axis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#min Powerpack#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#min Powerpack#min}
   */
   readonly min?: string;
   /**
   * Specify the scale type, options: `linear`, `log`, `pow`, `sqrt`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#scale Powerpack#scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#scale Powerpack#scale}
   */
   readonly scale?: string;
 }
@@ -11905,7 +11905,7 @@ export interface PowerpackWidgetTimeseriesDefinitionYaxis {
 export function powerpackWidgetTimeseriesDefinitionYaxisToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionYaxisOutputReference | PowerpackWidgetTimeseriesDefinitionYaxis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_zero: cdktn.booleanToTerraform(struct!.includeZero),
@@ -11920,7 +11920,7 @@ export function powerpackWidgetTimeseriesDefinitionYaxisToTerraform(struct?: Pow
 export function powerpackWidgetTimeseriesDefinitionYaxisToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionYaxisOutputReference | PowerpackWidgetTimeseriesDefinitionYaxis): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_zero: {
@@ -12099,97 +12099,97 @@ export interface PowerpackWidgetTimeseriesDefinition {
   /**
   * The description of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#description Powerpack#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#description Powerpack#description}
   */
   readonly description?: string;
   /**
   * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#hide_incomplete_cost_data Powerpack#hide_incomplete_cost_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#hide_incomplete_cost_data Powerpack#hide_incomplete_cost_data}
   */
   readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
   /**
   * A list of columns to display in the legend. Valid values are `value`, `avg`, `sum`, `min`, `max`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#legend_columns Powerpack#legend_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#legend_columns Powerpack#legend_columns}
   */
   readonly legendColumns?: string[];
   /**
   * The layout of the legend displayed in the widget. Valid values are `auto`, `horizontal`, `vertical`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#legend_layout Powerpack#legend_layout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#legend_layout Powerpack#legend_layout}
   */
   readonly legendLayout?: string;
   /**
   * The size of the legend displayed in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#legend_size Powerpack#legend_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#legend_size Powerpack#legend_size}
   */
   readonly legendSize?: string;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#live_span Powerpack#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#live_span Powerpack#live_span}
   */
   readonly liveSpan?: string;
   /**
   * Whether or not to show the legend on this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#show_legend Powerpack#show_legend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#show_legend Powerpack#show_legend}
   */
   readonly showLegend?: boolean | cdktn.IResolvable;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#title Powerpack#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#title Powerpack#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#title_align Powerpack#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#title_align Powerpack#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#title_size Powerpack#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#title_size Powerpack#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_link Powerpack#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
   */
   readonly customLink?: PowerpackWidgetTimeseriesDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * event block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#event Powerpack#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#event Powerpack#event}
   */
   readonly event?: PowerpackWidgetTimeseriesDefinitionEvent[] | cdktn.IResolvable;
   /**
   * marker block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#marker Powerpack#marker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#marker Powerpack#marker}
   */
   readonly marker?: PowerpackWidgetTimeseriesDefinitionMarker[] | cdktn.IResolvable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#request Powerpack#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#request Powerpack#request}
   */
   readonly request?: PowerpackWidgetTimeseriesDefinitionRequest[] | cdktn.IResolvable;
   /**
   * right_yaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#right_yaxis Powerpack#right_yaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#right_yaxis Powerpack#right_yaxis}
   */
   readonly rightYaxis?: PowerpackWidgetTimeseriesDefinitionRightYaxis;
   /**
   * yaxis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#yaxis Powerpack#yaxis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#yaxis Powerpack#yaxis}
   */
   readonly yaxis?: PowerpackWidgetTimeseriesDefinitionYaxis;
 }
@@ -12197,7 +12197,7 @@ export interface PowerpackWidgetTimeseriesDefinition {
 export function powerpackWidgetTimeseriesDefinitionToTerraform(struct?: PowerpackWidgetTimeseriesDefinitionOutputReference | PowerpackWidgetTimeseriesDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -12223,7 +12223,7 @@ export function powerpackWidgetTimeseriesDefinitionToTerraform(struct?: Powerpac
 export function powerpackWidgetTimeseriesDefinitionToHclTerraform(struct?: PowerpackWidgetTimeseriesDefinitionOutputReference | PowerpackWidgetTimeseriesDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -12710,25 +12710,25 @@ export interface PowerpackWidgetToplistDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
   */
   readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#link Powerpack#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#link Powerpack#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#override_label Powerpack#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#override_label Powerpack#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -12736,7 +12736,7 @@ export interface PowerpackWidgetToplistDefinitionCustomLink {
 export function powerpackWidgetToplistDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetToplistDefinitionCustomLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
@@ -12750,7 +12750,7 @@ export function powerpackWidgetToplistDefinitionCustomLinkToTerraform(struct?: P
 export function powerpackWidgetToplistDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetToplistDefinitionCustomLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_hidden: {
@@ -12933,19 +12933,19 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -12953,7 +12953,7 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery {
 export function powerpackWidgetToplistDefinitionRequestApmQueryComputeQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -12966,7 +12966,7 @@ export function powerpackWidgetToplistDefinitionRequestApmQueryComputeQueryToTer
 export function powerpackWidgetToplistDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -13086,19 +13086,19 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -13106,7 +13106,7 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery
 export function powerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -13119,7 +13119,7 @@ export function powerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryT
 export function powerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -13236,19 +13236,19 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetToplistDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -13256,7 +13256,7 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy {
 export function powerpackWidgetToplistDefinitionRequestApmQueryGroupByToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -13269,7 +13269,7 @@ export function powerpackWidgetToplistDefinitionRequestApmQueryGroupByToTerrafor
 export function powerpackWidgetToplistDefinitionRequestApmQueryGroupByToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -13424,19 +13424,19 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -13444,7 +13444,7 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute {
 export function powerpackWidgetToplistDefinitionRequestApmQueryMultiComputeToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -13457,7 +13457,7 @@ export function powerpackWidgetToplistDefinitionRequestApmQueryMultiComputeToTer
 export function powerpackWidgetToplistDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -13609,31 +13609,31 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetToplistDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetToplistDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetToplistDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -13641,7 +13641,7 @@ export interface PowerpackWidgetToplistDefinitionRequestApmQuery {
 export function powerpackWidgetToplistDefinitionRequestApmQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryOutputReference | PowerpackWidgetToplistDefinitionRequestApmQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -13656,7 +13656,7 @@ export function powerpackWidgetToplistDefinitionRequestApmQueryToTerraform(struc
 export function powerpackWidgetToplistDefinitionRequestApmQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestApmQueryOutputReference | PowerpackWidgetToplistDefinitionRequestApmQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -13832,19 +13832,19 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -13852,7 +13852,7 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery {
 export function powerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -13865,7 +13865,7 @@ export function powerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryToT
 export function powerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -13985,19 +13985,19 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQue
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -14005,7 +14005,7 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQue
 export function powerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -14018,7 +14018,7 @@ export function powerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuer
 export function powerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -14135,19 +14135,19 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBySortQuery;
 }
@@ -14155,7 +14155,7 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy {
 export function powerpackWidgetToplistDefinitionRequestAuditQueryGroupByToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -14168,7 +14168,7 @@ export function powerpackWidgetToplistDefinitionRequestAuditQueryGroupByToTerraf
 export function powerpackWidgetToplistDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -14323,19 +14323,19 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -14343,7 +14343,7 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute {
 export function powerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -14356,7 +14356,7 @@ export function powerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeToT
 export function powerpackWidgetToplistDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -14508,31 +14508,31 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetToplistDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetToplistDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetToplistDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -14540,7 +14540,7 @@ export interface PowerpackWidgetToplistDefinitionRequestAuditQuery {
 export function powerpackWidgetToplistDefinitionRequestAuditQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryOutputReference | PowerpackWidgetToplistDefinitionRequestAuditQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -14555,7 +14555,7 @@ export function powerpackWidgetToplistDefinitionRequestAuditQueryToTerraform(str
 export function powerpackWidgetToplistDefinitionRequestAuditQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestAuditQueryOutputReference | PowerpackWidgetToplistDefinitionRequestAuditQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -14731,55 +14731,55 @@ export interface PowerpackWidgetToplistDefinitionRequestConditionalFormats {
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#comparator Powerpack#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#comparator Powerpack#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#hide_value Powerpack#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
   */
   readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#image_url Powerpack#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#image_url Powerpack#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#timeframe Powerpack#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#timeframe Powerpack#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#value Powerpack#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#value Powerpack#value}
   */
   readonly value: number;
 }
@@ -14787,7 +14787,7 @@ export interface PowerpackWidgetToplistDefinitionRequestConditionalFormats {
 export function powerpackWidgetToplistDefinitionRequestConditionalFormatsToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -14806,7 +14806,7 @@ export function powerpackWidgetToplistDefinitionRequestConditionalFormatsToTerra
 export function powerpackWidgetToplistDefinitionRequestConditionalFormatsToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -15120,55 +15120,55 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormat
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#comparator Powerpack#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#comparator Powerpack#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_bg_color Powerpack#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_fg_color Powerpack#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#hide_value Powerpack#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#hide_value Powerpack#hide_value}
   */
   readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#image_url Powerpack#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#image_url Powerpack#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#timeframe Powerpack#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#timeframe Powerpack#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#value Powerpack#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#value Powerpack#value}
   */
   readonly value: number;
 }
@@ -15176,7 +15176,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormat
 export function powerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -15195,7 +15195,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaConditionalFormats
 export function powerpackWidgetToplistDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -15509,13 +15509,13 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaLimit {
   /**
   * The number of results to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#count Powerpack#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#count Powerpack#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
@@ -15523,7 +15523,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaLimit {
 export function powerpackWidgetToplistDefinitionRequestFormulaLimitToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -15535,7 +15535,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaLimitToTerraform(s
 export function powerpackWidgetToplistDefinitionRequestFormulaLimitToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaLimitOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -15630,13 +15630,13 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitC
   /**
   * per unit name. If you want to represent megabytes/s, you set 'unit_name' = 'megabyte' and 'per_unit_name = 'second'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#per_unit_name Powerpack#per_unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#per_unit_name Powerpack#per_unit_name}
   */
   readonly perUnitName?: string;
   /**
   * Unit name. It should be in singular form ('megabyte' and not 'megabytes')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit_name Powerpack#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
   */
   readonly unitName: string;
 }
@@ -15644,7 +15644,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitC
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     per_unit_name: cdktn.stringToTerraform(struct!.perUnitName),
@@ -15656,7 +15656,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCa
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     per_unit_name: {
@@ -15748,7 +15748,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitC
   /**
   * Unit label
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label: string;
 }
@@ -15756,7 +15756,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitC
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     label: cdktn.stringToTerraform(struct!.label),
@@ -15767,7 +15767,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCu
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     label: {
@@ -15831,13 +15831,13 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit 
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#canonical Powerpack#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#canonical Powerpack#canonical}
   */
   readonly canonical?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom Powerpack#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom Powerpack#custom}
   */
   readonly custom?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCustom;
 }
@@ -15845,7 +15845,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit 
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canonical: powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct!.canonical),
@@ -15857,7 +15857,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitTo
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canonical: {
@@ -15950,7 +15950,7 @@ export class PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitOutpu
 }
 export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit_name Powerpack#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit_name Powerpack#unit_name}
   */
   readonly unitName: string;
 }
@@ -15958,7 +15958,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitS
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit_name: cdktn.stringToTerraform(struct!.unitName),
@@ -15969,7 +15969,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitSc
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit_name: {
@@ -16033,13 +16033,13 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat {
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit Powerpack#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit Powerpack#unit}
   */
   readonly unit: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#unit_scale Powerpack#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#unit_scale Powerpack#unit_scale}
   */
   readonly unitScale?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitScale;
 }
@@ -16047,7 +16047,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat {
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: powerpackWidgetToplistDefinitionRequestFormulaNumberFormatUnitToTerraform(struct!.unit),
@@ -16059,7 +16059,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatToTerr
 export function powerpackWidgetToplistDefinitionRequestFormulaNumberFormatToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormatOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -16151,13 +16151,13 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaStyle {
   /**
   * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette?: string;
   /**
   * Index specifying which color to use within the palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette_index Powerpack#palette_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette_index Powerpack#palette_index}
   */
   readonly paletteIndex?: number;
 }
@@ -16165,7 +16165,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormulaStyle {
 export function powerpackWidgetToplistDefinitionRequestFormulaStyleToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     palette: cdktn.stringToTerraform(struct!.palette),
@@ -16177,7 +16177,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaStyleToTerraform(s
 export function powerpackWidgetToplistDefinitionRequestFormulaStyleToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormulaStyleOutputReference | PowerpackWidgetToplistDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     palette: {
@@ -16272,43 +16272,43 @@ export interface PowerpackWidgetToplistDefinitionRequestFormula {
   /**
   * An expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#alias Powerpack#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#alias Powerpack#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cell_display_mode Powerpack#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cell_display_mode Powerpack#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#formula_expression Powerpack#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#formula_expression Powerpack#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
   */
   readonly conditionalFormats?: PowerpackWidgetToplistDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: PowerpackWidgetToplistDefinitionRequestFormulaLimit;
   /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#number_format Powerpack#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#number_format Powerpack#number_format}
   */
   readonly numberFormat?: PowerpackWidgetToplistDefinitionRequestFormulaNumberFormat;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#style Powerpack#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#style Powerpack#style}
   */
   readonly style?: PowerpackWidgetToplistDefinitionRequestFormulaStyle;
 }
@@ -16316,7 +16316,7 @@ export interface PowerpackWidgetToplistDefinitionRequestFormula {
 export function powerpackWidgetToplistDefinitionRequestFormulaToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
@@ -16333,7 +16333,7 @@ export function powerpackWidgetToplistDefinitionRequestFormulaToTerraform(struct
 export function powerpackWidgetToplistDefinitionRequestFormulaToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias: {
@@ -16597,19 +16597,19 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -16617,7 +16617,7 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery {
 export function powerpackWidgetToplistDefinitionRequestLogQueryComputeQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -16630,7 +16630,7 @@ export function powerpackWidgetToplistDefinitionRequestLogQueryComputeQueryToTer
 export function powerpackWidgetToplistDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -16750,19 +16750,19 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -16770,7 +16770,7 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery
 export function powerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -16783,7 +16783,7 @@ export function powerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryT
 export function powerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -16900,19 +16900,19 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetToplistDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -16920,7 +16920,7 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy {
 export function powerpackWidgetToplistDefinitionRequestLogQueryGroupByToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -16933,7 +16933,7 @@ export function powerpackWidgetToplistDefinitionRequestLogQueryGroupByToTerrafor
 export function powerpackWidgetToplistDefinitionRequestLogQueryGroupByToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -17088,19 +17088,19 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -17108,7 +17108,7 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute {
 export function powerpackWidgetToplistDefinitionRequestLogQueryMultiComputeToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -17121,7 +17121,7 @@ export function powerpackWidgetToplistDefinitionRequestLogQueryMultiComputeToTer
 export function powerpackWidgetToplistDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -17273,31 +17273,31 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetToplistDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetToplistDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetToplistDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -17305,7 +17305,7 @@ export interface PowerpackWidgetToplistDefinitionRequestLogQuery {
 export function powerpackWidgetToplistDefinitionRequestLogQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryOutputReference | PowerpackWidgetToplistDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -17320,7 +17320,7 @@ export function powerpackWidgetToplistDefinitionRequestLogQueryToTerraform(struc
 export function powerpackWidgetToplistDefinitionRequestLogQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestLogQueryOutputReference | PowerpackWidgetToplistDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -17496,25 +17496,25 @@ export interface PowerpackWidgetToplistDefinitionRequestProcessQuery {
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#filter_by Powerpack#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#filter_by Powerpack#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_by Powerpack#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_by Powerpack#search_by}
   */
   readonly searchBy?: string;
 }
@@ -17522,7 +17522,7 @@ export interface PowerpackWidgetToplistDefinitionRequestProcessQuery {
 export function powerpackWidgetToplistDefinitionRequestProcessQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestProcessQueryOutputReference | PowerpackWidgetToplistDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
@@ -17536,7 +17536,7 @@ export function powerpackWidgetToplistDefinitionRequestProcessQueryToTerraform(s
 export function powerpackWidgetToplistDefinitionRequestProcessQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestProcessQueryOutputReference | PowerpackWidgetToplistDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter_by: {
@@ -17684,67 +17684,67 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQ
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#env Powerpack#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#env Powerpack#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#is_upstream Powerpack#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#is_upstream Powerpack#is_upstream}
   */
   readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#operation_name Powerpack#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#resource_name Powerpack#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#stat Powerpack#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#stat Powerpack#stat}
   */
   readonly stat: string;
 }
@@ -17752,7 +17752,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQ
 export function powerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -17773,7 +17773,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQu
 export function powerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -18099,67 +18099,67 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQue
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#env Powerpack#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#env Powerpack#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#operation_name Powerpack#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#operation_name Powerpack#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_name Powerpack#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#primary_tag_value Powerpack#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#resource_name Powerpack#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#resource_name Powerpack#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#stat Powerpack#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#stat Powerpack#stat}
   */
   readonly stat: string;
 }
@@ -18167,7 +18167,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQue
 export function powerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -18188,7 +18188,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuer
 export function powerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -18520,31 +18520,31 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `last`, `max`, `min`, `sum`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The cloud cost query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
 }
@@ -18552,7 +18552,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery {
 export function powerpackWidgetToplistDefinitionRequestQueryCloudCostQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -18567,7 +18567,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryCloudCostQueryToTerr
 export function powerpackWidgetToplistDefinitionRequestQueryCloudCostQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryCloudCostQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -18737,19 +18737,19 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
 }
@@ -18757,7 +18757,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute {
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryComputeToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -18770,7 +18770,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryEventQueryComputeToT
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -18922,19 +18922,19 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySo
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
@@ -18942,7 +18942,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySo
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -18955,7 +18955,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySor
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySortOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -19075,19 +19075,19 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -19095,7 +19095,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy {
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -19108,7 +19108,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByToT
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -19260,19 +19260,19 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFi
   /**
   * The aggregation method for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order?: string;
 }
@@ -19280,7 +19280,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFi
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSortToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -19293,7 +19293,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFie
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSortToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -19413,19 +19413,19 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFi
   /**
   * List of event facets to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#fields Powerpack#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#fields Powerpack#fields}
   */
   readonly fields: string[];
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsSort;
 }
@@ -19433,7 +19433,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFi
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -19446,7 +19446,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFie
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -19566,7 +19566,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
 }
@@ -19574,7 +19574,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch {
 export function powerpackWidgetToplistDefinitionRequestQueryEventQuerySearchToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -19585,7 +19585,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryEventQuerySearchToTe
 export function powerpackWidgetToplistDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearchOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -19649,55 +19649,55 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQuery {
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`, `llm_observability`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#indexes Powerpack#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#indexes Powerpack#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * Storage location (private beta).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#storage Powerpack#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#storage Powerpack#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute Powerpack#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute Powerpack#compute}
   */
   readonly compute: PowerpackWidgetToplistDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * group_by_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by_fields Powerpack#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by_fields Powerpack#group_by_fields}
   */
   readonly groupByFields?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryGroupByFields;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search Powerpack#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search Powerpack#search}
   */
   readonly search?: PowerpackWidgetToplistDefinitionRequestQueryEventQuerySearch;
 }
@@ -19705,7 +19705,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryEventQuery {
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -19724,7 +19724,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryEventQueryToTerrafor
 export function powerpackWidgetToplistDefinitionRequestQueryEventQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryEventQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -20006,37 +20006,37 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryMetricQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: string;
   /**
   * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#semantic_mode Powerpack#semantic_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#semantic_mode Powerpack#semantic_mode}
   */
   readonly semanticMode?: string;
 }
@@ -20044,7 +20044,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryMetricQuery {
 export function powerpackWidgetToplistDefinitionRequestQueryMetricQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -20060,7 +20060,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryMetricQueryToTerrafo
 export function powerpackWidgetToplistDefinitionRequestQueryMetricQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryMetricQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -20261,61 +20261,61 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryProcessQuery {
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregator Powerpack#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregator Powerpack#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#is_normalized_cpu Powerpack#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#is_normalized_cpu Powerpack#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric Powerpack#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric Powerpack#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort Powerpack#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort Powerpack#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#tag_filters Powerpack#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#tag_filters Powerpack#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#text_filter Powerpack#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#text_filter Powerpack#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -20323,7 +20323,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQueryProcessQuery {
 export function powerpackWidgetToplistDefinitionRequestQueryProcessQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -20343,7 +20343,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryProcessQueryToTerraf
 export function powerpackWidgetToplistDefinitionRequestQueryProcessQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQueryProcessQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -20653,49 +20653,49 @@ export interface PowerpackWidgetToplistDefinitionRequestQuerySloQuery {
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#additional_query_filters Powerpack#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cross_org_uuids Powerpack#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_mode Powerpack#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_mode Powerpack#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#measure Powerpack#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#measure Powerpack#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#name Powerpack#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#name Powerpack#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#slo_id Powerpack#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#slo_id Powerpack#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#slo_query_type Powerpack#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#slo_query_type Powerpack#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
@@ -20703,7 +20703,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQuerySloQuery {
 export function powerpackWidgetToplistDefinitionRequestQuerySloQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
@@ -20721,7 +20721,7 @@ export function powerpackWidgetToplistDefinitionRequestQuerySloQueryToTerraform(
 export function powerpackWidgetToplistDefinitionRequestQuerySloQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQuerySloQueryOutputReference | PowerpackWidgetToplistDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_query_filters: {
@@ -20975,43 +20975,43 @@ export interface PowerpackWidgetToplistDefinitionRequestQuery {
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#apm_dependency_stats_query Powerpack#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: PowerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#apm_resource_stats_query Powerpack#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: PowerpackWidgetToplistDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#cloud_cost_query Powerpack#cloud_cost_query}
   */
   readonly cloudCostQuery?: PowerpackWidgetToplistDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#event_query Powerpack#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#event_query Powerpack#event_query}
   */
   readonly eventQuery?: PowerpackWidgetToplistDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#metric_query Powerpack#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#metric_query Powerpack#metric_query}
   */
   readonly metricQuery?: PowerpackWidgetToplistDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetToplistDefinitionRequestQueryProcessQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#slo_query Powerpack#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#slo_query Powerpack#slo_query}
   */
   readonly sloQuery?: PowerpackWidgetToplistDefinitionRequestQuerySloQuery;
 }
@@ -21019,7 +21019,7 @@ export interface PowerpackWidgetToplistDefinitionRequestQuery {
 export function powerpackWidgetToplistDefinitionRequestQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     apm_dependency_stats_query: powerpackWidgetToplistDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
@@ -21036,7 +21036,7 @@ export function powerpackWidgetToplistDefinitionRequestQueryToTerraform(struct?:
 export function powerpackWidgetToplistDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     apm_dependency_stats_query: {
@@ -21303,19 +21303,19 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -21323,7 +21323,7 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery {
 export function powerpackWidgetToplistDefinitionRequestRumQueryComputeQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -21336,7 +21336,7 @@ export function powerpackWidgetToplistDefinitionRequestRumQueryComputeQueryToTer
 export function powerpackWidgetToplistDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -21456,19 +21456,19 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -21476,7 +21476,7 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery
 export function powerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -21489,7 +21489,7 @@ export function powerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryT
 export function powerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -21606,19 +21606,19 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetToplistDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -21626,7 +21626,7 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy {
 export function powerpackWidgetToplistDefinitionRequestRumQueryGroupByToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -21639,7 +21639,7 @@ export function powerpackWidgetToplistDefinitionRequestRumQueryGroupByToTerrafor
 export function powerpackWidgetToplistDefinitionRequestRumQueryGroupByToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -21794,19 +21794,19 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute {
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -21814,7 +21814,7 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute {
 export function powerpackWidgetToplistDefinitionRequestRumQueryMultiComputeToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -21827,7 +21827,7 @@ export function powerpackWidgetToplistDefinitionRequestRumQueryMultiComputeToTer
 export function powerpackWidgetToplistDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -21979,31 +21979,31 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetToplistDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetToplistDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetToplistDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -22011,7 +22011,7 @@ export interface PowerpackWidgetToplistDefinitionRequestRumQuery {
 export function powerpackWidgetToplistDefinitionRequestRumQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryOutputReference | PowerpackWidgetToplistDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -22026,7 +22026,7 @@ export function powerpackWidgetToplistDefinitionRequestRumQueryToTerraform(struc
 export function powerpackWidgetToplistDefinitionRequestRumQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestRumQueryOutputReference | PowerpackWidgetToplistDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -22202,19 +22202,19 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuer
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -22222,7 +22222,7 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuer
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -22235,7 +22235,7 @@ export function powerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQueryOutputReference | PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -22355,19 +22355,19 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySort
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#order Powerpack#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#order Powerpack#order}
   */
   readonly order: string;
 }
@@ -22375,7 +22375,7 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySort
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -22388,7 +22388,7 @@ export function powerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQ
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -22505,19 +22505,19 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy {
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#limit Powerpack#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#limit Powerpack#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#sort_query Powerpack#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#sort_query Powerpack#sort_query}
   */
   readonly sortQuery?: PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -22525,7 +22525,7 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy {
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryGroupByToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -22538,7 +22538,7 @@ export function powerpackWidgetToplistDefinitionRequestSecurityQueryGroupByToTer
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -22693,19 +22693,19 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComput
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#aggregation Powerpack#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#aggregation Powerpack#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#facet Powerpack#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#facet Powerpack#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#interval Powerpack#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#interval Powerpack#interval}
   */
   readonly interval?: number;
 }
@@ -22713,7 +22713,7 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiComput
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -22726,7 +22726,7 @@ export function powerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -22878,31 +22878,31 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQuery {
   /**
   * The name of the index to query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#index Powerpack#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#index Powerpack#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#search_query Powerpack#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#search_query Powerpack#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#compute_query Powerpack#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#compute_query Powerpack#compute_query}
   */
   readonly computeQuery?: PowerpackWidgetToplistDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#group_by Powerpack#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#group_by Powerpack#group_by}
   */
   readonly groupBy?: PowerpackWidgetToplistDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#multi_compute Powerpack#multi_compute}
   */
   readonly multiCompute?: PowerpackWidgetToplistDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -22910,7 +22910,7 @@ export interface PowerpackWidgetToplistDefinitionRequestSecurityQuery {
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetToplistDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -22925,7 +22925,7 @@ export function powerpackWidgetToplistDefinitionRequestSecurityQueryToTerraform(
 export function powerpackWidgetToplistDefinitionRequestSecurityQueryToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestSecurityQueryOutputReference | PowerpackWidgetToplistDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -23101,7 +23101,7 @@ export interface PowerpackWidgetToplistDefinitionRequestStyle {
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette?: string;
 }
@@ -23109,7 +23109,7 @@ export interface PowerpackWidgetToplistDefinitionRequestStyle {
 export function powerpackWidgetToplistDefinitionRequestStyleToTerraform(struct?: PowerpackWidgetToplistDefinitionRequestStyleOutputReference | PowerpackWidgetToplistDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     palette: cdktn.stringToTerraform(struct!.palette),
@@ -23120,7 +23120,7 @@ export function powerpackWidgetToplistDefinitionRequestStyleToTerraform(struct?:
 export function powerpackWidgetToplistDefinitionRequestStyleToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequestStyleOutputReference | PowerpackWidgetToplistDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     palette: {
@@ -23187,67 +23187,67 @@ export interface PowerpackWidgetToplistDefinitionRequest {
   /**
   * The metric query to use for this widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#q Powerpack#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#q Powerpack#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#apm_query Powerpack#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#apm_query Powerpack#apm_query}
   */
   readonly apmQuery?: PowerpackWidgetToplistDefinitionRequestApmQuery;
   /**
   * audit_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#audit_query Powerpack#audit_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#audit_query Powerpack#audit_query}
   */
   readonly auditQuery?: PowerpackWidgetToplistDefinitionRequestAuditQuery;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#conditional_formats Powerpack#conditional_formats}
   */
   readonly conditionalFormats?: PowerpackWidgetToplistDefinitionRequestConditionalFormats[] | cdktn.IResolvable;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#formula Powerpack#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#formula Powerpack#formula}
   */
   readonly formula?: PowerpackWidgetToplistDefinitionRequestFormula[] | cdktn.IResolvable;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#log_query Powerpack#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#log_query Powerpack#log_query}
   */
   readonly logQuery?: PowerpackWidgetToplistDefinitionRequestLogQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#process_query Powerpack#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#process_query Powerpack#process_query}
   */
   readonly processQuery?: PowerpackWidgetToplistDefinitionRequestProcessQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query?: PowerpackWidgetToplistDefinitionRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#rum_query Powerpack#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#rum_query Powerpack#rum_query}
   */
   readonly rumQuery?: PowerpackWidgetToplistDefinitionRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#security_query Powerpack#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#security_query Powerpack#security_query}
   */
   readonly securityQuery?: PowerpackWidgetToplistDefinitionRequestSecurityQuery;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#style Powerpack#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#style Powerpack#style}
   */
   readonly style?: PowerpackWidgetToplistDefinitionRequestStyle;
 }
@@ -23255,7 +23255,7 @@ export interface PowerpackWidgetToplistDefinitionRequest {
 export function powerpackWidgetToplistDefinitionRequestToTerraform(struct?: PowerpackWidgetToplistDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     q: cdktn.stringToTerraform(struct!.q),
@@ -23276,7 +23276,7 @@ export function powerpackWidgetToplistDefinitionRequestToTerraform(struct?: Powe
 export function powerpackWidgetToplistDefinitionRequestToHclTerraform(struct?: PowerpackWidgetToplistDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     q: {
@@ -23655,7 +23655,7 @@ export interface PowerpackWidgetToplistDefinitionStyleDisplay {
   /**
   * The display type for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#type Powerpack#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#type Powerpack#type}
   */
   readonly type: string;
 }
@@ -23663,7 +23663,7 @@ export interface PowerpackWidgetToplistDefinitionStyleDisplay {
 export function powerpackWidgetToplistDefinitionStyleDisplayToTerraform(struct?: PowerpackWidgetToplistDefinitionStyleDisplay | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -23674,7 +23674,7 @@ export function powerpackWidgetToplistDefinitionStyleDisplayToTerraform(struct?:
 export function powerpackWidgetToplistDefinitionStyleDisplayToHclTerraform(struct?: PowerpackWidgetToplistDefinitionStyleDisplay | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -23770,19 +23770,19 @@ export interface PowerpackWidgetToplistDefinitionStyle {
   /**
   * The color palette for the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#palette Powerpack#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#palette Powerpack#palette}
   */
   readonly palette?: string;
   /**
   * The scaling mode for the widget. Valid values are `absolute`, `relative`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#scaling Powerpack#scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#scaling Powerpack#scaling}
   */
   readonly scaling?: string;
   /**
   * display block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#display Powerpack#display}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#display Powerpack#display}
   */
   readonly display?: PowerpackWidgetToplistDefinitionStyleDisplay[] | cdktn.IResolvable;
 }
@@ -23790,7 +23790,7 @@ export interface PowerpackWidgetToplistDefinitionStyle {
 export function powerpackWidgetToplistDefinitionStyleToTerraform(struct?: PowerpackWidgetToplistDefinitionStyle | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     palette: cdktn.stringToTerraform(struct!.palette),
@@ -23803,7 +23803,7 @@ export function powerpackWidgetToplistDefinitionStyleToTerraform(struct?: Powerp
 export function powerpackWidgetToplistDefinitionStyleToHclTerraform(struct?: PowerpackWidgetToplistDefinitionStyle | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     palette: {
@@ -23958,55 +23958,55 @@ export interface PowerpackWidgetToplistDefinition {
   /**
   * The description of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#description Powerpack#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#description Powerpack#description}
   */
   readonly description?: string;
   /**
   * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#hide_incomplete_cost_data Powerpack#hide_incomplete_cost_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#hide_incomplete_cost_data Powerpack#hide_incomplete_cost_data}
   */
   readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#live_span Powerpack#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#live_span Powerpack#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#title Powerpack#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#title Powerpack#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#title_align Powerpack#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#title_align Powerpack#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#title_size Powerpack#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#title_size Powerpack#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#custom_link Powerpack#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#custom_link Powerpack#custom_link}
   */
   readonly customLink?: PowerpackWidgetToplistDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#request Powerpack#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#request Powerpack#request}
   */
   readonly request?: PowerpackWidgetToplistDefinitionRequest[] | cdktn.IResolvable;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#style Powerpack#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#style Powerpack#style}
   */
   readonly style?: PowerpackWidgetToplistDefinitionStyle[] | cdktn.IResolvable;
 }
@@ -24014,7 +24014,7 @@ export interface PowerpackWidgetToplistDefinition {
 export function powerpackWidgetToplistDefinitionToTerraform(struct?: PowerpackWidgetToplistDefinitionOutputReference | PowerpackWidgetToplistDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -24033,7 +24033,7 @@ export function powerpackWidgetToplistDefinitionToTerraform(struct?: PowerpackWi
 export function powerpackWidgetToplistDefinitionToHclTerraform(struct?: PowerpackWidgetToplistDefinitionOutputReference | PowerpackWidgetToplistDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -24324,25 +24324,25 @@ export interface PowerpackWidgetTopologyMapDefinitionCustomLink {
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#is_hidden Powerpack#is_hidden}
   */
   readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#label Powerpack#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#label Powerpack#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#link Powerpack#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#link Powerpack#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link item. When `override_label` is provided, the client request omits the label field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#override_label Powerpack#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#override_label Powerpack#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -24350,7 +24350,7 @@ export interface PowerpackWidgetTopologyMapDefinitionCustomLink {
 export function powerpackWidgetTopologyMapDefinitionCustomLinkToTerraform(struct?: PowerpackWidgetTopologyMapDefinitionCustomLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
@@ -24364,7 +24364,7 @@ export function powerpackWidgetTopologyMapDefinitionCustomLinkToTerraform(struct
 export function powerpackWidgetTopologyMapDefinitionCustomLinkToHclTerraform(struct?: PowerpackWidgetTopologyMapDefinitionCustomLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_hidden: {
@@ -24547,19 +24547,19 @@ export interface PowerpackWidgetTopologyMapDefinitionRequestQuery {
   /**
   * The data source for the Topology request ('service_map' or 'data_streams'). Valid values are `data_streams`, `service_map`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#data_source Powerpack#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#data_source Powerpack#data_source}
   */
   readonly dataSource: string;
   /**
   * Your environment and primary tag (or `*` if enabled for your account).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#filters Powerpack#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#filters Powerpack#filters}
   */
   readonly filters: string[];
   /**
   * The ID of the service to map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#service Powerpack#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#service Powerpack#service}
   */
   readonly service: string;
 }
@@ -24567,7 +24567,7 @@ export interface PowerpackWidgetTopologyMapDefinitionRequestQuery {
 export function powerpackWidgetTopologyMapDefinitionRequestQueryToTerraform(struct?: PowerpackWidgetTopologyMapDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -24580,7 +24580,7 @@ export function powerpackWidgetTopologyMapDefinitionRequestQueryToTerraform(stru
 export function powerpackWidgetTopologyMapDefinitionRequestQueryToHclTerraform(struct?: PowerpackWidgetTopologyMapDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -24726,13 +24726,13 @@ export interface PowerpackWidgetTopologyMapDefinitionRequest {
   /**
   * The request type for the Topology request ('topology'). Valid values are `topology`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#request_type Powerpack#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#request_type Powerpack#request_type}
   */
   readonly requestType: string;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/powerpack#query Powerpack#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/powerpack#query Powerpack#query}
   */
   readonly query: PowerpackWidgetTopologyMapDefinitionRequestQuery[] | cdktn.IResolvable;
 }
@@ -24740,7 +24740,7 @@ export interface PowerpackWidgetTopologyMapDefinitionRequest {
 export function powerpackWidgetTopologyMapDefinitionRequestToTerraform(struct?: PowerpackWidgetTopologyMapDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     request_type: cdktn.stringToTerraform(struct!.requestType),
@@ -24752,7 +24752,7 @@ export function powerpackWidgetTopologyMapDefinitionRequestToTerraform(struct?: 
 export function powerpackWidgetTopologyMapDefinitionRequestToHclTerraform(struct?: PowerpackWidgetTopologyMapDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     request_type: {

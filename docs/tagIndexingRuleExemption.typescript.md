@@ -1,0 +1,902 @@
+# `tagIndexingRuleExemption` Submodule <a name="`tagIndexingRuleExemption` Submodule" id="@cdktn/provider-datadog.tagIndexingRuleExemption"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### TagIndexingRuleExemption <a name="TagIndexingRuleExemption" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption"></a>
+
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/tag_indexing_rule_exemption datadog_tag_indexing_rule_exemption}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer"></a>
+
+```typescript
+import { tagIndexingRuleExemption } from '@cdktn/provider-datadog'
+
+new tagIndexingRuleExemption.TagIndexingRuleExemption(scope: Construct, id: string, config: TagIndexingRuleExemptionConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig">TagIndexingRuleExemptionConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig">TagIndexingRuleExemptionConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.with">with</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.with"></a>
+
+```typescript
+public with(mixins: ...IMixin[]): IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.with.parameter.mixins"></a>
+
+- *Type:* ...constructs.IMixin[]
+
+The mixins to apply.
+
+---
+
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toHclTerraform"></a>
+
+```typescript
+public toHclTerraform(): any
+```
+
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.addMoveTarget"></a>
+
+```typescript
+public addMoveTarget(moveTarget: string): void
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.hasResourceMove"></a>
+
+```typescript
+public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.importFrom"></a>
+
+```typescript
+public importFrom(id: string, provider?: TerraformProvider): void
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.importFrom.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveFromId"></a>
+
+```typescript
+public moveFromId(id: string): void
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveTo"></a>
+
+```typescript
+public moveTo(moveTarget: string, index?: string | number): void
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveTo.parameter.index"></a>
+
+- *Type:* string | number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveToId"></a>
+
+```typescript
+public moveToId(id: string): void
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a TagIndexingRuleExemption resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isConstruct"></a>
+
+```typescript
+import { tagIndexingRuleExemption } from '@cdktn/provider-datadog'
+
+tagIndexingRuleExemption.TagIndexingRuleExemption.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformElement"></a>
+
+```typescript
+import { tagIndexingRuleExemption } from '@cdktn/provider-datadog'
+
+tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformResource"></a>
+
+```typescript
+import { tagIndexingRuleExemption } from '@cdktn/provider-datadog'
+
+tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport"></a>
+
+```typescript
+import { tagIndexingRuleExemption } from '@cdktn/provider-datadog'
+
+tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTN code for importing a TagIndexingRuleExemption resource upon running "cdktn plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the TagIndexingRuleExemption to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing TagIndexingRuleExemption that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/tag_indexing_rule_exemption#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+? Optional instance of the provider where the TagIndexingRuleExemption to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.createdByHandle">createdByHandle</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.kind">kind</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.metricNameInput">metricNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.reasonInput">reasonInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.metricName">metricName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.reason">reason</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktn.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.count"></a>
+
+```typescript
+public readonly count: number | TerraformCount;
+```
+
+- *Type:* number | cdktn.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
+```
+
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdByHandle`<sup>Required</sup> <a name="createdByHandle" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.createdByHandle"></a>
+
+```typescript
+public readonly createdByHandle: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kind`<sup>Required</sup> <a name="kind" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.kind"></a>
+
+```typescript
+public readonly kind: string;
+```
+
+- *Type:* string
+
+---
+
+##### `metricNameInput`<sup>Optional</sup> <a name="metricNameInput" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.metricNameInput"></a>
+
+```typescript
+public readonly metricNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `reasonInput`<sup>Optional</sup> <a name="reasonInput" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.reasonInput"></a>
+
+```typescript
+public readonly reasonInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `metricName`<sup>Required</sup> <a name="metricName" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.metricName"></a>
+
+```typescript
+public readonly metricName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `reason`<sup>Required</sup> <a name="reason" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.reason"></a>
+
+```typescript
+public readonly reason: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemption.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### TagIndexingRuleExemptionConfig <a name="TagIndexingRuleExemptionConfig" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.Initializer"></a>
+
+```typescript
+import { tagIndexingRuleExemption } from '@cdktn/provider-datadog'
+
+const tagIndexingRuleExemptionConfig: tagIndexingRuleExemption.TagIndexingRuleExemptionConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.metricName">metricName</a></code> | <code>string</code> | The metric name to exempt. Changing this value forces a new resource to be created. |
+| <code><a href="#@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.reason">reason</a></code> | <code>string</code> | The reason the metric is exempt from tag indexing rules. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.count"></a>
+
+```typescript
+public readonly count: number | TerraformCount;
+```
+
+- *Type:* number | cdktn.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktn.ITerraformDependable[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
+```
+
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `metricName`<sup>Required</sup> <a name="metricName" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.metricName"></a>
+
+```typescript
+public readonly metricName: string;
+```
+
+- *Type:* string
+
+The metric name to exempt. Changing this value forces a new resource to be created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/tag_indexing_rule_exemption#metric_name TagIndexingRuleExemption#metric_name}
+
+---
+
+##### `reason`<sup>Required</sup> <a name="reason" id="@cdktn/provider-datadog.tagIndexingRuleExemption.TagIndexingRuleExemptionConfig.property.reason"></a>
+
+```typescript
+public readonly reason: string;
+```
+
+- *Type:* string
+
+The reason the metric is exempt from tag indexing rules.
+
+Changing this value forces a new resource to be created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/tag_indexing_rule_exemption#reason TagIndexingRuleExemption#reason}
+
+---
+
+
+

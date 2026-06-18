@@ -4,7 +4,7 @@
 
 ### DataDatadogOrgGroupPolicies <a name="DataDatadogOrgGroupPolicies" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policies datadog_org_group_policies}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policies datadog_org_group_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogOrgGroupPolicies.DataDatadogOrgGroupPolicies.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataDatadogOrgGroupPolicie
 
 The id of the existing DataDatadogOrgGroupPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,7 +749,7 @@ OrgGroupId *string
 
 The UUID of the org group whose policies to list. Must be a valid UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policies#org_group_id DataDatadogOrgGroupPolicies#org_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policies#org_group_id DataDatadogOrgGroupPolicies#org_group_id}
 
 ---
 
@@ -763,7 +763,7 @@ PolicyName *string
 
 Filter policies by name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/org_group_policies#policy_name DataDatadogOrgGroupPolicies#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/org_group_policies#policy_name DataDatadogOrgGroupPolicies#policy_name}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataDatadogReferenceTableRows <a name="DataDatadogReferenceTableRows" id="@cdktn/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows datadog_reference_table_rows}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows datadog_reference_table_rows}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogReferenceTableRows.DataDatadogReferenceTableRows.Initializer"></a>
 
@@ -112,7 +112,7 @@ List of primary key values (row IDs) to retrieve.
 
 These are the values of the table's primary key field(s). Maximum 250 IDs per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The UUID of the reference table to query rows from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 rows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
 
 ---
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the DataDatadogReferenceTableR
 
 The id of the existing DataDatadogReferenceTableRows that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -896,7 +896,7 @@ List of primary key values (row IDs) to retrieve.
 
 These are the values of the table's primary key field(s). Maximum 250 IDs per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows#row_ids DataDatadogReferenceTableRows#row_ids}
 
 ---
 
@@ -910,7 +910,7 @@ table_id: str
 
 The UUID of the reference table to query rows from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows#table_id DataDatadogReferenceTableRows#table_id}
 
 ---
 
@@ -924,7 +924,7 @@ rows: IResolvable | typing.List[DataDatadogReferenceTableRowsRows]
 
 rows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/reference_table_rows#rows DataDatadogReferenceTableRows#rows}
 
 ---
 

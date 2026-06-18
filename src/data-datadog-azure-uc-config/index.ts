@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/azure_uc_config
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/azure_uc_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogAzureUcConfigConfig extends cdktn.TerraformMetaArgum
   /**
   * The Datadog cloud account ID for the Azure Usage Cost configuration you want to retrieve information about.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/azure_uc_config#cloud_account_id DataDatadogAzureUcConfig#cloud_account_id}
   */
   readonly cloudAccountId: number;
 }
@@ -25,7 +25,7 @@ export interface DataDatadogAzureUcConfigActualBillConfig {
 export function dataDatadogAzureUcConfigActualBillConfigToTerraform(struct?: DataDatadogAzureUcConfigActualBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -35,7 +35,7 @@ export function dataDatadogAzureUcConfigActualBillConfigToTerraform(struct?: Dat
 export function dataDatadogAzureUcConfigActualBillConfigToHclTerraform(struct?: DataDatadogAzureUcConfigActualBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -104,7 +104,7 @@ export interface DataDatadogAzureUcConfigAmortizedBillConfig {
 export function dataDatadogAzureUcConfigAmortizedBillConfigToTerraform(struct?: DataDatadogAzureUcConfigAmortizedBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -114,7 +114,7 @@ export function dataDatadogAzureUcConfigAmortizedBillConfigToTerraform(struct?: 
 export function dataDatadogAzureUcConfigAmortizedBillConfigToHclTerraform(struct?: DataDatadogAzureUcConfigAmortizedBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -179,7 +179,7 @@ export class DataDatadogAzureUcConfigAmortizedBillConfigOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/azure_uc_config datadog_azure_uc_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/azure_uc_config datadog_azure_uc_config}
 */
 export class DataDatadogAzureUcConfig extends cdktn.TerraformDataSource {
 
@@ -195,7 +195,7 @@ export class DataDatadogAzureUcConfig extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogAzureUcConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogAzureUcConfig to import
-  * @param importFromId The id of the existing DataDatadogAzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/azure_uc_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogAzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/azure_uc_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogAzureUcConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -207,7 +207,7 @@ export class DataDatadogAzureUcConfig extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/azure_uc_config datadog_azure_uc_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +218,7 @@ export class DataDatadogAzureUcConfig extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_azure_uc_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

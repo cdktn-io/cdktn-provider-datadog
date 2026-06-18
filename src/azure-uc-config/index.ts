@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface AzureUcConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The tenant ID of the Azure account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#account_id AzureUcConfig#account_id}
   */
   readonly accountId: string;
   /**
   * The client ID of the Azure account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#client_id AzureUcConfig#client_id}
   */
   readonly clientId: string;
   /**
   * The scope of your observed subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#scope AzureUcConfig#scope}
   */
   readonly scope: string;
   /**
   * actual_bill_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#actual_bill_config AzureUcConfig#actual_bill_config}
   */
   readonly actualBillConfig: AzureUcConfigActualBillConfig;
   /**
   * amortized_bill_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#amortized_bill_config AzureUcConfig#amortized_bill_config}
   */
   readonly amortizedBillConfig: AzureUcConfigAmortizedBillConfig;
 }
@@ -47,25 +47,25 @@ export interface AzureUcConfigActualBillConfig {
   /**
   * The name of the configured Azure Export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
   */
   readonly exportName: string;
   /**
   * The path where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
   */
   readonly exportPath: string;
   /**
   * The name of the storage account where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
   */
   readonly storageAccount: string;
   /**
   * The name of the storage container where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
   */
   readonly storageContainer: string;
 }
@@ -73,7 +73,7 @@ export interface AzureUcConfigActualBillConfig {
 export function azureUcConfigActualBillConfigToTerraform(struct?: AzureUcConfigActualBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     export_name: cdktn.stringToTerraform(struct!.exportName),
@@ -87,7 +87,7 @@ export function azureUcConfigActualBillConfigToTerraform(struct?: AzureUcConfigA
 export function azureUcConfigActualBillConfigToHclTerraform(struct?: AzureUcConfigActualBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     export_name: {
@@ -236,25 +236,25 @@ export interface AzureUcConfigAmortizedBillConfig {
   /**
   * The name of the configured Azure Export.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#export_name AzureUcConfig#export_name}
   */
   readonly exportName: string;
   /**
   * The path where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#export_path AzureUcConfig#export_path}
   */
   readonly exportPath: string;
   /**
   * The name of the storage account where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#storage_account AzureUcConfig#storage_account}
   */
   readonly storageAccount: string;
   /**
   * The name of the storage container where the Azure Export is saved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#storage_container AzureUcConfig#storage_container}
   */
   readonly storageContainer: string;
 }
@@ -262,7 +262,7 @@ export interface AzureUcConfigAmortizedBillConfig {
 export function azureUcConfigAmortizedBillConfigToTerraform(struct?: AzureUcConfigAmortizedBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     export_name: cdktn.stringToTerraform(struct!.exportName),
@@ -276,7 +276,7 @@ export function azureUcConfigAmortizedBillConfigToTerraform(struct?: AzureUcConf
 export function azureUcConfigAmortizedBillConfigToHclTerraform(struct?: AzureUcConfigAmortizedBillConfig | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     export_name: {
@@ -423,7 +423,7 @@ export class AzureUcConfigAmortizedBillConfigOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config datadog_azure_uc_config}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config datadog_azure_uc_config}
 */
 export class AzureUcConfig extends cdktn.TerraformResource {
 
@@ -439,7 +439,7 @@ export class AzureUcConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AzureUcConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureUcConfig to import
-  * @param importFromId The id of the existing AzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureUcConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureUcConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -451,7 +451,7 @@ export class AzureUcConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/azure_uc_config datadog_azure_uc_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/azure_uc_config datadog_azure_uc_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -462,7 +462,7 @@ export class AzureUcConfig extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_azure_uc_config',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

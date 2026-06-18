@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktn from 'cdktn';
 
 export interface LogsCustomPipelineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
   */
   readonly tags?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineFilter[] | cdktn.IResolvable;
   /**
   * processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
   */
   readonly processor?: LogsCustomPipelineProcessor[] | cdktn.IResolvable;
 }
@@ -52,7 +52,7 @@ export interface LogsCustomPipelineFilter {
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
@@ -60,7 +60,7 @@ export interface LogsCustomPipelineFilter {
 export function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -71,7 +71,7 @@ export function logsCustomPipelineFilterToTerraform(struct?: LogsCustomPipelineF
 export function logsCustomPipelineFilterToHclTerraform(struct?: LogsCustomPipelineFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -167,31 +167,31 @@ export interface LogsCustomPipelineProcessorArithmeticProcessor {
   /**
   * Arithmetic operation between one or more log attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
   */
   readonly expression: string;
   /**
   * Boolean value to enable your pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
   readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * Your pipeline name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the attribute that contains the result of the arithmetic operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -199,7 +199,7 @@ export interface LogsCustomPipelineProcessorArithmeticProcessor {
 export function logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorArithmeticProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -214,7 +214,7 @@ export function logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct
 export function logsCustomPipelineProcessorArithmeticProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorArithmeticProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -387,19 +387,19 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationAppend {
   /**
   * Remove or preserve the remapped source element. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
   readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Attribute path containing the value to append.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute path of the array to append to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -407,7 +407,7 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationAppend {
 export function logsCustomPipelineProcessorArrayProcessorOperationAppendToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationAppend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
@@ -420,7 +420,7 @@ export function logsCustomPipelineProcessorArrayProcessorOperationAppendToTerraf
 export function logsCustomPipelineProcessorArrayProcessorOperationAppendToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationAppend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     preserve_source: {
@@ -537,13 +537,13 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationLength {
   /**
   * Attribute path of the array to compute the length of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the computed length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -551,7 +551,7 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationLength {
 export function logsCustomPipelineProcessorArrayProcessorOperationLengthToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationLength): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source: cdktn.stringToTerraform(struct!.source),
@@ -563,7 +563,7 @@ export function logsCustomPipelineProcessorArrayProcessorOperationLengthToTerraf
 export function logsCustomPipelineProcessorArrayProcessorOperationLengthToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationLength): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source: {
@@ -652,25 +652,25 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationSelect {
   /**
   * Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: string;
   /**
   * Attribute path of the array to search into.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the extracted value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * Attribute key from the matching object that should be extracted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
   */
   readonly valueToExtract: string;
 }
@@ -678,7 +678,7 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperationSelect {
 export function logsCustomPipelineProcessorArrayProcessorOperationSelectToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter: cdktn.stringToTerraform(struct!.filter),
@@ -692,7 +692,7 @@ export function logsCustomPipelineProcessorArrayProcessorOperationSelectToTerraf
 export function logsCustomPipelineProcessorArrayProcessorOperationSelectToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorArrayProcessorOperationSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter: {
@@ -831,19 +831,19 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperation {
   /**
   * append block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
   */
   readonly append?: LogsCustomPipelineProcessorArrayProcessorOperationAppend;
   /**
   * length block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
   */
   readonly length?: LogsCustomPipelineProcessorArrayProcessorOperationLength;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
   */
   readonly select?: LogsCustomPipelineProcessorArrayProcessorOperationSelect;
 }
@@ -851,7 +851,7 @@ export interface LogsCustomPipelineProcessorArrayProcessorOperation {
 export function logsCustomPipelineProcessorArrayProcessorOperationToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorArrayProcessorOperation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     append: logsCustomPipelineProcessorArrayProcessorOperationAppendToTerraform(struct!.append),
@@ -864,7 +864,7 @@ export function logsCustomPipelineProcessorArrayProcessorOperationToTerraform(st
 export function logsCustomPipelineProcessorArrayProcessorOperationToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorArrayProcessorOperation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     append: {
@@ -987,19 +987,19 @@ export interface LogsCustomPipelineProcessorArrayProcessor {
   /**
   * Boolean value to enable your processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Your processor name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * operation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
   */
   readonly operation: LogsCustomPipelineProcessorArrayProcessorOperation;
 }
@@ -1007,7 +1007,7 @@ export interface LogsCustomPipelineProcessorArrayProcessor {
 export function logsCustomPipelineProcessorArrayProcessorToTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorArrayProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -1020,7 +1020,7 @@ export function logsCustomPipelineProcessorArrayProcessorToTerraform(struct?: Lo
 export function logsCustomPipelineProcessorArrayProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorArrayProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -1140,55 +1140,55 @@ export interface LogsCustomPipelineProcessorAttributeRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Override the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
   readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
   readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Defines where the sources are from (log `attribute` or `tag`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
   */
   readonly sourceType: string;
   /**
   * List of source attributes or tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Final attribute or tag name to remap the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
   /**
   * Defines if the target is a log `attribute` or `tag`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
   */
   readonly targetType: string;
 }
@@ -1196,7 +1196,7 @@ export interface LogsCustomPipelineProcessorAttributeRemapper {
 export function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorAttributeRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -1215,7 +1215,7 @@ export function logsCustomPipelineProcessorAttributeRemapperToTerraform(struct?:
 export function logsCustomPipelineProcessorAttributeRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorAttributeRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -1494,7 +1494,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessorCategoryFilter {
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
@@ -1502,7 +1502,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessorCategoryFilter {
 export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorCategoryProcessorCategoryFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -1513,7 +1513,7 @@ export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToTerr
 export function logsCustomPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorCategoryProcessorCategoryFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -1575,13 +1575,13 @@ export class LogsCustomPipelineProcessorCategoryProcessorCategoryFilterOutputRef
 }
 export interface LogsCustomPipelineProcessorCategoryProcessorCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorCategoryProcessorCategoryFilter;
 }
@@ -1589,7 +1589,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessorCategory {
 export function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1601,7 +1601,7 @@ export function logsCustomPipelineProcessorCategoryProcessorCategoryToTerraform(
 export function logsCustomPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1722,25 +1722,25 @@ export interface LogsCustomPipelineProcessorCategoryProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the category
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the target attribute whose value is defined by the matching category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
   */
   readonly category: LogsCustomPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable;
 }
@@ -1748,7 +1748,7 @@ export interface LogsCustomPipelineProcessorCategoryProcessor {
 export function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorCategoryProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -1762,7 +1762,7 @@ export function logsCustomPipelineProcessorCategoryProcessorToTerraform(struct?:
 export function logsCustomPipelineProcessorCategoryProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorCategoryProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -1907,19 +1907,19 @@ export interface LogsCustomPipelineProcessorDateRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -1927,7 +1927,7 @@ export interface LogsCustomPipelineProcessorDateRemapper {
 export function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorDateRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -1940,7 +1940,7 @@ export function logsCustomPipelineProcessorDateRemapperToTerraform(struct?: Logs
 export function logsCustomPipelineProcessorDateRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorDateRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -2060,37 +2060,37 @@ export interface LogsCustomPipelineProcessorDecoderProcessor {
   /**
   * Encoding type: base64 or base16
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
   */
   readonly binaryToTextEncoding: string;
   /**
   * Input representation: utf-8 or integer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
   */
   readonly inputRepresentation: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Encoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Decoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -2098,7 +2098,7 @@ export interface LogsCustomPipelineProcessorDecoderProcessor {
 export function logsCustomPipelineProcessorDecoderProcessorToTerraform(struct?: LogsCustomPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorDecoderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     binary_to_text_encoding: cdktn.stringToTerraform(struct!.binaryToTextEncoding),
@@ -2114,7 +2114,7 @@ export function logsCustomPipelineProcessorDecoderProcessorToTerraform(struct?: 
 export function logsCustomPipelineProcessorDecoderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorDecoderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     binary_to_text_encoding: {
@@ -2309,25 +2309,25 @@ export interface LogsCustomPipelineProcessorGeoIpParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -2335,7 +2335,7 @@ export interface LogsCustomPipelineProcessorGeoIpParser {
 export function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorGeoIpParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -2349,7 +2349,7 @@ export function logsCustomPipelineProcessorGeoIpParserToTerraform(struct?: LogsC
 export function logsCustomPipelineProcessorGeoIpParserToHclTerraform(struct?: LogsCustomPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorGeoIpParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -2494,13 +2494,13 @@ export interface LogsCustomPipelineProcessorGrokParserGrok {
   /**
   * Match rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
   */
   readonly matchRules: string;
   /**
   * Support rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
   */
   readonly supportRules: string;
 }
@@ -2508,7 +2508,7 @@ export interface LogsCustomPipelineProcessorGrokParserGrok {
 export function logsCustomPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorGrokParserGrok): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_rules: cdktn.stringToTerraform(struct!.matchRules),
@@ -2520,7 +2520,7 @@ export function logsCustomPipelineProcessorGrokParserGrokToTerraform(struct?: Lo
 export function logsCustomPipelineProcessorGrokParserGrokToHclTerraform(struct?: LogsCustomPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorGrokParserGrok): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_rules: {
@@ -2609,31 +2609,31 @@ export interface LogsCustomPipelineProcessorGrokParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
   */
   readonly samples?: string[];
   /**
   * Name of the log attribute to parse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * grok block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
   */
   readonly grok: LogsCustomPipelineProcessorGrokParserGrok;
 }
@@ -2641,7 +2641,7 @@ export interface LogsCustomPipelineProcessorGrokParser {
 export function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorGrokParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -2656,7 +2656,7 @@ export function logsCustomPipelineProcessorGrokParserToTerraform(struct?: LogsCu
 export function logsCustomPipelineProcessorGrokParserToHclTerraform(struct?: LogsCustomPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorGrokParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -2829,37 +2829,37 @@ export interface LogsCustomPipelineProcessorLookupProcessor {
   /**
   * Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
   */
   readonly defaultLookup?: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * List of entries of the lookup table using `key,value` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
   */
   readonly lookupTable: string[];
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -2867,7 +2867,7 @@ export interface LogsCustomPipelineProcessorLookupProcessor {
 export function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_lookup: cdktn.stringToTerraform(struct!.defaultLookup),
@@ -2883,7 +2883,7 @@ export function logsCustomPipelineProcessorLookupProcessorToTerraform(struct?: L
 export function logsCustomPipelineProcessorLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_lookup: {
@@ -3081,19 +3081,19 @@ export interface LogsCustomPipelineProcessorMessageRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -3101,7 +3101,7 @@ export interface LogsCustomPipelineProcessorMessageRemapper {
 export function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorMessageRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -3114,7 +3114,7 @@ export function logsCustomPipelineProcessorMessageRemapperToTerraform(struct?: L
 export function logsCustomPipelineProcessorMessageRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorMessageRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -3234,7 +3234,7 @@ export interface LogsCustomPipelineProcessorPipelineFilter {
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
@@ -3242,7 +3242,7 @@ export interface LogsCustomPipelineProcessorPipelineFilter {
 export function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -3253,7 +3253,7 @@ export function logsCustomPipelineProcessorPipelineFilterToTerraform(struct?: Lo
 export function logsCustomPipelineProcessorPipelineFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -3349,31 +3349,31 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor
   /**
   * Arithmetic operation between one or more log attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#expression LogsCustomPipeline#expression}
   */
   readonly expression: string;
   /**
   * Boolean value to enable your pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If true, it replaces all missing attributes of expression by 0, false skips the operation if an attribute is missing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
   readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * Your pipeline name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the attribute that contains the result of the arithmetic operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -3381,7 +3381,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor
 export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -3396,7 +3396,7 @@ export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorT
 export function logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -3569,19 +3569,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * Remove or preserve the remapped source element. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
   readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Attribute path containing the value to append.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute path of the array to append to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -3589,7 +3589,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     preserve_source: cdktn.booleanToTerraform(struct!.preserveSource),
@@ -3602,7 +3602,7 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     preserve_source: {
@@ -3719,13 +3719,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * Attribute path of the array to compute the length of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the computed length.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -3733,7 +3733,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source: cdktn.stringToTerraform(struct!.source),
@@ -3745,7 +3745,7 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLengthOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source: {
@@ -3834,25 +3834,25 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * Filter expression (e.g. key1:value1 OR key2:value2) used to find the matching element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: string;
   /**
   * Attribute path of the array to search into.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Attribute that receives the extracted value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * Attribute key from the matching object that should be extracted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#value_to_extract LogsCustomPipeline#value_to_extract}
   */
   readonly valueToExtract: string;
 }
@@ -3860,7 +3860,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter: cdktn.stringToTerraform(struct!.filter),
@@ -3874,7 +3874,7 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelectOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter: {
@@ -4013,19 +4013,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
   /**
   * append block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#append LogsCustomPipeline#append}
   */
   readonly append?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppend;
   /**
   * length block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#length LogsCustomPipeline#length}
   */
   readonly length?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationLength;
   /**
   * select block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#select LogsCustomPipeline#select}
   */
   readonly select?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationSelect;
 }
@@ -4033,7 +4033,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOpera
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     append: logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationAppendToTerraform(struct!.append),
@@ -4046,7 +4046,7 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperat
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperationOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     append: {
@@ -4169,19 +4169,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessor {
   /**
   * Boolean value to enable your processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Your processor name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * operation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#operation LogsCustomPipeline#operation}
   */
   readonly operation: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOperation;
 }
@@ -4189,7 +4189,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorArrayProcessor {
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -4202,7 +4202,7 @@ export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorToTerr
 export function logsCustomPipelineProcessorPipelineProcessorArrayProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorArrayProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -4322,55 +4322,55 @@ export interface LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Override the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
   readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
   readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Defines where the sources are from (log `attribute` or `tag`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source_type LogsCustomPipeline#source_type}
   */
   readonly sourceType: string;
   /**
   * List of source attributes or tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Final attribute or tag name to remap the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
   /**
   * Defines if the target is a log `attribute` or `tag`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_type LogsCustomPipeline#target_type}
   */
   readonly targetType: string;
 }
@@ -4378,7 +4378,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper {
 export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -4397,7 +4397,7 @@ export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToT
 export function logsCustomPipelineProcessorPipelineProcessorAttributeRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -4676,7 +4676,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCa
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
@@ -4684,7 +4684,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCa
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -4695,7 +4695,7 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCat
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -4757,13 +4757,13 @@ export class LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCatego
 }
 export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryFilter;
 }
@@ -4771,7 +4771,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCa
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -4783,7 +4783,7 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCat
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategoryToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -4904,25 +4904,25 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the category
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the target attribute whose value is defined by the matching category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * category block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category LogsCustomPipeline#category}
   */
   readonly category: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorCategory[] | cdktn.IResolvable;
 }
@@ -4930,7 +4930,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor {
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -4944,7 +4944,7 @@ export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToT
 export function logsCustomPipelineProcessorPipelineProcessorCategoryProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -5089,19 +5089,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -5109,7 +5109,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDateRemapper {
 export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorDateRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -5122,7 +5122,7 @@ export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToTerraf
 export function logsCustomPipelineProcessorPipelineProcessorDateRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDateRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorDateRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -5242,37 +5242,37 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor {
   /**
   * Encoding type: base64 or base16
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#binary_to_text_encoding LogsCustomPipeline#binary_to_text_encoding}
   */
   readonly binaryToTextEncoding: string;
   /**
   * Input representation: utf-8 or integer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#input_representation LogsCustomPipeline#input_representation}
   */
   readonly inputRepresentation: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Encoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Decoded message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -5280,7 +5280,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor {
 export function logsCustomPipelineProcessorPipelineProcessorDecoderProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     binary_to_text_encoding: cdktn.stringToTerraform(struct!.binaryToTextEncoding),
@@ -5296,7 +5296,7 @@ export function logsCustomPipelineProcessorPipelineProcessorDecoderProcessorToTe
 export function logsCustomPipelineProcessorPipelineProcessorDecoderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorDecoderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     binary_to_text_encoding: {
@@ -5491,25 +5491,25 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGeoIpParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -5517,7 +5517,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGeoIpParser {
 export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGeoIpParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -5531,7 +5531,7 @@ export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToTerrafo
 export function logsCustomPipelineProcessorPipelineProcessorGeoIpParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGeoIpParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -5676,13 +5676,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok {
   /**
   * Match rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#match_rules LogsCustomPipeline#match_rules}
   */
   readonly matchRules: string;
   /**
   * Support rules for your grok parser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#support_rules LogsCustomPipeline#support_rules}
   */
   readonly supportRules: string;
 }
@@ -5690,7 +5690,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok {
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_rules: cdktn.stringToTerraform(struct!.matchRules),
@@ -5702,7 +5702,7 @@ export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToTerr
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserGrokToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrokOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_rules: {
@@ -5791,31 +5791,31 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of sample logs for this parser. It can save up to 5 samples. Each sample takes up to 5000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#samples LogsCustomPipeline#samples}
   */
   readonly samples?: string[];
   /**
   * Name of the log attribute to parse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * grok block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok LogsCustomPipeline#grok}
   */
   readonly grok: LogsCustomPipelineProcessorPipelineProcessorGrokParserGrok;
 }
@@ -5823,7 +5823,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorGrokParser {
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -5838,7 +5838,7 @@ export function logsCustomPipelineProcessorPipelineProcessorGrokParserToTerrafor
 export function logsCustomPipelineProcessorPipelineProcessorGrokParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorGrokParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorGrokParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -6011,37 +6011,37 @@ export interface LogsCustomPipelineProcessorPipelineProcessorLookupProcessor {
   /**
   * Default lookup value to use if there is no entry in the lookup table for the value of the source attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#default_lookup LogsCustomPipeline#default_lookup}
   */
   readonly defaultLookup?: string;
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * List of entries of the lookup table using `key,value` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_table LogsCustomPipeline#lookup_table}
   */
   readonly lookupTable: string[];
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -6049,7 +6049,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorLookupProcessor {
 export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default_lookup: cdktn.stringToTerraform(struct!.defaultLookup),
@@ -6065,7 +6065,7 @@ export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToTer
 export function logsCustomPipelineProcessorPipelineProcessorLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default_lookup: {
@@ -6263,19 +6263,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorMessageRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -6283,7 +6283,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorMessageRemapper {
 export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorMessageRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -6296,7 +6296,7 @@ export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToTer
 export function logsCustomPipelineProcessorPipelineProcessorMessageRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorMessageRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -6416,31 +6416,31 @@ export interface LogsCustomPipelineProcessorPipelineProcessorReferenceTableLooku
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the Reference Table for the source attribute and their associated target attribute values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
   */
   readonly lookupEnrichmentTable: string;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -6448,7 +6448,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorReferenceTableLooku
 export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -6463,7 +6463,7 @@ export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookup
 export function logsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -6633,7 +6633,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
@@ -6641,7 +6641,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -6652,7 +6652,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -6716,7 +6716,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * ID to inject into the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6725,13 +6725,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Value to assign to target schema field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter;
 }
@@ -6739,7 +6739,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.numberToTerraform(struct!.id),
@@ -6752,7 +6752,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -6898,13 +6898,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Fallback sources used to populate value of field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources?: { [key: string]: string };
   /**
   * Values that define when the fallback is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
   */
   readonly values?: { [key: string]: string };
 }
@@ -6912,7 +6912,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     sources: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sources),
@@ -6924,7 +6924,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     sources: {
@@ -7019,7 +7019,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * ID of the field to map log attributes to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7028,7 +7028,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Name of the field to map log attributes to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
 }
@@ -7036,7 +7036,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -7048,7 +7048,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -7143,25 +7143,25 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Name of the logs schema category mapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
   */
   readonly categories: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable;
   /**
   * fallback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
   */
   readonly fallback?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
   */
   readonly targets: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets;
 }
@@ -7169,7 +7169,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -7183,7 +7183,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -7357,37 +7357,37 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * Name of the logs schema remapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * Override or not the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
   readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
   readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Array of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Target field to map log source field to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
 }
@@ -7395,7 +7395,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -7411,7 +7411,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -7641,13 +7641,13 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
   /**
   * schema_category_mapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
   */
   readonly schemaCategoryMapper?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable;
   /**
   * schema_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
   */
   readonly schemaRemapper?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable;
 }
@@ -7655,7 +7655,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMapp
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     schema_category_mapper: cdktn.listMapper(logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform, true)(struct!.schemaCategoryMapper),
@@ -7667,7 +7667,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappe
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappersToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     schema_category_mapper: {
@@ -7794,37 +7794,37 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSche
   /**
   * Class name of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
   */
   readonly className: string;
   /**
   * Class UID of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
   */
   readonly classUid: number;
   /**
   * Optional list of extensions to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
   */
   readonly extensions?: string[];
   /**
   * Optional list of profiles to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
   */
   readonly profiles?: string[];
   /**
   * Type of schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
   */
   readonly schemaType: string;
   /**
   * Version of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
   */
   readonly version: string;
 }
@@ -7832,7 +7832,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSche
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     class_name: cdktn.stringToTerraform(struct!.className),
@@ -7848,7 +7848,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchem
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     class_name: {
@@ -8043,25 +8043,25 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * mappers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
   */
   readonly mappers: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
   */
   readonly schema: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorSchema;
 }
@@ -8069,7 +8069,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor {
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -8083,7 +8083,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorToTer
 export function logsCustomPipelineProcessorPipelineProcessorSchemaProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -8228,19 +8228,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -8248,7 +8248,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorServiceRemapper {
 export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorServiceRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -8261,7 +8261,7 @@ export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToTer
 export function logsCustomPipelineProcessorPipelineProcessorServiceRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorServiceRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -8381,19 +8381,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -8401,7 +8401,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper {
 export function logsCustomPipelineProcessorPipelineProcessorSpanIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -8414,7 +8414,7 @@ export function logsCustomPipelineProcessorPipelineProcessorSpanIdRemapperToTerr
 export function logsCustomPipelineProcessorPipelineProcessorSpanIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -8534,19 +8534,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStatusRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -8554,7 +8554,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStatusRemapper {
 export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorStatusRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -8567,7 +8567,7 @@ export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToTerr
 export function logsCustomPipelineProcessorPipelineProcessorStatusRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorStatusRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -8687,31 +8687,31 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStringBuilderProces
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If it replaces all missing attributes of template by an empty string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
   readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * The name of the attribute that contains the result of the template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * The formula with one or more attributes and raw text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
   */
   readonly template: string;
 }
@@ -8719,7 +8719,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorStringBuilderProces
 export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -8734,7 +8734,7 @@ export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcess
 export function logsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -8907,19 +8907,19 @@ export interface LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -8927,7 +8927,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper {
 export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -8940,7 +8940,7 @@ export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToTer
 export function logsCustomPipelineProcessorPipelineProcessorTraceIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -9060,31 +9060,31 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUrlParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Normalize the ending slashes or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
   */
   readonly normalizeEndingSlashes?: boolean | cdktn.IResolvable;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -9092,7 +9092,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUrlParser {
 export function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUrlParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -9107,7 +9107,7 @@ export function logsCustomPipelineProcessorPipelineProcessorUrlParserToTerraform
 export function logsCustomPipelineProcessorPipelineProcessorUrlParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUrlParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -9280,31 +9280,31 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUserAgentParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If the source attribute is URL encoded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
   */
   readonly isEncoded?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -9312,7 +9312,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessorUserAgentParser {
 export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUserAgentParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -9327,7 +9327,7 @@ export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToTer
 export function logsCustomPipelineProcessorPipelineProcessorUserAgentParserToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorPipelineProcessorUserAgentParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -9500,115 +9500,115 @@ export interface LogsCustomPipelineProcessorPipelineProcessor {
   /**
   * arithmetic_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
   */
   readonly arithmeticProcessor?: LogsCustomPipelineProcessorPipelineProcessorArithmeticProcessor;
   /**
   * array_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
   */
   readonly arrayProcessor?: LogsCustomPipelineProcessorPipelineProcessorArrayProcessor;
   /**
   * attribute_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
   */
   readonly attributeRemapper?: LogsCustomPipelineProcessorPipelineProcessorAttributeRemapper;
   /**
   * category_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
   */
   readonly categoryProcessor?: LogsCustomPipelineProcessorPipelineProcessorCategoryProcessor;
   /**
   * date_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
   */
   readonly dateRemapper?: LogsCustomPipelineProcessorPipelineProcessorDateRemapper;
   /**
   * decoder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
   */
   readonly decoderProcessor?: LogsCustomPipelineProcessorPipelineProcessorDecoderProcessor;
   /**
   * geo_ip_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
   */
   readonly geoIpParser?: LogsCustomPipelineProcessorPipelineProcessorGeoIpParser;
   /**
   * grok_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
   */
   readonly grokParser?: LogsCustomPipelineProcessorPipelineProcessorGrokParser;
   /**
   * lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
   */
   readonly lookupProcessor?: LogsCustomPipelineProcessorPipelineProcessorLookupProcessor;
   /**
   * message_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
   */
   readonly messageRemapper?: LogsCustomPipelineProcessorPipelineProcessorMessageRemapper;
   /**
   * reference_table_lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
   */
   readonly referenceTableLookupProcessor?: LogsCustomPipelineProcessorPipelineProcessorReferenceTableLookupProcessor;
   /**
   * schema_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
   */
   readonly schemaProcessor?: LogsCustomPipelineProcessorPipelineProcessorSchemaProcessor;
   /**
   * service_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
   */
   readonly serviceRemapper?: LogsCustomPipelineProcessorPipelineProcessorServiceRemapper;
   /**
   * span_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
   */
   readonly spanIdRemapper?: LogsCustomPipelineProcessorPipelineProcessorSpanIdRemapper;
   /**
   * status_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
   */
   readonly statusRemapper?: LogsCustomPipelineProcessorPipelineProcessorStatusRemapper;
   /**
   * string_builder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
   */
   readonly stringBuilderProcessor?: LogsCustomPipelineProcessorPipelineProcessorStringBuilderProcessor;
   /**
   * trace_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
   */
   readonly traceIdRemapper?: LogsCustomPipelineProcessorPipelineProcessorTraceIdRemapper;
   /**
   * url_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
   */
   readonly urlParser?: LogsCustomPipelineProcessorPipelineProcessorUrlParser;
   /**
   * user_agent_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
   */
   readonly userAgentParser?: LogsCustomPipelineProcessorPipelineProcessorUserAgentParser;
 }
@@ -9616,7 +9616,7 @@ export interface LogsCustomPipelineProcessorPipelineProcessor {
 export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arithmetic_processor: logsCustomPipelineProcessorPipelineProcessorArithmeticProcessorToTerraform(struct!.arithmeticProcessor),
@@ -9645,7 +9645,7 @@ export function logsCustomPipelineProcessorPipelineProcessorToTerraform(struct?:
 export function logsCustomPipelineProcessorPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineProcessor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arithmetic_processor: {
@@ -10246,31 +10246,31 @@ export class LogsCustomPipelineProcessorPipelineProcessorList extends cdktn.Comp
 }
 export interface LogsCustomPipelineProcessorPipeline {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#description LogsCustomPipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#tags LogsCustomPipeline#tags}
   */
   readonly tags?: string[];
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorPipelineFilter[] | cdktn.IResolvable;
   /**
   * processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#processor LogsCustomPipeline#processor}
   */
   readonly processor?: LogsCustomPipelineProcessorPipelineProcessor[] | cdktn.IResolvable;
 }
@@ -10278,7 +10278,7 @@ export interface LogsCustomPipelineProcessorPipeline {
 export function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCustomPipelineProcessorPipelineOutputReference | LogsCustomPipelineProcessorPipeline): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -10294,7 +10294,7 @@ export function logsCustomPipelineProcessorPipelineToTerraform(struct?: LogsCust
 export function logsCustomPipelineProcessorPipelineToHclTerraform(struct?: LogsCustomPipelineProcessorPipelineOutputReference | LogsCustomPipelineProcessorPipeline): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -10495,31 +10495,31 @@ export interface LogsCustomPipelineProcessorReferenceTableLookupProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the Reference Table for the source attribute and their associated target attribute values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_enrichment_table LogsCustomPipeline#lookup_enrichment_table}
   */
   readonly lookupEnrichmentTable: string;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Name of the source attribute used to do the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#source LogsCustomPipeline#source}
   */
   readonly source: string;
   /**
   * Name of the attribute that contains the result of the lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -10527,7 +10527,7 @@ export interface LogsCustomPipelineProcessorReferenceTableLookupProcessor {
 export function logsCustomPipelineProcessorReferenceTableLookupProcessorToTerraform(struct?: LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorReferenceTableLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -10542,7 +10542,7 @@ export function logsCustomPipelineProcessorReferenceTableLookupProcessorToTerraf
 export function logsCustomPipelineProcessorReferenceTableLookupProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorReferenceTableLookupProcessorOutputReference | LogsCustomPipelineProcessorReferenceTableLookupProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -10712,7 +10712,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Filter criteria of the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#query LogsCustomPipeline#query}
   */
   readonly query: string;
 }
@@ -10720,7 +10720,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -10731,7 +10731,7 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilterOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -10795,7 +10795,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * ID to inject into the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -10804,13 +10804,13 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Value to assign to target schema field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#filter LogsCustomPipeline#filter}
   */
   readonly filter: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesFilter;
 }
@@ -10818,7 +10818,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.numberToTerraform(struct!.id),
@@ -10831,7 +10831,7 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategoriesToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -10977,13 +10977,13 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Fallback sources used to populate value of field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources?: { [key: string]: string };
   /**
   * Values that define when the fallback is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#values LogsCustomPipeline#values}
   */
   readonly values?: { [key: string]: string };
 }
@@ -10991,7 +10991,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     sources: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sources),
@@ -11003,7 +11003,7 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallbackOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     sources: {
@@ -11098,7 +11098,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * ID of the field to map log attributes to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#id LogsCustomPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -11107,7 +11107,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Name of the field to map log attributes to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
 }
@@ -11115,7 +11115,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -11127,7 +11127,7 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargetsOutputReference | LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -11222,25 +11222,25 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
   /**
   * Name of the logs schema category mapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * categories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#categories LogsCustomPipeline#categories}
   */
   readonly categories: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperCategories[] | cdktn.IResolvable;
   /**
   * fallback block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#fallback LogsCustomPipeline#fallback}
   */
   readonly fallback?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperFallback;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#targets LogsCustomPipeline#targets}
   */
   readonly targets: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperTargets;
 }
@@ -11248,7 +11248,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategory
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -11262,7 +11262,7 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryM
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -11436,37 +11436,37 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper
   /**
   * Name of the logs schema remapper.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name: string;
   /**
   * Override or not the target element if already set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#override_on_conflict LogsCustomPipeline#override_on_conflict}
   */
   readonly overrideOnConflict?: boolean | cdktn.IResolvable;
   /**
   * Remove or preserve the remapped source element.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#preserve_source LogsCustomPipeline#preserve_source}
   */
   readonly preserveSource?: boolean | cdktn.IResolvable;
   /**
   * Array of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Target field to map log source field to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * If the `target_type` of the remapper is `attribute`, try to cast the value to a new specific type. If the cast is not possible, the original type is kept. `string`, `integer`, or `double` are the possible types. If the `target_type` is `tag`, this parameter may not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target_format LogsCustomPipeline#target_format}
   */
   readonly targetFormat?: string;
 }
@@ -11474,7 +11474,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -11490,7 +11490,7 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperT
 export function logsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -11720,13 +11720,13 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappers {
   /**
   * schema_category_mapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_category_mapper LogsCustomPipeline#schema_category_mapper}
   */
   readonly schemaCategoryMapper?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapper[] | cdktn.IResolvable;
   /**
   * schema_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_remapper LogsCustomPipeline#schema_remapper}
   */
   readonly schemaRemapper?: LogsCustomPipelineProcessorSchemaProcessorMappersSchemaRemapper[] | cdktn.IResolvable;
 }
@@ -11734,7 +11734,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorMappers {
 export function logsCustomPipelineProcessorSchemaProcessorMappersToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     schema_category_mapper: cdktn.listMapper(logsCustomPipelineProcessorSchemaProcessorMappersSchemaCategoryMapperToTerraform, true)(struct!.schemaCategoryMapper),
@@ -11746,7 +11746,7 @@ export function logsCustomPipelineProcessorSchemaProcessorMappersToTerraform(str
 export function logsCustomPipelineProcessorSchemaProcessorMappersToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorMappers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     schema_category_mapper: {
@@ -11873,37 +11873,37 @@ export interface LogsCustomPipelineProcessorSchemaProcessorSchema {
   /**
   * Class name of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_name LogsCustomPipeline#class_name}
   */
   readonly className: string;
   /**
   * Class UID of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#class_uid LogsCustomPipeline#class_uid}
   */
   readonly classUid: number;
   /**
   * Optional list of extensions to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#extensions LogsCustomPipeline#extensions}
   */
   readonly extensions?: string[];
   /**
   * Optional list of profiles to modify the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#profiles LogsCustomPipeline#profiles}
   */
   readonly profiles?: string[];
   /**
   * Type of schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_type LogsCustomPipeline#schema_type}
   */
   readonly schemaType: string;
   /**
   * Version of the schema to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#version LogsCustomPipeline#version}
   */
   readonly version: string;
 }
@@ -11911,7 +11911,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessorSchema {
 export function logsCustomPipelineProcessorSchemaProcessorSchemaToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorSchemaProcessorSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     class_name: cdktn.stringToTerraform(struct!.className),
@@ -11927,7 +11927,7 @@ export function logsCustomPipelineProcessorSchemaProcessorSchemaToTerraform(stru
 export function logsCustomPipelineProcessorSchemaProcessorSchemaToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorSchemaOutputReference | LogsCustomPipelineProcessorSchemaProcessorSchema): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     class_name: {
@@ -12122,25 +12122,25 @@ export interface LogsCustomPipelineProcessorSchemaProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * mappers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#mappers LogsCustomPipeline#mappers}
   */
   readonly mappers: LogsCustomPipelineProcessorSchemaProcessorMappers[] | cdktn.IResolvable;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema LogsCustomPipeline#schema}
   */
   readonly schema: LogsCustomPipelineProcessorSchemaProcessorSchema;
 }
@@ -12148,7 +12148,7 @@ export interface LogsCustomPipelineProcessorSchemaProcessor {
 export function logsCustomPipelineProcessorSchemaProcessorToTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorSchemaProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -12162,7 +12162,7 @@ export function logsCustomPipelineProcessorSchemaProcessorToTerraform(struct?: L
 export function logsCustomPipelineProcessorSchemaProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorSchemaProcessorOutputReference | LogsCustomPipelineProcessorSchemaProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -12307,19 +12307,19 @@ export interface LogsCustomPipelineProcessorServiceRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -12327,7 +12327,7 @@ export interface LogsCustomPipelineProcessorServiceRemapper {
 export function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: LogsCustomPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorServiceRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -12340,7 +12340,7 @@ export function logsCustomPipelineProcessorServiceRemapperToTerraform(struct?: L
 export function logsCustomPipelineProcessorServiceRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorServiceRemapperOutputReference | LogsCustomPipelineProcessorServiceRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -12460,19 +12460,19 @@ export interface LogsCustomPipelineProcessorSpanIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -12480,7 +12480,7 @@ export interface LogsCustomPipelineProcessorSpanIdRemapper {
 export function logsCustomPipelineProcessorSpanIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorSpanIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -12493,7 +12493,7 @@ export function logsCustomPipelineProcessorSpanIdRemapperToTerraform(struct?: Lo
 export function logsCustomPipelineProcessorSpanIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorSpanIdRemapperOutputReference | LogsCustomPipelineProcessorSpanIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -12613,19 +12613,19 @@ export interface LogsCustomPipelineProcessorStatusRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -12633,7 +12633,7 @@ export interface LogsCustomPipelineProcessorStatusRemapper {
 export function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: LogsCustomPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorStatusRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -12646,7 +12646,7 @@ export function logsCustomPipelineProcessorStatusRemapperToTerraform(struct?: Lo
 export function logsCustomPipelineProcessorStatusRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorStatusRemapperOutputReference | LogsCustomPipelineProcessorStatusRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -12766,31 +12766,31 @@ export interface LogsCustomPipelineProcessorStringBuilderProcessor {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If it replaces all missing attributes of template by an empty string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_replace_missing LogsCustomPipeline#is_replace_missing}
   */
   readonly isReplaceMissing?: boolean | cdktn.IResolvable;
   /**
   * The name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * The name of the attribute that contains the result of the template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
   /**
   * The formula with one or more attributes and raw text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#template LogsCustomPipeline#template}
   */
   readonly template: string;
 }
@@ -12798,7 +12798,7 @@ export interface LogsCustomPipelineProcessorStringBuilderProcessor {
 export function logsCustomPipelineProcessorStringBuilderProcessorToTerraform(struct?: LogsCustomPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorStringBuilderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -12813,7 +12813,7 @@ export function logsCustomPipelineProcessorStringBuilderProcessorToTerraform(str
 export function logsCustomPipelineProcessorStringBuilderProcessorToHclTerraform(struct?: LogsCustomPipelineProcessorStringBuilderProcessorOutputReference | LogsCustomPipelineProcessorStringBuilderProcessor): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -12986,19 +12986,19 @@ export interface LogsCustomPipelineProcessorTraceIdRemapper {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
 }
@@ -13006,7 +13006,7 @@ export interface LogsCustomPipelineProcessorTraceIdRemapper {
 export function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: LogsCustomPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorTraceIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -13019,7 +13019,7 @@ export function logsCustomPipelineProcessorTraceIdRemapperToTerraform(struct?: L
 export function logsCustomPipelineProcessorTraceIdRemapperToHclTerraform(struct?: LogsCustomPipelineProcessorTraceIdRemapperOutputReference | LogsCustomPipelineProcessorTraceIdRemapper): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -13139,31 +13139,31 @@ export interface LogsCustomPipelineProcessorUrlParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * Normalize the ending slashes or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#normalize_ending_slashes LogsCustomPipeline#normalize_ending_slashes}
   */
   readonly normalizeEndingSlashes?: boolean | cdktn.IResolvable;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -13171,7 +13171,7 @@ export interface LogsCustomPipelineProcessorUrlParser {
 export function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCustomPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorUrlParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -13186,7 +13186,7 @@ export function logsCustomPipelineProcessorUrlParserToTerraform(struct?: LogsCus
 export function logsCustomPipelineProcessorUrlParserToHclTerraform(struct?: LogsCustomPipelineProcessorUrlParserOutputReference | LogsCustomPipelineProcessorUrlParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -13359,31 +13359,31 @@ export interface LogsCustomPipelineProcessorUserAgentParser {
   /**
   * If the processor is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_enabled LogsCustomPipeline#is_enabled}
   */
   readonly isEnabled?: boolean | cdktn.IResolvable;
   /**
   * If the source attribute is URL encoded or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#is_encoded LogsCustomPipeline#is_encoded}
   */
   readonly isEncoded?: boolean | cdktn.IResolvable;
   /**
   * Name of the processor
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#name LogsCustomPipeline#name}
   */
   readonly name?: string;
   /**
   * List of source attributes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#sources LogsCustomPipeline#sources}
   */
   readonly sources: string[];
   /**
   * Name of the parent attribute that contains all the extracted details from the sources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#target LogsCustomPipeline#target}
   */
   readonly target: string;
 }
@@ -13391,7 +13391,7 @@ export interface LogsCustomPipelineProcessorUserAgentParser {
 export function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: LogsCustomPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorUserAgentParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_enabled: cdktn.booleanToTerraform(struct!.isEnabled),
@@ -13406,7 +13406,7 @@ export function logsCustomPipelineProcessorUserAgentParserToTerraform(struct?: L
 export function logsCustomPipelineProcessorUserAgentParserToHclTerraform(struct?: LogsCustomPipelineProcessorUserAgentParserOutputReference | LogsCustomPipelineProcessorUserAgentParser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_enabled: {
@@ -13579,121 +13579,121 @@ export interface LogsCustomPipelineProcessor {
   /**
   * arithmetic_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#arithmetic_processor LogsCustomPipeline#arithmetic_processor}
   */
   readonly arithmeticProcessor?: LogsCustomPipelineProcessorArithmeticProcessor;
   /**
   * array_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#array_processor LogsCustomPipeline#array_processor}
   */
   readonly arrayProcessor?: LogsCustomPipelineProcessorArrayProcessor;
   /**
   * attribute_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#attribute_remapper LogsCustomPipeline#attribute_remapper}
   */
   readonly attributeRemapper?: LogsCustomPipelineProcessorAttributeRemapper;
   /**
   * category_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#category_processor LogsCustomPipeline#category_processor}
   */
   readonly categoryProcessor?: LogsCustomPipelineProcessorCategoryProcessor;
   /**
   * date_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#date_remapper LogsCustomPipeline#date_remapper}
   */
   readonly dateRemapper?: LogsCustomPipelineProcessorDateRemapper;
   /**
   * decoder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#decoder_processor LogsCustomPipeline#decoder_processor}
   */
   readonly decoderProcessor?: LogsCustomPipelineProcessorDecoderProcessor;
   /**
   * geo_ip_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#geo_ip_parser LogsCustomPipeline#geo_ip_parser}
   */
   readonly geoIpParser?: LogsCustomPipelineProcessorGeoIpParser;
   /**
   * grok_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#grok_parser LogsCustomPipeline#grok_parser}
   */
   readonly grokParser?: LogsCustomPipelineProcessorGrokParser;
   /**
   * lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#lookup_processor LogsCustomPipeline#lookup_processor}
   */
   readonly lookupProcessor?: LogsCustomPipelineProcessorLookupProcessor;
   /**
   * message_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#message_remapper LogsCustomPipeline#message_remapper}
   */
   readonly messageRemapper?: LogsCustomPipelineProcessorMessageRemapper;
   /**
   * pipeline block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#pipeline LogsCustomPipeline#pipeline}
   */
   readonly pipeline?: LogsCustomPipelineProcessorPipeline;
   /**
   * reference_table_lookup_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#reference_table_lookup_processor LogsCustomPipeline#reference_table_lookup_processor}
   */
   readonly referenceTableLookupProcessor?: LogsCustomPipelineProcessorReferenceTableLookupProcessor;
   /**
   * schema_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#schema_processor LogsCustomPipeline#schema_processor}
   */
   readonly schemaProcessor?: LogsCustomPipelineProcessorSchemaProcessor;
   /**
   * service_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#service_remapper LogsCustomPipeline#service_remapper}
   */
   readonly serviceRemapper?: LogsCustomPipelineProcessorServiceRemapper;
   /**
   * span_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#span_id_remapper LogsCustomPipeline#span_id_remapper}
   */
   readonly spanIdRemapper?: LogsCustomPipelineProcessorSpanIdRemapper;
   /**
   * status_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#status_remapper LogsCustomPipeline#status_remapper}
   */
   readonly statusRemapper?: LogsCustomPipelineProcessorStatusRemapper;
   /**
   * string_builder_processor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#string_builder_processor LogsCustomPipeline#string_builder_processor}
   */
   readonly stringBuilderProcessor?: LogsCustomPipelineProcessorStringBuilderProcessor;
   /**
   * trace_id_remapper block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#trace_id_remapper LogsCustomPipeline#trace_id_remapper}
   */
   readonly traceIdRemapper?: LogsCustomPipelineProcessorTraceIdRemapper;
   /**
   * url_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#url_parser LogsCustomPipeline#url_parser}
   */
   readonly urlParser?: LogsCustomPipelineProcessorUrlParser;
   /**
   * user_agent_parser block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#user_agent_parser LogsCustomPipeline#user_agent_parser}
   */
   readonly userAgentParser?: LogsCustomPipelineProcessorUserAgentParser;
 }
@@ -13701,7 +13701,7 @@ export interface LogsCustomPipelineProcessor {
 export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipelineProcessor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arithmetic_processor: logsCustomPipelineProcessorArithmeticProcessorToTerraform(struct!.arithmeticProcessor),
@@ -13731,7 +13731,7 @@ export function logsCustomPipelineProcessorToTerraform(struct?: LogsCustomPipeli
 export function logsCustomPipelineProcessorToHclTerraform(struct?: LogsCustomPipelineProcessor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arithmetic_processor: {
@@ -14360,7 +14360,7 @@ export class LogsCustomPipelineProcessorList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline}
 */
 export class LogsCustomPipeline extends cdktn.TerraformResource {
 
@@ -14376,7 +14376,7 @@ export class LogsCustomPipeline extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogsCustomPipeline resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsCustomPipeline to import
-  * @param importFromId The id of the existing LogsCustomPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsCustomPipeline that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsCustomPipeline to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -14388,7 +14388,7 @@ export class LogsCustomPipeline extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_custom_pipeline datadog_logs_custom_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -14399,7 +14399,7 @@ export class LogsCustomPipeline extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_logs_custom_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

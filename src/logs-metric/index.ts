@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface LogsMetricConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#id LogsMetric#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#id LogsMetric#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +22,25 @@ export interface LogsMetricConfig extends cdktn.TerraformMetaArguments {
   /**
   * The name of the log-based metric. This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#name LogsMetric#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#name LogsMetric#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#compute LogsMetric#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#compute LogsMetric#compute}
   */
   readonly compute: LogsMetricCompute;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#filter LogsMetric#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#filter LogsMetric#filter}
   */
   readonly filter: LogsMetricFilter;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#group_by LogsMetric#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#group_by LogsMetric#group_by}
   */
   readonly groupBy?: LogsMetricGroupBy[] | cdktn.IResolvable;
 }
@@ -48,19 +48,19 @@ export interface LogsMetricCompute {
   /**
   * The type of aggregation to use. This field can't be updated after creation. Valid values are `count`, `distribution`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#aggregation_type LogsMetric#aggregation_type}
   */
   readonly aggregationType: string;
   /**
   * Toggle to include/exclude percentiles for a distribution metric. Defaults to false. Can only be applied to metrics that have an `aggregation_type` of distribution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#include_percentiles LogsMetric#include_percentiles}
   */
   readonly includePercentiles?: boolean | cdktn.IResolvable;
   /**
   * The path to the value the log-based metric will aggregate on (only used if the aggregation type is a "distribution"). This field can't be updated after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#path LogsMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#path LogsMetric#path}
   */
   readonly path?: string;
 }
@@ -68,7 +68,7 @@ export interface LogsMetricCompute {
 export function logsMetricComputeToTerraform(struct?: LogsMetricComputeOutputReference | LogsMetricCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation_type: cdktn.stringToTerraform(struct!.aggregationType),
@@ -81,7 +81,7 @@ export function logsMetricComputeToTerraform(struct?: LogsMetricComputeOutputRef
 export function logsMetricComputeToHclTerraform(struct?: LogsMetricComputeOutputReference | LogsMetricCompute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation_type: {
@@ -201,7 +201,7 @@ export interface LogsMetricFilter {
   /**
   * The search query - following the log search syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#query LogsMetric#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#query LogsMetric#query}
   */
   readonly query: string;
 }
@@ -209,7 +209,7 @@ export interface LogsMetricFilter {
 export function logsMetricFilterToTerraform(struct?: LogsMetricFilterOutputReference | LogsMetricFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -220,7 +220,7 @@ export function logsMetricFilterToTerraform(struct?: LogsMetricFilterOutputRefer
 export function logsMetricFilterToHclTerraform(struct?: LogsMetricFilterOutputReference | LogsMetricFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -284,13 +284,13 @@ export interface LogsMetricGroupBy {
   /**
   * The path to the value the log-based metric will be aggregated over.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#path LogsMetric#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#path LogsMetric#path}
   */
   readonly path: string;
   /**
   * Name of the tag that gets created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#tag_name LogsMetric#tag_name}
   */
   readonly tagName: string;
 }
@@ -298,7 +298,7 @@ export interface LogsMetricGroupBy {
 export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -310,7 +310,7 @@ export function logsMetricGroupByToTerraform(struct?: LogsMetricGroupBy | cdktn.
 export function logsMetricGroupByToHclTerraform(struct?: LogsMetricGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -429,7 +429,7 @@ export class LogsMetricGroupByList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric datadog_logs_metric}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric datadog_logs_metric}
 */
 export class LogsMetric extends cdktn.TerraformResource {
 
@@ -445,7 +445,7 @@ export class LogsMetric extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LogsMetric resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogsMetric to import
-  * @param importFromId The id of the existing LogsMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LogsMetric that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogsMetric to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -457,7 +457,7 @@ export class LogsMetric extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/logs_metric datadog_logs_metric} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/logs_metric datadog_logs_metric} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -468,7 +468,7 @@ export class LogsMetric extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_logs_metric',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

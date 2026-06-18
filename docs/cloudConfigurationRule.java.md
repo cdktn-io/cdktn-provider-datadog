@@ -4,7 +4,7 @@
 
 ### CloudConfigurationRule <a name="CloudConfigurationRule" id="@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule datadog_cloud_configuration_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer"></a>
 
@@ -53,7 +53,7 @@ CloudConfigurationRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.severity">severity</a></code> | <code>java.lang.String</code> | Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilter">CloudConfigurationRuleFilter</a>></code> | filter block. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.groupBy">groupBy</a></code> | <code>java.util.List<java.lang.String></code> | Defaults to empty list. |
-| <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}. |
+| <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.notifications">notifications</a></code> | <code>java.util.List<java.lang.String></code> | This function will be deprecated soon. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.relatedResourceTypes">relatedResourceTypes</a></code> | <code>java.util.List<java.lang.String></code> | Related resource types to be checked by the rule. Defaults to empty list. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRule.Initializer.parameter.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags of the rule, propagated to findings and signals. Defaults to empty list. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Whether the cloud configuration rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The message associated to the rule that will be shown in findings and signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 The name of the cloud configuration rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Policy written in Rego format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Main resource type to be checked by the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
 
 ---
 
@@ -204,7 +204,7 @@ This function will be deprecated soon. Use the notification rules function inste
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -219,7 +219,7 @@ This function will be deprecated soon.
 
 Use the notification rules function instead. Notification targets for signals. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
 
 ---
 
@@ -229,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Related resource types to be checked by the rule. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
 
 ---
 
@@ -239,7 +239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datad
 
 Tags of the rule, propagated to findings and signals. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
 
 ---
 
@@ -743,7 +743,7 @@ The construct id used in the generated config for the CloudConfigurationRule to 
 
 The id of the existing CloudConfigurationRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1251,7 +1251,7 @@ CloudConfigurationRuleConfig.builder()
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.severity">severity</a></code> | <code>java.lang.String</code> | Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.filter">filter</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleFilter">CloudConfigurationRuleFilter</a>></code> | filter block. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.groupBy">groupBy</a></code> | <code>java.util.List<java.lang.String></code> | Defaults to empty list. |
-| <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}. |
+| <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.notifications">notifications</a></code> | <code>java.util.List<java.lang.String></code> | This function will be deprecated soon. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.relatedResourceTypes">relatedResourceTypes</a></code> | <code>java.util.List<java.lang.String></code> | Related resource types to be checked by the rule. Defaults to empty list. |
 | <code><a href="#@cdktn/provider-datadog.cloudConfigurationRule.CloudConfigurationRuleConfig.property.tags">tags</a></code> | <code>java.util.List<java.lang.String></code> | Tags of the rule, propagated to findings and signals. Defaults to empty list. |
@@ -1338,7 +1338,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the cloud configuration rule is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#enabled CloudConfigurationRule#enabled}
 
 ---
 
@@ -1352,7 +1352,7 @@ public java.lang.String getMessage();
 
 The message associated to the rule that will be shown in findings and signals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#message CloudConfigurationRule#message}
 
 ---
 
@@ -1366,7 +1366,7 @@ public java.lang.String getName();
 
 The name of the cloud configuration rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#name CloudConfigurationRule#name}
 
 ---
 
@@ -1380,7 +1380,7 @@ public java.lang.String getPolicy();
 
 Policy written in Rego format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#policy CloudConfigurationRule#policy}
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.String getResourceType();
 
 Main resource type to be checked by the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#resource_type CloudConfigurationRule#resource_type}
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.String getSeverity();
 
 Severity of the rule and associated signals. Valid values are `info`, `low`, `medium`, `high`, `critical`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#severity CloudConfigurationRule#severity}
 
 ---
 
@@ -1422,7 +1422,7 @@ public IResolvable|java.util.List<CloudConfigurationRuleFilter> getFilter();
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#filter CloudConfigurationRule#filter}
 
 ---
 
@@ -1448,7 +1448,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#id CloudConfigurationRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1467,7 +1467,7 @@ This function will be deprecated soon.
 
 Use the notification rules function instead. Notification targets for signals. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#notifications CloudConfigurationRule#notifications}
 
 ---
 
@@ -1481,7 +1481,7 @@ public java.util.List<java.lang.String> getRelatedResourceTypes();
 
 Related resource types to be checked by the rule. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#related_resource_types CloudConfigurationRule#related_resource_types}
 
 ---
 
@@ -1495,7 +1495,7 @@ public java.util.List<java.lang.String> getTags();
 
 Tags of the rule, propagated to findings and signals. Defaults to empty list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#tags CloudConfigurationRule#tags}
 
 ---
 
@@ -1531,7 +1531,7 @@ public java.lang.String getAction();
 
 The type of filtering action. Valid values are `require`, `suppress`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#action CloudConfigurationRule#action}
 
 ---
 
@@ -1545,7 +1545,7 @@ public java.lang.String getQuery();
 
 Query for selecting logs to apply the filtering action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_configuration_rule#query CloudConfigurationRule#query}
 
 ---
 

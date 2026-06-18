@@ -48,13 +48,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#canonical DashboardV2#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#canonical DashboardV2#canonical}
   */
   readonly canonical?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#custom DashboardV2#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#custom DashboardV2#custom}
   */
   readonly custom?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCustom;
 }
@@ -62,7 +62,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canonical: dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct!.canonical),
@@ -74,7 +74,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestF
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canonical: {
@@ -169,7 +169,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The name of the unit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
   */
   readonly unitName: string;
 }
@@ -177,7 +177,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit_name: cdktn.stringToTerraform(struct!.unitName),
@@ -188,7 +188,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestF
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit_name: {
@@ -252,13 +252,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit DashboardV2#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit DashboardV2#unit}
   */
   readonly unit: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit_scale DashboardV2#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit_scale DashboardV2#unit_scale}
   */
   readonly unitScale?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitScale;
 }
@@ -266,7 +266,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatUnitToTerraform(struct!.unit),
@@ -278,7 +278,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestF
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormatOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -370,13 +370,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#palette DashboardV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#palette DashboardV2#palette}
   */
   readonly palette?: string;
   /**
   * Index specifying which color to use within the palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#palette_index DashboardV2#palette_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#palette_index DashboardV2#palette_index}
   */
   readonly paletteIndex?: number;
 }
@@ -384,7 +384,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     palette: cdktn.stringToTerraform(struct!.palette),
@@ -396,7 +396,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestF
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     palette: {
@@ -491,49 +491,49 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * An expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#alias DashboardV2#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#alias DashboardV2#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, and `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cell_display_mode DashboardV2#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cell_display_mode DashboardV2#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#formula_expression DashboardV2#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#formula_expression DashboardV2#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * cell_display_mode_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cell_display_mode_options DashboardV2#cell_display_mode_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cell_display_mode_options DashboardV2#cell_display_mode_options}
   */
   readonly cellDisplayModeOptions?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaCellDisplayModeOptions;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#conditional_formats DashboardV2#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#conditional_formats DashboardV2#conditional_formats}
   */
   readonly conditionalFormats?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaLimit;
   /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#number_format DashboardV2#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#number_format DashboardV2#number_format}
   */
   readonly numberFormat?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaNumberFormat;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#style DashboardV2#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#style DashboardV2#style}
   */
   readonly style?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaStyle;
 }
@@ -541,7 +541,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
@@ -559,7 +559,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestF
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormulaToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias: {
@@ -851,19 +851,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -871,7 +871,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -884,7 +884,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestL
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1004,19 +1004,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -1024,7 +1024,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1037,7 +1037,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestL
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1154,19 +1154,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -1174,7 +1174,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -1187,7 +1187,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestL
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -1342,19 +1342,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -1362,7 +1362,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1375,7 +1375,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestL
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1527,31 +1527,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -1559,7 +1559,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -1574,7 +1574,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestL
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -1750,19 +1750,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -1770,7 +1770,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1783,7 +1783,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestN
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1903,19 +1903,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -1923,7 +1923,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1936,7 +1936,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestN
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -2053,19 +2053,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBySortQuery;
 }
@@ -2073,7 +2073,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -2086,7 +2086,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestN
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -2241,19 +2241,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -2261,7 +2261,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -2274,7 +2274,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestN
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -2426,31 +2426,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -2458,7 +2458,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -2473,7 +2473,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestN
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -2649,25 +2649,25 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#filter_by DashboardV2#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#filter_by DashboardV2#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_by DashboardV2#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_by DashboardV2#search_by}
   */
   readonly searchBy?: string;
 }
@@ -2675,7 +2675,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
@@ -2689,7 +2689,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestP
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter_by: {
@@ -2837,67 +2837,67 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#env DashboardV2#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#env DashboardV2#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#is_upstream DashboardV2#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#is_upstream DashboardV2#is_upstream}
   */
   readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#service DashboardV2#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#service DashboardV2#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#stat DashboardV2#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#stat DashboardV2#stat}
   */
   readonly stat: string;
 }
@@ -2905,7 +2905,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -2926,7 +2926,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -3252,67 +3252,67 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#env DashboardV2#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#env DashboardV2#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#service DashboardV2#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#service DashboardV2#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#stat DashboardV2#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#stat DashboardV2#stat}
   */
   readonly stat: string;
 }
@@ -3320,7 +3320,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -3341,7 +3341,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -3673,31 +3673,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Query for Cloud Cost data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
   */
   readonly query: string;
 }
@@ -3705,7 +3705,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryCloudCostQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -3720,7 +3720,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryCloudCostQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryCloudCostQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -3890,19 +3890,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric?: string;
 }
@@ -3910,7 +3910,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -3923,7 +3923,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -4075,19 +4075,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order?: string;
 }
@@ -4095,7 +4095,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -4108,7 +4108,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -4228,19 +4228,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
   */
   readonly sort?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -4248,7 +4248,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -4261,7 +4261,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -4413,19 +4413,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order?: string;
 }
@@ -4433,7 +4433,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSortToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -4446,7 +4446,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSortToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -4566,19 +4566,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * List of event facets to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#fields DashboardV2#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#fields DashboardV2#fields}
   */
   readonly fields: string[];
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
   */
   readonly sort?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsSort;
 }
@@ -4586,7 +4586,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -4599,7 +4599,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -4719,7 +4719,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
   */
   readonly query: string;
 }
@@ -4727,7 +4727,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -4738,7 +4738,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearchOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -4802,55 +4802,55 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`, `llm_observability`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream. Omit or use `[]` to query all indexes at once.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#indexes DashboardV2#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#indexes DashboardV2#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Option for storage location. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#storage DashboardV2#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#storage DashboardV2#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute DashboardV2#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute DashboardV2#compute}
   */
   readonly compute: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * group_by_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by_fields DashboardV2#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by_fields DashboardV2#group_by_fields}
   */
   readonly groupByFields?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryGroupByFields;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search DashboardV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search DashboardV2#search}
   */
   readonly search?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuerySearch;
 }
@@ -4858,7 +4858,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -4877,7 +4877,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -5159,37 +5159,37 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
   */
   readonly query: string;
   /**
   * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#semantic_mode DashboardV2#semantic_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#semantic_mode DashboardV2#semantic_mode}
   */
   readonly semanticMode?: string;
 }
@@ -5197,7 +5197,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -5213,7 +5213,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -5414,61 +5414,61 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#is_normalized_cpu DashboardV2#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#is_normalized_cpu DashboardV2#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#tag_filters DashboardV2#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#tag_filters DashboardV2#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#text_filter DashboardV2#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#text_filter DashboardV2#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -5476,7 +5476,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -5496,7 +5496,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -5806,49 +5806,49 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#additional_query_filters DashboardV2#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#additional_query_filters DashboardV2#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_mode DashboardV2#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_mode DashboardV2#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#measure DashboardV2#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#measure DashboardV2#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query measures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#slo_id DashboardV2#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#slo_id DashboardV2#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#slo_query_type DashboardV2#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#slo_query_type DashboardV2#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
@@ -5856,7 +5856,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuerySloQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuerySloQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
@@ -5874,7 +5874,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuerySloQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuerySloQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_query_filters: {
@@ -6128,43 +6128,43 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#apm_dependency_stats_query DashboardV2#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#apm_dependency_stats_query DashboardV2#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#apm_resource_stats_query DashboardV2#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#apm_resource_stats_query DashboardV2#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cloud_cost_query DashboardV2#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cloud_cost_query DashboardV2#cloud_cost_query}
   */
   readonly cloudCostQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#event_query DashboardV2#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#event_query DashboardV2#event_query}
   */
   readonly eventQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric_query DashboardV2#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric_query DashboardV2#metric_query}
   */
   readonly metricQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
   */
   readonly processQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryProcessQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#slo_query DashboardV2#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#slo_query DashboardV2#slo_query}
   */
   readonly sloQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuerySloQuery;
 }
@@ -6172,7 +6172,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     apm_dependency_stats_query: dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
@@ -6189,7 +6189,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQ
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     apm_dependency_stats_query: {
@@ -6456,19 +6456,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -6476,7 +6476,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6489,7 +6489,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestR
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -6609,19 +6609,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -6629,7 +6629,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6642,7 +6642,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestR
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -6759,19 +6759,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -6779,7 +6779,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -6792,7 +6792,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestR
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -6947,19 +6947,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -6967,7 +6967,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6980,7 +6980,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestR
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -7132,31 +7132,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -7164,7 +7164,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -7179,7 +7179,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestR
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -7355,19 +7355,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -7375,7 +7375,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -7388,7 +7388,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -7508,19 +7508,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -7528,7 +7528,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -7541,7 +7541,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -7658,19 +7658,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -7678,7 +7678,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -7691,7 +7691,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -7846,19 +7846,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -7866,7 +7866,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -7879,7 +7879,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -8031,31 +8031,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -8063,7 +8063,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -8078,7 +8078,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -8254,13 +8254,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The index of the formula to sort by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: number;
   /**
   * Widget sorting direction. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -8268,7 +8268,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSortToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.numberToTerraform(struct!.index),
@@ -8280,7 +8280,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSortToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -8369,13 +8369,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The name of the group tag to sort by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Widget sorting direction. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -8383,7 +8383,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSortToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -8395,7 +8395,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSortToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -8484,13 +8484,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * formula_sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#formula_sort DashboardV2#formula_sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#formula_sort DashboardV2#formula_sort}
   */
   readonly formulaSort?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSort;
   /**
   * group_sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_sort DashboardV2#group_sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_sort DashboardV2#group_sort}
   */
   readonly groupSort?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByGroupSort;
 }
@@ -8498,7 +8498,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     formula_sort: dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByFormulaSortToTerraform(struct!.formulaSort),
@@ -8510,7 +8510,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     formula_sort: {
@@ -8637,13 +8637,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The number of items to limit the widget to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#count DashboardV2#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#count DashboardV2#count}
   */
   readonly count?: number;
   /**
   * order_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order_by DashboardV2#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order_by DashboardV2#order_by}
   */
   readonly orderBy?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOrderBy[] | cdktn.IResolvable;
 }
@@ -8651,7 +8651,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -8663,7 +8663,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -8758,13 +8758,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * How to order series. Valid values are `tags`, `values`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order_by DashboardV2#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order_by DashboardV2#order_by}
   */
   readonly orderBy?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#palette DashboardV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#palette DashboardV2#palette}
   */
   readonly palette?: string;
 }
@@ -8772,7 +8772,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestStyleToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     order_by: cdktn.stringToTerraform(struct!.orderBy),
@@ -8784,7 +8784,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestS
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestStyleToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     order_by: {
@@ -8879,73 +8879,73 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
   /**
   * The metric query to use for this widget. **Deprecated.** Use queries and formulas instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#q DashboardV2#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#q DashboardV2#q}
   */
   readonly q?: string;
   /**
   * apm_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#apm_query DashboardV2#apm_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#apm_query DashboardV2#apm_query}
   */
   readonly apmQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestApmQuery;
   /**
   * audit_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#audit_query DashboardV2#audit_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#audit_query DashboardV2#audit_query}
   */
   readonly auditQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestAuditQuery;
   /**
   * formula block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#formula DashboardV2#formula}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#formula DashboardV2#formula}
   */
   readonly formula?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestFormula[] | cdktn.IResolvable;
   /**
   * log_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#log_query DashboardV2#log_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#log_query DashboardV2#log_query}
   */
   readonly logQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestLogQuery;
   /**
   * network_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#network_query DashboardV2#network_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#network_query DashboardV2#network_query}
   */
   readonly networkQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestNetworkQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
   */
   readonly processQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestProcessQuery;
   /**
   * query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
   */
   readonly query?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestQuery[] | cdktn.IResolvable;
   /**
   * rum_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#rum_query DashboardV2#rum_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#rum_query DashboardV2#rum_query}
   */
   readonly rumQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestRumQuery;
   /**
   * security_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#security_query DashboardV2#security_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#security_query DashboardV2#security_query}
   */
   readonly securityQuery?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSecurityQuery;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
   */
   readonly sort?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestSort;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#style DashboardV2#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#style DashboardV2#style}
   */
   readonly style?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestStyle;
 }
@@ -8953,7 +8953,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     q: cdktn.stringToTerraform(struct!.q),
@@ -8975,7 +8975,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestT
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequestToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     q: {
@@ -9382,13 +9382,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFix
   /**
   * Start time in seconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#from DashboardV2#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#from DashboardV2#from}
   */
   readonly from: number;
   /**
   * End time in seconds since epoch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#to DashboardV2#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#to DashboardV2#to}
   */
   readonly to: number;
 }
@@ -9396,7 +9396,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFix
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixedToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixedOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixed): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.numberToTerraform(struct!.from),
@@ -9408,7 +9408,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixe
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixedToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixedOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixed): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {
@@ -9497,13 +9497,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLiv
   /**
   * Unit of the time span. Valid values are `minute`, `hour`, `day`, `week`, `month`, `year`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit DashboardV2#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit DashboardV2#unit}
   */
   readonly unit: string;
   /**
   * Value of the time span.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#value DashboardV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#value DashboardV2#value}
   */
   readonly value: number;
 }
@@ -9511,7 +9511,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLiv
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLiveToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLiveOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLive): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: cdktn.stringToTerraform(struct!.unit),
@@ -9523,7 +9523,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLive
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLiveToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLiveOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLive): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -9612,13 +9612,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTime {
   /**
   * fixed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#fixed DashboardV2#fixed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#fixed DashboardV2#fixed}
   */
   readonly fixed?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixed;
   /**
   * live block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#live DashboardV2#live}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#live DashboardV2#live}
   */
   readonly live?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeLive;
 }
@@ -9626,7 +9626,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTime {
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fixed: dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeFixedToTerraform(struct!.fixed),
@@ -9638,7 +9638,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeToTe
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTimeOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fixed: {
@@ -9733,73 +9733,73 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinition {
   /**
   * The description of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#description DashboardV2#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#description DashboardV2#description}
   */
   readonly description?: string;
   /**
   * Hide any portion of the widget's timeframe that is incomplete due to cost data not being available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#hide_incomplete_cost_data DashboardV2#hide_incomplete_cost_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#hide_incomplete_cost_data DashboardV2#hide_incomplete_cost_data}
   */
   readonly hideIncompleteCostData?: boolean | cdktn.IResolvable;
   /**
   * Whether or not to show the total value in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#hide_total DashboardV2#hide_total}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#hide_total DashboardV2#hide_total}
   */
   readonly hideTotal?: boolean | cdktn.IResolvable;
   /**
   * The timeframe to use when displaying the widget. Valid values are `1m`, `5m`, `10m`, `15m`, `30m`, `1h`, `4h`, `1d`, `2d`, `1w`, `1mo`, `3mo`, `6mo`, `week_to_date`, `month_to_date`, `1y`, `alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#live_span DashboardV2#live_span}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#live_span DashboardV2#live_span}
   */
   readonly liveSpan?: string;
   /**
   * The title of the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#title DashboardV2#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#title DashboardV2#title}
   */
   readonly title?: string;
   /**
   * The alignment of the widget's title. Valid values are `center`, `left`, `right`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#title_align DashboardV2#title_align}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#title_align DashboardV2#title_align}
   */
   readonly titleAlign?: string;
   /**
   * The size of the widget's title (defaults to 16).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#title_size DashboardV2#title_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#title_size DashboardV2#title_size}
   */
   readonly titleSize?: string;
   /**
   * custom_link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#custom_link DashboardV2#custom_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#custom_link DashboardV2#custom_link}
   */
   readonly customLink?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionCustomLink[] | cdktn.IResolvable;
   /**
   * legend_inline block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#legend_inline DashboardV2#legend_inline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#legend_inline DashboardV2#legend_inline}
   */
   readonly legendInline?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionLegendInline;
   /**
   * legend_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#legend_table DashboardV2#legend_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#legend_table DashboardV2#legend_table}
   */
   readonly legendTable?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionLegendTable;
   /**
   * request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#request DashboardV2#request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#request DashboardV2#request}
   */
   readonly request?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionRequest[] | cdktn.IResolvable;
   /**
   * time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#time DashboardV2#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#time DashboardV2#time}
   */
   readonly time?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionTime;
 }
@@ -9807,7 +9807,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetSunburstDefinition {
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -9829,7 +9829,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionToTerraf
 export function dashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetSunburstDefinitionOutputReference | DashboardV2WidgetGroupDefinitionWidgetSunburstDefinition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -10204,25 +10204,25 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionCusto
   /**
   * The flag for toggling context menu link visibility.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#is_hidden DashboardV2#is_hidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#is_hidden DashboardV2#is_hidden}
   */
   readonly isHidden?: boolean | cdktn.IResolvable;
   /**
   * The label for the custom link URL. Keep the label short and descriptive. Use metrics and tags as variables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#label DashboardV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#label DashboardV2#label}
   */
   readonly label?: string;
   /**
   * The URL of the custom link. URL must include `http` or `https`. A relative URL must start with `/`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#link DashboardV2#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#link DashboardV2#link}
   */
   readonly link?: string;
   /**
   * The label ID that refers to a context menu link. Can be `logs`, `hosts`, `traces`, `profiles`, `processes`, `containers`, or `rum`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#override_label DashboardV2#override_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#override_label DashboardV2#override_label}
   */
   readonly overrideLabel?: string;
 }
@@ -10230,7 +10230,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionCusto
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_hidden: cdktn.booleanToTerraform(struct!.isHidden),
@@ -10244,7 +10244,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionCustom
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLinkToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionCustomLink | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_hidden: {
@@ -10427,13 +10427,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEvent
   /**
   * The event query to use in the widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#q DashboardV2#q}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#q DashboardV2#q}
   */
   readonly q: string;
   /**
   * The execution method for multi-value filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#tags_execution DashboardV2#tags_execution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#tags_execution DashboardV2#tags_execution}
   */
   readonly tagsExecution?: string;
 }
@@ -10441,7 +10441,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEvent
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEventToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEvent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     q: cdktn.stringToTerraform(struct!.q),
@@ -10453,7 +10453,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEventT
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEventToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionEvent | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     q: {
@@ -10577,25 +10577,25 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionMarke
   /**
   * Combination of a severity (`error`, `warning`, `ok`, or `info`) and a line type (`dashed`, `solid`, or `bold`). For Distribution widgets, this can be set to `percentile`. Example: `error dashed`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#display_type DashboardV2#display_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#display_type DashboardV2#display_type}
   */
   readonly displayType?: string;
   /**
   * Label to display over the marker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#label DashboardV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#label DashboardV2#label}
   */
   readonly label?: string;
   /**
   * Timestamp for the marker position.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#time DashboardV2#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#time DashboardV2#time}
   */
   readonly time?: string;
   /**
   * Value to apply. Can be a single value `y = 15` or a range of values `0 < y < 10`. For Distribution widgets with `display_type` set to `percentile`, this should be a numeric percentile value (for example, `90` for P90).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#value DashboardV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#value DashboardV2#value}
   */
   readonly value: string;
 }
@@ -10603,7 +10603,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionMarke
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionMarkerToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionMarker | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     display_type: cdktn.stringToTerraform(struct!.displayType),
@@ -10617,7 +10617,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionMarker
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionMarkerToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionMarker | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     display_type: {
@@ -10797,19 +10797,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -10817,7 +10817,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -10830,7 +10830,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -10950,19 +10950,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -10970,7 +10970,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -10983,7 +10983,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -11100,19 +11100,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBySortQuery;
 }
@@ -11120,7 +11120,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -11133,7 +11133,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -11288,19 +11288,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -11308,7 +11308,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -11321,7 +11321,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -11473,31 +11473,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -11505,7 +11505,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -11520,7 +11520,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestApmQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -11696,19 +11696,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -11716,7 +11716,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -11729,7 +11729,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -11849,19 +11849,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -11869,7 +11869,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -11882,7 +11882,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -11999,19 +11999,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBySortQuery;
 }
@@ -12019,7 +12019,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -12032,7 +12032,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -12187,19 +12187,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -12207,7 +12207,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -12220,7 +12220,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -12372,31 +12372,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -12404,7 +12404,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -12419,7 +12419,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestAuditQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -12595,19 +12595,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -12615,7 +12615,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -12628,7 +12628,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -12748,19 +12748,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -12768,7 +12768,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -12781,7 +12781,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -12898,19 +12898,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBySortQuery;
 }
@@ -12918,7 +12918,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -12931,7 +12931,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -13086,19 +13086,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -13106,7 +13106,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -13119,7 +13119,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -13271,31 +13271,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -13303,7 +13303,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -13318,7 +13318,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -13494,13 +13494,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The type of trend line to display. Valid values are `area`, `line`, and `bars`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#trend_type DashboardV2#trend_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#trend_type DashboardV2#trend_type}
   */
   readonly trendType?: string;
   /**
   * The scale of the y-axis. Valid values are `shared` and `independent`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#y_scale DashboardV2#y_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#y_scale DashboardV2#y_scale}
   */
   readonly yScale?: string;
 }
@@ -13508,7 +13508,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaCellDisplayModeOptionsToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaCellDisplayModeOptionsOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaCellDisplayModeOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     trend_type: cdktn.stringToTerraform(struct!.trendType),
@@ -13520,7 +13520,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaCellDisplayModeOptionsToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaCellDisplayModeOptionsOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaCellDisplayModeOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     trend_type: {
@@ -13615,55 +13615,55 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The comparator to use. Valid values are `=`, `>`, `>=`, `<`, `<=`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#comparator DashboardV2#comparator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#comparator DashboardV2#comparator}
   */
   readonly comparator: string;
   /**
   * The color palette to apply to the background, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#custom_bg_color DashboardV2#custom_bg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#custom_bg_color DashboardV2#custom_bg_color}
   */
   readonly customBgColor?: string;
   /**
   * The color palette to apply to the foreground, same values available as palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#custom_fg_color DashboardV2#custom_fg_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#custom_fg_color DashboardV2#custom_fg_color}
   */
   readonly customFgColor?: string;
   /**
   * Setting this to True hides values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#hide_value DashboardV2#hide_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#hide_value DashboardV2#hide_value}
   */
   readonly hideValue?: boolean | cdktn.IResolvable;
   /**
   * Displays an image as the background.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#image_url DashboardV2#image_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#image_url DashboardV2#image_url}
   */
   readonly imageUrl?: string;
   /**
   * The metric from the request to correlate with this conditional format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric?: string;
   /**
   * The color palette to apply. Valid values are `blue`, `custom_bg`, `custom_image`, `custom_text`, `gray_on_white`, `grey`, `green`, `orange`, `red`, `red_on_white`, `white_on_gray`, `white_on_green`, `green_on_white`, `white_on_red`, `white_on_yellow`, `yellow_on_white`, `black_on_light_yellow`, `black_on_light_green`, `black_on_light_red`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#palette DashboardV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#palette DashboardV2#palette}
   */
   readonly palette: string;
   /**
   * Defines the displayed timeframe.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#timeframe DashboardV2#timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#timeframe DashboardV2#timeframe}
   */
   readonly timeframe?: string;
   /**
   * A value for the comparator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#value DashboardV2#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#value DashboardV2#value}
   */
   readonly value: number;
 }
@@ -13671,7 +13671,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     comparator: cdktn.stringToTerraform(struct!.comparator),
@@ -13690,7 +13690,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormatsToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     comparator: {
@@ -14004,13 +14004,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The number of results to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#count DashboardV2#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#count DashboardV2#count}
   */
   readonly count?: number;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order?: string;
 }
@@ -14018,7 +14018,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     count: cdktn.numberToTerraform(struct!.count),
@@ -14030,7 +14030,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimitOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     count: {
@@ -14125,13 +14125,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * per unit name. If you want to represent megabytes/s, you set 'unit_name' = 'megabyte' and 'per_unit_name = 'second'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#per_unit_name DashboardV2#per_unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#per_unit_name DashboardV2#per_unit_name}
   */
   readonly perUnitName?: string;
   /**
   * Unit name. It should be in singular form ('megabyte' and not 'megabytes')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
   */
   readonly unitName?: string;
 }
@@ -14139,7 +14139,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     per_unit_name: cdktn.stringToTerraform(struct!.perUnitName),
@@ -14151,7 +14151,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     per_unit_name: {
@@ -14246,7 +14246,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * Unit label
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#label DashboardV2#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#label DashboardV2#label}
   */
   readonly label: string;
 }
@@ -14254,7 +14254,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     label: cdktn.stringToTerraform(struct!.label),
@@ -14265,7 +14265,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustomOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     label: {
@@ -14329,13 +14329,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * canonical block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#canonical DashboardV2#canonical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#canonical DashboardV2#canonical}
   */
   readonly canonical?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonical;
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#custom DashboardV2#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#custom DashboardV2#custom}
   */
   readonly custom?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCustom;
 }
@@ -14343,7 +14343,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     canonical: dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitCanonicalToTerraform(struct!.canonical),
@@ -14355,7 +14355,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     canonical: {
@@ -14450,7 +14450,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The name of the unit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit_name DashboardV2#unit_name}
   */
   readonly unitName: string;
 }
@@ -14458,7 +14458,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit_name: cdktn.stringToTerraform(struct!.unitName),
@@ -14469,7 +14469,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScaleOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit_name: {
@@ -14533,13 +14533,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * unit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit DashboardV2#unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit DashboardV2#unit}
   */
   readonly unit: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnit;
   /**
   * unit_scale block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#unit_scale DashboardV2#unit_scale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#unit_scale DashboardV2#unit_scale}
   */
   readonly unitScale?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitScale;
 }
@@ -14547,7 +14547,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     unit: dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatUnitToTerraform(struct!.unit),
@@ -14559,7 +14559,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormatOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     unit: {
@@ -14651,13 +14651,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The color palette used to display the formula. A guide to the available color palettes can be found at https://docs.datadoghq.com/dashboards/guide/widget_colors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#palette DashboardV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#palette DashboardV2#palette}
   */
   readonly palette?: string;
   /**
   * Index specifying which color to use within the palette.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#palette_index DashboardV2#palette_index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#palette_index DashboardV2#palette_index}
   */
   readonly paletteIndex?: number;
 }
@@ -14665,7 +14665,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyleToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     palette: cdktn.stringToTerraform(struct!.palette),
@@ -14677,7 +14677,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyleToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     palette: {
@@ -14772,49 +14772,49 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * An expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#alias DashboardV2#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#alias DashboardV2#alias}
   */
   readonly alias?: string;
   /**
   * A list of display modes for each table cell. Valid values are `number`, `bar`, and `trend`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cell_display_mode DashboardV2#cell_display_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cell_display_mode DashboardV2#cell_display_mode}
   */
   readonly cellDisplayMode?: string;
   /**
   * A string expression built from queries, formulas, and functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#formula_expression DashboardV2#formula_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#formula_expression DashboardV2#formula_expression}
   */
   readonly formulaExpression: string;
   /**
   * cell_display_mode_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cell_display_mode_options DashboardV2#cell_display_mode_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cell_display_mode_options DashboardV2#cell_display_mode_options}
   */
   readonly cellDisplayModeOptions?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaCellDisplayModeOptions;
   /**
   * conditional_formats block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#conditional_formats DashboardV2#conditional_formats}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#conditional_formats DashboardV2#conditional_formats}
   */
   readonly conditionalFormats?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaConditionalFormats[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaLimit;
   /**
   * number_format block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#number_format DashboardV2#number_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#number_format DashboardV2#number_format}
   */
   readonly numberFormat?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaNumberFormat;
   /**
   * style block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#style DashboardV2#style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#style DashboardV2#style}
   */
   readonly style?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaStyle;
 }
@@ -14822,7 +14822,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
@@ -14840,7 +14840,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormulaToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestFormula | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias: {
@@ -15132,19 +15132,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -15152,7 +15152,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -15165,7 +15165,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -15285,19 +15285,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -15305,7 +15305,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -15318,7 +15318,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -15435,19 +15435,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBySortQuery;
 }
@@ -15455,7 +15455,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -15468,7 +15468,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -15623,19 +15623,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -15643,7 +15643,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -15656,7 +15656,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -15808,31 +15808,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -15840,7 +15840,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -15855,7 +15855,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestLogQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -16031,13 +16031,13 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The expression alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#alias_name DashboardV2#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#alias_name DashboardV2#alias_name}
   */
   readonly aliasName?: string;
   /**
   * The expression name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#expression DashboardV2#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#expression DashboardV2#expression}
   */
   readonly expression: string;
 }
@@ -16045,7 +16045,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadataToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias_name: cdktn.stringToTerraform(struct!.aliasName),
@@ -16057,7 +16057,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadataToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias_name: {
@@ -16181,19 +16181,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -16201,7 +16201,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -16214,7 +16214,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -16334,19 +16334,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -16354,7 +16354,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -16367,7 +16367,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -16484,19 +16484,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBySortQuery;
 }
@@ -16504,7 +16504,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -16517,7 +16517,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -16672,19 +16672,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -16692,7 +16692,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -16705,7 +16705,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -16857,31 +16857,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -16889,7 +16889,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -16904,7 +16904,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestNetworkQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -17080,25 +17080,25 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A list of processes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#filter_by DashboardV2#filter_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#filter_by DashboardV2#filter_by}
   */
   readonly filterBy?: string[];
   /**
   * The max number of items in the filter list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * Your chosen metric.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric: string;
   /**
   * Your chosen search term.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_by DashboardV2#search_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_by DashboardV2#search_by}
   */
   readonly searchBy?: string;
 }
@@ -17106,7 +17106,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     filter_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterBy),
@@ -17120,7 +17120,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     filter_by: {
@@ -17268,19 +17268,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -17288,7 +17288,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -17301,7 +17301,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -17421,19 +17421,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -17441,7 +17441,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -17454,7 +17454,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -17571,19 +17571,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBySortQuery;
 }
@@ -17591,7 +17591,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -17604,7 +17604,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -17759,19 +17759,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -17779,7 +17779,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -17792,7 +17792,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -17944,31 +17944,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -17976,7 +17976,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -17991,7 +17991,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestProfileMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -18167,67 +18167,67 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Dependency Stats queries. Valid values are `apm_dependency_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#env DashboardV2#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#env DashboardV2#env}
   */
   readonly env: string;
   /**
   * Determines whether stats for upstream or downstream dependencies should be queried.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#is_upstream DashboardV2#is_upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#is_upstream DashboardV2#is_upstream}
   */
   readonly isUpstream?: boolean | cdktn.IResolvable;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
   */
   readonly operationName: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
   */
   readonly resourceName: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#service DashboardV2#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#service DashboardV2#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `avg_duration`, `avg_root_duration`, `avg_spans_per_trace`, `error_rate`, `pct_exec_time`, `pct_of_traces`, `total_traces_count`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#stat DashboardV2#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#stat DashboardV2#stat}
   */
   readonly stat: string;
 }
@@ -18235,7 +18235,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -18256,7 +18256,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -18582,67 +18582,67 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for APM Resource Stats queries. Valid values are `apm_resource_stats`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * APM environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#env DashboardV2#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#env DashboardV2#env}
   */
   readonly env: string;
   /**
   * Array of fields to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Name of operation on service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#operation_name DashboardV2#operation_name}
   */
   readonly operationName?: string;
   /**
   * The name of the second primary tag used within APM; required when `primary_tag_value` is specified. See https://docs.datadoghq.com/tracing/guide/setting_primary_tags_to_scope/#add-a-second-primary-tag-in-datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_name DashboardV2#primary_tag_name}
   */
   readonly primaryTagName?: string;
   /**
   * Filter APM data by the second primary tag. `primary_tag_name` must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#primary_tag_value DashboardV2#primary_tag_value}
   */
   readonly primaryTagValue?: string;
   /**
   * APM resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#resource_name DashboardV2#resource_name}
   */
   readonly resourceName?: string;
   /**
   * APM service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#service DashboardV2#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#service DashboardV2#service}
   */
   readonly service: string;
   /**
   * APM statistic. Valid values are `errors`, `error_rate`, `hits`, `latency_avg`, `latency_distribution`, `latency_max`, `latency_p50`, `latency_p75`, `latency_p90`, `latency_p95`, `latency_p99`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#stat DashboardV2#stat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#stat DashboardV2#stat}
   */
   readonly stat: string;
 }
@@ -18650,7 +18650,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -18671,7 +18671,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -19003,31 +19003,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for cloud cost queries. Valid values are `cloud_cost`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Query for Cloud Cost data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
   */
   readonly query: string;
 }
@@ -19035,7 +19035,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryCloudCostQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -19050,7 +19050,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryCloudCostQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryCloudCostQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryCloudCostQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -19220,19 +19220,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric?: string;
 }
@@ -19240,7 +19240,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -19253,7 +19253,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -19405,19 +19405,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order?: string;
 }
@@ -19425,7 +19425,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -19438,7 +19438,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySortOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -19558,19 +19558,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
   */
   readonly sort?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBySort;
 }
@@ -19578,7 +19578,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -19591,7 +19591,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -19743,19 +19743,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order?: string;
 }
@@ -19763,7 +19763,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -19776,7 +19776,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSortOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -19896,19 +19896,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * List of event facets to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#fields DashboardV2#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#fields DashboardV2#fields}
   */
   readonly fields: string[];
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
   */
   readonly sort?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsSort;
 }
@@ -19916,7 +19916,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -19929,7 +19929,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFieldsOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -20049,7 +20049,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
   */
   readonly query: string;
 }
@@ -20057,7 +20057,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -20068,7 +20068,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearchOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -20132,55 +20132,55 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
-  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`.
+  * The data source for event platform-based queries. Valid values are `logs`, `spans`, `network`, `rum`, `security_signals`, `profiles`, `audit`, `events`, `ci_tests`, `ci_pipelines`, `incident_analytics`, `product_analytics`, `on_call_events`, `errors`, `llm_observability`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream. Omit or use `[]` to query all indexes at once.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#indexes DashboardV2#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#indexes DashboardV2#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * Option for storage location. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#storage DashboardV2#storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#storage DashboardV2#storage}
   */
   readonly storage?: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute DashboardV2#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute DashboardV2#compute}
   */
   readonly compute: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * group_by_fields block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by_fields DashboardV2#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by_fields DashboardV2#group_by_fields}
   */
   readonly groupByFields?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryGroupByFields;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search DashboardV2#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search DashboardV2#search}
   */
   readonly search?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuerySearch;
 }
@@ -20188,7 +20188,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cross_org_uuids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.crossOrgUuids),
@@ -20207,7 +20207,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cross_org_uuids: {
@@ -20489,37 +20489,37 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for metrics queries. Defaults to `"metrics"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource?: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#query DashboardV2#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#query DashboardV2#query}
   */
   readonly query: string;
   /**
   * Semantic mode for metrics queries. This determines how metrics from different sources are combined or displayed. Valid values are `combined`, `native`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#semantic_mode DashboardV2#semantic_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#semantic_mode DashboardV2#semantic_mode}
   */
   readonly semanticMode?: string;
 }
@@ -20527,7 +20527,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -20543,7 +20543,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -20744,61 +20744,61 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation methods available for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `area`, `l2norm`, `percentile`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregator DashboardV2#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for process queries. Valid values are `process`, `container`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Whether to normalize the CPU percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#is_normalized_cpu DashboardV2#is_normalized_cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#is_normalized_cpu DashboardV2#is_normalized_cpu}
   */
   readonly isNormalizedCpu?: boolean | cdktn.IResolvable;
   /**
   * The number of hits to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * The process metric name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric DashboardV2#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric DashboardV2#metric}
   */
   readonly metric: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name: string;
   /**
   * The direction of the sort. Valid values are `asc`, `desc`. Defaults to `"desc"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort DashboardV2#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort DashboardV2#sort}
   */
   readonly sort?: string;
   /**
   * An array of tags to filter by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#tag_filters DashboardV2#tag_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#tag_filters DashboardV2#tag_filters}
   */
   readonly tagFilters?: string[];
   /**
   * The text to use as a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#text_filter DashboardV2#text_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#text_filter DashboardV2#text_filter}
   */
   readonly textFilter?: string;
 }
@@ -20806,7 +20806,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -20826,7 +20826,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -21136,49 +21136,49 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * Additional filters applied to the SLO query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#additional_query_filters DashboardV2#additional_query_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#additional_query_filters DashboardV2#additional_query_filters}
   */
   readonly additionalQueryFilters?: string;
   /**
   * The source organization UUID for cross organization queries. Feature in Private Beta.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cross_org_uuids DashboardV2#cross_org_uuids}
   */
   readonly crossOrgUuids?: string[];
   /**
   * The data source for SLO queries. Valid values are `slo`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#data_source DashboardV2#data_source}
   */
   readonly dataSource: string;
   /**
   * Group mode to query measures. Valid values are `overall`, `components`. Defaults to `"overall"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_mode DashboardV2#group_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_mode DashboardV2#group_mode}
   */
   readonly groupMode?: string;
   /**
   * SLO measures queries. Valid values are `good_events`, `bad_events`, `good_minutes`, `bad_minutes`, `slo_status`, `error_budget_remaining`, `burn_rate`, `error_budget_burndown`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#measure DashboardV2#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#measure DashboardV2#measure}
   */
   readonly measure: string;
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#name DashboardV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#name DashboardV2#name}
   */
   readonly name?: string;
   /**
   * ID of an SLO to query measures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#slo_id DashboardV2#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#slo_id DashboardV2#slo_id}
   */
   readonly sloId: string;
   /**
   * type of the SLO to query. Valid values are `metric`, `monitor`, `time_slice`. Defaults to `"metric"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#slo_query_type DashboardV2#slo_query_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#slo_query_type DashboardV2#slo_query_type}
   */
   readonly sloQueryType?: string;
 }
@@ -21186,7 +21186,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuerySloQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_query_filters: cdktn.stringToTerraform(struct!.additionalQueryFilters),
@@ -21204,7 +21204,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuerySloQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuerySloQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuerySloQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_query_filters: {
@@ -21458,43 +21458,43 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * apm_dependency_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#apm_dependency_stats_query DashboardV2#apm_dependency_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#apm_dependency_stats_query DashboardV2#apm_dependency_stats_query}
   */
   readonly apmDependencyStatsQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQuery;
   /**
   * apm_resource_stats_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#apm_resource_stats_query DashboardV2#apm_resource_stats_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#apm_resource_stats_query DashboardV2#apm_resource_stats_query}
   */
   readonly apmResourceStatsQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmResourceStatsQuery;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#cloud_cost_query DashboardV2#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#cloud_cost_query DashboardV2#cloud_cost_query}
   */
   readonly cloudCostQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryCloudCostQuery;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#event_query DashboardV2#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#event_query DashboardV2#event_query}
   */
   readonly eventQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryEventQuery;
   /**
   * metric_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#metric_query DashboardV2#metric_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#metric_query DashboardV2#metric_query}
   */
   readonly metricQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryMetricQuery;
   /**
   * process_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#process_query DashboardV2#process_query}
   */
   readonly processQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryProcessQuery;
   /**
   * slo_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#slo_query DashboardV2#slo_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#slo_query DashboardV2#slo_query}
   */
   readonly sloQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuerySloQuery;
 }
@@ -21502,7 +21502,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     apm_dependency_stats_query: dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryApmDependencyStatsQueryToTerraform(struct!.apmDependencyStatsQuery),
@@ -21519,7 +21519,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     apm_dependency_stats_query: {
@@ -21786,19 +21786,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -21806,7 +21806,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -21819,7 +21819,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -21939,19 +21939,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -21959,7 +21959,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -21972,7 +21972,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -22089,19 +22089,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBySortQuery;
 }
@@ -22109,7 +22109,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -22122,7 +22122,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -22277,19 +22277,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -22297,7 +22297,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -22310,7 +22310,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -22462,31 +22462,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -22494,7 +22494,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -22509,7 +22509,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestRumQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -22685,19 +22685,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -22705,7 +22705,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -22718,7 +22718,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -22838,19 +22838,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Widget sorting methods. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order DashboardV2#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order DashboardV2#order}
   */
   readonly order: string;
 }
@@ -22858,7 +22858,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -22871,7 +22871,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -22988,19 +22988,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * The maximum number of items in the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#limit DashboardV2#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#limit DashboardV2#limit}
   */
   readonly limit?: number;
   /**
   * sort_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#sort_query DashboardV2#sort_query}
   */
   readonly sortQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBySortQuery;
 }
@@ -23008,7 +23008,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -23021,7 +23021,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupByToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -23176,19 +23176,19 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * The aggregation method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#aggregation DashboardV2#aggregation}
   */
   readonly aggregation: string;
   /**
   * The facet name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#facet DashboardV2#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#facet DashboardV2#facet}
   */
   readonly facet?: string;
   /**
   * Define the time interval in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#interval DashboardV2#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#interval DashboardV2#interval}
   */
   readonly interval?: number;
 }
@@ -23196,7 +23196,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -23209,7 +23209,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiComputeToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -23361,31 +23361,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * A comma separated-list of index names. Use `*` to query all indexes at once. [Multiple Indexes](https://docs.datadoghq.com/logs/indexes/#multiple-indexes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#index DashboardV2#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#index DashboardV2#index}
   */
   readonly index: string;
   /**
   * The search query to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#search_query DashboardV2#search_query}
   */
   readonly searchQuery?: string;
   /**
   * compute_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#compute_query DashboardV2#compute_query}
   */
   readonly computeQuery?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryComputeQuery;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#group_by DashboardV2#group_by}
   */
   readonly groupBy?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryGroupBy[] | cdktn.IResolvable;
   /**
   * multi_compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#multi_compute DashboardV2#multi_compute}
   */
   readonly multiCompute?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryMultiCompute[] | cdktn.IResolvable;
 }
@@ -23393,7 +23393,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     index: cdktn.stringToTerraform(struct!.index),
@@ -23408,7 +23408,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQueryOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestSecurityQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     index: {
@@ -23584,31 +23584,31 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
   /**
   * Whether to display value labels on the timeseries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#has_value_labels DashboardV2#has_value_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#has_value_labels DashboardV2#has_value_labels}
   */
   readonly hasValueLabels?: boolean | cdktn.IResolvable;
   /**
   * The type of lines displayed. Valid values are `dashed`, `dotted`, `solid`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#line_type DashboardV2#line_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#line_type DashboardV2#line_type}
   */
   readonly lineType?: string;
   /**
   * The width of line displayed. Valid values are `normal`, `thick`, `thin`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#line_width DashboardV2#line_width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#line_width DashboardV2#line_width}
   */
   readonly lineWidth?: string;
   /**
   * How to order series in timeseries visualizations. Valid values are `tags`, `values`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#order_by DashboardV2#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#order_by DashboardV2#order_by}
   */
   readonly orderBy?: string;
   /**
   * A color palette to apply to the widget. The available options are available at: https://docs.datadoghq.com/dashboards/widgets/timeseries/#appearance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/dashboard_v2#palette DashboardV2#palette}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/dashboard_v2#palette DashboardV2#palette}
   */
   readonly palette?: string;
 }
@@ -23616,7 +23616,7 @@ export interface DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReque
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleToTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     has_value_labels: cdktn.booleanToTerraform(struct!.hasValueLabels),
@@ -23631,7 +23631,7 @@ export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionReques
 export function dashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleToHclTerraform(struct?: DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyleOutputReference | DashboardV2WidgetGroupDefinitionWidgetTimeseriesDefinitionRequestStyle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     has_value_labels: {

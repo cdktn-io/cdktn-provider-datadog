@@ -84,13 +84,13 @@ export interface ObservabilityPipelineConfigDestinationRsyslogBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -98,7 +98,7 @@ export interface ObservabilityPipelineConfigDestinationRsyslogBufferDisk {
 export function observabilityPipelineConfigDestinationRsyslogBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_size: cdktn.numberToTerraform(struct!.maxSize),
@@ -110,7 +110,7 @@ export function observabilityPipelineConfigDestinationRsyslogBufferDiskToTerrafo
 export function observabilityPipelineConfigDestinationRsyslogBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_size: {
@@ -237,19 +237,19 @@ export interface ObservabilityPipelineConfigDestinationRsyslogBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -257,7 +257,7 @@ export interface ObservabilityPipelineConfigDestinationRsyslogBufferMemory {
 export function observabilityPipelineConfigDestinationRsyslogBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_events: cdktn.numberToTerraform(struct!.maxEvents),
@@ -270,7 +270,7 @@ export function observabilityPipelineConfigDestinationRsyslogBufferMemoryToTerra
 export function observabilityPipelineConfigDestinationRsyslogBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_events: {
@@ -425,13 +425,13 @@ export interface ObservabilityPipelineConfigDestinationRsyslogBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationRsyslogBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationRsyslogBufferMemory[] | cdktn.IResolvable;
 }
@@ -439,7 +439,7 @@ export interface ObservabilityPipelineConfigDestinationRsyslogBuffer {
 export function observabilityPipelineConfigDestinationRsyslogBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk: cdktn.listMapper(observabilityPipelineConfigDestinationRsyslogBufferDiskToTerraform, true)(struct!.disk),
@@ -451,7 +451,7 @@ export function observabilityPipelineConfigDestinationRsyslogBufferToTerraform(s
 export function observabilityPipelineConfigDestinationRsyslogBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk: {
@@ -578,25 +578,25 @@ export interface ObservabilityPipelineConfigDestinationRsyslogTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -604,7 +604,7 @@ export interface ObservabilityPipelineConfigDestinationRsyslogTls {
 export function observabilityPipelineConfigDestinationRsyslogTlsToTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ca_file: cdktn.stringToTerraform(struct!.caFile),
@@ -618,7 +618,7 @@ export function observabilityPipelineConfigDestinationRsyslogTlsToTerraform(stru
 export function observabilityPipelineConfigDestinationRsyslogTlsToHclTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslogTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ca_file: {
@@ -798,25 +798,25 @@ export interface ObservabilityPipelineConfigDestinationRsyslog {
   /**
   * Name of the environment variable or secret that holds the rsyslog endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Optional socket keepalive duration in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
   */
   readonly keepalive?: number;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationRsyslogBuffer[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationRsyslogTls[] | cdktn.IResolvable;
 }
@@ -824,7 +824,7 @@ export interface ObservabilityPipelineConfigDestinationRsyslog {
 export function observabilityPipelineConfigDestinationRsyslogToTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint_url_key: cdktn.stringToTerraform(struct!.endpointUrlKey),
@@ -838,7 +838,7 @@ export function observabilityPipelineConfigDestinationRsyslogToTerraform(struct?
 export function observabilityPipelineConfigDestinationRsyslogToHclTerraform(struct?: ObservabilityPipelineConfigDestinationRsyslog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint_url_key: {
@@ -1021,13 +1021,13 @@ export interface ObservabilityPipelineConfigDestinationSentinelOneBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -1035,7 +1035,7 @@ export interface ObservabilityPipelineConfigDestinationSentinelOneBufferDisk {
 export function observabilityPipelineConfigDestinationSentinelOneBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOneBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_size: cdktn.numberToTerraform(struct!.maxSize),
@@ -1047,7 +1047,7 @@ export function observabilityPipelineConfigDestinationSentinelOneBufferDiskToTer
 export function observabilityPipelineConfigDestinationSentinelOneBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOneBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_size: {
@@ -1174,19 +1174,19 @@ export interface ObservabilityPipelineConfigDestinationSentinelOneBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -1194,7 +1194,7 @@ export interface ObservabilityPipelineConfigDestinationSentinelOneBufferMemory {
 export function observabilityPipelineConfigDestinationSentinelOneBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOneBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_events: cdktn.numberToTerraform(struct!.maxEvents),
@@ -1207,7 +1207,7 @@ export function observabilityPipelineConfigDestinationSentinelOneBufferMemoryToT
 export function observabilityPipelineConfigDestinationSentinelOneBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOneBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_events: {
@@ -1362,13 +1362,13 @@ export interface ObservabilityPipelineConfigDestinationSentinelOneBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationSentinelOneBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationSentinelOneBufferMemory[] | cdktn.IResolvable;
 }
@@ -1376,7 +1376,7 @@ export interface ObservabilityPipelineConfigDestinationSentinelOneBuffer {
 export function observabilityPipelineConfigDestinationSentinelOneBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOneBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk: cdktn.listMapper(observabilityPipelineConfigDestinationSentinelOneBufferDiskToTerraform, true)(struct!.disk),
@@ -1388,7 +1388,7 @@ export function observabilityPipelineConfigDestinationSentinelOneBufferToTerrafo
 export function observabilityPipelineConfigDestinationSentinelOneBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOneBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk: {
@@ -1515,19 +1515,19 @@ export interface ObservabilityPipelineConfigDestinationSentinelOne {
   /**
   * The SentinelOne region to send logs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#region ObservabilityPipeline#region}
   */
   readonly region: string;
   /**
   * Name of the environment variable or secret that holds the SentinelOne API token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey?: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationSentinelOneBuffer[] | cdktn.IResolvable;
 }
@@ -1535,7 +1535,7 @@ export interface ObservabilityPipelineConfigDestinationSentinelOne {
 export function observabilityPipelineConfigDestinationSentinelOneToTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     region: cdktn.stringToTerraform(struct!.region),
@@ -1548,7 +1548,7 @@ export function observabilityPipelineConfigDestinationSentinelOneToTerraform(str
 export function observabilityPipelineConfigDestinationSentinelOneToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSentinelOne | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     region: {
@@ -1700,13 +1700,13 @@ export interface ObservabilityPipelineConfigDestinationSocketBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -1714,7 +1714,7 @@ export interface ObservabilityPipelineConfigDestinationSocketBufferDisk {
 export function observabilityPipelineConfigDestinationSocketBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationSocketBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_size: cdktn.numberToTerraform(struct!.maxSize),
@@ -1726,7 +1726,7 @@ export function observabilityPipelineConfigDestinationSocketBufferDiskToTerrafor
 export function observabilityPipelineConfigDestinationSocketBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSocketBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_size: {
@@ -1853,19 +1853,19 @@ export interface ObservabilityPipelineConfigDestinationSocketBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -1873,7 +1873,7 @@ export interface ObservabilityPipelineConfigDestinationSocketBufferMemory {
 export function observabilityPipelineConfigDestinationSocketBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationSocketBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_events: cdktn.numberToTerraform(struct!.maxEvents),
@@ -1886,7 +1886,7 @@ export function observabilityPipelineConfigDestinationSocketBufferMemoryToTerraf
 export function observabilityPipelineConfigDestinationSocketBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSocketBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_events: {
@@ -2041,13 +2041,13 @@ export interface ObservabilityPipelineConfigDestinationSocketBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationSocketBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationSocketBufferMemory[] | cdktn.IResolvable;
 }
@@ -2055,7 +2055,7 @@ export interface ObservabilityPipelineConfigDestinationSocketBuffer {
 export function observabilityPipelineConfigDestinationSocketBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationSocketBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk: cdktn.listMapper(observabilityPipelineConfigDestinationSocketBufferDiskToTerraform, true)(struct!.disk),
@@ -2067,7 +2067,7 @@ export function observabilityPipelineConfigDestinationSocketBufferToTerraform(st
 export function observabilityPipelineConfigDestinationSocketBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSocketBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk: {
@@ -2194,7 +2194,7 @@ export interface ObservabilityPipelineConfigDestinationSocketFramingCharacterDel
   /**
   * A single ASCII character used as a delimiter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
   */
   readonly delimiter: string;
 }
@@ -2202,7 +2202,7 @@ export interface ObservabilityPipelineConfigDestinationSocketFramingCharacterDel
 export function observabilityPipelineConfigDestinationSocketFramingCharacterDelimitedToTerraform(struct?: ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimited | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delimiter: cdktn.stringToTerraform(struct!.delimiter),
@@ -2213,7 +2213,7 @@ export function observabilityPipelineConfigDestinationSocketFramingCharacterDeli
 export function observabilityPipelineConfigDestinationSocketFramingCharacterDelimitedToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimited | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delimiter: {
@@ -2309,13 +2309,13 @@ export interface ObservabilityPipelineConfigDestinationSocketFraming {
   /**
   * The framing method. Valid values are `newline_delimited`, `bytes`, `character_delimited`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#method ObservabilityPipeline#method}
   */
   readonly method: string;
   /**
   * character_delimited block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#character_delimited ObservabilityPipeline#character_delimited}
   */
   readonly characterDelimited?: ObservabilityPipelineConfigDestinationSocketFramingCharacterDelimited[] | cdktn.IResolvable;
 }
@@ -2323,7 +2323,7 @@ export interface ObservabilityPipelineConfigDestinationSocketFraming {
 export function observabilityPipelineConfigDestinationSocketFramingToTerraform(struct?: ObservabilityPipelineConfigDestinationSocketFraming | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     method: cdktn.stringToTerraform(struct!.method),
@@ -2335,7 +2335,7 @@ export function observabilityPipelineConfigDestinationSocketFramingToTerraform(s
 export function observabilityPipelineConfigDestinationSocketFramingToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSocketFraming | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     method: {
@@ -2459,25 +2459,25 @@ export interface ObservabilityPipelineConfigDestinationSocketTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -2485,7 +2485,7 @@ export interface ObservabilityPipelineConfigDestinationSocketTls {
 export function observabilityPipelineConfigDestinationSocketTlsToTerraform(struct?: ObservabilityPipelineConfigDestinationSocketTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ca_file: cdktn.stringToTerraform(struct!.caFile),
@@ -2499,7 +2499,7 @@ export function observabilityPipelineConfigDestinationSocketTlsToTerraform(struc
 export function observabilityPipelineConfigDestinationSocketTlsToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSocketTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ca_file: {
@@ -2679,37 +2679,37 @@ export interface ObservabilityPipelineConfigDestinationSocket {
   /**
   * Name of the environment variable or secret that holds the socket address (host:port).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#address_key ObservabilityPipeline#address_key}
   */
   readonly addressKey?: string;
   /**
   * Encoding format for log events. Valid values are `json`, `raw_message`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding: string;
   /**
   * The protocol used to send logs. Valid values are `tcp`, `udp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationSocketBuffer[] | cdktn.IResolvable;
   /**
   * framing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#framing ObservabilityPipeline#framing}
   */
   readonly framing?: ObservabilityPipelineConfigDestinationSocketFraming[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationSocketTls[] | cdktn.IResolvable;
 }
@@ -2717,7 +2717,7 @@ export interface ObservabilityPipelineConfigDestinationSocket {
 export function observabilityPipelineConfigDestinationSocketToTerraform(struct?: ObservabilityPipelineConfigDestinationSocket | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     address_key: cdktn.stringToTerraform(struct!.addressKey),
@@ -2733,7 +2733,7 @@ export function observabilityPipelineConfigDestinationSocketToTerraform(struct?:
 export function observabilityPipelineConfigDestinationSocketToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSocket | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     address_key: {
@@ -2966,13 +2966,13 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -2980,7 +2980,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecBufferDisk {
 export function observabilityPipelineConfigDestinationSplunkHecBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_size: cdktn.numberToTerraform(struct!.maxSize),
@@ -2992,7 +2992,7 @@ export function observabilityPipelineConfigDestinationSplunkHecBufferDiskToTerra
 export function observabilityPipelineConfigDestinationSplunkHecBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_size: {
@@ -3119,19 +3119,19 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -3139,7 +3139,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecBufferMemory {
 export function observabilityPipelineConfigDestinationSplunkHecBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_events: cdktn.numberToTerraform(struct!.maxEvents),
@@ -3152,7 +3152,7 @@ export function observabilityPipelineConfigDestinationSplunkHecBufferMemoryToTer
 export function observabilityPipelineConfigDestinationSplunkHecBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_events: {
@@ -3307,13 +3307,13 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationSplunkHecBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationSplunkHecBufferMemory[] | cdktn.IResolvable;
 }
@@ -3321,7 +3321,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecBuffer {
 export function observabilityPipelineConfigDestinationSplunkHecBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk: cdktn.listMapper(observabilityPipelineConfigDestinationSplunkHecBufferDiskToTerraform, true)(struct!.disk),
@@ -3333,7 +3333,7 @@ export function observabilityPipelineConfigDestinationSplunkHecBufferToTerraform
 export function observabilityPipelineConfigDestinationSplunkHecBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk: {
@@ -3460,55 +3460,55 @@ export interface ObservabilityPipelineConfigDestinationSplunkHec {
   /**
   * If `true`, Splunk tries to extract timestamps from incoming log events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#auto_extract_timestamp ObservabilityPipeline#auto_extract_timestamp}
   */
   readonly autoExtractTimestamp?: boolean | cdktn.IResolvable;
   /**
   * Encoding format for log events. Valid values are `json`, `raw_message`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding: string;
   /**
   * Name of the environment variable or secret that holds the Splunk HEC endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Optional name of the Splunk index where logs are written.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
   */
   readonly index?: string;
   /**
   * List of log field names to send as indexed fields to Splunk HEC. Available only when `encoding` is `json`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#indexed_fields ObservabilityPipeline#indexed_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#indexed_fields ObservabilityPipeline#indexed_fields}
   */
   readonly indexedFields?: string[];
   /**
   * The Splunk sourcetype to assign to log events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
   */
   readonly sourcetype?: string;
   /**
   * Name of the environment variable or secret that holds the Splunk HEC token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey?: string;
   /**
   * Controls how the Splunk HEC token is supplied. Use `custom` to provide a token via `token_key`, or `from_source` to forward the token received from an upstream Splunk HEC source. Valid values are `custom`, `from_source`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#token_strategy ObservabilityPipeline#token_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#token_strategy ObservabilityPipeline#token_strategy}
   */
   readonly tokenStrategy?: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationSplunkHecBuffer[] | cdktn.IResolvable;
 }
@@ -3516,7 +3516,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHec {
 export function observabilityPipelineConfigDestinationSplunkHecToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     auto_extract_timestamp: cdktn.booleanToTerraform(struct!.autoExtractTimestamp),
@@ -3535,7 +3535,7 @@ export function observabilityPipelineConfigDestinationSplunkHecToTerraform(struc
 export function observabilityPipelineConfigDestinationSplunkHecToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHec | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     auto_extract_timestamp: {
@@ -3855,13 +3855,13 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDis
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -3869,7 +3869,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDis
 export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_size: cdktn.numberToTerraform(struct!.maxSize),
@@ -3881,7 +3881,7 @@ export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk
 export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_size: {
@@ -4008,19 +4008,19 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMem
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -4028,7 +4028,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMem
 export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_events: cdktn.numberToTerraform(struct!.maxEvents),
@@ -4041,7 +4041,7 @@ export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferMemo
 export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_events: {
@@ -4196,13 +4196,13 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBufferMemory[] | cdktn.IResolvable;
 }
@@ -4210,7 +4210,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer {
 export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk: cdktn.listMapper(observabilityPipelineConfigDestinationSplunkHecMetricsBufferDiskToTerraform, true)(struct!.disk),
@@ -4222,7 +4222,7 @@ export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferToTe
 export function observabilityPipelineConfigDestinationSplunkHecMetricsBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk: {
@@ -4349,25 +4349,25 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -4375,7 +4375,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetricsTls {
 export function observabilityPipelineConfigDestinationSplunkHecMetricsTlsToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ca_file: cdktn.stringToTerraform(struct!.caFile),
@@ -4389,7 +4389,7 @@ export function observabilityPipelineConfigDestinationSplunkHecMetricsTlsToTerra
 export function observabilityPipelineConfigDestinationSplunkHecMetricsTlsToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetricsTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ca_file: {
@@ -4569,55 +4569,55 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetrics {
   /**
   * Compression algorithm applied when sending metrics to Splunk HEC. Valid values are `none`, `gzip`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#compression ObservabilityPipeline#compression}
   */
   readonly compression?: string;
   /**
   * Optional default namespace for metrics sent to Splunk HEC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#default_namespace ObservabilityPipeline#default_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#default_namespace ObservabilityPipeline#default_namespace}
   */
   readonly defaultNamespace?: string;
   /**
   * Name of the environment variable or secret that holds the Splunk HEC endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Optional name of the Splunk index where metrics are written.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#index ObservabilityPipeline#index}
   */
   readonly index?: string;
   /**
   * The Splunk source field value for metric events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source?: string;
   /**
   * The Splunk sourcetype to assign to metric events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#sourcetype ObservabilityPipeline#sourcetype}
   */
   readonly sourcetype?: string;
   /**
   * Name of the environment variable or secret that holds the Splunk HEC token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#token_key ObservabilityPipeline#token_key}
   */
   readonly tokenKey?: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationSplunkHecMetricsBuffer[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationSplunkHecMetricsTls[] | cdktn.IResolvable;
 }
@@ -4625,7 +4625,7 @@ export interface ObservabilityPipelineConfigDestinationSplunkHecMetrics {
 export function observabilityPipelineConfigDestinationSplunkHecMetricsToTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     compression: cdktn.stringToTerraform(struct!.compression),
@@ -4644,7 +4644,7 @@ export function observabilityPipelineConfigDestinationSplunkHecMetricsToTerrafor
 export function observabilityPipelineConfigDestinationSplunkHecMetricsToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSplunkHecMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     compression: {
@@ -4967,13 +4967,13 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -4981,7 +4981,7 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicBufferDisk {
 export function observabilityPipelineConfigDestinationSumoLogicBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_size: cdktn.numberToTerraform(struct!.maxSize),
@@ -4993,7 +4993,7 @@ export function observabilityPipelineConfigDestinationSumoLogicBufferDiskToTerra
 export function observabilityPipelineConfigDestinationSumoLogicBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_size: {
@@ -5120,19 +5120,19 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -5140,7 +5140,7 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicBufferMemory {
 export function observabilityPipelineConfigDestinationSumoLogicBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_events: cdktn.numberToTerraform(struct!.maxEvents),
@@ -5153,7 +5153,7 @@ export function observabilityPipelineConfigDestinationSumoLogicBufferMemoryToTer
 export function observabilityPipelineConfigDestinationSumoLogicBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_events: {
@@ -5308,13 +5308,13 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationSumoLogicBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationSumoLogicBufferMemory[] | cdktn.IResolvable;
 }
@@ -5322,7 +5322,7 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicBuffer {
 export function observabilityPipelineConfigDestinationSumoLogicBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk: cdktn.listMapper(observabilityPipelineConfigDestinationSumoLogicBufferDiskToTerraform, true)(struct!.disk),
@@ -5334,7 +5334,7 @@ export function observabilityPipelineConfigDestinationSumoLogicBufferToTerraform
 export function observabilityPipelineConfigDestinationSumoLogicBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk: {
@@ -5461,13 +5461,13 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFiel
   /**
   * The header field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name?: string;
   /**
   * The header field value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value?: string;
 }
@@ -5475,7 +5475,7 @@ export interface ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomFiel
 export function observabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldToTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5487,7 +5487,7 @@ export function observabilityPipelineConfigDestinationSumoLogicHeaderCustomField
 export function observabilityPipelineConfigDestinationSumoLogicHeaderCustomFieldToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5614,43 +5614,43 @@ export interface ObservabilityPipelineConfigDestinationSumoLogic {
   /**
   * The output encoding format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding?: string;
   /**
   * Name of the environment variable or secret that holds the Sumo Logic endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Optional override for the host name header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#header_host_name ObservabilityPipeline#header_host_name}
   */
   readonly headerHostName?: string;
   /**
   * Optional override for the source category header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#header_source_category ObservabilityPipeline#header_source_category}
   */
   readonly headerSourceCategory?: string;
   /**
   * Optional override for the source name header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#header_source_name ObservabilityPipeline#header_source_name}
   */
   readonly headerSourceName?: string;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationSumoLogicBuffer[] | cdktn.IResolvable;
   /**
   * header_custom_field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#header_custom_field ObservabilityPipeline#header_custom_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#header_custom_field ObservabilityPipeline#header_custom_field}
   */
   readonly headerCustomField?: ObservabilityPipelineConfigDestinationSumoLogicHeaderCustomField[] | cdktn.IResolvable;
 }
@@ -5658,7 +5658,7 @@ export interface ObservabilityPipelineConfigDestinationSumoLogic {
 export function observabilityPipelineConfigDestinationSumoLogicToTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogic | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     encoding: cdktn.stringToTerraform(struct!.encoding),
@@ -5675,7 +5675,7 @@ export function observabilityPipelineConfigDestinationSumoLogicToTerraform(struc
 export function observabilityPipelineConfigDestinationSumoLogicToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSumoLogic | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     encoding: {
@@ -5942,13 +5942,13 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgBufferDisk {
   /**
   * Maximum size of the disk buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -5956,7 +5956,7 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgBufferDisk {
 export function observabilityPipelineConfigDestinationSyslogNgBufferDiskToTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_size: cdktn.numberToTerraform(struct!.maxSize),
@@ -5968,7 +5968,7 @@ export function observabilityPipelineConfigDestinationSyslogNgBufferDiskToTerraf
 export function observabilityPipelineConfigDestinationSyslogNgBufferDiskToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgBufferDisk | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_size: {
@@ -6095,19 +6095,19 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgBufferMemory {
   /**
   * Maximum events for the memory buffer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_events ObservabilityPipeline#max_events}
   */
   readonly maxEvents?: number;
   /**
   * Maximum size of the memory buffer (in bytes).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#max_size ObservabilityPipeline#max_size}
   */
   readonly maxSize?: number;
   /**
   * Behavior when the buffer is full. Valid values are `block` or `drop_newest`. Defaults to `"block"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#when_full ObservabilityPipeline#when_full}
   */
   readonly whenFull?: string;
 }
@@ -6115,7 +6115,7 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgBufferMemory {
 export function observabilityPipelineConfigDestinationSyslogNgBufferMemoryToTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_events: cdktn.numberToTerraform(struct!.maxEvents),
@@ -6128,7 +6128,7 @@ export function observabilityPipelineConfigDestinationSyslogNgBufferMemoryToTerr
 export function observabilityPipelineConfigDestinationSyslogNgBufferMemoryToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgBufferMemory | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_events: {
@@ -6283,13 +6283,13 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgBuffer {
   /**
   * disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disk ObservabilityPipeline#disk}
   */
   readonly disk?: ObservabilityPipelineConfigDestinationSyslogNgBufferDisk[] | cdktn.IResolvable;
   /**
   * memory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#memory ObservabilityPipeline#memory}
   */
   readonly memory?: ObservabilityPipelineConfigDestinationSyslogNgBufferMemory[] | cdktn.IResolvable;
 }
@@ -6297,7 +6297,7 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgBuffer {
 export function observabilityPipelineConfigDestinationSyslogNgBufferToTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk: cdktn.listMapper(observabilityPipelineConfigDestinationSyslogNgBufferDiskToTerraform, true)(struct!.disk),
@@ -6309,7 +6309,7 @@ export function observabilityPipelineConfigDestinationSyslogNgBufferToTerraform(
 export function observabilityPipelineConfigDestinationSyslogNgBufferToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgBuffer | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk: {
@@ -6436,25 +6436,25 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgTls {
   /**
   * Path to the Certificate Authority (CA) file used to validate the server's TLS certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#ca_file ObservabilityPipeline#ca_file}
   */
   readonly caFile?: string;
   /**
   * Path to the TLS client certificate file used to authenticate the pipeline component with upstream or downstream services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#crt_file ObservabilityPipeline#crt_file}
   */
   readonly crtFile: string;
   /**
   * Path to the private key file associated with the TLS client certificate. Used for mutual TLS authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_file ObservabilityPipeline#key_file}
   */
   readonly keyFile?: string;
   /**
   * Name of the environment variable or secret that holds the passphrase for the private key file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_pass_key ObservabilityPipeline#key_pass_key}
   */
   readonly keyPassKey?: string;
 }
@@ -6462,7 +6462,7 @@ export interface ObservabilityPipelineConfigDestinationSyslogNgTls {
 export function observabilityPipelineConfigDestinationSyslogNgTlsToTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ca_file: cdktn.stringToTerraform(struct!.caFile),
@@ -6476,7 +6476,7 @@ export function observabilityPipelineConfigDestinationSyslogNgTlsToTerraform(str
 export function observabilityPipelineConfigDestinationSyslogNgTlsToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNgTls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ca_file: {
@@ -6656,25 +6656,25 @@ export interface ObservabilityPipelineConfigDestinationSyslogNg {
   /**
   * Name of the environment variable or secret that holds the syslog-ng endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#endpoint_url_key ObservabilityPipeline#endpoint_url_key}
   */
   readonly endpointUrlKey?: string;
   /**
   * Optional socket keepalive duration in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#keepalive ObservabilityPipeline#keepalive}
   */
   readonly keepalive?: number;
   /**
   * buffer block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#buffer ObservabilityPipeline#buffer}
   */
   readonly buffer?: ObservabilityPipelineConfigDestinationSyslogNgBuffer[] | cdktn.IResolvable;
   /**
   * tls block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#tls ObservabilityPipeline#tls}
   */
   readonly tls?: ObservabilityPipelineConfigDestinationSyslogNgTls[] | cdktn.IResolvable;
 }
@@ -6682,7 +6682,7 @@ export interface ObservabilityPipelineConfigDestinationSyslogNg {
 export function observabilityPipelineConfigDestinationSyslogNgToTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     endpoint_url_key: cdktn.stringToTerraform(struct!.endpointUrlKey),
@@ -6696,7 +6696,7 @@ export function observabilityPipelineConfigDestinationSyslogNgToTerraform(struct
 export function observabilityPipelineConfigDestinationSyslogNgToHclTerraform(struct?: ObservabilityPipelineConfigDestinationSyslogNg | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     endpoint_url_key: {
@@ -6879,7 +6879,7 @@ export interface ObservabilityPipelineConfigDestination {
   /**
   * The unique identifier for this destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6888,163 +6888,163 @@ export interface ObservabilityPipelineConfigDestination {
   /**
   * A list of component IDs whose output is used as the `input` for this component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
   */
   readonly inputs: string[];
   /**
   * amazon_opensearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#amazon_opensearch ObservabilityPipeline#amazon_opensearch}
   */
   readonly amazonOpensearch?: ObservabilityPipelineConfigDestinationAmazonOpensearch[] | cdktn.IResolvable;
   /**
   * amazon_s3 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#amazon_s3 ObservabilityPipeline#amazon_s3}
   */
   readonly amazonS3?: ObservabilityPipelineConfigDestinationAmazonS3[] | cdktn.IResolvable;
   /**
   * amazon_s3_generic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#amazon_s3_generic ObservabilityPipeline#amazon_s3_generic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#amazon_s3_generic ObservabilityPipeline#amazon_s3_generic}
   */
   readonly amazonS3Generic?: ObservabilityPipelineConfigDestinationAmazonS3Generic[] | cdktn.IResolvable;
   /**
   * amazon_security_lake block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#amazon_security_lake ObservabilityPipeline#amazon_security_lake}
   */
   readonly amazonSecurityLake?: ObservabilityPipelineConfigDestinationAmazonSecurityLake[] | cdktn.IResolvable;
   /**
   * azure_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#azure_storage ObservabilityPipeline#azure_storage}
   */
   readonly azureStorage?: ObservabilityPipelineConfigDestinationAzureStorage[] | cdktn.IResolvable;
   /**
   * cloud_prem block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#cloud_prem ObservabilityPipeline#cloud_prem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#cloud_prem ObservabilityPipeline#cloud_prem}
   */
   readonly cloudPrem?: ObservabilityPipelineConfigDestinationCloudPrem[] | cdktn.IResolvable;
   /**
   * crowdstrike_next_gen_siem block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#crowdstrike_next_gen_siem ObservabilityPipeline#crowdstrike_next_gen_siem}
   */
   readonly crowdstrikeNextGenSiem?: ObservabilityPipelineConfigDestinationCrowdstrikeNextGenSiem[] | cdktn.IResolvable;
   /**
   * databricks_zerobus block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#databricks_zerobus ObservabilityPipeline#databricks_zerobus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#databricks_zerobus ObservabilityPipeline#databricks_zerobus}
   */
   readonly databricksZerobus?: ObservabilityPipelineConfigDestinationDatabricksZerobus[] | cdktn.IResolvable;
   /**
   * datadog_logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#datadog_logs ObservabilityPipeline#datadog_logs}
   */
   readonly datadogLogs?: ObservabilityPipelineConfigDestinationDatadogLogs[] | cdktn.IResolvable;
   /**
   * datadog_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#datadog_metrics ObservabilityPipeline#datadog_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#datadog_metrics ObservabilityPipeline#datadog_metrics}
   */
   readonly datadogMetrics?: ObservabilityPipelineConfigDestinationDatadogMetrics[] | cdktn.IResolvable;
   /**
   * elasticsearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#elasticsearch ObservabilityPipeline#elasticsearch}
   */
   readonly elasticsearch?: ObservabilityPipelineConfigDestinationElasticsearch[] | cdktn.IResolvable;
   /**
   * google_cloud_storage block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#google_cloud_storage ObservabilityPipeline#google_cloud_storage}
   */
   readonly googleCloudStorage?: ObservabilityPipelineConfigDestinationGoogleCloudStorage[] | cdktn.IResolvable;
   /**
   * google_pubsub block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#google_pubsub ObservabilityPipeline#google_pubsub}
   */
   readonly googlePubsub?: ObservabilityPipelineConfigDestinationGooglePubsub[] | cdktn.IResolvable;
   /**
   * google_secops block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#google_secops ObservabilityPipeline#google_secops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#google_secops ObservabilityPipeline#google_secops}
   */
   readonly googleSecops?: ObservabilityPipelineConfigDestinationGoogleSecops[] | cdktn.IResolvable;
   /**
   * http_client block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#http_client ObservabilityPipeline#http_client}
   */
   readonly httpClient?: ObservabilityPipelineConfigDestinationHttpClient[] | cdktn.IResolvable;
   /**
   * kafka block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#kafka ObservabilityPipeline#kafka}
   */
   readonly kafka?: ObservabilityPipelineConfigDestinationKafka[] | cdktn.IResolvable;
   /**
   * microsoft_sentinel block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#microsoft_sentinel ObservabilityPipeline#microsoft_sentinel}
   */
   readonly microsoftSentinel?: ObservabilityPipelineConfigDestinationMicrosoftSentinel[] | cdktn.IResolvable;
   /**
   * new_relic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#new_relic ObservabilityPipeline#new_relic}
   */
   readonly newRelic?: ObservabilityPipelineConfigDestinationNewRelic[] | cdktn.IResolvable;
   /**
   * opensearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#opensearch ObservabilityPipeline#opensearch}
   */
   readonly opensearch?: ObservabilityPipelineConfigDestinationOpensearch[] | cdktn.IResolvable;
   /**
   * rsyslog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#rsyslog ObservabilityPipeline#rsyslog}
   */
   readonly rsyslog?: ObservabilityPipelineConfigDestinationRsyslog[] | cdktn.IResolvable;
   /**
   * sentinel_one block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#sentinel_one ObservabilityPipeline#sentinel_one}
   */
   readonly sentinelOne?: ObservabilityPipelineConfigDestinationSentinelOne[] | cdktn.IResolvable;
   /**
   * socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#socket ObservabilityPipeline#socket}
   */
   readonly socket?: ObservabilityPipelineConfigDestinationSocket[] | cdktn.IResolvable;
   /**
   * splunk_hec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#splunk_hec ObservabilityPipeline#splunk_hec}
   */
   readonly splunkHec?: ObservabilityPipelineConfigDestinationSplunkHec[] | cdktn.IResolvable;
   /**
   * splunk_hec_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#splunk_hec_metrics ObservabilityPipeline#splunk_hec_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#splunk_hec_metrics ObservabilityPipeline#splunk_hec_metrics}
   */
   readonly splunkHecMetrics?: ObservabilityPipelineConfigDestinationSplunkHecMetrics[] | cdktn.IResolvable;
   /**
   * sumo_logic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#sumo_logic ObservabilityPipeline#sumo_logic}
   */
   readonly sumoLogic?: ObservabilityPipelineConfigDestinationSumoLogic[] | cdktn.IResolvable;
   /**
   * syslog_ng block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#syslog_ng ObservabilityPipeline#syslog_ng}
   */
   readonly syslogNg?: ObservabilityPipelineConfigDestinationSyslogNg[] | cdktn.IResolvable;
 }
@@ -7052,7 +7052,7 @@ export interface ObservabilityPipelineConfigDestination {
 export function observabilityPipelineConfigDestinationToTerraform(struct?: ObservabilityPipelineConfigDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -7090,7 +7090,7 @@ export function observabilityPipelineConfigDestinationToTerraform(struct?: Obser
 export function observabilityPipelineConfigDestinationToHclTerraform(struct?: ObservabilityPipelineConfigDestination | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -7939,13 +7939,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVar
   /**
   * The target field in the log event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field: string;
   /**
   * The name of the environment variable to read.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
 }
@@ -7953,7 +7953,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVar
 export function observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.stringToTerraform(struct!.field),
@@ -7965,7 +7965,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVari
 export function observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -8086,7 +8086,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars {
   /**
   * variable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#variable ObservabilityPipeline#variable}
   */
   readonly variable?: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariable[] | cdktn.IResolvable;
 }
@@ -8094,7 +8094,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars {
 export function observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     variable: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsVariableToTerraform, true)(struct!.variable),
@@ -8105,7 +8105,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsToTe
 export function observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     variable: {
@@ -8204,13 +8204,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFiel
   /**
   * The field name to add.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The value to assign to the field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -8218,7 +8218,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsFiel
 export function observabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -8230,7 +8230,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorAddFieldsField
 export function observabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -8351,7 +8351,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddFields {
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsField[] | cdktn.IResolvable;
 }
@@ -8359,7 +8359,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddFields {
 export function observabilityPipelineConfigProcessorGroupProcessorAddFieldsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorAddFieldsFieldToTerraform, true)(struct!.field),
@@ -8370,7 +8370,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorAddFieldsToTer
 export function observabilityPipelineConfigProcessorGroupProcessorAddFieldsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -8471,7 +8471,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorAddHostname {
 export function observabilityPipelineConfigProcessorGroupProcessorAddHostnameToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddHostname | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -8481,7 +8481,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorAddHostnameToT
 export function observabilityPipelineConfigProcessorGroupProcessorAddHostnameToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorAddHostname | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -8550,31 +8550,31 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorCustomProcess
   /**
   * Whether to drop events that cause errors during transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#drop_on_error ObservabilityPipeline#drop_on_error}
   */
   readonly dropOnError: boolean | cdktn.IResolvable;
   /**
   * Whether this remap rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * A Datadog search query used to filter events for this specific remap rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * A descriptive name for this remap rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The VRL script source code that defines the transformation logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source: string;
 }
@@ -8582,7 +8582,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorCustomProcess
 export function observabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemap | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     drop_on_error: cdktn.booleanToTerraform(struct!.dropOnError),
@@ -8597,7 +8597,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorCustomProcesso
 export function observabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemap | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     drop_on_error: {
@@ -8793,7 +8793,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorCustomProcess
   /**
   * remap block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#remap ObservabilityPipeline#remap}
   */
   readonly remap?: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemap[] | cdktn.IResolvable;
 }
@@ -8801,7 +8801,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorCustomProcess
 export function observabilityPipelineConfigProcessorGroupProcessorCustomProcessorToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     remap: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorCustomProcessorRemapToTerraform, true)(struct!.remap),
@@ -8812,7 +8812,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorCustomProcesso
 export function observabilityPipelineConfigProcessorGroupProcessorCustomProcessorToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     remap: {
@@ -8911,17 +8911,17 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags {
   /**
   *  Valid values are `include`, `exclude`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
   */
   readonly keys: string[];
   /**
   *  Valid values are `filter`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
 }
@@ -8929,7 +8929,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags {
 export function observabilityPipelineConfigProcessorGroupProcessorDatadogTagsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -8942,7 +8942,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorDatadogTagsToT
 export function observabilityPipelineConfigProcessorGroupProcessorDatadogTagsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -9088,13 +9088,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorDedupe {
   /**
   * A list of log field paths to check for duplicates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
   */
   readonly fields: string[];
   /**
   * The deduplication mode to apply to the fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
 }
@@ -9102,7 +9102,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorDedupe {
 export function observabilityPipelineConfigProcessorGroupProcessorDedupeToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorDedupe | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -9114,7 +9114,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorDedupeToTerraf
 export function observabilityPipelineConfigProcessorGroupProcessorDedupeToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorDedupe | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -9235,19 +9235,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
   /**
   * The `encoding` `delimiter`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#delimiter ObservabilityPipeline#delimiter}
   */
   readonly delimiter: string;
   /**
   * The `encoding` `includes_headers`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#includes_headers ObservabilityPipeline#includes_headers}
   */
   readonly includesHeaders?: boolean | cdktn.IResolvable;
   /**
   * File encoding format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#type ObservabilityPipeline#type}
   */
   readonly type: string;
 }
@@ -9255,7 +9255,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncoding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     delimiter: cdktn.stringToTerraform(struct!.delimiter),
@@ -9268,7 +9268,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTabl
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncodingToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncoding | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     delimiter: {
@@ -9417,25 +9417,25 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
   /**
   * The path to the field in the log event to use as the lookup key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#event ObservabilityPipeline#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#event ObservabilityPipeline#event}
   */
   readonly event?: string;
   /**
   * The name of the secret containing the lookup key value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#secret ObservabilityPipeline#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#secret ObservabilityPipeline#secret}
   */
   readonly secret?: string;
   /**
   * A plain field path in the log event (for example, `log.user.id`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#string_path ObservabilityPipeline#string_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#string_path ObservabilityPipeline#string_path}
   */
   readonly stringPath?: string;
   /**
   * A VRL expression that returns the value to use as the lookup key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#vrl ObservabilityPipeline#vrl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#vrl ObservabilityPipeline#vrl}
   */
   readonly vrl?: string;
 }
@@ -9443,7 +9443,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     event: cdktn.stringToTerraform(struct!.event),
@@ -9457,7 +9457,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTabl
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyFieldToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     event: {
@@ -9640,19 +9640,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
   /**
   * The `items` `column`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#column ObservabilityPipeline#column}
   */
   readonly column?: string;
   /**
   * The comparison method (e.g. equals).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#comparison ObservabilityPipeline#comparison}
   */
   readonly comparison?: string;
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyField[] | cdktn.IResolvable;
 }
@@ -9660,7 +9660,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     column: cdktn.stringToTerraform(struct!.column),
@@ -9673,7 +9673,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTabl
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKeyToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     column: {
@@ -9828,19 +9828,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
   /**
   * Path to the CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
   */
   readonly path?: string;
   /**
   * encoding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#encoding ObservabilityPipeline#encoding}
   */
   readonly encoding?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileEncoding[] | cdktn.IResolvable;
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key ObservabilityPipeline#key}
   */
   readonly key?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileKey[] | cdktn.IResolvable;
 }
@@ -9848,7 +9848,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -9861,7 +9861,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTabl
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFileToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -10016,19 +10016,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
   /**
   * Path to the IP field in the log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
   */
   readonly keyField?: string;
   /**
   * Locale used to resolve geographical names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#locale ObservabilityPipeline#locale}
   */
   readonly locale?: string;
   /**
   * Path to the GeoIP database file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
   */
   readonly path?: string;
 }
@@ -10036,7 +10036,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoip | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key_field: cdktn.stringToTerraform(struct!.keyField),
@@ -10049,7 +10049,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTabl
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoipToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoip | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key_field: {
@@ -10204,25 +10204,25 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
   /**
   * Name of the environment variable or secret that holds the Datadog application key for the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#app_key_key ObservabilityPipeline#app_key_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#app_key_key ObservabilityPipeline#app_key_key}
   */
   readonly appKeyKey?: string;
   /**
   * List of column names to include from the reference table. If not provided, all columns are included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#columns ObservabilityPipeline#columns}
   */
   readonly columns?: string[];
   /**
   * Path to the field in the log event to match against the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#key_field ObservabilityPipeline#key_field}
   */
   readonly keyField: string;
   /**
   * The unique identifier of the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#table_id ObservabilityPipeline#table_id}
   */
   readonly tableId: string;
 }
@@ -10230,7 +10230,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     app_key_key: cdktn.stringToTerraform(struct!.appKeyKey),
@@ -10244,7 +10244,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTabl
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTableToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     app_key_key: {
@@ -10421,25 +10421,25 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
   /**
   * Path where enrichment results should be stored in the log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#target ObservabilityPipeline#target}
   */
   readonly target: string;
   /**
   * file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#file ObservabilityPipeline#file}
   */
   readonly file?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableFile[] | cdktn.IResolvable;
   /**
   * geoip block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#geoip ObservabilityPipeline#geoip}
   */
   readonly geoip?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableGeoip[] | cdktn.IResolvable;
   /**
   * reference_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#reference_table ObservabilityPipeline#reference_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#reference_table ObservabilityPipeline#reference_table}
   */
   readonly referenceTable?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableReferenceTable[] | cdktn.IResolvable;
 }
@@ -10447,7 +10447,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTab
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     target: cdktn.stringToTerraform(struct!.target),
@@ -10461,7 +10461,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTabl
 export function observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     target: {
@@ -10643,7 +10643,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorFilter {
 export function observabilityPipelineConfigProcessorGroupProcessorFilterToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -10653,7 +10653,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorFilterToTerraf
 export function observabilityPipelineConfigProcessorGroupProcessorFilterToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -10722,13 +10722,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatad
   /**
   * Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: string;
   /**
   * Metric value strategy: `increment_by_one` or `increment_by_field`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
   */
   readonly strategy: string;
 }
@@ -10736,7 +10736,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatad
 export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.stringToTerraform(struct!.field),
@@ -10748,7 +10748,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatado
 export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValueToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -10872,31 +10872,31 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatad
   /**
   * Optional fields used to group the metric series.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
   */
   readonly groupBy?: string[];
   /**
   * Datadog filter query to match logs for metric generation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * Type of metric to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
   */
   readonly metricType: string;
   /**
   * Name of the custom metric to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricValue[] | cdktn.IResolvable;
 }
@@ -10904,7 +10904,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatad
 export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
@@ -10919,7 +10919,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatado
 export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetric | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group_by: {
@@ -11121,7 +11121,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatad
   /**
   * metric block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
   */
   readonly metric?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetric[] | cdktn.IResolvable;
 }
@@ -11129,7 +11129,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatad
 export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     metric: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsMetricToTerraform, true)(struct!.metric),
@@ -11140,7 +11140,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatado
 export function observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetrics | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     metric: {
@@ -11235,29 +11235,546 @@ export class ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMe
     return new ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue {
+  /**
+  * Name of the log field containing the numeric value to increment the metric by (used only for `increment_by_field`).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  */
+  readonly field?: string;
+  /**
+  * Metric value strategy: `increment_by_one` or `increment_by_field`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+  */
+  readonly strategy: string;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    field: cdktn.stringToTerraform(struct!.field),
+    strategy: cdktn.stringToTerraform(struct!.strategy),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    field: {
+      value: cdktn.stringToHclTerraform(struct!.field),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    strategy: {
+      value: cdktn.stringToHclTerraform(struct!.strategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._field !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.field = this._field;
+    }
+    if (this._strategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strategy = this._strategy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._field = undefined;
+      this._strategy = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._field = value.field;
+      this._strategy = value.strategy;
+    }
+  }
+
+  // field - computed: false, optional: true, required: false
+  private _field?: string; 
+  public get field() {
+    return this.getStringAttribute('field');
+  }
+  public set field(value: string) {
+    this._field = value;
+  }
+  public resetField() {
+    this._field = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldInput() {
+    return this._field;
+  }
+
+  // strategy - computed: false, optional: false, required: true
+  private _strategy?: string; 
+  public get strategy() {
+    return this.getStringAttribute('strategy');
+  }
+  public set strategy(value: string) {
+    this._strategy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strategyInput() {
+    return this._strategy;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric {
+  /**
+  * Optional fields used to group the metric series.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+  */
+  readonly groupBy?: string[];
+  /**
+  * Datadog filter query to match logs for metric generation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  */
+  readonly include: string;
+  /**
+  * Type of metric to create.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#metric_type ObservabilityPipeline#metric_type}
+  */
+  readonly metricType: string;
+  /**
+  * Name of the custom metric to be created.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  */
+  readonly name: string;
+  /**
+  * value block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  */
+  readonly value?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    include: cdktn.stringToTerraform(struct!.include),
+    metric_type: cdktn.stringToTerraform(struct!.metricType),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueToTerraform, true)(struct!.value),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    group_by: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    include: {
+      value: cdktn.stringToHclTerraform(struct!.include),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metric_type: {
+      value: cdktn.stringToHclTerraform(struct!.metricType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueToHclTerraform, true)(struct!.value),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._groupBy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupBy = this._groupBy;
+    }
+    if (this._include !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.include = this._include;
+    }
+    if (this._metricType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricType = this._metricType;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._groupBy = undefined;
+      this._include = undefined;
+      this._metricType = undefined;
+      this._name = undefined;
+      this._value.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._groupBy = value.groupBy;
+      this._include = value.include;
+      this._metricType = value.metricType;
+      this._name = value.name;
+      this._value.internalValue = value.value;
+    }
+  }
+
+  // group_by - computed: false, optional: true, required: false
+  private _groupBy?: string[]; 
+  public get groupBy() {
+    return this.getListAttribute('group_by');
+  }
+  public set groupBy(value: string[]) {
+    this._groupBy = value;
+  }
+  public resetGroupBy() {
+    this._groupBy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupByInput() {
+    return this._groupBy;
+  }
+
+  // include - computed: false, optional: false, required: true
+  private _include?: string; 
+  public get include() {
+    return this.getStringAttribute('include');
+  }
+  public set include(value: string) {
+    this._include = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeInput() {
+    return this._include;
+  }
+
+  // metric_type - computed: false, optional: false, required: true
+  private _metricType?: string; 
+  public get metricType() {
+    return this.getStringAttribute('metric_type');
+  }
+  public set metricType(value: string) {
+    this._metricType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricTypeInput() {
+    return this._metricType;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value = new ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValueList(this, "value", false);
+  public get value() {
+    return this._value;
+  }
+  public putValue(value: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricValue[] | cdktn.IResolvable) {
+    this._value.internalValue = value;
+  }
+  public resetValue() {
+    this._value.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics {
+  /**
+  * metric block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#metric ObservabilityPipeline#metric}
+  */
+  readonly metric?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric[] | cdktn.IResolvable;
+}
+
+export function observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    metric: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricToTerraform, true)(struct!.metric),
+  }
+}
+
+
+export function observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    metric: {
+      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricToHclTerraform, true)(struct!.metric),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metric?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metric = this._metric?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._metric.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._metric.internalValue = value.metric;
+    }
+  }
+
+  // metric - computed: false, optional: true, required: false
+  private _metric = new ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetricList(this, "metric", false);
+  public get metric() {
+    return this._metric;
+  }
+  public putMetric(value: ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsMetric[] | cdktn.IResolvable) {
+    this._metric.internalValue = value;
+  }
+  public resetMetric() {
+    this._metric.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricInput() {
+    return this._metric.internalValue;
+  }
+}
+
+export class ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsList extends cdktn.ComplexList {
+  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetrics[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsOutputReference {
+    return new ObservabilityPipelineConfigProcessorGroupProcessorGenerateMetricsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRule {
   /**
   * The action to take on tags with matching keys. Valid values are `include`, `exclude`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#action ObservabilityPipeline#action}
   */
   readonly action: string;
   /**
   * A Datadog search query used to determine which metrics this rule targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * A list of tag keys to include or exclude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#keys ObservabilityPipeline#keys}
   */
   readonly keys: string[];
   /**
   * The processing mode for tag filtering. Valid values are `filter`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#mode ObservabilityPipeline#mode}
   */
   readonly mode: string;
 }
@@ -11265,7 +11782,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRul
 export function observabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -11279,7 +11796,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorMetricTagsRule
 export function observabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -11450,7 +11967,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorMetricTags {
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule?: ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsRule[] | cdktn.IResolvable;
 }
@@ -11458,7 +11975,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorMetricTags {
 export function observabilityPipelineConfigProcessorGroupProcessorMetricTagsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorMetricTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rule: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorMetricTagsRuleToTerraform, true)(struct!.rule),
@@ -11469,7 +11986,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorMetricTagsToTe
 export function observabilityPipelineConfigProcessorGroupProcessorMetricTagsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorMetricTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rule: {
@@ -11568,37 +12085,37 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
   /**
   * The substring to match in the source value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#contains ObservabilityPipeline#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#contains ObservabilityPipeline#contains}
   */
   readonly contains?: string;
   /**
   * The exact value to match in the source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#equals ObservabilityPipeline#equals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#equals ObservabilityPipeline#equals}
   */
   readonly equalTo?: string;
   /**
   * The source field to match against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#equals_source ObservabilityPipeline#equals_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#equals_source ObservabilityPipeline#equals_source}
   */
   readonly equalsSource?: string;
   /**
   * A regex pattern to match in the source value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#matches ObservabilityPipeline#matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#matches ObservabilityPipeline#matches}
   */
   readonly matches?: string;
   /**
   * A regex pattern that must not match the source value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#not_matches ObservabilityPipeline#not_matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#not_matches ObservabilityPipeline#not_matches}
   */
   readonly notMatches?: string;
   /**
   * The value to use when a match is found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value?: string;
 }
@@ -11606,7 +12123,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     contains: cdktn.stringToTerraform(struct!.contains),
@@ -11622,7 +12139,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapp
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTableToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     contains: {
@@ -11861,13 +12378,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
   /**
   * The default value to use if no lookup match is found.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
   */
   readonly default?: string;
   /**
   * table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#table ObservabilityPipeline#table}
   */
   readonly table?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupTable[] | cdktn.IResolvable;
 }
@@ -11875,7 +12392,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.stringToTerraform(struct!.default),
@@ -11887,7 +12404,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapp
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookupToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -12014,37 +12531,37 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
   /**
   * The default value to use if the source field is missing or empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#default ObservabilityPipeline#default}
   */
   readonly default?: string;
   /**
   * The destination OCSF field path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#dest ObservabilityPipeline#dest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#dest ObservabilityPipeline#dest}
   */
   readonly dest: string;
   /**
   * The source field path from the log event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source?: string;
   /**
   * Multiple source field paths for combined mapping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#sources ObservabilityPipeline#sources}
   */
   readonly sources?: string[];
   /**
   * A static value to use for the destination field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value?: string;
   /**
   * lookup block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#lookup ObservabilityPipeline#lookup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#lookup ObservabilityPipeline#lookup}
   */
   readonly lookup?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingLookup[] | cdktn.IResolvable;
 }
@@ -12052,7 +12569,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.stringToTerraform(struct!.default),
@@ -12068,7 +12585,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapp
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMappingToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -12304,19 +12821,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
   /**
   * The OCSF event class name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#class ObservabilityPipeline#class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#class ObservabilityPipeline#class}
   */
   readonly class: string;
   /**
   * A list of OCSF profiles to apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#profiles ObservabilityPipeline#profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#profiles ObservabilityPipeline#profiles}
   */
   readonly profiles?: string[];
   /**
   * The OCSF schema version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
   */
   readonly version: string;
 }
@@ -12324,7 +12841,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     class: cdktn.stringToTerraform(struct!.class),
@@ -12337,7 +12854,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapp
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadataToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     class: {
@@ -12486,19 +13003,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
   /**
   * The version of the custom mapping configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#version ObservabilityPipeline#version}
   */
   readonly version: number;
   /**
   * mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
   */
   readonly mapping?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMapping[] | cdktn.IResolvable;
   /**
   * metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#metadata ObservabilityPipeline#metadata}
   */
   readonly metadata?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingMetadata[] | cdktn.IResolvable;
 }
@@ -12506,7 +13023,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     version: cdktn.numberToTerraform(struct!.version),
@@ -12519,7 +13036,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapp
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMappingToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     version: {
@@ -12671,19 +13188,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
   /**
   * Search query for selecting which logs the mapping applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
   /**
   * Predefined library mapping for log transformation. Use this or custom_mapping, not both.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#library_mapping ObservabilityPipeline#library_mapping}
   */
   readonly libraryMapping?: string;
   /**
   * custom_mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#custom_mapping ObservabilityPipeline#custom_mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#custom_mapping ObservabilityPipeline#custom_mapping}
   */
   readonly customMapping?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingCustomMapping[] | cdktn.IResolvable;
 }
@@ -12691,7 +13208,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMap
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include: cdktn.stringToTerraform(struct!.include),
@@ -12704,7 +13221,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapp
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperMappingToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include: {
@@ -12856,13 +13373,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper {
   /**
   * Whether to keep an event that does not match any of the mapping filters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#keep_unmatched ObservabilityPipeline#keep_unmatched}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#keep_unmatched ObservabilityPipeline#keep_unmatched}
   */
   readonly keepUnmatched?: boolean | cdktn.IResolvable;
   /**
   * mapping block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#mapping ObservabilityPipeline#mapping}
   */
   readonly mapping?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperMapping[] | cdktn.IResolvable;
 }
@@ -12870,7 +13387,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper {
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     keep_unmatched: cdktn.booleanToTerraform(struct!.keepUnmatched),
@@ -12882,7 +13399,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperToTe
 export function observabilityPipelineConfigProcessorGroupProcessorOcsfMapperToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     keep_unmatched: {
@@ -13009,13 +13526,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule
   /**
   * The name of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The definition of the Grok rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule: string;
 }
@@ -13023,7 +13540,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -13035,7 +13552,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleM
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRuleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -13156,13 +13673,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule
   /**
   * The name of the helper Grok rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The definition of the helper Grok rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule: string;
 }
@@ -13170,7 +13687,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -13182,7 +13699,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleS
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRuleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -13303,19 +13820,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule
   /**
   * The value of the source field in log events which should be processed by the Grok rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source: string;
   /**
   * match_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#match_rule ObservabilityPipeline#match_rule}
   */
   readonly matchRule?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleMatchRule[] | cdktn.IResolvable;
   /**
   * support_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#support_rule ObservabilityPipeline#support_rule}
   */
   readonly supportRule?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRuleSupportRule[] | cdktn.IResolvable;
 }
@@ -13323,7 +13840,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     source: cdktn.stringToTerraform(struct!.source),
@@ -13336,7 +13853,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleT
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokRuleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     source: {
@@ -13488,13 +14005,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrok {
   /**
   * If set to `true`, disables the default Grok rules provided by Datadog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#disable_library_rules ObservabilityPipeline#disable_library_rules}
   */
   readonly disableLibraryRules?: boolean | cdktn.IResolvable;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrokRule[] | cdktn.IResolvable;
 }
@@ -13502,7 +14019,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseGrok {
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disable_library_rules: cdktn.booleanToTerraform(struct!.disableLibraryRules),
@@ -13514,7 +14031,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorParseGrokToTer
 export function observabilityPipelineConfigProcessorGroupProcessorParseGrokToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disable_library_rules: {
@@ -13641,7 +14158,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseJson {
   /**
   * The field to parse.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field: string;
 }
@@ -13649,7 +14166,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseJson {
 export function observabilityPipelineConfigProcessorGroupProcessorParseJsonToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseJson | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.stringToTerraform(struct!.field),
@@ -13660,7 +14177,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorParseJsonToTer
 export function observabilityPipelineConfigProcessorGroupProcessorParseJsonToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseJson | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -13756,49 +14273,49 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseXml {
   /**
   * Whether to always store text inside an object using the text key even when no attributes exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#always_use_text_key ObservabilityPipeline#always_use_text_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#always_use_text_key ObservabilityPipeline#always_use_text_key}
   */
   readonly alwaysUseTextKey?: boolean | cdktn.IResolvable;
   /**
   * The prefix to use for XML attributes in the parsed output. If the field is left empty, the original attribute key is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#attr_prefix ObservabilityPipeline#attr_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#attr_prefix ObservabilityPipeline#attr_prefix}
   */
   readonly attrPrefix?: string;
   /**
   * The path to the log field on which you want to parse XML.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field: string;
   /**
   * Whether to include XML attributes in the parsed output.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include_attr ObservabilityPipeline#include_attr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include_attr ObservabilityPipeline#include_attr}
   */
   readonly includeAttr?: boolean | cdktn.IResolvable;
   /**
   * Whether to parse boolean values from strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#parse_bool ObservabilityPipeline#parse_bool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#parse_bool ObservabilityPipeline#parse_bool}
   */
   readonly parseBool?: boolean | cdktn.IResolvable;
   /**
   * Whether to parse null values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#parse_null ObservabilityPipeline#parse_null}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#parse_null ObservabilityPipeline#parse_null}
   */
   readonly parseNull?: boolean | cdktn.IResolvable;
   /**
   * Whether to parse numeric values from strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#parse_number ObservabilityPipeline#parse_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#parse_number ObservabilityPipeline#parse_number}
   */
   readonly parseNumber?: boolean | cdktn.IResolvable;
   /**
   * The key name to use for the text node when XML attributes are appended.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#text_key ObservabilityPipeline#text_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#text_key ObservabilityPipeline#text_key}
   */
   readonly textKey?: string;
 }
@@ -13806,7 +14323,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorParseXml {
 export function observabilityPipelineConfigProcessorGroupProcessorParseXmlToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseXml | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     always_use_text_key: cdktn.booleanToTerraform(struct!.alwaysUseTextKey),
@@ -13824,7 +14341,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorParseXmlToTerr
 export function observabilityPipelineConfigProcessorGroupProcessorParseXmlToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorParseXml | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     always_use_text_key: {
@@ -14116,13 +14633,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit {
   /**
   * Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
   */
   readonly enforce: string;
   /**
   * The daily quota limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit: number;
 }
@@ -14130,7 +14647,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit {
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaLimitToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enforce: cdktn.stringToTerraform(struct!.enforce),
@@ -14142,7 +14659,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorQuotaLimitToTe
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaLimitToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enforce: {
@@ -14263,13 +14780,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride
   /**
   * The field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The field value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#value ObservabilityPipeline#value}
   */
   readonly value: string;
 }
@@ -14277,7 +14794,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -14289,7 +14806,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideF
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -14410,13 +14927,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride
   /**
   * Whether to enforce by 'bytes' or 'events'. Valid values are `bytes`, `events`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#enforce ObservabilityPipeline#enforce}
   */
   readonly enforce: string;
   /**
   * The daily quota limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit: number;
 }
@@ -14424,7 +14941,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enforce: cdktn.stringToTerraform(struct!.enforce),
@@ -14436,7 +14953,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideL
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimitToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enforce: {
@@ -14557,13 +15074,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideField[] | cdktn.IResolvable;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverrideLimit[] | cdktn.IResolvable;
 }
@@ -14571,7 +15088,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideFieldToTerraform, true)(struct!.field),
@@ -14583,7 +15100,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideT
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaOverrideToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -14710,49 +15227,49 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuota {
   /**
   * Whether to drop events exceeding the limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#drop_events ObservabilityPipeline#drop_events}
   */
   readonly dropEvents?: boolean | cdktn.IResolvable;
   /**
   * Whether to ignore when partition fields are missing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#ignore_when_missing_partitions ObservabilityPipeline#ignore_when_missing_partitions}
   */
   readonly ignoreWhenMissingPartitions?: boolean | cdktn.IResolvable;
   /**
   * The name of the quota.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * The action to take when the quota is exceeded: `drop`, `no_action`, or `overflow_routing`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#overflow_action ObservabilityPipeline#overflow_action}
   */
   readonly overflowAction?: string;
   /**
   * List of partition fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#partition_fields ObservabilityPipeline#partition_fields}
   */
   readonly partitionFields?: string[];
   /**
   * The action to take when the max number of buckets is exceeded: `drop`, `no_action`, or `overflow_routing`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#too_many_buckets_action ObservabilityPipeline#too_many_buckets_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#too_many_buckets_action ObservabilityPipeline#too_many_buckets_action}
   */
   readonly tooManyBucketsAction?: string;
   /**
   * limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#limit ObservabilityPipeline#limit}
   */
   readonly limit?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaLimit[] | cdktn.IResolvable;
   /**
   * override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#override ObservabilityPipeline#override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#override ObservabilityPipeline#override}
   */
   readonly override?: ObservabilityPipelineConfigProcessorGroupProcessorQuotaOverride[] | cdktn.IResolvable;
 }
@@ -14760,7 +15277,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorQuota {
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuota | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     drop_events: cdktn.booleanToTerraform(struct!.dropEvents),
@@ -14778,7 +15295,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorQuotaToTerrafo
 export function observabilityPipelineConfigProcessorGroupProcessorQuotaToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorQuota | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     drop_events: {
@@ -15070,13 +15587,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeSt
   /**
   * The field path in the log event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#path ObservabilityPipeline#path}
   */
   readonly path: string;
   /**
   * The merge strategy to apply.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#strategy ObservabilityPipeline#strategy}
   */
   readonly strategy: string;
 }
@@ -15084,7 +15601,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeSt
 export function observabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: cdktn.stringToTerraform(struct!.path),
@@ -15096,7 +15613,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorReduceMergeStr
 export function observabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategyToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -15217,13 +15734,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorReduce {
   /**
   * A list of fields used to group log events for merging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
   */
   readonly groupBy: string[];
   /**
   * merge_strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#merge_strategy ObservabilityPipeline#merge_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#merge_strategy ObservabilityPipeline#merge_strategy}
   */
   readonly mergeStrategy?: ObservabilityPipelineConfigProcessorGroupProcessorReduceMergeStrategy[] | cdktn.IResolvable;
 }
@@ -15231,7 +15748,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorReduce {
 export function observabilityPipelineConfigProcessorGroupProcessorReduceToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduce | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
@@ -15243,7 +15760,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorReduceToTerraf
 export function observabilityPipelineConfigProcessorGroupProcessorReduceToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorReduce | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group_by: {
@@ -15367,7 +15884,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields 
   /**
   * List of fields to remove from the events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
   */
   readonly fields: string[];
 }
@@ -15375,7 +15892,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields 
 export function observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -15386,7 +15903,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsTo
 export function observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -15482,19 +15999,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsF
   /**
   * Destination field name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#destination ObservabilityPipeline#destination}
   */
   readonly destination: string;
   /**
   * Whether to keep the original field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#preserve_source ObservabilityPipeline#preserve_source}
   */
   readonly preserveSource: boolean | cdktn.IResolvable;
   /**
   * Source field to rename.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#source ObservabilityPipeline#source}
   */
   readonly source: string;
 }
@@ -15502,7 +16019,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsF
 export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destination: cdktn.stringToTerraform(struct!.destination),
@@ -15515,7 +16032,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFi
 export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destination: {
@@ -15661,7 +16178,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameFields 
   /**
   * field block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsField[] | cdktn.IResolvable;
 }
@@ -15669,7 +16186,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorRenameFields 
 export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorRenameFieldsFieldToTerraform, true)(struct!.field),
@@ -15680,7 +16197,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsTo
 export function observabilityPipelineConfigProcessorGroupProcessorRenameFieldsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -15779,13 +16296,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSample {
   /**
   * Optional list of fields to group events by. Each group is sampled independently.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The percentage of logs to sample.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#percentage ObservabilityPipeline#percentage}
   */
   readonly percentage: number;
 }
@@ -15793,7 +16310,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSample {
 export function observabilityPipelineConfigProcessorGroupProcessorSampleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSample | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
@@ -15805,7 +16322,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSampleToTerraf
 export function observabilityPipelineConfigProcessorGroupProcessorSampleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSample | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group_by: {
@@ -15929,13 +16446,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * A list of keywords to match near the sensitive pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#keywords ObservabilityPipeline#keywords}
   */
   readonly keywords?: string[];
   /**
   * Maximum number of tokens between a keyword and a sensitive value match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#proximity ObservabilityPipeline#proximity}
   */
   readonly proximity?: number;
 }
@@ -15943,7 +16460,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     keywords: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.keywords),
@@ -15955,7 +16472,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptionsToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     keywords: {
@@ -16084,7 +16601,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHash | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -16094,7 +16611,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHash | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -16163,13 +16680,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Number of characters to keep.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#characters ObservabilityPipeline#characters}
   */
   readonly characters?: number;
   /**
   * Direction from which to keep characters: `first` or `last`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#direction ObservabilityPipeline#direction}
   */
   readonly direction?: string;
 }
@@ -16177,7 +16694,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedact | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     characters: cdktn.numberToTerraform(struct!.characters),
@@ -16189,7 +16706,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedactToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedact | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     characters: {
@@ -16316,7 +16833,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Replacement string for redacted values (e.g., `***`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#replace ObservabilityPipeline#replace}
   */
   readonly replace?: string;
 }
@@ -16324,7 +16841,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedact | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     replace: cdktn.stringToTerraform(struct!.replace),
@@ -16335,7 +16852,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedactToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedact | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     replace: {
@@ -16434,19 +16951,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#hash ObservabilityPipeline#hash}
   */
   readonly hash?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHash[] | cdktn.IResolvable;
   /**
   * partial_redact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#partial_redact ObservabilityPipeline#partial_redact}
   */
   readonly partialRedact?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchPartialRedact[] | cdktn.IResolvable;
   /**
   * redact block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#redact ObservabilityPipeline#redact}
   */
   readonly redact?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchRedact[] | cdktn.IResolvable;
 }
@@ -16454,7 +16971,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hash: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchHashToTerraform, true)(struct!.hash),
@@ -16467,7 +16984,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatchToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hash: {
@@ -16622,13 +17139,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Human-readable description providing context about a sensitive data scanner rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
   */
   readonly description?: string;
   /**
   * A regular expression used to detect sensitive values. Must be a valid regex.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule?: string;
 }
@@ -16636,7 +17153,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustom | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -16648,7 +17165,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustom | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -16775,13 +17292,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Human-readable description providing context about a sensitive data scanner rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#description ObservabilityPipeline#description}
   */
   readonly description?: string;
   /**
   * Identifier for a predefined pattern from the sensitive data scanner pattern library.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -16790,7 +17307,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Whether to augment the pattern with recommended keywords (optional).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#use_recommended_keywords ObservabilityPipeline#use_recommended_keywords}
   */
   readonly useRecommendedKeywords?: boolean | cdktn.IResolvable;
 }
@@ -16798,7 +17315,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     description: cdktn.stringToTerraform(struct!.description),
@@ -16811,7 +17328,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibraryToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibrary | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     description: {
@@ -16966,13 +17483,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#custom ObservabilityPipeline#custom}
   */
   readonly custom?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustom[] | cdktn.IResolvable;
   /**
   * library block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#library ObservabilityPipeline#library}
   */
   readonly library?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternLibrary[] | cdktn.IResolvable;
 }
@@ -16980,7 +17497,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternCustomToTerraform, true)(struct!.custom),
@@ -16992,7 +17509,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePatternToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom: {
@@ -17119,7 +17636,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * The fields to exclude from scanning.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
   */
   readonly fields?: string[];
 }
@@ -17127,7 +17644,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -17138,7 +17655,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExcludeToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -17237,7 +17754,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * The fields to include in scanning.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#fields ObservabilityPipeline#fields}
   */
   readonly fields?: string[];
 }
@@ -17245,7 +17762,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeInclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fields: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fields),
@@ -17256,7 +17773,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeIncludeToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeInclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fields: {
@@ -17355,19 +17872,19 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * Scan all fields.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#all ObservabilityPipeline#all}
   */
   readonly all?: boolean | cdktn.IResolvable;
   /**
   * exclude block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#exclude ObservabilityPipeline#exclude}
   */
   readonly exclude?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeExclude[] | cdktn.IResolvable;
   /**
   * include block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeInclude[] | cdktn.IResolvable;
 }
@@ -17375,7 +17892,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all: cdktn.booleanToTerraform(struct!.all),
@@ -17388,7 +17905,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScopeToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all: {
@@ -17543,37 +18060,37 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * A name identifying the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#name ObservabilityPipeline#name}
   */
   readonly name: string;
   /**
   * Tags assigned to this rule for filtering and classification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#tags ObservabilityPipeline#tags}
   */
   readonly tags?: string[];
   /**
   * keyword_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#keyword_options ObservabilityPipeline#keyword_options}
   */
   readonly keywordOptions?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleKeywordOptions[] | cdktn.IResolvable;
   /**
   * on_match block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#on_match ObservabilityPipeline#on_match}
   */
   readonly onMatch?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleOnMatch[] | cdktn.IResolvable;
   /**
   * pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#pattern ObservabilityPipeline#pattern}
   */
   readonly pattern?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRulePattern[] | cdktn.IResolvable;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#scope ObservabilityPipeline#scope}
   */
   readonly scope?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleScope[] | cdktn.IResolvable;
 }
@@ -17581,7 +18098,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -17597,7 +18114,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -17833,7 +18350,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#rule ObservabilityPipeline#rule}
   */
   readonly rule?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRule[] | cdktn.IResolvable;
 }
@@ -17841,7 +18358,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSensitiveData
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScanner | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rule: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerRuleToTerraform, true)(struct!.rule),
@@ -17852,7 +18369,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataS
 export function observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScanner | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rule: {
@@ -17951,13 +18468,13 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArr
   /**
   * The path to the array field to split.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#field ObservabilityPipeline#field}
   */
   readonly field: string;
   /**
   * A Datadog search query used to determine which logs this array split operation targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
   */
   readonly include: string;
 }
@@ -17965,7 +18482,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArr
 export function observabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArray | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     field: cdktn.stringToTerraform(struct!.field),
@@ -17977,7 +18494,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSplitArrayArra
 export function observabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArray | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     field: {
@@ -18098,7 +18615,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSplitArray {
   /**
   * array block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/observability_pipeline#array ObservabilityPipeline#array}
   */
   readonly array?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayArray[] | cdktn.IResolvable;
 }
@@ -18106,7 +18623,7 @@ export interface ObservabilityPipelineConfigProcessorGroupProcessorSplitArray {
 export function observabilityPipelineConfigProcessorGroupProcessorSplitArrayToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArray | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     array: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorSplitArrayArrayToTerraform, true)(struct!.array),
@@ -18117,7 +18634,7 @@ export function observabilityPipelineConfigProcessorGroupProcessorSplitArrayToTe
 export function observabilityPipelineConfigProcessorGroupProcessorSplitArrayToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArray | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     array: {
@@ -18210,1458 +18727,5 @@ export class ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayList ex
   */
   public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayOutputReference {
     return new ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigProcessorGroupProcessorThrottle {
-  /**
-  * Optional list of fields used to group events before applying throttling.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#group_by ObservabilityPipeline#group_by}
-  */
-  readonly groupBy?: string[];
-  /**
-  * The number of events to allow before throttling is applied.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#threshold ObservabilityPipeline#threshold}
-  */
-  readonly threshold: number;
-  /**
-  * The time window in seconds over which the threshold applies.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#window ObservabilityPipeline#window}
-  */
-  readonly window: number;
-}
-
-export function observabilityPipelineConfigProcessorGroupProcessorThrottleToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorThrottle | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
-    threshold: cdktn.numberToTerraform(struct!.threshold),
-    window: cdktn.numberToTerraform(struct!.window),
-  }
-}
-
-
-export function observabilityPipelineConfigProcessorGroupProcessorThrottleToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessorThrottle | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    group_by: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    threshold: {
-      value: cdktn.numberToHclTerraform(struct!.threshold),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    window: {
-      value: cdktn.numberToHclTerraform(struct!.window),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigProcessorGroupProcessorThrottleOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessorThrottle | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._groupBy !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.groupBy = this._groupBy;
-    }
-    if (this._threshold !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.threshold = this._threshold;
-    }
-    if (this._window !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.window = this._window;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessorThrottle | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._groupBy = undefined;
-      this._threshold = undefined;
-      this._window = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._groupBy = value.groupBy;
-      this._threshold = value.threshold;
-      this._window = value.window;
-    }
-  }
-
-  // group_by - computed: false, optional: true, required: false
-  private _groupBy?: string[]; 
-  public get groupBy() {
-    return this.getListAttribute('group_by');
-  }
-  public set groupBy(value: string[]) {
-    this._groupBy = value;
-  }
-  public resetGroupBy() {
-    this._groupBy = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get groupByInput() {
-    return this._groupBy;
-  }
-
-  // threshold - computed: false, optional: false, required: true
-  private _threshold?: number; 
-  public get threshold() {
-    return this.getNumberAttribute('threshold');
-  }
-  public set threshold(value: number) {
-    this._threshold = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get thresholdInput() {
-    return this._threshold;
-  }
-
-  // window - computed: false, optional: false, required: true
-  private _window?: number; 
-  public get window() {
-    return this.getNumberAttribute('window');
-  }
-  public set window(value: number) {
-    this._window = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get windowInput() {
-    return this._window;
-  }
-}
-
-export class ObservabilityPipelineConfigProcessorGroupProcessorThrottleList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessorThrottle[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorThrottleOutputReference {
-    return new ObservabilityPipelineConfigProcessorGroupProcessorThrottleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigProcessorGroupProcessor {
-  /**
-  * A human-friendly name for this processor.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
-  */
-  readonly displayName?: string;
-  /**
-  * Whether this processor is enabled.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
-  */
-  readonly enabled: boolean | cdktn.IResolvable;
-  /**
-  * The unique identifier for this processor.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-  /**
-  * A Datadog search query used to determine which logs this processor targets.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
-  */
-  readonly include: string;
-  /**
-  * add_env_vars block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#add_env_vars ObservabilityPipeline#add_env_vars}
-  */
-  readonly addEnvVars?: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars[] | cdktn.IResolvable;
-  /**
-  * add_fields block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#add_fields ObservabilityPipeline#add_fields}
-  */
-  readonly addFields?: ObservabilityPipelineConfigProcessorGroupProcessorAddFields[] | cdktn.IResolvable;
-  /**
-  * add_hostname block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#add_hostname ObservabilityPipeline#add_hostname}
-  */
-  readonly addHostname?: ObservabilityPipelineConfigProcessorGroupProcessorAddHostname[] | cdktn.IResolvable;
-  /**
-  * custom_processor block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#custom_processor ObservabilityPipeline#custom_processor}
-  */
-  readonly customProcessor?: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor[] | cdktn.IResolvable;
-  /**
-  * datadog_tags block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#datadog_tags ObservabilityPipeline#datadog_tags}
-  */
-  readonly datadogTags?: ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags[] | cdktn.IResolvable;
-  /**
-  * dedupe block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#dedupe ObservabilityPipeline#dedupe}
-  */
-  readonly dedupe?: ObservabilityPipelineConfigProcessorGroupProcessorDedupe[] | cdktn.IResolvable;
-  /**
-  * enrichment_table block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enrichment_table ObservabilityPipeline#enrichment_table}
-  */
-  readonly enrichmentTable?: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTable[] | cdktn.IResolvable;
-  /**
-  * filter block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#filter ObservabilityPipeline#filter}
-  */
-  readonly filter?: ObservabilityPipelineConfigProcessorGroupProcessorFilter[] | cdktn.IResolvable;
-  /**
-  * generate_datadog_metrics block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#generate_datadog_metrics ObservabilityPipeline#generate_datadog_metrics}
-  */
-  readonly generateDatadogMetrics?: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetrics[] | cdktn.IResolvable;
-  /**
-  * metric_tags block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#metric_tags ObservabilityPipeline#metric_tags}
-  */
-  readonly metricTags?: ObservabilityPipelineConfigProcessorGroupProcessorMetricTags[] | cdktn.IResolvable;
-  /**
-  * ocsf_mapper block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#ocsf_mapper ObservabilityPipeline#ocsf_mapper}
-  */
-  readonly ocsfMapper?: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper[] | cdktn.IResolvable;
-  /**
-  * parse_grok block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#parse_grok ObservabilityPipeline#parse_grok}
-  */
-  readonly parseGrok?: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok[] | cdktn.IResolvable;
-  /**
-  * parse_json block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#parse_json ObservabilityPipeline#parse_json}
-  */
-  readonly parseJson?: ObservabilityPipelineConfigProcessorGroupProcessorParseJson[] | cdktn.IResolvable;
-  /**
-  * parse_xml block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#parse_xml ObservabilityPipeline#parse_xml}
-  */
-  readonly parseXml?: ObservabilityPipelineConfigProcessorGroupProcessorParseXml[] | cdktn.IResolvable;
-  /**
-  * quota block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#quota ObservabilityPipeline#quota}
-  */
-  readonly quota?: ObservabilityPipelineConfigProcessorGroupProcessorQuota[] | cdktn.IResolvable;
-  /**
-  * reduce block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#reduce ObservabilityPipeline#reduce}
-  */
-  readonly reduce?: ObservabilityPipelineConfigProcessorGroupProcessorReduce[] | cdktn.IResolvable;
-  /**
-  * remove_fields block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#remove_fields ObservabilityPipeline#remove_fields}
-  */
-  readonly removeFields?: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields[] | cdktn.IResolvable;
-  /**
-  * rename_fields block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#rename_fields ObservabilityPipeline#rename_fields}
-  */
-  readonly renameFields?: ObservabilityPipelineConfigProcessorGroupProcessorRenameFields[] | cdktn.IResolvable;
-  /**
-  * sample block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sample ObservabilityPipeline#sample}
-  */
-  readonly sample?: ObservabilityPipelineConfigProcessorGroupProcessorSample[] | cdktn.IResolvable;
-  /**
-  * sensitive_data_scanner block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#sensitive_data_scanner ObservabilityPipeline#sensitive_data_scanner}
-  */
-  readonly sensitiveDataScanner?: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScanner[] | cdktn.IResolvable;
-  /**
-  * split_array block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#split_array ObservabilityPipeline#split_array}
-  */
-  readonly splitArray?: ObservabilityPipelineConfigProcessorGroupProcessorSplitArray[] | cdktn.IResolvable;
-  /**
-  * throttle block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#throttle ObservabilityPipeline#throttle}
-  */
-  readonly throttle?: ObservabilityPipelineConfigProcessorGroupProcessorThrottle[] | cdktn.IResolvable;
-}
-
-export function observabilityPipelineConfigProcessorGroupProcessorToTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessor | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    display_name: cdktn.stringToTerraform(struct!.displayName),
-    enabled: cdktn.booleanToTerraform(struct!.enabled),
-    id: cdktn.stringToTerraform(struct!.id),
-    include: cdktn.stringToTerraform(struct!.include),
-    add_env_vars: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsToTerraform, true)(struct!.addEnvVars),
-    add_fields: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorAddFieldsToTerraform, true)(struct!.addFields),
-    add_hostname: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorAddHostnameToTerraform, true)(struct!.addHostname),
-    custom_processor: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorCustomProcessorToTerraform, true)(struct!.customProcessor),
-    datadog_tags: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorDatadogTagsToTerraform, true)(struct!.datadogTags),
-    dedupe: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorDedupeToTerraform, true)(struct!.dedupe),
-    enrichment_table: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableToTerraform, true)(struct!.enrichmentTable),
-    filter: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorFilterToTerraform, true)(struct!.filter),
-    generate_datadog_metrics: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsToTerraform, true)(struct!.generateDatadogMetrics),
-    metric_tags: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorMetricTagsToTerraform, true)(struct!.metricTags),
-    ocsf_mapper: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorOcsfMapperToTerraform, true)(struct!.ocsfMapper),
-    parse_grok: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorParseGrokToTerraform, true)(struct!.parseGrok),
-    parse_json: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorParseJsonToTerraform, true)(struct!.parseJson),
-    parse_xml: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorParseXmlToTerraform, true)(struct!.parseXml),
-    quota: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorQuotaToTerraform, true)(struct!.quota),
-    reduce: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorReduceToTerraform, true)(struct!.reduce),
-    remove_fields: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToTerraform, true)(struct!.removeFields),
-    rename_fields: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorRenameFieldsToTerraform, true)(struct!.renameFields),
-    sample: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorSampleToTerraform, true)(struct!.sample),
-    sensitive_data_scanner: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerToTerraform, true)(struct!.sensitiveDataScanner),
-    split_array: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorSplitArrayToTerraform, true)(struct!.splitArray),
-    throttle: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorThrottleToTerraform, true)(struct!.throttle),
-  }
-}
-
-
-export function observabilityPipelineConfigProcessorGroupProcessorToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroupProcessor | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    display_name: {
-      value: cdktn.stringToHclTerraform(struct!.displayName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    enabled: {
-      value: cdktn.booleanToHclTerraform(struct!.enabled),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    id: {
-      value: cdktn.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    include: {
-      value: cdktn.stringToHclTerraform(struct!.include),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    add_env_vars: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorAddEnvVarsToHclTerraform, true)(struct!.addEnvVars),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsList",
-    },
-    add_fields: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorAddFieldsToHclTerraform, true)(struct!.addFields),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsList",
-    },
-    add_hostname: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorAddHostnameToHclTerraform, true)(struct!.addHostname),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorAddHostnameList",
-    },
-    custom_processor: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorCustomProcessorToHclTerraform, true)(struct!.customProcessor),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorList",
-    },
-    datadog_tags: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorDatadogTagsToHclTerraform, true)(struct!.datadogTags),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsList",
-    },
-    dedupe: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorDedupeToHclTerraform, true)(struct!.dedupe),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorDedupeList",
-    },
-    enrichment_table: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorEnrichmentTableToHclTerraform, true)(struct!.enrichmentTable),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableList",
-    },
-    filter: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorFilterToHclTerraform, true)(struct!.filter),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorFilterList",
-    },
-    generate_datadog_metrics: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsToHclTerraform, true)(struct!.generateDatadogMetrics),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsList",
-    },
-    metric_tags: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorMetricTagsToHclTerraform, true)(struct!.metricTags),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsList",
-    },
-    ocsf_mapper: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorOcsfMapperToHclTerraform, true)(struct!.ocsfMapper),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperList",
-    },
-    parse_grok: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorParseGrokToHclTerraform, true)(struct!.parseGrok),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorParseGrokList",
-    },
-    parse_json: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorParseJsonToHclTerraform, true)(struct!.parseJson),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorParseJsonList",
-    },
-    parse_xml: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorParseXmlToHclTerraform, true)(struct!.parseXml),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorParseXmlList",
-    },
-    quota: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorQuotaToHclTerraform, true)(struct!.quota),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorQuotaList",
-    },
-    reduce: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorReduceToHclTerraform, true)(struct!.reduce),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorReduceList",
-    },
-    remove_fields: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorRemoveFieldsToHclTerraform, true)(struct!.removeFields),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsList",
-    },
-    rename_fields: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorRenameFieldsToHclTerraform, true)(struct!.renameFields),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsList",
-    },
-    sample: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorSampleToHclTerraform, true)(struct!.sample),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorSampleList",
-    },
-    sensitive_data_scanner: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerToHclTerraform, true)(struct!.sensitiveDataScanner),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerList",
-    },
-    split_array: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorSplitArrayToHclTerraform, true)(struct!.splitArray),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayList",
-    },
-    throttle: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorThrottleToHclTerraform, true)(struct!.throttle),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorThrottleList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigProcessorGroupProcessorOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigProcessorGroupProcessor | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._displayName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.displayName = this._displayName;
-    }
-    if (this._enabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enabled = this._enabled;
-    }
-    if (this._id !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.id = this._id;
-    }
-    if (this._include !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.include = this._include;
-    }
-    if (this._addEnvVars?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.addEnvVars = this._addEnvVars?.internalValue;
-    }
-    if (this._addFields?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.addFields = this._addFields?.internalValue;
-    }
-    if (this._addHostname?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.addHostname = this._addHostname?.internalValue;
-    }
-    if (this._customProcessor?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.customProcessor = this._customProcessor?.internalValue;
-    }
-    if (this._datadogTags?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.datadogTags = this._datadogTags?.internalValue;
-    }
-    if (this._dedupe?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.dedupe = this._dedupe?.internalValue;
-    }
-    if (this._enrichmentTable?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enrichmentTable = this._enrichmentTable?.internalValue;
-    }
-    if (this._filter?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.filter = this._filter?.internalValue;
-    }
-    if (this._generateDatadogMetrics?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.generateDatadogMetrics = this._generateDatadogMetrics?.internalValue;
-    }
-    if (this._metricTags?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.metricTags = this._metricTags?.internalValue;
-    }
-    if (this._ocsfMapper?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.ocsfMapper = this._ocsfMapper?.internalValue;
-    }
-    if (this._parseGrok?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parseGrok = this._parseGrok?.internalValue;
-    }
-    if (this._parseJson?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parseJson = this._parseJson?.internalValue;
-    }
-    if (this._parseXml?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parseXml = this._parseXml?.internalValue;
-    }
-    if (this._quota?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.quota = this._quota?.internalValue;
-    }
-    if (this._reduce?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.reduce = this._reduce?.internalValue;
-    }
-    if (this._removeFields?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.removeFields = this._removeFields?.internalValue;
-    }
-    if (this._renameFields?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.renameFields = this._renameFields?.internalValue;
-    }
-    if (this._sample?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sample = this._sample?.internalValue;
-    }
-    if (this._sensitiveDataScanner?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sensitiveDataScanner = this._sensitiveDataScanner?.internalValue;
-    }
-    if (this._splitArray?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.splitArray = this._splitArray?.internalValue;
-    }
-    if (this._throttle?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.throttle = this._throttle?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigProcessorGroupProcessor | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._displayName = undefined;
-      this._enabled = undefined;
-      this._id = undefined;
-      this._include = undefined;
-      this._addEnvVars.internalValue = undefined;
-      this._addFields.internalValue = undefined;
-      this._addHostname.internalValue = undefined;
-      this._customProcessor.internalValue = undefined;
-      this._datadogTags.internalValue = undefined;
-      this._dedupe.internalValue = undefined;
-      this._enrichmentTable.internalValue = undefined;
-      this._filter.internalValue = undefined;
-      this._generateDatadogMetrics.internalValue = undefined;
-      this._metricTags.internalValue = undefined;
-      this._ocsfMapper.internalValue = undefined;
-      this._parseGrok.internalValue = undefined;
-      this._parseJson.internalValue = undefined;
-      this._parseXml.internalValue = undefined;
-      this._quota.internalValue = undefined;
-      this._reduce.internalValue = undefined;
-      this._removeFields.internalValue = undefined;
-      this._renameFields.internalValue = undefined;
-      this._sample.internalValue = undefined;
-      this._sensitiveDataScanner.internalValue = undefined;
-      this._splitArray.internalValue = undefined;
-      this._throttle.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._displayName = value.displayName;
-      this._enabled = value.enabled;
-      this._id = value.id;
-      this._include = value.include;
-      this._addEnvVars.internalValue = value.addEnvVars;
-      this._addFields.internalValue = value.addFields;
-      this._addHostname.internalValue = value.addHostname;
-      this._customProcessor.internalValue = value.customProcessor;
-      this._datadogTags.internalValue = value.datadogTags;
-      this._dedupe.internalValue = value.dedupe;
-      this._enrichmentTable.internalValue = value.enrichmentTable;
-      this._filter.internalValue = value.filter;
-      this._generateDatadogMetrics.internalValue = value.generateDatadogMetrics;
-      this._metricTags.internalValue = value.metricTags;
-      this._ocsfMapper.internalValue = value.ocsfMapper;
-      this._parseGrok.internalValue = value.parseGrok;
-      this._parseJson.internalValue = value.parseJson;
-      this._parseXml.internalValue = value.parseXml;
-      this._quota.internalValue = value.quota;
-      this._reduce.internalValue = value.reduce;
-      this._removeFields.internalValue = value.removeFields;
-      this._renameFields.internalValue = value.renameFields;
-      this._sample.internalValue = value.sample;
-      this._sensitiveDataScanner.internalValue = value.sensitiveDataScanner;
-      this._splitArray.internalValue = value.splitArray;
-      this._throttle.internalValue = value.throttle;
-    }
-  }
-
-  // display_name - computed: false, optional: true, required: false
-  private _displayName?: string; 
-  public get displayName() {
-    return this.getStringAttribute('display_name');
-  }
-  public set displayName(value: string) {
-    this._displayName = value;
-  }
-  public resetDisplayName() {
-    this._displayName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get displayNameInput() {
-    return this._displayName;
-  }
-
-  // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktn.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktn.IResolvable) {
-    this._enabled = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
-  }
-
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-
-  // include - computed: false, optional: false, required: true
-  private _include?: string; 
-  public get include() {
-    return this.getStringAttribute('include');
-  }
-  public set include(value: string) {
-    this._include = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeInput() {
-    return this._include;
-  }
-
-  // add_env_vars - computed: false, optional: true, required: false
-  private _addEnvVars = new ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVarsList(this, "add_env_vars", false);
-  public get addEnvVars() {
-    return this._addEnvVars;
-  }
-  public putAddEnvVars(value: ObservabilityPipelineConfigProcessorGroupProcessorAddEnvVars[] | cdktn.IResolvable) {
-    this._addEnvVars.internalValue = value;
-  }
-  public resetAddEnvVars() {
-    this._addEnvVars.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get addEnvVarsInput() {
-    return this._addEnvVars.internalValue;
-  }
-
-  // add_fields - computed: false, optional: true, required: false
-  private _addFields = new ObservabilityPipelineConfigProcessorGroupProcessorAddFieldsList(this, "add_fields", false);
-  public get addFields() {
-    return this._addFields;
-  }
-  public putAddFields(value: ObservabilityPipelineConfigProcessorGroupProcessorAddFields[] | cdktn.IResolvable) {
-    this._addFields.internalValue = value;
-  }
-  public resetAddFields() {
-    this._addFields.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get addFieldsInput() {
-    return this._addFields.internalValue;
-  }
-
-  // add_hostname - computed: false, optional: true, required: false
-  private _addHostname = new ObservabilityPipelineConfigProcessorGroupProcessorAddHostnameList(this, "add_hostname", false);
-  public get addHostname() {
-    return this._addHostname;
-  }
-  public putAddHostname(value: ObservabilityPipelineConfigProcessorGroupProcessorAddHostname[] | cdktn.IResolvable) {
-    this._addHostname.internalValue = value;
-  }
-  public resetAddHostname() {
-    this._addHostname.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get addHostnameInput() {
-    return this._addHostname.internalValue;
-  }
-
-  // custom_processor - computed: false, optional: true, required: false
-  private _customProcessor = new ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessorList(this, "custom_processor", false);
-  public get customProcessor() {
-    return this._customProcessor;
-  }
-  public putCustomProcessor(value: ObservabilityPipelineConfigProcessorGroupProcessorCustomProcessor[] | cdktn.IResolvable) {
-    this._customProcessor.internalValue = value;
-  }
-  public resetCustomProcessor() {
-    this._customProcessor.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get customProcessorInput() {
-    return this._customProcessor.internalValue;
-  }
-
-  // datadog_tags - computed: false, optional: true, required: false
-  private _datadogTags = new ObservabilityPipelineConfigProcessorGroupProcessorDatadogTagsList(this, "datadog_tags", false);
-  public get datadogTags() {
-    return this._datadogTags;
-  }
-  public putDatadogTags(value: ObservabilityPipelineConfigProcessorGroupProcessorDatadogTags[] | cdktn.IResolvable) {
-    this._datadogTags.internalValue = value;
-  }
-  public resetDatadogTags() {
-    this._datadogTags.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get datadogTagsInput() {
-    return this._datadogTags.internalValue;
-  }
-
-  // dedupe - computed: false, optional: true, required: false
-  private _dedupe = new ObservabilityPipelineConfigProcessorGroupProcessorDedupeList(this, "dedupe", false);
-  public get dedupe() {
-    return this._dedupe;
-  }
-  public putDedupe(value: ObservabilityPipelineConfigProcessorGroupProcessorDedupe[] | cdktn.IResolvable) {
-    this._dedupe.internalValue = value;
-  }
-  public resetDedupe() {
-    this._dedupe.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dedupeInput() {
-    return this._dedupe.internalValue;
-  }
-
-  // enrichment_table - computed: false, optional: true, required: false
-  private _enrichmentTable = new ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTableList(this, "enrichment_table", false);
-  public get enrichmentTable() {
-    return this._enrichmentTable;
-  }
-  public putEnrichmentTable(value: ObservabilityPipelineConfigProcessorGroupProcessorEnrichmentTable[] | cdktn.IResolvable) {
-    this._enrichmentTable.internalValue = value;
-  }
-  public resetEnrichmentTable() {
-    this._enrichmentTable.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enrichmentTableInput() {
-    return this._enrichmentTable.internalValue;
-  }
-
-  // filter - computed: false, optional: true, required: false
-  private _filter = new ObservabilityPipelineConfigProcessorGroupProcessorFilterList(this, "filter", false);
-  public get filter() {
-    return this._filter;
-  }
-  public putFilter(value: ObservabilityPipelineConfigProcessorGroupProcessorFilter[] | cdktn.IResolvable) {
-    this._filter.internalValue = value;
-  }
-  public resetFilter() {
-    this._filter.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get filterInput() {
-    return this._filter.internalValue;
-  }
-
-  // generate_datadog_metrics - computed: false, optional: true, required: false
-  private _generateDatadogMetrics = new ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetricsList(this, "generate_datadog_metrics", false);
-  public get generateDatadogMetrics() {
-    return this._generateDatadogMetrics;
-  }
-  public putGenerateDatadogMetrics(value: ObservabilityPipelineConfigProcessorGroupProcessorGenerateDatadogMetrics[] | cdktn.IResolvable) {
-    this._generateDatadogMetrics.internalValue = value;
-  }
-  public resetGenerateDatadogMetrics() {
-    this._generateDatadogMetrics.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get generateDatadogMetricsInput() {
-    return this._generateDatadogMetrics.internalValue;
-  }
-
-  // metric_tags - computed: false, optional: true, required: false
-  private _metricTags = new ObservabilityPipelineConfigProcessorGroupProcessorMetricTagsList(this, "metric_tags", false);
-  public get metricTags() {
-    return this._metricTags;
-  }
-  public putMetricTags(value: ObservabilityPipelineConfigProcessorGroupProcessorMetricTags[] | cdktn.IResolvable) {
-    this._metricTags.internalValue = value;
-  }
-  public resetMetricTags() {
-    this._metricTags.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get metricTagsInput() {
-    return this._metricTags.internalValue;
-  }
-
-  // ocsf_mapper - computed: false, optional: true, required: false
-  private _ocsfMapper = new ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapperList(this, "ocsf_mapper", false);
-  public get ocsfMapper() {
-    return this._ocsfMapper;
-  }
-  public putOcsfMapper(value: ObservabilityPipelineConfigProcessorGroupProcessorOcsfMapper[] | cdktn.IResolvable) {
-    this._ocsfMapper.internalValue = value;
-  }
-  public resetOcsfMapper() {
-    this._ocsfMapper.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ocsfMapperInput() {
-    return this._ocsfMapper.internalValue;
-  }
-
-  // parse_grok - computed: false, optional: true, required: false
-  private _parseGrok = new ObservabilityPipelineConfigProcessorGroupProcessorParseGrokList(this, "parse_grok", false);
-  public get parseGrok() {
-    return this._parseGrok;
-  }
-  public putParseGrok(value: ObservabilityPipelineConfigProcessorGroupProcessorParseGrok[] | cdktn.IResolvable) {
-    this._parseGrok.internalValue = value;
-  }
-  public resetParseGrok() {
-    this._parseGrok.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parseGrokInput() {
-    return this._parseGrok.internalValue;
-  }
-
-  // parse_json - computed: false, optional: true, required: false
-  private _parseJson = new ObservabilityPipelineConfigProcessorGroupProcessorParseJsonList(this, "parse_json", false);
-  public get parseJson() {
-    return this._parseJson;
-  }
-  public putParseJson(value: ObservabilityPipelineConfigProcessorGroupProcessorParseJson[] | cdktn.IResolvable) {
-    this._parseJson.internalValue = value;
-  }
-  public resetParseJson() {
-    this._parseJson.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parseJsonInput() {
-    return this._parseJson.internalValue;
-  }
-
-  // parse_xml - computed: false, optional: true, required: false
-  private _parseXml = new ObservabilityPipelineConfigProcessorGroupProcessorParseXmlList(this, "parse_xml", false);
-  public get parseXml() {
-    return this._parseXml;
-  }
-  public putParseXml(value: ObservabilityPipelineConfigProcessorGroupProcessorParseXml[] | cdktn.IResolvable) {
-    this._parseXml.internalValue = value;
-  }
-  public resetParseXml() {
-    this._parseXml.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parseXmlInput() {
-    return this._parseXml.internalValue;
-  }
-
-  // quota - computed: false, optional: true, required: false
-  private _quota = new ObservabilityPipelineConfigProcessorGroupProcessorQuotaList(this, "quota", false);
-  public get quota() {
-    return this._quota;
-  }
-  public putQuota(value: ObservabilityPipelineConfigProcessorGroupProcessorQuota[] | cdktn.IResolvable) {
-    this._quota.internalValue = value;
-  }
-  public resetQuota() {
-    this._quota.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get quotaInput() {
-    return this._quota.internalValue;
-  }
-
-  // reduce - computed: false, optional: true, required: false
-  private _reduce = new ObservabilityPipelineConfigProcessorGroupProcessorReduceList(this, "reduce", false);
-  public get reduce() {
-    return this._reduce;
-  }
-  public putReduce(value: ObservabilityPipelineConfigProcessorGroupProcessorReduce[] | cdktn.IResolvable) {
-    this._reduce.internalValue = value;
-  }
-  public resetReduce() {
-    this._reduce.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get reduceInput() {
-    return this._reduce.internalValue;
-  }
-
-  // remove_fields - computed: false, optional: true, required: false
-  private _removeFields = new ObservabilityPipelineConfigProcessorGroupProcessorRemoveFieldsList(this, "remove_fields", false);
-  public get removeFields() {
-    return this._removeFields;
-  }
-  public putRemoveFields(value: ObservabilityPipelineConfigProcessorGroupProcessorRemoveFields[] | cdktn.IResolvable) {
-    this._removeFields.internalValue = value;
-  }
-  public resetRemoveFields() {
-    this._removeFields.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get removeFieldsInput() {
-    return this._removeFields.internalValue;
-  }
-
-  // rename_fields - computed: false, optional: true, required: false
-  private _renameFields = new ObservabilityPipelineConfigProcessorGroupProcessorRenameFieldsList(this, "rename_fields", false);
-  public get renameFields() {
-    return this._renameFields;
-  }
-  public putRenameFields(value: ObservabilityPipelineConfigProcessorGroupProcessorRenameFields[] | cdktn.IResolvable) {
-    this._renameFields.internalValue = value;
-  }
-  public resetRenameFields() {
-    this._renameFields.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get renameFieldsInput() {
-    return this._renameFields.internalValue;
-  }
-
-  // sample - computed: false, optional: true, required: false
-  private _sample = new ObservabilityPipelineConfigProcessorGroupProcessorSampleList(this, "sample", false);
-  public get sample() {
-    return this._sample;
-  }
-  public putSample(value: ObservabilityPipelineConfigProcessorGroupProcessorSample[] | cdktn.IResolvable) {
-    this._sample.internalValue = value;
-  }
-  public resetSample() {
-    this._sample.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sampleInput() {
-    return this._sample.internalValue;
-  }
-
-  // sensitive_data_scanner - computed: false, optional: true, required: false
-  private _sensitiveDataScanner = new ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScannerList(this, "sensitive_data_scanner", false);
-  public get sensitiveDataScanner() {
-    return this._sensitiveDataScanner;
-  }
-  public putSensitiveDataScanner(value: ObservabilityPipelineConfigProcessorGroupProcessorSensitiveDataScanner[] | cdktn.IResolvable) {
-    this._sensitiveDataScanner.internalValue = value;
-  }
-  public resetSensitiveDataScanner() {
-    this._sensitiveDataScanner.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sensitiveDataScannerInput() {
-    return this._sensitiveDataScanner.internalValue;
-  }
-
-  // split_array - computed: false, optional: true, required: false
-  private _splitArray = new ObservabilityPipelineConfigProcessorGroupProcessorSplitArrayList(this, "split_array", false);
-  public get splitArray() {
-    return this._splitArray;
-  }
-  public putSplitArray(value: ObservabilityPipelineConfigProcessorGroupProcessorSplitArray[] | cdktn.IResolvable) {
-    this._splitArray.internalValue = value;
-  }
-  public resetSplitArray() {
-    this._splitArray.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get splitArrayInput() {
-    return this._splitArray.internalValue;
-  }
-
-  // throttle - computed: false, optional: true, required: false
-  private _throttle = new ObservabilityPipelineConfigProcessorGroupProcessorThrottleList(this, "throttle", false);
-  public get throttle() {
-    return this._throttle;
-  }
-  public putThrottle(value: ObservabilityPipelineConfigProcessorGroupProcessorThrottle[] | cdktn.IResolvable) {
-    this._throttle.internalValue = value;
-  }
-  public resetThrottle() {
-    this._throttle.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get throttleInput() {
-    return this._throttle.internalValue;
-  }
-}
-
-export class ObservabilityPipelineConfigProcessorGroupProcessorList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigProcessorGroupProcessor[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigProcessorGroupProcessorOutputReference {
-    return new ObservabilityPipelineConfigProcessorGroupProcessorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ObservabilityPipelineConfigProcessorGroup {
-  /**
-  * A human-friendly name of the processor group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#display_name ObservabilityPipeline#display_name}
-  */
-  readonly displayName?: string;
-  /**
-  * Whether this processor group is enabled.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#enabled ObservabilityPipeline#enabled}
-  */
-  readonly enabled: boolean | cdktn.IResolvable;
-  /**
-  * The unique ID of the processor group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#id ObservabilityPipeline#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-  /**
-  * A Datadog search query used to determine which logs this processor group targets.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#include ObservabilityPipeline#include}
-  */
-  readonly include: string;
-  /**
-  * A list of component IDs whose output is used as the input for this processor group.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#inputs ObservabilityPipeline#inputs}
-  */
-  readonly inputs: string[];
-  /**
-  * processor block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/observability_pipeline#processor ObservabilityPipeline#processor}
-  */
-  readonly processor?: ObservabilityPipelineConfigProcessorGroupProcessor[] | cdktn.IResolvable;
-}
-
-export function observabilityPipelineConfigProcessorGroupToTerraform(struct?: ObservabilityPipelineConfigProcessorGroup | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    display_name: cdktn.stringToTerraform(struct!.displayName),
-    enabled: cdktn.booleanToTerraform(struct!.enabled),
-    id: cdktn.stringToTerraform(struct!.id),
-    include: cdktn.stringToTerraform(struct!.include),
-    inputs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputs),
-    processor: cdktn.listMapper(observabilityPipelineConfigProcessorGroupProcessorToTerraform, true)(struct!.processor),
-  }
-}
-
-
-export function observabilityPipelineConfigProcessorGroupToHclTerraform(struct?: ObservabilityPipelineConfigProcessorGroup | cdktn.IResolvable): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    display_name: {
-      value: cdktn.stringToHclTerraform(struct!.displayName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    enabled: {
-      value: cdktn.booleanToHclTerraform(struct!.enabled),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    id: {
-      value: cdktn.stringToHclTerraform(struct!.id),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    include: {
-      value: cdktn.stringToHclTerraform(struct!.include),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    inputs: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputs),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    processor: {
-      value: cdktn.listMapperHcl(observabilityPipelineConfigProcessorGroupProcessorToHclTerraform, true)(struct!.processor),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ObservabilityPipelineConfigProcessorGroupProcessorList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ObservabilityPipelineConfigProcessorGroupOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): ObservabilityPipelineConfigProcessorGroup | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._displayName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.displayName = this._displayName;
-    }
-    if (this._enabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enabled = this._enabled;
-    }
-    if (this._id !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.id = this._id;
-    }
-    if (this._include !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.include = this._include;
-    }
-    if (this._inputs !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.inputs = this._inputs;
-    }
-    if (this._processor?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.processor = this._processor?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ObservabilityPipelineConfigProcessorGroup | cdktn.IResolvable | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._displayName = undefined;
-      this._enabled = undefined;
-      this._id = undefined;
-      this._include = undefined;
-      this._inputs = undefined;
-      this._processor.internalValue = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._displayName = value.displayName;
-      this._enabled = value.enabled;
-      this._id = value.id;
-      this._include = value.include;
-      this._inputs = value.inputs;
-      this._processor.internalValue = value.processor;
-    }
-  }
-
-  // display_name - computed: false, optional: true, required: false
-  private _displayName?: string; 
-  public get displayName() {
-    return this.getStringAttribute('display_name');
-  }
-  public set displayName(value: string) {
-    this._displayName = value;
-  }
-  public resetDisplayName() {
-    this._displayName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get displayNameInput() {
-    return this._displayName;
-  }
-
-  // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktn.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktn.IResolvable) {
-    this._enabled = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
-  }
-
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
-  public get id() {
-    return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
-
-  // include - computed: false, optional: false, required: true
-  private _include?: string; 
-  public get include() {
-    return this.getStringAttribute('include');
-  }
-  public set include(value: string) {
-    this._include = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get includeInput() {
-    return this._include;
-  }
-
-  // inputs - computed: false, optional: false, required: true
-  private _inputs?: string[]; 
-  public get inputs() {
-    return this.getListAttribute('inputs');
-  }
-  public set inputs(value: string[]) {
-    this._inputs = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get inputsInput() {
-    return this._inputs;
-  }
-
-  // processor - computed: false, optional: true, required: false
-  private _processor = new ObservabilityPipelineConfigProcessorGroupProcessorList(this, "processor", false);
-  public get processor() {
-    return this._processor;
-  }
-  public putProcessor(value: ObservabilityPipelineConfigProcessorGroupProcessor[] | cdktn.IResolvable) {
-    this._processor.internalValue = value;
-  }
-  public resetProcessor() {
-    this._processor.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get processorInput() {
-    return this._processor.internalValue;
-  }
-}
-
-export class ObservabilityPipelineConfigProcessorGroupList extends cdktn.ComplexList {
-  public internalValue? : ObservabilityPipelineConfigProcessorGroup[] | cdktn.IResolvable
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): ObservabilityPipelineConfigProcessorGroupOutputReference {
-    return new ObservabilityPipelineConfigProcessorGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }

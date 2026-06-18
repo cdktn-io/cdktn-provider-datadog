@@ -4,7 +4,7 @@
 
 ### CloudInventorySyncConfig <a name="CloudInventorySyncConfig" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config datadog_cloud_inventory_sync_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.cloudInventorySyncConfig.CloudInventorySyncConfig.Initializer"></a>
 
@@ -549,7 +549,7 @@ The construct id used in the generated config for the CloudInventorySyncConfig t
 
 The id of the existing CloudInventorySyncConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,7 +879,7 @@ public string AwsAccountId { get; set; }
 
 AWS Account ID of the account holding the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#aws_account_id CloudInventorySyncConfig#aws_account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#aws_account_id CloudInventorySyncConfig#aws_account_id}
 
 ---
 
@@ -893,7 +893,7 @@ public string DestinationBucketName { get; set; }
 
 Name of the S3 bucket holding the inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
 
 ---
 
@@ -907,7 +907,7 @@ public string DestinationBucketRegion { get; set; }
 
 AWS Region of the bucket holding the inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_bucket_region CloudInventorySyncConfig#destination_bucket_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_bucket_region CloudInventorySyncConfig#destination_bucket_region}
 
 ---
 
@@ -921,7 +921,7 @@ public string DestinationPrefix { get; set; }
 
 Prefix path within the bucket for inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_prefix CloudInventorySyncConfig#destination_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_prefix CloudInventorySyncConfig#destination_prefix}
 
 ---
 
@@ -965,7 +965,7 @@ public string ClientId { get; set; }
 
 Azure Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#client_id CloudInventorySyncConfig#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#client_id CloudInventorySyncConfig#client_id}
 
 ---
 
@@ -979,7 +979,7 @@ public string Container { get; set; }
 
 Azure Storage Container name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#container CloudInventorySyncConfig#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#container CloudInventorySyncConfig#container}
 
 ---
 
@@ -993,7 +993,7 @@ public string ResourceGroup { get; set; }
 
 Azure Resource Group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#resource_group CloudInventorySyncConfig#resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#resource_group CloudInventorySyncConfig#resource_group}
 
 ---
 
@@ -1007,7 +1007,7 @@ public string StorageAccount { get; set; }
 
 Azure Storage Account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#storage_account CloudInventorySyncConfig#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#storage_account CloudInventorySyncConfig#storage_account}
 
 ---
 
@@ -1021,7 +1021,7 @@ public string SubscriptionId { get; set; }
 
 Azure Subscription ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#subscription_id CloudInventorySyncConfig#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#subscription_id CloudInventorySyncConfig#subscription_id}
 
 ---
 
@@ -1035,7 +1035,7 @@ public string TenantId { get; set; }
 
 Azure Tenant ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#tenant_id CloudInventorySyncConfig#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#tenant_id CloudInventorySyncConfig#tenant_id}
 
 ---
 
@@ -1159,7 +1159,7 @@ public string CloudProvider { get; set; }
 
 The cloud provider type. Valid values are `aws`, `azure`, `gcp`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#cloud_provider CloudInventorySyncConfig#cloud_provider}
 
 ---
 
@@ -1173,7 +1173,7 @@ public CloudInventorySyncConfigAws Aws { get; set; }
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#aws CloudInventorySyncConfig#aws}
 
 ---
 
@@ -1187,7 +1187,7 @@ public CloudInventorySyncConfigAzure Azure { get; set; }
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#azure CloudInventorySyncConfig#azure}
 
 ---
 
@@ -1201,7 +1201,7 @@ public CloudInventorySyncConfigGcp Gcp { get; set; }
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#gcp CloudInventorySyncConfig#gcp}
 
 ---
 
@@ -1241,7 +1241,7 @@ public string DestinationBucketName { get; set; }
 
 Name of the GCS bucket holding the inventory files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#destination_bucket_name CloudInventorySyncConfig#destination_bucket_name}
 
 ---
 
@@ -1255,7 +1255,7 @@ public string ProjectId { get; set; }
 
 GCP Project ID of the project holding the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#project_id CloudInventorySyncConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#project_id CloudInventorySyncConfig#project_id}
 
 ---
 
@@ -1269,7 +1269,7 @@ public string ServiceAccountEmail { get; set; }
 
 Service account email used for reading the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#service_account_email CloudInventorySyncConfig#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#service_account_email CloudInventorySyncConfig#service_account_email}
 
 ---
 
@@ -1283,7 +1283,7 @@ public string SourceBucketName { get; set; }
 
 Name of the source bucket the inventory report is generated for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/cloud_inventory_sync_config#source_bucket_name CloudInventorySyncConfig#source_bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/cloud_inventory_sync_config#source_bucket_name CloudInventorySyncConfig#source_bucket_name}
 
 ---
 

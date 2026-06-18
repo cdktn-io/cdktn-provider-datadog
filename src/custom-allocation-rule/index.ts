@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface CustomAllocationRuleConfig extends cdktn.TerraformMetaArguments
   /**
   * Whether the custom allocation rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#enabled CustomAllocationRule#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * List of cloud providers the rule applies to. Valid values include `aws`, `azure`, and `gcp`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#providernames CustomAllocationRule#providernames}
   */
   readonly providernames: string[];
   /**
   * The name of the custom allocation rule. This field is immutable - changing it will force replacement of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#rule_name CustomAllocationRule#rule_name}
   */
   readonly ruleName: string;
   /**
   * costs_to_allocate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#costs_to_allocate CustomAllocationRule#costs_to_allocate}
   */
   readonly costsToAllocate?: CustomAllocationRuleCostsToAllocate[] | cdktn.IResolvable;
   /**
   * strategy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#strategy CustomAllocationRule#strategy}
   */
   readonly strategy?: CustomAllocationRuleStrategy;
 }
@@ -47,25 +47,25 @@ export interface CustomAllocationRuleCostsToAllocate {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to filter on (e.g., `aws_product`, `team`, `environment`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to match. Use this field for conditions like `=`, `!=`, `is`, `is not`, `like`. Do not use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to match. Use this field for `in` or `not in` conditions only. Do not use with single-value conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
@@ -73,7 +73,7 @@ export interface CustomAllocationRuleCostsToAllocate {
 export function customAllocationRuleCostsToAllocateToTerraform(struct?: CustomAllocationRuleCostsToAllocate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: cdktn.stringToTerraform(struct!.condition),
@@ -87,7 +87,7 @@ export function customAllocationRuleCostsToAllocateToTerraform(struct?: CustomAl
 export function customAllocationRuleCostsToAllocateToHclTerraform(struct?: CustomAllocationRuleCostsToAllocate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -270,13 +270,13 @@ export interface CustomAllocationRuleStrategyAllocatedByAllocatedTags {
   /**
   * The tag key to allocate costs to (e.g., `team`, `environment`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#key CustomAllocationRule#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#key CustomAllocationRule#key}
   */
   readonly key?: string;
   /**
   * The tag value to allocate costs to (e.g., `backend`, `production`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
 }
@@ -284,7 +284,7 @@ export interface CustomAllocationRuleStrategyAllocatedByAllocatedTags {
 export function customAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform(struct?: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -296,7 +296,7 @@ export function customAllocationRuleStrategyAllocatedByAllocatedTagsToTerraform(
 export function customAllocationRuleStrategyAllocatedByAllocatedTagsToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedByAllocatedTags | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -423,13 +423,13 @@ export interface CustomAllocationRuleStrategyAllocatedBy {
   /**
   * The percentage of costs to allocate to this target as a decimal (e.g., 0.33 for 33%). Used when `method` is `percent`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#percentage CustomAllocationRule#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#percentage CustomAllocationRule#percentage}
   */
   readonly percentage?: number;
   /**
   * allocated_tags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#allocated_tags CustomAllocationRule#allocated_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#allocated_tags CustomAllocationRule#allocated_tags}
   */
   readonly allocatedTags?: CustomAllocationRuleStrategyAllocatedByAllocatedTags[] | cdktn.IResolvable;
 }
@@ -437,7 +437,7 @@ export interface CustomAllocationRuleStrategyAllocatedBy {
 export function customAllocationRuleStrategyAllocatedByToTerraform(struct?: CustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     percentage: cdktn.numberToTerraform(struct!.percentage),
@@ -449,7 +449,7 @@ export function customAllocationRuleStrategyAllocatedByToTerraform(struct?: Cust
 export function customAllocationRuleStrategyAllocatedByToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     percentage: {
@@ -576,25 +576,25 @@ export interface CustomAllocationRuleStrategyAllocatedByFilters {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to filter on for allocation targets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to match for allocation. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to match for allocation. Use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
@@ -602,7 +602,7 @@ export interface CustomAllocationRuleStrategyAllocatedByFilters {
 export function customAllocationRuleStrategyAllocatedByFiltersToTerraform(struct?: CustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: cdktn.stringToTerraform(struct!.condition),
@@ -616,7 +616,7 @@ export function customAllocationRuleStrategyAllocatedByFiltersToTerraform(struct
 export function customAllocationRuleStrategyAllocatedByFiltersToHclTerraform(struct?: CustomAllocationRuleStrategyAllocatedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -799,25 +799,25 @@ export interface CustomAllocationRuleStrategyBasedOnCosts {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to use as the basis for cost allocation calculations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to use for cost calculations. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to use for cost calculations. Use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
@@ -825,7 +825,7 @@ export interface CustomAllocationRuleStrategyBasedOnCosts {
 export function customAllocationRuleStrategyBasedOnCostsToTerraform(struct?: CustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: cdktn.stringToTerraform(struct!.condition),
@@ -839,7 +839,7 @@ export function customAllocationRuleStrategyBasedOnCostsToTerraform(struct?: Cus
 export function customAllocationRuleStrategyBasedOnCostsToHclTerraform(struct?: CustomAllocationRuleStrategyBasedOnCosts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -1024,7 +1024,7 @@ export interface CustomAllocationRuleStrategyBasedOnTimeseries {
 export function customAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct?: CustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1034,7 +1034,7 @@ export function customAllocationRuleStrategyBasedOnTimeseriesToTerraform(struct?
 export function customAllocationRuleStrategyBasedOnTimeseriesToHclTerraform(struct?: CustomAllocationRuleStrategyBasedOnTimeseries | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1081,25 +1081,25 @@ export interface CustomAllocationRuleStrategyEvaluateGroupedByFilters {
   /**
   * The condition to match. Valid values are `=`, `!=`, `is`, `is not`, `like`, `in`, `not in`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#condition CustomAllocationRule#condition}
   */
   readonly condition?: string;
   /**
   * The tag key to filter on when grouping costs for evaluation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#tag CustomAllocationRule#tag}
   */
   readonly tag?: string;
   /**
   * The single tag value to match when grouping. Use with conditions like `=`, `!=`, `is`, `is not`, `like`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#value CustomAllocationRule#value}
   */
   readonly value?: string;
   /**
   * A list of tag values to match when grouping. Use with `in` or `not in` conditions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#values CustomAllocationRule#values}
   */
   readonly values?: string[];
 }
@@ -1107,7 +1107,7 @@ export interface CustomAllocationRuleStrategyEvaluateGroupedByFilters {
 export function customAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform(struct?: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: cdktn.stringToTerraform(struct!.condition),
@@ -1121,7 +1121,7 @@ export function customAllocationRuleStrategyEvaluateGroupedByFiltersToTerraform(
 export function customAllocationRuleStrategyEvaluateGroupedByFiltersToHclTerraform(struct?: CustomAllocationRuleStrategyEvaluateGroupedByFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -1304,55 +1304,55 @@ export interface CustomAllocationRuleStrategy {
   /**
   * List of tag keys used to allocate costs (e.g., `["team", "project"]`). Costs will be distributed across unique values of these tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#allocated_by_tag_keys CustomAllocationRule#allocated_by_tag_keys}
   */
   readonly allocatedByTagKeys?: string[];
   /**
   * List of tag keys used to group costs before allocation. Costs are grouped by these tag values before applying the allocation strategy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_tag_keys CustomAllocationRule#evaluate_grouped_by_tag_keys}
   */
   readonly evaluateGroupedByTagKeys?: string[];
   /**
   * The granularity level for cost allocation. Valid values are `daily` or `monthly`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#granularity CustomAllocationRule#granularity}
   */
   readonly granularity?: string;
   /**
   * The allocation method. Valid values are `even`, `proportional`, `proportional_timeseries`, or `percent`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#method CustomAllocationRule#method}
   */
   readonly method?: string;
   /**
   * allocated_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#allocated_by CustomAllocationRule#allocated_by}
   */
   readonly allocatedBy?: CustomAllocationRuleStrategyAllocatedBy[] | cdktn.IResolvable;
   /**
   * allocated_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#allocated_by_filters CustomAllocationRule#allocated_by_filters}
   */
   readonly allocatedByFilters?: CustomAllocationRuleStrategyAllocatedByFilters[] | cdktn.IResolvable;
   /**
   * based_on_costs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#based_on_costs CustomAllocationRule#based_on_costs}
   */
   readonly basedOnCosts?: CustomAllocationRuleStrategyBasedOnCosts[] | cdktn.IResolvable;
   /**
   * based_on_timeseries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#based_on_timeseries CustomAllocationRule#based_on_timeseries}
   */
   readonly basedOnTimeseries?: CustomAllocationRuleStrategyBasedOnTimeseries;
   /**
   * evaluate_grouped_by_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#evaluate_grouped_by_filters CustomAllocationRule#evaluate_grouped_by_filters}
   */
   readonly evaluateGroupedByFilters?: CustomAllocationRuleStrategyEvaluateGroupedByFilters[] | cdktn.IResolvable;
 }
@@ -1360,7 +1360,7 @@ export interface CustomAllocationRuleStrategy {
 export function customAllocationRuleStrategyToTerraform(struct?: CustomAllocationRuleStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allocated_by_tag_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allocatedByTagKeys),
@@ -1379,7 +1379,7 @@ export function customAllocationRuleStrategyToTerraform(struct?: CustomAllocatio
 export function customAllocationRuleStrategyToHclTerraform(struct?: CustomAllocationRuleStrategy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allocated_by_tag_keys: {
@@ -1675,7 +1675,7 @@ export class CustomAllocationRuleStrategyOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule datadog_custom_allocation_rule}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule}
 */
 export class CustomAllocationRule extends cdktn.TerraformResource {
 
@@ -1691,7 +1691,7 @@ export class CustomAllocationRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CustomAllocationRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomAllocationRule to import
-  * @param importFromId The id of the existing CustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomAllocationRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomAllocationRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1703,7 +1703,7 @@ export class CustomAllocationRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/custom_allocation_rule datadog_custom_allocation_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/custom_allocation_rule datadog_custom_allocation_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1714,7 +1714,7 @@ export class CustomAllocationRule extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_custom_allocation_rule',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

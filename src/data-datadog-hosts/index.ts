@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface DataDatadogHostsConfig extends cdktn.TerraformMetaArguments {
   /**
   * String to filter search results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts#filter DataDatadogHosts#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts#filter DataDatadogHosts#filter}
   */
   readonly filter?: string;
   /**
   * Number of seconds since UNIX epoch from which you want to search your hosts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts#from DataDatadogHosts#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts#from DataDatadogHosts#from}
   */
   readonly from?: number;
   /**
   * Include information on the muted status of hosts and when the mute expires.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts#include_muted_hosts_data DataDatadogHosts#include_muted_hosts_data}
   */
   readonly includeMutedHostsData?: boolean | cdktn.IResolvable;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts#sort_dir DataDatadogHosts#sort_dir}
   */
   readonly sortDir?: string;
   /**
   * Sort hosts by this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts#sort_field DataDatadogHosts#sort_field}
   */
   readonly sortField?: string;
 }
@@ -49,7 +49,7 @@ export interface DataDatadogHostsHostListMeta {
 export function dataDatadogHostsHostListMetaToTerraform(struct?: DataDatadogHostsHostListMeta): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -59,7 +59,7 @@ export function dataDatadogHostsHostListMetaToTerraform(struct?: DataDatadogHost
 export function dataDatadogHostsHostListMetaToHclTerraform(struct?: DataDatadogHostsHostListMeta): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -143,7 +143,7 @@ export interface DataDatadogHostsHostListMetrics {
 export function dataDatadogHostsHostListMetricsToTerraform(struct?: DataDatadogHostsHostListMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -153,7 +153,7 @@ export function dataDatadogHostsHostListMetricsToTerraform(struct?: DataDatadogH
 export function dataDatadogHostsHostListMetricsToHclTerraform(struct?: DataDatadogHostsHostListMetrics): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -207,7 +207,7 @@ export interface DataDatadogHostsHostListStruct {
 export function dataDatadogHostsHostListStructToTerraform(struct?: DataDatadogHostsHostListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -217,7 +217,7 @@ export function dataDatadogHostsHostListStructToTerraform(struct?: DataDatadogHo
 export function dataDatadogHostsHostListStructToHclTerraform(struct?: DataDatadogHostsHostListStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -346,7 +346,7 @@ export class DataDatadogHostsHostListStructList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts datadog_hosts}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts datadog_hosts}
 */
 export class DataDatadogHosts extends cdktn.TerraformDataSource {
 
@@ -362,7 +362,7 @@ export class DataDatadogHosts extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogHosts resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogHosts to import
-  * @param importFromId The id of the existing DataDatadogHosts that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogHosts that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogHosts to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -374,7 +374,7 @@ export class DataDatadogHosts extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/hosts datadog_hosts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/hosts datadog_hosts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -385,7 +385,7 @@ export class DataDatadogHosts extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_hosts',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

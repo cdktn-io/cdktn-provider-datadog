@@ -4,7 +4,7 @@
 
 ### DataDatadogSecurityMonitoringCriticalAssets <a name="DataDatadogSecurityMonitoringCriticalAssets" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/security_monitoring_critical_assets datadog_security_monitoring_critical_assets}.
+Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_assets datadog_security_monitoring_critical_assets}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-datadog.dataDatadogSecurityMonitoringCriticalAssets.DataDatadogSecurityMonitoringCriticalAssets.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataDatadogSecurityMonitor
 
 The id of the existing DataDatadogSecurityMonitoringCriticalAssets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/security_monitoring_critical_assets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/security_monitoring_critical_assets#import import section} in the documentation of this resource for the id to use
 
 ---
 

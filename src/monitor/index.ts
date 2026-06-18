@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the monitor is in a draft or published state. When set to `draft`, the monitor appears as Draft and does not send notifications. When set to `published`, the monitor is active, and it evaluates conditions and sends notifications as configured. Valid values are `draft`, `published`. Defaults to `"published"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#draft_status Monitor#draft_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#draft_status Monitor#draft_status}
   */
   readonly draftStatus?: string;
   /**
   * A boolean indicating whether or not to include a list of log values which triggered the alert. This is only used by log monitors. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#enable_logs_sample Monitor#enable_logs_sample}
   */
   readonly enableLogsSample?: boolean | cdktn.IResolvable;
   /**
   * Whether or not a list of samples which triggered the alert is included. This is only used by CI Test and Pipeline monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#enable_samples Monitor#enable_samples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#enable_samples Monitor#enable_samples}
   */
   readonly enableSamples?: boolean | cdktn.IResolvable;
   /**
   * A message to include with a re-notification. Supports the `@username` notification allowed elsewhere.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#escalation_message Monitor#escalation_message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#escalation_message Monitor#escalation_message}
   */
   readonly escalationMessage?: string;
   /**
@@ -41,29 +41,29 @@ export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   * 
   * For example, if the value is set to `300` (5min), the `timeframe` is set to `last_5m` and the time is 7:00, the monitor will evaluate data from 6:50 to 6:55. This is useful for AWS CloudWatch and other backfilled metrics to ensure the monitor will always have data during evaluation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#evaluation_delay Monitor#evaluation_delay}
   */
   readonly evaluationDelay?: number;
   /**
   * A boolean indicating whether this monitor can be deleted even if it’s referenced by other resources (e.g. SLO, composite monitor).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#force_delete Monitor#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#force_delete Monitor#force_delete}
   */
   readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * The time span after which groups with missing data are dropped from the monitor state. The minimum value is one hour, and the maximum value is 72 hours. Example values are: 60m, 1h, and 2d. This option is only available for APM Trace Analytics, Audit Trail, CI, Error Tracking, Event, Logs, and RUM monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_retention_duration Monitor#group_retention_duration}
   */
   readonly groupRetentionDuration?: string;
   /**
   * Whether or not to trigger one alert if any source breaches a threshold. This is only used by log monitors. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#groupby_simple_monitor Monitor#groupby_simple_monitor}
   */
   readonly groupbySimpleMonitor?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#id Monitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#id Monitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -72,7 +72,7 @@ export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * A boolean indicating whether notifications from this monitor automatically insert its triggering tags into the title. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#include_tags Monitor#include_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#include_tags Monitor#include_tags}
   */
   readonly includeTags?: boolean | cdktn.IResolvable;
   /**
@@ -80,13 +80,13 @@ export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   * 
   * Email notifications can be sent to specific users by using the same `@username` notation as events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#message Monitor#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#message Monitor#message}
   */
   readonly message: string;
   /**
   * Name of Datadog monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
@@ -94,13 +94,13 @@ export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   * 
   * `new_group_delay` overrides `new_host_delay` if it is set to a nonzero value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#new_group_delay Monitor#new_group_delay}
   */
   readonly newGroupDelay?: number;
   /**
   * **Deprecated**. See `new_group_delay`. Time (in seconds) to allow a host to boot and applications to fully start before starting the evaluation of monitor results. Should be a non-negative integer. This value is ignored for simple monitors and monitors not grouped by host. The only case when this should be used is to override the default and set `new_host_delay` to zero for monitors grouped by host. **Deprecated.** Use `new_group_delay` except when setting `new_host_delay` to zero. Defaults to `300`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#new_host_delay Monitor#new_host_delay}
   */
   readonly newHostDelay?: number;
   /**
@@ -108,43 +108,43 @@ export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   * 
   * We recommend at least 2x the monitor timeframe for metric alerts or 2 minutes for service checks. Defaults to `10`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#no_data_timeframe Monitor#no_data_timeframe}
   */
   readonly noDataTimeframe?: number;
   /**
   * Toggles the display of additional content sent in the monitor notification. Valid values are `show_all`, `hide_query`, `hide_handles`, `hide_all`, `hide_query_and_handles`, `show_only_snapshot`, `hide_handles_and_footer`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#notification_preset_name Monitor#notification_preset_name}
   */
   readonly notificationPresetName?: string;
   /**
   * A boolean indicating whether tagged users will be notified on changes to this monitor. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#notify_audit Monitor#notify_audit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#notify_audit Monitor#notify_audit}
   */
   readonly notifyAudit?: boolean | cdktn.IResolvable;
   /**
   * Controls what granularity a monitor alerts on. Only available for monitors with groupings. For instance, a monitor grouped by `cluster`, `namespace`, and `pod` can be configured to only notify on each new `cluster` violating the alert conditions by setting `notify_by` to `['cluster']`. Tags mentioned in `notify_by` must be a subset of the grouping tags in the query. For example, a query grouped by `cluster` and `namespace` cannot notify on `region`. Setting `notify_by` to `[*]` configures the monitor to notify as a simple-alert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#notify_by Monitor#notify_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#notify_by Monitor#notify_by}
   */
   readonly notifyBy?: string[];
   /**
   * A boolean indicating whether this monitor will notify when data stops reporting. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#notify_no_data Monitor#notify_no_data}
   */
   readonly notifyNoData?: boolean | cdktn.IResolvable;
   /**
   * Controls how groups or monitors are treated if an evaluation does not return any data points. The default option results in different behavior depending on the monitor query type. For monitors using `Count` queries, an empty monitor evaluation is treated as 0 and is compared to the threshold conditions. For monitors using any query type other than `Count`, for example `Gauge`, `Measure`, or `Rate`, the monitor shows the last known status. This option is not available for Service Check, Composite, or SLO monitors. Valid values are: `show_no_data`, `show_and_notify_no_data`, `resolve`, and `default`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#on_missing_data Monitor#on_missing_data}
   */
   readonly onMissingData?: string;
   /**
   * Integer from 1 (high) to 5 (low) indicating alert severity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#priority Monitor#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#priority Monitor#priority}
   */
   readonly priority?: string;
   /**
@@ -152,91 +152,91 @@ export interface MonitorConfig extends cdktn.TerraformMetaArguments {
   * 
   * **Note:** APM latency data is now available as Distribution Metrics. Existing monitors have been migrated automatically but all terraformed monitors can still use the existing metrics. We strongly recommend updating monitor definitions to query the new metrics. To learn more, or to see examples of how to update your terraform definitions to utilize the new distribution metrics, see the [detailed doc](https://docs.datadoghq.com/tracing/guide/ddsketch_trace_metrics/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
   /**
   * The number of minutes after the last notification before a monitor will re-notify on the current status. It will only re-notify if it's not resolved.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#renotify_interval Monitor#renotify_interval}
   */
   readonly renotifyInterval?: number;
   /**
   * The number of re-notification messages that should be sent on the current status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#renotify_occurrences Monitor#renotify_occurrences}
   */
   readonly renotifyOccurrences?: number;
   /**
   * The types of statuses for which re-notification messages should be sent. Valid values are `alert`, `warn`, `no data`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#renotify_statuses Monitor#renotify_statuses}
   */
   readonly renotifyStatuses?: string[];
   /**
   * A boolean indicating whether this monitor needs a full window of data before it's evaluated. Datadog strongly recommends you set this to `false` for sparse metrics, otherwise some evaluations may be skipped. If there's a custom_schedule set, `require_full_window` must be false and will be ignored. Defaults to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#require_full_window Monitor#require_full_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#require_full_window Monitor#require_full_window}
   */
   readonly requireFullWindow?: boolean | cdktn.IResolvable;
   /**
   * A list of unique role identifiers to define which roles are allowed to edit the monitor. Editing a monitor includes any updates to the monitor configuration, monitor deletion, and muting of the monitor for any amount of time. Roles unique identifiers can be pulled from the [Roles API](https://docs.datadoghq.com/api/latest/roles/#list-roles) in the `data.id` field. **Deprecated.** Use `datadog_restriction_policy` resource to manage permission.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#restricted_roles Monitor#restricted_roles}
   */
   readonly restrictedRoles?: string[];
   /**
   * A list of tags to associate with your monitor. This can help you categorize and filter monitors in the manage monitors page of the UI. Note: it's not currently possible to filter by these tags when querying via the API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#tags Monitor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#tags Monitor#tags}
   */
   readonly tags?: string[];
   /**
   * The number of hours of the monitor not reporting data before it automatically resolves from a triggered state. The minimum allowed value is 0 hours. The maximum allowed value is 24 hours.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#timeout_h Monitor#timeout_h}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#timeout_h Monitor#timeout_h}
   */
   readonly timeoutH?: number;
   /**
   * The type of the monitor. The mapping from these types to the types found in the Datadog Web UI can be found in the Datadog API [documentation page](https://docs.datadoghq.com/api/v1/monitors/#create-a-monitor). Note: The monitor type cannot be changed after a monitor is created. Valid values are `composite`, `event alert`, `log alert`, `metric alert`, `process alert`, `query alert`, `rum alert`, `service check`, `synthetics alert`, `trace-analytics alert`, `slo alert`, `event-v2 alert`, `audit alert`, `ci-pipelines alert`, `ci-tests alert`, `error-tracking alert`, `database-monitoring alert`, `network-performance alert`, `cost alert`, `data-quality alert`, `network-path alert`, `data-jobs alert`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#type Monitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#type Monitor#type}
   */
   readonly type: string;
   /**
   * If set to `false`, skip the validation call done during plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#validate Monitor#validate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#validate Monitor#validate}
   */
   readonly validate?: boolean | cdktn.IResolvable;
   /**
   * assets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#assets Monitor#assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#assets Monitor#assets}
   */
   readonly assets?: MonitorAssets[] | cdktn.IResolvable;
   /**
   * monitor_threshold_windows block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#monitor_threshold_windows Monitor#monitor_threshold_windows}
   */
   readonly monitorThresholdWindows?: MonitorMonitorThresholdWindows;
   /**
   * monitor_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#monitor_thresholds Monitor#monitor_thresholds}
   */
   readonly monitorThresholds?: MonitorMonitorThresholds;
   /**
   * scheduling_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#scheduling_options Monitor#scheduling_options}
   */
   readonly schedulingOptions?: MonitorSchedulingOptions;
   /**
   * variables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#variables Monitor#variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#variables Monitor#variables}
   */
   readonly variables?: MonitorVariables;
 }
@@ -244,31 +244,31 @@ export interface MonitorAssets {
   /**
   * Type of asset the entity represents on a monitor. Valid values are `runbook`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#category Monitor#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#category Monitor#category}
   */
   readonly category: string;
   /**
   * Name for the monitor asset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * Identifier of the internal Datadog resource that this asset represents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#resource_key Monitor#resource_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#resource_key Monitor#resource_key}
   */
   readonly resourceKey?: string;
   /**
   * Type of internal Datadog resource associated with a monitor asset. Valid values are `notebook`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#resource_type Monitor#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#resource_type Monitor#resource_type}
   */
   readonly resourceType?: string;
   /**
   * URL for the asset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#url Monitor#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#url Monitor#url}
   */
   readonly url: string;
 }
@@ -276,7 +276,7 @@ export interface MonitorAssets {
 export function monitorAssetsToTerraform(struct?: MonitorAssets | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     category: cdktn.stringToTerraform(struct!.category),
@@ -291,7 +291,7 @@ export function monitorAssetsToTerraform(struct?: MonitorAssets | cdktn.IResolva
 export function monitorAssetsToHclTerraform(struct?: MonitorAssets | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     category: {
@@ -493,13 +493,13 @@ export interface MonitorMonitorThresholdWindows {
   /**
   * Describes how long an anomalous metric must be normal before the alert recovers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#recovery_window Monitor#recovery_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#recovery_window Monitor#recovery_window}
   */
   readonly recoveryWindow?: string;
   /**
   * Describes how long a metric must be anomalous before an alert triggers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#trigger_window Monitor#trigger_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#trigger_window Monitor#trigger_window}
   */
   readonly triggerWindow?: string;
 }
@@ -507,7 +507,7 @@ export interface MonitorMonitorThresholdWindows {
 export function monitorMonitorThresholdWindowsToTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     recovery_window: cdktn.stringToTerraform(struct!.recoveryWindow),
@@ -519,7 +519,7 @@ export function monitorMonitorThresholdWindowsToTerraform(struct?: MonitorMonito
 export function monitorMonitorThresholdWindowsToHclTerraform(struct?: MonitorMonitorThresholdWindowsOutputReference | MonitorMonitorThresholdWindows): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     recovery_window: {
@@ -614,49 +614,49 @@ export interface MonitorMonitorThresholds {
   /**
   * The monitor `CRITICAL` threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#critical Monitor#critical}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#critical Monitor#critical}
   */
   readonly critical?: string;
   /**
   * Query evaluated as a dynamic `CRITICAL` threshold. Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#critical_query Monitor#critical_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#critical_query Monitor#critical_query}
   */
   readonly criticalQuery?: string;
   /**
   * The monitor `CRITICAL` recovery threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#critical_recovery Monitor#critical_recovery}
   */
   readonly criticalRecovery?: string;
   /**
   * Query evaluated as a dynamic `CRITICAL` recovery threshold. Only supported on metric monitors with a formula query and `options['variables']`. Cannot be combined with static thresholds. This field is in preview.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#critical_recovery_query Monitor#critical_recovery_query}
   */
   readonly criticalRecoveryQuery?: string;
   /**
   * The monitor `OK` threshold. Only supported in monitor type `service check`. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#ok Monitor#ok}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#ok Monitor#ok}
   */
   readonly ok?: string;
   /**
   * The monitor `UNKNOWN` threshold. Only supported in monitor type `service check`. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#unknown Monitor#unknown}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#unknown Monitor#unknown}
   */
   readonly unknown?: string;
   /**
   * The monitor `WARNING` threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#warning Monitor#warning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#warning Monitor#warning}
   */
   readonly warning?: string;
   /**
   * The monitor `WARNING` recovery threshold. Must be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#warning_recovery Monitor#warning_recovery}
   */
   readonly warningRecovery?: string;
 }
@@ -664,7 +664,7 @@ export interface MonitorMonitorThresholds {
 export function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThresholdsOutputReference | MonitorMonitorThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     critical: cdktn.stringToTerraform(struct!.critical),
@@ -682,7 +682,7 @@ export function monitorMonitorThresholdsToTerraform(struct?: MonitorMonitorThres
 export function monitorMonitorThresholdsToHclTerraform(struct?: MonitorMonitorThresholdsOutputReference | MonitorMonitorThresholds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     critical: {
@@ -945,19 +945,19 @@ export interface MonitorSchedulingOptionsCustomScheduleRecurrence {
   /**
   * Must be a valid `rrule`. See API docs for supported fields
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#rrule Monitor#rrule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#rrule Monitor#rrule}
   */
   readonly rrule: string;
   /**
   * Time to start recurrence cycle. Similar to DTSTART. Expected format 'YYYY-MM-DDThh:mm:ss'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#start Monitor#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#start Monitor#start}
   */
   readonly start?: string;
   /**
   * 'tz database' format. Example: `America/New_York` or `UTC`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#timezone Monitor#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#timezone Monitor#timezone}
   */
   readonly timezone: string;
 }
@@ -965,7 +965,7 @@ export interface MonitorSchedulingOptionsCustomScheduleRecurrence {
 export function monitorSchedulingOptionsCustomScheduleRecurrenceToTerraform(struct?: MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference | MonitorSchedulingOptionsCustomScheduleRecurrence): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rrule: cdktn.stringToTerraform(struct!.rrule),
@@ -978,7 +978,7 @@ export function monitorSchedulingOptionsCustomScheduleRecurrenceToTerraform(stru
 export function monitorSchedulingOptionsCustomScheduleRecurrenceToHclTerraform(struct?: MonitorSchedulingOptionsCustomScheduleRecurrenceOutputReference | MonitorSchedulingOptionsCustomScheduleRecurrence): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rrule: {
@@ -1095,7 +1095,7 @@ export interface MonitorSchedulingOptionsCustomSchedule {
   /**
   * recurrence block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#recurrence Monitor#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#recurrence Monitor#recurrence}
   */
   readonly recurrence: MonitorSchedulingOptionsCustomScheduleRecurrence;
 }
@@ -1103,7 +1103,7 @@ export interface MonitorSchedulingOptionsCustomSchedule {
 export function monitorSchedulingOptionsCustomScheduleToTerraform(struct?: MonitorSchedulingOptionsCustomScheduleOutputReference | MonitorSchedulingOptionsCustomSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     recurrence: monitorSchedulingOptionsCustomScheduleRecurrenceToTerraform(struct!.recurrence),
@@ -1114,7 +1114,7 @@ export function monitorSchedulingOptionsCustomScheduleToTerraform(struct?: Monit
 export function monitorSchedulingOptionsCustomScheduleToHclTerraform(struct?: MonitorSchedulingOptionsCustomScheduleOutputReference | MonitorSchedulingOptionsCustomSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     recurrence: {
@@ -1178,25 +1178,25 @@ export interface MonitorSchedulingOptionsEvaluationWindow {
   /**
   * The time of the day at which a one day cumulative evaluation window starts. Must be defined in UTC time in `HH:mm` format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#day_starts Monitor#day_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#day_starts Monitor#day_starts}
   */
   readonly dayStarts?: string;
   /**
   * The minute of the hour at which a one hour cumulative evaluation window starts. Must be between 0 and 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#hour_starts Monitor#hour_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#hour_starts Monitor#hour_starts}
   */
   readonly hourStarts?: number;
   /**
   * The day of the month at which a one month cumulative evaluation window starts. Must be a value of 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#month_starts Monitor#month_starts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#month_starts Monitor#month_starts}
   */
   readonly monthStarts?: number;
   /**
   * The timezone for the cumulative evaluation window start time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#timezone Monitor#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#timezone Monitor#timezone}
   */
   readonly timezone?: string;
 }
@@ -1204,7 +1204,7 @@ export interface MonitorSchedulingOptionsEvaluationWindow {
 export function monitorSchedulingOptionsEvaluationWindowToTerraform(struct?: MonitorSchedulingOptionsEvaluationWindowOutputReference | MonitorSchedulingOptionsEvaluationWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     day_starts: cdktn.stringToTerraform(struct!.dayStarts),
@@ -1218,7 +1218,7 @@ export function monitorSchedulingOptionsEvaluationWindowToTerraform(struct?: Mon
 export function monitorSchedulingOptionsEvaluationWindowToHclTerraform(struct?: MonitorSchedulingOptionsEvaluationWindowOutputReference | MonitorSchedulingOptionsEvaluationWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     day_starts: {
@@ -1369,13 +1369,13 @@ export interface MonitorSchedulingOptions {
   /**
   * custom_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#custom_schedule Monitor#custom_schedule}
   */
   readonly customSchedule?: MonitorSchedulingOptionsCustomSchedule;
   /**
   * evaluation_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#evaluation_window Monitor#evaluation_window}
   */
   readonly evaluationWindow?: MonitorSchedulingOptionsEvaluationWindow;
 }
@@ -1383,7 +1383,7 @@ export interface MonitorSchedulingOptions {
 export function monitorSchedulingOptionsToTerraform(struct?: MonitorSchedulingOptionsOutputReference | MonitorSchedulingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom_schedule: monitorSchedulingOptionsCustomScheduleToTerraform(struct!.customSchedule),
@@ -1395,7 +1395,7 @@ export function monitorSchedulingOptionsToTerraform(struct?: MonitorSchedulingOp
 export function monitorSchedulingOptionsToHclTerraform(struct?: MonitorSchedulingOptionsOutputReference | MonitorSchedulingOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom_schedule: {
@@ -1490,25 +1490,25 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * The name assigned to this aggregation when multiple aggregations are defined for a query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
 }
@@ -1516,7 +1516,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1530,7 +1530,7 @@ export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeT
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryComputeToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1710,19 +1710,19 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -1730,7 +1730,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -1743,7 +1743,7 @@ export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByS
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySortOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -1863,25 +1863,25 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#source Monitor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#source Monitor#source}
   */
   readonly source?: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBySort;
 }
@@ -1889,7 +1889,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -1903,7 +1903,7 @@ export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByT
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupByToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -2083,7 +2083,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch 
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -2091,7 +2091,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch 
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -2102,7 +2102,7 @@ export function monitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchTo
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearchOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -2166,37 +2166,37 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#indexes Monitor#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#indexes Monitor#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#search Monitor#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#search Monitor#search}
   */
   readonly search: MonitorVariablesAggregateAugmentedQueryAugmentEventQuerySearch;
 }
@@ -2204,7 +2204,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentEventQuery {
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -2220,7 +2220,7 @@ export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryToTerraf
 export function monitorVariablesAggregateAugmentedQueryAugmentEventQueryToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentEventQueryOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -2415,13 +2415,13 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableCol
   /**
   * Optional alias for the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#alias Monitor#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#alias Monitor#alias}
   */
   readonly alias?: string;
   /**
   * Reference table column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
 }
@@ -2429,7 +2429,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableCol
 export function monitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
@@ -2441,7 +2441,7 @@ export function monitorVariablesAggregateAugmentedQueryAugmentReferenceTableColu
 export function monitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumnsToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias: {
@@ -2565,31 +2565,31 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable {
   /**
   * Must be `reference_table`. Valid values are `reference_table`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * Name of the augment sub-query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
   /**
   * Optional filter expression for the reference table query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query_filter Monitor#query_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query_filter Monitor#query_filter}
   */
   readonly queryFilter?: string;
   /**
   * Name of the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#table_name Monitor#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#table_name Monitor#table_name}
   */
   readonly tableName: string;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#columns Monitor#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#columns Monitor#columns}
   */
   readonly columns?: MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableColumns[] | cdktn.IResolvable;
 }
@@ -2597,7 +2597,7 @@ export interface MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable {
 export function monitorVariablesAggregateAugmentedQueryAugmentReferenceTableToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -2612,7 +2612,7 @@ export function monitorVariablesAggregateAugmentedQueryAugmentReferenceTableToTe
 export function monitorVariablesAggregateAugmentedQueryAugmentReferenceTableToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryAugmentReferenceTableOutputReference | MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -2785,25 +2785,25 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * The name assigned to this aggregation when multiple aggregations are defined for a query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
 }
@@ -2811,7 +2811,7 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute {
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryComputeToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -2825,7 +2825,7 @@ export function monitorVariablesAggregateAugmentedQueryBaseEventQueryComputeToTe
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryComputeToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -3005,19 +3005,19 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySor
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -3025,7 +3025,7 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySor
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference | MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -3038,7 +3038,7 @@ export function monitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySortOutputReference | MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -3158,25 +3158,25 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#source Monitor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#source Monitor#source}
   */
   readonly source?: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBySort;
 }
@@ -3184,7 +3184,7 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy {
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -3198,7 +3198,7 @@ export function monitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByToTe
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryGroupByToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -3378,7 +3378,7 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -3386,7 +3386,7 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch {
 export function monitorVariablesAggregateAugmentedQueryBaseEventQuerySearchToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference | MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -3397,7 +3397,7 @@ export function monitorVariablesAggregateAugmentedQueryBaseEventQuerySearchToTer
 export function monitorVariablesAggregateAugmentedQueryBaseEventQuerySearchToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearchOutputReference | MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -3461,37 +3461,37 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#indexes Monitor#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#indexes Monitor#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute: MonitorVariablesAggregateAugmentedQueryBaseEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#search Monitor#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#search Monitor#search}
   */
   readonly search: MonitorVariablesAggregateAugmentedQueryBaseEventQuerySearch;
 }
@@ -3499,7 +3499,7 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseEventQuery {
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference | MonitorVariablesAggregateAugmentedQueryBaseEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -3515,7 +3515,7 @@ export function monitorVariablesAggregateAugmentedQueryBaseEventQueryToTerraform
 export function monitorVariablesAggregateAugmentedQueryBaseEventQueryToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseEventQueryOutputReference | MonitorVariablesAggregateAugmentedQueryBaseEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -3710,25 +3710,25 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery {
   /**
   * The aggregation method for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `mean`, `area`, `l2norm`, `percentile`, `stddev`, `count_unique`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregator Monitor#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregator Monitor#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -3736,7 +3736,7 @@ export interface MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery {
 export function monitorVariablesAggregateAugmentedQueryBaseMetricsQueryToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference | MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -3750,7 +3750,7 @@ export function monitorVariablesAggregateAugmentedQueryBaseMetricsQueryToTerrafo
 export function monitorVariablesAggregateAugmentedQueryBaseMetricsQueryToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryBaseMetricsQueryOutputReference | MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -3895,25 +3895,25 @@ export interface MonitorVariablesAggregateAugmentedQueryCompute {
   /**
   * The aggregation methods for compute steps. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * The name assigned to this aggregation when multiple aggregations are defined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
 }
@@ -3921,7 +3921,7 @@ export interface MonitorVariablesAggregateAugmentedQueryCompute {
 export function monitorVariablesAggregateAugmentedQueryComputeToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -3935,7 +3935,7 @@ export function monitorVariablesAggregateAugmentedQueryComputeToTerraform(struct
 export function monitorVariablesAggregateAugmentedQueryComputeToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -4115,19 +4115,19 @@ export interface MonitorVariablesAggregateAugmentedQueryGroupBySort {
   /**
   * The aggregation methods for sorting. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -4135,7 +4135,7 @@ export interface MonitorVariablesAggregateAugmentedQueryGroupBySort {
 export function monitorVariablesAggregateAugmentedQueryGroupBySortToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference | MonitorVariablesAggregateAugmentedQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -4148,7 +4148,7 @@ export function monitorVariablesAggregateAugmentedQueryGroupBySortToTerraform(st
 export function monitorVariablesAggregateAugmentedQueryGroupBySortToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryGroupBySortOutputReference | MonitorVariablesAggregateAugmentedQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -4268,25 +4268,25 @@ export interface MonitorVariablesAggregateAugmentedQueryGroupBy {
   /**
   * The facet to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * Identifies which sub-query this facet refers to (for example `filter_query`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#source Monitor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#source Monitor#source}
   */
   readonly source?: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesAggregateAugmentedQueryGroupBySort;
 }
@@ -4294,7 +4294,7 @@ export interface MonitorVariablesAggregateAugmentedQueryGroupBy {
 export function monitorVariablesAggregateAugmentedQueryGroupByToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -4308,7 +4308,7 @@ export function monitorVariablesAggregateAugmentedQueryGroupByToTerraform(struct
 export function monitorVariablesAggregateAugmentedQueryGroupByToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -4488,19 +4488,19 @@ export interface MonitorVariablesAggregateAugmentedQueryJoinCondition {
   /**
   * Attribute from the augment query to join on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#augment_attribute Monitor#augment_attribute}
   */
   readonly augmentAttribute: string;
   /**
   * Attribute from the base query to join on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#base_attribute Monitor#base_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
   */
   readonly baseAttribute: string;
   /**
   * Join type (for example `inner`). Valid values are `inner`, `left`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#join_type Monitor#join_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#join_type Monitor#join_type}
   */
   readonly joinType: string;
 }
@@ -4508,7 +4508,7 @@ export interface MonitorVariablesAggregateAugmentedQueryJoinCondition {
 export function monitorVariablesAggregateAugmentedQueryJoinConditionToTerraform(struct?: MonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference | MonitorVariablesAggregateAugmentedQueryJoinCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     augment_attribute: cdktn.stringToTerraform(struct!.augmentAttribute),
@@ -4521,7 +4521,7 @@ export function monitorVariablesAggregateAugmentedQueryJoinConditionToTerraform(
 export function monitorVariablesAggregateAugmentedQueryJoinConditionToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQueryJoinConditionOutputReference | MonitorVariablesAggregateAugmentedQueryJoinCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     augment_attribute: {
@@ -4635,55 +4635,55 @@ export interface MonitorVariablesAggregateAugmentedQuery {
   /**
   * The data source for aggregate-augmented composite queries. Must be `aggregate_augmented_query`. Valid values are `aggregate_augmented_query`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * Name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
   /**
   * augment_event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#augment_event_query Monitor#augment_event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#augment_event_query Monitor#augment_event_query}
   */
   readonly augmentEventQuery?: MonitorVariablesAggregateAugmentedQueryAugmentEventQuery;
   /**
   * augment_reference_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#augment_reference_table Monitor#augment_reference_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#augment_reference_table Monitor#augment_reference_table}
   */
   readonly augmentReferenceTable?: MonitorVariablesAggregateAugmentedQueryAugmentReferenceTable;
   /**
   * base_event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#base_event_query Monitor#base_event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
   */
   readonly baseEventQuery?: MonitorVariablesAggregateAugmentedQueryBaseEventQuery;
   /**
   * base_metrics_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
   */
   readonly baseMetricsQuery?: MonitorVariablesAggregateAugmentedQueryBaseMetricsQuery;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute: MonitorVariablesAggregateAugmentedQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy: MonitorVariablesAggregateAugmentedQueryGroupBy[] | cdktn.IResolvable;
   /**
   * join_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#join_condition Monitor#join_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#join_condition Monitor#join_condition}
   */
   readonly joinCondition: MonitorVariablesAggregateAugmentedQueryJoinCondition;
 }
@@ -4691,7 +4691,7 @@ export interface MonitorVariablesAggregateAugmentedQuery {
 export function monitorVariablesAggregateAugmentedQueryToTerraform(struct?: MonitorVariablesAggregateAugmentedQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -4710,7 +4710,7 @@ export function monitorVariablesAggregateAugmentedQueryToTerraform(struct?: Moni
 export function monitorVariablesAggregateAugmentedQueryToHclTerraform(struct?: MonitorVariablesAggregateAugmentedQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -5021,25 +5021,25 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * The name assigned to this aggregation when multiple aggregations are defined for a query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
 }
@@ -5047,7 +5047,7 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute {
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryComputeToTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -5061,7 +5061,7 @@ export function monitorVariablesAggregateFilteredQueryBaseEventQueryComputeToTer
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryComputeToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -5241,19 +5241,19 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -5261,7 +5261,7 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortToTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference | MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -5274,7 +5274,7 @@ export function monitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortT
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySortOutputReference | MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -5394,25 +5394,25 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#source Monitor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#source Monitor#source}
   */
   readonly source?: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBySort;
 }
@@ -5420,7 +5420,7 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy {
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryGroupByToTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -5434,7 +5434,7 @@ export function monitorVariablesAggregateFilteredQueryBaseEventQueryGroupByToTer
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryGroupByToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -5614,7 +5614,7 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -5622,7 +5622,7 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch {
 export function monitorVariablesAggregateFilteredQueryBaseEventQuerySearchToTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference | MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -5633,7 +5633,7 @@ export function monitorVariablesAggregateFilteredQueryBaseEventQuerySearchToTerr
 export function monitorVariablesAggregateFilteredQueryBaseEventQuerySearchToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQuerySearchOutputReference | MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -5697,37 +5697,37 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#indexes Monitor#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#indexes Monitor#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute: MonitorVariablesAggregateFilteredQueryBaseEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: MonitorVariablesAggregateFilteredQueryBaseEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#search Monitor#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#search Monitor#search}
   */
   readonly search: MonitorVariablesAggregateFilteredQueryBaseEventQuerySearch;
 }
@@ -5735,7 +5735,7 @@ export interface MonitorVariablesAggregateFilteredQueryBaseEventQuery {
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryToTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference | MonitorVariablesAggregateFilteredQueryBaseEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -5751,7 +5751,7 @@ export function monitorVariablesAggregateFilteredQueryBaseEventQueryToTerraform(
 export function monitorVariablesAggregateFilteredQueryBaseEventQueryToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseEventQueryOutputReference | MonitorVariablesAggregateFilteredQueryBaseEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -5946,25 +5946,25 @@ export interface MonitorVariablesAggregateFilteredQueryBaseMetricsQuery {
   /**
   * The aggregation method for metrics queries. Valid values are `avg`, `min`, `max`, `sum`, `last`, `mean`, `area`, `l2norm`, `percentile`, `stddev`, `count_unique`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregator Monitor#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregator Monitor#aggregator}
   */
   readonly aggregator?: string;
   /**
   * The data source for metrics queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
   /**
   * The metrics query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -5972,7 +5972,7 @@ export interface MonitorVariablesAggregateFilteredQueryBaseMetricsQuery {
 export function monitorVariablesAggregateFilteredQueryBaseMetricsQueryToTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference | MonitorVariablesAggregateFilteredQueryBaseMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -5986,7 +5986,7 @@ export function monitorVariablesAggregateFilteredQueryBaseMetricsQueryToTerrafor
 export function monitorVariablesAggregateFilteredQueryBaseMetricsQueryToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryBaseMetricsQueryOutputReference | MonitorVariablesAggregateFilteredQueryBaseMetricsQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -6131,25 +6131,25 @@ export interface MonitorVariablesAggregateFilteredQueryCompute {
   /**
   * The aggregation methods for compute steps. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * The name assigned to this aggregation when multiple aggregations are defined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
 }
@@ -6157,7 +6157,7 @@ export interface MonitorVariablesAggregateFilteredQueryCompute {
 export function monitorVariablesAggregateFilteredQueryComputeToTerraform(struct?: MonitorVariablesAggregateFilteredQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6171,7 +6171,7 @@ export function monitorVariablesAggregateFilteredQueryComputeToTerraform(struct?
 export function monitorVariablesAggregateFilteredQueryComputeToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -6351,25 +6351,25 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * The name assigned to this aggregation when multiple aggregations are defined for a query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
 }
@@ -6377,7 +6377,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute {
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryComputeToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6391,7 +6391,7 @@ export function monitorVariablesAggregateFilteredQueryFilterEventQueryComputeToT
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryComputeToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -6571,19 +6571,19 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySo
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -6591,7 +6591,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySo
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference | MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -6604,7 +6604,7 @@ export function monitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySor
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySortOutputReference | MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -6724,25 +6724,25 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#source Monitor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#source Monitor#source}
   */
   readonly source?: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBySort;
 }
@@ -6750,7 +6750,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy {
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryGroupByToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -6764,7 +6764,7 @@ export function monitorVariablesAggregateFilteredQueryFilterEventQueryGroupByToT
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryGroupByToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -6944,7 +6944,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -6952,7 +6952,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch {
 export function monitorVariablesAggregateFilteredQueryFilterEventQuerySearchToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference | MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -6963,7 +6963,7 @@ export function monitorVariablesAggregateFilteredQueryFilterEventQuerySearchToTe
 export function monitorVariablesAggregateFilteredQueryFilterEventQuerySearchToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQuerySearchOutputReference | MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -7027,37 +7027,37 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#indexes Monitor#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#indexes Monitor#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute: MonitorVariablesAggregateFilteredQueryFilterEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: MonitorVariablesAggregateFilteredQueryFilterEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#search Monitor#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#search Monitor#search}
   */
   readonly search: MonitorVariablesAggregateFilteredQueryFilterEventQuerySearch;
 }
@@ -7065,7 +7065,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterEventQuery {
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference | MonitorVariablesAggregateFilteredQueryFilterEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -7081,7 +7081,7 @@ export function monitorVariablesAggregateFilteredQueryFilterEventQueryToTerrafor
 export function monitorVariablesAggregateFilteredQueryFilterEventQueryToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterEventQueryOutputReference | MonitorVariablesAggregateFilteredQueryFilterEventQuery): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -7276,13 +7276,13 @@ export interface MonitorVariablesAggregateFilteredQueryFilterReferenceTableColum
   /**
   * Optional alias for the column.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#alias Monitor#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#alias Monitor#alias}
   */
   readonly alias?: string;
   /**
   * Reference table column name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
 }
@@ -7290,7 +7290,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterReferenceTableColum
 export function monitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     alias: cdktn.stringToTerraform(struct!.alias),
@@ -7302,7 +7302,7 @@ export function monitorVariablesAggregateFilteredQueryFilterReferenceTableColumn
 export function monitorVariablesAggregateFilteredQueryFilterReferenceTableColumnsToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     alias: {
@@ -7426,31 +7426,31 @@ export interface MonitorVariablesAggregateFilteredQueryFilterReferenceTable {
   /**
   * Must be `reference_table`. Valid values are `reference_table`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * Name of the filter sub-query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
   /**
   * Optional filter expression for the reference table query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query_filter Monitor#query_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query_filter Monitor#query_filter}
   */
   readonly queryFilter?: string;
   /**
   * Name of the reference table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#table_name Monitor#table_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#table_name Monitor#table_name}
   */
   readonly tableName: string;
   /**
   * columns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#columns Monitor#columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#columns Monitor#columns}
   */
   readonly columns?: MonitorVariablesAggregateFilteredQueryFilterReferenceTableColumns[] | cdktn.IResolvable;
 }
@@ -7458,7 +7458,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilterReferenceTable {
 export function monitorVariablesAggregateFilteredQueryFilterReferenceTableToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference | MonitorVariablesAggregateFilteredQueryFilterReferenceTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -7473,7 +7473,7 @@ export function monitorVariablesAggregateFilteredQueryFilterReferenceTableToTerr
 export function monitorVariablesAggregateFilteredQueryFilterReferenceTableToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilterReferenceTableOutputReference | MonitorVariablesAggregateFilteredQueryFilterReferenceTable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -7646,19 +7646,19 @@ export interface MonitorVariablesAggregateFilteredQueryFilters {
   /**
   * Attribute from the base query to filter on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#base_attribute Monitor#base_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#base_attribute Monitor#base_attribute}
   */
   readonly baseAttribute: string;
   /**
   * When true, exclude matching records instead of including them.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#exclude Monitor#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#exclude Monitor#exclude}
   */
   readonly exclude?: boolean | cdktn.IResolvable;
   /**
   * Attribute from the filter query to match against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#filter_attribute Monitor#filter_attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#filter_attribute Monitor#filter_attribute}
   */
   readonly filterAttribute: string;
 }
@@ -7666,7 +7666,7 @@ export interface MonitorVariablesAggregateFilteredQueryFilters {
 export function monitorVariablesAggregateFilteredQueryFiltersToTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base_attribute: cdktn.stringToTerraform(struct!.baseAttribute),
@@ -7679,7 +7679,7 @@ export function monitorVariablesAggregateFilteredQueryFiltersToTerraform(struct?
 export function monitorVariablesAggregateFilteredQueryFiltersToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryFilters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base_attribute: {
@@ -7828,19 +7828,19 @@ export interface MonitorVariablesAggregateFilteredQueryGroupBySort {
   /**
   * The aggregation methods for sorting. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -7848,7 +7848,7 @@ export interface MonitorVariablesAggregateFilteredQueryGroupBySort {
 export function monitorVariablesAggregateFilteredQueryGroupBySortToTerraform(struct?: MonitorVariablesAggregateFilteredQueryGroupBySortOutputReference | MonitorVariablesAggregateFilteredQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -7861,7 +7861,7 @@ export function monitorVariablesAggregateFilteredQueryGroupBySortToTerraform(str
 export function monitorVariablesAggregateFilteredQueryGroupBySortToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryGroupBySortOutputReference | MonitorVariablesAggregateFilteredQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -7981,25 +7981,25 @@ export interface MonitorVariablesAggregateFilteredQueryGroupBy {
   /**
   * The facet to group by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * Identifies which sub-query this facet refers to (for example `filter_query`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#source Monitor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#source Monitor#source}
   */
   readonly source?: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesAggregateFilteredQueryGroupBySort;
 }
@@ -8007,7 +8007,7 @@ export interface MonitorVariablesAggregateFilteredQueryGroupBy {
 export function monitorVariablesAggregateFilteredQueryGroupByToTerraform(struct?: MonitorVariablesAggregateFilteredQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -8021,7 +8021,7 @@ export function monitorVariablesAggregateFilteredQueryGroupByToTerraform(struct?
 export function monitorVariablesAggregateFilteredQueryGroupByToHclTerraform(struct?: MonitorVariablesAggregateFilteredQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -8201,55 +8201,55 @@ export interface MonitorVariablesAggregateFilteredQuery {
   /**
   * The data source for aggregate-filtered composite queries. Must be `aggregate_filtered_query`. Valid values are `aggregate_filtered_query`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * Name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
   /**
   * base_event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#base_event_query Monitor#base_event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#base_event_query Monitor#base_event_query}
   */
   readonly baseEventQuery?: MonitorVariablesAggregateFilteredQueryBaseEventQuery;
   /**
   * base_metrics_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#base_metrics_query Monitor#base_metrics_query}
   */
   readonly baseMetricsQuery?: MonitorVariablesAggregateFilteredQueryBaseMetricsQuery;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute?: MonitorVariablesAggregateFilteredQueryCompute[] | cdktn.IResolvable;
   /**
   * filter_event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#filter_event_query Monitor#filter_event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#filter_event_query Monitor#filter_event_query}
   */
   readonly filterEventQuery?: MonitorVariablesAggregateFilteredQueryFilterEventQuery;
   /**
   * filter_reference_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#filter_reference_table Monitor#filter_reference_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#filter_reference_table Monitor#filter_reference_table}
   */
   readonly filterReferenceTable?: MonitorVariablesAggregateFilteredQueryFilterReferenceTable;
   /**
   * filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#filters Monitor#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#filters Monitor#filters}
   */
   readonly filters: MonitorVariablesAggregateFilteredQueryFilters[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: MonitorVariablesAggregateFilteredQueryGroupBy[] | cdktn.IResolvable;
 }
@@ -8257,7 +8257,7 @@ export interface MonitorVariablesAggregateFilteredQuery {
 export function monitorVariablesAggregateFilteredQueryToTerraform(struct?: MonitorVariablesAggregateFilteredQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -8276,7 +8276,7 @@ export function monitorVariablesAggregateFilteredQueryToTerraform(struct?: Monit
 export function monitorVariablesAggregateFilteredQueryToHclTerraform(struct?: MonitorVariablesAggregateFilteredQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -8593,25 +8593,25 @@ export interface MonitorVariablesCloudCostQuery {
   /**
   * The aggregation methods available for cloud cost queries. Valid values are `avg`, `sum`, `max`, `min`, `last`, `area`, `l2norm`, `percentile`, `stddev`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregator Monitor#aggregator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregator Monitor#aggregator}
   */
   readonly aggregator: string;
   /**
   * The data source for cloud cost queries. Valid values are `metrics`, `cloud_cost`, `datadog_usage`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * The cloud cost query definition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -8619,7 +8619,7 @@ export interface MonitorVariablesCloudCostQuery {
 export function monitorVariablesCloudCostQueryToTerraform(struct?: MonitorVariablesCloudCostQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregator: cdktn.stringToTerraform(struct!.aggregator),
@@ -8633,7 +8633,7 @@ export function monitorVariablesCloudCostQueryToTerraform(struct?: MonitorVariab
 export function monitorVariablesCloudCostQueryToHclTerraform(struct?: MonitorVariablesCloudCostQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregator: {
@@ -8804,25 +8804,25 @@ export interface MonitorVariablesDataJobsQuery {
   /**
   * The type of job being monitored. Valid values include `databricks.job`, `spark.application`, `airflow.dag`, `dbt.job`, `dbt.model`, `dbt.test`, `glue.job`. Custom job types are supported with the `custom.ol.` prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#job_type Monitor#job_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#job_type Monitor#job_type}
   */
   readonly jobType: string;
   /**
   * Filter expression used to select the jobs to monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#jobs_query Monitor#jobs_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#jobs_query Monitor#jobs_query}
   */
   readonly jobsQuery: string;
   /**
   * Name of the query for use in formulas. Must be `run_query`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * Query dialect for data jobs queries. Currently only `metric` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query_dialect Monitor#query_dialect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query_dialect Monitor#query_dialect}
   */
   readonly queryDialect: string;
 }
@@ -8830,7 +8830,7 @@ export interface MonitorVariablesDataJobsQuery {
 export function monitorVariablesDataJobsQueryToTerraform(struct?: MonitorVariablesDataJobsQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     job_type: cdktn.stringToTerraform(struct!.jobType),
@@ -8844,7 +8844,7 @@ export function monitorVariablesDataJobsQueryToTerraform(struct?: MonitorVariabl
 export function monitorVariablesDataJobsQueryToHclTerraform(struct?: MonitorVariablesDataJobsQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     job_type: {
@@ -9015,31 +9015,31 @@ export interface MonitorVariablesDataQualityQueryMonitorOptions {
   /**
   * Crontab expression to override the default schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#crontab_override Monitor#crontab_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#crontab_override Monitor#crontab_override}
   */
   readonly crontabOverride?: string;
   /**
   * Custom SQL query for the monitor.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#custom_sql Monitor#custom_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#custom_sql Monitor#custom_sql}
   */
   readonly customSql?: string;
   /**
   * Custom WHERE clause for the query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#custom_where Monitor#custom_where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#custom_where Monitor#custom_where}
   */
   readonly customWhere?: string;
   /**
   * Columns to group results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by_columns Monitor#group_by_columns}
   */
   readonly groupByColumns?: string[];
   /**
   * Override for the model type. Valid values are `freshness`, `percentage`, `any`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#model_type_override Monitor#model_type_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#model_type_override Monitor#model_type_override}
   */
   readonly modelTypeOverride?: string;
 }
@@ -9047,7 +9047,7 @@ export interface MonitorVariablesDataQualityQueryMonitorOptions {
 export function monitorVariablesDataQualityQueryMonitorOptionsToTerraform(struct?: MonitorVariablesDataQualityQueryMonitorOptionsOutputReference | MonitorVariablesDataQualityQueryMonitorOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     crontab_override: cdktn.stringToTerraform(struct!.crontabOverride),
@@ -9062,7 +9062,7 @@ export function monitorVariablesDataQualityQueryMonitorOptionsToTerraform(struct
 export function monitorVariablesDataQualityQueryMonitorOptionsToHclTerraform(struct?: MonitorVariablesDataQualityQueryMonitorOptionsOutputReference | MonitorVariablesDataQualityQueryMonitorOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     crontab_override: {
@@ -9241,49 +9241,49 @@ export interface MonitorVariablesDataQualityQuery {
   /**
   * The data source for data quality queries. Valid value is `data_quality_metrics`. Valid values are `data_quality_metrics`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * Filter expression used to match on data entities. Uses AAstra query syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#filter Monitor#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#filter Monitor#filter}
   */
   readonly filter: string;
   /**
   * Optional grouping fields for aggregation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: string[];
   /**
   * The measure to query. Common values include `bytes`, `cardinality`, `custom`, `freshness`, `max`, `mean`, `min`, `nullness`, `percent_negative`, `percent_zero`, `row_count`, `stddev`, `sum`, `uniqueness`. Additional values may be supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#measure Monitor#measure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#measure Monitor#measure}
   */
   readonly measure: string;
   /**
   * The name of the query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * Schema version for the data quality query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#schema_version Monitor#schema_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#schema_version Monitor#schema_version}
   */
   readonly schemaVersion?: string;
   /**
   * Optional scoping expression to further filter metrics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#scope Monitor#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#scope Monitor#scope}
   */
   readonly scope?: string;
   /**
   * monitor_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#monitor_options Monitor#monitor_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#monitor_options Monitor#monitor_options}
   */
   readonly monitorOptions?: MonitorVariablesDataQualityQueryMonitorOptions;
 }
@@ -9291,7 +9291,7 @@ export interface MonitorVariablesDataQualityQuery {
 export function monitorVariablesDataQualityQueryToTerraform(struct?: MonitorVariablesDataQualityQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -9309,7 +9309,7 @@ export function monitorVariablesDataQualityQueryToTerraform(struct?: MonitorVari
 export function monitorVariablesDataQualityQueryToHclTerraform(struct?: MonitorVariablesDataQualityQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -9592,25 +9592,25 @@ export interface MonitorVariablesEventQueryCompute {
   /**
   * The aggregation methods for event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * A time interval in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#interval Monitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#interval Monitor#interval}
   */
   readonly interval?: number;
   /**
   * The measurable attribute to compute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * The name assigned to this aggregation when multiple aggregations are defined for a query.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name?: string;
 }
@@ -9618,7 +9618,7 @@ export interface MonitorVariablesEventQueryCompute {
 export function monitorVariablesEventQueryComputeToTerraform(struct?: MonitorVariablesEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -9632,7 +9632,7 @@ export function monitorVariablesEventQueryComputeToTerraform(struct?: MonitorVar
 export function monitorVariablesEventQueryComputeToHclTerraform(struct?: MonitorVariablesEventQueryCompute | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -9812,19 +9812,19 @@ export interface MonitorVariablesEventQueryGroupBySort {
   /**
   * The aggregation methods for the event platform queries. Valid values are `count`, `cardinality`, `median`, `pc75`, `pc90`, `pc95`, `pc98`, `pc99`, `sum`, `min`, `max`, `avg`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregation Monitor#aggregation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregation Monitor#aggregation}
   */
   readonly aggregation: string;
   /**
   * The metric used for sorting group by results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#metric Monitor#metric}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#metric Monitor#metric}
   */
   readonly metric?: string;
   /**
   * Direction of sort. Valid values are `asc`, `desc`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#order Monitor#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#order Monitor#order}
   */
   readonly order?: string;
 }
@@ -9832,7 +9832,7 @@ export interface MonitorVariablesEventQueryGroupBySort {
 export function monitorVariablesEventQueryGroupBySortToTerraform(struct?: MonitorVariablesEventQueryGroupBySortOutputReference | MonitorVariablesEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregation: cdktn.stringToTerraform(struct!.aggregation),
@@ -9845,7 +9845,7 @@ export function monitorVariablesEventQueryGroupBySortToTerraform(struct?: Monito
 export function monitorVariablesEventQueryGroupBySortToHclTerraform(struct?: MonitorVariablesEventQueryGroupBySortOutputReference | MonitorVariablesEventQueryGroupBySort): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregation: {
@@ -9965,25 +9965,25 @@ export interface MonitorVariablesEventQueryGroupBy {
   /**
   * The event facet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#facet Monitor#facet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#facet Monitor#facet}
   */
   readonly facet: string;
   /**
   * The number of groups to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#limit Monitor#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#limit Monitor#limit}
   */
   readonly limit?: number;
   /**
   * For composite aggregate-augmented queries, identifies which sub-query this group-by facet refers to (for example `filter_query`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#source Monitor#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#source Monitor#source}
   */
   readonly source?: string;
   /**
   * sort block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#sort Monitor#sort}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#sort Monitor#sort}
   */
   readonly sort?: MonitorVariablesEventQueryGroupBySort;
 }
@@ -9991,7 +9991,7 @@ export interface MonitorVariablesEventQueryGroupBy {
 export function monitorVariablesEventQueryGroupByToTerraform(struct?: MonitorVariablesEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     facet: cdktn.stringToTerraform(struct!.facet),
@@ -10005,7 +10005,7 @@ export function monitorVariablesEventQueryGroupByToTerraform(struct?: MonitorVar
 export function monitorVariablesEventQueryGroupByToHclTerraform(struct?: MonitorVariablesEventQueryGroupBy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     facet: {
@@ -10185,7 +10185,7 @@ export interface MonitorVariablesEventQuerySearch {
   /**
   * The events search string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#query Monitor#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#query Monitor#query}
   */
   readonly query: string;
 }
@@ -10193,7 +10193,7 @@ export interface MonitorVariablesEventQuerySearch {
 export function monitorVariablesEventQuerySearchToTerraform(struct?: MonitorVariablesEventQuerySearchOutputReference | MonitorVariablesEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     query: cdktn.stringToTerraform(struct!.query),
@@ -10204,7 +10204,7 @@ export function monitorVariablesEventQuerySearchToTerraform(struct?: MonitorVari
 export function monitorVariablesEventQuerySearchToHclTerraform(struct?: MonitorVariablesEventQuerySearchOutputReference | MonitorVariablesEventQuerySearch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     query: {
@@ -10268,37 +10268,37 @@ export interface MonitorVariablesEventQuery {
   /**
   * The data source for event platform-based queries. Valid values are `rum`, `ci_pipelines`, `ci_tests`, `audit`, `events`, `logs`, `spans`, `database_queries`, `network`, `network_path`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_source Monitor#data_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_source Monitor#data_source}
   */
   readonly dataSource: string;
   /**
   * An array of index names to query in the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#indexes Monitor#indexes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#indexes Monitor#indexes}
   */
   readonly indexes?: string[];
   /**
   * The name of query for use in formulas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#name Monitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#name Monitor#name}
   */
   readonly name: string;
   /**
   * compute block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#compute Monitor#compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#compute Monitor#compute}
   */
   readonly compute: MonitorVariablesEventQueryCompute[] | cdktn.IResolvable;
   /**
   * group_by block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#group_by Monitor#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#group_by Monitor#group_by}
   */
   readonly groupBy?: MonitorVariablesEventQueryGroupBy[] | cdktn.IResolvable;
   /**
   * search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#search Monitor#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#search Monitor#search}
   */
   readonly search: MonitorVariablesEventQuerySearch;
 }
@@ -10306,7 +10306,7 @@ export interface MonitorVariablesEventQuery {
 export function monitorVariablesEventQueryToTerraform(struct?: MonitorVariablesEventQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     data_source: cdktn.stringToTerraform(struct!.dataSource),
@@ -10322,7 +10322,7 @@ export function monitorVariablesEventQueryToTerraform(struct?: MonitorVariablesE
 export function monitorVariablesEventQueryToHclTerraform(struct?: MonitorVariablesEventQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     data_source: {
@@ -10549,37 +10549,37 @@ export interface MonitorVariables {
   /**
   * aggregate_augmented_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregate_augmented_query Monitor#aggregate_augmented_query}
   */
   readonly aggregateAugmentedQuery?: MonitorVariablesAggregateAugmentedQuery[] | cdktn.IResolvable;
   /**
   * aggregate_filtered_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#aggregate_filtered_query Monitor#aggregate_filtered_query}
   */
   readonly aggregateFilteredQuery?: MonitorVariablesAggregateFilteredQuery[] | cdktn.IResolvable;
   /**
   * cloud_cost_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#cloud_cost_query Monitor#cloud_cost_query}
   */
   readonly cloudCostQuery?: MonitorVariablesCloudCostQuery[] | cdktn.IResolvable;
   /**
   * data_jobs_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_jobs_query Monitor#data_jobs_query}
   */
   readonly dataJobsQuery?: MonitorVariablesDataJobsQuery[] | cdktn.IResolvable;
   /**
   * data_quality_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#data_quality_query Monitor#data_quality_query}
   */
   readonly dataQualityQuery?: MonitorVariablesDataQualityQuery[] | cdktn.IResolvable;
   /**
   * event_query block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#event_query Monitor#event_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#event_query Monitor#event_query}
   */
   readonly eventQuery?: MonitorVariablesEventQuery[] | cdktn.IResolvable;
 }
@@ -10587,7 +10587,7 @@ export interface MonitorVariables {
 export function monitorVariablesToTerraform(struct?: MonitorVariablesOutputReference | MonitorVariables): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     aggregate_augmented_query: cdktn.listMapper(monitorVariablesAggregateAugmentedQueryToTerraform, true)(struct!.aggregateAugmentedQuery),
@@ -10603,7 +10603,7 @@ export function monitorVariablesToTerraform(struct?: MonitorVariablesOutputRefer
 export function monitorVariablesToHclTerraform(struct?: MonitorVariablesOutputReference | MonitorVariables): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     aggregate_augmented_query: {
@@ -10808,7 +10808,7 @@ export class MonitorVariablesOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor datadog_monitor}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor datadog_monitor}
 */
 export class Monitor extends cdktn.TerraformResource {
 
@@ -10824,7 +10824,7 @@ export class Monitor extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Monitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Monitor to import
-  * @param importFromId The id of the existing Monitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Monitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Monitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -10836,7 +10836,7 @@ export class Monitor extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/resources/monitor datadog_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/resources/monitor datadog_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -10847,7 +10847,7 @@ export class Monitor extends cdktn.TerraformResource {
       terraformResourceType: 'datadog_monitor',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings
+// https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataDatadogOrganizationSettingsConfig extends cdktn.TerraformMe
   /**
   * settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings#settings DataDatadogOrganizationSettings#settings}
   */
   readonly settings?: DataDatadogOrganizationSettingsSettings[] | cdktn.IResolvable;
 }
@@ -25,7 +25,7 @@ export interface DataDatadogOrganizationSettingsSettingsSaml {
 export function dataDatadogOrganizationSettingsSettingsSamlToTerraform(struct?: DataDatadogOrganizationSettingsSettingsSaml | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -35,7 +35,7 @@ export function dataDatadogOrganizationSettingsSettingsSamlToTerraform(struct?: 
 export function dataDatadogOrganizationSettingsSettingsSamlToHclTerraform(struct?: DataDatadogOrganizationSettingsSettingsSaml | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -111,7 +111,7 @@ export interface DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomai
 export function dataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsToTerraform(struct?: DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomains | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -121,7 +121,7 @@ export function dataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomain
 export function dataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomainsToHclTerraform(struct?: DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomains | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -202,7 +202,7 @@ export interface DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLogin {
 export function dataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginToTerraform(struct?: DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLogin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -212,7 +212,7 @@ export function dataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginToTe
 export function dataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLoginToHclTerraform(struct?: DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLogin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -288,7 +288,7 @@ export interface DataDatadogOrganizationSettingsSettingsSamlStrictMode {
 export function dataDatadogOrganizationSettingsSettingsSamlStrictModeToTerraform(struct?: DataDatadogOrganizationSettingsSettingsSamlStrictMode | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -298,7 +298,7 @@ export function dataDatadogOrganizationSettingsSettingsSamlStrictModeToTerraform
 export function dataDatadogOrganizationSettingsSettingsSamlStrictModeToHclTerraform(struct?: DataDatadogOrganizationSettingsSettingsSamlStrictMode | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -372,25 +372,25 @@ export interface DataDatadogOrganizationSettingsSettings {
   /**
   * saml block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings#saml DataDatadogOrganizationSettings#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings#saml DataDatadogOrganizationSettings#saml}
   */
   readonly saml?: DataDatadogOrganizationSettingsSettingsSaml[] | cdktn.IResolvable;
   /**
   * saml_autocreate_users_domains block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings#saml_autocreate_users_domains DataDatadogOrganizationSettings#saml_autocreate_users_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings#saml_autocreate_users_domains DataDatadogOrganizationSettings#saml_autocreate_users_domains}
   */
   readonly samlAutocreateUsersDomains?: DataDatadogOrganizationSettingsSettingsSamlAutocreateUsersDomains[] | cdktn.IResolvable;
   /**
   * saml_idp_initiated_login block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings#saml_idp_initiated_login DataDatadogOrganizationSettings#saml_idp_initiated_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings#saml_idp_initiated_login DataDatadogOrganizationSettings#saml_idp_initiated_login}
   */
   readonly samlIdpInitiatedLogin?: DataDatadogOrganizationSettingsSettingsSamlIdpInitiatedLogin[] | cdktn.IResolvable;
   /**
   * saml_strict_mode block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings#saml_strict_mode DataDatadogOrganizationSettings#saml_strict_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings#saml_strict_mode DataDatadogOrganizationSettings#saml_strict_mode}
   */
   readonly samlStrictMode?: DataDatadogOrganizationSettingsSettingsSamlStrictMode[] | cdktn.IResolvable;
 }
@@ -398,7 +398,7 @@ export interface DataDatadogOrganizationSettingsSettings {
 export function dataDatadogOrganizationSettingsSettingsToTerraform(struct?: DataDatadogOrganizationSettingsSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     saml: cdktn.listMapper(dataDatadogOrganizationSettingsSettingsSamlToTerraform, true)(struct!.saml),
@@ -412,7 +412,7 @@ export function dataDatadogOrganizationSettingsSettingsToTerraform(struct?: Data
 export function dataDatadogOrganizationSettingsSettingsToHclTerraform(struct?: DataDatadogOrganizationSettingsSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     saml: {
@@ -623,7 +623,7 @@ export class DataDatadogOrganizationSettingsSettingsList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings datadog_organization_settings}
+* Represents a {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings datadog_organization_settings}
 */
 export class DataDatadogOrganizationSettings extends cdktn.TerraformDataSource {
 
@@ -639,7 +639,7 @@ export class DataDatadogOrganizationSettings extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataDatadogOrganizationSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataDatadogOrganizationSettings to import
-  * @param importFromId The id of the existing DataDatadogOrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataDatadogOrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataDatadogOrganizationSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -651,7 +651,7 @@ export class DataDatadogOrganizationSettings extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.12.1/docs/data-sources/organization_settings datadog_organization_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/datadog/datadog/4.13.0/docs/data-sources/organization_settings datadog_organization_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -662,7 +662,7 @@ export class DataDatadogOrganizationSettings extends cdktn.TerraformDataSource {
       terraformResourceType: 'datadog_organization_settings',
       terraformGeneratorMetadata: {
         providerName: 'datadog',
-        providerVersion: '4.12.1',
+        providerVersion: '4.13.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
